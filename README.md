@@ -1,1 +1,1 @@
-# Dataset_Distillation
+# Dataset Distillation for Continual Learning
