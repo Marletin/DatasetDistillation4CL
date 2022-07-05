@@ -23,7 +23,7 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
         vis_name_fmt += '.png'
         utils.mkdir(vis_dir)
 
-    dataset, nc, input_size, mean, std, label_names = dataset_info
+    dataset, nc, _, mean, std, _ = dataset_info
 
     N = len(np_steps[0][0])
     nrows = max(2, distilled_images_per_class_per_step)
@@ -77,9 +77,6 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
 
 
 def vis_results(state, steps, *args, **kwargs):
-    if not state.get_output_flag():
-        logging.warning('Skip visualize results because output_flag is False')
-        return
 
     if isinstance(steps[0][0], torch.Tensor):
         steps = to_np(steps)
@@ -87,7 +84,7 @@ def vis_results(state, steps, *args, **kwargs):
     _, _, nc, input_size, _, (mean, std), label_names = datasets.get_info(state.dataset)
     dataset_vis_info = (state.dataset, nc, input_size, np.array(mean), np.array(std), label_names)
 
-    vis_args = (steps, state.distilled_images_per_class_per_step, dataset_vis_info, "LeNet", state.image_dpi) + args
+    vis_args = (steps, state.distilled_images_per_class_per_step, dataset_vis_info, "LeNet", 80) + args
 
     _vis_results_fn(*vis_args, **kwargs)
 
@@ -117,12 +114,10 @@ def to_torch(np_steps, device):
     return steps
 
 
-def save_results(state, steps, visualize=True, subfolder=''):
-    if not state.get_output_flag():
-        logging.warning('Skip saving results because output_flag is False')
-        return
-
+def save_results(state, steps, visualize=True, subfolder='', mode=None, dataset=None):
     expr_dir = os.path.join(state.get_save_directory(), subfolder)
+    if mode is not None and dataset is not None:
+        expr_dir = os.path.join(state.get_save_directory(mode, dataset), subfolder)
     utils.mkdir(expr_dir)
     save_data_path = os.path.join(expr_dir, 'results.pth')
 
@@ -131,24 +126,27 @@ def save_results(state, steps, visualize=True, subfolder=''):
         vis_results(state, steps, expr_dir)
 
     torch.save(steps, save_data_path)
-    logging.info('Results saved to {}'.format(save_data_path))
+    logging.info(f'Results saved to {save_data_path}')
 
 
-def load_results(state, save_data_path=None, device=None):
-    if save_data_path is None:
+def load_results(state, mode=None, dataset=None, device=None):
+    if mode is None and dataset is None:
         expr_dir = state.get_load_directory()
         save_data_path = os.path.join(expr_dir, 'results.pth')
+    else:
+        assert mode is not None and dataset is not None, "mode and dataset should be both not None"
+        expr_dir = state.get_load_directory(mode, dataset)
+        save_data_path = os.path.join(expr_dir, 'results.pth')
     device = device or state.device
+    logging.info(f"Loaded results from {save_data_path}")
     return to_torch(torch.load(save_data_path, map_location=device), device)
 
 
-def save_test_results(state, results):
+def save_test_results(state, results, mode=None, dataset=None):
     assert state.phase != 'train'
-    if not state.get_output_flag():
-        logging.warning('Skip saving test results because output_flag is False')
-        return
-
     test_dir = state.get_save_directory()
+    if mode is not None and dataset is not None:
+        test_dir = state.get_save_directory(mode, dataset)
     utils.mkdir(test_dir)
     result_file = os.path.join(test_dir, 'results.pth')
     torch.save(results, os.path.join(test_dir, 'results.pth'))

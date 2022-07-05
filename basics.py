@@ -17,7 +17,7 @@ def train_steps_inplace(model, steps, callback):
 
     return: trained params
     """
-    params = model.get_param()
+    params = model.get_param(clone=True)
     for i, (data, label, lr) in enumerate(steps):
         if callback is not None:
             callback(i, params)
@@ -163,14 +163,14 @@ def evaluate_steps(state, steps, prefix, details='', test_loader=None):
     logging.info(f'{prefix} {details}:')
 
     res = _evaluate_steps(test_nets_desc)
-    result_title = f'{prefix} Final evaluation for {state.dataset} ({test_nets_desc})'
+    result_title = f'{prefix} evaluation for {state.dataset} ({test_nets_desc})'
 
     logging.info(format_stepwise_results(steps, result_title, res[:3]))
     logging.info('')
 
     if state.mode == "distill_adapt" and state.phase == "test":
         new_res = [res[0], res[3], res[4]]
-        result_title = f'{prefix} Final evaluation for {state.source_dataset} ({test_nets_desc})'
+        result_title = f'{prefix} evaluation for {state.source_dataset} ({test_nets_desc})'
 
         logging.info(format_stepwise_results(steps, result_title, new_res))
 

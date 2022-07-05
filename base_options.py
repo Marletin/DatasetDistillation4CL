@@ -1,14 +1,10 @@
 import argparse
 import logging
-import math
 import os
-import random
 import time
 from contextlib import contextmanager
 
-import numpy as np
 import torch
-import torch.distributed as dist
 import yaml
 
 import datasets
@@ -27,8 +23,7 @@ class State(object):
         def mark_set(self, name, value):
             if self.__requires_unique and name in self.__set_value:
                 raise argparse.ArgumentTypeError(
-                    "'{}' appears several times: {}, {}.".format(
-                        name, self.__set_value[name], value))
+                    f"'{name}' appears several times: {self.__set_value[name]}, {value}.")
             self.__set_value[name] = value
 
     __inited = False
@@ -42,7 +37,6 @@ class State(object):
             self.opt = argparse.Namespace(**opt)
         self.extras = {}
         self.__inited = True
-        self._output_flag = True
 
     def __setattr__(self, k, v):
         if not self.__inited:
@@ -60,9 +54,6 @@ class State(object):
     def copy(self):
         return argparse.Namespace(**self.merge())
 
-    def get_output_flag(self):
-        return self._output_flag
-
     @contextmanager
     def pretend(self, **kwargs):
         saved = {}
@@ -75,9 +66,6 @@ class State(object):
             self.pop(key)
             if key in saved:
                 self.extras[key] = saved[key]
-
-    def set_output_flag(self, val):
-        self._output_flag = val
 
     def pop(self, k, default=None):
         return self.extras.pop(k, default)
@@ -95,49 +83,36 @@ class State(object):
                     vs.pop(k)
         return vs
 
-    def get_base_directory(self):
+    def get_base_directory(self, mode=None, dataset=None):
         vs = self.merge()
         opt = argparse.Namespace(**vs)
-        if opt.test_at_steps != "loaded":
-            train_nets_str = "{},{}".format(opt.init, opt.init_param)
-        else:
-            train_nets_str = "loaded,{}".format(opt.n_nets)
-
-        name = "arch(LeNet,{})_distillLR{}_E({},{},{})_lr{}_B{}x{}x{}".format(
-            train_nets_str, str(opt.distill_lr),
-            opt.epochs, opt.decay_epochs, str(opt.decay_factor), str(opt.lr),
-            opt.distilled_images_per_class_per_step, opt.distill_steps, opt.distill_epochs)
-        if opt.sample_n_nets > 1:
-            name += "_{}nets".format(opt.sample_n_nets)
-        name += "_train({})".format(opt.train_nets_type)
+        name = ""
+        if opt.mode == "distill_adapt" and mode is None:
+            name = f"Source_{opt.source_dataset}"
         dirs = [opt.mode, opt.dataset, name]
-        return os.path.join(opt.results_dir, *dirs)
+        if mode is not None and dataset is not None:
+            dirs = [mode, dataset, name]
+        return os.path.join("./results/", *dirs)
 
-    def get_load_directory(self):
-        return self.get_base_directory()
+    def get_load_directory(self, mode=None, dataset=None):
+        return self.get_base_directory(mode, dataset)
 
-    def get_save_directory(self):
-        base_dir = self.get_base_directory()
+    def get_save_directory(self, mode=None, dataset=None):
+        base_dir = self.get_base_directory(mode, dataset)
         if self.phase == "test":
             base_dir = os.path.join(base_dir, "test")
-            subdir = self.get_test_subdirectory()
-            if subdir is not None and subdir != "":
-                base_dir = os.path.join(base_dir, subdir)
         return base_dir
-
-    def get_test_subdirectory(self):
-        return f"nRun{self.test_n_runs}_nNet{self.test_n_nets}_nEpoch{self.test_distill_epochs}_image_{self.test_distilled_images}"
 
     def get_model_dir(self):
         vs = vars(self.opt).copy()
         vs.update(self.extras)
         opt = argparse.Namespace(**vs)
-        model_dir = opt.model_dir
+        model_dir = "./models/"
         if opt.mode == "distill_adapt":
             dataset = opt.source_dataset
         else:
             dataset = opt.dataset
-        subdir = os.path.join("{:s}_{:s}_{:s}_{}".format(dataset, "LeNet", opt.init, opt.init_param))
+        subdir = f"{dataset}_{opt.init}_{opt.init_param}"
         return os.path.join(model_dir, subdir)
 
 
@@ -146,12 +121,12 @@ class BaseOptions(object):
         # argparse utils
 
         def comp(type, op, ref):
-            op = getattr(type, "__{}__".format(op))
+            op = getattr(type, f"__{op}__")
 
             def check(value):
                 ivalue = type(value)
                 if not op(ivalue, ref):
-                    raise argparse.ArgumentTypeError("expected value {} {}, but got {}".format(op, ref, value))
+                    raise argparse.ArgumentTypeError(f"expected value {op} {ref}, but got {value}")
                 return ivalue
 
             return check
@@ -195,14 +170,14 @@ class BaseOptions(object):
                             help="input batch size for training (default: 1024)")
         parser.add_argument("--test_batch_size", type=pos_int, default=1024,
                             help="input batch size for testing (default: 1024)")
-        parser.add_argument("--epochs", type=pos_int, default=400, metavar="N",
-                            help="number of total epochs to train (default: 400)")
+        parser.add_argument("--epochs", type=pos_int, default=150, metavar="N",
+                            help="number of total epochs to train (default: 150)")
         parser.add_argument("--decay_epochs", type=pos_int, default=40, metavar="N",
                             help="period of weight decay (default: 40)")
-        parser.add_argument("--decay_factor", type=pos_float, default=0.5, metavar="N",
+        parser.add_argument("--decay_factor", type=pos_float, default=0.1, metavar="N",
                             help="weight decay multiplicative factor (default: 0.1)")
         parser.add_argument("--lr", type=pos_float, default=0.01, metavar="LR",
-                            help="learning rate used to actually learn stuff (default: 0.01)")
+                            help="learning rate (default: 0.01)")
         parser.add_argument("--init", type=str, default="xavier",
                             help="network initialization [normal|xavier|kaiming|orthogonal|zero|default]")
         parser.add_argument("--init_param", type=float, default=1.,
@@ -219,48 +194,28 @@ class BaseOptions(object):
                             help="dataset: MNIST | MNIST_RGB | FASHION_MNIST | SVHN")
         parser.add_argument("--forget_dataset", type=str, default=None,
                             help="dataset: MNIST | MNIST_RGB | FASHION_MNIST | SVHN")
-        parser.add_argument("--results_dir", type=str, default="./results/",
-                            help="results directory")
         parser.add_argument("--mode", type=str, default="distill_basic",
                             help="mode: train | distill_basic | distill_adapt | forgetting ")
         parser.add_argument("--distill_lr", type=float, default=0.02,
                             help="learning rate to perform GD with distilled images PER STEP (default: 0.02)")
-        parser.add_argument("--model_dir", type=str, default="./models/",
-                            help="directory storing trained models")
-        parser.add_argument("--train_nets_type", type=str, default="known_init",
-                            help="[ unknown_init | known_init | loaded ]")  # add things like P(reset) = 0.7?
+        parser.add_argument("--base_dir", type=str, default=None,
+                            help="base_dir of run")
         parser.add_argument("--distilled_images_per_class_per_step", type=pos_int, default=1,
                             help="use #batch_size distilled images for each class in each step")
-        parser.add_argument("--distill_steps", type=pos_int, default=10,
-                            help="Iterative distillation, use #num_steps * #batch_size * #classes distilled images. "
+        parser.add_argument("--distill_steps", type=pos_int, default=1, help="Iterative distillation, use #num_steps * #batch_size * #classes distilled images."
                                  "See also --distill_epochs. The total number "
                                  "of steps is distill_steps * distill_epochs.")
         parser.add_argument("--distill_epochs", type=pos_int, default=3,
                             help="how many times to repeat all steps 1, 2, 3, 1, 2, 3, ...")
-        parser.add_argument("--n_nets", type=int, default=1,
-                            help="# random nets")
-        parser.add_argument("--sample_n_nets", type=pos_int, default=None,
-                            help="sample # nets for each iteration. Default: equal to n_nets")
         parser.add_argument("--device_id", type=comp(int, "ge", -1), default=0, help="device id, -1 is cpu")
-        parser.add_argument("--image_dpi", type=pos_int, default=80,
-                            help="dpi for visual image generation")
         parser.add_argument("--phase", type=str, default="train",
                             help="[train | test]")
-        parser.add_argument("--test_distill_epochs", nargs="?", type=pos_int, default=None,
-                            help="IN TEST, how many times to repeat all steps 1, 2, 3, 1, 2, 3, ..."
-                                 "Defaults to distill_epochs.")
-        parser.add_argument("--test_n_runs", type=pos_int, default=1,
-                            help="do num test (no training), each test generates new distilled image, label, and lr")
-        parser.add_argument("--test_n_nets", type=pos_int, default=1,
-                            help="# reset model in test to get average performance, useful with unknown init")
-        parser.add_argument("--test_distilled_images", default="loaded", type=str,
-                            help="which distilled images to test [ loaded | random_train | kmeans_train ]")
-        parser.add_argument("--test_distilled_lrs", default="loaded", nargs="+", type=str,
-                            help="which distilled lrs to test [ loaded | fix [lr] | nearest_neighbor [k] [p] ]")
         parser.add_argument("--num_workers", type=nonneg_int, default=8,
                             help="number of data loader workers")
         parser.add_argument("--log_level", type=str, default="INFO",
                             help="logging level, e.g., DEBUG, INFO, WARNING, ERROR, CRITICAL")
+        parser.add_argument("--expand_cls", action="store_false",
+                            help="Expand the classifier when distill_basic and _adapt already finished to finetune a model on both datasets (dataset and source_dataset)")
 
     def get_state(self):
         if hasattr(self, "state"):
@@ -268,32 +223,22 @@ class BaseOptions(object):
 
         logging.getLogger().setLevel(logging.DEBUG)
         self.opt, unknowns = self.parser.parse_known_args(namespace=State.UniqueNamespace())
-        assert len(unknowns) == 0, "Unexpected args: {}".format(unknowns)
+        assert len(unknowns) == 0, f"Unexpected args: {unknowns}"
         self.state = State(self.opt)
         return self.set_state(self.state)
 
     def set_state(self, state):
-        if state.opt.sample_n_nets is None:
-            state.opt.sample_n_nets = state.opt.n_nets
-
         base_dir = state.get_base_directory()
         save_dir = state.get_save_directory()
 
         state.opt.start_time = time.strftime(r"%Y-%m-%d %H:%M:%S")
 
-        # Usually only rank 0 can write to file (except logging, training many
-        # nets, etc.) so let"s set that flag before everything
-        state.world_rank = 0
-        state.set_output_flag(True)
-
         utils.mkdir(save_dir)
 
-        state.opt.log_file = None
+        state.opt.log_file = os.path.join(state.get_save_directory(), "log.txt")
 
         state.opt.log_level = state.opt.log_level.upper()
-        logging_prefix = ""
-        utils.logging.configure(state.opt.log_file, getattr(logging, state.opt.log_level),
-                                prefix=logging_prefix)
+        utils.logging.configure(state.opt.log_file, getattr(logging, state.opt.log_level))
 
         logging.info("=" * 40 + " " + state.opt.start_time + " " + "=" * 40)
         logging.info("Base directory is {}".format(base_dir))
@@ -308,26 +253,25 @@ class BaseOptions(object):
         yaml_str = yaml.dump(state.merge(public_only=True), default_flow_style=False, indent=4)
         logging.info("Options:\n\t" + yaml_str.replace("\n", "\n\t"))
 
-        if state.get_output_flag():
-            yaml_name = os.path.join(save_dir, "opt.yaml")
-            if os.path.isfile(yaml_name):
-                old_opt_dir = os.path.join(save_dir, "old_opts")
-                utils.mkdir(old_opt_dir)
-                with open(yaml_name, "r") as f:
-                    # ignore unknown ctors
-                    yaml.add_multi_constructor("", lambda loader, suffix, node: None)
-                    old_yaml = yaml.full_load(f)  # this is a dict
-                old_yaml_time = old_yaml.get("start_time", "unknown_time")
-                for c in ":-":
-                    old_yaml_time = old_yaml_time.replace(c, "_")
-                old_yaml_time = old_yaml_time.replace(" ", "__")
-                old_opt_new_name = os.path.join(old_opt_dir, "opt_{}.yaml".format(old_yaml_time))
-                try:
-                    os.rename(yaml_name, old_opt_new_name)
-                    logging.warning(f"{yaml_name} already exists, moved to {old_opt_new_name}")
-                except FileNotFoundError:
-                    logging.warning(f"{yaml_name} already exists, tried to move to {old_opt_new_name}, but failed, possibly due to other process having already done it")
-                    pass
+        yaml_name = os.path.join(save_dir, "opt.yaml")
+        if os.path.isfile(yaml_name):
+            old_opt_dir = os.path.join(save_dir, "old_opts")
+            utils.mkdir(old_opt_dir)
+            with open(yaml_name, "r") as f:
+                # ignore unknown ctors
+                yaml.add_multi_constructor("", lambda loader, suffix, node: None)
+                old_yaml = yaml.full_load(f)  # this is a dict
+            old_yaml_time = old_yaml.get("start_time", "unknown_time")
+            for c in ":-":
+                old_yaml_time = old_yaml_time.replace(c, "_")
+            old_yaml_time = old_yaml_time.replace(" ", "__")
+            old_opt_new_name = os.path.join(old_opt_dir, "opt_{}.yaml".format(old_yaml_time))
+            try:
+                os.rename(yaml_name, old_opt_new_name)
+                logging.warning(f"{yaml_name} already exists, moved to {old_opt_new_name}")
+            except FileNotFoundError:
+                logging.warning(f"{yaml_name} already exists, tried to move to {old_opt_new_name}, but failed, possibly due to other process having already done it")
+                pass
 
             with open(yaml_name, "w") as f:
                 f.write(yaml_str)
@@ -340,7 +284,7 @@ class BaseOptions(object):
             state.opt.device = torch.device("cpu")
         else:
             torch.cuda.set_device(state.device_id)
-            state.opt.device = torch.device("cuda:{}".format(state.device_id))
+            state.opt.device = torch.device(f"cuda:{state.device_id}")
 
         if state.device.type == "cuda" and torch.backends.cudnn.enabled:
             torch.backends.cudnn.benchmark = True
@@ -351,11 +295,7 @@ class BaseOptions(object):
         opt_dict.pop("device_id")  # don"t compare this
 
         train_dataset = datasets.get_dataset("train", state.dataset)
-        test_dataset = datasets.get_dataset("test", state.dataset)
-
-        if state.mode == "distill_adapt":
-            train_dataset.targets += 10
-            test_dataset.targets += 10
+        test_dataset = datasets.get_dataset("test", state.dataset)         
 
         state.opt.train_loader = torch.utils.data.DataLoader(
             train_dataset, batch_size=state.batch_size,

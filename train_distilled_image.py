@@ -31,13 +31,7 @@ class Trainer(object):
 
         # labels
         self.labels = []
-        distill_label = None
-        if self.state.mode == "distill_adapt":
-            distill_label = torch\
-            .arange(state.num_classes, state.num_classes*2, dtype=torch.long, device=state.device)\
-            .repeat(state.distilled_images_per_class_per_step, 1)
-        else:
-            distill_label = torch\
+        distill_label = torch\
                 .arange(state.num_classes, dtype=torch.long, device=state.device)\
                 .repeat(state.distilled_images_per_class_per_step, 1)
         distill_label = distill_label.t().reshape(-1)
@@ -54,7 +48,6 @@ class Trainer(object):
             self.params.append(distill_data)
 
         # lr
-
         # undo the softplus + threshold
         raw_init_distill_lr = torch.tensor(state.distill_lr, device=state.device)
         raw_init_distill_lr = raw_init_distill_lr.repeat(self.T, 1)
@@ -66,6 +59,7 @@ class Trainer(object):
         self.optimizer = optim.Adam(self.params, lr=state.lr, betas=(0.5, 0.999))
         self.scheduler = optim.lr_scheduler.StepLR(self.optimizer, step_size=state.decay_epochs,
                                                    gamma=state.decay_factor)
+        # set all grads to zero
         for p in self.params:
             p.grad = torch.zeros_like(p)
 
@@ -82,7 +76,7 @@ class Trainer(object):
     def forward(self, model, rdata, rlabel, steps):
         # forward
         model.train()
-        w = model.get_param()
+        w = model.get_param() # Why clone false?
         params = [w]
         gws = []
 
@@ -226,8 +220,6 @@ class Trainer(object):
 
             # activate everything needed to run on this process
             grad_infos = []
-            if state.train_nets_type == 'unknown_init':
-                tmodels.reset(state)
 
             l, saved = self.forward(tmodels, rdata, rlabel, steps)
             losses.append(l.detach())
