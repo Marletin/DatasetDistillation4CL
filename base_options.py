@@ -172,8 +172,8 @@ class BaseOptions(object):
                             help="input batch size for testing (default: 1024)")
         parser.add_argument("--epochs", type=pos_int, default=150, metavar="N",
                             help="number of total epochs to train (default: 150)")
-        parser.add_argument("--decay_epochs", type=pos_int, default=40, metavar="N",
-                            help="period of weight decay (default: 40)")
+        parser.add_argument("--decay_epochs", type=pos_int, default=50, metavar="N",
+                            help="period of weight decay (default: 50)")
         parser.add_argument("--decay_factor", type=pos_float, default=0.1, metavar="N",
                             help="weight decay multiplicative factor (default: 0.1)")
         parser.add_argument("--lr", type=pos_float, default=0.01, metavar="LR",
@@ -192,7 +192,7 @@ class BaseOptions(object):
                             help="dataset: MNIST | MNIST_RGB | FASHION_MNIST | SVHN")
         parser.add_argument("--source_dataset", type=str, default=None,
                             help="dataset: MNIST | MNIST_RGB | FASHION_MNIST | SVHN")
-        parser.add_argument("--forget_dataset", type=str, default=None,
+        parser.add_argument("--forgetting_dataset", type=str, default=None,
                             help="dataset: MNIST | MNIST_RGB | FASHION_MNIST | SVHN")
         parser.add_argument("--mode", type=str, default="distill_basic",
                             help="mode: train | distill_basic | distill_adapt | forgetting ")
@@ -202,7 +202,7 @@ class BaseOptions(object):
                             help="base_dir of run")
         parser.add_argument("--distilled_images_per_class_per_step", type=pos_int, default=1,
                             help="use #batch_size distilled images for each class in each step")
-        parser.add_argument("--distill_steps", type=pos_int, default=1, help="Iterative distillation, use #num_steps * #batch_size * #classes distilled images."
+        parser.add_argument("--distill_steps", type=pos_int, default=10, help="Iterative distillation, use #num_steps * #batch_size * #classes distilled images."
                                  "See also --distill_epochs. The total number "
                                  "of steps is distill_steps * distill_epochs.")
         parser.add_argument("--distill_epochs", type=pos_int, default=3,
@@ -214,7 +214,7 @@ class BaseOptions(object):
                             help="number of data loader workers")
         parser.add_argument("--log_level", type=str, default="INFO",
                             help="logging level, e.g., DEBUG, INFO, WARNING, ERROR, CRITICAL")
-        parser.add_argument("--expand_cls", action="store_false",
+        parser.add_argument("--expand_cls", action="store_true",
                             help="Expand the classifier when distill_basic and _adapt already finished to finetune a model on both datasets (dataset and source_dataset)")
 
     def get_state(self):
@@ -305,9 +305,9 @@ class BaseOptions(object):
             test_dataset, batch_size=state.test_batch_size,
             num_workers=state.num_workers, pin_memory=True, shuffle=True)
 
-        if state.forget_dataset != None:
-            f_train_dataset = datasets.get_dataset("train", state.forget_dataset)
-            f_test_dataset = datasets.get_dataset("test", state.forget_dataset)
+        if state.forgetting_dataset != None:
+            f_train_dataset = datasets.get_dataset("train", state.forgetting_dataset)
+            f_test_dataset = datasets.get_dataset("test", state.forgetting_dataset)
             state.opt.f_train_loader = torch.utils.data.DataLoader(
                 f_train_dataset, batch_size=state.batch_size,
                 num_workers=state.num_workers, pin_memory=True, shuffle=True

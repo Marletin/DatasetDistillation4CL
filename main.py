@@ -10,6 +10,7 @@ import torch.nn.functional as F
 import torch.nn as nn
 import torch.optim as optim
 from torch.nn import init
+from torch.utils.data import Dataset
 
 from networks.networks import LeNet
 from train_distilled_image import distill
@@ -21,9 +22,16 @@ import datasets
 
 
 
-def permute_list(list):
-    indices = np.random.permutation(len(list))
-    return [list[i] for i in indices]
+class TensorDataset(Dataset):
+    def __init__(self, images, labels):
+        self.images = images.detach().float()
+        self.labels = labels.detach()
+
+    def __getitem__(self, index):
+        return self.images[index], self.labels[index]
+
+    def __len__(self):
+        return self.images.shape[0]
 
 def expand_model(state, steps, dataset=None):
     """
@@ -66,16 +74,13 @@ def expand_model(state, steps, dataset=None):
         num_workers=state.num_workers, pin_memory=True, shuffle=True
         )
 
-    result_steps = []
+    steps[1] = torch.add(steps[1], 10)
 
-    for (data, label, lr) in steps:
-        result_steps.append((data, torch.add(label, 10), lr))
-        
-    return result_steps
+    return steps
 
 
 
-def train_mode(state, train_loader=None, test_loader=None):
+def train_mode(state, train_loader=None, test_loader=None, source_test_loader=None, lrs=None):
     """
     Function to train a (LeNet-)model
 
@@ -94,7 +99,15 @@ def train_mode(state, train_loader=None, test_loader=None):
     if test_loader == None:
         test_loader = state.test_loader
 
-    optimizer = optim.Adam(state.models.parameters(), lr=state.lr, betas=(0.5, 0.999))
+    
+    lr = state.lr
+    if lrs != None:
+        lr = lrs[0]
+
+    optimizer = optim.SGD(state.models.parameters(), lr=lr)
+    """if state.expand_cls:
+        lr = (lrs[0] + lrs[1]) / 2
+        optimizer = optim.Adam(state.models.parameters(), lr=lr, betas=(0.5, 0.999))"""
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=state.decay_epochs, gamma=state.decay_factor)
 
     def epoch_fn():
@@ -115,9 +128,49 @@ def train_mode(state, train_loader=None, test_loader=None):
         acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(test_loader))
         logging.info(f"Epoch: {epoch:>4}\tTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}")
         scheduler.step()
+
+    def epoch_fn_expanded():
+        """
+        Subfunction of training in expanded mode, gets called every epoch to train the model and evaluate it
+        """
+        
+        state.models.train()
+        train_iter = iter(train_loader)
+        N = len(train_iter)
+
+        for data, target in train_iter:
+
+            # Set lr for the second half of epoch
+            if N // 2 == len(train_iter):
+                for g in optim.param_groups:
+                    g['lr'] = lr[1]
+
+
+            data, target = data.to(state.device, non_blocking=True), target.to(state.device, non_blocking=True)
+            optimizer.zero_grad()
+            output = state.models(data)
+            loss = F.cross_entropy(output, target)
+            loss.backward()
+            optimizer.step()
+
+            # Reset lr for the first half of next epoch
+            if len(train_iter) == 0:
+                for g in optim.param_groups:
+                    g['lr'] = lr[0]
+
+        acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(test_loader))
+        acc_source, loss_source = evaluate_model(state, state.models, test_loader_iter=iter(source_test_loader))
+        logging.info(
+            f"Epoch: {epoch:>4}\tTest Accuracy {state.dataset}: {acc:.2%}\tTest Loss {state.dataset}: {loss:.4f}\n"\
+            + f"Epoch: {epoch:>4}\tTest Accuracy {state.source_dataset}: {acc_source:.2%}\tTest Loss {state.source_dataset}: {loss_source:.4f}"
+            )
     
     for epoch in range(state.epochs):
-        epoch_fn()
+        if state.expand_cls:
+            assert source_test_loader != None, "Please set a source test loader in exxpanded mode"
+            epoch_fn_expanded()
+        else:
+            epoch_fn()
 
 
 def main(state):
@@ -142,55 +195,6 @@ def main(state):
     if state.mode != "train" or state.phase != "train":
         state.models.load_state_dict(torch.load(model_path, map_location=state.device))
 
-    if state.phase == "test":
-        
-        unique_data_label = loaded_steps = []
-
-        def get_data_label():
-            return unique_data_label
-
-        def get_lrs():
-            return tuple(s[-1] for s in loaded_steps)
-
-        class StepCollection(object):
-            def __init__(self, state):
-                self.state = state
-                self.steps = []
-                for (data, label), lr in zip(get_data_label(), get_lrs()):
-                    self.steps.append((data, label, lr))
-
-            def get_steps(self):
-                return self.steps
-    
-        class TestRunner(object):
-            def __init__(self, state):
-                self.state = state
-                self.stepss = StepCollection(state)
-
-            def run(self, message):
-                steps = self.stepss.get_steps()
-                res = []
-                with self.__seed(self.state.seed):
-                    res = evaluate_steps(
-                        self.state, steps,
-                        f"Final Test phase: ",
-                        message
-                        )
-                return res
-
-            @contextmanager
-            def __seed(self, seed):
-                cpu_rng = torch.get_rng_state()
-                cuda_rng = torch.cuda.get_rng_state(self.state.device)
-                torch.random.default_generator.manual_seed(seed)
-                torch.cuda.manual_seed(seed)
-                yield
-                torch.set_rng_state(cpu_rng)
-                torch.cuda.set_rng_state(cuda_rng, self.state.device)
-
-            def num_steps(self):
-                return self.state.distill_steps * self.distill_epochs
-
     # Train mode: Train a (LeNet-)model for a given dataset and saving it or testing it
     if state.mode == "train":
 
@@ -214,7 +218,7 @@ def main(state):
         def evaluate_forgetting(log_info: str) -> None:
 
             acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(state.f_test_loader))
-            logging.info(f"\n{log_info} for {state.forget_dataset}:\nTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}\n")
+            logging.info(f"\n{log_info} for {state.forgetting_dataset}:\nTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}\n")
 
             acc_old, loss_old = evaluate_model(state, state.models, test_loader_iter=iter(state.test_loader))
             logging.info(f"\n{log_info} for {state.dataset}:\nTest Accuracy: {acc_old:.2%}\tTest Loss: {loss_old:.4f}\n")
@@ -233,13 +237,17 @@ def main(state):
 
         elif state.phase == "test":
 
-            loaded_steps = load_results(state, device=state.device)
-            unique_data_label = [s[:-1] for s in loaded_steps]
+            loaded_steps = list(load_results(state, device=state.device)[-1])
+            my_dataset = TensorDataset(loaded_steps[0], loaded_steps[1])
+            state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=len(my_dataset), num_workers=0)
 
-            # run tests
-            test_runner = TestRunner(state)
-            res = test_runner.run(f"Final evaluation for {state.dataset}")
-            save_test_results(state, res)
+            acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(state.test_loader))
+            logging.info(f"Results for {state.dataset} BEFORE training with synthetic data:\nTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}\n")
+
+            train_mode(state, state.train_loader, state.test_loader, lrs=loaded_steps[2])
+
+            acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(state.test_loader))
+            logging.info(f"Results for {state.dataset} AFTER training with synthetic data:\nTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}\n")
 
         else:
             raise ValueError(f"phase: {state.phase}")
@@ -255,17 +263,25 @@ def main(state):
 
         elif state.phase == "test":
 
-            loaded_steps = load_results(state, device=state.device)
-            if state.expand_cls:
-                loaded_steps = expand_model(state, loaded_steps, state.dataset)
-                add_loaded_steps = load_results(state, mode="distill_basic", dataset=state.source_dataset, device=state.device)
-                loaded_steps =  add_loaded_steps + loaded_steps
-            unique_data_label = [s[:-1] for s in loaded_steps]
+            loaded_steps = list(load_results(state, device=state.device)[-1])
 
-            # run tests
-            test_runner = TestRunner(state)
-            res = test_runner.run(f"Final evaluation for {state.dataset} and {state.source_dataset}")
-            save_test_results(state, res)
+            if state.expand_cls:
+                new_steps = expand_model(state, loaded_steps, state.dataset)
+                add_loaded_steps = list(load_results(state, mode="distill_basic", dataset=state.source_dataset, device=state.device)[-1])
+                loaded_steps[0] = torch.cat((new_steps[0], add_loaded_steps[0]),0)
+                loaded_steps[1] = torch.cat((new_steps[1], add_loaded_steps[1]),0)
+                loaded_steps[2] = torch.cat((new_steps[2], add_loaded_steps[2]),0)
+
+            my_dataset = TensorDataset(loaded_steps[0], loaded_steps[1])
+            state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=len(my_dataset), num_workers=0)
+
+            train_mode(state, state.train_loader, state.test_loader, state.source_test_loader, loaded_steps[2])
+
+            acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(state.test_loader))
+            logging.info(f"Results for {state.dataset}:\nTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}\n")
+
+            acc_old, loss_old = evaluate_model(state, state.models, test_loader_iter=iter(state.source_test_loader))
+            logging.info(f"\nResults for {state.source_dataset}:\nTest Accuracy: {acc_old:.2%}\tTest Loss: {loss_old:.4f}\n")
 
         else:
             raise ValueError(f"phase: {state.phase}")
