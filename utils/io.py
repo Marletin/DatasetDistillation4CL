@@ -84,7 +84,7 @@ def vis_results(state, steps, *args, **kwargs):
     _, _, nc, input_size, _, (mean, std), label_names = datasets.get_info(state.dataset)
     dataset_vis_info = (state.dataset, nc, input_size, np.array(mean), np.array(std), label_names)
 
-    vis_args = (steps, state.distilled_images_per_class_per_step, dataset_vis_info, "LeNet", 80) + args
+    vis_args = (steps, state.ipc, dataset_vis_info, "LeNet", 80) + args
 
     _vis_results_fn(*vis_args, **kwargs)
 

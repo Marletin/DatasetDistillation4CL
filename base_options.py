@@ -200,7 +200,7 @@ class BaseOptions(object):
                             help="learning rate to perform GD with distilled images PER STEP (default: 0.02)")
         parser.add_argument("--base_dir", type=str, default=None,
                             help="base_dir of run")
-        parser.add_argument("--distilled_images_per_class_per_step", type=pos_int, default=1,
+        parser.add_argument("--ipc", type=pos_int, default=1,
                             help="use #batch_size distilled images for each class in each step")
         parser.add_argument("--distill_steps", type=pos_int, default=10, help="Iterative distillation, use #num_steps * #batch_size * #classes distilled images."
                                  "See also --distill_epochs. The total number "

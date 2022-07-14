@@ -21,7 +21,7 @@ class Trainer(object):
         self.models = models
         self.num_data_steps = state.distill_steps  # how much data we have
         self.T = state.distill_steps * state.distill_epochs  # how many sc steps we run
-        self.num_per_step = state.num_classes * state.distilled_images_per_class_per_step
+        self.num_per_step = state.num_classes * state.ipc
         assert state.distill_lr >= 0, 'distill_lr must >= 0'
         self.init_data_optim()
 
@@ -33,7 +33,7 @@ class Trainer(object):
         self.labels = []
         distill_label = torch\
                 .arange(state.num_classes, dtype=torch.long, device=state.device)\
-                .repeat(state.distilled_images_per_class_per_step, 1)
+                .repeat(state.ipc, 1)
         distill_label = distill_label.t().reshape(-1)
         for _ in range(self.num_data_steps):
             self.labels.append(distill_label)

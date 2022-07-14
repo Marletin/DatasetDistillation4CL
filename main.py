@@ -88,6 +88,9 @@ def train_mode(state, train_loader=None, test_loader=None, source_test_loader=No
     train_loader: Dataloader for training, if None state.train_loader
     test_loader: Dataloader for testing, if None state.test_loader
 
+    source_test_loader: Needed for evaluation in expand mode
+    lrs: tensor/list of lrs
+
     return: changes model in state.models
     """
 
@@ -162,12 +165,12 @@ def train_mode(state, train_loader=None, test_loader=None, source_test_loader=No
         acc_source, loss_source = evaluate_model(state, state.models, test_loader_iter=iter(source_test_loader))
         logging.info(
             f"Epoch: {epoch:>4}\tTest Accuracy {state.dataset}: {acc:.2%}\tTest Loss {state.dataset}: {loss:.4f}\n"\
-            + f"Epoch: {epoch:>4}\tTest Accuracy {state.source_dataset}: {acc_source:.2%}\tTest Loss {state.source_dataset}: {loss_source:.4f}"
+            + f"{' ':>11}\tTest Accuracy {state.source_dataset}: {acc_source:.2%}\tTest Loss {state.source_dataset}: {loss_source:.4f}"
             )
     
     for epoch in range(state.epochs):
         if state.expand_cls:
-            assert source_test_loader != None, "Please set a source test loader in exxpanded mode"
+            assert source_test_loader != None, "Please set a source test loader in expanded mode"
             epoch_fn_expanded()
         else:
             epoch_fn()
@@ -224,9 +227,9 @@ def main(state):
             logging.info(f"\n{log_info} for {state.dataset}:\nTest Accuracy: {acc_old:.2%}\tTest Loss: {loss_old:.4f}\n")
 
 
-        evaluate_forgetting("Evaluation before forgetting")
+        evaluate_forgetting("Evaluation BEFORE forgetting")
         train_mode(state, state.f_train_loader, state.f_test_loader)
-        evaluate_forgetting("Evaluation after forgetting")
+        evaluate_forgetting("Evaluation AFTER forgetting")
 
     elif state.mode == "distill_basic":      
 
@@ -273,15 +276,21 @@ def main(state):
                 loaded_steps[2] = torch.cat((new_steps[2], add_loaded_steps[2]),0)
 
             my_dataset = TensorDataset(loaded_steps[0], loaded_steps[1])
+            logging.info(f"Custom dataset length: {len(my_dataset)}")
             state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=len(my_dataset), num_workers=0)
 
+            def evaluate_adapt(log_info: str) -> None:
+
+                acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(state.test_loader))
+                logging.info(f"\n{log_info} for {state.dataset}:\nTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}\n")
+
+                acc_old, loss_old = evaluate_model(state, state.models, test_loader_iter=iter(state.source_test_loader))
+                logging.info(f"\n{log_info} for {state.source_dataset}:\nTest Accuracy: {acc_old:.2%}\tTest Loss: {loss_old:.4f}\n")
+
+
+            evaluate_adapt("Evaluation BEFORE adapting")
             train_mode(state, state.train_loader, state.test_loader, state.source_test_loader, loaded_steps[2])
-
-            acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(state.test_loader))
-            logging.info(f"Results for {state.dataset}:\nTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}\n")
-
-            acc_old, loss_old = evaluate_model(state, state.models, test_loader_iter=iter(state.source_test_loader))
-            logging.info(f"\nResults for {state.source_dataset}:\nTest Accuracy: {acc_old:.2%}\tTest Loss: {loss_old:.4f}\n")
+            evaluate_adapt("Evaluation AFTER adapting")
 
         else:
             raise ValueError(f"phase: {state.phase}")

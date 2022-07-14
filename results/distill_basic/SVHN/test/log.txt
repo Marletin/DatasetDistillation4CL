@@ -1,0 +1,770 @@
+2022-07-14 09:16:17 [INFO ]  ======================================== 2022-07-14 09:16:17 ========================================
+2022-07-14 09:16:17 [INFO ]  Base directory is ./results/distill_basic/SVHN/
+2022-07-14 09:16:17 [INFO ]  Options: 
+2022-07-14 09:16:17 [INFO ]  	base_dir: null
+2022-07-14 09:16:17 [INFO ]  	base_seed: 1
+2022-07-14 09:16:17 [INFO ]  	batch_size: 1024
+2022-07-14 09:16:17 [INFO ]  	checkpoint_interval: 10
+2022-07-14 09:16:17 [INFO ]  	dataset: SVHN
+2022-07-14 09:16:17 [INFO ]  	dataset_labels:
+2022-07-14 09:16:17 [INFO ]  	- 0
+2022-07-14 09:16:17 [INFO ]  	- 1
+2022-07-14 09:16:17 [INFO ]  	- 2
+2022-07-14 09:16:17 [INFO ]  	- 3
+2022-07-14 09:16:17 [INFO ]  	- 4
+2022-07-14 09:16:17 [INFO ]  	- 5
+2022-07-14 09:16:17 [INFO ]  	- 6
+2022-07-14 09:16:17 [INFO ]  	- 7
+2022-07-14 09:16:17 [INFO ]  	- 8
+2022-07-14 09:16:17 [INFO ]  	- 9
+2022-07-14 09:16:17 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 09:16:17 [INFO ]  	- !!python/tuple
+2022-07-14 09:16:17 [INFO ]  	    - 0.4379104971885681
+2022-07-14 09:16:17 [INFO ]  	    - 0.44398033618927
+2022-07-14 09:16:17 [INFO ]  	    - 0.4729299545288086
+2022-07-14 09:16:17 [INFO ]  	- !!python/tuple
+2022-07-14 09:16:17 [INFO ]  	    - 0.19803012907505035
+2022-07-14 09:16:17 [INFO ]  	    - 0.2010156363248825
+2022-07-14 09:16:17 [INFO ]  	    - 0.19703614711761475
+2022-07-14 09:16:17 [INFO ]  	dataset_root: ./data/svhn
+2022-07-14 09:16:17 [INFO ]  	decay_epochs: 20
+2022-07-14 09:16:17 [INFO ]  	decay_factor: 0.1
+2022-07-14 09:16:17 [INFO ]  	device_id: 0
+2022-07-14 09:16:17 [INFO ]  	distill_epochs: 3
+2022-07-14 09:16:17 [INFO ]  	distill_lr: 0.02
+2022-07-14 09:16:17 [INFO ]  	distill_steps: 10
+2022-07-14 09:16:17 [INFO ]  	distilled_images_per_class_per_step: 1
+2022-07-14 09:16:17 [INFO ]  	epochs: 65
+2022-07-14 09:16:17 [INFO ]  	expand_cls: false
+2022-07-14 09:16:17 [INFO ]  	forgetting_dataset: null
+2022-07-14 09:16:17 [INFO ]  	init: xavier
+2022-07-14 09:16:17 [INFO ]  	init_param: 1.0
+2022-07-14 09:16:17 [INFO ]  	input_size: 32
+2022-07-14 09:16:17 [INFO ]  	log_file: ./results/distill_basic/SVHN/test/log.txt
+2022-07-14 09:16:17 [INFO ]  	log_interval: 100
+2022-07-14 09:16:17 [INFO ]  	log_level: INFO
+2022-07-14 09:16:17 [INFO ]  	lr: 0.01
+2022-07-14 09:16:17 [INFO ]  	mode: distill_basic
+2022-07-14 09:16:17 [INFO ]  	nc: 3
+2022-07-14 09:16:17 [INFO ]  	num_classes: 10
+2022-07-14 09:16:17 [INFO ]  	num_workers: 8
+2022-07-14 09:16:17 [INFO ]  	phase: test
+2022-07-14 09:16:17 [INFO ]  	source_dataset: null
+2022-07-14 09:16:17 [INFO ]  	start_time: '2022-07-14 09:16:17'
+2022-07-14 09:16:17 [INFO ]  	test_batch_size: 1024
+2022-07-14 09:16:17 [INFO ]  	
+2022-07-14 09:16:23 [INFO ]  ======================================== 2022-07-14 09:16:23 ========================================
+2022-07-14 09:16:23 [INFO ]  Base directory is ./results/distill_basic/SVHN/
+2022-07-14 09:16:23 [INFO ]  Options: 
+2022-07-14 09:16:23 [INFO ]  	base_dir: null
+2022-07-14 09:16:23 [INFO ]  	base_seed: 1
+2022-07-14 09:16:23 [INFO ]  	batch_size: 1024
+2022-07-14 09:16:23 [INFO ]  	checkpoint_interval: 10
+2022-07-14 09:16:23 [INFO ]  	dataset: SVHN
+2022-07-14 09:16:23 [INFO ]  	dataset_labels:
+2022-07-14 09:16:23 [INFO ]  	- 0
+2022-07-14 09:16:23 [INFO ]  	- 1
+2022-07-14 09:16:23 [INFO ]  	- 2
+2022-07-14 09:16:23 [INFO ]  	- 3
+2022-07-14 09:16:23 [INFO ]  	- 4
+2022-07-14 09:16:23 [INFO ]  	- 5
+2022-07-14 09:16:23 [INFO ]  	- 6
+2022-07-14 09:16:23 [INFO ]  	- 7
+2022-07-14 09:16:23 [INFO ]  	- 8
+2022-07-14 09:16:23 [INFO ]  	- 9
+2022-07-14 09:16:23 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 09:16:23 [INFO ]  	- !!python/tuple
+2022-07-14 09:16:23 [INFO ]  	    - 0.4379104971885681
+2022-07-14 09:16:23 [INFO ]  	    - 0.44398033618927
+2022-07-14 09:16:23 [INFO ]  	    - 0.4729299545288086
+2022-07-14 09:16:23 [INFO ]  	- !!python/tuple
+2022-07-14 09:16:23 [INFO ]  	    - 0.19803012907505035
+2022-07-14 09:16:23 [INFO ]  	    - 0.2010156363248825
+2022-07-14 09:16:23 [INFO ]  	    - 0.19703614711761475
+2022-07-14 09:16:23 [INFO ]  	dataset_root: ./data/svhn
+2022-07-14 09:16:23 [INFO ]  	decay_epochs: 20
+2022-07-14 09:16:23 [INFO ]  	decay_factor: 0.1
+2022-07-14 09:16:23 [INFO ]  	device_id: 0
+2022-07-14 09:16:23 [INFO ]  	distill_epochs: 3
+2022-07-14 09:16:23 [INFO ]  	distill_lr: 0.02
+2022-07-14 09:16:23 [INFO ]  	distill_steps: 10
+2022-07-14 09:16:23 [INFO ]  	distilled_images_per_class_per_step: 1
+2022-07-14 09:16:23 [INFO ]  	epochs: 65
+2022-07-14 09:16:23 [INFO ]  	expand_cls: false
+2022-07-14 09:16:23 [INFO ]  	forgetting_dataset: null
+2022-07-14 09:16:23 [INFO ]  	init: xavier
+2022-07-14 09:16:23 [INFO ]  	init_param: 1.0
+2022-07-14 09:16:23 [INFO ]  	input_size: 32
+2022-07-14 09:16:23 [INFO ]  	log_file: ./results/distill_basic/SVHN/test/log.txt
+2022-07-14 09:16:23 [INFO ]  	log_interval: 100
+2022-07-14 09:16:23 [INFO ]  	log_level: INFO
+2022-07-14 09:16:23 [INFO ]  	lr: 0.01
+2022-07-14 09:16:23 [INFO ]  	mode: distill_basic
+2022-07-14 09:16:23 [INFO ]  	nc: 3
+2022-07-14 09:16:23 [INFO ]  	num_classes: 10
+2022-07-14 09:16:23 [INFO ]  	num_workers: 8
+2022-07-14 09:16:23 [INFO ]  	phase: test
+2022-07-14 09:16:23 [INFO ]  	source_dataset: null
+2022-07-14 09:16:23 [INFO ]  	start_time: '2022-07-14 09:16:23'
+2022-07-14 09:16:23 [INFO ]  	test_batch_size: 1024
+2022-07-14 09:16:23 [INFO ]  	
+2022-07-14 09:16:25 [INFO ]  train dataset size:	73257
+2022-07-14 09:16:25 [INFO ]  test dataset size: 	26032
+2022-07-14 09:16:25 [INFO ]  datasets built!
+2022-07-14 09:16:25 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 09:16:27 [INFO ]  Loaded results from ./results/distill_basic/SVHN/results.pth
+2022-07-14 09:16:54 [INFO ]  ======================================== 2022-07-14 09:16:54 ========================================
+2022-07-14 09:16:54 [INFO ]  Base directory is ./results/distill_basic/SVHN/
+2022-07-14 09:16:54 [INFO ]  Options: 
+2022-07-14 09:16:54 [INFO ]  	base_dir: null
+2022-07-14 09:16:54 [INFO ]  	base_seed: 1
+2022-07-14 09:16:54 [INFO ]  	batch_size: 1024
+2022-07-14 09:16:54 [INFO ]  	checkpoint_interval: 10
+2022-07-14 09:16:54 [INFO ]  	dataset: SVHN
+2022-07-14 09:16:54 [INFO ]  	dataset_labels:
+2022-07-14 09:16:54 [INFO ]  	- 0
+2022-07-14 09:16:54 [INFO ]  	- 1
+2022-07-14 09:16:54 [INFO ]  	- 2
+2022-07-14 09:16:54 [INFO ]  	- 3
+2022-07-14 09:16:54 [INFO ]  	- 4
+2022-07-14 09:16:54 [INFO ]  	- 5
+2022-07-14 09:16:54 [INFO ]  	- 6
+2022-07-14 09:16:54 [INFO ]  	- 7
+2022-07-14 09:16:54 [INFO ]  	- 8
+2022-07-14 09:16:54 [INFO ]  	- 9
+2022-07-14 09:16:54 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 09:16:54 [INFO ]  	- !!python/tuple
+2022-07-14 09:16:54 [INFO ]  	    - 0.4379104971885681
+2022-07-14 09:16:54 [INFO ]  	    - 0.44398033618927
+2022-07-14 09:16:54 [INFO ]  	    - 0.4729299545288086
+2022-07-14 09:16:54 [INFO ]  	- !!python/tuple
+2022-07-14 09:16:54 [INFO ]  	    - 0.19803012907505035
+2022-07-14 09:16:54 [INFO ]  	    - 0.2010156363248825
+2022-07-14 09:16:54 [INFO ]  	    - 0.19703614711761475
+2022-07-14 09:16:54 [INFO ]  	dataset_root: ./data/svhn
+2022-07-14 09:16:54 [INFO ]  	decay_epochs: 20
+2022-07-14 09:16:54 [INFO ]  	decay_factor: 0.1
+2022-07-14 09:16:54 [INFO ]  	device_id: 0
+2022-07-14 09:16:54 [INFO ]  	distill_epochs: 3
+2022-07-14 09:16:54 [INFO ]  	distill_lr: 0.02
+2022-07-14 09:16:54 [INFO ]  	distill_steps: 10
+2022-07-14 09:16:54 [INFO ]  	distilled_images_per_class_per_step: 1
+2022-07-14 09:16:54 [INFO ]  	epochs: 65
+2022-07-14 09:16:54 [INFO ]  	expand_cls: false
+2022-07-14 09:16:54 [INFO ]  	forgetting_dataset: null
+2022-07-14 09:16:54 [INFO ]  	init: xavier
+2022-07-14 09:16:54 [INFO ]  	init_param: 1.0
+2022-07-14 09:16:54 [INFO ]  	input_size: 32
+2022-07-14 09:16:54 [INFO ]  	log_file: ./results/distill_basic/SVHN/test/log.txt
+2022-07-14 09:16:54 [INFO ]  	log_interval: 100
+2022-07-14 09:16:54 [INFO ]  	log_level: INFO
+2022-07-14 09:16:54 [INFO ]  	lr: 0.01
+2022-07-14 09:16:54 [INFO ]  	mode: distill_basic
+2022-07-14 09:16:54 [INFO ]  	nc: 3
+2022-07-14 09:16:54 [INFO ]  	num_classes: 10
+2022-07-14 09:16:54 [INFO ]  	num_workers: 8
+2022-07-14 09:16:54 [INFO ]  	phase: test
+2022-07-14 09:16:54 [INFO ]  	source_dataset: null
+2022-07-14 09:16:54 [INFO ]  	start_time: '2022-07-14 09:16:54'
+2022-07-14 09:16:54 [INFO ]  	test_batch_size: 1024
+2022-07-14 09:16:54 [INFO ]  	
+2022-07-14 09:16:56 [INFO ]  train dataset size:	73257
+2022-07-14 09:16:56 [INFO ]  test dataset size: 	26032
+2022-07-14 09:16:56 [INFO ]  datasets built!
+2022-07-14 09:16:56 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 09:16:58 [INFO ]  Loaded results from ./results/distill_basic/SVHN/results.pth
+2022-07-14 09:16:59 [INFO ]  Epoch:    0	Test Accuracy: 22.51%	Test Loss: 35.5802
+2022-07-14 09:16:59 [INFO ]  Epoch:    1	Test Accuracy: 12.14%	Test Loss: 12.5079
+2022-07-14 09:17:00 [INFO ]  Epoch:    2	Test Accuracy: 17.75%	Test Loss: 8.2974
+2022-07-14 09:17:01 [INFO ]  Epoch:    3	Test Accuracy: 24.88%	Test Loss: 3.3227
+2022-07-14 09:17:02 [INFO ]  Epoch:    4	Test Accuracy: 25.99%	Test Loss: 2.3843
+2022-07-14 09:17:03 [INFO ]  Epoch:    5	Test Accuracy: 27.85%	Test Loss: 2.1891
+2022-07-14 09:17:04 [INFO ]  Epoch:    6	Test Accuracy: 29.04%	Test Loss: 2.1916
+2022-07-14 09:17:05 [INFO ]  Epoch:    7	Test Accuracy: 30.68%	Test Loss: 2.2494
+2022-07-14 09:17:06 [INFO ]  Epoch:    8	Test Accuracy: 30.66%	Test Loss: 2.4401
+2022-07-14 09:17:06 [INFO ]  Epoch:    9	Test Accuracy: 30.06%	Test Loss: 2.6946
+2022-07-14 09:17:07 [INFO ]  Epoch:   10	Test Accuracy: 28.94%	Test Loss: 2.9191
+2022-07-14 09:17:08 [INFO ]  Epoch:   11	Test Accuracy: 28.00%	Test Loss: 3.0721
+2022-07-14 09:17:09 [INFO ]  Epoch:   12	Test Accuracy: 27.25%	Test Loss: 3.1639
+2022-07-14 09:17:10 [INFO ]  Epoch:   13	Test Accuracy: 26.92%	Test Loss: 3.2251
+2022-07-14 09:17:11 [INFO ]  Epoch:   14	Test Accuracy: 26.71%	Test Loss: 3.2669
+2022-07-14 09:17:12 [INFO ]  Epoch:   15	Test Accuracy: 26.73%	Test Loss: 3.2919
+2022-07-14 09:17:13 [INFO ]  Epoch:   16	Test Accuracy: 26.76%	Test Loss: 3.3182
+2022-07-14 09:17:14 [INFO ]  Epoch:   17	Test Accuracy: 26.67%	Test Loss: 3.3392
+2022-07-14 09:17:14 [INFO ]  Epoch:   18	Test Accuracy: 26.56%	Test Loss: 3.3572
+2022-07-14 09:17:15 [INFO ]  Epoch:   19	Test Accuracy: 26.51%	Test Loss: 3.3721
+2022-07-14 09:17:16 [INFO ]  Epoch:   20	Test Accuracy: 26.49%	Test Loss: 3.3732
+2022-07-14 09:17:17 [INFO ]  Epoch:   21	Test Accuracy: 26.48%	Test Loss: 3.3745
+2022-07-14 09:17:18 [INFO ]  Epoch:   22	Test Accuracy: 26.48%	Test Loss: 3.3756
+2022-07-14 09:17:19 [INFO ]  Epoch:   23	Test Accuracy: 26.47%	Test Loss: 3.3768
+2022-07-14 09:17:20 [INFO ]  Epoch:   24	Test Accuracy: 26.46%	Test Loss: 3.3781
+2022-07-14 09:17:20 [INFO ]  Epoch:   25	Test Accuracy: 26.47%	Test Loss: 3.3799
+2022-07-14 09:17:21 [INFO ]  Epoch:   26	Test Accuracy: 26.46%	Test Loss: 3.3816
+2022-07-14 09:17:22 [INFO ]  Epoch:   27	Test Accuracy: 26.45%	Test Loss: 3.3831
+2022-07-14 09:17:23 [INFO ]  Epoch:   28	Test Accuracy: 26.44%	Test Loss: 3.3847
+2022-07-14 09:17:24 [INFO ]  Epoch:   29	Test Accuracy: 26.44%	Test Loss: 3.3864
+2022-07-14 09:17:25 [INFO ]  Epoch:   30	Test Accuracy: 26.42%	Test Loss: 3.3883
+2022-07-14 09:17:26 [INFO ]  Epoch:   31	Test Accuracy: 26.43%	Test Loss: 3.3898
+2022-07-14 09:17:27 [INFO ]  Epoch:   32	Test Accuracy: 26.42%	Test Loss: 3.3918
+2022-07-14 09:17:28 [INFO ]  Epoch:   33	Test Accuracy: 26.42%	Test Loss: 3.3939
+2022-07-14 09:17:28 [INFO ]  Epoch:   34	Test Accuracy: 26.43%	Test Loss: 3.3955
+2022-07-14 09:17:29 [INFO ]  Epoch:   35	Test Accuracy: 26.42%	Test Loss: 3.3971
+2022-07-14 09:17:30 [INFO ]  Epoch:   36	Test Accuracy: 26.43%	Test Loss: 3.3987
+2022-07-14 09:17:31 [INFO ]  Epoch:   37	Test Accuracy: 26.42%	Test Loss: 3.4008
+2022-07-14 09:17:32 [INFO ]  Epoch:   38	Test Accuracy: 26.40%	Test Loss: 3.4028
+2022-07-14 09:17:33 [INFO ]  Epoch:   39	Test Accuracy: 26.41%	Test Loss: 3.4044
+2022-07-14 09:17:34 [INFO ]  Epoch:   40	Test Accuracy: 26.41%	Test Loss: 3.4045
+2022-07-14 09:17:35 [INFO ]  Epoch:   41	Test Accuracy: 26.42%	Test Loss: 3.4047
+2022-07-14 09:17:35 [INFO ]  Epoch:   42	Test Accuracy: 26.42%	Test Loss: 3.4049
+2022-07-14 09:17:36 [INFO ]  Epoch:   43	Test Accuracy: 26.41%	Test Loss: 3.4051
+2022-07-14 09:17:37 [INFO ]  Epoch:   44	Test Accuracy: 26.41%	Test Loss: 3.4054
+2022-07-14 09:17:38 [INFO ]  Epoch:   45	Test Accuracy: 26.41%	Test Loss: 3.4056
+2022-07-14 09:17:39 [INFO ]  Epoch:   46	Test Accuracy: 26.41%	Test Loss: 3.4059
+2022-07-14 09:17:40 [INFO ]  Epoch:   47	Test Accuracy: 26.41%	Test Loss: 3.4061
+2022-07-14 09:17:41 [INFO ]  Epoch:   48	Test Accuracy: 26.41%	Test Loss: 3.4063
+2022-07-14 09:17:41 [INFO ]  Epoch:   49	Test Accuracy: 26.41%	Test Loss: 3.4065
+2022-07-14 09:17:42 [INFO ]  Epoch:   50	Test Accuracy: 26.41%	Test Loss: 3.4067
+2022-07-14 09:17:43 [INFO ]  Epoch:   51	Test Accuracy: 26.42%	Test Loss: 3.4069
+2022-07-14 09:17:44 [INFO ]  Epoch:   52	Test Accuracy: 26.42%	Test Loss: 3.4071
+2022-07-14 09:17:45 [INFO ]  Epoch:   53	Test Accuracy: 26.42%	Test Loss: 3.4073
+2022-07-14 09:17:46 [INFO ]  Epoch:   54	Test Accuracy: 26.42%	Test Loss: 3.4075
+2022-07-14 09:17:47 [INFO ]  Epoch:   55	Test Accuracy: 26.42%	Test Loss: 3.4077
+2022-07-14 09:17:48 [INFO ]  Epoch:   56	Test Accuracy: 26.42%	Test Loss: 3.4079
+2022-07-14 09:17:49 [INFO ]  Epoch:   57	Test Accuracy: 26.42%	Test Loss: 3.4081
+2022-07-14 09:17:50 [INFO ]  Epoch:   58	Test Accuracy: 26.41%	Test Loss: 3.4084
+2022-07-14 09:17:50 [INFO ]  Epoch:   59	Test Accuracy: 26.41%	Test Loss: 3.4085
+2022-07-14 09:17:51 [INFO ]  Epoch:   60	Test Accuracy: 26.41%	Test Loss: 3.4086
+2022-07-14 09:17:52 [INFO ]  Epoch:   61	Test Accuracy: 26.41%	Test Loss: 3.4086
+2022-07-14 09:17:53 [INFO ]  Epoch:   62	Test Accuracy: 26.41%	Test Loss: 3.4086
+2022-07-14 09:17:54 [INFO ]  Epoch:   63	Test Accuracy: 26.41%	Test Loss: 3.4086
+2022-07-14 09:17:55 [INFO ]  Epoch:   64	Test Accuracy: 26.41%	Test Loss: 3.4086
+2022-07-14 09:19:12 [INFO ]  ======================================== 2022-07-14 09:19:12 ========================================
+2022-07-14 09:19:12 [INFO ]  Base directory is ./results/distill_basic/SVHN/
+2022-07-14 09:19:12 [INFO ]  Options: 
+2022-07-14 09:19:12 [INFO ]  	base_dir: null
+2022-07-14 09:19:12 [INFO ]  	base_seed: 1
+2022-07-14 09:19:12 [INFO ]  	batch_size: 1024
+2022-07-14 09:19:12 [INFO ]  	checkpoint_interval: 10
+2022-07-14 09:19:12 [INFO ]  	dataset: SVHN
+2022-07-14 09:19:12 [INFO ]  	dataset_labels:
+2022-07-14 09:19:12 [INFO ]  	- 0
+2022-07-14 09:19:12 [INFO ]  	- 1
+2022-07-14 09:19:12 [INFO ]  	- 2
+2022-07-14 09:19:12 [INFO ]  	- 3
+2022-07-14 09:19:12 [INFO ]  	- 4
+2022-07-14 09:19:12 [INFO ]  	- 5
+2022-07-14 09:19:12 [INFO ]  	- 6
+2022-07-14 09:19:12 [INFO ]  	- 7
+2022-07-14 09:19:12 [INFO ]  	- 8
+2022-07-14 09:19:12 [INFO ]  	- 9
+2022-07-14 09:19:12 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 09:19:12 [INFO ]  	- !!python/tuple
+2022-07-14 09:19:12 [INFO ]  	    - 0.4379104971885681
+2022-07-14 09:19:12 [INFO ]  	    - 0.44398033618927
+2022-07-14 09:19:12 [INFO ]  	    - 0.4729299545288086
+2022-07-14 09:19:12 [INFO ]  	- !!python/tuple
+2022-07-14 09:19:12 [INFO ]  	    - 0.19803012907505035
+2022-07-14 09:19:12 [INFO ]  	    - 0.2010156363248825
+2022-07-14 09:19:12 [INFO ]  	    - 0.19703614711761475
+2022-07-14 09:19:12 [INFO ]  	dataset_root: ./data/svhn
+2022-07-14 09:19:12 [INFO ]  	decay_epochs: 20
+2022-07-14 09:19:12 [INFO ]  	decay_factor: 0.1
+2022-07-14 09:19:12 [INFO ]  	device_id: 0
+2022-07-14 09:19:12 [INFO ]  	distill_epochs: 3
+2022-07-14 09:19:12 [INFO ]  	distill_lr: 0.02
+2022-07-14 09:19:12 [INFO ]  	distill_steps: 10
+2022-07-14 09:19:12 [INFO ]  	distilled_images_per_class_per_step: 1
+2022-07-14 09:19:12 [INFO ]  	epochs: 65
+2022-07-14 09:19:12 [INFO ]  	expand_cls: false
+2022-07-14 09:19:12 [INFO ]  	forgetting_dataset: null
+2022-07-14 09:19:12 [INFO ]  	init: xavier
+2022-07-14 09:19:12 [INFO ]  	init_param: 1.0
+2022-07-14 09:19:12 [INFO ]  	input_size: 32
+2022-07-14 09:19:12 [INFO ]  	log_file: ./results/distill_basic/SVHN/test/log.txt
+2022-07-14 09:19:12 [INFO ]  	log_interval: 100
+2022-07-14 09:19:12 [INFO ]  	log_level: INFO
+2022-07-14 09:19:12 [INFO ]  	lr: 0.0002
+2022-07-14 09:19:12 [INFO ]  	mode: distill_basic
+2022-07-14 09:19:12 [INFO ]  	nc: 3
+2022-07-14 09:19:12 [INFO ]  	num_classes: 10
+2022-07-14 09:19:12 [INFO ]  	num_workers: 8
+2022-07-14 09:19:12 [INFO ]  	phase: test
+2022-07-14 09:19:12 [INFO ]  	source_dataset: null
+2022-07-14 09:19:12 [INFO ]  	start_time: '2022-07-14 09:19:12'
+2022-07-14 09:19:12 [INFO ]  	test_batch_size: 1024
+2022-07-14 09:19:12 [INFO ]  	
+2022-07-14 09:19:15 [INFO ]  train dataset size:	73257
+2022-07-14 09:19:15 [INFO ]  test dataset size: 	26032
+2022-07-14 09:19:15 [INFO ]  datasets built!
+2022-07-14 09:19:15 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 09:19:16 [INFO ]  Loaded results from ./results/distill_basic/SVHN/results.pth
+2022-07-14 09:19:16 [INFO ]  Model stats before training with synthetic data.
+2022-07-14 09:19:18 [INFO ]  Epoch:    0	Test Accuracy: 22.51%	Test Loss: 35.5802
+2022-07-14 09:19:19 [INFO ]  Epoch:    1	Test Accuracy: 12.14%	Test Loss: 12.5082
+2022-07-14 09:19:19 [INFO ]  Epoch:    2	Test Accuracy: 17.75%	Test Loss: 8.2974
+2022-07-14 09:19:20 [INFO ]  Epoch:    3	Test Accuracy: 24.89%	Test Loss: 3.3228
+2022-07-14 09:19:21 [INFO ]  Epoch:    4	Test Accuracy: 26.00%	Test Loss: 2.3843
+2022-07-14 09:19:22 [INFO ]  Epoch:    5	Test Accuracy: 27.88%	Test Loss: 2.1890
+2022-07-14 09:19:23 [INFO ]  Epoch:    6	Test Accuracy: 29.05%	Test Loss: 2.1913
+2022-07-14 09:19:24 [INFO ]  Epoch:    7	Test Accuracy: 30.67%	Test Loss: 2.2488
+2022-07-14 09:19:25 [INFO ]  Epoch:    8	Test Accuracy: 30.68%	Test Loss: 2.4390
+2022-07-14 09:19:26 [INFO ]  Epoch:    9	Test Accuracy: 30.08%	Test Loss: 2.6931
+2022-07-14 09:19:26 [INFO ]  Epoch:   10	Test Accuracy: 28.97%	Test Loss: 2.9173
+2022-07-14 09:19:27 [INFO ]  Epoch:   11	Test Accuracy: 28.01%	Test Loss: 3.0701
+2022-07-14 09:19:28 [INFO ]  Epoch:   12	Test Accuracy: 27.22%	Test Loss: 3.1618
+2022-07-14 09:19:29 [INFO ]  Epoch:   13	Test Accuracy: 26.92%	Test Loss: 3.2228
+2022-07-14 09:19:30 [INFO ]  Epoch:   14	Test Accuracy: 26.73%	Test Loss: 3.2645
+2022-07-14 09:23:29 [INFO ]  ======================================== 2022-07-14 09:23:29 ========================================
+2022-07-14 09:23:29 [INFO ]  Base directory is ./results/distill_basic/SVHN/
+2022-07-14 09:23:29 [INFO ]  Options: 
+2022-07-14 09:23:29 [INFO ]  	base_dir: null
+2022-07-14 09:23:29 [INFO ]  	base_seed: 1
+2022-07-14 09:23:29 [INFO ]  	batch_size: 1024
+2022-07-14 09:23:29 [INFO ]  	checkpoint_interval: 10
+2022-07-14 09:23:29 [INFO ]  	dataset: SVHN
+2022-07-14 09:23:29 [INFO ]  	dataset_labels:
+2022-07-14 09:23:29 [INFO ]  	- 0
+2022-07-14 09:23:29 [INFO ]  	- 1
+2022-07-14 09:23:29 [INFO ]  	- 2
+2022-07-14 09:23:29 [INFO ]  	- 3
+2022-07-14 09:23:29 [INFO ]  	- 4
+2022-07-14 09:23:29 [INFO ]  	- 5
+2022-07-14 09:23:29 [INFO ]  	- 6
+2022-07-14 09:23:29 [INFO ]  	- 7
+2022-07-14 09:23:29 [INFO ]  	- 8
+2022-07-14 09:23:29 [INFO ]  	- 9
+2022-07-14 09:23:29 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 09:23:29 [INFO ]  	- !!python/tuple
+2022-07-14 09:23:29 [INFO ]  	    - 0.4379104971885681
+2022-07-14 09:23:29 [INFO ]  	    - 0.44398033618927
+2022-07-14 09:23:29 [INFO ]  	    - 0.4729299545288086
+2022-07-14 09:23:29 [INFO ]  	- !!python/tuple
+2022-07-14 09:23:29 [INFO ]  	    - 0.19803012907505035
+2022-07-14 09:23:29 [INFO ]  	    - 0.2010156363248825
+2022-07-14 09:23:29 [INFO ]  	    - 0.19703614711761475
+2022-07-14 09:23:29 [INFO ]  	dataset_root: ./data/svhn
+2022-07-14 09:23:29 [INFO ]  	decay_epochs: 20
+2022-07-14 09:23:29 [INFO ]  	decay_factor: 0.1
+2022-07-14 09:23:29 [INFO ]  	device_id: 0
+2022-07-14 09:23:29 [INFO ]  	distill_epochs: 3
+2022-07-14 09:23:29 [INFO ]  	distill_lr: 0.02
+2022-07-14 09:23:29 [INFO ]  	distill_steps: 10
+2022-07-14 09:23:29 [INFO ]  	distilled_images_per_class_per_step: 1
+2022-07-14 09:23:29 [INFO ]  	epochs: 65
+2022-07-14 09:23:29 [INFO ]  	expand_cls: false
+2022-07-14 09:23:29 [INFO ]  	forgetting_dataset: null
+2022-07-14 09:23:29 [INFO ]  	init: xavier
+2022-07-14 09:23:29 [INFO ]  	init_param: 1.0
+2022-07-14 09:23:29 [INFO ]  	input_size: 32
+2022-07-14 09:23:29 [INFO ]  	log_file: ./results/distill_basic/SVHN/test/log.txt
+2022-07-14 09:23:29 [INFO ]  	log_interval: 100
+2022-07-14 09:23:29 [INFO ]  	log_level: INFO
+2022-07-14 09:23:29 [INFO ]  	lr: 0.0002
+2022-07-14 09:23:29 [INFO ]  	mode: distill_basic
+2022-07-14 09:23:29 [INFO ]  	nc: 3
+2022-07-14 09:23:29 [INFO ]  	num_classes: 10
+2022-07-14 09:23:29 [INFO ]  	num_workers: 8
+2022-07-14 09:23:29 [INFO ]  	phase: test
+2022-07-14 09:23:29 [INFO ]  	source_dataset: null
+2022-07-14 09:23:29 [INFO ]  	start_time: '2022-07-14 09:23:29'
+2022-07-14 09:23:29 [INFO ]  	test_batch_size: 1024
+2022-07-14 09:23:29 [INFO ]  	
+2022-07-14 09:23:31 [INFO ]  train dataset size:	73257
+2022-07-14 09:23:31 [INFO ]  test dataset size: 	26032
+2022-07-14 09:23:31 [INFO ]  datasets built!
+2022-07-14 09:23:31 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 09:23:32 [INFO ]  Loaded results from ./results/distill_basic/SVHN/results.pth
+2022-07-14 09:23:33 [INFO ]  Results for SVHN BEFORE training with synthetic data: 
+2022-07-14 09:23:33 [INFO ]  Test Accuracy: 84.84%	Test Loss: 0.5718
+2022-07-14 09:23:34 [INFO ]  Epoch:    0	Test Accuracy: 84.15%	Test Loss: 0.5904
+2022-07-14 09:23:35 [INFO ]  Epoch:    1	Test Accuracy: 83.97%	Test Loss: 0.5959
+2022-07-14 09:23:36 [INFO ]  Epoch:    2	Test Accuracy: 83.98%	Test Loss: 0.5960
+2022-07-14 09:23:37 [INFO ]  Epoch:    3	Test Accuracy: 83.88%	Test Loss: 0.6003
+2022-07-14 09:23:38 [INFO ]  Epoch:    4	Test Accuracy: 83.78%	Test Loss: 0.6058
+2022-07-14 09:23:39 [INFO ]  Epoch:    5	Test Accuracy: 83.59%	Test Loss: 0.6117
+2022-07-14 09:23:40 [INFO ]  Epoch:    6	Test Accuracy: 83.44%	Test Loss: 0.6173
+2022-07-14 09:23:40 [INFO ]  Epoch:    7	Test Accuracy: 83.30%	Test Loss: 0.6225
+2022-07-14 09:23:41 [INFO ]  Epoch:    8	Test Accuracy: 83.15%	Test Loss: 0.6270
+2022-07-14 09:23:42 [INFO ]  Epoch:    9	Test Accuracy: 83.10%	Test Loss: 0.6298
+2022-07-14 09:23:43 [INFO ]  Epoch:   10	Test Accuracy: 83.03%	Test Loss: 0.6324
+2022-07-14 09:23:44 [INFO ]  Epoch:   11	Test Accuracy: 82.97%	Test Loss: 0.6349
+2022-07-14 09:23:45 [INFO ]  Epoch:   12	Test Accuracy: 82.93%	Test Loss: 0.6365
+2022-07-14 09:23:45 [INFO ]  Epoch:   13	Test Accuracy: 82.89%	Test Loss: 0.6378
+2022-07-14 09:23:46 [INFO ]  Epoch:   14	Test Accuracy: 82.86%	Test Loss: 0.6392
+2022-07-14 09:23:47 [INFO ]  Epoch:   15	Test Accuracy: 82.83%	Test Loss: 0.6406
+2022-07-14 09:23:48 [INFO ]  Epoch:   16	Test Accuracy: 82.78%	Test Loss: 0.6419
+2022-07-14 09:23:49 [INFO ]  Epoch:   17	Test Accuracy: 82.70%	Test Loss: 0.6433
+2022-07-14 09:23:50 [INFO ]  Epoch:   18	Test Accuracy: 82.67%	Test Loss: 0.6450
+2022-07-14 09:23:50 [INFO ]  Epoch:   19	Test Accuracy: 82.63%	Test Loss: 0.6473
+2022-07-14 09:23:51 [INFO ]  Epoch:   20	Test Accuracy: 82.63%	Test Loss: 0.6476
+2022-07-14 09:23:52 [INFO ]  Epoch:   21	Test Accuracy: 82.62%	Test Loss: 0.6478
+2022-07-14 09:23:53 [INFO ]  Epoch:   22	Test Accuracy: 82.63%	Test Loss: 0.6480
+2022-07-14 09:23:54 [INFO ]  Epoch:   23	Test Accuracy: 82.61%	Test Loss: 0.6482
+2022-07-14 09:23:55 [INFO ]  Epoch:   24	Test Accuracy: 82.61%	Test Loss: 0.6484
+2022-07-14 09:23:56 [INFO ]  Epoch:   25	Test Accuracy: 82.60%	Test Loss: 0.6486
+2022-07-14 09:23:56 [INFO ]  Epoch:   26	Test Accuracy: 82.59%	Test Loss: 0.6487
+2022-07-14 09:23:57 [INFO ]  Epoch:   27	Test Accuracy: 82.58%	Test Loss: 0.6489
+2022-07-14 09:23:58 [INFO ]  Epoch:   28	Test Accuracy: 82.58%	Test Loss: 0.6491
+2022-07-14 09:23:59 [INFO ]  Epoch:   29	Test Accuracy: 82.57%	Test Loss: 0.6493
+2022-07-14 09:24:00 [INFO ]  Epoch:   30	Test Accuracy: 82.57%	Test Loss: 0.6495
+2022-07-14 09:24:01 [INFO ]  Epoch:   31	Test Accuracy: 82.58%	Test Loss: 0.6497
+2022-07-14 09:24:02 [INFO ]  Epoch:   32	Test Accuracy: 82.56%	Test Loss: 0.6499
+2022-07-14 09:24:02 [INFO ]  Epoch:   33	Test Accuracy: 82.55%	Test Loss: 0.6501
+2022-07-14 09:24:03 [INFO ]  Epoch:   34	Test Accuracy: 82.54%	Test Loss: 0.6503
+2022-07-14 09:24:04 [INFO ]  Epoch:   35	Test Accuracy: 82.53%	Test Loss: 0.6505
+2022-07-14 09:24:05 [INFO ]  Epoch:   36	Test Accuracy: 82.54%	Test Loss: 0.6507
+2022-07-14 09:24:06 [INFO ]  Epoch:   37	Test Accuracy: 82.54%	Test Loss: 0.6509
+2022-07-14 09:24:07 [INFO ]  Epoch:   38	Test Accuracy: 82.52%	Test Loss: 0.6512
+2022-07-14 09:24:08 [INFO ]  Epoch:   39	Test Accuracy: 82.50%	Test Loss: 0.6514
+2022-07-14 09:24:09 [INFO ]  Epoch:   40	Test Accuracy: 82.50%	Test Loss: 0.6514
+2022-07-14 09:24:09 [INFO ]  Epoch:   41	Test Accuracy: 82.49%	Test Loss: 0.6514
+2022-07-14 09:24:10 [INFO ]  Epoch:   42	Test Accuracy: 82.49%	Test Loss: 0.6515
+2022-07-14 09:24:11 [INFO ]  Epoch:   43	Test Accuracy: 82.49%	Test Loss: 0.6515
+2022-07-14 09:24:12 [INFO ]  Epoch:   44	Test Accuracy: 82.50%	Test Loss: 0.6515
+2022-07-14 09:24:13 [INFO ]  Epoch:   45	Test Accuracy: 82.50%	Test Loss: 0.6515
+2022-07-14 09:24:14 [INFO ]  Epoch:   46	Test Accuracy: 82.50%	Test Loss: 0.6516
+2022-07-14 09:24:15 [INFO ]  Epoch:   47	Test Accuracy: 82.50%	Test Loss: 0.6516
+2022-07-14 09:24:15 [INFO ]  Epoch:   48	Test Accuracy: 82.50%	Test Loss: 0.6516
+2022-07-14 09:24:16 [INFO ]  Epoch:   49	Test Accuracy: 82.49%	Test Loss: 0.6516
+2022-07-14 09:24:17 [INFO ]  Epoch:   50	Test Accuracy: 82.50%	Test Loss: 0.6517
+2022-07-14 09:24:18 [INFO ]  Epoch:   51	Test Accuracy: 82.49%	Test Loss: 0.6517
+2022-07-14 09:24:19 [INFO ]  Epoch:   52	Test Accuracy: 82.49%	Test Loss: 0.6517
+2022-07-14 09:24:20 [INFO ]  Epoch:   53	Test Accuracy: 82.49%	Test Loss: 0.6517
+2022-07-14 09:24:21 [INFO ]  Epoch:   54	Test Accuracy: 82.49%	Test Loss: 0.6518
+2022-07-14 09:24:21 [INFO ]  Epoch:   55	Test Accuracy: 82.49%	Test Loss: 0.6518
+2022-07-14 09:24:22 [INFO ]  Epoch:   56	Test Accuracy: 82.49%	Test Loss: 0.6518
+2022-07-14 09:24:23 [INFO ]  Epoch:   57	Test Accuracy: 82.49%	Test Loss: 0.6518
+2022-07-14 09:24:24 [INFO ]  Epoch:   58	Test Accuracy: 82.49%	Test Loss: 0.6519
+2022-07-14 09:24:25 [INFO ]  Epoch:   59	Test Accuracy: 82.49%	Test Loss: 0.6519
+2022-07-14 09:24:26 [INFO ]  Epoch:   60	Test Accuracy: 82.49%	Test Loss: 0.6519
+2022-07-14 09:24:26 [INFO ]  Epoch:   61	Test Accuracy: 82.49%	Test Loss: 0.6519
+2022-07-14 09:24:27 [INFO ]  Epoch:   62	Test Accuracy: 82.49%	Test Loss: 0.6519
+2022-07-14 09:24:28 [INFO ]  Epoch:   63	Test Accuracy: 82.49%	Test Loss: 0.6519
+2022-07-14 09:24:29 [INFO ]  Epoch:   64	Test Accuracy: 82.49%	Test Loss: 0.6519
+2022-07-14 09:24:30 [INFO ]  Results for SVHN AFTER training with synthetic data: 
+2022-07-14 09:24:30 [INFO ]  Test Accuracy: 82.49%	Test Loss: 0.6519
+2022-07-14 09:24:50 [INFO ]  ======================================== 2022-07-14 09:24:50 ========================================
+2022-07-14 09:24:50 [INFO ]  Base directory is ./results/distill_basic/SVHN/
+2022-07-14 09:24:50 [INFO ]  Options: 
+2022-07-14 09:24:50 [INFO ]  	base_dir: null
+2022-07-14 09:24:50 [INFO ]  	base_seed: 1
+2022-07-14 09:24:50 [INFO ]  	batch_size: 1024
+2022-07-14 09:24:50 [INFO ]  	checkpoint_interval: 10
+2022-07-14 09:24:50 [INFO ]  	dataset: SVHN
+2022-07-14 09:24:50 [INFO ]  	dataset_labels:
+2022-07-14 09:24:50 [INFO ]  	- 0
+2022-07-14 09:24:50 [INFO ]  	- 1
+2022-07-14 09:24:50 [INFO ]  	- 2
+2022-07-14 09:24:50 [INFO ]  	- 3
+2022-07-14 09:24:50 [INFO ]  	- 4
+2022-07-14 09:24:50 [INFO ]  	- 5
+2022-07-14 09:24:50 [INFO ]  	- 6
+2022-07-14 09:24:50 [INFO ]  	- 7
+2022-07-14 09:24:50 [INFO ]  	- 8
+2022-07-14 09:24:50 [INFO ]  	- 9
+2022-07-14 09:24:50 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 09:24:50 [INFO ]  	- !!python/tuple
+2022-07-14 09:24:50 [INFO ]  	    - 0.4379104971885681
+2022-07-14 09:24:50 [INFO ]  	    - 0.44398033618927
+2022-07-14 09:24:50 [INFO ]  	    - 0.4729299545288086
+2022-07-14 09:24:50 [INFO ]  	- !!python/tuple
+2022-07-14 09:24:50 [INFO ]  	    - 0.19803012907505035
+2022-07-14 09:24:50 [INFO ]  	    - 0.2010156363248825
+2022-07-14 09:24:50 [INFO ]  	    - 0.19703614711761475
+2022-07-14 09:24:50 [INFO ]  	dataset_root: ./data/svhn
+2022-07-14 09:24:50 [INFO ]  	decay_epochs: 20
+2022-07-14 09:24:50 [INFO ]  	decay_factor: 0.1
+2022-07-14 09:24:50 [INFO ]  	device_id: 0
+2022-07-14 09:24:50 [INFO ]  	distill_epochs: 3
+2022-07-14 09:24:50 [INFO ]  	distill_lr: 0.02
+2022-07-14 09:24:50 [INFO ]  	distill_steps: 10
+2022-07-14 09:24:50 [INFO ]  	distilled_images_per_class_per_step: 1
+2022-07-14 09:24:50 [INFO ]  	epochs: 65
+2022-07-14 09:24:50 [INFO ]  	expand_cls: false
+2022-07-14 09:24:50 [INFO ]  	forgetting_dataset: null
+2022-07-14 09:24:50 [INFO ]  	init: xavier
+2022-07-14 09:24:50 [INFO ]  	init_param: 1.0
+2022-07-14 09:24:50 [INFO ]  	input_size: 32
+2022-07-14 09:24:50 [INFO ]  	log_file: ./results/distill_basic/SVHN/test/log.txt
+2022-07-14 09:24:50 [INFO ]  	log_interval: 100
+2022-07-14 09:24:50 [INFO ]  	log_level: INFO
+2022-07-14 09:24:50 [INFO ]  	lr: 0.002
+2022-07-14 09:24:50 [INFO ]  	mode: distill_basic
+2022-07-14 09:24:50 [INFO ]  	nc: 3
+2022-07-14 09:24:50 [INFO ]  	num_classes: 10
+2022-07-14 09:24:50 [INFO ]  	num_workers: 8
+2022-07-14 09:24:50 [INFO ]  	phase: test
+2022-07-14 09:24:50 [INFO ]  	source_dataset: null
+2022-07-14 09:24:50 [INFO ]  	start_time: '2022-07-14 09:24:50'
+2022-07-14 09:24:50 [INFO ]  	test_batch_size: 1024
+2022-07-14 09:24:50 [INFO ]  	
+2022-07-14 09:24:52 [INFO ]  train dataset size:	73257
+2022-07-14 09:24:52 [INFO ]  test dataset size: 	26032
+2022-07-14 09:24:52 [INFO ]  datasets built!
+2022-07-14 09:24:52 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 09:24:53 [INFO ]  Loaded results from ./results/distill_basic/SVHN/results.pth
+2022-07-14 09:24:54 [INFO ]  Results for SVHN BEFORE training with synthetic data: 
+2022-07-14 09:24:54 [INFO ]  Test Accuracy: 84.84%	Test Loss: 0.5718
+2022-07-14 09:24:55 [INFO ]  Epoch:    0	Test Accuracy: 46.69%	Test Loss: 3.3855
+2022-07-14 09:24:56 [INFO ]  Epoch:    1	Test Accuracy: 52.30%	Test Loss: 1.9954
+2022-07-14 09:24:57 [INFO ]  Epoch:    2	Test Accuracy: 48.69%	Test Loss: 2.2844
+2022-07-14 09:24:58 [INFO ]  Epoch:    3	Test Accuracy: 65.29%	Test Loss: 1.2983
+2022-07-14 09:24:59 [INFO ]  Epoch:    4	Test Accuracy: 71.27%	Test Loss: 1.0863
+2022-07-14 09:24:59 [INFO ]  Epoch:    5	Test Accuracy: 73.52%	Test Loss: 0.9991
+2022-07-14 09:25:00 [INFO ]  Epoch:    6	Test Accuracy: 73.56%	Test Loss: 0.9915
+2022-07-14 09:25:01 [INFO ]  Epoch:    7	Test Accuracy: 73.44%	Test Loss: 0.9873
+2022-07-14 09:25:02 [INFO ]  Epoch:    8	Test Accuracy: 73.56%	Test Loss: 0.9777
+2022-07-14 09:25:03 [INFO ]  Epoch:    9	Test Accuracy: 73.79%	Test Loss: 0.9657
+2022-07-14 09:25:04 [INFO ]  Epoch:   10	Test Accuracy: 74.10%	Test Loss: 0.9537
+2022-07-14 09:25:05 [INFO ]  Epoch:   11	Test Accuracy: 74.38%	Test Loss: 0.9431
+2022-07-14 09:25:06 [INFO ]  Epoch:   12	Test Accuracy: 74.66%	Test Loss: 0.9338
+2022-07-14 09:25:07 [INFO ]  Epoch:   13	Test Accuracy: 74.90%	Test Loss: 0.9259
+2022-07-14 09:25:08 [INFO ]  Epoch:   14	Test Accuracy: 75.09%	Test Loss: 0.9192
+2022-07-14 09:25:09 [INFO ]  Epoch:   15	Test Accuracy: 75.21%	Test Loss: 0.9135
+2022-07-14 09:25:09 [INFO ]  Epoch:   16	Test Accuracy: 75.31%	Test Loss: 0.9086
+2022-07-14 09:25:10 [INFO ]  Epoch:   17	Test Accuracy: 75.40%	Test Loss: 0.9045
+2022-07-14 09:25:11 [INFO ]  Epoch:   18	Test Accuracy: 75.49%	Test Loss: 0.9010
+2022-07-14 09:25:12 [INFO ]  Epoch:   19	Test Accuracy: 75.57%	Test Loss: 0.8980
+2022-07-14 09:25:13 [INFO ]  Epoch:   20	Test Accuracy: 75.57%	Test Loss: 0.8978
+2022-07-14 09:25:14 [INFO ]  Epoch:   21	Test Accuracy: 75.56%	Test Loss: 0.8975
+2022-07-14 09:25:15 [INFO ]  Epoch:   22	Test Accuracy: 75.56%	Test Loss: 0.8973
+2022-07-14 09:25:15 [INFO ]  Epoch:   23	Test Accuracy: 75.57%	Test Loss: 0.8970
+2022-07-14 09:25:16 [INFO ]  Epoch:   24	Test Accuracy: 75.57%	Test Loss: 0.8968
+2022-07-14 09:25:17 [INFO ]  Epoch:   25	Test Accuracy: 75.59%	Test Loss: 0.8965
+2022-07-14 09:25:18 [INFO ]  Epoch:   26	Test Accuracy: 75.60%	Test Loss: 0.8963
+2022-07-14 09:25:19 [INFO ]  Epoch:   27	Test Accuracy: 75.60%	Test Loss: 0.8960
+2022-07-14 09:25:20 [INFO ]  Epoch:   28	Test Accuracy: 75.60%	Test Loss: 0.8958
+2022-07-14 09:25:20 [INFO ]  Epoch:   29	Test Accuracy: 75.60%	Test Loss: 0.8956
+2022-07-14 09:25:21 [INFO ]  Epoch:   30	Test Accuracy: 75.61%	Test Loss: 0.8953
+2022-07-14 09:25:22 [INFO ]  Epoch:   31	Test Accuracy: 75.61%	Test Loss: 0.8951
+2022-07-14 09:25:23 [INFO ]  Epoch:   32	Test Accuracy: 75.62%	Test Loss: 0.8948
+2022-07-14 09:25:24 [INFO ]  Epoch:   33	Test Accuracy: 75.62%	Test Loss: 0.8946
+2022-07-14 09:25:25 [INFO ]  Epoch:   34	Test Accuracy: 75.64%	Test Loss: 0.8944
+2022-07-14 09:25:26 [INFO ]  Epoch:   35	Test Accuracy: 75.66%	Test Loss: 0.8941
+2022-07-14 09:25:27 [INFO ]  Epoch:   36	Test Accuracy: 75.67%	Test Loss: 0.8939
+2022-07-14 09:25:28 [INFO ]  Epoch:   37	Test Accuracy: 75.70%	Test Loss: 0.8937
+2022-07-14 09:25:28 [INFO ]  Epoch:   38	Test Accuracy: 75.70%	Test Loss: 0.8934
+2022-07-14 09:25:29 [INFO ]  Epoch:   39	Test Accuracy: 75.71%	Test Loss: 0.8932
+2022-07-14 09:25:30 [INFO ]  Epoch:   40	Test Accuracy: 75.70%	Test Loss: 0.8932
+2022-07-14 09:25:31 [INFO ]  Epoch:   41	Test Accuracy: 75.70%	Test Loss: 0.8932
+2022-07-14 09:25:32 [INFO ]  Epoch:   42	Test Accuracy: 75.70%	Test Loss: 0.8931
+2022-07-14 09:25:33 [INFO ]  Epoch:   43	Test Accuracy: 75.70%	Test Loss: 0.8931
+2022-07-14 09:25:34 [INFO ]  Epoch:   44	Test Accuracy: 75.70%	Test Loss: 0.8931
+2022-07-14 09:25:35 [INFO ]  Epoch:   45	Test Accuracy: 75.70%	Test Loss: 0.8931
+2022-07-14 09:25:36 [INFO ]  Epoch:   46	Test Accuracy: 75.70%	Test Loss: 0.8930
+2022-07-14 09:25:36 [INFO ]  Epoch:   47	Test Accuracy: 75.70%	Test Loss: 0.8930
+2022-07-14 09:25:37 [INFO ]  Epoch:   48	Test Accuracy: 75.70%	Test Loss: 0.8930
+2022-07-14 09:25:38 [INFO ]  Epoch:   49	Test Accuracy: 75.70%	Test Loss: 0.8930
+2022-07-14 09:25:39 [INFO ]  Epoch:   50	Test Accuracy: 75.70%	Test Loss: 0.8930
+2022-07-14 09:25:40 [INFO ]  Epoch:   51	Test Accuracy: 75.70%	Test Loss: 0.8929
+2022-07-14 09:25:41 [INFO ]  Epoch:   52	Test Accuracy: 75.70%	Test Loss: 0.8929
+2022-07-14 09:25:42 [INFO ]  Epoch:   53	Test Accuracy: 75.70%	Test Loss: 0.8929
+2022-07-14 09:25:42 [INFO ]  Epoch:   54	Test Accuracy: 75.70%	Test Loss: 0.8929
+2022-07-14 09:25:43 [INFO ]  Epoch:   55	Test Accuracy: 75.70%	Test Loss: 0.8928
+2022-07-14 09:25:44 [INFO ]  Epoch:   56	Test Accuracy: 75.70%	Test Loss: 0.8928
+2022-07-14 09:25:45 [INFO ]  Epoch:   57	Test Accuracy: 75.70%	Test Loss: 0.8928
+2022-07-14 09:25:46 [INFO ]  Epoch:   58	Test Accuracy: 75.70%	Test Loss: 0.8928
+2022-07-14 09:25:47 [INFO ]  Epoch:   59	Test Accuracy: 75.70%	Test Loss: 0.8927
+2022-07-14 09:25:48 [INFO ]  Epoch:   60	Test Accuracy: 75.70%	Test Loss: 0.8927
+2022-07-14 09:25:48 [INFO ]  Epoch:   61	Test Accuracy: 75.70%	Test Loss: 0.8927
+2022-07-14 09:25:49 [INFO ]  Epoch:   62	Test Accuracy: 75.70%	Test Loss: 0.8927
+2022-07-14 09:25:50 [INFO ]  Epoch:   63	Test Accuracy: 75.70%	Test Loss: 0.8927
+2022-07-14 09:25:51 [INFO ]  Epoch:   64	Test Accuracy: 75.70%	Test Loss: 0.8927
+2022-07-14 09:25:52 [INFO ]  Results for SVHN AFTER training with synthetic data: 
+2022-07-14 09:25:52 [INFO ]  Test Accuracy: 75.70%	Test Loss: 0.8927
+2022-07-14 09:27:26 [INFO ]  ======================================== 2022-07-14 09:27:26 ========================================
+2022-07-14 09:27:26 [INFO ]  Base directory is ./results/distill_basic/SVHN/
+2022-07-14 09:27:26 [INFO ]  Options: 
+2022-07-14 09:27:26 [INFO ]  	base_dir: null
+2022-07-14 09:27:26 [INFO ]  	base_seed: 1
+2022-07-14 09:27:26 [INFO ]  	batch_size: 1024
+2022-07-14 09:27:26 [INFO ]  	checkpoint_interval: 10
+2022-07-14 09:27:26 [INFO ]  	dataset: SVHN
+2022-07-14 09:27:26 [INFO ]  	dataset_labels:
+2022-07-14 09:27:26 [INFO ]  	- 0
+2022-07-14 09:27:26 [INFO ]  	- 1
+2022-07-14 09:27:26 [INFO ]  	- 2
+2022-07-14 09:27:26 [INFO ]  	- 3
+2022-07-14 09:27:26 [INFO ]  	- 4
+2022-07-14 09:27:26 [INFO ]  	- 5
+2022-07-14 09:27:26 [INFO ]  	- 6
+2022-07-14 09:27:26 [INFO ]  	- 7
+2022-07-14 09:27:26 [INFO ]  	- 8
+2022-07-14 09:27:26 [INFO ]  	- 9
+2022-07-14 09:27:26 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 09:27:26 [INFO ]  	- !!python/tuple
+2022-07-14 09:27:26 [INFO ]  	    - 0.4379104971885681
+2022-07-14 09:27:26 [INFO ]  	    - 0.44398033618927
+2022-07-14 09:27:26 [INFO ]  	    - 0.4729299545288086
+2022-07-14 09:27:26 [INFO ]  	- !!python/tuple
+2022-07-14 09:27:26 [INFO ]  	    - 0.19803012907505035
+2022-07-14 09:27:26 [INFO ]  	    - 0.2010156363248825
+2022-07-14 09:27:26 [INFO ]  	    - 0.19703614711761475
+2022-07-14 09:27:26 [INFO ]  	dataset_root: ./data/svhn
+2022-07-14 09:27:26 [INFO ]  	decay_epochs: 20
+2022-07-14 09:27:26 [INFO ]  	decay_factor: 0.1
+2022-07-14 09:27:26 [INFO ]  	device_id: 0
+2022-07-14 09:27:26 [INFO ]  	distill_epochs: 3
+2022-07-14 09:27:26 [INFO ]  	distill_lr: 0.02
+2022-07-14 09:27:26 [INFO ]  	distill_steps: 10
+2022-07-14 09:27:26 [INFO ]  	distilled_images_per_class_per_step: 1
+2022-07-14 09:27:26 [INFO ]  	epochs: 65
+2022-07-14 09:27:26 [INFO ]  	expand_cls: false
+2022-07-14 09:27:26 [INFO ]  	forgetting_dataset: null
+2022-07-14 09:27:26 [INFO ]  	init: xavier
+2022-07-14 09:27:26 [INFO ]  	init_param: 1.0
+2022-07-14 09:27:26 [INFO ]  	input_size: 32
+2022-07-14 09:27:26 [INFO ]  	log_file: ./results/distill_basic/SVHN/test/log.txt
+2022-07-14 09:27:26 [INFO ]  	log_interval: 100
+2022-07-14 09:27:26 [INFO ]  	log_level: INFO
+2022-07-14 09:27:26 [INFO ]  	lr: 0.002
+2022-07-14 09:27:26 [INFO ]  	mode: distill_basic
+2022-07-14 09:27:26 [INFO ]  	nc: 3
+2022-07-14 09:27:26 [INFO ]  	num_classes: 10
+2022-07-14 09:27:26 [INFO ]  	num_workers: 8
+2022-07-14 09:27:26 [INFO ]  	phase: test
+2022-07-14 09:27:26 [INFO ]  	source_dataset: null
+2022-07-14 09:27:26 [INFO ]  	start_time: '2022-07-14 09:27:26'
+2022-07-14 09:27:26 [INFO ]  	test_batch_size: 1024
+2022-07-14 09:27:26 [INFO ]  	
+2022-07-14 09:27:28 [INFO ]  train dataset size:	73257
+2022-07-14 09:27:28 [INFO ]  test dataset size: 	26032
+2022-07-14 09:27:28 [INFO ]  datasets built!
+2022-07-14 09:27:28 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 09:27:30 [INFO ]  Loaded results from ./results/distill_basic/SVHN/results.pth
+2022-07-14 09:27:31 [INFO ]  Results for SVHN BEFORE training with synthetic data: 
+2022-07-14 09:27:31 [INFO ]  Test Accuracy: 84.84%	Test Loss: 0.5718
+2022-07-14 09:27:32 [INFO ]  Epoch:    0	Test Accuracy: 84.36%	Test Loss: 0.5844
+2022-07-14 09:27:32 [INFO ]  Epoch:    1	Test Accuracy: 84.37%	Test Loss: 0.5820
+2022-07-14 09:27:33 [INFO ]  Epoch:    2	Test Accuracy: 84.29%	Test Loss: 0.5841
+2022-07-14 09:27:34 [INFO ]  Epoch:    3	Test Accuracy: 84.21%	Test Loss: 0.5863
+2022-07-14 09:27:35 [INFO ]  Epoch:    4	Test Accuracy: 84.20%	Test Loss: 0.5885
+2022-07-14 09:27:52 [INFO ]  ======================================== 2022-07-14 09:27:52 ========================================
+2022-07-14 09:27:52 [INFO ]  Base directory is ./results/distill_basic/SVHN/
+2022-07-14 09:27:52 [INFO ]  Options: 
+2022-07-14 09:27:52 [INFO ]  	base_dir: null
+2022-07-14 09:27:52 [INFO ]  	base_seed: 1
+2022-07-14 09:27:52 [INFO ]  	batch_size: 1024
+2022-07-14 09:27:52 [INFO ]  	checkpoint_interval: 10
+2022-07-14 09:27:52 [INFO ]  	dataset: SVHN
+2022-07-14 09:27:52 [INFO ]  	dataset_labels:
+2022-07-14 09:27:52 [INFO ]  	- 0
+2022-07-14 09:27:52 [INFO ]  	- 1
+2022-07-14 09:27:52 [INFO ]  	- 2
+2022-07-14 09:27:52 [INFO ]  	- 3
+2022-07-14 09:27:52 [INFO ]  	- 4
+2022-07-14 09:27:52 [INFO ]  	- 5
+2022-07-14 09:27:52 [INFO ]  	- 6
+2022-07-14 09:27:52 [INFO ]  	- 7
+2022-07-14 09:27:52 [INFO ]  	- 8
+2022-07-14 09:27:52 [INFO ]  	- 9
+2022-07-14 09:27:52 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 09:27:52 [INFO ]  	- !!python/tuple
+2022-07-14 09:27:52 [INFO ]  	    - 0.4379104971885681
+2022-07-14 09:27:52 [INFO ]  	    - 0.44398033618927
+2022-07-14 09:27:52 [INFO ]  	    - 0.4729299545288086
+2022-07-14 09:27:52 [INFO ]  	- !!python/tuple
+2022-07-14 09:27:52 [INFO ]  	    - 0.19803012907505035
+2022-07-14 09:27:52 [INFO ]  	    - 0.2010156363248825
+2022-07-14 09:27:52 [INFO ]  	    - 0.19703614711761475
+2022-07-14 09:27:52 [INFO ]  	dataset_root: ./data/svhn
+2022-07-14 09:27:52 [INFO ]  	decay_epochs: 20
+2022-07-14 09:27:52 [INFO ]  	decay_factor: 0.1
+2022-07-14 09:27:52 [INFO ]  	device_id: 0
+2022-07-14 09:27:52 [INFO ]  	distill_epochs: 3
+2022-07-14 09:27:52 [INFO ]  	distill_lr: 0.02
+2022-07-14 09:27:52 [INFO ]  	distill_steps: 10
+2022-07-14 09:27:52 [INFO ]  	distilled_images_per_class_per_step: 1
+2022-07-14 09:27:52 [INFO ]  	epochs: 65
+2022-07-14 09:27:52 [INFO ]  	expand_cls: false
+2022-07-14 09:27:52 [INFO ]  	forgetting_dataset: null
+2022-07-14 09:27:52 [INFO ]  	init: xavier
+2022-07-14 09:27:52 [INFO ]  	init_param: 1.0
+2022-07-14 09:27:52 [INFO ]  	input_size: 32
+2022-07-14 09:27:52 [INFO ]  	log_file: ./results/distill_basic/SVHN/test/log.txt
+2022-07-14 09:27:52 [INFO ]  	log_interval: 100
+2022-07-14 09:27:52 [INFO ]  	log_level: INFO
+2022-07-14 09:27:52 [INFO ]  	lr: 0.01
+2022-07-14 09:27:52 [INFO ]  	mode: distill_basic
+2022-07-14 09:27:52 [INFO ]  	nc: 3
+2022-07-14 09:27:52 [INFO ]  	num_classes: 10
+2022-07-14 09:27:52 [INFO ]  	num_workers: 8
+2022-07-14 09:27:52 [INFO ]  	phase: test
+2022-07-14 09:27:52 [INFO ]  	source_dataset: null
+2022-07-14 09:27:52 [INFO ]  	start_time: '2022-07-14 09:27:52'
+2022-07-14 09:27:52 [INFO ]  	test_batch_size: 1024
+2022-07-14 09:27:52 [INFO ]  	
+2022-07-14 09:27:54 [INFO ]  train dataset size:	73257
+2022-07-14 09:27:54 [INFO ]  test dataset size: 	26032
+2022-07-14 09:27:54 [INFO ]  datasets built!
+2022-07-14 09:27:54 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 09:27:56 [INFO ]  Loaded results from ./results/distill_basic/SVHN/results.pth
+2022-07-14 09:27:57 [INFO ]  Results for SVHN BEFORE training with synthetic data: 
+2022-07-14 09:27:57 [INFO ]  Test Accuracy: 84.84%	Test Loss: 0.5718
+2022-07-14 09:27:58 [INFO ]  Epoch:    0	Test Accuracy: 84.36%	Test Loss: 0.5844
+2022-07-14 09:27:59 [INFO ]  Epoch:    1	Test Accuracy: 84.37%	Test Loss: 0.5820
+2022-07-14 09:28:00 [INFO ]  Epoch:    2	Test Accuracy: 84.29%	Test Loss: 0.5841
+2022-07-14 09:28:00 [INFO ]  Epoch:    3	Test Accuracy: 84.21%	Test Loss: 0.5863
+2022-07-14 09:28:01 [INFO ]  Epoch:    4	Test Accuracy: 84.20%	Test Loss: 0.5885
+2022-07-14 09:28:02 [INFO ]  Epoch:    5	Test Accuracy: 84.14%	Test Loss: 0.5907
+2022-07-14 09:28:03 [INFO ]  Epoch:    6	Test Accuracy: 84.11%	Test Loss: 0.5925
+2022-07-14 09:28:04 [INFO ]  Epoch:    7	Test Accuracy: 84.05%	Test Loss: 0.5944
+2022-07-14 09:28:05 [INFO ]  Epoch:    8	Test Accuracy: 83.99%	Test Loss: 0.5961
+2022-07-14 09:28:06 [INFO ]  Epoch:    9	Test Accuracy: 83.99%	Test Loss: 0.5976
+2022-07-14 09:28:07 [INFO ]  Epoch:   10	Test Accuracy: 83.93%	Test Loss: 0.5992
+2022-07-14 09:28:08 [INFO ]  Epoch:   11	Test Accuracy: 83.89%	Test Loss: 0.6008
+2022-07-14 09:28:08 [INFO ]  Epoch:   12	Test Accuracy: 83.87%	Test Loss: 0.6022
+2022-07-14 09:28:09 [INFO ]  Epoch:   13	Test Accuracy: 83.83%	Test Loss: 0.6036
+2022-07-14 09:28:10 [INFO ]  Epoch:   14	Test Accuracy: 83.80%	Test Loss: 0.6049
+2022-07-14 09:28:11 [INFO ]  Epoch:   15	Test Accuracy: 83.79%	Test Loss: 0.6063
+2022-07-14 09:28:12 [INFO ]  Epoch:   16	Test Accuracy: 83.76%	Test Loss: 0.6076
+2022-07-14 09:28:13 [INFO ]  Epoch:   17	Test Accuracy: 83.75%	Test Loss: 0.6087
+2022-07-14 09:28:14 [INFO ]  Epoch:   18	Test Accuracy: 83.72%	Test Loss: 0.6100
+2022-07-14 09:28:14 [INFO ]  Epoch:   19	Test Accuracy: 83.68%	Test Loss: 0.6111
+2022-07-14 09:28:15 [INFO ]  Epoch:   20	Test Accuracy: 83.68%	Test Loss: 0.6113
+2022-07-14 09:28:16 [INFO ]  Epoch:   21	Test Accuracy: 83.68%	Test Loss: 0.6114
+2022-07-14 09:28:17 [INFO ]  Epoch:   22	Test Accuracy: 83.67%	Test Loss: 0.6115
+2022-07-14 09:28:18 [INFO ]  Epoch:   23	Test Accuracy: 83.67%	Test Loss: 0.6116
+2022-07-14 09:28:19 [INFO ]  Epoch:   24	Test Accuracy: 83.67%	Test Loss: 0.6117
+2022-07-14 09:28:20 [INFO ]  Epoch:   25	Test Accuracy: 83.67%	Test Loss: 0.6119
+2022-07-14 09:28:21 [INFO ]  Epoch:   26	Test Accuracy: 83.67%	Test Loss: 0.6120
+2022-07-14 09:28:21 [INFO ]  Epoch:   27	Test Accuracy: 83.65%	Test Loss: 0.6121
+2022-07-14 09:28:22 [INFO ]  Epoch:   28	Test Accuracy: 83.65%	Test Loss: 0.6122
+2022-07-14 09:28:23 [INFO ]  Epoch:   29	Test Accuracy: 83.65%	Test Loss: 0.6123
+2022-07-14 09:28:24 [INFO ]  Epoch:   30	Test Accuracy: 83.64%	Test Loss: 0.6125
+2022-07-14 09:28:25 [INFO ]  Epoch:   31	Test Accuracy: 83.64%	Test Loss: 0.6126
+2022-07-14 09:28:26 [INFO ]  Epoch:   32	Test Accuracy: 83.64%	Test Loss: 0.6127
+2022-07-14 09:28:27 [INFO ]  Epoch:   33	Test Accuracy: 83.64%	Test Loss: 0.6128
+2022-07-14 09:28:27 [INFO ]  Epoch:   34	Test Accuracy: 83.64%	Test Loss: 0.6129
+2022-07-14 09:28:28 [INFO ]  Epoch:   35	Test Accuracy: 83.64%	Test Loss: 0.6131
+2022-07-14 09:28:29 [INFO ]  Epoch:   36	Test Accuracy: 83.64%	Test Loss: 0.6132
+2022-07-14 09:28:30 [INFO ]  Epoch:   37	Test Accuracy: 83.64%	Test Loss: 0.6133
+2022-07-14 09:28:31 [INFO ]  Epoch:   38	Test Accuracy: 83.64%	Test Loss: 0.6134
+2022-07-14 09:28:32 [INFO ]  Epoch:   39	Test Accuracy: 83.64%	Test Loss: 0.6135
+2022-07-14 09:28:33 [INFO ]  Epoch:   40	Test Accuracy: 83.64%	Test Loss: 0.6135
+2022-07-14 09:28:33 [INFO ]  Epoch:   41	Test Accuracy: 83.64%	Test Loss: 0.6135
+2022-07-14 09:28:34 [INFO ]  Epoch:   42	Test Accuracy: 83.64%	Test Loss: 0.6136
+2022-07-14 09:28:35 [INFO ]  Epoch:   43	Test Accuracy: 83.64%	Test Loss: 0.6136
+2022-07-14 09:28:36 [INFO ]  Epoch:   44	Test Accuracy: 83.64%	Test Loss: 0.6136
+2022-07-14 09:28:37 [INFO ]  Epoch:   45	Test Accuracy: 83.64%	Test Loss: 0.6136
+2022-07-14 09:28:38 [INFO ]  Epoch:   46	Test Accuracy: 83.64%	Test Loss: 0.6136
+2022-07-14 09:28:39 [INFO ]  Epoch:   47	Test Accuracy: 83.64%	Test Loss: 0.6136
+2022-07-14 09:28:40 [INFO ]  Epoch:   48	Test Accuracy: 83.64%	Test Loss: 0.6136
+2022-07-14 09:28:41 [INFO ]  Epoch:   49	Test Accuracy: 83.64%	Test Loss: 0.6136
+2022-07-14 09:28:41 [INFO ]  Epoch:   50	Test Accuracy: 83.64%	Test Loss: 0.6136
+2022-07-14 09:28:42 [INFO ]  Epoch:   51	Test Accuracy: 83.64%	Test Loss: 0.6137
+2022-07-14 09:28:43 [INFO ]  Epoch:   52	Test Accuracy: 83.64%	Test Loss: 0.6137
+2022-07-14 09:28:44 [INFO ]  Epoch:   53	Test Accuracy: 83.64%	Test Loss: 0.6137
+2022-07-14 09:28:45 [INFO ]  Epoch:   54	Test Accuracy: 83.64%	Test Loss: 0.6137
+2022-07-14 09:28:46 [INFO ]  Epoch:   55	Test Accuracy: 83.64%	Test Loss: 0.6137
+2022-07-14 09:28:47 [INFO ]  Epoch:   56	Test Accuracy: 83.64%	Test Loss: 0.6137
+2022-07-14 09:28:48 [INFO ]  Epoch:   57	Test Accuracy: 83.64%	Test Loss: 0.6137
+2022-07-14 09:28:49 [INFO ]  Epoch:   58	Test Accuracy: 83.64%	Test Loss: 0.6137
+2022-07-14 09:28:49 [INFO ]  Epoch:   59	Test Accuracy: 83.64%	Test Loss: 0.6137
+2022-07-14 09:28:50 [INFO ]  Epoch:   60	Test Accuracy: 83.63%	Test Loss: 0.6137
+2022-07-14 09:28:51 [INFO ]  Epoch:   61	Test Accuracy: 83.63%	Test Loss: 0.6137
+2022-07-14 09:28:52 [INFO ]  Epoch:   62	Test Accuracy: 83.63%	Test Loss: 0.6137
+2022-07-14 09:28:53 [INFO ]  Epoch:   63	Test Accuracy: 83.63%	Test Loss: 0.6138
+2022-07-14 09:28:54 [INFO ]  Epoch:   64	Test Accuracy: 83.63%	Test Loss: 0.6138
+2022-07-14 09:28:54 [INFO ]  Results for SVHN AFTER training with synthetic data: 
+2022-07-14 09:28:54 [INFO ]  Test Accuracy: 83.63%	Test Loss: 0.6138

@@ -1,0 +1,840 @@
+2022-07-14 09:35:01 [INFO ]  ======================================== 2022-07-14 09:35:01 ========================================
+2022-07-14 09:35:01 [INFO ]  Base directory is ./results/distill_adapt/FASHION_MNIST/Source_SVHN
+2022-07-14 09:35:01 [INFO ]  Options: 
+2022-07-14 09:35:01 [INFO ]  	base_dir: null
+2022-07-14 09:35:01 [INFO ]  	base_seed: 1
+2022-07-14 09:35:01 [INFO ]  	batch_size: 1024
+2022-07-14 09:35:01 [INFO ]  	checkpoint_interval: 10
+2022-07-14 09:35:01 [INFO ]  	dataset: FASHION_MNIST
+2022-07-14 09:35:01 [INFO ]  	dataset_labels:
+2022-07-14 09:35:01 [INFO ]  	- 0
+2022-07-14 09:35:01 [INFO ]  	- 1
+2022-07-14 09:35:01 [INFO ]  	- 2
+2022-07-14 09:35:01 [INFO ]  	- 3
+2022-07-14 09:35:01 [INFO ]  	- 4
+2022-07-14 09:35:01 [INFO ]  	- 5
+2022-07-14 09:35:01 [INFO ]  	- 6
+2022-07-14 09:35:01 [INFO ]  	- 7
+2022-07-14 09:35:01 [INFO ]  	- 8
+2022-07-14 09:35:01 [INFO ]  	- 9
+2022-07-14 09:35:01 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 09:35:01 [INFO ]  	- !!python/tuple
+2022-07-14 09:35:01 [INFO ]  	    - 0.2859
+2022-07-14 09:35:01 [INFO ]  	    - 0.2859
+2022-07-14 09:35:01 [INFO ]  	    - 0.2859
+2022-07-14 09:35:01 [INFO ]  	- !!python/tuple
+2022-07-14 09:35:01 [INFO ]  	    - 0.353
+2022-07-14 09:35:01 [INFO ]  	    - 0.353
+2022-07-14 09:35:01 [INFO ]  	    - 0.353
+2022-07-14 09:35:01 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-07-14 09:35:01 [INFO ]  	decay_epochs: 50
+2022-07-14 09:35:01 [INFO ]  	decay_factor: 0.1
+2022-07-14 09:35:01 [INFO ]  	device_id: 0
+2022-07-14 09:35:01 [INFO ]  	distill_epochs: 3
+2022-07-14 09:35:01 [INFO ]  	distill_lr: 0.02
+2022-07-14 09:35:01 [INFO ]  	distill_steps: 10
+2022-07-14 09:35:01 [INFO ]  	distilled_images_per_class_per_step: 1
+2022-07-14 09:35:01 [INFO ]  	epochs: 150
+2022-07-14 09:35:01 [INFO ]  	expand_cls: false
+2022-07-14 09:35:01 [INFO ]  	forgetting_dataset: null
+2022-07-14 09:35:01 [INFO ]  	init: xavier
+2022-07-14 09:35:01 [INFO ]  	init_param: 1.0
+2022-07-14 09:35:01 [INFO ]  	input_size: 32
+2022-07-14 09:35:01 [INFO ]  	log_file: ./results/distill_adapt/FASHION_MNIST/Source_SVHN/log.txt
+2022-07-14 09:35:01 [INFO ]  	log_interval: 100
+2022-07-14 09:35:01 [INFO ]  	log_level: INFO
+2022-07-14 09:35:01 [INFO ]  	lr: 0.01
+2022-07-14 09:35:01 [INFO ]  	mode: distill_adapt
+2022-07-14 09:35:01 [INFO ]  	nc: 3
+2022-07-14 09:35:01 [INFO ]  	num_classes: 10
+2022-07-14 09:35:01 [INFO ]  	num_workers: 8
+2022-07-14 09:35:01 [INFO ]  	phase: train
+2022-07-14 09:35:01 [INFO ]  	source_dataset: SVHN
+2022-07-14 09:35:01 [INFO ]  	start_time: '2022-07-14 09:35:01'
+2022-07-14 09:35:01 [INFO ]  	test_batch_size: 1024
+2022-07-14 09:35:01 [INFO ]  	
+2022-07-14 09:35:01 [INFO ]  train dataset size:	60000
+2022-07-14 09:35:01 [INFO ]  test dataset size: 	10000
+2022-07-14 09:35:01 [INFO ]  datasets built!
+2022-07-14 09:35:01 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 09:35:05 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0000/results.pth
+2022-07-14 09:35:05 [INFO ]  
+2022-07-14 09:35:05 [INFO ]  Begin of epoch 0 :
+2022-07-14 09:35:10 [INFO ]  Begin of epoch 0 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:35:10 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:35:10 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:35:10 [INFO ]  	   step 15 (lr=0.020000)                   12.92%                   3.3784
+2022-07-14 09:35:10 [INFO ]  	   step 30 (lr=0.020000)                   13.64%                   3.3335
+2022-07-14 09:35:10 [INFO ]  
+2022-07-14 09:35:11 [INFO ]  Epoch:    0	Loss: 3.1485	Data Time: 0.42s	Train Time: 0.12s
+2022-07-14 09:35:16 [INFO ]  Epoch:    1	Loss: 1.4048	Data Time: 0.21s	Train Time: 0.09s
+2022-07-14 09:35:21 [INFO ]  Epoch:    2	Loss: 0.8049	Data Time: 0.16s	Train Time: 0.11s
+2022-07-14 09:35:26 [INFO ]  Epoch:    3	Loss: 0.6332	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:35:32 [INFO ]  Epoch:    4	Loss: 0.6567	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 09:35:37 [INFO ]  Epoch:    5	Loss: 0.6502	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:35:42 [INFO ]  Epoch:    6	Loss: 0.5677	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 09:35:47 [INFO ]  Epoch:    7	Loss: 0.5524	Data Time: 0.08s	Train Time: 0.09s
+2022-07-14 09:35:52 [INFO ]  Epoch:    8	Loss: 0.5538	Data Time: 0.12s	Train Time: 0.09s
+2022-07-14 09:35:57 [INFO ]  Epoch:    9	Loss: 0.5457	Data Time: 0.13s	Train Time: 0.09s
+2022-07-14 09:36:05 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0010/results.pth
+2022-07-14 09:36:05 [INFO ]  
+2022-07-14 09:36:05 [INFO ]  Begin of epoch 10 :
+2022-07-14 09:36:09 [INFO ]  Begin of epoch 10 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:36:09 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:36:09 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:36:09 [INFO ]  	   step 15 (lr=0.059383)                   47.62%                   1.2654
+2022-07-14 09:36:09 [INFO ]  	   step 30 (lr=0.019431)                   79.38%                   0.5692
+2022-07-14 09:36:09 [INFO ]  
+2022-07-14 09:36:10 [INFO ]  Epoch:   10	Loss: 0.5492	Data Time: 0.05s	Train Time: 0.08s
+2022-07-14 09:36:15 [INFO ]  Epoch:   11	Loss: 0.5951	Data Time: 0.09s	Train Time: 0.12s
+2022-07-14 09:36:20 [INFO ]  Epoch:   12	Loss: 0.5745	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:36:25 [INFO ]  Epoch:   13	Loss: 0.5995	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:36:30 [INFO ]  Epoch:   14	Loss: 0.5449	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 09:36:36 [INFO ]  Epoch:   15	Loss: 0.5531	Data Time: 0.05s	Train Time: 0.11s
+2022-07-14 09:36:41 [INFO ]  Epoch:   16	Loss: 0.5782	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:36:46 [INFO ]  Epoch:   17	Loss: 0.5014	Data Time: 0.11s	Train Time: 0.12s
+2022-07-14 09:36:51 [INFO ]  Epoch:   18	Loss: 0.4709	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 09:36:56 [INFO ]  Epoch:   19	Loss: 0.5197	Data Time: 0.16s	Train Time: 0.12s
+2022-07-14 09:37:04 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0020/results.pth
+2022-07-14 09:37:04 [INFO ]  
+2022-07-14 09:37:04 [INFO ]  Begin of epoch 20 :
+2022-07-14 09:37:09 [INFO ]  Begin of epoch 20 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:37:09 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:37:09 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:37:09 [INFO ]  	   step 15 (lr=0.074367)                   66.13%                   1.0306
+2022-07-14 09:37:09 [INFO ]  	   step 30 (lr=0.021882)                   80.39%                   0.5347
+2022-07-14 09:37:09 [INFO ]  
+2022-07-14 09:37:09 [INFO ]  Epoch:   20	Loss: 0.4936	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 09:37:14 [INFO ]  Epoch:   21	Loss: 0.4841	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 09:37:19 [INFO ]  Epoch:   22	Loss: 0.4717	Data Time: 0.12s	Train Time: 0.09s
+2022-07-14 09:37:24 [INFO ]  Epoch:   23	Loss: 0.4833	Data Time: 0.10s	Train Time: 0.11s
+2022-07-14 09:37:30 [INFO ]  Epoch:   24	Loss: 0.5624	Data Time: 0.21s	Train Time: 0.12s
+2022-07-14 09:37:35 [INFO ]  Epoch:   25	Loss: 0.5333	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 09:37:40 [INFO ]  Epoch:   26	Loss: 0.4707	Data Time: 0.16s	Train Time: 0.09s
+2022-07-14 09:37:45 [INFO ]  Epoch:   27	Loss: 0.4688	Data Time: 0.09s	Train Time: 0.09s
+2022-07-14 09:37:51 [INFO ]  Epoch:   28	Loss: 0.5785	Data Time: 0.05s	Train Time: 0.12s
+2022-07-14 09:37:56 [INFO ]  Epoch:   29	Loss: 0.5340	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 09:38:03 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0030/results.pth
+2022-07-14 09:38:03 [INFO ]  
+2022-07-14 09:38:03 [INFO ]  Begin of epoch 30 :
+2022-07-14 09:38:08 [INFO ]  Begin of epoch 30 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:38:08 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:38:08 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:38:08 [INFO ]  	   step 15 (lr=0.084830)                   75.17%                   0.7918
+2022-07-14 09:38:08 [INFO ]  	   step 30 (lr=0.021448)                   81.13%                   0.5257
+2022-07-14 09:38:08 [INFO ]  
+2022-07-14 09:38:08 [INFO ]  Epoch:   30	Loss: 0.4939	Data Time: 0.20s	Train Time: 0.08s
+2022-07-14 09:38:14 [INFO ]  Epoch:   31	Loss: 0.4173	Data Time: 0.20s	Train Time: 0.12s
+2022-07-14 09:38:19 [INFO ]  Epoch:   32	Loss: 0.4254	Data Time: 0.09s	Train Time: 0.10s
+2022-07-14 09:38:25 [INFO ]  Epoch:   33	Loss: 0.4886	Data Time: 0.22s	Train Time: 0.12s
+2022-07-14 09:38:30 [INFO ]  Epoch:   34	Loss: 0.4626	Data Time: 0.09s	Train Time: 0.11s
+2022-07-14 09:38:36 [INFO ]  Epoch:   35	Loss: 0.4669	Data Time: 0.11s	Train Time: 0.11s
+2022-07-14 09:38:41 [INFO ]  Epoch:   36	Loss: 0.4333	Data Time: 0.16s	Train Time: 0.12s
+2022-07-14 09:38:47 [INFO ]  Epoch:   37	Loss: 0.5200	Data Time: 0.12s	Train Time: 0.13s
+2022-07-14 09:38:52 [INFO ]  Epoch:   38	Loss: 0.5225	Data Time: 0.16s	Train Time: 0.12s
+2022-07-14 09:38:58 [INFO ]  Epoch:   39	Loss: 0.5383	Data Time: 0.13s	Train Time: 0.13s
+2022-07-14 09:39:05 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0040/results.pth
+2022-07-14 09:39:05 [INFO ]  
+2022-07-14 09:39:05 [INFO ]  Begin of epoch 40 :
+2022-07-14 09:39:10 [INFO ]  Begin of epoch 40 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:39:10 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:39:10 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:39:10 [INFO ]  	   step 15 (lr=0.093104)                   71.66%                   0.8102
+2022-07-14 09:39:10 [INFO ]  	   step 30 (lr=0.020615)                   81.63%                   0.5031
+2022-07-14 09:39:10 [INFO ]  
+2022-07-14 09:39:10 [INFO ]  Epoch:   40	Loss: 0.4558	Data Time: 0.09s	Train Time: 0.08s
+2022-07-14 09:39:15 [INFO ]  Epoch:   41	Loss: 0.4038	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:39:20 [INFO ]  Epoch:   42	Loss: 0.5161	Data Time: 0.05s	Train Time: 0.10s
+2022-07-14 09:39:26 [INFO ]  Epoch:   43	Loss: 0.4532	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 09:39:31 [INFO ]  Epoch:   44	Loss: 0.4514	Data Time: 0.11s	Train Time: 0.09s
+2022-07-14 09:39:36 [INFO ]  Epoch:   45	Loss: 0.4553	Data Time: 0.18s	Train Time: 0.12s
+2022-07-14 09:39:41 [INFO ]  Epoch:   46	Loss: 0.5159	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:39:46 [INFO ]  Epoch:   47	Loss: 0.4464	Data Time: 0.09s	Train Time: 0.13s
+2022-07-14 09:39:52 [INFO ]  Epoch:   48	Loss: 0.4409	Data Time: 0.11s	Train Time: 0.11s
+2022-07-14 09:39:57 [INFO ]  Epoch:   49	Loss: 0.4067	Data Time: 0.13s	Train Time: 0.10s
+2022-07-14 09:40:04 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0050/results.pth
+2022-07-14 09:40:04 [INFO ]  
+2022-07-14 09:40:04 [INFO ]  Begin of epoch 50 :
+2022-07-14 09:40:10 [INFO ]  Begin of epoch 50 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:40:10 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:40:10 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:40:10 [INFO ]  	   step 15 (lr=0.105061)                   74.76%                   0.7444
+2022-07-14 09:40:10 [INFO ]  	   step 30 (lr=0.018117)                   83.77%                   0.4509
+2022-07-14 09:40:10 [INFO ]  
+2022-07-14 09:40:10 [INFO ]  Epoch:   50	Loss: 0.4322	Data Time: 0.05s	Train Time: 0.08s
+2022-07-14 09:40:15 [INFO ]  Epoch:   51	Loss: 0.4727	Data Time: 0.23s	Train Time: 0.12s
+2022-07-14 09:40:20 [INFO ]  Epoch:   52	Loss: 0.4260	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 09:40:26 [INFO ]  Epoch:   53	Loss: 0.4302	Data Time: 0.13s	Train Time: 0.10s
+2022-07-14 09:40:31 [INFO ]  Epoch:   54	Loss: 0.4654	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 09:40:36 [INFO ]  Epoch:   55	Loss: 0.4346	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 09:40:41 [INFO ]  Epoch:   56	Loss: 0.4153	Data Time: 0.09s	Train Time: 0.09s
+2022-07-14 09:40:46 [INFO ]  Epoch:   57	Loss: 0.3976	Data Time: 0.13s	Train Time: 0.09s
+2022-07-14 09:40:51 [INFO ]  Epoch:   58	Loss: 0.4901	Data Time: 0.13s	Train Time: 0.11s
+2022-07-14 09:40:57 [INFO ]  Epoch:   59	Loss: 0.4041	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:41:04 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0060/results.pth
+2022-07-14 09:41:04 [INFO ]  
+2022-07-14 09:41:04 [INFO ]  Begin of epoch 60 :
+2022-07-14 09:41:09 [INFO ]  Begin of epoch 60 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:41:09 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:41:09 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:41:09 [INFO ]  	   step 15 (lr=0.107390)                   75.12%                   0.7478
+2022-07-14 09:41:09 [INFO ]  	   step 30 (lr=0.018261)                   84.08%                   0.4463
+2022-07-14 09:41:09 [INFO ]  
+2022-07-14 09:41:09 [INFO ]  Epoch:   60	Loss: 0.4310	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 09:41:15 [INFO ]  Epoch:   61	Loss: 0.4192	Data Time: 0.15s	Train Time: 0.09s
+2022-07-14 09:41:20 [INFO ]  Epoch:   62	Loss: 0.4477	Data Time: 0.12s	Train Time: 0.09s
+2022-07-14 09:41:25 [INFO ]  Epoch:   63	Loss: 0.3679	Data Time: 0.10s	Train Time: 0.11s
+2022-07-14 09:41:30 [INFO ]  Epoch:   64	Loss: 0.4481	Data Time: 0.05s	Train Time: 0.12s
+2022-07-14 09:41:36 [INFO ]  Epoch:   65	Loss: 0.5168	Data Time: 0.12s	Train Time: 0.12s
+2022-07-14 09:41:41 [INFO ]  Epoch:   66	Loss: 0.3912	Data Time: 0.12s	Train Time: 0.09s
+2022-07-14 09:41:46 [INFO ]  Epoch:   67	Loss: 0.4231	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 09:41:52 [INFO ]  Epoch:   68	Loss: 0.4562	Data Time: 0.05s	Train Time: 0.09s
+2022-07-14 09:41:57 [INFO ]  Epoch:   69	Loss: 0.3979	Data Time: 0.09s	Train Time: 0.13s
+2022-07-14 09:42:04 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0070/results.pth
+2022-07-14 09:42:04 [INFO ]  
+2022-07-14 09:42:04 [INFO ]  Begin of epoch 70 :
+2022-07-14 09:42:09 [INFO ]  Begin of epoch 70 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:42:09 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:42:09 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:42:09 [INFO ]  	   step 15 (lr=0.111897)                   75.80%                   0.7663
+2022-07-14 09:42:09 [INFO ]  	   step 30 (lr=0.018619)                   83.74%                   0.4567
+2022-07-14 09:42:09 [INFO ]  
+2022-07-14 09:42:09 [INFO ]  Epoch:   70	Loss: 0.4685	Data Time: 0.09s	Train Time: 0.08s
+2022-07-14 09:42:15 [INFO ]  Epoch:   71	Loss: 0.4078	Data Time: 0.22s	Train Time: 0.12s
+2022-07-14 09:42:20 [INFO ]  Epoch:   72	Loss: 0.4255	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:42:25 [INFO ]  Epoch:   73	Loss: 0.4189	Data Time: 0.17s	Train Time: 0.12s
+2022-07-14 09:42:30 [INFO ]  Epoch:   74	Loss: 0.3997	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 09:42:36 [INFO ]  Epoch:   75	Loss: 0.4044	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 09:42:41 [INFO ]  Epoch:   76	Loss: 0.4514	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 09:42:46 [INFO ]  Epoch:   77	Loss: 0.4377	Data Time: 0.10s	Train Time: 0.09s
+2022-07-14 09:42:51 [INFO ]  Epoch:   78	Loss: 0.4434	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 09:42:56 [INFO ]  Epoch:   79	Loss: 0.4090	Data Time: 0.10s	Train Time: 0.12s
+2022-07-14 09:43:04 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0080/results.pth
+2022-07-14 09:43:04 [INFO ]  
+2022-07-14 09:43:04 [INFO ]  Begin of epoch 80 :
+2022-07-14 09:43:09 [INFO ]  Begin of epoch 80 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:43:09 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:43:09 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:43:09 [INFO ]  	   step 15 (lr=0.111787)                   75.35%                   0.7951
+2022-07-14 09:43:09 [INFO ]  	   step 30 (lr=0.018275)                   84.04%                   0.4417
+2022-07-14 09:43:09 [INFO ]  
+2022-07-14 09:43:09 [INFO ]  Epoch:   80	Loss: 0.4450	Data Time: 0.20s	Train Time: 0.08s
+2022-07-14 09:43:14 [INFO ]  Epoch:   81	Loss: 0.3827	Data Time: 0.11s	Train Time: 0.09s
+2022-07-14 09:43:19 [INFO ]  Epoch:   82	Loss: 0.4284	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:43:24 [INFO ]  Epoch:   83	Loss: 0.4392	Data Time: 0.18s	Train Time: 0.12s
+2022-07-14 09:43:30 [INFO ]  Epoch:   84	Loss: 0.3886	Data Time: 0.16s	Train Time: 0.13s
+2022-07-14 09:43:35 [INFO ]  Epoch:   85	Loss: 0.4602	Data Time: 0.21s	Train Time: 0.09s
+2022-07-14 09:43:40 [INFO ]  Epoch:   86	Loss: 0.4306	Data Time: 0.20s	Train Time: 0.12s
+2022-07-14 09:43:46 [INFO ]  Epoch:   87	Loss: 0.4144	Data Time: 0.09s	Train Time: 0.12s
+2022-07-14 09:43:51 [INFO ]  Epoch:   88	Loss: 0.4022	Data Time: 0.08s	Train Time: 0.10s
+2022-07-14 09:43:56 [INFO ]  Epoch:   89	Loss: 0.4103	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 09:44:04 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0090/results.pth
+2022-07-14 09:44:04 [INFO ]  
+2022-07-14 09:44:04 [INFO ]  Begin of epoch 90 :
+2022-07-14 09:44:08 [INFO ]  Begin of epoch 90 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:44:08 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:44:08 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:44:08 [INFO ]  	   step 15 (lr=0.113629)                   70.09%                   0.8147
+2022-07-14 09:44:08 [INFO ]  	   step 30 (lr=0.018394)                   83.33%                   0.4547
+2022-07-14 09:44:08 [INFO ]  
+2022-07-14 09:44:09 [INFO ]  Epoch:   90	Loss: 0.4619	Data Time: 0.05s	Train Time: 0.08s
+2022-07-14 09:44:14 [INFO ]  Epoch:   91	Loss: 0.4287	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:44:19 [INFO ]  Epoch:   92	Loss: 0.3944	Data Time: 0.13s	Train Time: 0.12s
+2022-07-14 09:44:24 [INFO ]  Epoch:   93	Loss: 0.4339	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 09:44:29 [INFO ]  Epoch:   94	Loss: 0.4583	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 09:44:34 [INFO ]  Epoch:   95	Loss: 0.4992	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 09:44:40 [INFO ]  Epoch:   96	Loss: 0.3692	Data Time: 0.19s	Train Time: 0.12s
+2022-07-14 09:44:45 [INFO ]  Epoch:   97	Loss: 0.3957	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:44:51 [INFO ]  Epoch:   98	Loss: 0.3842	Data Time: 0.19s	Train Time: 0.09s
+2022-07-14 09:44:56 [INFO ]  Epoch:   99	Loss: 0.4191	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 09:45:03 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0100/results.pth
+2022-07-14 09:45:03 [INFO ]  
+2022-07-14 09:45:03 [INFO ]  Begin of epoch 100 :
+2022-07-14 09:45:09 [INFO ]  Begin of epoch 100 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:45:09 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:45:09 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:45:09 [INFO ]  	   step 15 (lr=0.115759)                   74.52%                   0.8103
+2022-07-14 09:45:09 [INFO ]  	   step 30 (lr=0.018120)                   83.93%                   0.4366
+2022-07-14 09:45:09 [INFO ]  
+2022-07-14 09:45:09 [INFO ]  Epoch:  100	Loss: 0.4141	Data Time: 0.06s	Train Time: 0.08s
+2022-07-14 09:45:14 [INFO ]  Epoch:  101	Loss: 0.4241	Data Time: 0.16s	Train Time: 0.11s
+2022-07-14 09:45:20 [INFO ]  Epoch:  102	Loss: 0.3963	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 09:45:25 [INFO ]  Epoch:  103	Loss: 0.4282	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 09:45:30 [INFO ]  Epoch:  104	Loss: 0.4302	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:45:35 [INFO ]  Epoch:  105	Loss: 0.3939	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 09:45:40 [INFO ]  Epoch:  106	Loss: 0.4110	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 09:45:46 [INFO ]  Epoch:  107	Loss: 0.4528	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 09:45:51 [INFO ]  Epoch:  108	Loss: 0.3880	Data Time: 0.08s	Train Time: 0.09s
+2022-07-14 09:45:56 [INFO ]  Epoch:  109	Loss: 0.4133	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:46:04 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0110/results.pth
+2022-07-14 09:46:04 [INFO ]  
+2022-07-14 09:46:04 [INFO ]  Begin of epoch 110 :
+2022-07-14 09:46:09 [INFO ]  Begin of epoch 110 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:46:09 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:46:09 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:46:09 [INFO ]  	   step 15 (lr=0.115921)                   76.31%                   0.7971
+2022-07-14 09:46:09 [INFO ]  	   step 30 (lr=0.018308)                   84.18%                   0.4387
+2022-07-14 09:46:09 [INFO ]  
+2022-07-14 09:46:09 [INFO ]  Epoch:  110	Loss: 0.4126	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 09:46:14 [INFO ]  Epoch:  111	Loss: 0.4268	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 09:46:19 [INFO ]  Epoch:  112	Loss: 0.4015	Data Time: 0.17s	Train Time: 0.12s
+2022-07-14 09:46:24 [INFO ]  Epoch:  113	Loss: 0.4024	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 09:46:29 [INFO ]  Epoch:  114	Loss: 0.4206	Data Time: 0.09s	Train Time: 0.13s
+2022-07-14 09:46:35 [INFO ]  Epoch:  115	Loss: 0.3956	Data Time: 0.12s	Train Time: 0.12s
+2022-07-14 09:46:40 [INFO ]  Epoch:  116	Loss: 0.4285	Data Time: 0.10s	Train Time: 0.09s
+2022-07-14 09:46:45 [INFO ]  Epoch:  117	Loss: 0.4712	Data Time: 0.11s	Train Time: 0.12s
+2022-07-14 09:46:51 [INFO ]  Epoch:  118	Loss: 0.4140	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 09:46:56 [INFO ]  Epoch:  119	Loss: 0.4339	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 09:47:03 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0120/results.pth
+2022-07-14 09:47:03 [INFO ]  
+2022-07-14 09:47:03 [INFO ]  Begin of epoch 120 :
+2022-07-14 09:47:08 [INFO ]  Begin of epoch 120 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:47:08 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:47:08 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:47:08 [INFO ]  	   step 15 (lr=0.115598)                   68.68%                   0.8756
+2022-07-14 09:47:08 [INFO ]  	   step 30 (lr=0.018455)                   84.13%                   0.4440
+2022-07-14 09:47:08 [INFO ]  
+2022-07-14 09:47:08 [INFO ]  Epoch:  120	Loss: 0.4175	Data Time: 0.09s	Train Time: 0.08s
+2022-07-14 09:47:14 [INFO ]  Epoch:  121	Loss: 0.4424	Data Time: 0.16s	Train Time: 0.12s
+2022-07-14 09:47:19 [INFO ]  Epoch:  122	Loss: 0.4347	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:47:24 [INFO ]  Epoch:  123	Loss: 0.3991	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 09:47:29 [INFO ]  Epoch:  124	Loss: 0.4306	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 09:47:35 [INFO ]  Epoch:  125	Loss: 0.4412	Data Time: 0.20s	Train Time: 0.09s
+2022-07-14 09:47:40 [INFO ]  Epoch:  126	Loss: 0.4412	Data Time: 0.05s	Train Time: 0.09s
+2022-07-14 09:47:45 [INFO ]  Epoch:  127	Loss: 0.3930	Data Time: 0.06s	Train Time: 0.08s
+2022-07-14 09:47:50 [INFO ]  Epoch:  128	Loss: 0.4216	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 09:47:56 [INFO ]  Epoch:  129	Loss: 0.4601	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 09:48:03 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0130/results.pth
+2022-07-14 09:48:03 [INFO ]  
+2022-07-14 09:48:03 [INFO ]  Begin of epoch 130 :
+2022-07-14 09:48:08 [INFO ]  Begin of epoch 130 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:48:08 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:48:08 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:48:08 [INFO ]  	   step 15 (lr=0.115617)                   71.19%                   0.8402
+2022-07-14 09:48:08 [INFO ]  	   step 30 (lr=0.018477)                   84.07%                   0.4366
+2022-07-14 09:48:08 [INFO ]  
+2022-07-14 09:48:08 [INFO ]  Epoch:  130	Loss: 0.4643	Data Time: 0.15s	Train Time: 0.08s
+2022-07-14 09:48:13 [INFO ]  Epoch:  131	Loss: 0.4520	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 09:48:19 [INFO ]  Epoch:  132	Loss: 0.4092	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 09:48:24 [INFO ]  Epoch:  133	Loss: 0.4313	Data Time: 0.16s	Train Time: 0.12s
+2022-07-14 09:48:29 [INFO ]  Epoch:  134	Loss: 0.4322	Data Time: 0.05s	Train Time: 0.09s
+2022-07-14 09:48:35 [INFO ]  Epoch:  135	Loss: 0.3887	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 09:48:40 [INFO ]  Epoch:  136	Loss: 0.3745	Data Time: 0.05s	Train Time: 0.12s
+2022-07-14 09:48:45 [INFO ]  Epoch:  137	Loss: 0.4324	Data Time: 0.15s	Train Time: 0.12s
+2022-07-14 09:48:50 [INFO ]  Epoch:  138	Loss: 0.4223	Data Time: 0.10s	Train Time: 0.09s
+2022-07-14 09:48:56 [INFO ]  Epoch:  139	Loss: 0.3692	Data Time: 0.19s	Train Time: 0.12s
+2022-07-14 09:49:03 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0140/results.pth
+2022-07-14 09:49:03 [INFO ]  
+2022-07-14 09:49:03 [INFO ]  Begin of epoch 140 :
+2022-07-14 09:49:08 [INFO ]  Begin of epoch 140 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:49:08 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:49:08 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:49:08 [INFO ]  	   step 15 (lr=0.115789)                   70.27%                   0.8611
+2022-07-14 09:49:08 [INFO ]  	   step 30 (lr=0.018540)                   84.40%                   0.4349
+2022-07-14 09:49:08 [INFO ]  
+2022-07-14 09:49:08 [INFO ]  Epoch:  140	Loss: 0.3913	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 09:49:14 [INFO ]  Epoch:  141	Loss: 0.3841	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 09:49:19 [INFO ]  Epoch:  142	Loss: 0.4380	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 09:49:24 [INFO ]  Epoch:  143	Loss: 0.4748	Data Time: 0.08s	Train Time: 0.10s
+2022-07-14 09:49:29 [INFO ]  Epoch:  144	Loss: 0.4893	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 09:49:35 [INFO ]  Epoch:  145	Loss: 0.4246	Data Time: 0.10s	Train Time: 0.10s
+2022-07-14 09:49:40 [INFO ]  Epoch:  146	Loss: 0.3696	Data Time: 0.10s	Train Time: 0.10s
+2022-07-14 09:49:45 [INFO ]  Epoch:  147	Loss: 0.4340	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 09:49:50 [INFO ]  Epoch:  148	Loss: 0.3965	Data Time: 0.10s	Train Time: 0.12s
+2022-07-14 09:49:55 [INFO ]  Epoch:  149	Loss: 0.4443	Data Time: 0.16s	Train Time: 0.10s
+2022-07-14 09:50:03 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/results.pth
+2022-07-14 09:50:03 [INFO ]  
+2022-07-14 09:50:03 [INFO ]  Final evaluation for FASHION_MNIST without expanded Classifier :
+2022-07-14 09:50:08 [INFO ]  Final evaluation for FASHION_MNIST without expanded Classifier evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:50:08 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:50:08 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 09:50:08 [INFO ]  	   step 15 (lr=0.115596)                   74.41%                   0.8314
+2022-07-14 09:50:08 [INFO ]  	   step 30 (lr=0.018576)                   83.62%                   0.4555
+2022-07-14 09:50:08 [INFO ]  
+2022-07-14 09:50:08 [INFO ]  
+2022-07-14 09:50:08 [INFO ]  Final evaluation for SVHN without expanded Classifier :
+2022-07-14 09:50:14 [INFO ]  Final evaluation for SVHN without expanded Classifier evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 09:50:14 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 09:50:14 [INFO ]  	            before steps                   84.84%                   0.5718
+2022-07-14 09:50:14 [INFO ]  	   step 15 (lr=0.115596)                   17.41%                   3.4653
+2022-07-14 09:50:14 [INFO ]  	   step 30 (lr=0.018576)                   14.12%                   5.1736
+2022-07-14 09:50:14 [INFO ]  
+2022-07-14 10:16:20 [INFO ]  ======================================== 2022-07-14 10:16:20 ========================================
+2022-07-14 10:16:20 [INFO ]  Base directory is ./results/distill_adapt/FASHION_MNIST/Source_SVHN
+2022-07-14 10:16:20 [INFO ]  Options: 
+2022-07-14 10:16:20 [INFO ]  	base_dir: null
+2022-07-14 10:16:20 [INFO ]  	base_seed: 1
+2022-07-14 10:16:20 [INFO ]  	batch_size: 1024
+2022-07-14 10:16:20 [INFO ]  	checkpoint_interval: 10
+2022-07-14 10:16:20 [INFO ]  	dataset: FASHION_MNIST
+2022-07-14 10:16:20 [INFO ]  	dataset_labels:
+2022-07-14 10:16:20 [INFO ]  	- 0
+2022-07-14 10:16:20 [INFO ]  	- 1
+2022-07-14 10:16:20 [INFO ]  	- 2
+2022-07-14 10:16:20 [INFO ]  	- 3
+2022-07-14 10:16:20 [INFO ]  	- 4
+2022-07-14 10:16:20 [INFO ]  	- 5
+2022-07-14 10:16:20 [INFO ]  	- 6
+2022-07-14 10:16:20 [INFO ]  	- 7
+2022-07-14 10:16:20 [INFO ]  	- 8
+2022-07-14 10:16:20 [INFO ]  	- 9
+2022-07-14 10:16:20 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 10:16:20 [INFO ]  	- !!python/tuple
+2022-07-14 10:16:20 [INFO ]  	    - 0.2859
+2022-07-14 10:16:20 [INFO ]  	    - 0.2859
+2022-07-14 10:16:20 [INFO ]  	    - 0.2859
+2022-07-14 10:16:20 [INFO ]  	- !!python/tuple
+2022-07-14 10:16:20 [INFO ]  	    - 0.353
+2022-07-14 10:16:20 [INFO ]  	    - 0.353
+2022-07-14 10:16:20 [INFO ]  	    - 0.353
+2022-07-14 10:16:20 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-07-14 10:16:20 [INFO ]  	decay_epochs: 20
+2022-07-14 10:16:20 [INFO ]  	decay_factor: 0.1
+2022-07-14 10:16:20 [INFO ]  	device_id: 0
+2022-07-14 10:16:20 [INFO ]  	distill_epochs: 3
+2022-07-14 10:16:20 [INFO ]  	distill_lr: 0.02
+2022-07-14 10:16:20 [INFO ]  	distill_steps: 10
+2022-07-14 10:16:20 [INFO ]  	distilled_images_per_class_per_step: 1
+2022-07-14 10:16:20 [INFO ]  	epochs: 65
+2022-07-14 10:16:20 [INFO ]  	expand_cls: true
+2022-07-14 10:16:20 [INFO ]  	forgetting_dataset: null
+2022-07-14 10:16:20 [INFO ]  	init: xavier
+2022-07-14 10:16:20 [INFO ]  	init_param: 1.0
+2022-07-14 10:16:20 [INFO ]  	input_size: 32
+2022-07-14 10:16:20 [INFO ]  	log_file: ./results/distill_adapt/FASHION_MNIST/Source_SVHN/log.txt
+2022-07-14 10:16:20 [INFO ]  	log_interval: 100
+2022-07-14 10:16:20 [INFO ]  	log_level: INFO
+2022-07-14 10:16:20 [INFO ]  	lr: 0.01
+2022-07-14 10:16:20 [INFO ]  	mode: distill_adapt
+2022-07-14 10:16:20 [INFO ]  	nc: 3
+2022-07-14 10:16:20 [INFO ]  	num_classes: 10
+2022-07-14 10:16:20 [INFO ]  	num_workers: 8
+2022-07-14 10:16:20 [INFO ]  	phase: train
+2022-07-14 10:16:20 [INFO ]  	source_dataset: SVHN
+2022-07-14 10:16:20 [INFO ]  	start_time: '2022-07-14 10:16:20'
+2022-07-14 10:16:20 [INFO ]  	test_batch_size: 1024
+2022-07-14 10:16:20 [INFO ]  	
+2022-07-14 10:16:21 [INFO ]  train dataset size:	60000
+2022-07-14 10:16:21 [INFO ]  test dataset size: 	10000
+2022-07-14 10:16:21 [INFO ]  datasets built!
+2022-07-14 10:16:21 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 11:12:30 [INFO ]  ======================================== 2022-07-14 11:12:30 ========================================
+2022-07-14 11:12:30 [INFO ]  Base directory is ./results/distill_adapt/FASHION_MNIST/Source_SVHN
+2022-07-14 11:12:30 [INFO ]  Options: 
+2022-07-14 11:12:30 [INFO ]  	base_dir: null
+2022-07-14 11:12:30 [INFO ]  	base_seed: 1
+2022-07-14 11:12:30 [INFO ]  	batch_size: 1024
+2022-07-14 11:12:30 [INFO ]  	checkpoint_interval: 10
+2022-07-14 11:12:30 [INFO ]  	dataset: FASHION_MNIST
+2022-07-14 11:12:30 [INFO ]  	dataset_labels:
+2022-07-14 11:12:30 [INFO ]  	- 0
+2022-07-14 11:12:30 [INFO ]  	- 1
+2022-07-14 11:12:30 [INFO ]  	- 2
+2022-07-14 11:12:30 [INFO ]  	- 3
+2022-07-14 11:12:30 [INFO ]  	- 4
+2022-07-14 11:12:30 [INFO ]  	- 5
+2022-07-14 11:12:30 [INFO ]  	- 6
+2022-07-14 11:12:30 [INFO ]  	- 7
+2022-07-14 11:12:30 [INFO ]  	- 8
+2022-07-14 11:12:30 [INFO ]  	- 9
+2022-07-14 11:12:30 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 11:12:30 [INFO ]  	- !!python/tuple
+2022-07-14 11:12:30 [INFO ]  	    - 0.2859
+2022-07-14 11:12:30 [INFO ]  	    - 0.2859
+2022-07-14 11:12:30 [INFO ]  	    - 0.2859
+2022-07-14 11:12:30 [INFO ]  	- !!python/tuple
+2022-07-14 11:12:30 [INFO ]  	    - 0.353
+2022-07-14 11:12:30 [INFO ]  	    - 0.353
+2022-07-14 11:12:30 [INFO ]  	    - 0.353
+2022-07-14 11:12:30 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-07-14 11:12:30 [INFO ]  	decay_epochs: 50
+2022-07-14 11:12:30 [INFO ]  	decay_factor: 0.1
+2022-07-14 11:12:30 [INFO ]  	device_id: 0
+2022-07-14 11:12:30 [INFO ]  	distill_epochs: 3
+2022-07-14 11:12:30 [INFO ]  	distill_lr: 0.02
+2022-07-14 11:12:30 [INFO ]  	distill_steps: 10
+2022-07-14 11:12:30 [INFO ]  	epochs: 150
+2022-07-14 11:12:30 [INFO ]  	expand_cls: false
+2022-07-14 11:12:30 [INFO ]  	forgetting_dataset: null
+2022-07-14 11:12:30 [INFO ]  	init: xavier
+2022-07-14 11:12:30 [INFO ]  	init_param: 1.0
+2022-07-14 11:12:30 [INFO ]  	input_size: 32
+2022-07-14 11:12:30 [INFO ]  	ipc: 10
+2022-07-14 11:12:30 [INFO ]  	log_file: ./results/distill_adapt/FASHION_MNIST/Source_SVHN/log.txt
+2022-07-14 11:12:30 [INFO ]  	log_interval: 100
+2022-07-14 11:12:30 [INFO ]  	log_level: INFO
+2022-07-14 11:12:30 [INFO ]  	lr: 0.01
+2022-07-14 11:12:30 [INFO ]  	mode: distill_adapt
+2022-07-14 11:12:30 [INFO ]  	nc: 3
+2022-07-14 11:12:30 [INFO ]  	num_classes: 10
+2022-07-14 11:12:30 [INFO ]  	num_workers: 8
+2022-07-14 11:12:30 [INFO ]  	phase: train
+2022-07-14 11:12:30 [INFO ]  	source_dataset: SVHN
+2022-07-14 11:12:30 [INFO ]  	start_time: '2022-07-14 11:12:30'
+2022-07-14 11:12:30 [INFO ]  	test_batch_size: 1024
+2022-07-14 11:12:30 [INFO ]  	
+2022-07-14 11:12:31 [INFO ]  train dataset size:	60000
+2022-07-14 11:12:31 [INFO ]  test dataset size: 	10000
+2022-07-14 11:12:31 [INFO ]  datasets built!
+2022-07-14 11:12:31 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 11:13:27 [INFO ]  ======================================== 2022-07-14 11:13:27 ========================================
+2022-07-14 11:13:27 [INFO ]  Base directory is ./results/distill_adapt/FASHION_MNIST/Source_SVHN
+2022-07-14 11:13:27 [INFO ]  Options: 
+2022-07-14 11:13:27 [INFO ]  	base_dir: null
+2022-07-14 11:13:27 [INFO ]  	base_seed: 1
+2022-07-14 11:13:27 [INFO ]  	batch_size: 1024
+2022-07-14 11:13:27 [INFO ]  	checkpoint_interval: 10
+2022-07-14 11:13:27 [INFO ]  	dataset: FASHION_MNIST
+2022-07-14 11:13:27 [INFO ]  	dataset_labels:
+2022-07-14 11:13:27 [INFO ]  	- 0
+2022-07-14 11:13:27 [INFO ]  	- 1
+2022-07-14 11:13:27 [INFO ]  	- 2
+2022-07-14 11:13:27 [INFO ]  	- 3
+2022-07-14 11:13:27 [INFO ]  	- 4
+2022-07-14 11:13:27 [INFO ]  	- 5
+2022-07-14 11:13:27 [INFO ]  	- 6
+2022-07-14 11:13:27 [INFO ]  	- 7
+2022-07-14 11:13:27 [INFO ]  	- 8
+2022-07-14 11:13:27 [INFO ]  	- 9
+2022-07-14 11:13:27 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 11:13:27 [INFO ]  	- !!python/tuple
+2022-07-14 11:13:27 [INFO ]  	    - 0.2859
+2022-07-14 11:13:27 [INFO ]  	    - 0.2859
+2022-07-14 11:13:27 [INFO ]  	    - 0.2859
+2022-07-14 11:13:27 [INFO ]  	- !!python/tuple
+2022-07-14 11:13:27 [INFO ]  	    - 0.353
+2022-07-14 11:13:27 [INFO ]  	    - 0.353
+2022-07-14 11:13:27 [INFO ]  	    - 0.353
+2022-07-14 11:13:27 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-07-14 11:13:27 [INFO ]  	decay_epochs: 50
+2022-07-14 11:13:27 [INFO ]  	decay_factor: 0.1
+2022-07-14 11:13:27 [INFO ]  	device_id: 0
+2022-07-14 11:13:27 [INFO ]  	distill_epochs: 3
+2022-07-14 11:13:27 [INFO ]  	distill_lr: 0.02
+2022-07-14 11:13:27 [INFO ]  	distill_steps: 10
+2022-07-14 11:13:27 [INFO ]  	epochs: 150
+2022-07-14 11:13:27 [INFO ]  	expand_cls: false
+2022-07-14 11:13:27 [INFO ]  	forgetting_dataset: null
+2022-07-14 11:13:27 [INFO ]  	init: xavier
+2022-07-14 11:13:27 [INFO ]  	init_param: 1.0
+2022-07-14 11:13:27 [INFO ]  	input_size: 32
+2022-07-14 11:13:27 [INFO ]  	ipc: 10
+2022-07-14 11:13:27 [INFO ]  	log_file: ./results/distill_adapt/FASHION_MNIST/Source_SVHN/log.txt
+2022-07-14 11:13:27 [INFO ]  	log_interval: 100
+2022-07-14 11:13:27 [INFO ]  	log_level: INFO
+2022-07-14 11:13:27 [INFO ]  	lr: 0.01
+2022-07-14 11:13:27 [INFO ]  	mode: distill_adapt
+2022-07-14 11:13:27 [INFO ]  	nc: 3
+2022-07-14 11:13:27 [INFO ]  	num_classes: 10
+2022-07-14 11:13:27 [INFO ]  	num_workers: 8
+2022-07-14 11:13:27 [INFO ]  	phase: train
+2022-07-14 11:13:27 [INFO ]  	source_dataset: SVHN
+2022-07-14 11:13:27 [INFO ]  	start_time: '2022-07-14 11:13:27'
+2022-07-14 11:13:27 [INFO ]  	test_batch_size: 1024
+2022-07-14 11:13:27 [INFO ]  	
+2022-07-14 11:13:28 [INFO ]  train dataset size:	60000
+2022-07-14 11:13:28 [INFO ]  test dataset size: 	10000
+2022-07-14 11:13:28 [INFO ]  datasets built!
+2022-07-14 11:13:28 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 11:13:46 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0000/results.pth
+2022-07-14 11:13:46 [INFO ]  
+2022-07-14 11:13:46 [INFO ]  Begin of epoch 0 :
+2022-07-14 11:13:51 [INFO ]  Begin of epoch 0 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:13:51 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:13:51 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:13:51 [INFO ]  	   step 15 (lr=0.020000)                   14.92%                   3.4447
+2022-07-14 11:13:51 [INFO ]  	   step 30 (lr=0.020000)                   15.04%                   3.2822
+2022-07-14 11:13:51 [INFO ]  
+2022-07-14 11:13:51 [INFO ]  Epoch:    0	Loss: 3.3107	Data Time: 0.43s	Train Time: 0.13s
+2022-07-14 11:13:56 [INFO ]  Epoch:    1	Loss: 0.7718	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 11:14:02 [INFO ]  Epoch:    2	Loss: 0.6198	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 11:14:07 [INFO ]  Epoch:    3	Loss: 0.5597	Data Time: 0.05s	Train Time: 0.09s
+2022-07-14 11:14:12 [INFO ]  Epoch:    4	Loss: 0.5662	Data Time: 0.04s	Train Time: 0.12s
+2022-07-14 11:14:18 [INFO ]  Epoch:    5	Loss: 0.5252	Data Time: 0.16s	Train Time: 0.13s
+2022-07-14 11:14:23 [INFO ]  Epoch:    6	Loss: 0.4822	Data Time: 0.11s	Train Time: 0.12s
+2022-07-14 11:14:28 [INFO ]  Epoch:    7	Loss: 0.4269	Data Time: 0.04s	Train Time: 0.09s
+2022-07-14 11:14:34 [INFO ]  Epoch:    8	Loss: 0.4296	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 11:14:39 [INFO ]  Epoch:    9	Loss: 0.4808	Data Time: 0.05s	Train Time: 0.10s
+2022-07-14 11:15:02 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0010/results.pth
+2022-07-14 11:15:02 [INFO ]  
+2022-07-14 11:15:02 [INFO ]  Begin of epoch 10 :
+2022-07-14 11:15:06 [INFO ]  Begin of epoch 10 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:15:06 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:15:06 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:15:06 [INFO ]  	   step 15 (lr=0.102607)                   48.24%                   1.6968
+2022-07-14 11:15:06 [INFO ]  	   step 30 (lr=0.018652)                   83.26%                   0.4757
+2022-07-14 11:15:06 [INFO ]  
+2022-07-14 11:15:06 [INFO ]  Epoch:   10	Loss: 0.4841	Data Time: 0.05s	Train Time: 0.09s
+2022-07-14 11:15:11 [INFO ]  Epoch:   11	Loss: 0.4692	Data Time: 0.16s	Train Time: 0.12s
+2022-07-14 11:15:17 [INFO ]  Epoch:   12	Loss: 0.4560	Data Time: 0.05s	Train Time: 0.12s
+2022-07-14 11:15:22 [INFO ]  Epoch:   13	Loss: 0.4359	Data Time: 0.17s	Train Time: 0.12s
+2022-07-14 11:15:27 [INFO ]  Epoch:   14	Loss: 0.4273	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 11:15:33 [INFO ]  Epoch:   15	Loss: 0.4470	Data Time: 0.09s	Train Time: 0.12s
+2022-07-14 11:15:38 [INFO ]  Epoch:   16	Loss: 0.4337	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 11:15:44 [INFO ]  Epoch:   17	Loss: 0.4264	Data Time: 0.12s	Train Time: 0.12s
+2022-07-14 11:15:49 [INFO ]  Epoch:   18	Loss: 0.4332	Data Time: 0.20s	Train Time: 0.11s
+2022-07-14 11:15:54 [INFO ]  Epoch:   19	Loss: 0.4160	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 11:16:17 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0020/results.pth
+2022-07-14 11:16:17 [INFO ]  
+2022-07-14 11:16:17 [INFO ]  Begin of epoch 20 :
+2022-07-14 11:16:22 [INFO ]  Begin of epoch 20 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:16:22 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:16:22 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:16:22 [INFO ]  	   step 15 (lr=0.200889)                   23.84%                   2.3181
+2022-07-14 11:16:22 [INFO ]  	   step 30 (lr=0.025791)                   15.13%                   2.2816
+2022-07-14 11:16:22 [INFO ]  
+2022-07-14 11:16:22 [INFO ]  Epoch:   20	Loss: 2.2822	Data Time: 0.09s	Train Time: 0.08s
+2022-07-14 11:16:27 [INFO ]  Epoch:   21	Loss: 0.7082	Data Time: 0.20s	Train Time: 0.12s
+2022-07-14 11:16:32 [INFO ]  Epoch:   22	Loss: 1.2114	Data Time: 0.08s	Train Time: 0.10s
+2022-07-14 11:16:38 [INFO ]  Epoch:   23	Loss: 0.6321	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 11:16:43 [INFO ]  Epoch:   24	Loss: 0.4666	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 11:16:48 [INFO ]  Epoch:   25	Loss: 0.5075	Data Time: 0.05s	Train Time: 0.11s
+2022-07-14 11:16:54 [INFO ]  Epoch:   26	Loss: 0.4632	Data Time: 0.10s	Train Time: 0.13s
+2022-07-14 11:16:59 [INFO ]  Epoch:   27	Loss: 0.4662	Data Time: 0.21s	Train Time: 0.13s
+2022-07-14 11:17:05 [INFO ]  Epoch:   28	Loss: 0.4234	Data Time: 0.11s	Train Time: 0.12s
+2022-07-14 11:17:10 [INFO ]  Epoch:   29	Loss: 0.4435	Data Time: 0.10s	Train Time: 0.12s
+2022-07-14 11:17:32 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0030/results.pth
+2022-07-14 11:17:32 [INFO ]  
+2022-07-14 11:17:32 [INFO ]  Begin of epoch 30 :
+2022-07-14 11:17:37 [INFO ]  Begin of epoch 30 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:17:37 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:17:37 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:17:37 [INFO ]  	   step 15 (lr=0.186303)                   52.03%                   1.5764
+2022-07-14 11:17:37 [INFO ]  	   step 30 (lr=0.028265)                   83.76%                   0.4618
+2022-07-14 11:17:37 [INFO ]  
+2022-07-14 11:17:37 [INFO ]  Epoch:   30	Loss: 0.4513	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 11:17:42 [INFO ]  Epoch:   31	Loss: 0.4651	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 11:17:48 [INFO ]  Epoch:   32	Loss: 0.3852	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 11:17:53 [INFO ]  Epoch:   33	Loss: 0.4301	Data Time: 0.10s	Train Time: 0.10s
+2022-07-14 11:17:59 [INFO ]  Epoch:   34	Loss: 0.3965	Data Time: 0.13s	Train Time: 0.13s
+2022-07-14 11:18:04 [INFO ]  Epoch:   35	Loss: 0.4221	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 11:18:09 [INFO ]  Epoch:   36	Loss: 0.3649	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 11:18:15 [INFO ]  Epoch:   37	Loss: 0.4098	Data Time: 0.11s	Train Time: 0.10s
+2022-07-14 11:18:20 [INFO ]  Epoch:   38	Loss: 0.3991	Data Time: 0.05s	Train Time: 0.10s
+2022-07-14 11:18:25 [INFO ]  Epoch:   39	Loss: 0.5897	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 11:18:48 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0040/results.pth
+2022-07-14 11:18:48 [INFO ]  
+2022-07-14 11:18:48 [INFO ]  Begin of epoch 40 :
+2022-07-14 11:18:53 [INFO ]  Begin of epoch 40 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:18:53 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:18:53 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:18:53 [INFO ]  	   step 15 (lr=0.229799)                   40.72%                   1.6925
+2022-07-14 11:18:53 [INFO ]  	   step 30 (lr=0.028800)                   82.21%                   0.4897
+2022-07-14 11:18:53 [INFO ]  
+2022-07-14 11:18:53 [INFO ]  Epoch:   40	Loss: 0.4961	Data Time: 0.06s	Train Time: 0.08s
+2022-07-14 11:18:58 [INFO ]  Epoch:   41	Loss: 0.4919	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 11:19:03 [INFO ]  Epoch:   42	Loss: 0.5485	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 11:19:09 [INFO ]  Epoch:   43	Loss: 0.3903	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 11:19:14 [INFO ]  Epoch:   44	Loss: 0.4728	Data Time: 0.10s	Train Time: 0.13s
+2022-07-14 11:19:19 [INFO ]  Epoch:   45	Loss: 0.3868	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 11:19:25 [INFO ]  Epoch:   46	Loss: 0.4123	Data Time: 0.10s	Train Time: 0.12s
+2022-07-14 11:19:30 [INFO ]  Epoch:   47	Loss: 0.4663	Data Time: 0.13s	Train Time: 0.13s
+2022-07-14 11:19:35 [INFO ]  Epoch:   48	Loss: 0.3975	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 11:19:41 [INFO ]  Epoch:   49	Loss: 0.3733	Data Time: 0.08s	Train Time: 0.10s
+2022-07-14 11:20:03 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0050/results.pth
+2022-07-14 11:20:03 [INFO ]  
+2022-07-14 11:20:03 [INFO ]  Begin of epoch 50 :
+2022-07-14 11:20:08 [INFO ]  Begin of epoch 50 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:20:08 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:20:08 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:20:08 [INFO ]  	   step 15 (lr=0.237114)                   65.70%                   1.0161
+2022-07-14 11:20:08 [INFO ]  	   step 30 (lr=0.023917)                   85.25%                   0.4120
+2022-07-14 11:20:08 [INFO ]  
+2022-07-14 11:20:08 [INFO ]  Epoch:   50	Loss: 0.3858	Data Time: 0.09s	Train Time: 0.08s
+2022-07-14 11:20:13 [INFO ]  Epoch:   51	Loss: 0.4186	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 11:20:19 [INFO ]  Epoch:   52	Loss: 0.3782	Data Time: 0.05s	Train Time: 0.10s
+2022-07-14 11:20:24 [INFO ]  Epoch:   53	Loss: 0.3580	Data Time: 0.05s	Train Time: 0.12s
+2022-07-14 11:20:30 [INFO ]  Epoch:   54	Loss: 0.3737	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 11:20:35 [INFO ]  Epoch:   55	Loss: 0.3883	Data Time: 0.11s	Train Time: 0.12s
+2022-07-14 11:20:40 [INFO ]  Epoch:   56	Loss: 0.3856	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 11:20:46 [INFO ]  Epoch:   57	Loss: 0.3789	Data Time: 0.16s	Train Time: 0.10s
+2022-07-14 11:20:51 [INFO ]  Epoch:   58	Loss: 0.3718	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 11:20:57 [INFO ]  Epoch:   59	Loss: 0.3896	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 11:21:19 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0060/results.pth
+2022-07-14 11:21:19 [INFO ]  
+2022-07-14 11:21:19 [INFO ]  Begin of epoch 60 :
+2022-07-14 11:21:24 [INFO ]  Begin of epoch 60 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:21:24 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:21:24 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:21:24 [INFO ]  	   step 15 (lr=0.237323)                   67.60%                   0.9803
+2022-07-14 11:21:24 [INFO ]  	   step 30 (lr=0.024146)                   84.78%                   0.4186
+2022-07-14 11:21:24 [INFO ]  
+2022-07-14 11:21:24 [INFO ]  Epoch:   60	Loss: 0.3912	Data Time: 0.11s	Train Time: 0.09s
+2022-07-14 11:21:29 [INFO ]  Epoch:   61	Loss: 0.3924	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 11:21:34 [INFO ]  Epoch:   62	Loss: 0.3940	Data Time: 0.09s	Train Time: 0.10s
+2022-07-14 11:21:40 [INFO ]  Epoch:   63	Loss: 0.3366	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 11:21:45 [INFO ]  Epoch:   64	Loss: 0.4155	Data Time: 0.14s	Train Time: 0.13s
+2022-07-14 11:21:51 [INFO ]  Epoch:   65	Loss: 0.3283	Data Time: 0.10s	Train Time: 0.13s
+2022-07-14 11:21:56 [INFO ]  Epoch:   66	Loss: 0.4243	Data Time: 0.17s	Train Time: 0.09s
+2022-07-14 11:22:01 [INFO ]  Epoch:   67	Loss: 0.4449	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 11:22:07 [INFO ]  Epoch:   68	Loss: 0.3674	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 11:22:12 [INFO ]  Epoch:   69	Loss: 0.3377	Data Time: 0.14s	Train Time: 0.13s
+2022-07-14 11:22:35 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0070/results.pth
+2022-07-14 11:22:35 [INFO ]  
+2022-07-14 11:22:35 [INFO ]  Begin of epoch 70 :
+2022-07-14 11:22:40 [INFO ]  Begin of epoch 70 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:22:40 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:22:40 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:22:40 [INFO ]  	   step 15 (lr=0.237598)                   62.03%                   1.0592
+2022-07-14 11:22:40 [INFO ]  	   step 30 (lr=0.024660)                   85.31%                   0.4066
+2022-07-14 11:22:40 [INFO ]  
+2022-07-14 11:22:40 [INFO ]  Epoch:   70	Loss: 0.4060	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 11:22:45 [INFO ]  Epoch:   71	Loss: 0.3968	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 11:22:51 [INFO ]  Epoch:   72	Loss: 0.4456	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 11:22:56 [INFO ]  Epoch:   73	Loss: 0.3996	Data Time: 0.05s	Train Time: 0.10s
+2022-07-14 11:23:01 [INFO ]  Epoch:   74	Loss: 0.4052	Data Time: 0.05s	Train Time: 0.11s
+2022-07-14 11:23:07 [INFO ]  Epoch:   75	Loss: 0.3473	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 11:23:12 [INFO ]  Epoch:   76	Loss: 0.3562	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 11:23:18 [INFO ]  Epoch:   77	Loss: 0.4048	Data Time: 0.06s	Train Time: 0.14s
+2022-07-14 11:23:23 [INFO ]  Epoch:   78	Loss: 0.4071	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 11:23:29 [INFO ]  Epoch:   79	Loss: 0.3854	Data Time: 0.12s	Train Time: 0.12s
+2022-07-14 11:23:51 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0080/results.pth
+2022-07-14 11:23:51 [INFO ]  
+2022-07-14 11:23:51 [INFO ]  Begin of epoch 80 :
+2022-07-14 11:23:56 [INFO ]  Begin of epoch 80 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:23:56 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:23:56 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:23:56 [INFO ]  	   step 15 (lr=0.238281)                   63.45%                   0.9787
+2022-07-14 11:23:56 [INFO ]  	   step 30 (lr=0.024951)                   85.47%                   0.4033
+2022-07-14 11:23:56 [INFO ]  
+2022-07-14 11:23:56 [INFO ]  Epoch:   80	Loss: 0.4049	Data Time: 0.10s	Train Time: 0.08s
+2022-07-14 11:24:01 [INFO ]  Epoch:   81	Loss: 0.4087	Data Time: 0.11s	Train Time: 0.13s
+2022-07-14 11:24:06 [INFO ]  Epoch:   82	Loss: 0.3807	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 11:24:12 [INFO ]  Epoch:   83	Loss: 0.3669	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 11:24:17 [INFO ]  Epoch:   84	Loss: 0.4078	Data Time: 0.05s	Train Time: 0.11s
+2022-07-14 11:24:23 [INFO ]  Epoch:   85	Loss: 0.3753	Data Time: 0.06s	Train Time: 0.14s
+2022-07-14 11:24:28 [INFO ]  Epoch:   86	Loss: 0.3226	Data Time: 0.05s	Train Time: 0.12s
+2022-07-14 11:24:34 [INFO ]  Epoch:   87	Loss: 0.3725	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 11:24:39 [INFO ]  Epoch:   88	Loss: 0.3715	Data Time: 0.10s	Train Time: 0.10s
+2022-07-14 11:24:45 [INFO ]  Epoch:   89	Loss: 0.3721	Data Time: 0.05s	Train Time: 0.09s
+2022-07-14 11:25:07 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0090/results.pth
+2022-07-14 11:25:07 [INFO ]  
+2022-07-14 11:25:07 [INFO ]  Begin of epoch 90 :
+2022-07-14 11:25:12 [INFO ]  Begin of epoch 90 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:25:12 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:25:12 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:25:12 [INFO ]  	   step 15 (lr=0.240393)                   60.80%                   1.2218
+2022-07-14 11:25:12 [INFO ]  	   step 30 (lr=0.025535)                   85.58%                   0.4062
+2022-07-14 11:25:12 [INFO ]  
+2022-07-14 11:25:12 [INFO ]  Epoch:   90	Loss: 0.3669	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 11:25:17 [INFO ]  Epoch:   91	Loss: 0.3281	Data Time: 0.05s	Train Time: 0.10s
+2022-07-14 11:25:23 [INFO ]  Epoch:   92	Loss: 0.3390	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 11:25:28 [INFO ]  Epoch:   93	Loss: 0.4171	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 11:25:34 [INFO ]  Epoch:   94	Loss: 0.3869	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 11:25:39 [INFO ]  Epoch:   95	Loss: 0.3473	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 11:25:45 [INFO ]  Epoch:   96	Loss: 0.3700	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 11:25:50 [INFO ]  Epoch:   97	Loss: 0.3827	Data Time: 0.09s	Train Time: 0.09s
+2022-07-14 11:25:56 [INFO ]  Epoch:   98	Loss: 0.3524	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 11:26:01 [INFO ]  Epoch:   99	Loss: 0.3316	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 11:26:24 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0100/results.pth
+2022-07-14 11:26:24 [INFO ]  
+2022-07-14 11:26:24 [INFO ]  Begin of epoch 100 :
+2022-07-14 11:26:29 [INFO ]  Begin of epoch 100 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:26:29 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:26:29 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:26:29 [INFO ]  	   step 15 (lr=0.240830)                   58.62%                   1.0243
+2022-07-14 11:26:29 [INFO ]  	   step 30 (lr=0.026069)                   85.82%                   0.3971
+2022-07-14 11:26:29 [INFO ]  
+2022-07-14 11:26:29 [INFO ]  Epoch:  100	Loss: 0.3549	Data Time: 0.32s	Train Time: 0.08s
+2022-07-14 11:26:34 [INFO ]  Epoch:  101	Loss: 0.3788	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 11:26:40 [INFO ]  Epoch:  102	Loss: 0.3988	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 11:26:45 [INFO ]  Epoch:  103	Loss: 0.3567	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 11:26:51 [INFO ]  Epoch:  104	Loss: 0.3502	Data Time: 0.05s	Train Time: 0.12s
+2022-07-14 11:26:56 [INFO ]  Epoch:  105	Loss: 0.3536	Data Time: 0.12s	Train Time: 0.11s
+2022-07-14 11:27:01 [INFO ]  Epoch:  106	Loss: 0.3562	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 11:27:07 [INFO ]  Epoch:  107	Loss: 0.3998	Data Time: 0.15s	Train Time: 0.13s
+2022-07-14 11:27:12 [INFO ]  Epoch:  108	Loss: 0.3676	Data Time: 0.10s	Train Time: 0.11s
+2022-07-14 11:27:18 [INFO ]  Epoch:  109	Loss: 0.3442	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 11:27:40 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0110/results.pth
+2022-07-14 11:27:40 [INFO ]  
+2022-07-14 11:27:40 [INFO ]  Begin of epoch 110 :
+2022-07-14 11:27:45 [INFO ]  Begin of epoch 110 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:27:45 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:27:45 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:27:45 [INFO ]  	   step 15 (lr=0.241212)                   64.94%                   0.9554
+2022-07-14 11:27:45 [INFO ]  	   step 30 (lr=0.026101)                   85.71%                   0.3949
+2022-07-14 11:27:45 [INFO ]  
+2022-07-14 11:27:45 [INFO ]  Epoch:  110	Loss: 0.3990	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 11:27:51 [INFO ]  Epoch:  111	Loss: 0.3611	Data Time: 0.08s	Train Time: 0.10s
+2022-07-14 11:27:56 [INFO ]  Epoch:  112	Loss: 0.4036	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 11:28:02 [INFO ]  Epoch:  113	Loss: 0.4073	Data Time: 0.05s	Train Time: 0.14s
+2022-07-14 11:28:07 [INFO ]  Epoch:  114	Loss: 0.3885	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 11:28:12 [INFO ]  Epoch:  115	Loss: 0.3691	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 11:28:18 [INFO ]  Epoch:  116	Loss: 0.3588	Data Time: 0.06s	Train Time: 0.14s
+2022-07-14 11:28:23 [INFO ]  Epoch:  117	Loss: 0.3289	Data Time: 0.05s	Train Time: 0.12s
+2022-07-14 11:28:29 [INFO ]  Epoch:  118	Loss: 0.3876	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 11:28:34 [INFO ]  Epoch:  119	Loss: 0.3281	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 11:28:57 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0120/results.pth
+2022-07-14 11:28:57 [INFO ]  
+2022-07-14 11:28:57 [INFO ]  Begin of epoch 120 :
+2022-07-14 11:29:02 [INFO ]  Begin of epoch 120 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:29:02 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:29:02 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:29:02 [INFO ]  	   step 15 (lr=0.241592)                   64.68%                   0.9569
+2022-07-14 11:29:02 [INFO ]  	   step 30 (lr=0.026103)                   85.75%                   0.3904
+2022-07-14 11:29:02 [INFO ]  
+2022-07-14 11:29:02 [INFO ]  Epoch:  120	Loss: 0.3462	Data Time: 0.21s	Train Time: 0.08s
+2022-07-14 11:29:07 [INFO ]  Epoch:  121	Loss: 0.3486	Data Time: 0.13s	Train Time: 0.09s
+2022-07-14 11:29:13 [INFO ]  Epoch:  122	Loss: 0.4161	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 11:29:18 [INFO ]  Epoch:  123	Loss: 0.3366	Data Time: 0.05s	Train Time: 0.13s
+2022-07-14 11:29:24 [INFO ]  Epoch:  124	Loss: 0.3640	Data Time: 0.19s	Train Time: 0.09s
+2022-07-14 11:29:29 [INFO ]  Epoch:  125	Loss: 0.3185	Data Time: 0.09s	Train Time: 0.10s
+2022-07-14 11:29:35 [INFO ]  Epoch:  126	Loss: 0.3438	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 11:29:40 [INFO ]  Epoch:  127	Loss: 0.3523	Data Time: 0.05s	Train Time: 0.14s
+2022-07-14 11:29:46 [INFO ]  Epoch:  128	Loss: 0.3481	Data Time: 0.20s	Train Time: 0.13s
+2022-07-14 11:29:51 [INFO ]  Epoch:  129	Loss: 0.3402	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 11:30:14 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0130/results.pth
+2022-07-14 11:30:14 [INFO ]  
+2022-07-14 11:30:14 [INFO ]  Begin of epoch 130 :
+2022-07-14 11:30:19 [INFO ]  Begin of epoch 130 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:30:19 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:30:19 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:30:19 [INFO ]  	   step 15 (lr=0.242085)                   63.12%                   1.1232
+2022-07-14 11:30:19 [INFO ]  	   step 30 (lr=0.026220)                   86.11%                   0.3904
+2022-07-14 11:30:19 [INFO ]  
+2022-07-14 11:30:19 [INFO ]  Epoch:  130	Loss: 0.4081	Data Time: 0.16s	Train Time: 0.08s
+2022-07-14 11:30:25 [INFO ]  Epoch:  131	Loss: 0.3517	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 11:30:30 [INFO ]  Epoch:  132	Loss: 0.3344	Data Time: 0.05s	Train Time: 0.10s
+2022-07-14 11:30:36 [INFO ]  Epoch:  133	Loss: 0.3353	Data Time: 0.17s	Train Time: 0.13s
+2022-07-14 11:30:41 [INFO ]  Epoch:  134	Loss: 0.3215	Data Time: 0.05s	Train Time: 0.14s
+2022-07-14 11:30:47 [INFO ]  Epoch:  135	Loss: 0.3502	Data Time: 0.20s	Train Time: 0.12s
+2022-07-14 11:30:52 [INFO ]  Epoch:  136	Loss: 0.3874	Data Time: 0.05s	Train Time: 0.10s
+2022-07-14 11:30:57 [INFO ]  Epoch:  137	Loss: 0.3438	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 11:31:03 [INFO ]  Epoch:  138	Loss: 0.3816	Data Time: 0.05s	Train Time: 0.10s
+2022-07-14 11:31:09 [INFO ]  Epoch:  139	Loss: 0.3609	Data Time: 0.15s	Train Time: 0.13s
+2022-07-14 11:31:31 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/checkpoints/epoch0140/results.pth
+2022-07-14 11:31:31 [INFO ]  
+2022-07-14 11:31:31 [INFO ]  Begin of epoch 140 :
+2022-07-14 11:31:36 [INFO ]  Begin of epoch 140 evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:31:36 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:31:36 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:31:36 [INFO ]  	   step 15 (lr=0.241974)                   66.86%                   0.9120
+2022-07-14 11:31:36 [INFO ]  	   step 30 (lr=0.026183)                   86.04%                   0.3923
+2022-07-14 11:31:36 [INFO ]  
+2022-07-14 11:31:36 [INFO ]  Epoch:  140	Loss: 0.3639	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 11:31:42 [INFO ]  Epoch:  141	Loss: 0.3618	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 11:31:47 [INFO ]  Epoch:  142	Loss: 0.4366	Data Time: 0.09s	Train Time: 0.09s
+2022-07-14 11:31:53 [INFO ]  Epoch:  143	Loss: 0.3955	Data Time: 0.05s	Train Time: 0.10s
+2022-07-14 11:31:58 [INFO ]  Epoch:  144	Loss: 0.5917	Data Time: 0.05s	Train Time: 0.12s
+2022-07-14 11:32:04 [INFO ]  Epoch:  145	Loss: 0.4695	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 11:32:09 [INFO ]  Epoch:  146	Loss: 0.3826	Data Time: 0.12s	Train Time: 0.10s
+2022-07-14 11:32:14 [INFO ]  Epoch:  147	Loss: 0.4950	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 11:32:20 [INFO ]  Epoch:  148	Loss: 0.3628	Data Time: 0.14s	Train Time: 0.14s
+2022-07-14 11:32:26 [INFO ]  Epoch:  149	Loss: 0.3919	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 11:32:48 [INFO ]  Results saved to ./results/distill_adapt/FASHION_MNIST/Source_SVHN/results.pth
+2022-07-14 11:32:48 [INFO ]  
+2022-07-14 11:32:48 [INFO ]  Final evaluation for FASHION_MNIST without expanded Classifier :
+2022-07-14 11:32:53 [INFO ]  Final evaluation for FASHION_MNIST without expanded Classifier evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:32:53 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:32:53 [INFO ]  	            before steps                   14.55%                   4.6972
+2022-07-14 11:32:53 [INFO ]  	   step 15 (lr=0.240420)                   60.54%                   1.2964
+2022-07-14 11:32:53 [INFO ]  	   step 30 (lr=0.026072)                   85.60%                   0.3983
+2022-07-14 11:32:53 [INFO ]  
+2022-07-14 11:32:53 [INFO ]  
+2022-07-14 11:32:53 [INFO ]  Final evaluation for SVHN without expanded Classifier :
+2022-07-14 11:32:59 [INFO ]  Final evaluation for SVHN without expanded Classifier evaluation for FASHION_MNIST (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 11:32:59 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 11:32:59 [INFO ]  	            before steps                   84.84%                   0.5718
+2022-07-14 11:32:59 [INFO ]  	   step 15 (lr=0.240420)                   15.17%                   4.3422
+2022-07-14 11:32:59 [INFO ]  	   step 30 (lr=0.026072)                   11.54%                   5.4413
+2022-07-14 11:32:59 [INFO ]  
