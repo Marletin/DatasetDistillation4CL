@@ -536,3 +536,356 @@
 2022-07-14 09:15:48 [INFO ]  	   step 15 (lr=0.007036)                   81.71%                   0.6655
 2022-07-14 09:15:48 [INFO ]  	   step 30 (lr=0.009631)                   84.90%                   0.5701
 2022-07-14 09:15:48 [INFO ]  
+2022-07-14 12:37:39 [INFO ]  ======================================== 2022-07-14 12:37:39 ========================================
+2022-07-14 12:37:39 [INFO ]  Base directory is ./results/distill_basic/SVHN/
+2022-07-14 12:37:39 [INFO ]  Options: 
+2022-07-14 12:37:39 [INFO ]  	base_dir: null
+2022-07-14 12:37:39 [INFO ]  	base_seed: 1
+2022-07-14 12:37:39 [INFO ]  	batch_size: 1024
+2022-07-14 12:37:39 [INFO ]  	checkpoint_interval: 10
+2022-07-14 12:37:39 [INFO ]  	dataset: SVHN
+2022-07-14 12:37:39 [INFO ]  	dataset_labels:
+2022-07-14 12:37:39 [INFO ]  	- 0
+2022-07-14 12:37:39 [INFO ]  	- 1
+2022-07-14 12:37:39 [INFO ]  	- 2
+2022-07-14 12:37:39 [INFO ]  	- 3
+2022-07-14 12:37:39 [INFO ]  	- 4
+2022-07-14 12:37:39 [INFO ]  	- 5
+2022-07-14 12:37:39 [INFO ]  	- 6
+2022-07-14 12:37:39 [INFO ]  	- 7
+2022-07-14 12:37:39 [INFO ]  	- 8
+2022-07-14 12:37:39 [INFO ]  	- 9
+2022-07-14 12:37:39 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 12:37:39 [INFO ]  	- !!python/tuple
+2022-07-14 12:37:39 [INFO ]  	    - 0.4379104971885681
+2022-07-14 12:37:39 [INFO ]  	    - 0.44398033618927
+2022-07-14 12:37:39 [INFO ]  	    - 0.4729299545288086
+2022-07-14 12:37:39 [INFO ]  	- !!python/tuple
+2022-07-14 12:37:39 [INFO ]  	    - 0.19803012907505035
+2022-07-14 12:37:39 [INFO ]  	    - 0.2010156363248825
+2022-07-14 12:37:39 [INFO ]  	    - 0.19703614711761475
+2022-07-14 12:37:39 [INFO ]  	dataset_root: ./data/svhn
+2022-07-14 12:37:39 [INFO ]  	decay_epochs: 50
+2022-07-14 12:37:39 [INFO ]  	decay_factor: 0.1
+2022-07-14 12:37:39 [INFO ]  	device_id: 0
+2022-07-14 12:37:39 [INFO ]  	distill_epochs: 3
+2022-07-14 12:37:39 [INFO ]  	distill_lr: 0.02
+2022-07-14 12:37:39 [INFO ]  	distill_steps: 10
+2022-07-14 12:37:39 [INFO ]  	epochs: 150
+2022-07-14 12:37:39 [INFO ]  	expand_cls: false
+2022-07-14 12:37:39 [INFO ]  	forgetting_dataset: null
+2022-07-14 12:37:39 [INFO ]  	init: xavier
+2022-07-14 12:37:39 [INFO ]  	init_param: 1.0
+2022-07-14 12:37:39 [INFO ]  	input_size: 32
+2022-07-14 12:37:39 [INFO ]  	ipc: 10
+2022-07-14 12:37:39 [INFO ]  	log_file: ./results/distill_basic/SVHN/log.txt
+2022-07-14 12:37:39 [INFO ]  	log_interval: 100
+2022-07-14 12:37:39 [INFO ]  	log_level: INFO
+2022-07-14 12:37:39 [INFO ]  	lr: 0.01
+2022-07-14 12:37:39 [INFO ]  	mode: distill_basic
+2022-07-14 12:37:39 [INFO ]  	nc: 3
+2022-07-14 12:37:39 [INFO ]  	num_classes: 10
+2022-07-14 12:37:39 [INFO ]  	num_workers: 8
+2022-07-14 12:37:39 [INFO ]  	phase: train
+2022-07-14 12:37:39 [INFO ]  	source_dataset: null
+2022-07-14 12:37:39 [INFO ]  	start_time: '2022-07-14 12:37:39'
+2022-07-14 12:37:39 [INFO ]  	test_batch_size: 1024
+2022-07-14 12:37:39 [INFO ]  	
+2022-07-14 12:37:41 [INFO ]  train dataset size:	73257
+2022-07-14 12:37:41 [INFO ]  test dataset size: 	26032
+2022-07-14 12:37:41 [INFO ]  datasets built!
+2022-07-14 12:37:41 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 12:38:00 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0000/results.pth
+2022-07-14 12:38:00 [INFO ]  
+2022-07-14 12:38:00 [INFO ]  Begin of epoch 0 :
+2022-07-14 12:38:02 [INFO ]  Begin of epoch 0 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:38:02 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:38:02 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:38:02 [INFO ]  	   step 15 (lr=0.020000)                   57.67%                   1.4273
+2022-07-14 12:38:02 [INFO ]  	   step 30 (lr=0.020000)                   58.18%                   1.4375
+2022-07-14 12:38:02 [INFO ]  
+2022-07-14 12:38:03 [INFO ]  Epoch:    0	Loss: 1.4134	Data Time: 0.38s	Train Time: 0.13s
+2022-07-14 12:38:09 [INFO ]  Epoch:    1	Loss: 0.5189	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 12:38:15 [INFO ]  Epoch:    2	Loss: 0.4785	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:38:21 [INFO ]  Epoch:    3	Loss: 0.4792	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:38:28 [INFO ]  Epoch:    4	Loss: 0.4632	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:38:34 [INFO ]  Epoch:    5	Loss: 0.4710	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:38:40 [INFO ]  Epoch:    6	Loss: 0.4208	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:38:46 [INFO ]  Epoch:    7	Loss: 0.4746	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:38:53 [INFO ]  Epoch:    8	Loss: 0.3926	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 12:38:59 [INFO ]  Epoch:    9	Loss: 0.5247	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:39:22 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0010/results.pth
+2022-07-14 12:39:22 [INFO ]  
+2022-07-14 12:39:22 [INFO ]  Begin of epoch 10 :
+2022-07-14 12:39:24 [INFO ]  Begin of epoch 10 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:39:24 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:39:24 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:39:24 [INFO ]  	   step 15 (lr=0.015259)                   80.30%                   0.6961
+2022-07-14 12:39:24 [INFO ]  	   step 30 (lr=0.008196)                   85.70%                   0.5428
+2022-07-14 12:39:24 [INFO ]  
+2022-07-14 12:39:24 [INFO ]  Epoch:   10	Loss: 0.4905	Data Time: 0.05s	Train Time: 0.09s
+2022-07-14 12:39:31 [INFO ]  Epoch:   11	Loss: 0.4801	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:39:37 [INFO ]  Epoch:   12	Loss: 0.4112	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:39:44 [INFO ]  Epoch:   13	Loss: 0.4423	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:39:50 [INFO ]  Epoch:   14	Loss: 0.4516	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:39:56 [INFO ]  Epoch:   15	Loss: 0.4772	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:40:02 [INFO ]  Epoch:   16	Loss: 0.4746	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 12:40:09 [INFO ]  Epoch:   17	Loss: 0.4418	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:40:15 [INFO ]  Epoch:   18	Loss: 0.4106	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:40:21 [INFO ]  Epoch:   19	Loss: 0.4123	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:40:44 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0020/results.pth
+2022-07-14 12:40:44 [INFO ]  
+2022-07-14 12:40:44 [INFO ]  Begin of epoch 20 :
+2022-07-14 12:40:47 [INFO ]  Begin of epoch 20 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:40:47 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:40:47 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:40:47 [INFO ]  	   step 15 (lr=0.021582)                   81.02%                   0.6830
+2022-07-14 12:40:47 [INFO ]  	   step 30 (lr=0.005734)                   85.13%                   0.5527
+2022-07-14 12:40:47 [INFO ]  
+2022-07-14 12:40:47 [INFO ]  Epoch:   20	Loss: 0.4243	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:40:53 [INFO ]  Epoch:   21	Loss: 0.3888	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:41:00 [INFO ]  Epoch:   22	Loss: 0.3682	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:41:06 [INFO ]  Epoch:   23	Loss: 0.3991	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 12:41:13 [INFO ]  Epoch:   24	Loss: 0.3893	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:41:19 [INFO ]  Epoch:   25	Loss: 0.4533	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:41:25 [INFO ]  Epoch:   26	Loss: 0.4148	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:41:32 [INFO ]  Epoch:   27	Loss: 0.4540	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:41:38 [INFO ]  Epoch:   28	Loss: 0.3835	Data Time: 0.08s	Train Time: 0.10s
+2022-07-14 12:41:45 [INFO ]  Epoch:   29	Loss: 0.4567	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:42:07 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0030/results.pth
+2022-07-14 12:42:07 [INFO ]  
+2022-07-14 12:42:07 [INFO ]  Begin of epoch 30 :
+2022-07-14 12:42:10 [INFO ]  Begin of epoch 30 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:42:10 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:42:10 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:42:10 [INFO ]  	   step 15 (lr=0.034197)                   81.99%                   0.6532
+2022-07-14 12:42:10 [INFO ]  	   step 30 (lr=0.005145)                   85.30%                   0.5470
+2022-07-14 12:42:10 [INFO ]  
+2022-07-14 12:42:10 [INFO ]  Epoch:   30	Loss: 0.3663	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 12:42:17 [INFO ]  Epoch:   31	Loss: 0.4473	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 12:42:23 [INFO ]  Epoch:   32	Loss: 0.4365	Data Time: 0.05s	Train Time: 0.10s
+2022-07-14 12:42:29 [INFO ]  Epoch:   33	Loss: 0.4574	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 12:42:36 [INFO ]  Epoch:   34	Loss: 0.4301	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:42:42 [INFO ]  Epoch:   35	Loss: 0.4814	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:42:48 [INFO ]  Epoch:   36	Loss: 0.4040	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:42:54 [INFO ]  Epoch:   37	Loss: 0.5096	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:43:01 [INFO ]  Epoch:   38	Loss: 0.4209	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:43:07 [INFO ]  Epoch:   39	Loss: 0.3946	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:43:30 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0040/results.pth
+2022-07-14 12:43:30 [INFO ]  
+2022-07-14 12:43:30 [INFO ]  Begin of epoch 40 :
+2022-07-14 12:43:32 [INFO ]  Begin of epoch 40 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:43:32 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:43:32 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:43:32 [INFO ]  	   step 15 (lr=0.050917)                   81.95%                   0.6673
+2022-07-14 12:43:32 [INFO ]  	   step 30 (lr=0.004660)                   85.38%                   0.5462
+2022-07-14 12:43:32 [INFO ]  
+2022-07-14 12:43:32 [INFO ]  Epoch:   40	Loss: 0.4140	Data Time: 0.06s	Train Time: 0.08s
+2022-07-14 12:43:39 [INFO ]  Epoch:   41	Loss: 0.4040	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:43:45 [INFO ]  Epoch:   42	Loss: 0.3974	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 12:43:51 [INFO ]  Epoch:   43	Loss: 0.4532	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 12:43:58 [INFO ]  Epoch:   44	Loss: 0.3951	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 12:44:04 [INFO ]  Epoch:   45	Loss: 0.3949	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:44:10 [INFO ]  Epoch:   46	Loss: 0.4204	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:44:17 [INFO ]  Epoch:   47	Loss: 0.4177	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:44:23 [INFO ]  Epoch:   48	Loss: 0.4441	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:44:29 [INFO ]  Epoch:   49	Loss: 0.4040	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 12:44:53 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0050/results.pth
+2022-07-14 12:44:53 [INFO ]  
+2022-07-14 12:44:53 [INFO ]  Begin of epoch 50 :
+2022-07-14 12:44:55 [INFO ]  Begin of epoch 50 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:44:55 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:44:55 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:44:55 [INFO ]  	   step 15 (lr=0.063757)                   81.28%                   0.6901
+2022-07-14 12:44:55 [INFO ]  	   step 30 (lr=0.004565)                   86.20%                   0.5229
+2022-07-14 12:44:55 [INFO ]  
+2022-07-14 12:44:55 [INFO ]  Epoch:   50	Loss: 0.3320	Data Time: 0.06s	Train Time: 0.08s
+2022-07-14 12:45:02 [INFO ]  Epoch:   51	Loss: 0.4529	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:45:08 [INFO ]  Epoch:   52	Loss: 0.3973	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:45:14 [INFO ]  Epoch:   53	Loss: 0.4324	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:45:20 [INFO ]  Epoch:   54	Loss: 0.4059	Data Time: 0.05s	Train Time: 0.12s
+2022-07-14 12:45:27 [INFO ]  Epoch:   55	Loss: 0.3839	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:45:33 [INFO ]  Epoch:   56	Loss: 0.4181	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:45:39 [INFO ]  Epoch:   57	Loss: 0.3763	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:45:46 [INFO ]  Epoch:   58	Loss: 0.4311	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:45:52 [INFO ]  Epoch:   59	Loss: 0.4020	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:46:15 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0060/results.pth
+2022-07-14 12:46:15 [INFO ]  
+2022-07-14 12:46:15 [INFO ]  Begin of epoch 60 :
+2022-07-14 12:46:17 [INFO ]  Begin of epoch 60 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:46:17 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:46:17 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:46:17 [INFO ]  	   step 15 (lr=0.067761)                   82.20%                   0.6630
+2022-07-14 12:46:17 [INFO ]  	   step 30 (lr=0.004745)                   85.89%                   0.5280
+2022-07-14 12:46:17 [INFO ]  
+2022-07-14 12:46:17 [INFO ]  Epoch:   60	Loss: 0.4052	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:46:24 [INFO ]  Epoch:   61	Loss: 0.3560	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 12:46:30 [INFO ]  Epoch:   62	Loss: 0.4331	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:46:37 [INFO ]  Epoch:   63	Loss: 0.3670	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:46:43 [INFO ]  Epoch:   64	Loss: 0.4030	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:46:49 [INFO ]  Epoch:   65	Loss: 0.4307	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:46:56 [INFO ]  Epoch:   66	Loss: 0.4657	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:47:02 [INFO ]  Epoch:   67	Loss: 0.4100	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:47:09 [INFO ]  Epoch:   68	Loss: 0.3652	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 12:47:15 [INFO ]  Epoch:   69	Loss: 0.4094	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:47:38 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0070/results.pth
+2022-07-14 12:47:38 [INFO ]  
+2022-07-14 12:47:38 [INFO ]  Begin of epoch 70 :
+2022-07-14 12:47:41 [INFO ]  Begin of epoch 70 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:47:41 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:47:41 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:47:41 [INFO ]  	   step 15 (lr=0.071005)                   80.86%                   0.6869
+2022-07-14 12:47:41 [INFO ]  	   step 30 (lr=0.005070)                   86.14%                   0.5261
+2022-07-14 12:47:41 [INFO ]  
+2022-07-14 12:47:41 [INFO ]  Epoch:   70	Loss: 0.3713	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 12:47:47 [INFO ]  Epoch:   71	Loss: 0.3841	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:47:53 [INFO ]  Epoch:   72	Loss: 0.3898	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:48:00 [INFO ]  Epoch:   73	Loss: 0.3669	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 12:48:06 [INFO ]  Epoch:   74	Loss: 0.3701	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:48:12 [INFO ]  Epoch:   75	Loss: 0.4342	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:48:19 [INFO ]  Epoch:   76	Loss: 0.4085	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:48:25 [INFO ]  Epoch:   77	Loss: 0.3909	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:48:32 [INFO ]  Epoch:   78	Loss: 0.4819	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:48:38 [INFO ]  Epoch:   79	Loss: 0.3559	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 12:49:01 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0080/results.pth
+2022-07-14 12:49:01 [INFO ]  
+2022-07-14 12:49:01 [INFO ]  Begin of epoch 80 :
+2022-07-14 12:49:04 [INFO ]  Begin of epoch 80 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:49:04 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:49:04 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:49:04 [INFO ]  	   step 15 (lr=0.075561)                   79.78%                   0.7286
+2022-07-14 12:49:04 [INFO ]  	   step 30 (lr=0.005513)                   86.26%                   0.5221
+2022-07-14 12:49:04 [INFO ]  
+2022-07-14 12:49:04 [INFO ]  Epoch:   80	Loss: 0.3242	Data Time: 0.06s	Train Time: 0.08s
+2022-07-14 12:49:10 [INFO ]  Epoch:   81	Loss: 0.3543	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:49:16 [INFO ]  Epoch:   82	Loss: 0.4212	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:49:23 [INFO ]  Epoch:   83	Loss: 0.3802	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:49:29 [INFO ]  Epoch:   84	Loss: 0.3857	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:49:36 [INFO ]  Epoch:   85	Loss: 0.3511	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:49:42 [INFO ]  Epoch:   86	Loss: 0.3769	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:49:48 [INFO ]  Epoch:   87	Loss: 0.3700	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:49:55 [INFO ]  Epoch:   88	Loss: 0.4169	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:50:01 [INFO ]  Epoch:   89	Loss: 0.3901	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 12:50:24 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0090/results.pth
+2022-07-14 12:50:24 [INFO ]  
+2022-07-14 12:50:24 [INFO ]  Begin of epoch 90 :
+2022-07-14 12:50:26 [INFO ]  Begin of epoch 90 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:50:26 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:50:26 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:50:26 [INFO ]  	   step 15 (lr=0.076707)                   80.94%                   0.6901
+2022-07-14 12:50:26 [INFO ]  	   step 30 (lr=0.005854)                   86.03%                   0.5253
+2022-07-14 12:50:26 [INFO ]  
+2022-07-14 12:50:26 [INFO ]  Epoch:   90	Loss: 0.3868	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:50:33 [INFO ]  Epoch:   91	Loss: 0.3848	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 12:50:39 [INFO ]  Epoch:   92	Loss: 0.4398	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:50:46 [INFO ]  Epoch:   93	Loss: 0.3712	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:50:52 [INFO ]  Epoch:   94	Loss: 0.3701	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 12:50:58 [INFO ]  Epoch:   95	Loss: 0.4056	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 12:51:05 [INFO ]  Epoch:   96	Loss: 0.3742	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:51:11 [INFO ]  Epoch:   97	Loss: 0.3922	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 12:51:18 [INFO ]  Epoch:   98	Loss: 0.3679	Data Time: 0.07s	Train Time: 0.14s
+2022-07-14 12:51:24 [INFO ]  Epoch:   99	Loss: 0.3393	Data Time: 0.09s	Train Time: 0.09s
+2022-07-14 12:51:47 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0100/results.pth
+2022-07-14 12:51:47 [INFO ]  
+2022-07-14 12:51:47 [INFO ]  Begin of epoch 100 :
+2022-07-14 12:51:50 [INFO ]  Begin of epoch 100 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:51:50 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:51:50 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:51:50 [INFO ]  	   step 15 (lr=0.077178)                   81.52%                   0.6681
+2022-07-14 12:51:50 [INFO ]  	   step 30 (lr=0.006122)                   86.24%                   0.5263
+2022-07-14 12:51:50 [INFO ]  
+2022-07-14 12:51:50 [INFO ]  Epoch:  100	Loss: 0.3701	Data Time: 0.16s	Train Time: 0.08s
+2022-07-14 12:51:56 [INFO ]  Epoch:  101	Loss: 0.4118	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:52:03 [INFO ]  Epoch:  102	Loss: 0.3758	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 12:52:09 [INFO ]  Epoch:  103	Loss: 0.4185	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:52:15 [INFO ]  Epoch:  104	Loss: 0.3532	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 12:52:22 [INFO ]  Epoch:  105	Loss: 0.4406	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:52:28 [INFO ]  Epoch:  106	Loss: 0.3752	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:52:34 [INFO ]  Epoch:  107	Loss: 0.3699	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:52:40 [INFO ]  Epoch:  108	Loss: 0.3794	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:52:47 [INFO ]  Epoch:  109	Loss: 0.4281	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:53:10 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0110/results.pth
+2022-07-14 12:53:10 [INFO ]  
+2022-07-14 12:53:10 [INFO ]  Begin of epoch 110 :
+2022-07-14 12:53:12 [INFO ]  Begin of epoch 110 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:53:12 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:53:12 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:53:12 [INFO ]  	   step 15 (lr=0.077451)                   81.94%                   0.6521
+2022-07-14 12:53:12 [INFO ]  	   step 30 (lr=0.006150)                   86.36%                   0.5232
+2022-07-14 12:53:12 [INFO ]  
+2022-07-14 12:53:12 [INFO ]  Epoch:  110	Loss: 0.3831	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 12:53:19 [INFO ]  Epoch:  111	Loss: 0.3958	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:53:25 [INFO ]  Epoch:  112	Loss: 0.4895	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:53:31 [INFO ]  Epoch:  113	Loss: 0.3623	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:53:38 [INFO ]  Epoch:  114	Loss: 0.4181	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:53:44 [INFO ]  Epoch:  115	Loss: 0.3895	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 12:53:50 [INFO ]  Epoch:  116	Loss: 0.4440	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 12:53:57 [INFO ]  Epoch:  117	Loss: 0.3533	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:54:03 [INFO ]  Epoch:  118	Loss: 0.3596	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:54:09 [INFO ]  Epoch:  119	Loss: 0.3889	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 12:54:32 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0120/results.pth
+2022-07-14 12:54:32 [INFO ]  
+2022-07-14 12:54:32 [INFO ]  Begin of epoch 120 :
+2022-07-14 12:54:35 [INFO ]  Begin of epoch 120 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:54:35 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:54:35 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:54:35 [INFO ]  	   step 15 (lr=0.077863)                   80.83%                   0.6890
+2022-07-14 12:54:35 [INFO ]  	   step 30 (lr=0.006175)                   86.22%                   0.5282
+2022-07-14 12:54:35 [INFO ]  
+2022-07-14 12:54:35 [INFO ]  Epoch:  120	Loss: 0.3945	Data Time: 0.06s	Train Time: 0.08s
+2022-07-14 12:54:42 [INFO ]  Epoch:  121	Loss: 0.4570	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:54:48 [INFO ]  Epoch:  122	Loss: 0.3614	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 12:54:54 [INFO ]  Epoch:  123	Loss: 0.3444	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 12:55:01 [INFO ]  Epoch:  124	Loss: 0.3820	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:55:07 [INFO ]  Epoch:  125	Loss: 0.3878	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:55:13 [INFO ]  Epoch:  126	Loss: 0.4122	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 12:55:20 [INFO ]  Epoch:  127	Loss: 0.3986	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 12:55:26 [INFO ]  Epoch:  128	Loss: 0.3953	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:55:32 [INFO ]  Epoch:  129	Loss: 0.3766	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 12:55:56 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0130/results.pth
+2022-07-14 12:55:56 [INFO ]  
+2022-07-14 12:55:56 [INFO ]  Begin of epoch 130 :
+2022-07-14 12:55:58 [INFO ]  Begin of epoch 130 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:55:58 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:55:58 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:55:58 [INFO ]  	   step 15 (lr=0.078006)                   82.08%                   0.6576
+2022-07-14 12:55:58 [INFO ]  	   step 30 (lr=0.006214)                   86.09%                   0.5276
+2022-07-14 12:55:58 [INFO ]  
+2022-07-14 12:55:59 [INFO ]  Epoch:  130	Loss: 0.3561	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 12:56:05 [INFO ]  Epoch:  131	Loss: 0.3639	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:56:11 [INFO ]  Epoch:  132	Loss: 0.3900	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 12:56:18 [INFO ]  Epoch:  133	Loss: 0.3617	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 12:56:24 [INFO ]  Epoch:  134	Loss: 0.4247	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:56:31 [INFO ]  Epoch:  135	Loss: 0.4146	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:56:37 [INFO ]  Epoch:  136	Loss: 0.4455	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:56:43 [INFO ]  Epoch:  137	Loss: 0.4112	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 12:56:49 [INFO ]  Epoch:  138	Loss: 0.3199	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:56:56 [INFO ]  Epoch:  139	Loss: 0.4119	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:57:18 [INFO ]  Results saved to ./results/distill_basic/SVHN/checkpoints/epoch0140/results.pth
+2022-07-14 12:57:18 [INFO ]  
+2022-07-14 12:57:18 [INFO ]  Begin of epoch 140 :
+2022-07-14 12:57:21 [INFO ]  Begin of epoch 140 evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:57:21 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:57:21 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:57:21 [INFO ]  	   step 15 (lr=0.078004)                   81.20%                   0.6667
+2022-07-14 12:57:21 [INFO ]  	   step 30 (lr=0.006245)                   86.36%                   0.5198
+2022-07-14 12:57:21 [INFO ]  
+2022-07-14 12:57:21 [INFO ]  Epoch:  140	Loss: 0.3777	Data Time: 0.06s	Train Time: 0.08s
+2022-07-14 12:57:27 [INFO ]  Epoch:  141	Loss: 0.4118	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 12:57:34 [INFO ]  Epoch:  142	Loss: 0.4358	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:57:40 [INFO ]  Epoch:  143	Loss: 0.4080	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 12:57:46 [INFO ]  Epoch:  144	Loss: 0.4423	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:57:53 [INFO ]  Epoch:  145	Loss: 0.4007	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:57:59 [INFO ]  Epoch:  146	Loss: 0.8550	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 12:58:05 [INFO ]  Epoch:  147	Loss: 0.3594	Data Time: 0.06s	Train Time: 0.10s
+2022-07-14 12:58:11 [INFO ]  Epoch:  148	Loss: 0.4425	Data Time: 0.06s	Train Time: 0.11s
+2022-07-14 12:58:18 [INFO ]  Epoch:  149	Loss: 0.4052	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 12:58:40 [INFO ]  Results saved to ./results/distill_basic/SVHN/results.pth
+2022-07-14 12:58:40 [INFO ]  
+2022-07-14 12:58:40 [INFO ]  Final evaluation for SVHN :
+2022-07-14 12:58:43 [INFO ]  Final evaluation for SVHN evaluation for SVHN (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 12:58:43 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 12:58:43 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 12:58:43 [INFO ]  	   step 15 (lr=0.077861)                   81.37%                   0.6538
+2022-07-14 12:58:43 [INFO ]  	   step 30 (lr=0.006309)                   86.53%                   0.5186
+2022-07-14 12:58:43 [INFO ]  

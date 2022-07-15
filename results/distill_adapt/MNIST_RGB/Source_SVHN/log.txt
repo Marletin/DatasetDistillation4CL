@@ -1,0 +1,361 @@
+2022-07-14 14:34:31 [INFO ]  ======================================== 2022-07-14 14:34:31 ========================================
+2022-07-14 14:34:31 [INFO ]  Base directory is ./results/distill_adapt/MNIST_RGB/Source_SVHN
+2022-07-14 14:34:31 [INFO ]  Options: 
+2022-07-14 14:34:31 [INFO ]  	base_dir: null
+2022-07-14 14:34:31 [INFO ]  	base_seed: 1
+2022-07-14 14:34:31 [INFO ]  	batch_size: 1024
+2022-07-14 14:34:31 [INFO ]  	checkpoint_interval: 10
+2022-07-14 14:34:31 [INFO ]  	dataset: MNIST_RGB
+2022-07-14 14:34:31 [INFO ]  	dataset_labels:
+2022-07-14 14:34:31 [INFO ]  	- 0
+2022-07-14 14:34:31 [INFO ]  	- 1
+2022-07-14 14:34:31 [INFO ]  	- 2
+2022-07-14 14:34:31 [INFO ]  	- 3
+2022-07-14 14:34:31 [INFO ]  	- 4
+2022-07-14 14:34:31 [INFO ]  	- 5
+2022-07-14 14:34:31 [INFO ]  	- 6
+2022-07-14 14:34:31 [INFO ]  	- 7
+2022-07-14 14:34:31 [INFO ]  	- 8
+2022-07-14 14:34:31 [INFO ]  	- 9
+2022-07-14 14:34:31 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 14:34:31 [INFO ]  	- !!python/tuple
+2022-07-14 14:34:31 [INFO ]  	    - 0.1307
+2022-07-14 14:34:31 [INFO ]  	    - 0.1307
+2022-07-14 14:34:31 [INFO ]  	    - 0.1307
+2022-07-14 14:34:31 [INFO ]  	- !!python/tuple
+2022-07-14 14:34:31 [INFO ]  	    - 0.3081
+2022-07-14 14:34:31 [INFO ]  	    - 0.3081
+2022-07-14 14:34:31 [INFO ]  	    - 0.3081
+2022-07-14 14:34:31 [INFO ]  	dataset_root: ./data/mnist
+2022-07-14 14:34:31 [INFO ]  	decay_epochs: 50
+2022-07-14 14:34:31 [INFO ]  	decay_factor: 0.1
+2022-07-14 14:34:31 [INFO ]  	device_id: 0
+2022-07-14 14:34:31 [INFO ]  	distill_epochs: 3
+2022-07-14 14:34:31 [INFO ]  	distill_lr: 0.02
+2022-07-14 14:34:31 [INFO ]  	distill_steps: 10
+2022-07-14 14:34:31 [INFO ]  	epochs: 150
+2022-07-14 14:34:31 [INFO ]  	expand_cls: false
+2022-07-14 14:34:31 [INFO ]  	forgetting_dataset: null
+2022-07-14 14:34:31 [INFO ]  	init: xavier
+2022-07-14 14:34:31 [INFO ]  	init_param: 1.0
+2022-07-14 14:34:31 [INFO ]  	input_size: 32
+2022-07-14 14:34:31 [INFO ]  	ipc: 10
+2022-07-14 14:34:31 [INFO ]  	log_file: ./results/distill_adapt/MNIST_RGB/Source_SVHN/log.txt
+2022-07-14 14:34:31 [INFO ]  	log_interval: 100
+2022-07-14 14:34:31 [INFO ]  	log_level: INFO
+2022-07-14 14:34:31 [INFO ]  	lr: 0.01
+2022-07-14 14:34:31 [INFO ]  	mode: distill_adapt
+2022-07-14 14:34:31 [INFO ]  	nc: 3
+2022-07-14 14:34:31 [INFO ]  	num_classes: 10
+2022-07-14 14:34:31 [INFO ]  	num_workers: 8
+2022-07-14 14:34:31 [INFO ]  	phase: train
+2022-07-14 14:34:31 [INFO ]  	source_dataset: SVHN
+2022-07-14 14:34:31 [INFO ]  	start_time: '2022-07-14 14:34:31'
+2022-07-14 14:34:31 [INFO ]  	test_batch_size: 1024
+2022-07-14 14:34:31 [INFO ]  	
+2022-07-14 14:34:32 [INFO ]  train dataset size:	60000
+2022-07-14 14:34:32 [INFO ]  test dataset size: 	10000
+2022-07-14 14:34:32 [INFO ]  datasets built!
+2022-07-14 14:34:32 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 14:34:50 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0000/results.pth
+2022-07-14 14:34:50 [INFO ]  
+2022-07-14 14:34:50 [INFO ]  Begin of epoch 0 :
+2022-07-14 14:34:55 [INFO ]  Begin of epoch 0 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:34:55 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:34:55 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:34:55 [INFO ]  	   step 15 (lr=0.020000)                   35.37%                   2.8365
+2022-07-14 14:34:55 [INFO ]  	   step 30 (lr=0.020000)                   35.20%                   2.6675
+2022-07-14 14:34:55 [INFO ]  
+2022-07-14 14:34:55 [INFO ]  Epoch:    0	Loss: 2.8028	Data Time: 0.46s	Train Time: 0.12s
+2022-07-14 14:35:01 [INFO ]  Epoch:    1	Loss: 0.2007	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 14:35:06 [INFO ]  Epoch:    2	Loss: 0.1754	Data Time: 0.09s	Train Time: 0.12s
+2022-07-14 14:35:11 [INFO ]  Epoch:    3	Loss: 0.1292	Data Time: 0.08s	Train Time: 0.09s
+2022-07-14 14:35:17 [INFO ]  Epoch:    4	Loss: 0.0969	Data Time: 0.10s	Train Time: 0.09s
+2022-07-14 14:35:22 [INFO ]  Epoch:    5	Loss: 0.1232	Data Time: 0.06s	Train Time: 0.09s
+2022-07-14 14:35:27 [INFO ]  Epoch:    6	Loss: 0.1225	Data Time: 0.13s	Train Time: 0.12s
+2022-07-14 14:35:33 [INFO ]  Epoch:    7	Loss: 0.1219	Data Time: 0.13s	Train Time: 0.09s
+2022-07-14 14:35:38 [INFO ]  Epoch:    8	Loss: 0.1201	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 14:35:44 [INFO ]  Epoch:    9	Loss: 0.0852	Data Time: 0.08s	Train Time: 0.10s
+2022-07-14 14:36:05 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0010/results.pth
+2022-07-14 14:36:05 [INFO ]  
+2022-07-14 14:36:05 [INFO ]  Begin of epoch 10 :
+2022-07-14 14:36:10 [INFO ]  Begin of epoch 10 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:36:10 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:36:10 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:36:10 [INFO ]  	   step 15 (lr=0.054581)                   87.87%                   0.4003
+2022-07-14 14:36:10 [INFO ]  	   step 30 (lr=0.019156)                   97.32%                   0.0821
+2022-07-14 14:36:10 [INFO ]  
+2022-07-14 14:36:10 [INFO ]  Epoch:   10	Loss: 0.1092	Data Time: 0.11s	Train Time: 0.08s
+2022-07-14 14:36:16 [INFO ]  Epoch:   11	Loss: 0.1151	Data Time: 0.10s	Train Time: 0.11s
+2022-07-14 14:36:21 [INFO ]  Epoch:   12	Loss: 0.0806	Data Time: 0.20s	Train Time: 0.09s
+2022-07-14 14:36:26 [INFO ]  Epoch:   13	Loss: 0.0888	Data Time: 0.08s	Train Time: 0.09s
+2022-07-14 14:36:32 [INFO ]  Epoch:   14	Loss: 0.0561	Data Time: 0.13s	Train Time: 0.12s
+2022-07-14 14:36:38 [INFO ]  Epoch:   15	Loss: 0.0817	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 14:36:43 [INFO ]  Epoch:   16	Loss: 0.1762	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 14:36:48 [INFO ]  Epoch:   17	Loss: 0.0911	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 14:36:54 [INFO ]  Epoch:   18	Loss: 0.0990	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 14:36:59 [INFO ]  Epoch:   19	Loss: 0.1051	Data Time: 0.09s	Train Time: 0.10s
+2022-07-14 14:37:21 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0020/results.pth
+2022-07-14 14:37:21 [INFO ]  
+2022-07-14 14:37:21 [INFO ]  Begin of epoch 20 :
+2022-07-14 14:37:26 [INFO ]  Begin of epoch 20 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:37:26 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:37:26 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:37:26 [INFO ]  	   step 15 (lr=0.053757)                   80.22%                   0.5880
+2022-07-14 14:37:26 [INFO ]  	   step 30 (lr=0.030583)                   97.52%                   0.0800
+2022-07-14 14:37:26 [INFO ]  
+2022-07-14 14:37:26 [INFO ]  Epoch:   20	Loss: 0.0581	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 14:37:32 [INFO ]  Epoch:   21	Loss: 0.0618	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 14:37:37 [INFO ]  Epoch:   22	Loss: 0.0711	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 14:37:43 [INFO ]  Epoch:   23	Loss: 0.1018	Data Time: 0.11s	Train Time: 0.12s
+2022-07-14 14:37:48 [INFO ]  Epoch:   24	Loss: 0.0596	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 14:37:53 [INFO ]  Epoch:   25	Loss: 0.0444	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 14:37:59 [INFO ]  Epoch:   26	Loss: 0.0726	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 14:38:04 [INFO ]  Epoch:   27	Loss: 0.0594	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 14:38:10 [INFO ]  Epoch:   28	Loss: 0.0802	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 14:38:15 [INFO ]  Epoch:   29	Loss: 0.0667	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 14:38:37 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0030/results.pth
+2022-07-14 14:38:37 [INFO ]  
+2022-07-14 14:38:37 [INFO ]  Begin of epoch 30 :
+2022-07-14 14:38:42 [INFO ]  Begin of epoch 30 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:38:42 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:38:42 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:38:42 [INFO ]  	   step 15 (lr=0.064397)                   90.30%                   0.3507
+2022-07-14 14:38:42 [INFO ]  	   step 30 (lr=0.033638)                   98.02%                   0.0619
+2022-07-14 14:38:42 [INFO ]  
+2022-07-14 14:38:42 [INFO ]  Epoch:   30	Loss: 0.0653	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 14:38:48 [INFO ]  Epoch:   31	Loss: 0.0396	Data Time: 0.18s	Train Time: 0.09s
+2022-07-14 14:38:54 [INFO ]  Epoch:   32	Loss: 0.0498	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 14:38:59 [INFO ]  Epoch:   33	Loss: 0.0694	Data Time: 0.09s	Train Time: 0.12s
+2022-07-14 14:39:05 [INFO ]  Epoch:   34	Loss: 0.0771	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 14:39:10 [INFO ]  Epoch:   35	Loss: 0.0554	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 14:39:15 [INFO ]  Epoch:   36	Loss: 0.0550	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 14:39:21 [INFO ]  Epoch:   37	Loss: 0.0456	Data Time: 0.10s	Train Time: 0.12s
+2022-07-14 14:39:26 [INFO ]  Epoch:   38	Loss: 0.1259	Data Time: 0.14s	Train Time: 0.09s
+2022-07-14 14:39:32 [INFO ]  Epoch:   39	Loss: 0.0561	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 14:39:54 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0040/results.pth
+2022-07-14 14:39:54 [INFO ]  
+2022-07-14 14:39:54 [INFO ]  Begin of epoch 40 :
+2022-07-14 14:39:59 [INFO ]  Begin of epoch 40 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:39:59 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:39:59 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:39:59 [INFO ]  	   step 15 (lr=0.097699)                   93.18%                   0.3009
+2022-07-14 14:39:59 [INFO ]  	   step 30 (lr=0.037795)                   98.15%                   0.0585
+2022-07-14 14:39:59 [INFO ]  
+2022-07-14 14:39:59 [INFO ]  Epoch:   40	Loss: 0.0753	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 14:40:04 [INFO ]  Epoch:   41	Loss: 0.0604	Data Time: 0.11s	Train Time: 0.12s
+2022-07-14 14:40:09 [INFO ]  Epoch:   42	Loss: 0.0856	Data Time: 0.09s	Train Time: 0.10s
+2022-07-14 14:40:15 [INFO ]  Epoch:   43	Loss: 0.0592	Data Time: 0.09s	Train Time: 0.12s
+2022-07-14 14:40:20 [INFO ]  Epoch:   44	Loss: 0.0462	Data Time: 0.12s	Train Time: 0.12s
+2022-07-14 14:40:26 [INFO ]  Epoch:   45	Loss: 0.0515	Data Time: 0.15s	Train Time: 0.13s
+2022-07-14 14:40:31 [INFO ]  Epoch:   46	Loss: 0.0527	Data Time: 0.12s	Train Time: 0.13s
+2022-07-14 14:40:37 [INFO ]  Epoch:   47	Loss: 0.0475	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 14:40:42 [INFO ]  Epoch:   48	Loss: 0.0360	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 14:40:48 [INFO ]  Epoch:   49	Loss: 0.0465	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 14:41:09 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0050/results.pth
+2022-07-14 14:41:09 [INFO ]  
+2022-07-14 14:41:09 [INFO ]  Begin of epoch 50 :
+2022-07-14 14:41:14 [INFO ]  Begin of epoch 50 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:41:14 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:41:14 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:41:14 [INFO ]  	   step 15 (lr=0.101462)                   94.35%                   0.2408
+2022-07-14 14:41:14 [INFO ]  	   step 30 (lr=0.035575)                   98.49%                   0.0473
+2022-07-14 14:41:14 [INFO ]  
+2022-07-14 14:41:14 [INFO ]  Epoch:   50	Loss: 0.0484	Data Time: 0.08s	Train Time: 0.08s
+2022-07-14 14:41:20 [INFO ]  Epoch:   51	Loss: 0.0501	Data Time: 0.18s	Train Time: 0.12s
+2022-07-14 14:41:25 [INFO ]  Epoch:   52	Loss: 0.0388	Data Time: 0.13s	Train Time: 0.10s
+2022-07-14 14:41:30 [INFO ]  Epoch:   53	Loss: 0.0375	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 14:41:36 [INFO ]  Epoch:   54	Loss: 0.0262	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 14:41:41 [INFO ]  Epoch:   55	Loss: 0.0343	Data Time: 0.11s	Train Time: 0.12s
+2022-07-14 14:41:47 [INFO ]  Epoch:   56	Loss: 0.0256	Data Time: 0.19s	Train Time: 0.12s
+2022-07-14 14:41:52 [INFO ]  Epoch:   57	Loss: 0.0254	Data Time: 0.14s	Train Time: 0.12s
+2022-07-14 14:41:57 [INFO ]  Epoch:   58	Loss: 0.0391	Data Time: 0.08s	Train Time: 0.10s
+2022-07-14 14:42:03 [INFO ]  Epoch:   59	Loss: 0.0228	Data Time: 0.15s	Train Time: 0.13s
+2022-07-14 14:42:25 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0060/results.pth
+2022-07-14 14:42:25 [INFO ]  
+2022-07-14 14:42:25 [INFO ]  Begin of epoch 60 :
+2022-07-14 14:42:30 [INFO ]  Begin of epoch 60 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:42:30 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:42:30 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:42:30 [INFO ]  	   step 15 (lr=0.101547)                   85.73%                   0.4112
+2022-07-14 14:42:30 [INFO ]  	   step 30 (lr=0.035789)                   98.68%                   0.0400
+2022-07-14 14:42:30 [INFO ]  
+2022-07-14 14:42:30 [INFO ]  Epoch:   60	Loss: 0.0351	Data Time: 0.12s	Train Time: 0.09s
+2022-07-14 14:42:35 [INFO ]  Epoch:   61	Loss: 0.0391	Data Time: 0.07s	Train Time: 0.14s
+2022-07-14 14:42:41 [INFO ]  Epoch:   62	Loss: 0.0319	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 14:42:46 [INFO ]  Epoch:   63	Loss: 0.0353	Data Time: 0.19s	Train Time: 0.09s
+2022-07-14 14:42:52 [INFO ]  Epoch:   64	Loss: 0.0317	Data Time: 0.16s	Train Time: 0.12s
+2022-07-14 14:42:57 [INFO ]  Epoch:   65	Loss: 0.0207	Data Time: 0.12s	Train Time: 0.12s
+2022-07-14 14:43:03 [INFO ]  Epoch:   66	Loss: 0.0264	Data Time: 0.10s	Train Time: 0.11s
+2022-07-14 14:43:08 [INFO ]  Epoch:   67	Loss: 0.0330	Data Time: 0.10s	Train Time: 0.12s
+2022-07-14 14:43:13 [INFO ]  Epoch:   68	Loss: 0.0311	Data Time: 0.08s	Train Time: 0.09s
+2022-07-14 14:43:19 [INFO ]  Epoch:   69	Loss: 0.0272	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 14:43:41 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0070/results.pth
+2022-07-14 14:43:41 [INFO ]  
+2022-07-14 14:43:41 [INFO ]  Begin of epoch 70 :
+2022-07-14 14:43:46 [INFO ]  Begin of epoch 70 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:43:46 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:43:46 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:43:46 [INFO ]  	   step 15 (lr=0.101836)                   92.21%                   0.2391
+2022-07-14 14:43:46 [INFO ]  	   step 30 (lr=0.036507)                   98.74%                   0.0401
+2022-07-14 14:43:46 [INFO ]  
+2022-07-14 14:43:46 [INFO ]  Epoch:   70	Loss: 0.0321	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 14:43:51 [INFO ]  Epoch:   71	Loss: 0.0335	Data Time: 0.09s	Train Time: 0.10s
+2022-07-14 14:43:57 [INFO ]  Epoch:   72	Loss: 0.0507	Data Time: 0.12s	Train Time: 0.12s
+2022-07-14 14:44:02 [INFO ]  Epoch:   73	Loss: 0.0422	Data Time: 0.11s	Train Time: 0.11s
+2022-07-14 14:44:08 [INFO ]  Epoch:   74	Loss: 0.0453	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 14:44:13 [INFO ]  Epoch:   75	Loss: 0.0359	Data Time: 0.09s	Train Time: 0.12s
+2022-07-14 14:44:19 [INFO ]  Epoch:   76	Loss: 0.0354	Data Time: 0.20s	Train Time: 0.09s
+2022-07-14 14:44:24 [INFO ]  Epoch:   77	Loss: 0.0255	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 14:44:29 [INFO ]  Epoch:   78	Loss: 0.0162	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 14:44:35 [INFO ]  Epoch:   79	Loss: 0.0444	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 14:44:57 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0080/results.pth
+2022-07-14 14:44:57 [INFO ]  
+2022-07-14 14:44:57 [INFO ]  Begin of epoch 80 :
+2022-07-14 14:45:02 [INFO ]  Begin of epoch 80 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:45:02 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:45:02 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:45:02 [INFO ]  	   step 15 (lr=0.103894)                   94.02%                   0.1998
+2022-07-14 14:45:02 [INFO ]  	   step 30 (lr=0.037184)                   98.68%                   0.0391
+2022-07-14 14:45:02 [INFO ]  
+2022-07-14 14:45:02 [INFO ]  Epoch:   80	Loss: 0.0344	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 14:45:08 [INFO ]  Epoch:   81	Loss: 0.0292	Data Time: 0.11s	Train Time: 0.12s
+2022-07-14 14:45:13 [INFO ]  Epoch:   82	Loss: 0.0278	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 14:45:19 [INFO ]  Epoch:   83	Loss: 0.0305	Data Time: 0.09s	Train Time: 0.10s
+2022-07-14 14:45:24 [INFO ]  Epoch:   84	Loss: 0.0404	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 14:45:29 [INFO ]  Epoch:   85	Loss: 0.0360	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 14:45:35 [INFO ]  Epoch:   86	Loss: 0.0347	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 14:45:40 [INFO ]  Epoch:   87	Loss: 0.0312	Data Time: 0.19s	Train Time: 0.10s
+2022-07-14 14:45:46 [INFO ]  Epoch:   88	Loss: 0.0477	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 14:45:51 [INFO ]  Epoch:   89	Loss: 0.0317	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 14:46:13 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0090/results.pth
+2022-07-14 14:46:13 [INFO ]  
+2022-07-14 14:46:13 [INFO ]  Begin of epoch 90 :
+2022-07-14 14:46:18 [INFO ]  Begin of epoch 90 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:46:18 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:46:18 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:46:18 [INFO ]  	   step 15 (lr=0.105278)                   96.44%                   0.1159
+2022-07-14 14:46:18 [INFO ]  	   step 30 (lr=0.037938)                   98.71%                   0.0388
+2022-07-14 14:46:18 [INFO ]  
+2022-07-14 14:46:18 [INFO ]  Epoch:   90	Loss: 0.0337	Data Time: 0.08s	Train Time: 0.08s
+2022-07-14 14:46:24 [INFO ]  Epoch:   91	Loss: 0.0469	Data Time: 0.08s	Train Time: 0.11s
+2022-07-14 14:46:29 [INFO ]  Epoch:   92	Loss: 0.0300	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 14:46:35 [INFO ]  Epoch:   93	Loss: 0.0488	Data Time: 0.17s	Train Time: 0.12s
+2022-07-14 14:46:40 [INFO ]  Epoch:   94	Loss: 0.0381	Data Time: 0.13s	Train Time: 0.09s
+2022-07-14 14:46:46 [INFO ]  Epoch:   95	Loss: 0.0218	Data Time: 0.09s	Train Time: 0.10s
+2022-07-14 14:46:51 [INFO ]  Epoch:   96	Loss: 0.0289	Data Time: 0.08s	Train Time: 0.10s
+2022-07-14 14:46:57 [INFO ]  Epoch:   97	Loss: 0.0294	Data Time: 0.08s	Train Time: 0.09s
+2022-07-14 14:47:02 [INFO ]  Epoch:   98	Loss: 0.0301	Data Time: 0.08s	Train Time: 0.09s
+2022-07-14 14:47:08 [INFO ]  Epoch:   99	Loss: 0.0326	Data Time: 0.10s	Train Time: 0.13s
+2022-07-14 14:47:30 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0100/results.pth
+2022-07-14 14:47:30 [INFO ]  
+2022-07-14 14:47:30 [INFO ]  Begin of epoch 100 :
+2022-07-14 14:47:35 [INFO ]  Begin of epoch 100 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:47:35 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:47:35 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:47:35 [INFO ]  	   step 15 (lr=0.109704)                   93.61%                   0.2159
+2022-07-14 14:47:35 [INFO ]  	   step 30 (lr=0.038340)                   98.68%                   0.0390
+2022-07-14 14:47:35 [INFO ]  
+2022-07-14 14:47:35 [INFO ]  Epoch:  100	Loss: 0.0231	Data Time: 0.28s	Train Time: 0.09s
+2022-07-14 14:47:41 [INFO ]  Epoch:  101	Loss: 0.0430	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 14:47:46 [INFO ]  Epoch:  102	Loss: 0.0228	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 14:47:52 [INFO ]  Epoch:  103	Loss: 0.0274	Data Time: 0.10s	Train Time: 0.10s
+2022-07-14 14:47:57 [INFO ]  Epoch:  104	Loss: 0.0202	Data Time: 0.09s	Train Time: 0.10s
+2022-07-14 14:48:03 [INFO ]  Epoch:  105	Loss: 0.0259	Data Time: 0.08s	Train Time: 0.09s
+2022-07-14 14:48:08 [INFO ]  Epoch:  106	Loss: 0.0533	Data Time: 0.19s	Train Time: 0.09s
+2022-07-14 14:48:13 [INFO ]  Epoch:  107	Loss: 0.0319	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 14:48:18 [INFO ]  Epoch:  108	Loss: 0.0216	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 14:48:24 [INFO ]  Epoch:  109	Loss: 0.0351	Data Time: 0.07s	Train Time: 0.10s
+2022-07-14 14:48:46 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0110/results.pth
+2022-07-14 14:48:46 [INFO ]  
+2022-07-14 14:48:46 [INFO ]  Begin of epoch 110 :
+2022-07-14 14:48:51 [INFO ]  Begin of epoch 110 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:48:51 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:48:51 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:48:51 [INFO ]  	   step 15 (lr=0.110098)                   94.75%                   0.1643
+2022-07-14 14:48:51 [INFO ]  	   step 30 (lr=0.038453)                   98.81%                   0.0370
+2022-07-14 14:48:51 [INFO ]  
+2022-07-14 14:48:51 [INFO ]  Epoch:  110	Loss: 0.0175	Data Time: 0.07s	Train Time: 0.09s
+2022-07-14 14:48:56 [INFO ]  Epoch:  111	Loss: 0.0283	Data Time: 0.16s	Train Time: 0.09s
+2022-07-14 14:49:02 [INFO ]  Epoch:  112	Loss: 0.0244	Data Time: 0.11s	Train Time: 0.12s
+2022-07-14 14:49:07 [INFO ]  Epoch:  113	Loss: 0.0282	Data Time: 0.13s	Train Time: 0.09s
+2022-07-14 14:49:12 [INFO ]  Epoch:  114	Loss: 0.0367	Data Time: 0.10s	Train Time: 0.10s
+2022-07-14 14:49:18 [INFO ]  Epoch:  115	Loss: 0.0325	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 14:49:23 [INFO ]  Epoch:  116	Loss: 0.0252	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 14:49:29 [INFO ]  Epoch:  117	Loss: 0.0378	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 14:49:34 [INFO ]  Epoch:  118	Loss: 0.0330	Data Time: 0.08s	Train Time: 0.10s
+2022-07-14 14:49:40 [INFO ]  Epoch:  119	Loss: 0.0331	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 14:50:02 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0120/results.pth
+2022-07-14 14:50:02 [INFO ]  
+2022-07-14 14:50:02 [INFO ]  Begin of epoch 120 :
+2022-07-14 14:50:07 [INFO ]  Begin of epoch 120 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:50:07 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:50:07 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:50:07 [INFO ]  	   step 15 (lr=0.110548)                   92.83%                   0.2311
+2022-07-14 14:50:07 [INFO ]  	   step 30 (lr=0.038571)                   98.75%                   0.0384
+2022-07-14 14:50:07 [INFO ]  
+2022-07-14 14:50:07 [INFO ]  Epoch:  120	Loss: 0.0248	Data Time: 0.13s	Train Time: 0.08s
+2022-07-14 14:50:13 [INFO ]  Epoch:  121	Loss: 0.0208	Data Time: 0.08s	Train Time: 0.09s
+2022-07-14 14:50:18 [INFO ]  Epoch:  122	Loss: 0.0174	Data Time: 0.19s	Train Time: 0.09s
+2022-07-14 14:50:24 [INFO ]  Epoch:  123	Loss: 0.0210	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 14:50:29 [INFO ]  Epoch:  124	Loss: 0.0371	Data Time: 0.07s	Train Time: 0.13s
+2022-07-14 14:50:34 [INFO ]  Epoch:  125	Loss: 0.0212	Data Time: 0.19s	Train Time: 0.10s
+2022-07-14 14:50:40 [INFO ]  Epoch:  126	Loss: 0.0280	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 14:50:45 [INFO ]  Epoch:  127	Loss: 0.0320	Data Time: 0.09s	Train Time: 0.10s
+2022-07-14 14:50:51 [INFO ]  Epoch:  128	Loss: 0.0477	Data Time: 0.07s	Train Time: 0.12s
+2022-07-14 14:50:56 [INFO ]  Epoch:  129	Loss: 0.0297	Data Time: 0.09s	Train Time: 0.09s
+2022-07-14 14:51:18 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0130/results.pth
+2022-07-14 14:51:18 [INFO ]  
+2022-07-14 14:51:18 [INFO ]  Begin of epoch 130 :
+2022-07-14 14:51:23 [INFO ]  Begin of epoch 130 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:51:23 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:51:23 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:51:23 [INFO ]  	   step 15 (lr=0.111040)                   90.21%                   0.3097
+2022-07-14 14:51:23 [INFO ]  	   step 30 (lr=0.038595)                   98.76%                   0.0391
+2022-07-14 14:51:23 [INFO ]  
+2022-07-14 14:51:23 [INFO ]  Epoch:  130	Loss: 0.0509	Data Time: 0.10s	Train Time: 0.08s
+2022-07-14 14:51:29 [INFO ]  Epoch:  131	Loss: 0.0292	Data Time: 0.13s	Train Time: 0.09s
+2022-07-14 14:51:34 [INFO ]  Epoch:  132	Loss: 0.0220	Data Time: 0.11s	Train Time: 0.10s
+2022-07-14 14:51:39 [INFO ]  Epoch:  133	Loss: 0.0221	Data Time: 0.12s	Train Time: 0.09s
+2022-07-14 14:51:45 [INFO ]  Epoch:  134	Loss: 0.0250	Data Time: 0.11s	Train Time: 0.09s
+2022-07-14 14:51:50 [INFO ]  Epoch:  135	Loss: 0.0273	Data Time: 0.19s	Train Time: 0.13s
+2022-07-14 14:51:55 [INFO ]  Epoch:  136	Loss: 0.0213	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 14:52:01 [INFO ]  Epoch:  137	Loss: 0.0354	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 14:52:06 [INFO ]  Epoch:  138	Loss: 0.0226	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 14:52:11 [INFO ]  Epoch:  139	Loss: 0.0406	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 14:52:34 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/checkpoints/epoch0140/results.pth
+2022-07-14 14:52:34 [INFO ]  
+2022-07-14 14:52:34 [INFO ]  Begin of epoch 140 :
+2022-07-14 14:52:39 [INFO ]  Begin of epoch 140 evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:52:39 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:52:39 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:52:39 [INFO ]  	   step 15 (lr=0.111276)                   88.19%                   0.3735
+2022-07-14 14:52:39 [INFO ]  	   step 30 (lr=0.038865)                   98.69%                   0.0393
+2022-07-14 14:52:39 [INFO ]  
+2022-07-14 14:52:39 [INFO ]  Epoch:  140	Loss: 0.0214	Data Time: 0.07s	Train Time: 0.08s
+2022-07-14 14:52:44 [INFO ]  Epoch:  141	Loss: 0.0291	Data Time: 0.09s	Train Time: 0.13s
+2022-07-14 14:52:50 [INFO ]  Epoch:  142	Loss: 0.0292	Data Time: 0.06s	Train Time: 0.12s
+2022-07-14 14:52:55 [INFO ]  Epoch:  143	Loss: 0.0263	Data Time: 0.07s	Train Time: 0.11s
+2022-07-14 14:53:00 [INFO ]  Epoch:  144	Loss: 0.0307	Data Time: 0.08s	Train Time: 0.12s
+2022-07-14 14:53:06 [INFO ]  Epoch:  145	Loss: 0.0257	Data Time: 0.19s	Train Time: 0.09s
+2022-07-14 14:53:11 [INFO ]  Epoch:  146	Loss: 0.0351	Data Time: 0.08s	Train Time: 0.13s
+2022-07-14 14:53:16 [INFO ]  Epoch:  147	Loss: 0.0276	Data Time: 0.06s	Train Time: 0.13s
+2022-07-14 14:53:22 [INFO ]  Epoch:  148	Loss: 0.0274	Data Time: 0.08s	Train Time: 0.10s
+2022-07-14 14:53:27 [INFO ]  Epoch:  149	Loss: 0.0237	Data Time: 0.18s	Train Time: 0.10s
+2022-07-14 14:53:49 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_SVHN/results.pth
+2022-07-14 14:53:49 [INFO ]  
+2022-07-14 14:53:49 [INFO ]  Final evaluation for MNIST_RGB without expanded Classifier :
+2022-07-14 14:53:54 [INFO ]  Final evaluation for MNIST_RGB without expanded Classifier evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:53:54 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:53:54 [INFO ]  	            before steps                   54.53%                   3.5196
+2022-07-14 14:53:54 [INFO ]  	   step 15 (lr=0.111557)                   94.76%                   0.1681
+2022-07-14 14:53:54 [INFO ]  	   step 30 (lr=0.038921)                   98.82%                   0.0362
+2022-07-14 14:53:54 [INFO ]  
+2022-07-14 14:53:54 [INFO ]  
+2022-07-14 14:53:54 [INFO ]  Final evaluation for SVHN without expanded Classifier :
+2022-07-14 14:54:00 [INFO ]  Final evaluation for SVHN without expanded Classifier evaluation for MNIST_RGB (evaluate 3 steps: [0, 15, 30]) test results: 
+2022-07-14 14:54:00 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-07-14 14:54:00 [INFO ]  	            before steps                   85.55%                   0.5460
+2022-07-14 14:54:00 [INFO ]  	   step 15 (lr=0.111557)                   40.69%                   1.9368
+2022-07-14 14:54:00 [INFO ]  	   step 30 (lr=0.038921)                   37.64%                   3.0634
+2022-07-14 14:54:00 [INFO ]  

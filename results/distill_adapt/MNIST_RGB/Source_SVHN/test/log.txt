@@ -1,0 +1,223 @@
+2022-07-14 15:03:15 [INFO ]  ======================================== 2022-07-14 15:03:15 ========================================
+2022-07-14 15:03:15 [INFO ]  Base directory is ./results/distill_adapt/MNIST_RGB/Source_SVHN
+2022-07-14 15:03:15 [INFO ]  Options: 
+2022-07-14 15:03:15 [INFO ]  	base_dir: null
+2022-07-14 15:03:15 [INFO ]  	base_seed: 1
+2022-07-14 15:03:15 [INFO ]  	batch_size: 1024
+2022-07-14 15:03:15 [INFO ]  	checkpoint_interval: 10
+2022-07-14 15:03:15 [INFO ]  	dataset: MNIST_RGB
+2022-07-14 15:03:15 [INFO ]  	dataset_labels:
+2022-07-14 15:03:15 [INFO ]  	- 0
+2022-07-14 15:03:15 [INFO ]  	- 1
+2022-07-14 15:03:15 [INFO ]  	- 2
+2022-07-14 15:03:15 [INFO ]  	- 3
+2022-07-14 15:03:15 [INFO ]  	- 4
+2022-07-14 15:03:15 [INFO ]  	- 5
+2022-07-14 15:03:15 [INFO ]  	- 6
+2022-07-14 15:03:15 [INFO ]  	- 7
+2022-07-14 15:03:15 [INFO ]  	- 8
+2022-07-14 15:03:15 [INFO ]  	- 9
+2022-07-14 15:03:15 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-14 15:03:15 [INFO ]  	- !!python/tuple
+2022-07-14 15:03:15 [INFO ]  	    - 0.1307
+2022-07-14 15:03:15 [INFO ]  	    - 0.1307
+2022-07-14 15:03:15 [INFO ]  	    - 0.1307
+2022-07-14 15:03:15 [INFO ]  	- !!python/tuple
+2022-07-14 15:03:15 [INFO ]  	    - 0.3081
+2022-07-14 15:03:15 [INFO ]  	    - 0.3081
+2022-07-14 15:03:15 [INFO ]  	    - 0.3081
+2022-07-14 15:03:15 [INFO ]  	dataset_root: ./data/mnist
+2022-07-14 15:03:15 [INFO ]  	decay_epochs: 50
+2022-07-14 15:03:15 [INFO ]  	decay_factor: 0.1
+2022-07-14 15:03:15 [INFO ]  	device_id: 0
+2022-07-14 15:03:15 [INFO ]  	distill_epochs: 3
+2022-07-14 15:03:15 [INFO ]  	distill_lr: 0.02
+2022-07-14 15:03:15 [INFO ]  	distill_steps: 10
+2022-07-14 15:03:15 [INFO ]  	epochs: 150
+2022-07-14 15:03:15 [INFO ]  	expand_cls: false
+2022-07-14 15:03:15 [INFO ]  	forgetting_dataset: null
+2022-07-14 15:03:15 [INFO ]  	init: xavier
+2022-07-14 15:03:15 [INFO ]  	init_param: 1.0
+2022-07-14 15:03:15 [INFO ]  	input_size: 32
+2022-07-14 15:03:15 [INFO ]  	ipc: 10
+2022-07-14 15:03:15 [INFO ]  	log_file: ./results/distill_adapt/MNIST_RGB/Source_SVHN/test/log.txt
+2022-07-14 15:03:15 [INFO ]  	log_interval: 100
+2022-07-14 15:03:15 [INFO ]  	log_level: INFO
+2022-07-14 15:03:15 [INFO ]  	lr: 0.01
+2022-07-14 15:03:15 [INFO ]  	mode: distill_adapt
+2022-07-14 15:03:15 [INFO ]  	nc: 3
+2022-07-14 15:03:15 [INFO ]  	num_classes: 10
+2022-07-14 15:03:15 [INFO ]  	num_workers: 8
+2022-07-14 15:03:15 [INFO ]  	phase: test
+2022-07-14 15:03:15 [INFO ]  	source_dataset: SVHN
+2022-07-14 15:03:15 [INFO ]  	start_time: '2022-07-14 15:03:15'
+2022-07-14 15:03:15 [INFO ]  	test_batch_size: 1024
+2022-07-14 15:03:15 [INFO ]  	
+2022-07-14 15:03:16 [INFO ]  train dataset size:	60000
+2022-07-14 15:03:16 [INFO ]  test dataset size: 	10000
+2022-07-14 15:03:16 [INFO ]  datasets built!
+2022-07-14 15:03:16 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-07-14 15:03:17 [INFO ]  Loaded results from ./results/distill_adapt/MNIST_RGB/Source_SVHN/results.pth
+2022-07-14 15:03:17 [INFO ]  Custom dataset length: 100
+2022-07-14 15:03:18 [INFO ]   
+2022-07-14 15:03:18 [INFO ]  Evaluation BEFORE adapting for MNIST_RGB:
+2022-07-14 15:03:18 [INFO ]  Test Accuracy: 54.53%	Test Loss: 3.5196
+2022-07-14 15:03:19 [INFO ]   
+2022-07-14 15:03:19 [INFO ]  Evaluation BEFORE adapting for SVHN:
+2022-07-14 15:03:19 [INFO ]  Test Accuracy: 85.55%	Test Loss: 0.5460
+2022-07-14 15:03:20 [INFO ]  Epoch:    0	Test Accuracy: 23.23%	Test Loss: 17.8448
+2022-07-14 15:03:20 [INFO ]  Epoch:    1	Test Accuracy: 25.74%	Test Loss: 6.8625
+2022-07-14 15:03:21 [INFO ]  Epoch:    2	Test Accuracy: 22.34%	Test Loss: 2.3622
+2022-07-14 15:03:22 [INFO ]  Epoch:    3	Test Accuracy: 23.03%	Test Loss: 2.3238
+2022-07-14 15:03:23 [INFO ]  Epoch:    4	Test Accuracy: 23.34%	Test Loss: 2.3130
+2022-07-14 15:03:23 [INFO ]  Epoch:    5	Test Accuracy: 23.63%	Test Loss: 2.3128
+2022-07-14 15:03:24 [INFO ]  Epoch:    6	Test Accuracy: 23.85%	Test Loss: 2.3088
+2022-07-14 15:03:25 [INFO ]  Epoch:    7	Test Accuracy: 23.88%	Test Loss: 2.3063
+2022-07-14 15:03:25 [INFO ]  Epoch:    8	Test Accuracy: 23.73%	Test Loss: 2.3115
+2022-07-14 15:03:26 [INFO ]  Epoch:    9	Test Accuracy: 23.87%	Test Loss: 2.3176
+2022-07-14 15:03:27 [INFO ]  Epoch:   10	Test Accuracy: 23.97%	Test Loss: 2.3264
+2022-07-14 15:03:28 [INFO ]  Epoch:   11	Test Accuracy: 23.93%	Test Loss: 2.3444
+2022-07-14 15:03:28 [INFO ]  Epoch:   12	Test Accuracy: 24.21%	Test Loss: 2.3479
+2022-07-14 15:03:29 [INFO ]  Epoch:   13	Test Accuracy: 24.40%	Test Loss: 2.3649
+2022-07-14 15:03:30 [INFO ]  Epoch:   14	Test Accuracy: 24.61%	Test Loss: 2.3654
+2022-07-14 15:03:30 [INFO ]  Epoch:   15	Test Accuracy: 24.79%	Test Loss: 2.3766
+2022-07-14 15:03:31 [INFO ]  Epoch:   16	Test Accuracy: 25.00%	Test Loss: 2.3728
+2022-07-14 15:03:32 [INFO ]  Epoch:   17	Test Accuracy: 25.32%	Test Loss: 2.3862
+2022-07-14 15:03:33 [INFO ]  Epoch:   18	Test Accuracy: 25.57%	Test Loss: 2.3876
+2022-07-14 15:03:33 [INFO ]  Epoch:   19	Test Accuracy: 25.79%	Test Loss: 2.4038
+2022-07-14 15:03:34 [INFO ]  Epoch:   20	Test Accuracy: 26.13%	Test Loss: 2.3958
+2022-07-14 15:03:35 [INFO ]  Epoch:   21	Test Accuracy: 26.36%	Test Loss: 2.4183
+2022-07-14 15:03:36 [INFO ]  Epoch:   22	Test Accuracy: 26.84%	Test Loss: 2.3866
+2022-07-14 15:03:36 [INFO ]  Epoch:   23	Test Accuracy: 26.81%	Test Loss: 2.4371
+2022-07-14 15:03:37 [INFO ]  Epoch:   24	Test Accuracy: 27.32%	Test Loss: 2.4086
+2022-07-14 15:03:38 [INFO ]  Epoch:   25	Test Accuracy: 27.45%	Test Loss: 2.4613
+2022-07-14 15:03:38 [INFO ]  Epoch:   26	Test Accuracy: 27.88%	Test Loss: 2.4542
+2022-07-14 15:03:39 [INFO ]  Epoch:   27	Test Accuracy: 28.30%	Test Loss: 2.4589
+2022-07-14 15:03:40 [INFO ]  Epoch:   28	Test Accuracy: 28.61%	Test Loss: 2.4812
+2022-07-14 15:03:41 [INFO ]  Epoch:   29	Test Accuracy: 29.16%	Test Loss: 2.4755
+2022-07-14 15:03:41 [INFO ]  Epoch:   30	Test Accuracy: 29.59%	Test Loss: 2.4880
+2022-07-14 15:03:42 [INFO ]  Epoch:   31	Test Accuracy: 29.97%	Test Loss: 2.5046
+2022-07-14 15:03:43 [INFO ]  Epoch:   32	Test Accuracy: 30.43%	Test Loss: 2.4910
+2022-07-14 15:03:44 [INFO ]  Epoch:   33	Test Accuracy: 30.69%	Test Loss: 2.5170
+2022-07-14 15:03:44 [INFO ]  Epoch:   34	Test Accuracy: 31.01%	Test Loss: 2.5116
+2022-07-14 15:03:45 [INFO ]  Epoch:   35	Test Accuracy: 31.26%	Test Loss: 2.5284
+2022-07-14 15:03:46 [INFO ]  Epoch:   36	Test Accuracy: 31.64%	Test Loss: 2.5279
+2022-07-14 15:03:46 [INFO ]  Epoch:   37	Test Accuracy: 31.95%	Test Loss: 2.5349
+2022-07-14 15:03:47 [INFO ]  Epoch:   38	Test Accuracy: 32.50%	Test Loss: 2.5265
+2022-07-14 15:03:48 [INFO ]  Epoch:   39	Test Accuracy: 32.78%	Test Loss: 2.5423
+2022-07-14 15:03:49 [INFO ]  Epoch:   40	Test Accuracy: 33.04%	Test Loss: 2.5440
+2022-07-14 15:03:49 [INFO ]  Epoch:   41	Test Accuracy: 33.58%	Test Loss: 2.5533
+2022-07-14 15:03:50 [INFO ]  Epoch:   42	Test Accuracy: 33.82%	Test Loss: 2.5616
+2022-07-14 15:03:51 [INFO ]  Epoch:   43	Test Accuracy: 34.54%	Test Loss: 2.5213
+2022-07-14 15:03:51 [INFO ]  Epoch:   44	Test Accuracy: 34.50%	Test Loss: 2.5736
+2022-07-14 15:03:52 [INFO ]  Epoch:   45	Test Accuracy: 35.53%	Test Loss: 2.5029
+2022-07-14 15:03:53 [INFO ]  Epoch:   46	Test Accuracy: 35.49%	Test Loss: 2.5714
+2022-07-14 15:03:54 [INFO ]  Epoch:   47	Test Accuracy: 36.77%	Test Loss: 2.4842
+2022-07-14 15:03:54 [INFO ]  Epoch:   48	Test Accuracy: 36.67%	Test Loss: 2.5629
+2022-07-14 15:03:55 [INFO ]  Epoch:   49	Test Accuracy: 38.04%	Test Loss: 2.4702
+2022-07-14 15:03:56 [INFO ]  Epoch:   50	Test Accuracy: 38.13%	Test Loss: 2.5569
+2022-07-14 15:03:56 [INFO ]  Epoch:   51	Test Accuracy: 39.25%	Test Loss: 2.4509
+2022-07-14 15:03:57 [INFO ]  Epoch:   52	Test Accuracy: 39.60%	Test Loss: 2.5219
+2022-07-14 15:03:58 [INFO ]  Epoch:   53	Test Accuracy: 40.69%	Test Loss: 2.4362
+2022-07-14 15:03:59 [INFO ]  Epoch:   54	Test Accuracy: 40.78%	Test Loss: 2.5156
+2022-07-14 15:03:59 [INFO ]  Epoch:   55	Test Accuracy: 42.18%	Test Loss: 2.4136
+2022-07-14 15:04:00 [INFO ]  Epoch:   56	Test Accuracy: 42.34%	Test Loss: 2.4759
+2022-07-14 15:04:01 [INFO ]  Epoch:   57	Test Accuracy: 43.71%	Test Loss: 2.3729
+2022-07-14 15:04:02 [INFO ]  Epoch:   58	Test Accuracy: 43.80%	Test Loss: 2.4603
+2022-07-14 15:04:02 [INFO ]  Epoch:   59	Test Accuracy: 45.33%	Test Loss: 2.3063
+2022-07-14 15:04:03 [INFO ]  Epoch:   60	Test Accuracy: 45.22%	Test Loss: 2.4715
+2022-07-14 15:04:04 [INFO ]  Epoch:   61	Test Accuracy: 47.40%	Test Loss: 2.2482
+2022-07-14 15:04:05 [INFO ]  Epoch:   62	Test Accuracy: 47.30%	Test Loss: 2.4158
+2022-07-14 15:04:05 [INFO ]  Epoch:   63	Test Accuracy: 49.46%	Test Loss: 2.2141
+2022-07-14 15:04:06 [INFO ]  Epoch:   64	Test Accuracy: 48.90%	Test Loss: 2.3733
+2022-07-14 15:04:07 [INFO ]  Epoch:   65	Test Accuracy: 51.21%	Test Loss: 2.1685
+2022-07-14 15:04:07 [INFO ]  Epoch:   66	Test Accuracy: 50.51%	Test Loss: 2.3400
+2022-07-14 15:04:08 [INFO ]  Epoch:   67	Test Accuracy: 52.93%	Test Loss: 2.1227
+2022-07-14 15:04:09 [INFO ]  Epoch:   68	Test Accuracy: 52.58%	Test Loss: 2.2587
+2022-07-14 15:04:10 [INFO ]  Epoch:   69	Test Accuracy: 54.83%	Test Loss: 2.0863
+2022-07-14 15:04:10 [INFO ]  Epoch:   70	Test Accuracy: 54.60%	Test Loss: 2.1848
+2022-07-14 15:04:11 [INFO ]  Epoch:   71	Test Accuracy: 56.09%	Test Loss: 2.0769
+2022-07-14 15:04:12 [INFO ]  Epoch:   72	Test Accuracy: 56.14%	Test Loss: 2.1309
+2022-07-14 15:04:12 [INFO ]  Epoch:   73	Test Accuracy: 57.44%	Test Loss: 2.0281
+2022-07-14 15:04:13 [INFO ]  Epoch:   74	Test Accuracy: 57.19%	Test Loss: 2.1285
+2022-07-14 15:04:14 [INFO ]  Epoch:   75	Test Accuracy: 59.44%	Test Loss: 1.9270
+2022-07-14 15:04:15 [INFO ]  Epoch:   76	Test Accuracy: 57.96%	Test Loss: 2.1394
+2022-07-14 15:04:15 [INFO ]  Epoch:   77	Test Accuracy: 60.84%	Test Loss: 1.8823
+2022-07-14 15:04:16 [INFO ]  Epoch:   78	Test Accuracy: 58.99%	Test Loss: 2.1034
+2022-07-14 15:04:17 [INFO ]  Epoch:   79	Test Accuracy: 61.66%	Test Loss: 1.8335
+2022-07-14 15:04:18 [INFO ]  Epoch:   80	Test Accuracy: 59.83%	Test Loss: 2.0291
+2022-07-14 15:04:18 [INFO ]  Epoch:   81	Test Accuracy: 62.34%	Test Loss: 1.7570
+2022-07-14 15:04:19 [INFO ]  Epoch:   82	Test Accuracy: 61.58%	Test Loss: 1.8709
+2022-07-14 15:04:20 [INFO ]  Epoch:   83	Test Accuracy: 62.84%	Test Loss: 1.7088
+2022-07-14 15:04:21 [INFO ]  Epoch:   84	Test Accuracy: 62.02%	Test Loss: 1.8155
+2022-07-14 15:04:21 [INFO ]  Epoch:   85	Test Accuracy: 63.57%	Test Loss: 1.6326
+2022-07-14 15:04:22 [INFO ]  Epoch:   86	Test Accuracy: 62.54%	Test Loss: 1.7660
+2022-07-14 15:04:23 [INFO ]  Epoch:   87	Test Accuracy: 64.15%	Test Loss: 1.5788
+2022-07-14 15:04:23 [INFO ]  Epoch:   88	Test Accuracy: 63.28%	Test Loss: 1.7102
+2022-07-14 15:04:24 [INFO ]  Epoch:   89	Test Accuracy: 64.85%	Test Loss: 1.5581
+2022-07-14 15:04:25 [INFO ]  Epoch:   90	Test Accuracy: 64.24%	Test Loss: 1.6634
+2022-07-14 15:04:26 [INFO ]  Epoch:   91	Test Accuracy: 65.48%	Test Loss: 1.5480
+2022-07-14 15:04:26 [INFO ]  Epoch:   92	Test Accuracy: 65.27%	Test Loss: 1.6121
+2022-07-14 15:04:27 [INFO ]  Epoch:   93	Test Accuracy: 66.12%	Test Loss: 1.5237
+2022-07-14 15:04:28 [INFO ]  Epoch:   94	Test Accuracy: 65.97%	Test Loss: 1.5865
+2022-07-14 15:04:28 [INFO ]  Epoch:   95	Test Accuracy: 66.80%	Test Loss: 1.5103
+2022-07-14 15:04:29 [INFO ]  Epoch:   96	Test Accuracy: 66.49%	Test Loss: 1.5660
+2022-07-14 15:04:30 [INFO ]  Epoch:   97	Test Accuracy: 67.23%	Test Loss: 1.5217
+2022-07-14 15:04:31 [INFO ]  Epoch:   98	Test Accuracy: 67.12%	Test Loss: 1.5473
+2022-07-14 15:04:31 [INFO ]  Epoch:   99	Test Accuracy: 67.50%	Test Loss: 1.5327
+2022-07-14 15:04:32 [INFO ]  Epoch:  100	Test Accuracy: 67.71%	Test Loss: 1.5407
+2022-07-14 15:04:33 [INFO ]  Epoch:  101	Test Accuracy: 68.03%	Test Loss: 1.5257
+2022-07-14 15:04:34 [INFO ]  Epoch:  102	Test Accuracy: 67.93%	Test Loss: 1.5375
+2022-07-14 15:04:34 [INFO ]  Epoch:  103	Test Accuracy: 68.26%	Test Loss: 1.5362
+2022-07-14 15:04:35 [INFO ]  Epoch:  104	Test Accuracy: 68.40%	Test Loss: 1.5323
+2022-07-14 15:04:36 [INFO ]  Epoch:  105	Test Accuracy: 68.51%	Test Loss: 1.5392
+2022-07-14 15:04:36 [INFO ]  Epoch:  106	Test Accuracy: 68.69%	Test Loss: 1.5357
+2022-07-14 15:04:37 [INFO ]  Epoch:  107	Test Accuracy: 68.77%	Test Loss: 1.5370
+2022-07-14 15:04:38 [INFO ]  Epoch:  108	Test Accuracy: 68.76%	Test Loss: 1.5455
+2022-07-14 15:04:39 [INFO ]  Epoch:  109	Test Accuracy: 69.04%	Test Loss: 1.5430
+2022-07-14 15:04:39 [INFO ]  Epoch:  110	Test Accuracy: 68.99%	Test Loss: 1.5566
+2022-07-14 15:04:40 [INFO ]  Epoch:  111	Test Accuracy: 69.23%	Test Loss: 1.5497
+2022-07-14 15:04:41 [INFO ]  Epoch:  112	Test Accuracy: 69.07%	Test Loss: 1.5730
+2022-07-14 15:04:42 [INFO ]  Epoch:  113	Test Accuracy: 69.40%	Test Loss: 1.5626
+2022-07-14 15:04:42 [INFO ]  Epoch:  114	Test Accuracy: 69.37%	Test Loss: 1.5787
+2022-07-14 15:04:43 [INFO ]  Epoch:  115	Test Accuracy: 69.48%	Test Loss: 1.5771
+2022-07-14 15:04:44 [INFO ]  Epoch:  116	Test Accuracy: 69.55%	Test Loss: 1.5816
+2022-07-14 15:04:45 [INFO ]  Epoch:  117	Test Accuracy: 69.61%	Test Loss: 1.5793
+2022-07-14 15:04:45 [INFO ]  Epoch:  118	Test Accuracy: 69.58%	Test Loss: 1.5914
+2022-07-14 15:04:46 [INFO ]  Epoch:  119	Test Accuracy: 69.80%	Test Loss: 1.5869
+2022-07-14 15:04:47 [INFO ]  Epoch:  120	Test Accuracy: 69.77%	Test Loss: 1.5981
+2022-07-14 15:04:47 [INFO ]  Epoch:  121	Test Accuracy: 70.00%	Test Loss: 1.5939
+2022-07-14 15:04:48 [INFO ]  Epoch:  122	Test Accuracy: 70.07%	Test Loss: 1.5991
+2022-07-14 15:04:49 [INFO ]  Epoch:  123	Test Accuracy: 70.10%	Test Loss: 1.6067
+2022-07-14 15:04:50 [INFO ]  Epoch:  124	Test Accuracy: 70.18%	Test Loss: 1.6069
+2022-07-14 15:04:50 [INFO ]  Epoch:  125	Test Accuracy: 70.25%	Test Loss: 1.6078
+2022-07-14 15:04:51 [INFO ]  Epoch:  126	Test Accuracy: 70.29%	Test Loss: 1.6119
+2022-07-14 15:04:52 [INFO ]  Epoch:  127	Test Accuracy: 70.32%	Test Loss: 1.6183
+2022-07-14 15:04:53 [INFO ]  Epoch:  128	Test Accuracy: 70.52%	Test Loss: 1.6147
+2022-07-14 15:04:53 [INFO ]  Epoch:  129	Test Accuracy: 70.49%	Test Loss: 1.6225
+2022-07-14 15:04:54 [INFO ]  Epoch:  130	Test Accuracy: 70.56%	Test Loss: 1.6222
+2022-07-14 15:04:55 [INFO ]  Epoch:  131	Test Accuracy: 70.55%	Test Loss: 1.6265
+2022-07-14 15:04:55 [INFO ]  Epoch:  132	Test Accuracy: 70.63%	Test Loss: 1.6290
+2022-07-14 15:04:56 [INFO ]  Epoch:  133	Test Accuracy: 70.65%	Test Loss: 1.6326
+2022-07-14 15:04:57 [INFO ]  Epoch:  134	Test Accuracy: 70.80%	Test Loss: 1.6277
+2022-07-14 15:04:58 [INFO ]  Epoch:  135	Test Accuracy: 70.75%	Test Loss: 1.6375
+2022-07-14 15:04:58 [INFO ]  Epoch:  136	Test Accuracy: 70.88%	Test Loss: 1.6328
+2022-07-14 15:04:59 [INFO ]  Epoch:  137	Test Accuracy: 70.84%	Test Loss: 1.6426
+2022-07-14 15:05:00 [INFO ]  Epoch:  138	Test Accuracy: 70.98%	Test Loss: 1.6368
+2022-07-14 15:05:01 [INFO ]  Epoch:  139	Test Accuracy: 70.94%	Test Loss: 1.6465
+2022-07-14 15:05:02 [INFO ]  Epoch:  140	Test Accuracy: 71.02%	Test Loss: 1.6423
+2022-07-14 15:05:02 [INFO ]  Epoch:  141	Test Accuracy: 71.07%	Test Loss: 1.6439
+2022-07-14 15:05:03 [INFO ]  Epoch:  142	Test Accuracy: 71.07%	Test Loss: 1.6496
+2022-07-14 15:05:04 [INFO ]  Epoch:  143	Test Accuracy: 71.18%	Test Loss: 1.6472
+2022-07-14 15:05:04 [INFO ]  Epoch:  144	Test Accuracy: 71.19%	Test Loss: 1.6518
+2022-07-14 15:05:05 [INFO ]  Epoch:  145	Test Accuracy: 71.28%	Test Loss: 1.6506
+2022-07-14 15:05:06 [INFO ]  Epoch:  146	Test Accuracy: 71.28%	Test Loss: 1.6555
+2022-07-14 15:05:07 [INFO ]  Epoch:  147	Test Accuracy: 71.32%	Test Loss: 1.6548
+2022-07-14 15:05:07 [INFO ]  Epoch:  148	Test Accuracy: 71.37%	Test Loss: 1.6568
+2022-07-14 15:05:08 [INFO ]  Epoch:  149	Test Accuracy: 71.36%	Test Loss: 1.6592
+2022-07-14 15:05:09 [INFO ]   
+2022-07-14 15:05:09 [INFO ]  Evaluation AFTER adapting for MNIST_RGB:
+2022-07-14 15:05:09 [INFO ]  Test Accuracy: 71.36%	Test Loss: 1.6592
+2022-07-14 15:05:10 [INFO ]   
+2022-07-14 15:05:10 [INFO ]  Evaluation AFTER adapting for SVHN:
+2022-07-14 15:05:10 [INFO ]  Test Accuracy: 25.49%	Test Loss: 6.7938

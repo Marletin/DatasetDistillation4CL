@@ -108,10 +108,10 @@ def train_mode(state, train_loader=None, test_loader=None, source_test_loader=No
         lr = lrs[0]
 
     optimizer = optim.SGD(state.models.parameters(), lr=lr)
-    """if state.expand_cls:
-        lr = (lrs[0] + lrs[1]) / 2
-        optimizer = optim.Adam(state.models.parameters(), lr=lr, betas=(0.5, 0.999))"""
-    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=state.decay_epochs, gamma=state.decay_factor)
+    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=state.epochs, gamma=state.decay_factor)
+    if state.mode == "train":
+        optimizer = optim.Adam(state.models.parameters(), lr=lr, betas=(0.5, 0.999))
+        scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=state.decay_epochs, gamma=state.decay_factor)
 
     def epoch_fn():
         """
@@ -242,6 +242,7 @@ def main(state):
 
             loaded_steps = list(load_results(state, device=state.device)[-1])
             my_dataset = TensorDataset(loaded_steps[0], loaded_steps[1])
+            logging.info(f"Custom dataset length: {len(my_dataset)}")
             state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=len(my_dataset), num_workers=0)
 
             acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(state.test_loader))
@@ -277,7 +278,10 @@ def main(state):
 
             my_dataset = TensorDataset(loaded_steps[0], loaded_steps[1])
             logging.info(f"Custom dataset length: {len(my_dataset)}")
-            state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=len(my_dataset), num_workers=0)
+            batch_size = len(my_dataset)
+            if state.expand_cls:
+                batch_size = len(my_dataset) // 2
+            state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=batch_size, num_workers=0)
 
             def evaluate_adapt(log_info: str) -> None:
 
