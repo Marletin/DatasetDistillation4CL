@@ -278,8 +278,9 @@ def main(state):
             my_dataset = TensorDataset(loaded_steps[0], loaded_steps[1])
             logging.info(f"Custom dataset length: {len(my_dataset)}")
             batch_size = len(my_dataset)
-            batch_size = len(my_dataset) // 2
-            state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=75, num_workers=0)
+            if state.expand_cls:
+                batch_size = len(my_dataset) // 2
+            state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=batch_size, num_workers=0)
 
             def evaluate_adapt(log_info: str) -> None:
 
