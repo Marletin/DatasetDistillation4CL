@@ -108,10 +108,10 @@ def train_mode(state, train_loader=None, test_loader=None, source_test_loader=No
         lr = lrs[0]
 
     optimizer = optim.SGD(state.models.parameters(), lr=lr)
-    """if state.expand_cls:
-        lr = (lrs[0] + lrs[1]) / 2
-        optimizer = optim.Adam(state.models.parameters(), lr=lr, betas=(0.5, 0.999))"""
-    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=state.decay_epochs, gamma=state.decay_factor)
+    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=state.epochs, gamma=state.decay_factor)
+    if state.mode == "train":
+        optimizer = optim.Adam(state.models.parameters(), lr=lr, betas=(0.5, 0.999))
+        scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=state.decay_epochs, gamma=state.decay_factor)
 
     def epoch_fn():
         """
@@ -221,10 +221,10 @@ def main(state):
         def evaluate_forgetting(log_info: str) -> None:
 
             acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(state.f_test_loader))
-            logging.info(f"\n{log_info} for {state.forgetting_dataset}:\nTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}\n")
+            logging.info(f"\n{state.forgetting_dataset}: {log_info}:\nTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}\n")
 
             acc_old, loss_old = evaluate_model(state, state.models, test_loader_iter=iter(state.test_loader))
-            logging.info(f"\n{log_info} for {state.dataset}:\nTest Accuracy: {acc_old:.2%}\tTest Loss: {loss_old:.4f}\n")
+            logging.info(f"\n{state.dataset}: {log_info}:\nTest Accuracy: {acc_old:.2%}\tTest Loss: {loss_old:.4f}\n")
 
 
         evaluate_forgetting("Evaluation BEFORE forgetting")
@@ -242,6 +242,7 @@ def main(state):
 
             loaded_steps = list(load_results(state, device=state.device)[-1])
             my_dataset = TensorDataset(loaded_steps[0], loaded_steps[1])
+            logging.info(f"Custom dataset length: {len(my_dataset)}")
             state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=len(my_dataset), num_workers=0)
 
             acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(state.test_loader))
@@ -266,26 +267,27 @@ def main(state):
 
         elif state.phase == "test":
 
-            loaded_steps = list(load_results(state, device=state.device)[-1])
-
+            new_steps = loaded_steps = list(load_results(state, mode="distill_basic", dataset=state.dataset, device=state.device)[-1])
             if state.expand_cls:
                 new_steps = expand_model(state, loaded_steps, state.dataset)
-                add_loaded_steps = list(load_results(state, mode="distill_basic", dataset=state.source_dataset, device=state.device)[-1])
-                loaded_steps[0] = torch.cat((new_steps[0], add_loaded_steps[0]),0)
-                loaded_steps[1] = torch.cat((new_steps[1], add_loaded_steps[1]),0)
-                loaded_steps[2] = torch.cat((new_steps[2], add_loaded_steps[2]),0)
+            add_loaded_steps = list(load_results(state, mode="distill_basic", dataset=state.source_dataset, device=state.device)[-1])
+            loaded_steps[0] = torch.cat((new_steps[0], add_loaded_steps[0]),0)
+            loaded_steps[1] = torch.cat((new_steps[1], add_loaded_steps[1]),0)
+            loaded_steps[2] = torch.cat((new_steps[2], add_loaded_steps[2]),0)
 
             my_dataset = TensorDataset(loaded_steps[0], loaded_steps[1])
             logging.info(f"Custom dataset length: {len(my_dataset)}")
-            state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=len(my_dataset), num_workers=0)
+            batch_size = len(my_dataset)
+            batch_size = len(my_dataset) // 2
+            state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=75, num_workers=0)
 
             def evaluate_adapt(log_info: str) -> None:
 
                 acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(state.test_loader))
-                logging.info(f"\n{log_info} for {state.dataset}:\nTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}\n")
+                logging.info(f"\n{state.dataset}: {log_info}:\nTest Accuracy: {acc:.2%}\tTest Loss: {loss:.4f}\n")
 
                 acc_old, loss_old = evaluate_model(state, state.models, test_loader_iter=iter(state.source_test_loader))
-                logging.info(f"\n{log_info} for {state.source_dataset}:\nTest Accuracy: {acc_old:.2%}\tTest Loss: {loss_old:.4f}\n")
+                logging.info(f"\n{state.source_dataset}: {log_info}:\nTest Accuracy: {acc_old:.2%}\tTest Loss: {loss_old:.4f}\n")
 
 
             evaluate_adapt("Evaluation BEFORE adapting")
