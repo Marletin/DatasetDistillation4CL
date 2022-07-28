@@ -33,6 +33,7 @@ class TensorDataset(Dataset):
     def __len__(self):
         return self.images.shape[0]
 
+
 def expand_model(state, steps, dataset=None):
     """
     Expands the classifier of the current model for the num_classes of the given dataset
@@ -77,7 +78,6 @@ def expand_model(state, steps, dataset=None):
     steps[1] = torch.add(steps[1], 10)
 
     return steps
-
 
 
 def train_mode(state, train_loader=None, test_loader=None, source_test_loader=None, lrs=None):
@@ -143,11 +143,6 @@ def train_mode(state, train_loader=None, test_loader=None, source_test_loader=No
 
         for data, target in train_iter:
 
-            # Set lr for the second half of epoch
-            if N // 2 == len(train_iter):
-                for g in optim.param_groups:
-                    g['lr'] = lr[1]
-
 
             data, target = data.to(state.device, non_blocking=True), target.to(state.device, non_blocking=True)
             optimizer.zero_grad()
@@ -155,11 +150,6 @@ def train_mode(state, train_loader=None, test_loader=None, source_test_loader=No
             loss = F.cross_entropy(output, target)
             loss.backward()
             optimizer.step()
-
-            # Reset lr for the first half of next epoch
-            if len(train_iter) == 0:
-                for g in optim.param_groups:
-                    g['lr'] = lr[0]
 
         acc, loss = evaluate_model(state, state.models, test_loader_iter=iter(test_loader))
         acc_source, loss_source = evaluate_model(state, state.models, test_loader_iter=iter(source_test_loader))
@@ -169,11 +159,11 @@ def train_mode(state, train_loader=None, test_loader=None, source_test_loader=No
             )
     
     for epoch in range(state.epochs):
-        if state.expand_cls:
-            assert source_test_loader != None, "Please set a source test loader in expanded mode"
-            epoch_fn_expanded()
-        else:
-            epoch_fn()
+        #if state.expand_cls:
+            #assert source_test_loader != None, "Please set a source test loader in expanded mode"
+        epoch_fn_expanded()
+        #else:
+            #epoch_fn()
 
 
 def main(state):
@@ -203,7 +193,7 @@ def main(state):
 
         if state.phase == "train":
             state.models.reset(state)
-            train_mode(state)
+            # train_mode(state)
             torch.save(state.models.state_dict(), model_path)
 
         elif state.phase == "test":
@@ -267,7 +257,7 @@ def main(state):
 
         elif state.phase == "test":
 
-            new_steps = loaded_steps = list(load_results(state, mode="distill_basic", dataset=state.dataset, device=state.device)[-1])
+            new_steps = loaded_steps = list(load_results(state, device=state.device)[-1])
             if state.expand_cls:
                 new_steps = expand_model(state, loaded_steps, state.dataset)
             add_loaded_steps = list(load_results(state, mode="distill_basic", dataset=state.source_dataset, device=state.device)[-1])
@@ -279,8 +269,8 @@ def main(state):
             logging.info(f"Custom dataset length: {len(my_dataset)}")
             batch_size = len(my_dataset)
             if state.expand_cls:
-                batch_size = len(my_dataset) // 2
-            state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=batch_size, num_workers=0)
+                batch_size = len(my_dataset)
+            state.train_loader = torch.utils.data.DataLoader(my_dataset, batch_size=batch_size, num_workers=0, shuffle=True)
 
             def evaluate_adapt(log_info: str) -> None:
 
@@ -292,7 +282,7 @@ def main(state):
 
 
             evaluate_adapt("Evaluation BEFORE adapting")
-            train_mode(state, state.train_loader, state.test_loader, state.source_test_loader, loaded_steps[2])
+            train_mode(state, state.train_loader, state.test_loader, state.source_test_loader)
             evaluate_adapt("Evaluation AFTER adapting")
 
         else:

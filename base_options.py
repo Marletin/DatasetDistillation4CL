@@ -209,13 +209,13 @@ class BaseOptions(object):
                             help="how many times to repeat all steps 1, 2, 3, 1, 2, 3, ...")
         parser.add_argument("--device_id", type=comp(int, "ge", -1), default=0, help="device id, -1 is cpu")
         parser.add_argument("--phase", type=str, default="train",
-                            help="[train | test]")
+                            help="train | test")
         parser.add_argument("--num_workers", type=nonneg_int, default=8,
                             help="number of data loader workers")
         parser.add_argument("--log_level", type=str, default="INFO",
                             help="logging level, e.g., DEBUG, INFO, WARNING, ERROR, CRITICAL")
         parser.add_argument("--expand_cls", action="store_true",
-                            help="Expand the classifier when distill_basic and _adapt already finished to finetune a model on both datasets (dataset and source_dataset)")
+                            help="Expand the classifier when distill_basic and distill_adapt already finished to finetune a model on both datasets (dataset and source_dataset)")
 
     def get_state(self):
         if hasattr(self, "state"):
