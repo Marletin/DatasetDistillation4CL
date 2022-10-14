@@ -1,0 +1,70 @@
+2022-10-10 06:53:30 [INFO ]  ======================================== 2022-10-10 06:53:30 ========================================
+2022-10-10 06:53:30 [INFO ]  Base directory is ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST
+2022-10-10 06:53:30 [INFO ]  Options: 
+2022-10-10 06:53:30 [INFO ]  	base_dir: null
+2022-10-10 06:53:30 [INFO ]  	batch_size: 1024
+2022-10-10 06:53:30 [INFO ]  	checkpoint_interval: 300
+2022-10-10 06:53:30 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 06:53:30 [INFO ]  	dataset_labels:
+2022-10-10 06:53:30 [INFO ]  	- 0
+2022-10-10 06:53:30 [INFO ]  	- 1
+2022-10-10 06:53:30 [INFO ]  	- 2
+2022-10-10 06:53:30 [INFO ]  	- 3
+2022-10-10 06:53:30 [INFO ]  	- 4
+2022-10-10 06:53:30 [INFO ]  	- 5
+2022-10-10 06:53:30 [INFO ]  	- 6
+2022-10-10 06:53:30 [INFO ]  	- 7
+2022-10-10 06:53:30 [INFO ]  	- 8
+2022-10-10 06:53:30 [INFO ]  	- 9
+2022-10-10 06:53:30 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 06:53:30 [INFO ]  	- !!python/tuple
+2022-10-10 06:53:30 [INFO ]  	    - 0.1307
+2022-10-10 06:53:30 [INFO ]  	    - 0.1307
+2022-10-10 06:53:30 [INFO ]  	    - 0.1307
+2022-10-10 06:53:30 [INFO ]  	- !!python/tuple
+2022-10-10 06:53:30 [INFO ]  	    - 0.3081
+2022-10-10 06:53:30 [INFO ]  	    - 0.3081
+2022-10-10 06:53:30 [INFO ]  	    - 0.3081
+2022-10-10 06:53:30 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 06:53:30 [INFO ]  	decay_epochs: 50
+2022-10-10 06:53:30 [INFO ]  	decay_factor: 0.1
+2022-10-10 06:53:30 [INFO ]  	device_id: 0
+2022-10-10 06:53:30 [INFO ]  	distill_epochs: 1
+2022-10-10 06:53:30 [INFO ]  	distill_lr: 0.02
+2022-10-10 06:53:30 [INFO ]  	distill_steps: 1
+2022-10-10 06:53:30 [INFO ]  	epochs: 200
+2022-10-10 06:53:30 [INFO ]  	expand_cls: false
+2022-10-10 06:53:30 [INFO ]  	forgetting_dataset: null
+2022-10-10 06:53:30 [INFO ]  	init: xavier
+2022-10-10 06:53:30 [INFO ]  	init_param: 1.0
+2022-10-10 06:53:30 [INFO ]  	input_size: 32
+2022-10-10 06:53:30 [INFO ]  	ipc: 1
+2022-10-10 06:53:30 [INFO ]  	log_file: ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/test/log.txt
+2022-10-10 06:53:30 [INFO ]  	log_interval: 100
+2022-10-10 06:53:30 [INFO ]  	log_level: INFO
+2022-10-10 06:53:30 [INFO ]  	lr: 0.01
+2022-10-10 06:53:30 [INFO ]  	mode: distill_adapt
+2022-10-10 06:53:30 [INFO ]  	nc: 3
+2022-10-10 06:53:30 [INFO ]  	num_classes: 10
+2022-10-10 06:53:30 [INFO ]  	num_workers: 8
+2022-10-10 06:53:30 [INFO ]  	phase: test
+2022-10-10 06:53:30 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-10 06:53:30 [INFO ]  	start_time: '2022-10-10 06:53:30'
+2022-10-10 06:53:30 [INFO ]  	test_batch_size: 1024
+2022-10-10 06:53:30 [INFO ]  	
+2022-10-10 06:53:30 [INFO ]  train dataset size:	60000
+2022-10-10 06:53:30 [INFO ]  test dataset size: 	10000
+2022-10-10 06:53:30 [INFO ]  datasets built!
+2022-10-10 06:53:30 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 06:53:31 [INFO ]  Loaded results from ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/results.pth
+2022-10-10 06:53:31 [INFO ]  Custom dataset length: 10
+2022-10-10 06:53:32 [INFO ]   
+2022-10-10 06:53:32 [INFO ]  MNIST_RGB: Evaluation BEFORE adapting:
+2022-10-10 06:53:32 [INFO ]  Test Accuracy: 9.51%	Test Loss: 8.5646
+2022-10-10 06:53:33 [INFO ]   
+2022-10-10 06:53:33 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-10 06:53:33 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-10 06:53:33 [INFO ]  tensor([0.1463], device='cuda:0')
+2022-10-10 06:53:33 [INFO ]  Leraning Rate is not synthetic: 0.01
+2022-10-10 06:53:35 [INFO ]  Epoch:    0	Test Accuracy MNIST_RGB: 16.65%	Test Loss MNIST_RGB: 5.8604 
+2022-10-10 06:53:35 [INFO ]             	Test Accuracy FASHION_MNIST: 79.16%	Test Loss FASHION_MNIST: 0.5625

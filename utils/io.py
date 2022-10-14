@@ -84,7 +84,7 @@ def vis_results(state, steps, *args, **kwargs):
     _, _, nc, input_size, _, (mean, std), label_names = datasets.get_info(state.dataset)
     dataset_vis_info = (state.dataset, nc, input_size, np.array(mean), np.array(std), label_names)
 
-    vis_args = (steps, state.ipc, dataset_vis_info, "LeNet", 80) + args
+    vis_args = (steps, state.ipc, dataset_vis_info, "LeNet", 600) + args
 
     _vis_results_fn(*vis_args, **kwargs)
 
@@ -129,13 +129,12 @@ def save_results(state, steps, visualize=True, subfolder='', mode=None, dataset=
     logging.info(f'Results saved to {save_data_path}')
 
 
-def load_results(state, mode=None, dataset=None, device=None):
-    if mode is None and dataset is None:
+def load_results(state, dataset=None, device=None):
+    if dataset is None:
         expr_dir = state.get_load_directory()
         save_data_path = os.path.join(expr_dir, 'results.pth')
     else:
-        assert mode is not None and dataset is not None, "mode and dataset should be both not None"
-        expr_dir = state.get_load_directory(mode, dataset)
+        expr_dir = state.get_load_directory(dataset)
         save_data_path = os.path.join(expr_dir, 'results.pth')
     device = device or state.device
     logging.info(f"Loaded results from {save_data_path}")

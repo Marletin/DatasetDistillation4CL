@@ -1,0 +1,1798 @@
+2022-10-10 07:18:37 [INFO ]  ======================================== 2022-10-10 07:18:37 ========================================
+2022-10-10 07:18:37 [INFO ]  Base directory is ./results/forgetting/MNIST_RGB/
+2022-10-10 07:18:37 [INFO ]  Options: 
+2022-10-10 07:18:37 [INFO ]  	base_dir: null
+2022-10-10 07:18:37 [INFO ]  	batch_size: 1024
+2022-10-10 07:18:37 [INFO ]  	checkpoint_interval: 300
+2022-10-10 07:18:37 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 07:18:37 [INFO ]  	dataset_labels:
+2022-10-10 07:18:37 [INFO ]  	- 0
+2022-10-10 07:18:37 [INFO ]  	- 1
+2022-10-10 07:18:37 [INFO ]  	- 2
+2022-10-10 07:18:37 [INFO ]  	- 3
+2022-10-10 07:18:37 [INFO ]  	- 4
+2022-10-10 07:18:37 [INFO ]  	- 5
+2022-10-10 07:18:37 [INFO ]  	- 6
+2022-10-10 07:18:37 [INFO ]  	- 7
+2022-10-10 07:18:37 [INFO ]  	- 8
+2022-10-10 07:18:37 [INFO ]  	- 9
+2022-10-10 07:18:37 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 07:18:37 [INFO ]  	- !!python/tuple
+2022-10-10 07:18:37 [INFO ]  	    - 0.1307
+2022-10-10 07:18:37 [INFO ]  	    - 0.1307
+2022-10-10 07:18:37 [INFO ]  	    - 0.1307
+2022-10-10 07:18:37 [INFO ]  	- !!python/tuple
+2022-10-10 07:18:37 [INFO ]  	    - 0.3081
+2022-10-10 07:18:37 [INFO ]  	    - 0.3081
+2022-10-10 07:18:37 [INFO ]  	    - 0.3081
+2022-10-10 07:18:37 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 07:18:37 [INFO ]  	decay_epochs: 50
+2022-10-10 07:18:37 [INFO ]  	decay_factor: 0.1
+2022-10-10 07:18:37 [INFO ]  	device_id: 0
+2022-10-10 07:18:37 [INFO ]  	distill_epochs: 1
+2022-10-10 07:18:37 [INFO ]  	distill_lr: 0.02
+2022-10-10 07:18:37 [INFO ]  	distill_steps: 1
+2022-10-10 07:18:37 [INFO ]  	epochs: 50
+2022-10-10 07:18:37 [INFO ]  	expand_cls: false
+2022-10-10 07:18:37 [INFO ]  	forgetting_dataset: null
+2022-10-10 07:18:37 [INFO ]  	init: xavier
+2022-10-10 07:18:37 [INFO ]  	init_param: 1.0
+2022-10-10 07:18:37 [INFO ]  	input_size: 32
+2022-10-10 07:18:37 [INFO ]  	ipc: 1
+2022-10-10 07:18:37 [INFO ]  	log_file: ./results/forgetting/MNIST_RGB/log.txt
+2022-10-10 07:18:37 [INFO ]  	log_interval: 100
+2022-10-10 07:18:37 [INFO ]  	log_level: INFO
+2022-10-10 07:18:37 [INFO ]  	lr: 0.0002
+2022-10-10 07:18:37 [INFO ]  	mode: forgetting
+2022-10-10 07:18:37 [INFO ]  	nc: 3
+2022-10-10 07:18:37 [INFO ]  	num_classes: 10
+2022-10-10 07:18:37 [INFO ]  	num_workers: 8
+2022-10-10 07:18:37 [INFO ]  	phase: train
+2022-10-10 07:18:37 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-10 07:18:37 [INFO ]  	start_time: '2022-10-10 07:18:37'
+2022-10-10 07:18:37 [INFO ]  	test_batch_size: 1024
+2022-10-10 07:18:37 [INFO ]  	
+2022-10-10 07:18:37 [INFO ]  train dataset size:	60000
+2022-10-10 07:18:37 [INFO ]  test dataset size: 	10000
+2022-10-10 07:18:37 [INFO ]  datasets built!
+2022-10-10 07:18:37 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 07:19:14 [INFO ]  ======================================== 2022-10-10 07:19:14 ========================================
+2022-10-10 07:19:14 [INFO ]  Base directory is ./results/forgetting/MNIST_RGB/
+2022-10-10 07:19:14 [INFO ]  Options: 
+2022-10-10 07:19:14 [INFO ]  	base_dir: null
+2022-10-10 07:19:14 [INFO ]  	batch_size: 1024
+2022-10-10 07:19:14 [INFO ]  	checkpoint_interval: 300
+2022-10-10 07:19:14 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 07:19:14 [INFO ]  	dataset_labels:
+2022-10-10 07:19:14 [INFO ]  	- 0
+2022-10-10 07:19:14 [INFO ]  	- 1
+2022-10-10 07:19:14 [INFO ]  	- 2
+2022-10-10 07:19:14 [INFO ]  	- 3
+2022-10-10 07:19:14 [INFO ]  	- 4
+2022-10-10 07:19:14 [INFO ]  	- 5
+2022-10-10 07:19:14 [INFO ]  	- 6
+2022-10-10 07:19:14 [INFO ]  	- 7
+2022-10-10 07:19:14 [INFO ]  	- 8
+2022-10-10 07:19:14 [INFO ]  	- 9
+2022-10-10 07:19:14 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 07:19:14 [INFO ]  	- !!python/tuple
+2022-10-10 07:19:14 [INFO ]  	    - 0.1307
+2022-10-10 07:19:14 [INFO ]  	    - 0.1307
+2022-10-10 07:19:14 [INFO ]  	    - 0.1307
+2022-10-10 07:19:14 [INFO ]  	- !!python/tuple
+2022-10-10 07:19:14 [INFO ]  	    - 0.3081
+2022-10-10 07:19:14 [INFO ]  	    - 0.3081
+2022-10-10 07:19:14 [INFO ]  	    - 0.3081
+2022-10-10 07:19:14 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 07:19:14 [INFO ]  	decay_epochs: 50
+2022-10-10 07:19:14 [INFO ]  	decay_factor: 0.1
+2022-10-10 07:19:14 [INFO ]  	device_id: 0
+2022-10-10 07:19:14 [INFO ]  	distill_epochs: 1
+2022-10-10 07:19:14 [INFO ]  	distill_lr: 0.02
+2022-10-10 07:19:14 [INFO ]  	distill_steps: 1
+2022-10-10 07:19:14 [INFO ]  	epochs: 50
+2022-10-10 07:19:14 [INFO ]  	expand_cls: false
+2022-10-10 07:19:14 [INFO ]  	forgetting_dataset: FASHION_MNIST
+2022-10-10 07:19:14 [INFO ]  	init: xavier
+2022-10-10 07:19:14 [INFO ]  	init_param: 1.0
+2022-10-10 07:19:14 [INFO ]  	input_size: 32
+2022-10-10 07:19:14 [INFO ]  	ipc: 1
+2022-10-10 07:19:14 [INFO ]  	log_file: ./results/forgetting/MNIST_RGB/log.txt
+2022-10-10 07:19:14 [INFO ]  	log_interval: 100
+2022-10-10 07:19:14 [INFO ]  	log_level: INFO
+2022-10-10 07:19:14 [INFO ]  	lr: 0.0002
+2022-10-10 07:19:14 [INFO ]  	mode: forgetting
+2022-10-10 07:19:14 [INFO ]  	nc: 3
+2022-10-10 07:19:14 [INFO ]  	num_classes: 10
+2022-10-10 07:19:14 [INFO ]  	num_workers: 8
+2022-10-10 07:19:14 [INFO ]  	phase: train
+2022-10-10 07:19:14 [INFO ]  	source_dataset: null
+2022-10-10 07:19:14 [INFO ]  	start_time: '2022-10-10 07:19:14'
+2022-10-10 07:19:14 [INFO ]  	test_batch_size: 1024
+2022-10-10 07:19:14 [INFO ]  	
+2022-10-10 07:19:14 [INFO ]  train dataset size:	60000
+2022-10-10 07:19:14 [INFO ]  test dataset size: 	10000
+2022-10-10 07:19:14 [INFO ]  datasets built!
+2022-10-10 07:19:14 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 07:19:16 [INFO ]   
+2022-10-10 07:19:16 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 07:19:16 [INFO ]  Test Accuracy: 14.42%	Test Loss: 4.3418
+2022-10-10 07:19:17 [INFO ]   
+2022-10-10 07:19:17 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 07:19:17 [INFO ]  Test Accuracy: 98.58%	Test Loss: 0.0427
+2022-10-10 07:19:20 [INFO ]  Epoch:    0	Test Accuracy: 66.63%	Test Loss: 0.9614
+2022-10-10 07:19:21 [INFO ]  Source: MNIST_RGB	Test Accuracy: 84.22%	Test Loss: 0.5670
+2022-10-10 07:19:24 [INFO ]  Epoch:    1	Test Accuracy: 71.29%	Test Loss: 0.7819
+2022-10-10 07:19:25 [INFO ]  Source: MNIST_RGB	Test Accuracy: 78.51%	Test Loss: 0.8366
+2022-10-10 07:19:28 [INFO ]  Epoch:    2	Test Accuracy: 75.30%	Test Loss: 0.6908
+2022-10-10 07:19:28 [INFO ]  Source: MNIST_RGB	Test Accuracy: 71.96%	Test Loss: 1.1185
+2022-10-10 07:19:31 [INFO ]  Epoch:    3	Test Accuracy: 76.45%	Test Loss: 0.6489
+2022-10-10 07:19:32 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.93%	Test Loss: 1.3210
+2022-10-10 07:19:36 [INFO ]  Epoch:    4	Test Accuracy: 78.38%	Test Loss: 0.6026
+2022-10-10 07:19:36 [INFO ]  Source: MNIST_RGB	Test Accuracy: 60.56%	Test Loss: 1.5785
+2022-10-10 07:19:40 [INFO ]  Epoch:    5	Test Accuracy: 78.84%	Test Loss: 0.5844
+2022-10-10 07:19:40 [INFO ]  Source: MNIST_RGB	Test Accuracy: 52.12%	Test Loss: 2.0952
+2022-10-10 07:19:43 [INFO ]  Epoch:    6	Test Accuracy: 80.20%	Test Loss: 0.5532
+2022-10-10 07:19:44 [INFO ]  Source: MNIST_RGB	Test Accuracy: 50.62%	Test Loss: 2.2137
+2022-10-10 07:19:47 [INFO ]  Epoch:    7	Test Accuracy: 80.23%	Test Loss: 0.5455
+2022-10-10 07:19:48 [INFO ]  Source: MNIST_RGB	Test Accuracy: 47.72%	Test Loss: 2.5246
+2022-10-10 07:19:51 [INFO ]  Epoch:    8	Test Accuracy: 80.97%	Test Loss: 0.5275
+2022-10-10 07:19:52 [INFO ]  Source: MNIST_RGB	Test Accuracy: 47.09%	Test Loss: 2.5866
+2022-10-10 07:19:55 [INFO ]  Epoch:    9	Test Accuracy: 81.39%	Test Loss: 0.5158
+2022-10-10 07:19:56 [INFO ]  Source: MNIST_RGB	Test Accuracy: 46.05%	Test Loss: 2.7207
+2022-10-10 07:19:59 [INFO ]  Epoch:   10	Test Accuracy: 82.56%	Test Loss: 0.4968
+2022-10-10 07:20:00 [INFO ]  Source: MNIST_RGB	Test Accuracy: 44.69%	Test Loss: 2.9030
+2022-10-10 07:20:03 [INFO ]  Epoch:   11	Test Accuracy: 83.34%	Test Loss: 0.4810
+2022-10-10 07:20:04 [INFO ]  Source: MNIST_RGB	Test Accuracy: 42.63%	Test Loss: 3.0894
+2022-10-10 07:20:07 [INFO ]  Epoch:   12	Test Accuracy: 82.53%	Test Loss: 0.4841
+2022-10-10 07:20:08 [INFO ]  Source: MNIST_RGB	Test Accuracy: 41.18%	Test Loss: 3.2824
+2022-10-10 07:20:11 [INFO ]  Epoch:   13	Test Accuracy: 83.59%	Test Loss: 0.4702
+2022-10-10 07:20:12 [INFO ]  Source: MNIST_RGB	Test Accuracy: 39.83%	Test Loss: 3.3740
+2022-10-10 07:20:15 [INFO ]  Epoch:   14	Test Accuracy: 83.14%	Test Loss: 0.4711
+2022-10-10 07:20:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 39.04%	Test Loss: 3.4741
+2022-10-10 07:20:19 [INFO ]  Epoch:   15	Test Accuracy: 83.62%	Test Loss: 0.4532
+2022-10-10 07:20:19 [INFO ]  Source: MNIST_RGB	Test Accuracy: 39.83%	Test Loss: 3.4956
+2022-10-10 07:20:23 [INFO ]  Epoch:   16	Test Accuracy: 84.11%	Test Loss: 0.4539
+2022-10-10 07:20:24 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.14%	Test Loss: 3.7436
+2022-10-10 07:20:27 [INFO ]  Epoch:   17	Test Accuracy: 84.19%	Test Loss: 0.4419
+2022-10-10 07:20:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.21%	Test Loss: 4.0194
+2022-10-10 07:20:30 [INFO ]  Epoch:   18	Test Accuracy: 84.50%	Test Loss: 0.4397
+2022-10-10 07:20:31 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.55%	Test Loss: 4.2461
+2022-10-10 07:20:34 [INFO ]  Epoch:   19	Test Accuracy: 84.72%	Test Loss: 0.4260
+2022-10-10 07:20:35 [INFO ]  Source: MNIST_RGB	Test Accuracy: 37.17%	Test Loss: 3.9543
+2022-10-10 07:20:38 [INFO ]  Epoch:   20	Test Accuracy: 85.10%	Test Loss: 0.4198
+2022-10-10 07:20:39 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.71%	Test Loss: 4.1014
+2022-10-10 07:20:42 [INFO ]  Epoch:   21	Test Accuracy: 85.02%	Test Loss: 0.4225
+2022-10-10 07:20:43 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.43%	Test Loss: 4.3131
+2022-10-10 07:20:46 [INFO ]  Epoch:   22	Test Accuracy: 85.20%	Test Loss: 0.4160
+2022-10-10 07:20:47 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.70%	Test Loss: 4.0267
+2022-10-10 07:20:50 [INFO ]  Epoch:   23	Test Accuracy: 85.15%	Test Loss: 0.4220
+2022-10-10 07:20:51 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.94%	Test Loss: 4.2857
+2022-10-10 07:20:54 [INFO ]  Epoch:   24	Test Accuracy: 85.67%	Test Loss: 0.4059
+2022-10-10 07:20:55 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.40%	Test Loss: 4.2231
+2022-10-10 07:20:58 [INFO ]  Epoch:   25	Test Accuracy: 85.68%	Test Loss: 0.4025
+2022-10-10 07:20:59 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.48%	Test Loss: 4.1891
+2022-10-10 07:21:02 [INFO ]  Epoch:   26	Test Accuracy: 85.93%	Test Loss: 0.3953
+2022-10-10 07:21:03 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.30%	Test Loss: 4.6808
+2022-10-10 07:21:06 [INFO ]  Epoch:   27	Test Accuracy: 86.42%	Test Loss: 0.3888
+2022-10-10 07:21:07 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.87%	Test Loss: 4.3648
+2022-10-10 07:21:10 [INFO ]  Epoch:   28	Test Accuracy: 86.01%	Test Loss: 0.3946
+2022-10-10 07:21:11 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.21%	Test Loss: 4.7194
+2022-10-10 07:21:14 [INFO ]  Epoch:   29	Test Accuracy: 85.62%	Test Loss: 0.3971
+2022-10-10 07:21:15 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.34%	Test Loss: 4.6457
+2022-10-10 07:21:18 [INFO ]  Epoch:   30	Test Accuracy: 85.73%	Test Loss: 0.3975
+2022-10-10 07:21:19 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.76%	Test Loss: 4.5428
+2022-10-10 07:21:22 [INFO ]  Epoch:   31	Test Accuracy: 86.47%	Test Loss: 0.3858
+2022-10-10 07:21:23 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.66%	Test Loss: 4.9131
+2022-10-10 07:21:26 [INFO ]  Epoch:   32	Test Accuracy: 86.83%	Test Loss: 0.3749
+2022-10-10 07:21:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.11%	Test Loss: 4.5536
+2022-10-10 07:21:30 [INFO ]  Epoch:   33	Test Accuracy: 86.87%	Test Loss: 0.3687
+2022-10-10 07:21:31 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.17%	Test Loss: 4.8328
+2022-10-10 07:21:34 [INFO ]  Epoch:   34	Test Accuracy: 86.99%	Test Loss: 0.3690
+2022-10-10 07:21:34 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.94%	Test Loss: 4.8191
+2022-10-10 07:21:38 [INFO ]  Epoch:   35	Test Accuracy: 86.40%	Test Loss: 0.3826
+2022-10-10 07:21:38 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.23%	Test Loss: 4.6461
+2022-10-10 07:21:42 [INFO ]  Epoch:   36	Test Accuracy: 87.20%	Test Loss: 0.3613
+2022-10-10 07:21:42 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.14%	Test Loss: 4.9482
+2022-10-10 07:21:46 [INFO ]  Epoch:   37	Test Accuracy: 86.79%	Test Loss: 0.3723
+2022-10-10 07:21:46 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.02%	Test Loss: 5.3298
+2022-10-10 07:21:49 [INFO ]  Epoch:   38	Test Accuracy: 87.17%	Test Loss: 0.3621
+2022-10-10 07:21:50 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.07%	Test Loss: 4.7719
+2022-10-10 07:21:53 [INFO ]  Epoch:   39	Test Accuracy: 86.69%	Test Loss: 0.3767
+2022-10-10 07:21:54 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.55%	Test Loss: 4.9332
+2022-10-10 07:21:57 [INFO ]  Epoch:   40	Test Accuracy: 86.53%	Test Loss: 0.3760
+2022-10-10 07:21:58 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.48%	Test Loss: 5.0768
+2022-10-10 07:22:01 [INFO ]  Epoch:   41	Test Accuracy: 87.33%	Test Loss: 0.3640
+2022-10-10 07:22:02 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.82%	Test Loss: 5.0106
+2022-10-10 07:22:05 [INFO ]  Epoch:   42	Test Accuracy: 87.76%	Test Loss: 0.3516
+2022-10-10 07:22:06 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.92%	Test Loss: 4.9822
+2022-10-10 07:22:09 [INFO ]  Epoch:   43	Test Accuracy: 87.44%	Test Loss: 0.3551
+2022-10-10 07:22:10 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.04%	Test Loss: 5.4465
+2022-10-10 07:22:13 [INFO ]  Epoch:   44	Test Accuracy: 87.59%	Test Loss: 0.3499
+2022-10-10 07:22:14 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.79%	Test Loss: 5.1887
+2022-10-10 07:22:17 [INFO ]  Epoch:   45	Test Accuracy: 87.74%	Test Loss: 0.3489
+2022-10-10 07:22:18 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.16%	Test Loss: 5.4338
+2022-10-10 07:22:21 [INFO ]  Epoch:   46	Test Accuracy: 87.92%	Test Loss: 0.3463
+2022-10-10 07:22:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.10%	Test Loss: 5.1259
+2022-10-10 07:22:25 [INFO ]  Epoch:   47	Test Accuracy: 87.28%	Test Loss: 0.3542
+2022-10-10 07:22:26 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.18%	Test Loss: 5.3411
+2022-10-10 07:22:29 [INFO ]  Epoch:   48	Test Accuracy: 87.00%	Test Loss: 0.3640
+2022-10-10 07:22:30 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.00%	Test Loss: 5.6063
+2022-10-10 07:22:33 [INFO ]  Epoch:   49	Test Accuracy: 87.45%	Test Loss: 0.3642
+2022-10-10 07:22:34 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.32%	Test Loss: 5.7065
+2022-10-10 07:22:34 [INFO ]  List of accuracies: [0.6663, 0.7129, 0.753, 0.7645, 0.7838, 0.7884, 0.802, 0.8023, 0.8097, 0.8139, 0.8256, 0.8334, 0.8253, 0.8359, 0.8314, 0.8362, 0.8411, 0.8419, 0.845, 0.8472, 0.851, 0.8502, 0.852, 0.8515, 0.8567, 0.8568, 0.8593, 0.8642, 0.8601, 0.8562, 0.8573, 0.8647, 0.8683, 0.8687, 0.8699, 0.864, 0.872, 0.8679, 0.8717, 0.8669, 0.8653, 0.8733, 0.8776, 0.8744, 0.8759, 0.8774, 0.8792, 0.8728, 0.87, 0.8745]
+2022-10-10 07:22:34 [INFO ]  List of losses: [0.96141064453125, 0.7818800964355469, 0.6908358520507812, 0.6489050964355468, 0.6025611755371094, 0.5844445495605469, 0.5532189514160156, 0.5454910491943359, 0.5275281646728516, 0.515830517578125, 0.4968443908691406, 0.48101658020019533, 0.48408134155273436, 0.47021621398925784, 0.4710671966552734, 0.4532294250488281, 0.4539084503173828, 0.44192179260253905, 0.43972022705078123, 0.42598752136230467, 0.4197574951171875, 0.42253228759765626, 0.4160104522705078, 0.4219832702636719, 0.4058676391601562, 0.4025175537109375, 0.3953327484130859, 0.38879405212402346, 0.3945558074951172, 0.39714964904785155, 0.39751007690429685, 0.38575726928710935, 0.3748739837646484, 0.3687462432861328, 0.3690349914550781, 0.38256329956054685, 0.3612935409545898, 0.3723070251464844, 0.3621191284179687, 0.3766781311035156, 0.3760388427734375, 0.36400362854003904, 0.3516468780517578, 0.3551167785644531, 0.3499461212158203, 0.348853857421875, 0.34629490356445314, 0.35421593933105466, 0.36402815856933596, 0.36417936096191406]
+2022-10-10 07:22:34 [INFO ]  List of source accuracies: [0.8422, 0.7851, 0.7196, 0.6593, 0.6056, 0.5212, 0.5062, 0.4772, 0.4709, 0.4605, 0.4469, 0.4263, 0.4118, 0.3983, 0.3904, 0.3983, 0.3614, 0.3621, 0.3455, 0.3717, 0.3571, 0.3543, 0.357, 0.3494, 0.354, 0.3548, 0.333, 0.3487, 0.3321, 0.3534, 0.3376, 0.3266, 0.3411, 0.3317, 0.3294, 0.3323, 0.3314, 0.3102, 0.3407, 0.3255, 0.3148, 0.3282, 0.3292, 0.3104, 0.3179, 0.3016, 0.321, 0.3118, 0.29, 0.2932]
+2022-10-10 07:22:35 [INFO ]   
+2022-10-10 07:22:35 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 07:22:35 [INFO ]  Test Accuracy: 87.45%	Test Loss: 0.3642
+2022-10-10 07:22:36 [INFO ]   
+2022-10-10 07:22:36 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 07:22:36 [INFO ]  Test Accuracy: 29.32%	Test Loss: 5.7065
+2022-10-10 07:22:36 [INFO ]  CPU Time: 1.42 minutes
+2022-10-10 07:23:28 [INFO ]  ======================================== 2022-10-10 07:23:28 ========================================
+2022-10-10 07:23:28 [INFO ]  Base directory is ./results/forgetting/MNIST_RGB/
+2022-10-10 07:23:28 [INFO ]  Options: 
+2022-10-10 07:23:28 [INFO ]  	base_dir: null
+2022-10-10 07:23:28 [INFO ]  	batch_size: 1024
+2022-10-10 07:23:28 [INFO ]  	checkpoint_interval: 300
+2022-10-10 07:23:28 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 07:23:28 [INFO ]  	dataset_labels:
+2022-10-10 07:23:28 [INFO ]  	- 0
+2022-10-10 07:23:28 [INFO ]  	- 1
+2022-10-10 07:23:28 [INFO ]  	- 2
+2022-10-10 07:23:28 [INFO ]  	- 3
+2022-10-10 07:23:28 [INFO ]  	- 4
+2022-10-10 07:23:28 [INFO ]  	- 5
+2022-10-10 07:23:28 [INFO ]  	- 6
+2022-10-10 07:23:28 [INFO ]  	- 7
+2022-10-10 07:23:28 [INFO ]  	- 8
+2022-10-10 07:23:28 [INFO ]  	- 9
+2022-10-10 07:23:28 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 07:23:28 [INFO ]  	- !!python/tuple
+2022-10-10 07:23:28 [INFO ]  	    - 0.1307
+2022-10-10 07:23:28 [INFO ]  	    - 0.1307
+2022-10-10 07:23:28 [INFO ]  	    - 0.1307
+2022-10-10 07:23:28 [INFO ]  	- !!python/tuple
+2022-10-10 07:23:28 [INFO ]  	    - 0.3081
+2022-10-10 07:23:28 [INFO ]  	    - 0.3081
+2022-10-10 07:23:28 [INFO ]  	    - 0.3081
+2022-10-10 07:23:28 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 07:23:28 [INFO ]  	decay_epochs: 50
+2022-10-10 07:23:28 [INFO ]  	decay_factor: 0.1
+2022-10-10 07:23:28 [INFO ]  	device_id: 0
+2022-10-10 07:23:28 [INFO ]  	distill_epochs: 1
+2022-10-10 07:23:28 [INFO ]  	distill_lr: 0.02
+2022-10-10 07:23:28 [INFO ]  	distill_steps: 1
+2022-10-10 07:23:28 [INFO ]  	epochs: 50
+2022-10-10 07:23:28 [INFO ]  	expand_cls: false
+2022-10-10 07:23:28 [INFO ]  	forgetting_dataset: FASHION_MNIST
+2022-10-10 07:23:28 [INFO ]  	init: xavier
+2022-10-10 07:23:28 [INFO ]  	init_param: 1.0
+2022-10-10 07:23:28 [INFO ]  	input_size: 32
+2022-10-10 07:23:28 [INFO ]  	ipc: 1
+2022-10-10 07:23:28 [INFO ]  	log_file: ./results/forgetting/MNIST_RGB/log.txt
+2022-10-10 07:23:28 [INFO ]  	log_interval: 100
+2022-10-10 07:23:28 [INFO ]  	log_level: INFO
+2022-10-10 07:23:28 [INFO ]  	lr: 0.0002
+2022-10-10 07:23:28 [INFO ]  	mode: forgetting
+2022-10-10 07:23:28 [INFO ]  	nc: 3
+2022-10-10 07:23:28 [INFO ]  	num_classes: 10
+2022-10-10 07:23:28 [INFO ]  	num_workers: 8
+2022-10-10 07:23:28 [INFO ]  	phase: train
+2022-10-10 07:23:28 [INFO ]  	source_dataset: null
+2022-10-10 07:23:28 [INFO ]  	start_time: '2022-10-10 07:23:28'
+2022-10-10 07:23:28 [INFO ]  	test_batch_size: 1024
+2022-10-10 07:23:28 [INFO ]  	
+2022-10-10 07:23:28 [INFO ]  train dataset size:	60000
+2022-10-10 07:23:28 [INFO ]  test dataset size: 	10000
+2022-10-10 07:23:28 [INFO ]  datasets built!
+2022-10-10 07:23:28 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 07:23:30 [INFO ]   
+2022-10-10 07:23:30 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 07:23:30 [INFO ]  Test Accuracy: 14.42%	Test Loss: 4.3418
+2022-10-10 07:23:31 [INFO ]   
+2022-10-10 07:23:31 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 07:23:31 [INFO ]  Test Accuracy: 98.58%	Test Loss: 0.0427
+2022-10-10 07:23:34 [INFO ]  Epoch:    0	Test Accuracy: 66.94%	Test Loss: 0.9527
+2022-10-10 07:23:35 [INFO ]  Source: MNIST_RGB	Test Accuracy: 84.68%	Test Loss: 0.5433
+2022-10-10 07:23:38 [INFO ]  Epoch:    1	Test Accuracy: 72.50%	Test Loss: 0.7690
+2022-10-10 07:23:39 [INFO ]  Source: MNIST_RGB	Test Accuracy: 76.29%	Test Loss: 0.9000
+2022-10-10 07:23:42 [INFO ]  Epoch:    2	Test Accuracy: 74.94%	Test Loss: 0.6910
+2022-10-10 07:23:43 [INFO ]  Source: MNIST_RGB	Test Accuracy: 69.51%	Test Loss: 1.2072
+2022-10-10 07:23:46 [INFO ]  Epoch:    3	Test Accuracy: 77.68%	Test Loss: 0.6279
+2022-10-10 07:23:47 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.48%	Test Loss: 1.4279
+2022-10-10 07:23:50 [INFO ]  Epoch:    4	Test Accuracy: 78.43%	Test Loss: 0.5985
+2022-10-10 07:23:51 [INFO ]  Source: MNIST_RGB	Test Accuracy: 59.16%	Test Loss: 1.6855
+2022-10-10 07:23:54 [INFO ]  Epoch:    5	Test Accuracy: 79.84%	Test Loss: 0.5704
+2022-10-10 07:23:55 [INFO ]  Source: MNIST_RGB	Test Accuracy: 55.28%	Test Loss: 1.8918
+2022-10-10 07:23:58 [INFO ]  Epoch:    6	Test Accuracy: 79.59%	Test Loss: 0.5667
+2022-10-10 07:23:59 [INFO ]  Source: MNIST_RGB	Test Accuracy: 50.52%	Test Loss: 2.1737
+2022-10-10 07:24:02 [INFO ]  Epoch:    7	Test Accuracy: 80.59%	Test Loss: 0.5434
+2022-10-10 07:24:03 [INFO ]  Source: MNIST_RGB	Test Accuracy: 49.44%	Test Loss: 2.3557
+2022-10-10 07:24:06 [INFO ]  Epoch:    8	Test Accuracy: 81.03%	Test Loss: 0.5229
+2022-10-10 07:24:07 [INFO ]  Source: MNIST_RGB	Test Accuracy: 46.29%	Test Loss: 2.6187
+2022-10-10 07:24:10 [INFO ]  Epoch:    9	Test Accuracy: 81.56%	Test Loss: 0.5122
+2022-10-10 07:24:10 [INFO ]  Source: MNIST_RGB	Test Accuracy: 45.07%	Test Loss: 2.7334
+2022-10-10 07:24:14 [INFO ]  Epoch:   10	Test Accuracy: 82.22%	Test Loss: 0.5040
+2022-10-10 07:24:14 [INFO ]  Source: MNIST_RGB	Test Accuracy: 44.47%	Test Loss: 2.7805
+2022-10-10 07:24:17 [INFO ]  Epoch:   11	Test Accuracy: 82.11%	Test Loss: 0.4911
+2022-10-10 07:24:18 [INFO ]  Source: MNIST_RGB	Test Accuracy: 42.58%	Test Loss: 2.9675
+2022-10-10 07:24:21 [INFO ]  Epoch:   12	Test Accuracy: 83.42%	Test Loss: 0.4698
+2022-10-10 07:24:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 41.62%	Test Loss: 3.2264
+2022-10-10 07:24:25 [INFO ]  Epoch:   13	Test Accuracy: 83.41%	Test Loss: 0.4684
+2022-10-10 07:24:26 [INFO ]  Source: MNIST_RGB	Test Accuracy: 41.52%	Test Loss: 3.2286
+2022-10-10 07:24:29 [INFO ]  Epoch:   14	Test Accuracy: 83.99%	Test Loss: 0.4584
+2022-10-10 07:24:30 [INFO ]  Source: MNIST_RGB	Test Accuracy: 40.05%	Test Loss: 3.4691
+2022-10-10 07:24:33 [INFO ]  Epoch:   15	Test Accuracy: 83.99%	Test Loss: 0.4530
+2022-10-10 07:24:34 [INFO ]  Source: MNIST_RGB	Test Accuracy: 37.37%	Test Loss: 3.6439
+2022-10-10 07:24:37 [INFO ]  Epoch:   16	Test Accuracy: 84.50%	Test Loss: 0.4419
+2022-10-10 07:24:38 [INFO ]  Source: MNIST_RGB	Test Accuracy: 38.87%	Test Loss: 3.8031
+2022-10-10 07:24:41 [INFO ]  Epoch:   17	Test Accuracy: 84.57%	Test Loss: 0.4382
+2022-10-10 07:24:42 [INFO ]  Source: MNIST_RGB	Test Accuracy: 39.16%	Test Loss: 3.6757
+2022-10-10 07:24:45 [INFO ]  Epoch:   18	Test Accuracy: 85.28%	Test Loss: 0.4261
+2022-10-10 07:24:46 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.50%	Test Loss: 4.1253
+2022-10-10 07:24:49 [INFO ]  Epoch:   19	Test Accuracy: 85.44%	Test Loss: 0.4216
+2022-10-10 07:24:50 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.83%	Test Loss: 3.9804
+2022-10-10 07:24:53 [INFO ]  Epoch:   20	Test Accuracy: 85.00%	Test Loss: 0.4240
+2022-10-10 07:24:54 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.16%	Test Loss: 4.0231
+2022-10-10 07:24:57 [INFO ]  Epoch:   21	Test Accuracy: 84.01%	Test Loss: 0.4315
+2022-10-10 07:24:58 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.65%	Test Loss: 4.0817
+2022-10-10 07:25:01 [INFO ]  Epoch:   22	Test Accuracy: 85.65%	Test Loss: 0.4093
+2022-10-10 07:25:02 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.27%	Test Loss: 4.3078
+2022-10-10 07:25:05 [INFO ]  Epoch:   23	Test Accuracy: 84.19%	Test Loss: 0.4297
+2022-10-10 07:25:06 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.66%	Test Loss: 4.1461
+2022-10-10 07:25:09 [INFO ]  Epoch:   24	Test Accuracy: 85.61%	Test Loss: 0.4078
+2022-10-10 07:25:10 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.90%	Test Loss: 4.7432
+2022-10-10 07:25:13 [INFO ]  Epoch:   25	Test Accuracy: 85.76%	Test Loss: 0.4009
+2022-10-10 07:25:14 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.96%	Test Loss: 4.4118
+2022-10-10 07:25:17 [INFO ]  Epoch:   26	Test Accuracy: 86.02%	Test Loss: 0.3973
+2022-10-10 07:25:18 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.46%	Test Loss: 4.6758
+2022-10-10 07:25:21 [INFO ]  Epoch:   27	Test Accuracy: 85.97%	Test Loss: 0.3966
+2022-10-10 07:25:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.99%	Test Loss: 4.6592
+2022-10-10 07:25:25 [INFO ]  Epoch:   28	Test Accuracy: 86.39%	Test Loss: 0.3863
+2022-10-10 07:25:26 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.69%	Test Loss: 4.6660
+2022-10-10 07:25:29 [INFO ]  Epoch:   29	Test Accuracy: 85.83%	Test Loss: 0.3911
+2022-10-10 07:25:30 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.26%	Test Loss: 4.8214
+2022-10-10 07:25:33 [INFO ]  Epoch:   30	Test Accuracy: 86.38%	Test Loss: 0.3825
+2022-10-10 07:25:34 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.31%	Test Loss: 4.5279
+2022-10-10 07:25:37 [INFO ]  Epoch:   31	Test Accuracy: 86.37%	Test Loss: 0.3840
+2022-10-10 07:25:38 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.69%	Test Loss: 4.8430
+2022-10-10 07:25:41 [INFO ]  Epoch:   32	Test Accuracy: 87.07%	Test Loss: 0.3716
+2022-10-10 07:25:42 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.18%	Test Loss: 4.9000
+2022-10-10 07:25:45 [INFO ]  Epoch:   33	Test Accuracy: 86.95%	Test Loss: 0.3755
+2022-10-10 07:25:46 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.22%	Test Loss: 5.1196
+2022-10-10 07:25:49 [INFO ]  Epoch:   34	Test Accuracy: 86.50%	Test Loss: 0.3761
+2022-10-10 07:25:50 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.61%	Test Loss: 5.1451
+2022-10-10 07:25:53 [INFO ]  Epoch:   35	Test Accuracy: 86.49%	Test Loss: 0.3782
+2022-10-10 07:25:54 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.02%	Test Loss: 5.3216
+2022-10-10 07:25:57 [INFO ]  Epoch:   36	Test Accuracy: 86.00%	Test Loss: 0.3836
+2022-10-10 07:25:58 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.56%	Test Loss: 5.0918
+2022-10-10 07:26:01 [INFO ]  Epoch:   37	Test Accuracy: 87.37%	Test Loss: 0.3621
+2022-10-10 07:26:02 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.13%	Test Loss: 5.2185
+2022-10-10 07:26:05 [INFO ]  Epoch:   38	Test Accuracy: 85.95%	Test Loss: 0.3922
+2022-10-10 07:26:06 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.34%	Test Loss: 5.1928
+2022-10-10 07:26:09 [INFO ]  Epoch:   39	Test Accuracy: 87.49%	Test Loss: 0.3575
+2022-10-10 07:26:10 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.86%	Test Loss: 5.3108
+2022-10-10 07:26:13 [INFO ]  Epoch:   40	Test Accuracy: 86.97%	Test Loss: 0.3678
+2022-10-10 07:26:14 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.45%	Test Loss: 5.4325
+2022-10-10 07:26:17 [INFO ]  Epoch:   41	Test Accuracy: 87.33%	Test Loss: 0.3606
+2022-10-10 07:26:18 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.56%	Test Loss: 5.0832
+2022-10-10 07:26:21 [INFO ]  Epoch:   42	Test Accuracy: 87.45%	Test Loss: 0.3527
+2022-10-10 07:26:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.13%	Test Loss: 5.4247
+2022-10-10 07:26:25 [INFO ]  Epoch:   43	Test Accuracy: 87.32%	Test Loss: 0.3590
+2022-10-10 07:26:26 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.79%	Test Loss: 5.3241
+2022-10-10 07:26:29 [INFO ]  Epoch:   44	Test Accuracy: 87.73%	Test Loss: 0.3505
+2022-10-10 07:26:30 [INFO ]  Source: MNIST_RGB	Test Accuracy: 28.21%	Test Loss: 5.7284
+2022-10-10 07:26:34 [INFO ]  Epoch:   45	Test Accuracy: 87.69%	Test Loss: 0.3487
+2022-10-10 07:26:34 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.48%	Test Loss: 5.4512
+2022-10-10 07:26:37 [INFO ]  Epoch:   46	Test Accuracy: 87.87%	Test Loss: 0.3460
+2022-10-10 07:26:38 [INFO ]  Source: MNIST_RGB	Test Accuracy: 28.85%	Test Loss: 5.3763
+2022-10-10 07:26:41 [INFO ]  Epoch:   47	Test Accuracy: 87.69%	Test Loss: 0.3542
+2022-10-10 07:26:42 [INFO ]  Source: MNIST_RGB	Test Accuracy: 28.02%	Test Loss: 5.7508
+2022-10-10 07:26:45 [INFO ]  Epoch:   48	Test Accuracy: 87.68%	Test Loss: 0.3472
+2022-10-10 07:26:46 [INFO ]  Source: MNIST_RGB	Test Accuracy: 27.92%	Test Loss: 5.6987
+2022-10-10 07:26:49 [INFO ]  Epoch:   49	Test Accuracy: 88.10%	Test Loss: 0.3418
+2022-10-10 07:26:50 [INFO ]  Source: MNIST_RGB	Test Accuracy: 27.02%	Test Loss: 5.7578
+2022-10-10 07:26:50 [INFO ]  List of accuracies: [0.6694, 0.725, 0.7494, 0.7768, 0.7843, 0.7984, 0.7959, 0.8059, 0.8103, 0.8156, 0.8222, 0.8211, 0.8342, 0.8341, 0.8399, 0.8399, 0.845, 0.8457, 0.8528, 0.8544, 0.85, 0.8401, 0.8565, 0.8419, 0.8561, 0.8576, 0.8602, 0.8597, 0.8639, 0.8583, 0.8638, 0.8637, 0.8707, 0.8695, 0.865, 0.8649, 0.86, 0.8737, 0.8595, 0.8749, 0.8697, 0.8733, 0.8745, 0.8732, 0.8773, 0.8769, 0.8787, 0.8769, 0.8768, 0.881]
+2022-10-10 07:26:50 [INFO ]  List of losses: [0.9527325073242188, 0.7689502380371094, 0.6909807067871093, 0.6279418334960938, 0.5984510650634766, 0.5704180267333985, 0.5667425933837891, 0.5433618835449219, 0.5229346130371094, 0.512170834350586, 0.5039525756835938, 0.4910910095214844, 0.4698177093505859, 0.46838943786621096, 0.4584031188964844, 0.45297452392578125, 0.44186370544433595, 0.4382442321777344, 0.42609234313964844, 0.4216316101074219, 0.42396224060058596, 0.43147628784179687, 0.40934186096191405, 0.4296923461914062, 0.4078141906738281, 0.4008732696533203, 0.39726429443359373, 0.3965830322265625, 0.3862589172363281, 0.3911418304443359, 0.3824972351074219, 0.38399901123046876, 0.3715948364257812, 0.375477734375, 0.3761484161376953, 0.3782463500976562, 0.38357747192382813, 0.36213312072753906, 0.3921737762451172, 0.357543408203125, 0.36783921508789064, 0.36055040283203127, 0.3527313720703125, 0.35904012145996095, 0.3505461761474609, 0.3486953399658203, 0.3459519989013672, 0.3542077850341797, 0.34720960540771484, 0.34176617736816406]
+2022-10-10 07:26:50 [INFO ]  List of source accuracies: [0.8468, 0.7629, 0.6951, 0.6348, 0.5916, 0.5528, 0.5052, 0.4944, 0.4629, 0.4507, 0.4447, 0.4258, 0.4162, 0.4152, 0.4005, 0.3737, 0.3887, 0.3916, 0.365, 0.3683, 0.3516, 0.3665, 0.3627, 0.3666, 0.329, 0.3396, 0.3346, 0.3399, 0.3369, 0.3326, 0.3431, 0.3269, 0.3318, 0.3122, 0.3161, 0.3102, 0.3256, 0.3113, 0.3034, 0.3086, 0.3045, 0.3056, 0.2913, 0.2979, 0.2821, 0.2948, 0.2885, 0.2802, 0.2792, 0.2702]
+2022-10-10 07:26:51 [INFO ]   
+2022-10-10 07:26:51 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 07:26:51 [INFO ]  Test Accuracy: 88.10%	Test Loss: 0.3418
+2022-10-10 07:26:52 [INFO ]   
+2022-10-10 07:26:52 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 07:26:52 [INFO ]  Test Accuracy: 27.02%	Test Loss: 5.7578
+2022-10-10 07:26:52 [INFO ]  CPU Time: 1.43 minutes
+2022-10-10 07:27:12 [INFO ]  ======================================== 2022-10-10 07:27:12 ========================================
+2022-10-10 07:27:12 [INFO ]  Base directory is ./results/forgetting/MNIST_RGB/
+2022-10-10 07:27:12 [INFO ]  Options: 
+2022-10-10 07:27:12 [INFO ]  	base_dir: null
+2022-10-10 07:27:12 [INFO ]  	batch_size: 1024
+2022-10-10 07:27:12 [INFO ]  	checkpoint_interval: 300
+2022-10-10 07:27:12 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 07:27:12 [INFO ]  	dataset_labels:
+2022-10-10 07:27:12 [INFO ]  	- 0
+2022-10-10 07:27:12 [INFO ]  	- 1
+2022-10-10 07:27:12 [INFO ]  	- 2
+2022-10-10 07:27:12 [INFO ]  	- 3
+2022-10-10 07:27:12 [INFO ]  	- 4
+2022-10-10 07:27:12 [INFO ]  	- 5
+2022-10-10 07:27:12 [INFO ]  	- 6
+2022-10-10 07:27:12 [INFO ]  	- 7
+2022-10-10 07:27:12 [INFO ]  	- 8
+2022-10-10 07:27:12 [INFO ]  	- 9
+2022-10-10 07:27:12 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 07:27:12 [INFO ]  	- !!python/tuple
+2022-10-10 07:27:12 [INFO ]  	    - 0.1307
+2022-10-10 07:27:12 [INFO ]  	    - 0.1307
+2022-10-10 07:27:12 [INFO ]  	    - 0.1307
+2022-10-10 07:27:12 [INFO ]  	- !!python/tuple
+2022-10-10 07:27:12 [INFO ]  	    - 0.3081
+2022-10-10 07:27:12 [INFO ]  	    - 0.3081
+2022-10-10 07:27:12 [INFO ]  	    - 0.3081
+2022-10-10 07:27:12 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 07:27:12 [INFO ]  	decay_epochs: 50
+2022-10-10 07:27:12 [INFO ]  	decay_factor: 0.1
+2022-10-10 07:27:12 [INFO ]  	device_id: 0
+2022-10-10 07:27:12 [INFO ]  	distill_epochs: 1
+2022-10-10 07:27:12 [INFO ]  	distill_lr: 0.02
+2022-10-10 07:27:12 [INFO ]  	distill_steps: 1
+2022-10-10 07:27:12 [INFO ]  	epochs: 50
+2022-10-10 07:27:12 [INFO ]  	expand_cls: false
+2022-10-10 07:27:12 [INFO ]  	forgetting_dataset: FASHION_MNIST
+2022-10-10 07:27:12 [INFO ]  	init: xavier
+2022-10-10 07:27:12 [INFO ]  	init_param: 1.0
+2022-10-10 07:27:12 [INFO ]  	input_size: 32
+2022-10-10 07:27:12 [INFO ]  	ipc: 1
+2022-10-10 07:27:12 [INFO ]  	log_file: ./results/forgetting/MNIST_RGB/log.txt
+2022-10-10 07:27:12 [INFO ]  	log_interval: 100
+2022-10-10 07:27:12 [INFO ]  	log_level: INFO
+2022-10-10 07:27:12 [INFO ]  	lr: 0.0002
+2022-10-10 07:27:12 [INFO ]  	mode: forgetting
+2022-10-10 07:27:12 [INFO ]  	nc: 3
+2022-10-10 07:27:12 [INFO ]  	num_classes: 10
+2022-10-10 07:27:12 [INFO ]  	num_workers: 8
+2022-10-10 07:27:12 [INFO ]  	phase: train
+2022-10-10 07:27:12 [INFO ]  	source_dataset: null
+2022-10-10 07:27:12 [INFO ]  	start_time: '2022-10-10 07:27:12'
+2022-10-10 07:27:12 [INFO ]  	test_batch_size: 1024
+2022-10-10 07:27:12 [INFO ]  	
+2022-10-10 07:27:12 [INFO ]  train dataset size:	60000
+2022-10-10 07:27:12 [INFO ]  test dataset size: 	10000
+2022-10-10 07:27:12 [INFO ]  datasets built!
+2022-10-10 07:27:12 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 07:27:14 [INFO ]   
+2022-10-10 07:27:14 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 07:27:14 [INFO ]  Test Accuracy: 14.42%	Test Loss: 4.3418
+2022-10-10 07:27:15 [INFO ]   
+2022-10-10 07:27:15 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 07:27:15 [INFO ]  Test Accuracy: 98.58%	Test Loss: 0.0427
+2022-10-10 07:27:18 [INFO ]  Epoch:    0	Test Accuracy: 67.10%	Test Loss: 0.9567
+2022-10-10 07:27:19 [INFO ]  Source: MNIST_RGB	Test Accuracy: 85.15%	Test Loss: 0.5262
+2022-10-10 07:27:22 [INFO ]  Epoch:    1	Test Accuracy: 72.56%	Test Loss: 0.7673
+2022-10-10 07:27:23 [INFO ]  Source: MNIST_RGB	Test Accuracy: 76.98%	Test Loss: 0.8653
+2022-10-10 07:27:26 [INFO ]  Epoch:    2	Test Accuracy: 75.25%	Test Loss: 0.6836
+2022-10-10 07:27:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 70.84%	Test Loss: 1.1338
+2022-10-10 07:27:30 [INFO ]  Epoch:    3	Test Accuracy: 76.41%	Test Loss: 0.6472
+2022-10-10 07:27:31 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.84%	Test Loss: 1.4650
+2022-10-10 07:27:34 [INFO ]  Epoch:    4	Test Accuracy: 78.28%	Test Loss: 0.6003
+2022-10-10 07:27:35 [INFO ]  Source: MNIST_RGB	Test Accuracy: 57.70%	Test Loss: 1.7519
+2022-10-10 07:27:38 [INFO ]  Epoch:    5	Test Accuracy: 79.44%	Test Loss: 0.5751
+2022-10-10 07:27:39 [INFO ]  Source: MNIST_RGB	Test Accuracy: 55.38%	Test Loss: 1.9069
+2022-10-10 07:27:42 [INFO ]  Epoch:    6	Test Accuracy: 80.35%	Test Loss: 0.5465
+2022-10-10 07:27:43 [INFO ]  Source: MNIST_RGB	Test Accuracy: 50.85%	Test Loss: 2.1956
+2022-10-10 07:27:46 [INFO ]  Epoch:    7	Test Accuracy: 80.90%	Test Loss: 0.5356
+2022-10-10 07:27:47 [INFO ]  Source: MNIST_RGB	Test Accuracy: 47.52%	Test Loss: 2.4551
+2022-10-10 07:27:50 [INFO ]  Epoch:    8	Test Accuracy: 81.43%	Test Loss: 0.5235
+2022-10-10 07:27:51 [INFO ]  Source: MNIST_RGB	Test Accuracy: 46.53%	Test Loss: 2.5578
+2022-10-10 07:27:54 [INFO ]  Epoch:    9	Test Accuracy: 81.81%	Test Loss: 0.5120
+2022-10-10 07:27:55 [INFO ]  Source: MNIST_RGB	Test Accuracy: 42.80%	Test Loss: 2.8649
+2022-10-10 07:27:58 [INFO ]  Epoch:   10	Test Accuracy: 82.39%	Test Loss: 0.4980
+2022-10-10 07:27:59 [INFO ]  Source: MNIST_RGB	Test Accuracy: 43.30%	Test Loss: 2.8288
+2022-10-10 07:28:02 [INFO ]  Epoch:   11	Test Accuracy: 82.86%	Test Loss: 0.4826
+2022-10-10 07:28:03 [INFO ]  Source: MNIST_RGB	Test Accuracy: 42.39%	Test Loss: 3.1050
+2022-10-10 07:28:06 [INFO ]  Epoch:   12	Test Accuracy: 82.86%	Test Loss: 0.4813
+2022-10-10 07:28:07 [INFO ]  Source: MNIST_RGB	Test Accuracy: 39.46%	Test Loss: 3.4020
+2022-10-10 07:28:10 [INFO ]  Epoch:   13	Test Accuracy: 82.77%	Test Loss: 0.4723
+2022-10-10 07:28:11 [INFO ]  Source: MNIST_RGB	Test Accuracy: 39.85%	Test Loss: 3.4794
+2022-10-10 07:28:14 [INFO ]  Epoch:   14	Test Accuracy: 83.72%	Test Loss: 0.4637
+2022-10-10 07:28:15 [INFO ]  Source: MNIST_RGB	Test Accuracy: 38.40%	Test Loss: 3.4720
+2022-10-10 07:28:18 [INFO ]  Epoch:   15	Test Accuracy: 83.98%	Test Loss: 0.4532
+2022-10-10 07:28:19 [INFO ]  Source: MNIST_RGB	Test Accuracy: 38.18%	Test Loss: 3.5333
+2022-10-10 07:28:22 [INFO ]  Epoch:   16	Test Accuracy: 84.22%	Test Loss: 0.4497
+2022-10-10 07:28:23 [INFO ]  Source: MNIST_RGB	Test Accuracy: 38.94%	Test Loss: 3.5104
+2022-10-10 07:28:26 [INFO ]  Epoch:   17	Test Accuracy: 83.76%	Test Loss: 0.4554
+2022-10-10 07:28:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.60%	Test Loss: 4.2388
+2022-10-10 07:28:30 [INFO ]  Epoch:   18	Test Accuracy: 84.61%	Test Loss: 0.4299
+2022-10-10 07:28:31 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.71%	Test Loss: 4.1787
+2022-10-10 07:28:34 [INFO ]  Epoch:   19	Test Accuracy: 85.14%	Test Loss: 0.4222
+2022-10-10 07:28:35 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.11%	Test Loss: 4.0290
+2022-10-10 07:28:38 [INFO ]  Epoch:   20	Test Accuracy: 84.99%	Test Loss: 0.4217
+2022-10-10 07:28:39 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.19%	Test Loss: 4.1627
+2022-10-10 07:28:42 [INFO ]  Epoch:   21	Test Accuracy: 84.13%	Test Loss: 0.4333
+2022-10-10 07:28:43 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.60%	Test Loss: 3.9415
+2022-10-10 07:28:46 [INFO ]  Epoch:   22	Test Accuracy: 85.76%	Test Loss: 0.4089
+2022-10-10 07:28:47 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.83%	Test Loss: 4.3074
+2022-10-10 07:28:50 [INFO ]  Epoch:   23	Test Accuracy: 85.02%	Test Loss: 0.4186
+2022-10-10 07:28:50 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.65%	Test Loss: 4.5059
+2022-10-10 07:28:54 [INFO ]  Epoch:   24	Test Accuracy: 85.66%	Test Loss: 0.4043
+2022-10-10 07:28:54 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.04%	Test Loss: 4.3291
+2022-10-10 07:28:58 [INFO ]  Epoch:   25	Test Accuracy: 85.62%	Test Loss: 0.4042
+2022-10-10 07:28:58 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.77%	Test Loss: 4.2794
+2022-10-10 07:29:02 [INFO ]  Epoch:   26	Test Accuracy: 85.66%	Test Loss: 0.4007
+2022-10-10 07:29:02 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.53%	Test Loss: 4.2336
+2022-10-10 07:29:06 [INFO ]  Epoch:   27	Test Accuracy: 86.18%	Test Loss: 0.3922
+2022-10-10 07:29:06 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.96%	Test Loss: 4.5306
+2022-10-10 07:29:10 [INFO ]  Epoch:   28	Test Accuracy: 85.76%	Test Loss: 0.3918
+2022-10-10 07:29:10 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.88%	Test Loss: 4.4629
+2022-10-10 07:29:14 [INFO ]  Epoch:   29	Test Accuracy: 86.24%	Test Loss: 0.3900
+2022-10-10 07:29:14 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.36%	Test Loss: 4.6594
+2022-10-10 07:29:17 [INFO ]  Epoch:   30	Test Accuracy: 86.39%	Test Loss: 0.3880
+2022-10-10 07:29:18 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.54%	Test Loss: 5.1120
+2022-10-10 07:29:21 [INFO ]  Epoch:   31	Test Accuracy: 86.67%	Test Loss: 0.3839
+2022-10-10 07:29:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.64%	Test Loss: 4.7961
+2022-10-10 07:29:25 [INFO ]  Epoch:   32	Test Accuracy: 86.37%	Test Loss: 0.3819
+2022-10-10 07:29:26 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.53%	Test Loss: 4.7928
+2022-10-10 07:29:29 [INFO ]  Epoch:   33	Test Accuracy: 86.91%	Test Loss: 0.3689
+2022-10-10 07:29:30 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.85%	Test Loss: 4.7968
+2022-10-10 07:29:33 [INFO ]  Epoch:   34	Test Accuracy: 86.53%	Test Loss: 0.3817
+2022-10-10 07:29:34 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.79%	Test Loss: 5.2194
+2022-10-10 07:29:37 [INFO ]  Epoch:   35	Test Accuracy: 86.94%	Test Loss: 0.3704
+2022-10-10 07:29:38 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.00%	Test Loss: 4.9529
+2022-10-10 07:29:42 [INFO ]  Epoch:   36	Test Accuracy: 85.28%	Test Loss: 0.4118
+2022-10-10 07:29:42 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.04%	Test Loss: 5.2891
+2022-10-10 07:29:45 [INFO ]  Epoch:   37	Test Accuracy: 85.92%	Test Loss: 0.3917
+2022-10-10 07:29:46 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.34%	Test Loss: 5.2137
+2022-10-10 07:29:50 [INFO ]  Epoch:   38	Test Accuracy: 87.40%	Test Loss: 0.3617
+2022-10-10 07:29:50 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.57%	Test Loss: 5.1628
+2022-10-10 07:29:54 [INFO ]  Epoch:   39	Test Accuracy: 87.35%	Test Loss: 0.3615
+2022-10-10 07:29:54 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.59%	Test Loss: 5.3167
+2022-10-10 07:29:58 [INFO ]  Epoch:   40	Test Accuracy: 87.17%	Test Loss: 0.3636
+2022-10-10 07:29:59 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.97%	Test Loss: 5.0269
+2022-10-10 07:30:02 [INFO ]  Epoch:   41	Test Accuracy: 87.20%	Test Loss: 0.3556
+2022-10-10 07:30:03 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.18%	Test Loss: 5.2941
+2022-10-10 07:30:06 [INFO ]  Epoch:   42	Test Accuracy: 87.77%	Test Loss: 0.3487
+2022-10-10 07:30:07 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.55%	Test Loss: 5.2727
+2022-10-10 07:30:10 [INFO ]  Epoch:   43	Test Accuracy: 87.69%	Test Loss: 0.3512
+2022-10-10 07:30:11 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.11%	Test Loss: 5.4131
+2022-10-10 07:30:14 [INFO ]  Epoch:   44	Test Accuracy: 87.71%	Test Loss: 0.3478
+2022-10-10 07:30:15 [INFO ]  Source: MNIST_RGB	Test Accuracy: 28.76%	Test Loss: 5.5818
+2022-10-10 07:30:18 [INFO ]  Epoch:   45	Test Accuracy: 87.90%	Test Loss: 0.3490
+2022-10-10 07:30:19 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.09%	Test Loss: 5.7523
+2022-10-10 07:30:22 [INFO ]  Epoch:   46	Test Accuracy: 86.70%	Test Loss: 0.3701
+2022-10-10 07:30:23 [INFO ]  Source: MNIST_RGB	Test Accuracy: 28.75%	Test Loss: 5.5151
+2022-10-10 07:30:26 [INFO ]  Epoch:   47	Test Accuracy: 87.52%	Test Loss: 0.3524
+2022-10-10 07:30:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.02%	Test Loss: 5.6421
+2022-10-10 07:30:30 [INFO ]  Epoch:   48	Test Accuracy: 88.12%	Test Loss: 0.3396
+2022-10-10 07:30:31 [INFO ]  Source: MNIST_RGB	Test Accuracy: 28.00%	Test Loss: 5.6846
+2022-10-10 07:30:34 [INFO ]  Epoch:   49	Test Accuracy: 87.99%	Test Loss: 0.3411
+2022-10-10 07:30:35 [INFO ]  Source: MNIST_RGB	Test Accuracy: 28.08%	Test Loss: 5.6582
+2022-10-10 07:30:35 [INFO ]  List of accuracies: [0.671, 0.7256, 0.7525, 0.7641, 0.7828, 0.7944, 0.8035, 0.809, 0.8143, 0.8181, 0.8239, 0.8286, 0.8286, 0.8277, 0.8372, 0.8398, 0.8422, 0.8376, 0.8461, 0.8514, 0.8499, 0.8413, 0.8576, 0.8502, 0.8566, 0.8562, 0.8566, 0.8618, 0.8576, 0.8624, 0.8639, 0.8667, 0.8637, 0.8691, 0.8653, 0.8694, 0.8528, 0.8592, 0.874, 0.8735, 0.8717, 0.872, 0.8777, 0.8769, 0.8771, 0.879, 0.867, 0.8752, 0.8812, 0.8799]
+2022-10-10 07:30:35 [INFO ]  List of losses: [0.956671337890625, 0.7672975280761719, 0.6836450256347656, 0.6471981689453125, 0.6002605194091797, 0.575076187133789, 0.546548159790039, 0.5356306274414062, 0.5234502349853516, 0.5119761596679687, 0.49800938415527346, 0.4826059783935547, 0.4813323028564453, 0.47228517456054686, 0.463712353515625, 0.45324512939453127, 0.44972320861816406, 0.4553644012451172, 0.4299454376220703, 0.4221653472900391, 0.4217245056152344, 0.4332878479003906, 0.4088591491699219, 0.4186466796875, 0.40425635986328123, 0.40419112548828123, 0.4007258880615234, 0.3922413208007812, 0.39179165954589845, 0.38999552001953125, 0.3880350189208984, 0.38386005859375, 0.38191507263183594, 0.36890602111816406, 0.38166320190429687, 0.37041576538085935, 0.41181278991699216, 0.39171114196777346, 0.36168084106445314, 0.36150328674316407, 0.3635607543945312, 0.35560809326171877, 0.34871024475097656, 0.35124978942871093, 0.3478137420654297, 0.3490136352539063, 0.37008647766113284, 0.3523912139892578, 0.339642626953125, 0.3410903305053711]
+2022-10-10 07:30:35 [INFO ]  List of source accuracies: [0.8515, 0.7698, 0.7084, 0.6284, 0.577, 0.5538, 0.5085, 0.4752, 0.4653, 0.428, 0.433, 0.4239, 0.3946, 0.3985, 0.384, 0.3818, 0.3894, 0.346, 0.3571, 0.3611, 0.3619, 0.366, 0.3483, 0.3465, 0.3504, 0.3477, 0.3453, 0.3396, 0.3488, 0.3336, 0.3154, 0.3364, 0.3253, 0.3285, 0.3079, 0.32, 0.3104, 0.3234, 0.3057, 0.3059, 0.3097, 0.3018, 0.3055, 0.3011, 0.2876, 0.2909, 0.2875, 0.2902, 0.28, 0.2808]
+2022-10-10 07:30:36 [INFO ]   
+2022-10-10 07:30:36 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 07:30:36 [INFO ]  Test Accuracy: 87.99%	Test Loss: 0.3411
+2022-10-10 07:30:36 [INFO ]   
+2022-10-10 07:30:36 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 07:30:36 [INFO ]  Test Accuracy: 28.08%	Test Loss: 5.6582
+2022-10-10 07:30:36 [INFO ]  CPU Time: 1.44 minutes
+2022-10-10 07:31:09 [INFO ]  ======================================== 2022-10-10 07:31:09 ========================================
+2022-10-10 07:31:09 [INFO ]  Base directory is ./results/forgetting/MNIST_RGB/
+2022-10-10 07:31:09 [INFO ]  Options: 
+2022-10-10 07:31:09 [INFO ]  	base_dir: null
+2022-10-10 07:31:09 [INFO ]  	batch_size: 1024
+2022-10-10 07:31:09 [INFO ]  	checkpoint_interval: 300
+2022-10-10 07:31:09 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 07:31:09 [INFO ]  	dataset_labels:
+2022-10-10 07:31:09 [INFO ]  	- 0
+2022-10-10 07:31:09 [INFO ]  	- 1
+2022-10-10 07:31:09 [INFO ]  	- 2
+2022-10-10 07:31:09 [INFO ]  	- 3
+2022-10-10 07:31:09 [INFO ]  	- 4
+2022-10-10 07:31:09 [INFO ]  	- 5
+2022-10-10 07:31:09 [INFO ]  	- 6
+2022-10-10 07:31:09 [INFO ]  	- 7
+2022-10-10 07:31:09 [INFO ]  	- 8
+2022-10-10 07:31:09 [INFO ]  	- 9
+2022-10-10 07:31:09 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 07:31:09 [INFO ]  	- !!python/tuple
+2022-10-10 07:31:09 [INFO ]  	    - 0.1307
+2022-10-10 07:31:09 [INFO ]  	    - 0.1307
+2022-10-10 07:31:09 [INFO ]  	    - 0.1307
+2022-10-10 07:31:09 [INFO ]  	- !!python/tuple
+2022-10-10 07:31:09 [INFO ]  	    - 0.3081
+2022-10-10 07:31:09 [INFO ]  	    - 0.3081
+2022-10-10 07:31:09 [INFO ]  	    - 0.3081
+2022-10-10 07:31:09 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 07:31:09 [INFO ]  	decay_epochs: 50
+2022-10-10 07:31:09 [INFO ]  	decay_factor: 0.1
+2022-10-10 07:31:09 [INFO ]  	device_id: 0
+2022-10-10 07:31:09 [INFO ]  	distill_epochs: 1
+2022-10-10 07:31:09 [INFO ]  	distill_lr: 0.02
+2022-10-10 07:31:09 [INFO ]  	distill_steps: 1
+2022-10-10 07:31:09 [INFO ]  	epochs: 50
+2022-10-10 07:31:09 [INFO ]  	expand_cls: false
+2022-10-10 07:31:09 [INFO ]  	forgetting_dataset: FASHION_MNIST
+2022-10-10 07:31:09 [INFO ]  	init: xavier
+2022-10-10 07:31:09 [INFO ]  	init_param: 1.0
+2022-10-10 07:31:09 [INFO ]  	input_size: 32
+2022-10-10 07:31:09 [INFO ]  	ipc: 1
+2022-10-10 07:31:09 [INFO ]  	log_file: ./results/forgetting/MNIST_RGB/log.txt
+2022-10-10 07:31:09 [INFO ]  	log_interval: 100
+2022-10-10 07:31:09 [INFO ]  	log_level: INFO
+2022-10-10 07:31:09 [INFO ]  	lr: 0.0002
+2022-10-10 07:31:09 [INFO ]  	mode: forgetting
+2022-10-10 07:31:09 [INFO ]  	nc: 3
+2022-10-10 07:31:09 [INFO ]  	num_classes: 10
+2022-10-10 07:31:09 [INFO ]  	num_workers: 8
+2022-10-10 07:31:09 [INFO ]  	phase: train
+2022-10-10 07:31:09 [INFO ]  	source_dataset: null
+2022-10-10 07:31:09 [INFO ]  	start_time: '2022-10-10 07:31:09'
+2022-10-10 07:31:09 [INFO ]  	test_batch_size: 1024
+2022-10-10 07:31:09 [INFO ]  	
+2022-10-10 07:31:09 [INFO ]  train dataset size:	60000
+2022-10-10 07:31:09 [INFO ]  test dataset size: 	10000
+2022-10-10 07:31:09 [INFO ]  datasets built!
+2022-10-10 07:31:09 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 07:31:11 [INFO ]   
+2022-10-10 07:31:11 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 07:31:11 [INFO ]  Test Accuracy: 14.42%	Test Loss: 4.3418
+2022-10-10 07:31:12 [INFO ]   
+2022-10-10 07:31:12 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 07:31:12 [INFO ]  Test Accuracy: 98.58%	Test Loss: 0.0427
+2022-10-10 07:31:15 [INFO ]  Epoch:    0	Test Accuracy: 66.54%	Test Loss: 0.9634
+2022-10-10 07:31:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 83.86%	Test Loss: 0.5813
+2022-10-10 07:31:19 [INFO ]  Epoch:    1	Test Accuracy: 71.80%	Test Loss: 0.7798
+2022-10-10 07:31:20 [INFO ]  Source: MNIST_RGB	Test Accuracy: 80.04%	Test Loss: 0.7651
+2022-10-10 07:31:23 [INFO ]  Epoch:    2	Test Accuracy: 75.49%	Test Loss: 0.6856
+2022-10-10 07:31:24 [INFO ]  Source: MNIST_RGB	Test Accuracy: 71.57%	Test Loss: 1.0993
+2022-10-10 07:31:27 [INFO ]  Epoch:    3	Test Accuracy: 75.88%	Test Loss: 0.6558
+2022-10-10 07:31:28 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.10%	Test Loss: 1.4978
+2022-10-10 07:31:31 [INFO ]  Epoch:    4	Test Accuracy: 77.22%	Test Loss: 0.6233
+2022-10-10 07:31:32 [INFO ]  Source: MNIST_RGB	Test Accuracy: 56.93%	Test Loss: 1.7659
+2022-10-10 07:31:35 [INFO ]  Epoch:    5	Test Accuracy: 78.57%	Test Loss: 0.5931
+2022-10-10 07:31:36 [INFO ]  Source: MNIST_RGB	Test Accuracy: 54.27%	Test Loss: 1.9715
+2022-10-10 07:31:39 [INFO ]  Epoch:    6	Test Accuracy: 80.30%	Test Loss: 0.5539
+2022-10-10 07:31:40 [INFO ]  Source: MNIST_RGB	Test Accuracy: 51.18%	Test Loss: 2.1644
+2022-10-10 07:31:43 [INFO ]  Epoch:    7	Test Accuracy: 81.10%	Test Loss: 0.5300
+2022-10-10 07:31:44 [INFO ]  Source: MNIST_RGB	Test Accuracy: 48.18%	Test Loss: 2.3941
+2022-10-10 07:31:47 [INFO ]  Epoch:    8	Test Accuracy: 81.31%	Test Loss: 0.5265
+2022-10-10 07:31:48 [INFO ]  Source: MNIST_RGB	Test Accuracy: 47.26%	Test Loss: 2.5844
+2022-10-10 07:31:51 [INFO ]  Epoch:    9	Test Accuracy: 81.91%	Test Loss: 0.5085
+2022-10-10 07:31:52 [INFO ]  Source: MNIST_RGB	Test Accuracy: 45.66%	Test Loss: 2.5975
+2022-10-10 07:31:55 [INFO ]  Epoch:   10	Test Accuracy: 82.02%	Test Loss: 0.5073
+2022-10-10 07:31:56 [INFO ]  Source: MNIST_RGB	Test Accuracy: 43.31%	Test Loss: 3.0411
+2022-10-10 07:32:00 [INFO ]  Epoch:   11	Test Accuracy: 82.74%	Test Loss: 0.4835
+2022-10-10 07:32:00 [INFO ]  Source: MNIST_RGB	Test Accuracy: 41.77%	Test Loss: 3.1946
+2022-10-10 07:32:04 [INFO ]  Epoch:   12	Test Accuracy: 83.36%	Test Loss: 0.4768
+2022-10-10 07:32:04 [INFO ]  Source: MNIST_RGB	Test Accuracy: 41.96%	Test Loss: 3.2736
+2022-10-10 07:32:07 [INFO ]  Epoch:   13	Test Accuracy: 83.56%	Test Loss: 0.4629
+2022-10-10 07:32:08 [INFO ]  Source: MNIST_RGB	Test Accuracy: 39.78%	Test Loss: 3.3834
+2022-10-10 07:32:11 [INFO ]  Epoch:   14	Test Accuracy: 83.43%	Test Loss: 0.4683
+2022-10-10 07:32:12 [INFO ]  Source: MNIST_RGB	Test Accuracy: 39.15%	Test Loss: 3.6055
+2022-10-10 07:32:15 [INFO ]  Epoch:   15	Test Accuracy: 84.11%	Test Loss: 0.4486
+2022-10-10 07:32:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 38.04%	Test Loss: 3.6713
+2022-10-10 07:32:19 [INFO ]  Epoch:   16	Test Accuracy: 83.70%	Test Loss: 0.4513
+2022-10-10 07:32:20 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.98%	Test Loss: 3.9405
+2022-10-10 07:32:23 [INFO ]  Epoch:   17	Test Accuracy: 84.11%	Test Loss: 0.4425
+2022-10-10 07:32:24 [INFO ]  Source: MNIST_RGB	Test Accuracy: 39.04%	Test Loss: 3.7205
+2022-10-10 07:32:27 [INFO ]  Epoch:   18	Test Accuracy: 84.73%	Test Loss: 0.4342
+2022-10-10 07:32:28 [INFO ]  Source: MNIST_RGB	Test Accuracy: 37.39%	Test Loss: 3.8377
+2022-10-10 07:32:31 [INFO ]  Epoch:   19	Test Accuracy: 84.85%	Test Loss: 0.4239
+2022-10-10 07:32:32 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.12%	Test Loss: 4.0271
+2022-10-10 07:32:35 [INFO ]  Epoch:   20	Test Accuracy: 85.01%	Test Loss: 0.4261
+2022-10-10 07:32:36 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.86%	Test Loss: 4.2678
+2022-10-10 07:32:39 [INFO ]  Epoch:   21	Test Accuracy: 85.47%	Test Loss: 0.4130
+2022-10-10 07:32:40 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.39%	Test Loss: 4.2438
+2022-10-10 07:32:43 [INFO ]  Epoch:   22	Test Accuracy: 85.23%	Test Loss: 0.4197
+2022-10-10 07:32:44 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.15%	Test Loss: 4.2745
+2022-10-10 07:32:47 [INFO ]  Epoch:   23	Test Accuracy: 85.68%	Test Loss: 0.4066
+2022-10-10 07:32:48 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.19%	Test Loss: 4.2513
+2022-10-10 07:32:51 [INFO ]  Epoch:   24	Test Accuracy: 85.66%	Test Loss: 0.4056
+2022-10-10 07:32:52 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.96%	Test Loss: 4.4425
+2022-10-10 07:32:55 [INFO ]  Epoch:   25	Test Accuracy: 83.48%	Test Loss: 0.4391
+2022-10-10 07:32:56 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.05%	Test Loss: 4.4456
+2022-10-10 07:32:59 [INFO ]  Epoch:   26	Test Accuracy: 86.09%	Test Loss: 0.3971
+2022-10-10 07:33:00 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.91%	Test Loss: 4.5146
+2022-10-10 07:33:03 [INFO ]  Epoch:   27	Test Accuracy: 85.38%	Test Loss: 0.4003
+2022-10-10 07:33:04 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.42%	Test Loss: 4.6996
+2022-10-10 07:33:08 [INFO ]  Epoch:   28	Test Accuracy: 84.88%	Test Loss: 0.4181
+2022-10-10 07:33:08 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.86%	Test Loss: 4.5453
+2022-10-10 07:33:11 [INFO ]  Epoch:   29	Test Accuracy: 86.43%	Test Loss: 0.3861
+2022-10-10 07:33:12 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.97%	Test Loss: 4.7663
+2022-10-10 07:33:16 [INFO ]  Epoch:   30	Test Accuracy: 86.35%	Test Loss: 0.3824
+2022-10-10 07:33:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.46%	Test Loss: 4.6824
+2022-10-10 07:33:20 [INFO ]  Epoch:   31	Test Accuracy: 86.69%	Test Loss: 0.3819
+2022-10-10 07:33:20 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.70%	Test Loss: 5.0364
+2022-10-10 07:33:23 [INFO ]  Epoch:   32	Test Accuracy: 87.04%	Test Loss: 0.3730
+2022-10-10 07:33:24 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.91%	Test Loss: 4.6685
+2022-10-10 07:33:27 [INFO ]  Epoch:   33	Test Accuracy: 86.85%	Test Loss: 0.3742
+2022-10-10 07:33:28 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.14%	Test Loss: 4.9263
+2022-10-10 07:33:31 [INFO ]  Epoch:   34	Test Accuracy: 86.95%	Test Loss: 0.3728
+2022-10-10 07:33:32 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.92%	Test Loss: 5.1027
+2022-10-10 07:33:35 [INFO ]  Epoch:   35	Test Accuracy: 87.36%	Test Loss: 0.3664
+2022-10-10 07:33:36 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.96%	Test Loss: 5.0527
+2022-10-10 07:33:39 [INFO ]  Epoch:   36	Test Accuracy: 87.14%	Test Loss: 0.3668
+2022-10-10 07:33:40 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.23%	Test Loss: 5.0038
+2022-10-10 07:33:43 [INFO ]  Epoch:   37	Test Accuracy: 86.35%	Test Loss: 0.3869
+2022-10-10 07:33:44 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.37%	Test Loss: 4.9161
+2022-10-10 07:33:47 [INFO ]  Epoch:   38	Test Accuracy: 87.19%	Test Loss: 0.3649
+2022-10-10 07:33:48 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.43%	Test Loss: 5.0463
+2022-10-10 07:33:52 [INFO ]  Epoch:   39	Test Accuracy: 87.42%	Test Loss: 0.3617
+2022-10-10 07:33:52 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.61%	Test Loss: 5.3669
+2022-10-10 07:33:56 [INFO ]  Epoch:   40	Test Accuracy: 87.50%	Test Loss: 0.3547
+2022-10-10 07:33:56 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.05%	Test Loss: 4.9374
+2022-10-10 07:34:00 [INFO ]  Epoch:   41	Test Accuracy: 87.64%	Test Loss: 0.3529
+2022-10-10 07:34:01 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.25%	Test Loss: 5.4584
+2022-10-10 07:34:04 [INFO ]  Epoch:   42	Test Accuracy: 87.13%	Test Loss: 0.3666
+2022-10-10 07:34:05 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.53%	Test Loss: 5.5435
+2022-10-10 07:34:08 [INFO ]  Epoch:   43	Test Accuracy: 87.38%	Test Loss: 0.3544
+2022-10-10 07:34:09 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.31%	Test Loss: 5.1337
+2022-10-10 07:34:12 [INFO ]  Epoch:   44	Test Accuracy: 87.21%	Test Loss: 0.3588
+2022-10-10 07:34:13 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.50%	Test Loss: 5.5306
+2022-10-10 07:34:16 [INFO ]  Epoch:   45	Test Accuracy: 87.27%	Test Loss: 0.3523
+2022-10-10 07:34:17 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.02%	Test Loss: 5.4733
+2022-10-10 07:34:20 [INFO ]  Epoch:   46	Test Accuracy: 87.85%	Test Loss: 0.3454
+2022-10-10 07:34:21 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.20%	Test Loss: 5.4227
+2022-10-10 07:34:24 [INFO ]  Epoch:   47	Test Accuracy: 87.28%	Test Loss: 0.3548
+2022-10-10 07:34:25 [INFO ]  Source: MNIST_RGB	Test Accuracy: 28.85%	Test Loss: 5.6204
+2022-10-10 07:34:28 [INFO ]  Epoch:   48	Test Accuracy: 88.05%	Test Loss: 0.3429
+2022-10-10 07:34:29 [INFO ]  Source: MNIST_RGB	Test Accuracy: 28.24%	Test Loss: 5.6200
+2022-10-10 07:34:32 [INFO ]  Epoch:   49	Test Accuracy: 88.04%	Test Loss: 0.3442
+2022-10-10 07:34:33 [INFO ]  Source: MNIST_RGB	Test Accuracy: 28.76%	Test Loss: 5.4680
+2022-10-10 07:34:33 [INFO ]  List of accuracies: [0.6654, 0.718, 0.7549, 0.7588, 0.7722, 0.7857, 0.803, 0.811, 0.8131, 0.8191, 0.8202, 0.8274, 0.8336, 0.8356, 0.8343, 0.8411, 0.837, 0.8411, 0.8473, 0.8485, 0.8501, 0.8547, 0.8523, 0.8568, 0.8566, 0.8348, 0.8609, 0.8538, 0.8488, 0.8643, 0.8635, 0.8669, 0.8704, 0.8685, 0.8695, 0.8736, 0.8714, 0.8635, 0.8719, 0.8742, 0.875, 0.8764, 0.8713, 0.8738, 0.8721, 0.8727, 0.8785, 0.8728, 0.8805, 0.8804]
+2022-10-10 07:34:33 [INFO ]  List of losses: [0.9633976135253907, 0.7797950500488281, 0.6855805480957031, 0.6557538879394531, 0.6233469604492188, 0.5930571960449219, 0.5538588134765625, 0.5299940460205078, 0.5264747802734375, 0.508471615600586, 0.5073264251708984, 0.4835196380615234, 0.4768435821533203, 0.4628785583496094, 0.468275634765625, 0.44861194763183593, 0.45125210876464844, 0.4425364440917969, 0.4341821563720703, 0.4239421112060547, 0.42605224609375, 0.41301844482421873, 0.41967335510253906, 0.40658887939453126, 0.40561204223632813, 0.43905819396972656, 0.3970893035888672, 0.40034603576660155, 0.4181217437744141, 0.3861135437011719, 0.3823595916748047, 0.38192927856445313, 0.3730442352294922, 0.3742423492431641, 0.3728348602294922, 0.3663526153564453, 0.36678455200195315, 0.3869231964111328, 0.3649296356201172, 0.36168619384765627, 0.35468458862304686, 0.3529188919067383, 0.36664915466308595, 0.3543891235351562, 0.35883125610351563, 0.3522957794189453, 0.34539013366699217, 0.35475992431640624, 0.3428879425048828, 0.3441760467529297]
+2022-10-10 07:34:33 [INFO ]  List of source accuracies: [0.8386, 0.8004, 0.7157, 0.631, 0.5693, 0.5427, 0.5118, 0.4818, 0.4726, 0.4566, 0.4331, 0.4177, 0.4196, 0.3978, 0.3915, 0.3804, 0.3698, 0.3904, 0.3739, 0.3612, 0.3486, 0.3539, 0.3515, 0.3419, 0.3396, 0.3505, 0.3491, 0.3342, 0.3386, 0.3297, 0.3346, 0.317, 0.3291, 0.3214, 0.3092, 0.3096, 0.3223, 0.3137, 0.3043, 0.2961, 0.3105, 0.2925, 0.2953, 0.3031, 0.295, 0.2902, 0.292, 0.2885, 0.2824, 0.2876]
+2022-10-10 07:34:34 [INFO ]   
+2022-10-10 07:34:34 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 07:34:34 [INFO ]  Test Accuracy: 88.04%	Test Loss: 0.3442
+2022-10-10 07:34:35 [INFO ]   
+2022-10-10 07:34:35 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 07:34:35 [INFO ]  Test Accuracy: 28.76%	Test Loss: 5.4680
+2022-10-10 07:34:35 [INFO ]  CPU Time: 1.44 minutes
+2022-10-10 07:35:41 [INFO ]  ======================================== 2022-10-10 07:35:41 ========================================
+2022-10-10 07:35:41 [INFO ]  Base directory is ./results/forgetting/MNIST_RGB/
+2022-10-10 07:35:41 [INFO ]  Options: 
+2022-10-10 07:35:41 [INFO ]  	base_dir: null
+2022-10-10 07:35:41 [INFO ]  	batch_size: 1024
+2022-10-10 07:35:41 [INFO ]  	checkpoint_interval: 300
+2022-10-10 07:35:41 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 07:35:41 [INFO ]  	dataset_labels:
+2022-10-10 07:35:41 [INFO ]  	- 0
+2022-10-10 07:35:41 [INFO ]  	- 1
+2022-10-10 07:35:41 [INFO ]  	- 2
+2022-10-10 07:35:41 [INFO ]  	- 3
+2022-10-10 07:35:41 [INFO ]  	- 4
+2022-10-10 07:35:41 [INFO ]  	- 5
+2022-10-10 07:35:41 [INFO ]  	- 6
+2022-10-10 07:35:41 [INFO ]  	- 7
+2022-10-10 07:35:41 [INFO ]  	- 8
+2022-10-10 07:35:41 [INFO ]  	- 9
+2022-10-10 07:35:41 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 07:35:41 [INFO ]  	- !!python/tuple
+2022-10-10 07:35:41 [INFO ]  	    - 0.1307
+2022-10-10 07:35:41 [INFO ]  	    - 0.1307
+2022-10-10 07:35:41 [INFO ]  	    - 0.1307
+2022-10-10 07:35:41 [INFO ]  	- !!python/tuple
+2022-10-10 07:35:41 [INFO ]  	    - 0.3081
+2022-10-10 07:35:41 [INFO ]  	    - 0.3081
+2022-10-10 07:35:41 [INFO ]  	    - 0.3081
+2022-10-10 07:35:41 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 07:35:41 [INFO ]  	decay_epochs: 50
+2022-10-10 07:35:41 [INFO ]  	decay_factor: 0.1
+2022-10-10 07:35:41 [INFO ]  	device_id: 0
+2022-10-10 07:35:41 [INFO ]  	distill_epochs: 1
+2022-10-10 07:35:41 [INFO ]  	distill_lr: 0.02
+2022-10-10 07:35:41 [INFO ]  	distill_steps: 1
+2022-10-10 07:35:41 [INFO ]  	epochs: 50
+2022-10-10 07:35:41 [INFO ]  	expand_cls: false
+2022-10-10 07:35:41 [INFO ]  	forgetting_dataset: FASHION_MNIST
+2022-10-10 07:35:41 [INFO ]  	init: xavier
+2022-10-10 07:35:41 [INFO ]  	init_param: 1.0
+2022-10-10 07:35:41 [INFO ]  	input_size: 32
+2022-10-10 07:35:41 [INFO ]  	ipc: 1
+2022-10-10 07:35:41 [INFO ]  	log_file: ./results/forgetting/MNIST_RGB/log.txt
+2022-10-10 07:35:41 [INFO ]  	log_interval: 100
+2022-10-10 07:35:41 [INFO ]  	log_level: INFO
+2022-10-10 07:35:41 [INFO ]  	lr: 0.0002
+2022-10-10 07:35:41 [INFO ]  	mode: forgetting
+2022-10-10 07:35:41 [INFO ]  	nc: 3
+2022-10-10 07:35:41 [INFO ]  	num_classes: 10
+2022-10-10 07:35:41 [INFO ]  	num_workers: 8
+2022-10-10 07:35:41 [INFO ]  	phase: train
+2022-10-10 07:35:41 [INFO ]  	source_dataset: null
+2022-10-10 07:35:41 [INFO ]  	start_time: '2022-10-10 07:35:41'
+2022-10-10 07:35:41 [INFO ]  	test_batch_size: 1024
+2022-10-10 07:35:41 [INFO ]  	
+2022-10-10 07:35:41 [INFO ]  train dataset size:	60000
+2022-10-10 07:35:41 [INFO ]  test dataset size: 	10000
+2022-10-10 07:35:41 [INFO ]  datasets built!
+2022-10-10 07:35:41 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 07:35:43 [INFO ]   
+2022-10-10 07:35:43 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 07:35:43 [INFO ]  Test Accuracy: 14.42%	Test Loss: 4.3418
+2022-10-10 07:35:44 [INFO ]   
+2022-10-10 07:35:44 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 07:35:44 [INFO ]  Test Accuracy: 98.58%	Test Loss: 0.0427
+2022-10-10 07:35:47 [INFO ]  Epoch:    0	Test Accuracy: 66.22%	Test Loss: 0.9533
+2022-10-10 07:35:48 [INFO ]  Source: MNIST_RGB	Test Accuracy: 84.43%	Test Loss: 0.5644
+2022-10-10 07:35:51 [INFO ]  Epoch:    1	Test Accuracy: 71.69%	Test Loss: 0.7753
+2022-10-10 07:35:52 [INFO ]  Source: MNIST_RGB	Test Accuracy: 80.06%	Test Loss: 0.7644
+2022-10-10 07:35:55 [INFO ]  Epoch:    2	Test Accuracy: 75.23%	Test Loss: 0.6891
+2022-10-10 07:35:56 [INFO ]  Source: MNIST_RGB	Test Accuracy: 70.95%	Test Loss: 1.1390
+2022-10-10 07:35:59 [INFO ]  Epoch:    3	Test Accuracy: 76.92%	Test Loss: 0.6435
+2022-10-10 07:36:00 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.72%	Test Loss: 1.4456
+2022-10-10 07:36:04 [INFO ]  Epoch:    4	Test Accuracy: 77.58%	Test Loss: 0.6218
+2022-10-10 07:36:04 [INFO ]  Source: MNIST_RGB	Test Accuracy: 55.61%	Test Loss: 1.8283
+2022-10-10 07:36:07 [INFO ]  Epoch:    5	Test Accuracy: 79.13%	Test Loss: 0.5811
+2022-10-10 07:36:08 [INFO ]  Source: MNIST_RGB	Test Accuracy: 54.61%	Test Loss: 1.9510
+2022-10-10 07:36:11 [INFO ]  Epoch:    6	Test Accuracy: 80.04%	Test Loss: 0.5556
+2022-10-10 07:36:12 [INFO ]  Source: MNIST_RGB	Test Accuracy: 51.83%	Test Loss: 2.1084
+2022-10-10 07:36:15 [INFO ]  Epoch:    7	Test Accuracy: 80.53%	Test Loss: 0.5349
+2022-10-10 07:36:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 50.77%	Test Loss: 2.2032
+2022-10-10 07:36:19 [INFO ]  Epoch:    8	Test Accuracy: 81.02%	Test Loss: 0.5307
+2022-10-10 07:36:20 [INFO ]  Source: MNIST_RGB	Test Accuracy: 46.75%	Test Loss: 2.4938
+2022-10-10 07:36:24 [INFO ]  Epoch:    9	Test Accuracy: 81.48%	Test Loss: 0.5175
+2022-10-10 07:36:25 [INFO ]  Source: MNIST_RGB	Test Accuracy: 47.15%	Test Loss: 2.6165
+2022-10-10 07:36:28 [INFO ]  Epoch:   10	Test Accuracy: 81.82%	Test Loss: 0.5019
+2022-10-10 07:36:29 [INFO ]  Source: MNIST_RGB	Test Accuracy: 43.17%	Test Loss: 2.9633
+2022-10-10 07:36:32 [INFO ]  Epoch:   11	Test Accuracy: 82.57%	Test Loss: 0.4897
+2022-10-10 07:36:33 [INFO ]  Source: MNIST_RGB	Test Accuracy: 43.44%	Test Loss: 2.9300
+2022-10-10 07:36:36 [INFO ]  Epoch:   12	Test Accuracy: 82.56%	Test Loss: 0.4797
+2022-10-10 07:36:37 [INFO ]  Source: MNIST_RGB	Test Accuracy: 41.26%	Test Loss: 3.1665
+2022-10-10 07:36:40 [INFO ]  Epoch:   13	Test Accuracy: 82.37%	Test Loss: 0.4828
+2022-10-10 07:36:41 [INFO ]  Source: MNIST_RGB	Test Accuracy: 42.27%	Test Loss: 3.2090
+2022-10-10 07:36:44 [INFO ]  Epoch:   14	Test Accuracy: 83.55%	Test Loss: 0.4614
+2022-10-10 07:36:45 [INFO ]  Source: MNIST_RGB	Test Accuracy: 40.70%	Test Loss: 3.2425
+2022-10-10 07:36:48 [INFO ]  Epoch:   15	Test Accuracy: 83.79%	Test Loss: 0.4588
+2022-10-10 07:36:49 [INFO ]  Source: MNIST_RGB	Test Accuracy: 38.46%	Test Loss: 3.4975
+2022-10-10 07:36:52 [INFO ]  Epoch:   16	Test Accuracy: 83.72%	Test Loss: 0.4542
+2022-10-10 07:36:53 [INFO ]  Source: MNIST_RGB	Test Accuracy: 40.04%	Test Loss: 3.4880
+2022-10-10 07:36:56 [INFO ]  Epoch:   17	Test Accuracy: 84.45%	Test Loss: 0.4374
+2022-10-10 07:36:57 [INFO ]  Source: MNIST_RGB	Test Accuracy: 38.95%	Test Loss: 3.6704
+2022-10-10 07:37:00 [INFO ]  Epoch:   18	Test Accuracy: 84.89%	Test Loss: 0.4321
+2022-10-10 07:37:01 [INFO ]  Source: MNIST_RGB	Test Accuracy: 38.75%	Test Loss: 3.6838
+2022-10-10 07:37:04 [INFO ]  Epoch:   19	Test Accuracy: 84.30%	Test Loss: 0.4363
+2022-10-10 07:37:05 [INFO ]  Source: MNIST_RGB	Test Accuracy: 37.23%	Test Loss: 3.9159
+2022-10-10 07:37:08 [INFO ]  Epoch:   20	Test Accuracy: 85.06%	Test Loss: 0.4165
+2022-10-10 07:37:08 [INFO ]  Source: MNIST_RGB	Test Accuracy: 36.53%	Test Loss: 3.9273
+2022-10-10 07:37:12 [INFO ]  Epoch:   21	Test Accuracy: 85.29%	Test Loss: 0.4176
+2022-10-10 07:37:12 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.52%	Test Loss: 3.9580
+2022-10-10 07:37:16 [INFO ]  Epoch:   22	Test Accuracy: 85.55%	Test Loss: 0.4097
+2022-10-10 07:37:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.67%	Test Loss: 4.2143
+2022-10-10 07:37:20 [INFO ]  Epoch:   23	Test Accuracy: 85.69%	Test Loss: 0.4062
+2022-10-10 07:37:21 [INFO ]  Source: MNIST_RGB	Test Accuracy: 35.12%	Test Loss: 4.2648
+2022-10-10 07:37:24 [INFO ]  Epoch:   24	Test Accuracy: 84.86%	Test Loss: 0.4198
+2022-10-10 07:37:25 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.42%	Test Loss: 4.6448
+2022-10-10 07:37:28 [INFO ]  Epoch:   25	Test Accuracy: 85.44%	Test Loss: 0.4037
+2022-10-10 07:37:29 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.61%	Test Loss: 4.4279
+2022-10-10 07:37:32 [INFO ]  Epoch:   26	Test Accuracy: 85.50%	Test Loss: 0.4029
+2022-10-10 07:37:33 [INFO ]  Source: MNIST_RGB	Test Accuracy: 34.78%	Test Loss: 4.2544
+2022-10-10 07:37:36 [INFO ]  Epoch:   27	Test Accuracy: 86.08%	Test Loss: 0.3928
+2022-10-10 07:37:37 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.85%	Test Loss: 4.5096
+2022-10-10 07:37:40 [INFO ]  Epoch:   28	Test Accuracy: 85.84%	Test Loss: 0.3972
+2022-10-10 07:37:41 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.51%	Test Loss: 4.6321
+2022-10-10 07:37:44 [INFO ]  Epoch:   29	Test Accuracy: 86.49%	Test Loss: 0.3838
+2022-10-10 07:37:45 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.76%	Test Loss: 4.7243
+2022-10-10 07:37:48 [INFO ]  Epoch:   30	Test Accuracy: 86.22%	Test Loss: 0.3836
+2022-10-10 07:37:49 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.14%	Test Loss: 4.5430
+2022-10-10 07:37:52 [INFO ]  Epoch:   31	Test Accuracy: 86.64%	Test Loss: 0.3781
+2022-10-10 07:37:53 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.33%	Test Loss: 4.7629
+2022-10-10 07:37:56 [INFO ]  Epoch:   32	Test Accuracy: 85.46%	Test Loss: 0.3976
+2022-10-10 07:37:57 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.41%	Test Loss: 4.7698
+2022-10-10 07:38:00 [INFO ]  Epoch:   33	Test Accuracy: 86.72%	Test Loss: 0.3744
+2022-10-10 07:38:01 [INFO ]  Source: MNIST_RGB	Test Accuracy: 33.13%	Test Loss: 4.7659
+2022-10-10 07:38:04 [INFO ]  Epoch:   34	Test Accuracy: 86.86%	Test Loss: 0.3690
+2022-10-10 07:38:05 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.75%	Test Loss: 4.6826
+2022-10-10 07:38:08 [INFO ]  Epoch:   35	Test Accuracy: 86.89%	Test Loss: 0.3709
+2022-10-10 07:38:09 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.69%	Test Loss: 4.9960
+2022-10-10 07:38:12 [INFO ]  Epoch:   36	Test Accuracy: 86.83%	Test Loss: 0.3698
+2022-10-10 07:38:13 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.60%	Test Loss: 4.9429
+2022-10-10 07:38:16 [INFO ]  Epoch:   37	Test Accuracy: 86.87%	Test Loss: 0.3664
+2022-10-10 07:38:17 [INFO ]  Source: MNIST_RGB	Test Accuracy: 32.90%	Test Loss: 4.7361
+2022-10-10 07:38:20 [INFO ]  Epoch:   38	Test Accuracy: 87.19%	Test Loss: 0.3629
+2022-10-10 07:38:21 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.96%	Test Loss: 4.8680
+2022-10-10 07:38:24 [INFO ]  Epoch:   39	Test Accuracy: 87.29%	Test Loss: 0.3601
+2022-10-10 07:38:25 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.92%	Test Loss: 5.1791
+2022-10-10 07:38:28 [INFO ]  Epoch:   40	Test Accuracy: 87.40%	Test Loss: 0.3526
+2022-10-10 07:38:29 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.73%	Test Loss: 5.2950
+2022-10-10 07:38:32 [INFO ]  Epoch:   41	Test Accuracy: 87.03%	Test Loss: 0.3659
+2022-10-10 07:38:33 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.34%	Test Loss: 5.0164
+2022-10-10 07:38:36 [INFO ]  Epoch:   42	Test Accuracy: 87.53%	Test Loss: 0.3513
+2022-10-10 07:38:37 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.92%	Test Loss: 5.1715
+2022-10-10 07:38:40 [INFO ]  Epoch:   43	Test Accuracy: 87.18%	Test Loss: 0.3577
+2022-10-10 07:38:41 [INFO ]  Source: MNIST_RGB	Test Accuracy: 31.95%	Test Loss: 5.0092
+2022-10-10 07:38:44 [INFO ]  Epoch:   44	Test Accuracy: 87.82%	Test Loss: 0.3440
+2022-10-10 07:38:45 [INFO ]  Source: MNIST_RGB	Test Accuracy: 30.43%	Test Loss: 5.3914
+2022-10-10 07:38:48 [INFO ]  Epoch:   45	Test Accuracy: 87.47%	Test Loss: 0.3498
+2022-10-10 07:38:49 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.88%	Test Loss: 5.2828
+2022-10-10 07:38:52 [INFO ]  Epoch:   46	Test Accuracy: 87.90%	Test Loss: 0.3407
+2022-10-10 07:38:53 [INFO ]  Source: MNIST_RGB	Test Accuracy: 29.10%	Test Loss: 5.4589
+2022-10-10 07:38:56 [INFO ]  Epoch:   47	Test Accuracy: 87.69%	Test Loss: 0.3470
+2022-10-10 07:38:57 [INFO ]  Source: MNIST_RGB	Test Accuracy: 28.82%	Test Loss: 5.6525
+2022-10-10 07:39:00 [INFO ]  Epoch:   48	Test Accuracy: 87.63%	Test Loss: 0.3527
+2022-10-10 07:39:01 [INFO ]  Source: MNIST_RGB	Test Accuracy: 26.70%	Test Loss: 5.9874
+2022-10-10 07:39:04 [INFO ]  Epoch:   49	Test Accuracy: 88.11%	Test Loss: 0.3399
+2022-10-10 07:39:05 [INFO ]  Source: MNIST_RGB	Test Accuracy: 27.46%	Test Loss: 5.4693
+2022-10-10 07:39:05 [INFO ]  List of accuracies: [0.6622, 0.7169, 0.7523, 0.7692, 0.7758, 0.7913, 0.8004, 0.8053, 0.8102, 0.8148, 0.8182, 0.8257, 0.8256, 0.8237, 0.8355, 0.8379, 0.8372, 0.8445, 0.8489, 0.843, 0.8506, 0.8529, 0.8555, 0.8569, 0.8486, 0.8544, 0.855, 0.8608, 0.8584, 0.8649, 0.8622, 0.8664, 0.8546, 0.8672, 0.8686, 0.8689, 0.8683, 0.8687, 0.8719, 0.8729, 0.874, 0.8703, 0.8753, 0.8718, 0.8782, 0.8747, 0.879, 0.8769, 0.8763, 0.8811]
+2022-10-10 07:39:05 [INFO ]  List of losses: [0.9533381774902344, 0.7753490356445313, 0.6890648803710937, 0.6434577239990235, 0.6218498474121094, 0.5811047119140625, 0.5556088562011718, 0.5348849975585938, 0.5306594207763672, 0.5175367492675781, 0.501865609741211, 0.4897059539794922, 0.4796718444824219, 0.4827630310058594, 0.4614167999267578, 0.4587578125, 0.4541691131591797, 0.4374417297363281, 0.4320895263671875, 0.43631536865234377, 0.41651354064941404, 0.4175660308837891, 0.4097123352050781, 0.40620206604003906, 0.41984826965332034, 0.40366705932617186, 0.40289723815917966, 0.39281898803710935, 0.3971681640625, 0.38378883361816407, 0.3836440155029297, 0.3781362274169922, 0.3975802276611328, 0.37440755310058593, 0.3689748138427734, 0.37093976745605467, 0.36981329956054687, 0.36644366760253905, 0.3629254730224609, 0.36013438110351564, 0.352649658203125, 0.3659325775146484, 0.35131190795898437, 0.3576851623535156, 0.34402854919433595, 0.3497662841796875, 0.34068875122070313, 0.3470050079345703, 0.3527023864746094, 0.33986666564941403]
+2022-10-10 07:39:05 [INFO ]  List of source accuracies: [0.8443, 0.8006, 0.7095, 0.6272, 0.5561, 0.5461, 0.5183, 0.5077, 0.4675, 0.4715, 0.4317, 0.4344, 0.4126, 0.4227, 0.407, 0.3846, 0.4004, 0.3895, 0.3875, 0.3723, 0.3653, 0.3552, 0.3567, 0.3512, 0.3342, 0.3461, 0.3478, 0.3385, 0.3351, 0.3376, 0.3314, 0.3333, 0.3341, 0.3313, 0.3275, 0.3169, 0.326, 0.329, 0.3196, 0.3092, 0.3173, 0.3134, 0.3092, 0.3195, 0.3043, 0.2988, 0.291, 0.2882, 0.267, 0.2746]
+2022-10-10 07:39:06 [INFO ]   
+2022-10-10 07:39:06 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 07:39:06 [INFO ]  Test Accuracy: 88.11%	Test Loss: 0.3399
+2022-10-10 07:39:07 [INFO ]   
+2022-10-10 07:39:07 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 07:39:07 [INFO ]  Test Accuracy: 27.46%	Test Loss: 5.4693
+2022-10-10 07:39:07 [INFO ]  CPU Time: 1.44 minutes
+2022-10-10 07:45:43 [INFO ]  ======================================== 2022-10-10 07:45:43 ========================================
+2022-10-10 07:45:43 [INFO ]  Base directory is ./results/forgetting/MNIST_RGB/
+2022-10-10 07:45:43 [INFO ]  Options: 
+2022-10-10 07:45:43 [INFO ]  	base_dir: null
+2022-10-10 07:45:43 [INFO ]  	batch_size: 1024
+2022-10-10 07:45:43 [INFO ]  	checkpoint_interval: 300
+2022-10-10 07:45:43 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 07:45:43 [INFO ]  	dataset_labels:
+2022-10-10 07:45:43 [INFO ]  	- 0
+2022-10-10 07:45:43 [INFO ]  	- 1
+2022-10-10 07:45:43 [INFO ]  	- 2
+2022-10-10 07:45:43 [INFO ]  	- 3
+2022-10-10 07:45:43 [INFO ]  	- 4
+2022-10-10 07:45:43 [INFO ]  	- 5
+2022-10-10 07:45:43 [INFO ]  	- 6
+2022-10-10 07:45:43 [INFO ]  	- 7
+2022-10-10 07:45:43 [INFO ]  	- 8
+2022-10-10 07:45:43 [INFO ]  	- 9
+2022-10-10 07:45:43 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 07:45:43 [INFO ]  	- !!python/tuple
+2022-10-10 07:45:43 [INFO ]  	    - 0.1307
+2022-10-10 07:45:43 [INFO ]  	    - 0.1307
+2022-10-10 07:45:43 [INFO ]  	    - 0.1307
+2022-10-10 07:45:43 [INFO ]  	- !!python/tuple
+2022-10-10 07:45:43 [INFO ]  	    - 0.3081
+2022-10-10 07:45:43 [INFO ]  	    - 0.3081
+2022-10-10 07:45:43 [INFO ]  	    - 0.3081
+2022-10-10 07:45:43 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 07:45:43 [INFO ]  	decay_epochs: 50
+2022-10-10 07:45:43 [INFO ]  	decay_factor: 0.1
+2022-10-10 07:45:43 [INFO ]  	device_id: 0
+2022-10-10 07:45:43 [INFO ]  	distill_epochs: 1
+2022-10-10 07:45:43 [INFO ]  	distill_lr: 0.02
+2022-10-10 07:45:43 [INFO ]  	distill_steps: 1
+2022-10-10 07:45:43 [INFO ]  	epochs: 50
+2022-10-10 07:45:43 [INFO ]  	expand_cls: false
+2022-10-10 07:45:43 [INFO ]  	forgetting_dataset: SVHN
+2022-10-10 07:45:43 [INFO ]  	init: xavier
+2022-10-10 07:45:43 [INFO ]  	init_param: 1.0
+2022-10-10 07:45:43 [INFO ]  	input_size: 32
+2022-10-10 07:45:43 [INFO ]  	ipc: 1
+2022-10-10 07:45:43 [INFO ]  	log_file: ./results/forgetting/MNIST_RGB/log.txt
+2022-10-10 07:45:43 [INFO ]  	log_interval: 100
+2022-10-10 07:45:43 [INFO ]  	log_level: INFO
+2022-10-10 07:45:43 [INFO ]  	lr: 0.0002
+2022-10-10 07:45:43 [INFO ]  	mode: forgetting
+2022-10-10 07:45:43 [INFO ]  	nc: 3
+2022-10-10 07:45:43 [INFO ]  	num_classes: 10
+2022-10-10 07:45:43 [INFO ]  	num_workers: 8
+2022-10-10 07:45:43 [INFO ]  	phase: train
+2022-10-10 07:45:43 [INFO ]  	source_dataset: null
+2022-10-10 07:45:43 [INFO ]  	start_time: '2022-10-10 07:45:43'
+2022-10-10 07:45:43 [INFO ]  	test_batch_size: 1024
+2022-10-10 07:45:43 [INFO ]  	
+2022-10-10 07:45:45 [INFO ]  train dataset size:	60000
+2022-10-10 07:45:45 [INFO ]  test dataset size: 	10000
+2022-10-10 07:45:45 [INFO ]  datasets built!
+2022-10-10 07:45:45 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 07:45:48 [INFO ]   
+2022-10-10 07:45:48 [INFO ]  SVHN: Evaluation BEFORE forgetting:
+2022-10-10 07:45:48 [INFO ]  Test Accuracy: 20.90%	Test Loss: 4.2789
+2022-10-10 07:45:49 [INFO ]   
+2022-10-10 07:45:49 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 07:45:49 [INFO ]  Test Accuracy: 98.58%	Test Loss: 0.0427
+2022-10-10 07:45:52 [INFO ]  Epoch:    0	Test Accuracy: 46.72%	Test Loss: 1.6355
+2022-10-10 07:45:53 [INFO ]  Source: MNIST_RGB	Test Accuracy: 89.33%	Test Loss: 0.3393
+2022-10-10 07:45:56 [INFO ]  Epoch:    1	Test Accuracy: 56.44%	Test Loss: 1.3847
+2022-10-10 07:45:57 [INFO ]  Source: MNIST_RGB	Test Accuracy: 78.44%	Test Loss: 0.7788
+2022-10-10 07:46:00 [INFO ]  Epoch:    2	Test Accuracy: 63.60%	Test Loss: 1.1948
+2022-10-10 07:46:01 [INFO ]  Source: MNIST_RGB	Test Accuracy: 78.21%	Test Loss: 0.8377
+2022-10-10 07:46:04 [INFO ]  Epoch:    3	Test Accuracy: 68.09%	Test Loss: 1.0769
+2022-10-10 07:46:04 [INFO ]  Source: MNIST_RGB	Test Accuracy: 72.80%	Test Loss: 1.2547
+2022-10-10 07:46:08 [INFO ]  Epoch:    4	Test Accuracy: 72.15%	Test Loss: 0.9653
+2022-10-10 07:46:08 [INFO ]  Source: MNIST_RGB	Test Accuracy: 70.69%	Test Loss: 1.3971
+2022-10-10 07:46:12 [INFO ]  Epoch:    5	Test Accuracy: 75.21%	Test Loss: 0.8846
+2022-10-10 07:46:12 [INFO ]  Source: MNIST_RGB	Test Accuracy: 67.71%	Test Loss: 1.6578
+2022-10-10 07:46:15 [INFO ]  Epoch:    6	Test Accuracy: 76.67%	Test Loss: 0.8450
+2022-10-10 07:46:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.89%	Test Loss: 1.9937
+2022-10-10 07:46:19 [INFO ]  Epoch:    7	Test Accuracy: 78.56%	Test Loss: 0.7834
+2022-10-10 07:46:20 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.85%	Test Loss: 1.9964
+2022-10-10 07:46:23 [INFO ]  Epoch:    8	Test Accuracy: 79.29%	Test Loss: 0.7600
+2022-10-10 07:46:24 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.61%	Test Loss: 2.1851
+2022-10-10 07:46:27 [INFO ]  Epoch:    9	Test Accuracy: 79.81%	Test Loss: 0.7427
+2022-10-10 07:46:28 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.98%	Test Loss: 2.3834
+2022-10-10 07:46:31 [INFO ]  Epoch:   10	Test Accuracy: 80.71%	Test Loss: 0.7146
+2022-10-10 07:46:32 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.71%	Test Loss: 2.3965
+2022-10-10 07:46:35 [INFO ]  Epoch:   11	Test Accuracy: 80.99%	Test Loss: 0.7040
+2022-10-10 07:46:36 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.54%	Test Loss: 2.3479
+2022-10-10 07:46:39 [INFO ]  Epoch:   12	Test Accuracy: 80.95%	Test Loss: 0.7056
+2022-10-10 07:46:40 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.68%	Test Loss: 2.5666
+2022-10-10 07:46:43 [INFO ]  Epoch:   13	Test Accuracy: 81.73%	Test Loss: 0.6803
+2022-10-10 07:46:43 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.52%	Test Loss: 2.5166
+2022-10-10 07:46:47 [INFO ]  Epoch:   14	Test Accuracy: 82.44%	Test Loss: 0.6600
+2022-10-10 07:46:47 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.44%	Test Loss: 2.5039
+2022-10-10 07:46:51 [INFO ]  Epoch:   15	Test Accuracy: 82.40%	Test Loss: 0.6618
+2022-10-10 07:46:51 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.05%	Test Loss: 2.5786
+2022-10-10 07:46:54 [INFO ]  Epoch:   16	Test Accuracy: 82.17%	Test Loss: 0.6587
+2022-10-10 07:46:55 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.49%	Test Loss: 2.4002
+2022-10-10 07:46:58 [INFO ]  Epoch:   17	Test Accuracy: 82.98%	Test Loss: 0.6372
+2022-10-10 07:46:59 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.55%	Test Loss: 2.6406
+2022-10-10 07:47:02 [INFO ]  Epoch:   18	Test Accuracy: 82.69%	Test Loss: 0.6411
+2022-10-10 07:47:03 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.61%	Test Loss: 2.6667
+2022-10-10 07:47:06 [INFO ]  Epoch:   19	Test Accuracy: 83.06%	Test Loss: 0.6351
+2022-10-10 07:47:07 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.02%	Test Loss: 2.8713
+2022-10-10 07:47:10 [INFO ]  Epoch:   20	Test Accuracy: 83.45%	Test Loss: 0.6228
+2022-10-10 07:47:11 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.79%	Test Loss: 2.5162
+2022-10-10 07:47:14 [INFO ]  Epoch:   21	Test Accuracy: 83.80%	Test Loss: 0.6136
+2022-10-10 07:47:15 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.56%	Test Loss: 2.5548
+2022-10-10 07:47:18 [INFO ]  Epoch:   22	Test Accuracy: 83.69%	Test Loss: 0.6149
+2022-10-10 07:47:19 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.91%	Test Loss: 2.7753
+2022-10-10 07:47:22 [INFO ]  Epoch:   23	Test Accuracy: 83.81%	Test Loss: 0.6132
+2022-10-10 07:47:23 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.27%	Test Loss: 2.6315
+2022-10-10 07:47:26 [INFO ]  Epoch:   24	Test Accuracy: 83.93%	Test Loss: 0.6064
+2022-10-10 07:47:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.77%	Test Loss: 2.8113
+2022-10-10 07:47:30 [INFO ]  Epoch:   25	Test Accuracy: 84.29%	Test Loss: 0.5940
+2022-10-10 07:47:31 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.56%	Test Loss: 2.7832
+2022-10-10 07:47:34 [INFO ]  Epoch:   26	Test Accuracy: 84.23%	Test Loss: 0.5946
+2022-10-10 07:47:35 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.58%	Test Loss: 2.6353
+2022-10-10 07:47:38 [INFO ]  Epoch:   27	Test Accuracy: 84.47%	Test Loss: 0.5824
+2022-10-10 07:47:39 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.95%	Test Loss: 2.5496
+2022-10-10 07:47:42 [INFO ]  Epoch:   28	Test Accuracy: 84.77%	Test Loss: 0.5765
+2022-10-10 07:47:43 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.47%	Test Loss: 2.6795
+2022-10-10 07:47:46 [INFO ]  Epoch:   29	Test Accuracy: 84.45%	Test Loss: 0.5868
+2022-10-10 07:47:47 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.81%	Test Loss: 2.6161
+2022-10-10 07:47:50 [INFO ]  Epoch:   30	Test Accuracy: 84.50%	Test Loss: 0.5855
+2022-10-10 07:47:50 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.53%	Test Loss: 2.6375
+2022-10-10 07:47:54 [INFO ]  Epoch:   31	Test Accuracy: 85.00%	Test Loss: 0.5677
+2022-10-10 07:47:54 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.82%	Test Loss: 2.6922
+2022-10-10 07:47:57 [INFO ]  Epoch:   32	Test Accuracy: 85.09%	Test Loss: 0.5671
+2022-10-10 07:47:58 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.65%	Test Loss: 2.6162
+2022-10-10 07:48:01 [INFO ]  Epoch:   33	Test Accuracy: 84.83%	Test Loss: 0.5703
+2022-10-10 07:48:02 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.59%	Test Loss: 2.6125
+2022-10-10 07:48:05 [INFO ]  Epoch:   34	Test Accuracy: 84.97%	Test Loss: 0.5669
+2022-10-10 07:48:06 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.28%	Test Loss: 2.5754
+2022-10-10 07:48:09 [INFO ]  Epoch:   35	Test Accuracy: 85.18%	Test Loss: 0.5610
+2022-10-10 07:48:10 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.20%	Test Loss: 2.7266
+2022-10-10 07:48:13 [INFO ]  Epoch:   36	Test Accuracy: 85.09%	Test Loss: 0.5645
+2022-10-10 07:48:14 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.84%	Test Loss: 2.7284
+2022-10-10 07:48:17 [INFO ]  Epoch:   37	Test Accuracy: 85.19%	Test Loss: 0.5621
+2022-10-10 07:48:18 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.35%	Test Loss: 2.6902
+2022-10-10 07:48:21 [INFO ]  Epoch:   38	Test Accuracy: 85.19%	Test Loss: 0.5628
+2022-10-10 07:48:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.93%	Test Loss: 2.7516
+2022-10-10 07:48:25 [INFO ]  Epoch:   39	Test Accuracy: 85.14%	Test Loss: 0.5619
+2022-10-10 07:48:26 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.57%	Test Loss: 2.7575
+2022-10-10 07:48:29 [INFO ]  Epoch:   40	Test Accuracy: 85.58%	Test Loss: 0.5494
+2022-10-10 07:48:29 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.15%	Test Loss: 2.7796
+2022-10-10 07:48:33 [INFO ]  Epoch:   41	Test Accuracy: 85.51%	Test Loss: 0.5457
+2022-10-10 07:48:34 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.93%	Test Loss: 2.7491
+2022-10-10 07:48:37 [INFO ]  Epoch:   42	Test Accuracy: 85.21%	Test Loss: 0.5600
+2022-10-10 07:48:37 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.85%	Test Loss: 2.6227
+2022-10-10 07:48:41 [INFO ]  Epoch:   43	Test Accuracy: 85.17%	Test Loss: 0.5654
+2022-10-10 07:48:41 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.53%	Test Loss: 2.6546
+2022-10-10 07:48:44 [INFO ]  Epoch:   44	Test Accuracy: 85.64%	Test Loss: 0.5481
+2022-10-10 07:48:45 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.65%	Test Loss: 2.6827
+2022-10-10 07:48:48 [INFO ]  Epoch:   45	Test Accuracy: 85.14%	Test Loss: 0.5565
+2022-10-10 07:48:49 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.31%	Test Loss: 2.6206
+2022-10-10 07:48:52 [INFO ]  Epoch:   46	Test Accuracy: 85.54%	Test Loss: 0.5458
+2022-10-10 07:48:53 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.93%	Test Loss: 2.6478
+2022-10-10 07:48:56 [INFO ]  Epoch:   47	Test Accuracy: 85.77%	Test Loss: 0.5418
+2022-10-10 07:48:57 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.66%	Test Loss: 2.5263
+2022-10-10 07:49:00 [INFO ]  Epoch:   48	Test Accuracy: 85.40%	Test Loss: 0.5456
+2022-10-10 07:49:01 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.56%	Test Loss: 2.7076
+2022-10-10 07:49:04 [INFO ]  Epoch:   49	Test Accuracy: 85.69%	Test Loss: 0.5391
+2022-10-10 07:49:05 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.10%	Test Loss: 2.6894
+2022-10-10 07:49:05 [INFO ]  List of accuracies: [0.4671558082360172, 0.5643822987092809, 0.6360248924400738, 0.6808543331284573, 0.7215350338045482, 0.7521127842655193, 0.7667102028272895, 0.7855716041794715, 0.7929471419791027, 0.7981330669944684, 0.8071220036877689, 0.8099262446220037, 0.8095421020282729, 0.8172633681622619, 0.8244468346650277, 0.8240242778119238, 0.821719422249539, 0.8297864167178857, 0.8269437615242778, 0.8305931161647203, 0.8345113706207744, 0.8380070682237246, 0.8368546404425322, 0.8380838967424709, 0.8392747387830363, 0.8428856791641057, 0.8422710510141365, 0.8447295636140135, 0.8477258758451137, 0.844460663798402, 0.8450368776889982, 0.8500307314074985, 0.8509142593730793, 0.8482636754763369, 0.8496850030731408, 0.8517593730792871, 0.8508758451137062, 0.8519130301167793, 0.8518746158574063, 0.8513752304855562, 0.8557544560540873, 0.8550629993853719, 0.8521435156730178, 0.8517209588199139, 0.8563690842040566, 0.8513752304855562, 0.8553703134603565, 0.8577135832821143, 0.8540258143822987, 0.8568684695759066]
+2022-10-10 07:49:05 [INFO ]  List of losses: [1.6354667555721685, 1.3846933497339213, 1.1947966530488618, 1.0769038666371706, 0.9652828657341355, 0.8845990362091158, 0.8450242765270718, 0.783421392739735, 0.7599918222456676, 0.7426597229454074, 0.714550135541563, 0.7039600974881877, 0.7056331048366403, 0.680292429628003, 0.6599887268779171, 0.6617769301120826, 0.6586924542952844, 0.6372488821366116, 0.6410923426182049, 0.6350872647051585, 0.6228378005165518, 0.6135550149027819, 0.6149032770964582, 0.6132361570896366, 0.6063507387223387, 0.5939610287244875, 0.5945864397833226, 0.5824389114801914, 0.5764790870840005, 0.5867528469927412, 0.5854857778285425, 0.5676586559086984, 0.5670749591623411, 0.5703380446384197, 0.5668502337520813, 0.5610117452160742, 0.5644653252318511, 0.5620615489657261, 0.5627680018260278, 0.5619039576553316, 0.549353100144211, 0.5457022818745318, 0.5599508443784332, 0.5653810899684087, 0.5481473744538348, 0.5564977157020686, 0.5458094404017771, 0.5417611814380499, 0.5456278425238948, 0.5390867099633009]
+2022-10-10 07:49:05 [INFO ]  List of source accuracies: [0.8933, 0.7844, 0.7821, 0.728, 0.7069, 0.6771, 0.6589, 0.6685, 0.6661, 0.6398, 0.6571, 0.6554, 0.6468, 0.6552, 0.6444, 0.6405, 0.6549, 0.6355, 0.6261, 0.6302, 0.6479, 0.6356, 0.6291, 0.6327, 0.6277, 0.6256, 0.6358, 0.6395, 0.6247, 0.6381, 0.6353, 0.6282, 0.6365, 0.6359, 0.6328, 0.632, 0.6284, 0.6235, 0.6293, 0.6257, 0.6215, 0.6193, 0.6285, 0.6253, 0.6265, 0.6231, 0.6293, 0.6366, 0.6156, 0.621]
+2022-10-10 07:49:06 [INFO ]   
+2022-10-10 07:49:06 [INFO ]  SVHN: Evaluation AFTER forgetting:
+2022-10-10 07:49:06 [INFO ]  Test Accuracy: 85.69%	Test Loss: 0.5391
+2022-10-10 07:49:07 [INFO ]   
+2022-10-10 07:49:07 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 07:49:07 [INFO ]  Test Accuracy: 62.10%	Test Loss: 2.6894
+2022-10-10 07:49:07 [INFO ]  CPU Time: 1.69 minutes
+2022-10-10 07:50:01 [INFO ]  ======================================== 2022-10-10 07:50:01 ========================================
+2022-10-10 07:50:01 [INFO ]  Base directory is ./results/forgetting/MNIST_RGB/
+2022-10-10 07:50:01 [INFO ]  Options: 
+2022-10-10 07:50:01 [INFO ]  	base_dir: null
+2022-10-10 07:50:01 [INFO ]  	batch_size: 1024
+2022-10-10 07:50:01 [INFO ]  	checkpoint_interval: 300
+2022-10-10 07:50:01 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 07:50:01 [INFO ]  	dataset_labels:
+2022-10-10 07:50:01 [INFO ]  	- 0
+2022-10-10 07:50:01 [INFO ]  	- 1
+2022-10-10 07:50:01 [INFO ]  	- 2
+2022-10-10 07:50:01 [INFO ]  	- 3
+2022-10-10 07:50:01 [INFO ]  	- 4
+2022-10-10 07:50:01 [INFO ]  	- 5
+2022-10-10 07:50:01 [INFO ]  	- 6
+2022-10-10 07:50:01 [INFO ]  	- 7
+2022-10-10 07:50:01 [INFO ]  	- 8
+2022-10-10 07:50:01 [INFO ]  	- 9
+2022-10-10 07:50:01 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 07:50:01 [INFO ]  	- !!python/tuple
+2022-10-10 07:50:01 [INFO ]  	    - 0.1307
+2022-10-10 07:50:01 [INFO ]  	    - 0.1307
+2022-10-10 07:50:01 [INFO ]  	    - 0.1307
+2022-10-10 07:50:01 [INFO ]  	- !!python/tuple
+2022-10-10 07:50:01 [INFO ]  	    - 0.3081
+2022-10-10 07:50:01 [INFO ]  	    - 0.3081
+2022-10-10 07:50:01 [INFO ]  	    - 0.3081
+2022-10-10 07:50:01 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 07:50:01 [INFO ]  	decay_epochs: 50
+2022-10-10 07:50:01 [INFO ]  	decay_factor: 0.1
+2022-10-10 07:50:01 [INFO ]  	device_id: 0
+2022-10-10 07:50:01 [INFO ]  	distill_epochs: 1
+2022-10-10 07:50:01 [INFO ]  	distill_lr: 0.02
+2022-10-10 07:50:01 [INFO ]  	distill_steps: 1
+2022-10-10 07:50:01 [INFO ]  	epochs: 50
+2022-10-10 07:50:01 [INFO ]  	expand_cls: false
+2022-10-10 07:50:01 [INFO ]  	forgetting_dataset: SVHN
+2022-10-10 07:50:01 [INFO ]  	init: xavier
+2022-10-10 07:50:01 [INFO ]  	init_param: 1.0
+2022-10-10 07:50:01 [INFO ]  	input_size: 32
+2022-10-10 07:50:01 [INFO ]  	ipc: 1
+2022-10-10 07:50:01 [INFO ]  	log_file: ./results/forgetting/MNIST_RGB/log.txt
+2022-10-10 07:50:01 [INFO ]  	log_interval: 100
+2022-10-10 07:50:01 [INFO ]  	log_level: INFO
+2022-10-10 07:50:01 [INFO ]  	lr: 0.0002
+2022-10-10 07:50:01 [INFO ]  	mode: forgetting
+2022-10-10 07:50:01 [INFO ]  	nc: 3
+2022-10-10 07:50:01 [INFO ]  	num_classes: 10
+2022-10-10 07:50:01 [INFO ]  	num_workers: 8
+2022-10-10 07:50:01 [INFO ]  	phase: train
+2022-10-10 07:50:01 [INFO ]  	source_dataset: null
+2022-10-10 07:50:01 [INFO ]  	start_time: '2022-10-10 07:50:01'
+2022-10-10 07:50:01 [INFO ]  	test_batch_size: 1024
+2022-10-10 07:50:01 [INFO ]  	
+2022-10-10 07:50:03 [INFO ]  train dataset size:	60000
+2022-10-10 07:50:03 [INFO ]  test dataset size: 	10000
+2022-10-10 07:50:03 [INFO ]  datasets built!
+2022-10-10 07:50:03 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 07:50:06 [INFO ]   
+2022-10-10 07:50:06 [INFO ]  SVHN: Evaluation BEFORE forgetting:
+2022-10-10 07:50:06 [INFO ]  Test Accuracy: 20.90%	Test Loss: 4.2789
+2022-10-10 07:50:07 [INFO ]   
+2022-10-10 07:50:07 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 07:50:07 [INFO ]  Test Accuracy: 98.58%	Test Loss: 0.0427
+2022-10-10 07:50:10 [INFO ]  Epoch:    0	Test Accuracy: 46.47%	Test Loss: 1.6427
+2022-10-10 07:50:11 [INFO ]  Source: MNIST_RGB	Test Accuracy: 89.45%	Test Loss: 0.3364
+2022-10-10 07:50:14 [INFO ]  Epoch:    1	Test Accuracy: 57.14%	Test Loss: 1.3590
+2022-10-10 07:50:15 [INFO ]  Source: MNIST_RGB	Test Accuracy: 82.85%	Test Loss: 0.5846
+2022-10-10 07:50:18 [INFO ]  Epoch:    2	Test Accuracy: 63.93%	Test Loss: 1.1898
+2022-10-10 07:50:19 [INFO ]  Source: MNIST_RGB	Test Accuracy: 77.00%	Test Loss: 0.9283
+2022-10-10 07:50:22 [INFO ]  Epoch:    3	Test Accuracy: 68.18%	Test Loss: 1.0799
+2022-10-10 07:50:23 [INFO ]  Source: MNIST_RGB	Test Accuracy: 76.86%	Test Loss: 0.9800
+2022-10-10 07:50:26 [INFO ]  Epoch:    4	Test Accuracy: 71.56%	Test Loss: 0.9804
+2022-10-10 07:50:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 67.69%	Test Loss: 1.5640
+2022-10-10 07:50:29 [INFO ]  Epoch:    5	Test Accuracy: 74.77%	Test Loss: 0.8948
+2022-10-10 07:50:30 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.94%	Test Loss: 1.7259
+2022-10-10 07:50:33 [INFO ]  Epoch:    6	Test Accuracy: 76.92%	Test Loss: 0.8291
+2022-10-10 07:50:34 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.47%	Test Loss: 1.9579
+2022-10-10 07:50:37 [INFO ]  Epoch:    7	Test Accuracy: 78.15%	Test Loss: 0.7959
+2022-10-10 07:50:38 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.30%	Test Loss: 2.1238
+2022-10-10 07:50:41 [INFO ]  Epoch:    8	Test Accuracy: 79.23%	Test Loss: 0.7619
+2022-10-10 07:50:42 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.83%	Test Loss: 2.2276
+2022-10-10 07:50:45 [INFO ]  Epoch:    9	Test Accuracy: 79.63%	Test Loss: 0.7506
+2022-10-10 07:50:46 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.71%	Test Loss: 2.3980
+2022-10-10 07:50:49 [INFO ]  Epoch:   10	Test Accuracy: 80.75%	Test Loss: 0.7132
+2022-10-10 07:50:50 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.77%	Test Loss: 2.4610
+2022-10-10 07:50:53 [INFO ]  Epoch:   11	Test Accuracy: 80.60%	Test Loss: 0.7199
+2022-10-10 07:50:54 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.79%	Test Loss: 2.7171
+2022-10-10 07:50:57 [INFO ]  Epoch:   12	Test Accuracy: 81.27%	Test Loss: 0.6965
+2022-10-10 07:50:58 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.44%	Test Loss: 2.5229
+2022-10-10 07:51:01 [INFO ]  Epoch:   13	Test Accuracy: 81.96%	Test Loss: 0.6689
+2022-10-10 07:51:02 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.80%	Test Loss: 2.4173
+2022-10-10 07:51:05 [INFO ]  Epoch:   14	Test Accuracy: 82.33%	Test Loss: 0.6648
+2022-10-10 07:51:06 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.16%	Test Loss: 2.5526
+2022-10-10 07:51:09 [INFO ]  Epoch:   15	Test Accuracy: 82.05%	Test Loss: 0.6714
+2022-10-10 07:51:10 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.77%	Test Loss: 2.7228
+2022-10-10 07:51:13 [INFO ]  Epoch:   16	Test Accuracy: 82.65%	Test Loss: 0.6524
+2022-10-10 07:51:14 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.49%	Test Loss: 2.6695
+2022-10-10 07:51:17 [INFO ]  Epoch:   17	Test Accuracy: 82.74%	Test Loss: 0.6424
+2022-10-10 07:51:18 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.40%	Test Loss: 2.5434
+2022-10-10 07:51:21 [INFO ]  Epoch:   18	Test Accuracy: 83.06%	Test Loss: 0.6363
+2022-10-10 07:51:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.26%	Test Loss: 2.7364
+2022-10-10 07:51:25 [INFO ]  Epoch:   19	Test Accuracy: 83.58%	Test Loss: 0.6243
+2022-10-10 07:51:26 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.93%	Test Loss: 2.5836
+2022-10-10 07:51:29 [INFO ]  Epoch:   20	Test Accuracy: 83.52%	Test Loss: 0.6227
+2022-10-10 07:51:30 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.00%	Test Loss: 2.6938
+2022-10-10 07:51:33 [INFO ]  Epoch:   21	Test Accuracy: 83.68%	Test Loss: 0.6167
+2022-10-10 07:51:34 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.39%	Test Loss: 2.7240
+2022-10-10 07:51:36 [INFO ]  Epoch:   22	Test Accuracy: 83.39%	Test Loss: 0.6225
+2022-10-10 07:51:37 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.54%	Test Loss: 2.6309
+2022-10-10 07:51:41 [INFO ]  Epoch:   23	Test Accuracy: 83.65%	Test Loss: 0.6135
+2022-10-10 07:51:41 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.67%	Test Loss: 2.6353
+2022-10-10 07:51:45 [INFO ]  Epoch:   24	Test Accuracy: 83.70%	Test Loss: 0.6113
+2022-10-10 07:51:45 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.00%	Test Loss: 2.5602
+2022-10-10 07:51:49 [INFO ]  Epoch:   25	Test Accuracy: 84.30%	Test Loss: 0.5947
+2022-10-10 07:51:49 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.83%	Test Loss: 2.7585
+2022-10-10 07:51:52 [INFO ]  Epoch:   26	Test Accuracy: 84.10%	Test Loss: 0.5971
+2022-10-10 07:51:53 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.39%	Test Loss: 2.6794
+2022-10-10 07:51:56 [INFO ]  Epoch:   27	Test Accuracy: 84.35%	Test Loss: 0.5930
+2022-10-10 07:51:57 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.72%	Test Loss: 2.7232
+2022-10-10 07:52:00 [INFO ]  Epoch:   28	Test Accuracy: 84.30%	Test Loss: 0.5880
+2022-10-10 07:52:01 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.26%	Test Loss: 2.7203
+2022-10-10 07:52:04 [INFO ]  Epoch:   29	Test Accuracy: 84.18%	Test Loss: 0.5938
+2022-10-10 07:52:05 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.22%	Test Loss: 2.7565
+2022-10-10 07:52:08 [INFO ]  Epoch:   30	Test Accuracy: 84.89%	Test Loss: 0.5755
+2022-10-10 07:52:09 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.37%	Test Loss: 2.5753
+2022-10-10 07:52:12 [INFO ]  Epoch:   31	Test Accuracy: 84.79%	Test Loss: 0.5738
+2022-10-10 07:52:12 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.79%	Test Loss: 2.6847
+2022-10-10 07:52:16 [INFO ]  Epoch:   32	Test Accuracy: 84.90%	Test Loss: 0.5657
+2022-10-10 07:52:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.62%	Test Loss: 2.7313
+2022-10-10 07:52:19 [INFO ]  Epoch:   33	Test Accuracy: 85.19%	Test Loss: 0.5664
+2022-10-10 07:52:20 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.86%	Test Loss: 2.7168
+2022-10-10 07:52:24 [INFO ]  Epoch:   34	Test Accuracy: 84.74%	Test Loss: 0.5769
+2022-10-10 07:52:24 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.13%	Test Loss: 2.7268
+2022-10-10 07:52:28 [INFO ]  Epoch:   35	Test Accuracy: 84.91%	Test Loss: 0.5706
+2022-10-10 07:52:29 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.14%	Test Loss: 2.6996
+2022-10-10 07:52:32 [INFO ]  Epoch:   36	Test Accuracy: 85.00%	Test Loss: 0.5681
+2022-10-10 07:52:32 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.27%	Test Loss: 2.5889
+2022-10-10 07:52:36 [INFO ]  Epoch:   37	Test Accuracy: 85.46%	Test Loss: 0.5563
+2022-10-10 07:52:36 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.60%	Test Loss: 2.7175
+2022-10-10 07:52:39 [INFO ]  Epoch:   38	Test Accuracy: 85.11%	Test Loss: 0.5644
+2022-10-10 07:52:40 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.92%	Test Loss: 2.5859
+2022-10-10 07:52:44 [INFO ]  Epoch:   39	Test Accuracy: 84.69%	Test Loss: 0.5756
+2022-10-10 07:52:44 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.54%	Test Loss: 2.6724
+2022-10-10 07:52:47 [INFO ]  Epoch:   40	Test Accuracy: 85.51%	Test Loss: 0.5555
+2022-10-10 07:52:48 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.00%	Test Loss: 2.8292
+2022-10-10 07:52:52 [INFO ]  Epoch:   41	Test Accuracy: 85.65%	Test Loss: 0.5465
+2022-10-10 07:52:53 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.40%	Test Loss: 2.7536
+2022-10-10 07:52:56 [INFO ]  Epoch:   42	Test Accuracy: 85.49%	Test Loss: 0.5478
+2022-10-10 07:52:57 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.74%	Test Loss: 2.7751
+2022-10-10 07:53:00 [INFO ]  Epoch:   43	Test Accuracy: 85.33%	Test Loss: 0.5547
+2022-10-10 07:53:01 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.33%	Test Loss: 2.6530
+2022-10-10 07:53:04 [INFO ]  Epoch:   44	Test Accuracy: 85.45%	Test Loss: 0.5497
+2022-10-10 07:53:04 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.62%	Test Loss: 2.6225
+2022-10-10 07:53:08 [INFO ]  Epoch:   45	Test Accuracy: 86.03%	Test Loss: 0.5373
+2022-10-10 07:53:09 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.96%	Test Loss: 2.7199
+2022-10-10 07:53:12 [INFO ]  Epoch:   46	Test Accuracy: 85.95%	Test Loss: 0.5397
+2022-10-10 07:53:12 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.98%	Test Loss: 2.5897
+2022-10-10 07:53:15 [INFO ]  Epoch:   47	Test Accuracy: 85.61%	Test Loss: 0.5486
+2022-10-10 07:53:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.72%	Test Loss: 2.6713
+2022-10-10 07:53:19 [INFO ]  Epoch:   48	Test Accuracy: 85.73%	Test Loss: 0.5425
+2022-10-10 07:53:20 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.73%	Test Loss: 2.7281
+2022-10-10 07:53:23 [INFO ]  Epoch:   49	Test Accuracy: 86.00%	Test Loss: 0.5337
+2022-10-10 07:53:24 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.60%	Test Loss: 2.5748
+2022-10-10 07:53:24 [INFO ]  List of accuracies: [0.4647357098955132, 0.5713736939151813, 0.6392901044867855, 0.6817762753534112, 0.715619237861094, 0.7476567301782422, 0.7692071296865396, 0.781499692685925, 0.7922556853103873, 0.7963275968039336, 0.8075445605408728, 0.8060464044253227, 0.8126920712968654, 0.8196066379840197, 0.8233328211432084, 0.8204901659496004, 0.826521204671174, 0.8273663183773817, 0.8305547019053473, 0.8357790411800861, 0.8351644130301168, 0.8368162261831592, 0.8338583282114321, 0.8364704978488015, 0.8370467117393977, 0.8429625076828519, 0.8410033804548248, 0.8434618930547019, 0.843039336201598, 0.8418484941610326, 0.8489167178856791, 0.847879532882606, 0.8490319606637984, 0.8519130301167793, 0.8474185617701291, 0.8491472034419176, 0.8499923171481254, 0.8546020282728949, 0.8510679164105716, 0.8469191763982791, 0.8550629993853719, 0.8565227412415488, 0.8549093423478795, 0.8533343577135832, 0.8545251997541488, 0.8603257529194838, 0.859480639213276, 0.856138598647818, 0.8573294406883836, 0.8600184388444991]
+2022-10-10 07:53:24 [INFO ]  List of losses: [1.6426983922994716, 1.358950039911065, 1.189848089188832, 1.079934000016431, 0.9804037782262276, 0.8948360729158914, 0.8291211154611842, 0.7958853369339449, 0.7618644951162121, 0.750575741449601, 0.7131855020364809, 0.7198585904150121, 0.6964614905677987, 0.6689274758008923, 0.6647846981580813, 0.671402961107288, 0.6524171964039301, 0.6423670505554162, 0.6362523534360954, 0.6243033804773331, 0.6227155625636986, 0.616731935581988, 0.6224688147208994, 0.613545181565147, 0.6112759190977316, 0.5947479677112394, 0.5971152769251696, 0.592976806349892, 0.5879695396446786, 0.5938382573705109, 0.5754696213546968, 0.5737936058583696, 0.5656649924233126, 0.5663771485725502, 0.5768501408347779, 0.5706497888735048, 0.5681114261254403, 0.5562789438689641, 0.5644436591816007, 0.5755656505554236, 0.555460324372407, 0.5464907847230392, 0.5477691514402646, 0.5547245151071953, 0.5496765469654836, 0.5373239986135979, 0.5396605364442532, 0.548614226460237, 0.5424840120574632, 0.5337054411472538]
+2022-10-10 07:53:24 [INFO ]  List of source accuracies: [0.8945, 0.8285, 0.77, 0.7686, 0.6769, 0.6694, 0.6647, 0.663, 0.6583, 0.6571, 0.6477, 0.6379, 0.6544, 0.658, 0.6416, 0.6477, 0.6449, 0.654, 0.6226, 0.6493, 0.64, 0.6339, 0.6354, 0.6367, 0.64, 0.6283, 0.6339, 0.6372, 0.6326, 0.6322, 0.6437, 0.6279, 0.6262, 0.6286, 0.6313, 0.6314, 0.6427, 0.626, 0.6392, 0.6354, 0.62, 0.614, 0.6174, 0.6233, 0.6262, 0.6196, 0.6398, 0.6372, 0.6273, 0.636]
+2022-10-10 07:53:25 [INFO ]   
+2022-10-10 07:53:25 [INFO ]  SVHN: Evaluation AFTER forgetting:
+2022-10-10 07:53:25 [INFO ]  Test Accuracy: 86.00%	Test Loss: 0.5337
+2022-10-10 07:53:26 [INFO ]   
+2022-10-10 07:53:26 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 07:53:26 [INFO ]  Test Accuracy: 63.60%	Test Loss: 2.5748
+2022-10-10 07:53:26 [INFO ]  CPU Time: 1.69 minutes
+2022-10-10 07:57:04 [INFO ]  ======================================== 2022-10-10 07:57:04 ========================================
+2022-10-10 07:57:04 [INFO ]  Base directory is ./results/forgetting/MNIST_RGB/
+2022-10-10 07:57:04 [INFO ]  Options: 
+2022-10-10 07:57:04 [INFO ]  	base_dir: null
+2022-10-10 07:57:04 [INFO ]  	batch_size: 1024
+2022-10-10 07:57:04 [INFO ]  	checkpoint_interval: 300
+2022-10-10 07:57:04 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 07:57:04 [INFO ]  	dataset_labels:
+2022-10-10 07:57:04 [INFO ]  	- 0
+2022-10-10 07:57:04 [INFO ]  	- 1
+2022-10-10 07:57:04 [INFO ]  	- 2
+2022-10-10 07:57:04 [INFO ]  	- 3
+2022-10-10 07:57:04 [INFO ]  	- 4
+2022-10-10 07:57:04 [INFO ]  	- 5
+2022-10-10 07:57:04 [INFO ]  	- 6
+2022-10-10 07:57:04 [INFO ]  	- 7
+2022-10-10 07:57:04 [INFO ]  	- 8
+2022-10-10 07:57:04 [INFO ]  	- 9
+2022-10-10 07:57:04 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 07:57:04 [INFO ]  	- !!python/tuple
+2022-10-10 07:57:04 [INFO ]  	    - 0.1307
+2022-10-10 07:57:04 [INFO ]  	    - 0.1307
+2022-10-10 07:57:04 [INFO ]  	    - 0.1307
+2022-10-10 07:57:04 [INFO ]  	- !!python/tuple
+2022-10-10 07:57:04 [INFO ]  	    - 0.3081
+2022-10-10 07:57:04 [INFO ]  	    - 0.3081
+2022-10-10 07:57:04 [INFO ]  	    - 0.3081
+2022-10-10 07:57:04 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 07:57:04 [INFO ]  	decay_epochs: 50
+2022-10-10 07:57:04 [INFO ]  	decay_factor: 0.1
+2022-10-10 07:57:04 [INFO ]  	device_id: 0
+2022-10-10 07:57:04 [INFO ]  	distill_epochs: 1
+2022-10-10 07:57:04 [INFO ]  	distill_lr: 0.02
+2022-10-10 07:57:04 [INFO ]  	distill_steps: 1
+2022-10-10 07:57:04 [INFO ]  	epochs: 50
+2022-10-10 07:57:04 [INFO ]  	expand_cls: false
+2022-10-10 07:57:04 [INFO ]  	forgetting_dataset: SVHN
+2022-10-10 07:57:04 [INFO ]  	init: xavier
+2022-10-10 07:57:04 [INFO ]  	init_param: 1.0
+2022-10-10 07:57:04 [INFO ]  	input_size: 32
+2022-10-10 07:57:04 [INFO ]  	ipc: 1
+2022-10-10 07:57:04 [INFO ]  	log_file: ./results/forgetting/MNIST_RGB/log.txt
+2022-10-10 07:57:04 [INFO ]  	log_interval: 100
+2022-10-10 07:57:04 [INFO ]  	log_level: INFO
+2022-10-10 07:57:04 [INFO ]  	lr: 0.0002
+2022-10-10 07:57:04 [INFO ]  	mode: forgetting
+2022-10-10 07:57:04 [INFO ]  	nc: 3
+2022-10-10 07:57:04 [INFO ]  	num_classes: 10
+2022-10-10 07:57:04 [INFO ]  	num_workers: 8
+2022-10-10 07:57:04 [INFO ]  	phase: train
+2022-10-10 07:57:04 [INFO ]  	source_dataset: null
+2022-10-10 07:57:04 [INFO ]  	start_time: '2022-10-10 07:57:04'
+2022-10-10 07:57:04 [INFO ]  	test_batch_size: 1024
+2022-10-10 07:57:04 [INFO ]  	
+2022-10-10 07:57:06 [INFO ]  train dataset size:	60000
+2022-10-10 07:57:06 [INFO ]  test dataset size: 	10000
+2022-10-10 07:57:06 [INFO ]  datasets built!
+2022-10-10 07:57:06 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 07:57:08 [INFO ]   
+2022-10-10 07:57:08 [INFO ]  SVHN: Evaluation BEFORE forgetting:
+2022-10-10 07:57:08 [INFO ]  Test Accuracy: 20.90%	Test Loss: 4.2789
+2022-10-10 07:57:09 [INFO ]   
+2022-10-10 07:57:09 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 07:57:09 [INFO ]  Test Accuracy: 98.58%	Test Loss: 0.0427
+2022-10-10 07:57:12 [INFO ]  Epoch:    0	Test Accuracy: 46.69%	Test Loss: 1.6258
+2022-10-10 07:57:13 [INFO ]  Source: MNIST_RGB	Test Accuracy: 90.70%	Test Loss: 0.2842
+2022-10-10 07:57:16 [INFO ]  Epoch:    1	Test Accuracy: 58.25%	Test Loss: 1.3465
+2022-10-10 07:57:17 [INFO ]  Source: MNIST_RGB	Test Accuracy: 81.15%	Test Loss: 0.6474
+2022-10-10 07:57:20 [INFO ]  Epoch:    2	Test Accuracy: 63.61%	Test Loss: 1.2042
+2022-10-10 07:57:21 [INFO ]  Source: MNIST_RGB	Test Accuracy: 75.48%	Test Loss: 0.9801
+2022-10-10 07:57:24 [INFO ]  Epoch:    3	Test Accuracy: 68.67%	Test Loss: 1.0650
+2022-10-10 07:57:25 [INFO ]  Source: MNIST_RGB	Test Accuracy: 73.55%	Test Loss: 1.1691
+2022-10-10 07:57:28 [INFO ]  Epoch:    4	Test Accuracy: 72.15%	Test Loss: 0.9737
+2022-10-10 07:57:29 [INFO ]  Source: MNIST_RGB	Test Accuracy: 70.16%	Test Loss: 1.4256
+2022-10-10 07:57:32 [INFO ]  Epoch:    5	Test Accuracy: 74.15%	Test Loss: 0.8988
+2022-10-10 07:57:33 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.13%	Test Loss: 1.7385
+2022-10-10 07:57:36 [INFO ]  Epoch:    6	Test Accuracy: 76.57%	Test Loss: 0.8400
+2022-10-10 07:57:37 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.62%	Test Loss: 2.0102
+2022-10-10 07:57:40 [INFO ]  Epoch:    7	Test Accuracy: 78.08%	Test Loss: 0.7894
+2022-10-10 07:57:41 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.10%	Test Loss: 2.1387
+2022-10-10 07:57:44 [INFO ]  Epoch:    8	Test Accuracy: 79.48%	Test Loss: 0.7545
+2022-10-10 07:57:45 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.27%	Test Loss: 2.2655
+2022-10-10 07:57:48 [INFO ]  Epoch:    9	Test Accuracy: 80.04%	Test Loss: 0.7434
+2022-10-10 07:57:49 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.05%	Test Loss: 2.3286
+2022-10-10 07:57:52 [INFO ]  Epoch:   10	Test Accuracy: 80.42%	Test Loss: 0.7267
+2022-10-10 07:57:53 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.49%	Test Loss: 2.5350
+2022-10-10 07:57:56 [INFO ]  Epoch:   11	Test Accuracy: 81.18%	Test Loss: 0.6982
+2022-10-10 07:57:57 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.99%	Test Loss: 2.5026
+2022-10-10 07:58:00 [INFO ]  Epoch:   12	Test Accuracy: 81.81%	Test Loss: 0.6830
+2022-10-10 07:58:01 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.69%	Test Loss: 2.5221
+2022-10-10 07:58:04 [INFO ]  Epoch:   13	Test Accuracy: 81.73%	Test Loss: 0.6820
+2022-10-10 07:58:05 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.03%	Test Loss: 2.6388
+2022-10-10 07:58:08 [INFO ]  Epoch:   14	Test Accuracy: 81.94%	Test Loss: 0.6745
+2022-10-10 07:58:08 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.77%	Test Loss: 2.5819
+2022-10-10 07:58:11 [INFO ]  Epoch:   15	Test Accuracy: 82.10%	Test Loss: 0.6668
+2022-10-10 07:58:12 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.59%	Test Loss: 2.6227
+2022-10-10 07:58:15 [INFO ]  Epoch:   16	Test Accuracy: 82.77%	Test Loss: 0.6474
+2022-10-10 07:58:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.85%	Test Loss: 2.7096
+2022-10-10 07:58:19 [INFO ]  Epoch:   17	Test Accuracy: 82.96%	Test Loss: 0.6463
+2022-10-10 07:58:20 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.34%	Test Loss: 2.7915
+2022-10-10 07:58:23 [INFO ]  Epoch:   18	Test Accuracy: 82.99%	Test Loss: 0.6359
+2022-10-10 07:58:24 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.82%	Test Loss: 2.6612
+2022-10-10 07:58:27 [INFO ]  Epoch:   19	Test Accuracy: 83.21%	Test Loss: 0.6316
+2022-10-10 07:58:28 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.17%	Test Loss: 2.7462
+2022-10-10 07:58:31 [INFO ]  Epoch:   20	Test Accuracy: 83.11%	Test Loss: 0.6330
+2022-10-10 07:58:32 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.25%	Test Loss: 2.7007
+2022-10-10 07:58:35 [INFO ]  Epoch:   21	Test Accuracy: 83.71%	Test Loss: 0.6150
+2022-10-10 07:58:36 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.43%	Test Loss: 2.7360
+2022-10-10 07:58:39 [INFO ]  Epoch:   22	Test Accuracy: 83.47%	Test Loss: 0.6252
+2022-10-10 07:58:40 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.95%	Test Loss: 2.8670
+2022-10-10 07:58:43 [INFO ]  Epoch:   23	Test Accuracy: 83.78%	Test Loss: 0.6116
+2022-10-10 07:58:44 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.34%	Test Loss: 2.6861
+2022-10-10 07:58:47 [INFO ]  Epoch:   24	Test Accuracy: 84.05%	Test Loss: 0.6059
+2022-10-10 07:58:48 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.01%	Test Loss: 2.7534
+2022-10-10 07:58:51 [INFO ]  Epoch:   25	Test Accuracy: 84.30%	Test Loss: 0.5952
+2022-10-10 07:58:51 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.52%	Test Loss: 2.6834
+2022-10-10 07:58:54 [INFO ]  Epoch:   26	Test Accuracy: 83.66%	Test Loss: 0.6157
+2022-10-10 07:58:55 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.78%	Test Loss: 2.8030
+2022-10-10 07:58:58 [INFO ]  Epoch:   27	Test Accuracy: 84.73%	Test Loss: 0.5811
+2022-10-10 07:58:59 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.17%	Test Loss: 2.6551
+2022-10-10 07:59:02 [INFO ]  Epoch:   28	Test Accuracy: 84.81%	Test Loss: 0.5785
+2022-10-10 07:59:03 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.43%	Test Loss: 2.6575
+2022-10-10 07:59:06 [INFO ]  Epoch:   29	Test Accuracy: 84.66%	Test Loss: 0.5868
+2022-10-10 07:59:07 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.95%	Test Loss: 2.7397
+2022-10-10 07:59:10 [INFO ]  Epoch:   30	Test Accuracy: 84.25%	Test Loss: 0.5912
+2022-10-10 07:59:11 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.04%	Test Loss: 2.8013
+2022-10-10 07:59:14 [INFO ]  Epoch:   31	Test Accuracy: 84.25%	Test Loss: 0.5947
+2022-10-10 07:59:15 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.16%	Test Loss: 2.6773
+2022-10-10 07:59:18 [INFO ]  Epoch:   32	Test Accuracy: 84.71%	Test Loss: 0.5759
+2022-10-10 07:59:19 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.15%	Test Loss: 2.6468
+2022-10-10 07:59:22 [INFO ]  Epoch:   33	Test Accuracy: 84.78%	Test Loss: 0.5732
+2022-10-10 07:59:23 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.59%	Test Loss: 2.7860
+2022-10-10 07:59:26 [INFO ]  Epoch:   34	Test Accuracy: 84.91%	Test Loss: 0.5717
+2022-10-10 07:59:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.69%	Test Loss: 2.8363
+2022-10-10 07:59:30 [INFO ]  Epoch:   35	Test Accuracy: 85.23%	Test Loss: 0.5626
+2022-10-10 07:59:31 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.29%	Test Loss: 2.5818
+2022-10-10 07:59:34 [INFO ]  Epoch:   36	Test Accuracy: 84.60%	Test Loss: 0.5766
+2022-10-10 07:59:35 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.09%	Test Loss: 2.6403
+2022-10-10 07:59:38 [INFO ]  Epoch:   37	Test Accuracy: 85.32%	Test Loss: 0.5570
+2022-10-10 07:59:39 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.29%	Test Loss: 2.6687
+2022-10-10 07:59:42 [INFO ]  Epoch:   38	Test Accuracy: 84.95%	Test Loss: 0.5695
+2022-10-10 07:59:43 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.17%	Test Loss: 2.6120
+2022-10-10 07:59:46 [INFO ]  Epoch:   39	Test Accuracy: 84.91%	Test Loss: 0.5716
+2022-10-10 07:59:47 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.21%	Test Loss: 2.9170
+2022-10-10 07:59:50 [INFO ]  Epoch:   40	Test Accuracy: 85.44%	Test Loss: 0.5552
+2022-10-10 07:59:51 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.89%	Test Loss: 2.6136
+2022-10-10 07:59:54 [INFO ]  Epoch:   41	Test Accuracy: 85.61%	Test Loss: 0.5497
+2022-10-10 07:59:55 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.67%	Test Loss: 2.8822
+2022-10-10 07:59:58 [INFO ]  Epoch:   42	Test Accuracy: 84.62%	Test Loss: 0.5842
+2022-10-10 07:59:59 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.96%	Test Loss: 2.7373
+2022-10-10 08:00:02 [INFO ]  Epoch:   43	Test Accuracy: 85.56%	Test Loss: 0.5474
+2022-10-10 08:00:03 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.80%	Test Loss: 2.6793
+2022-10-10 08:00:06 [INFO ]  Epoch:   44	Test Accuracy: 85.65%	Test Loss: 0.5441
+2022-10-10 08:00:07 [INFO ]  Source: MNIST_RGB	Test Accuracy: 60.83%	Test Loss: 2.8612
+2022-10-10 08:00:10 [INFO ]  Epoch:   45	Test Accuracy: 85.72%	Test Loss: 0.5471
+2022-10-10 08:00:11 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.49%	Test Loss: 2.6679
+2022-10-10 08:00:14 [INFO ]  Epoch:   46	Test Accuracy: 85.93%	Test Loss: 0.5418
+2022-10-10 08:00:14 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.63%	Test Loss: 2.5727
+2022-10-10 08:00:17 [INFO ]  Epoch:   47	Test Accuracy: 85.92%	Test Loss: 0.5372
+2022-10-10 08:00:18 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.10%	Test Loss: 2.8623
+2022-10-10 08:00:22 [INFO ]  Epoch:   48	Test Accuracy: 85.92%	Test Loss: 0.5404
+2022-10-10 08:00:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.61%	Test Loss: 2.7883
+2022-10-10 08:00:26 [INFO ]  Epoch:   49	Test Accuracy: 85.97%	Test Loss: 0.5373
+2022-10-10 08:00:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.13%	Test Loss: 2.7392
+2022-10-10 08:00:27 [INFO ]  List of accuracies: [0.46688690842040564, 0.5825138291333744, 0.6360633066994469, 0.6866933005531654, 0.7214582052858021, 0.7415104486785494, 0.7657114320835894, 0.7807698217578365, 0.7947910264290104, 0.8004379225568531, 0.8041641057160418, 0.8118085433312846, 0.8181468961278426, 0.8173017824216349, 0.8193761524277812, 0.8209511370620775, 0.8277120467117394, 0.8295943454210203, 0.829940073755378, 0.8320528580208973, 0.8310540872771973, 0.8370851259987707, 0.8347418561770129, 0.8378149969268592, 0.8404655808236017, 0.8429625076828519, 0.8366241548862938, 0.8472649047326367, 0.8481100184388445, 0.8465734480639213, 0.842539950829748, 0.842539950829748, 0.8471112476951445, 0.8478027043638598, 0.8491472034419176, 0.8523355869698832, 0.8459972341733252, 0.8532191149354641, 0.8494545175169023, 0.8491087891825445, 0.8544099569760295, 0.856100184388445, 0.8462277197295636, 0.8555623847572219, 0.8565227412415488, 0.8571757836508912, 0.8593269821757836, 0.8592117393976644, 0.8592117393976644, 0.8597495390288875]
+2022-10-10 08:00:27 [INFO ]  List of losses: [1.6258145375125748, 1.3465153272707329, 1.2041857156126354, 1.0650197189134107, 0.9737042624597251, 0.8988482739636703, 0.8400191006370314, 0.7893931324964076, 0.7545271324246811, 0.7433749165502734, 0.7267380335174166, 0.6981803563451503, 0.682963143262529, 0.6819984433690536, 0.6745224503116807, 0.666836326519404, 0.6473923866633045, 0.646300703305442, 0.6359123506645666, 0.6315614059063724, 0.6330429351469016, 0.6149927923557724, 0.6252301573093932, 0.6116365855943227, 0.6059348370740218, 0.5951784997903722, 0.6156823287804433, 0.581107913898264, 0.578536954480003, 0.5868449917437478, 0.5912110405460632, 0.5946802245962451, 0.5758656359334335, 0.5732080510004064, 0.5716533971550865, 0.5625872157729324, 0.5766217584029691, 0.5569599347387125, 0.5694515378327185, 0.571611358698849, 0.5552142928111164, 0.5497129946745607, 0.5842301363437983, 0.5474295589772924, 0.5440860864349721, 0.5471493123716273, 0.5418300605215907, 0.5371808695075112, 0.5403869209219212, 0.5372511958079464]
+2022-10-10 08:00:27 [INFO ]  List of source accuracies: [0.907, 0.8115, 0.7548, 0.7355, 0.7016, 0.6613, 0.6562, 0.651, 0.6527, 0.6605, 0.6449, 0.6499, 0.6469, 0.6403, 0.6477, 0.6459, 0.6385, 0.6334, 0.6382, 0.6417, 0.6325, 0.6343, 0.6295, 0.6434, 0.6301, 0.6352, 0.6378, 0.6317, 0.6343, 0.6295, 0.6304, 0.6316, 0.6315, 0.6259, 0.6269, 0.6429, 0.6309, 0.6329, 0.6417, 0.6121, 0.6389, 0.6167, 0.6296, 0.628, 0.6083, 0.6349, 0.6363, 0.611, 0.6161, 0.6213]
+2022-10-10 08:00:28 [INFO ]   
+2022-10-10 08:00:28 [INFO ]  SVHN: Evaluation AFTER forgetting:
+2022-10-10 08:00:28 [INFO ]  Test Accuracy: 85.97%	Test Loss: 0.5373
+2022-10-10 08:00:28 [INFO ]   
+2022-10-10 08:00:28 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 08:00:28 [INFO ]  Test Accuracy: 62.13%	Test Loss: 2.7392
+2022-10-10 08:00:28 [INFO ]  CPU Time: 1.68 minutes
+2022-10-10 08:02:12 [INFO ]  ======================================== 2022-10-10 08:02:12 ========================================
+2022-10-10 08:02:12 [INFO ]  Base directory is ./results/forgetting/MNIST_RGB/
+2022-10-10 08:02:12 [INFO ]  Options: 
+2022-10-10 08:02:12 [INFO ]  	base_dir: null
+2022-10-10 08:02:12 [INFO ]  	batch_size: 1024
+2022-10-10 08:02:12 [INFO ]  	checkpoint_interval: 300
+2022-10-10 08:02:12 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 08:02:12 [INFO ]  	dataset_labels:
+2022-10-10 08:02:12 [INFO ]  	- 0
+2022-10-10 08:02:12 [INFO ]  	- 1
+2022-10-10 08:02:12 [INFO ]  	- 2
+2022-10-10 08:02:12 [INFO ]  	- 3
+2022-10-10 08:02:12 [INFO ]  	- 4
+2022-10-10 08:02:12 [INFO ]  	- 5
+2022-10-10 08:02:12 [INFO ]  	- 6
+2022-10-10 08:02:12 [INFO ]  	- 7
+2022-10-10 08:02:12 [INFO ]  	- 8
+2022-10-10 08:02:12 [INFO ]  	- 9
+2022-10-10 08:02:12 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 08:02:12 [INFO ]  	- !!python/tuple
+2022-10-10 08:02:12 [INFO ]  	    - 0.1307
+2022-10-10 08:02:12 [INFO ]  	    - 0.1307
+2022-10-10 08:02:12 [INFO ]  	    - 0.1307
+2022-10-10 08:02:12 [INFO ]  	- !!python/tuple
+2022-10-10 08:02:12 [INFO ]  	    - 0.3081
+2022-10-10 08:02:12 [INFO ]  	    - 0.3081
+2022-10-10 08:02:12 [INFO ]  	    - 0.3081
+2022-10-10 08:02:12 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 08:02:12 [INFO ]  	decay_epochs: 50
+2022-10-10 08:02:12 [INFO ]  	decay_factor: 0.1
+2022-10-10 08:02:12 [INFO ]  	device_id: 0
+2022-10-10 08:02:12 [INFO ]  	distill_epochs: 1
+2022-10-10 08:02:12 [INFO ]  	distill_lr: 0.02
+2022-10-10 08:02:12 [INFO ]  	distill_steps: 1
+2022-10-10 08:02:12 [INFO ]  	epochs: 50
+2022-10-10 08:02:12 [INFO ]  	expand_cls: false
+2022-10-10 08:02:12 [INFO ]  	forgetting_dataset: SVHN
+2022-10-10 08:02:12 [INFO ]  	init: xavier
+2022-10-10 08:02:12 [INFO ]  	init_param: 1.0
+2022-10-10 08:02:12 [INFO ]  	input_size: 32
+2022-10-10 08:02:12 [INFO ]  	ipc: 1
+2022-10-10 08:02:12 [INFO ]  	log_file: ./results/forgetting/MNIST_RGB/log.txt
+2022-10-10 08:02:12 [INFO ]  	log_interval: 100
+2022-10-10 08:02:12 [INFO ]  	log_level: INFO
+2022-10-10 08:02:12 [INFO ]  	lr: 0.0002
+2022-10-10 08:02:12 [INFO ]  	mode: forgetting
+2022-10-10 08:02:12 [INFO ]  	nc: 3
+2022-10-10 08:02:12 [INFO ]  	num_classes: 10
+2022-10-10 08:02:12 [INFO ]  	num_workers: 8
+2022-10-10 08:02:12 [INFO ]  	phase: train
+2022-10-10 08:02:12 [INFO ]  	source_dataset: null
+2022-10-10 08:02:12 [INFO ]  	start_time: '2022-10-10 08:02:12'
+2022-10-10 08:02:12 [INFO ]  	test_batch_size: 1024
+2022-10-10 08:02:12 [INFO ]  	
+2022-10-10 08:02:14 [INFO ]  train dataset size:	60000
+2022-10-10 08:02:14 [INFO ]  test dataset size: 	10000
+2022-10-10 08:02:14 [INFO ]  datasets built!
+2022-10-10 08:02:14 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 08:02:17 [INFO ]   
+2022-10-10 08:02:17 [INFO ]  SVHN: Evaluation BEFORE forgetting:
+2022-10-10 08:02:17 [INFO ]  Test Accuracy: 20.90%	Test Loss: 4.2789
+2022-10-10 08:02:18 [INFO ]   
+2022-10-10 08:02:18 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 08:02:18 [INFO ]  Test Accuracy: 98.58%	Test Loss: 0.0427
+2022-10-10 08:02:21 [INFO ]  Epoch:    0	Test Accuracy: 46.60%	Test Loss: 1.6342
+2022-10-10 08:02:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 90.63%	Test Loss: 0.2909
+2022-10-10 08:02:24 [INFO ]  Epoch:    1	Test Accuracy: 57.86%	Test Loss: 1.3557
+2022-10-10 08:02:25 [INFO ]  Source: MNIST_RGB	Test Accuracy: 82.72%	Test Loss: 0.5900
+2022-10-10 08:02:28 [INFO ]  Epoch:    2	Test Accuracy: 64.03%	Test Loss: 1.1911
+2022-10-10 08:02:29 [INFO ]  Source: MNIST_RGB	Test Accuracy: 77.77%	Test Loss: 0.8953
+2022-10-10 08:02:32 [INFO ]  Epoch:    3	Test Accuracy: 68.15%	Test Loss: 1.0843
+2022-10-10 08:02:33 [INFO ]  Source: MNIST_RGB	Test Accuracy: 72.57%	Test Loss: 1.1758
+2022-10-10 08:02:36 [INFO ]  Epoch:    4	Test Accuracy: 72.13%	Test Loss: 0.9658
+2022-10-10 08:02:37 [INFO ]  Source: MNIST_RGB	Test Accuracy: 68.59%	Test Loss: 1.4857
+2022-10-10 08:02:40 [INFO ]  Epoch:    5	Test Accuracy: 74.74%	Test Loss: 0.8929
+2022-10-10 08:02:41 [INFO ]  Source: MNIST_RGB	Test Accuracy: 68.32%	Test Loss: 1.6401
+2022-10-10 08:02:44 [INFO ]  Epoch:    6	Test Accuracy: 76.80%	Test Loss: 0.8332
+2022-10-10 08:02:45 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.13%	Test Loss: 1.9395
+2022-10-10 08:02:48 [INFO ]  Epoch:    7	Test Accuracy: 77.68%	Test Loss: 0.8068
+2022-10-10 08:02:49 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.38%	Test Loss: 2.1413
+2022-10-10 08:02:52 [INFO ]  Epoch:    8	Test Accuracy: 79.33%	Test Loss: 0.7647
+2022-10-10 08:02:53 [INFO ]  Source: MNIST_RGB	Test Accuracy: 67.53%	Test Loss: 2.0824
+2022-10-10 08:02:56 [INFO ]  Epoch:    9	Test Accuracy: 79.91%	Test Loss: 0.7374
+2022-10-10 08:02:57 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.07%	Test Loss: 2.2531
+2022-10-10 08:03:00 [INFO ]  Epoch:   10	Test Accuracy: 80.17%	Test Loss: 0.7330
+2022-10-10 08:03:01 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.28%	Test Loss: 2.6093
+2022-10-10 08:03:04 [INFO ]  Epoch:   11	Test Accuracy: 80.92%	Test Loss: 0.7010
+2022-10-10 08:03:04 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.70%	Test Loss: 2.5159
+2022-10-10 08:03:08 [INFO ]  Epoch:   12	Test Accuracy: 81.45%	Test Loss: 0.6883
+2022-10-10 08:03:08 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.77%	Test Loss: 2.5503
+2022-10-10 08:03:11 [INFO ]  Epoch:   13	Test Accuracy: 81.17%	Test Loss: 0.6951
+2022-10-10 08:03:12 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.22%	Test Loss: 2.6406
+2022-10-10 08:03:15 [INFO ]  Epoch:   14	Test Accuracy: 81.73%	Test Loss: 0.6783
+2022-10-10 08:03:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.58%	Test Loss: 2.5050
+2022-10-10 08:03:19 [INFO ]  Epoch:   15	Test Accuracy: 81.82%	Test Loss: 0.6728
+2022-10-10 08:03:20 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.04%	Test Loss: 2.5537
+2022-10-10 08:03:23 [INFO ]  Epoch:   16	Test Accuracy: 82.04%	Test Loss: 0.6672
+2022-10-10 08:03:24 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.95%	Test Loss: 2.6212
+2022-10-10 08:03:27 [INFO ]  Epoch:   17	Test Accuracy: 82.89%	Test Loss: 0.6440
+2022-10-10 08:03:28 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.45%	Test Loss: 2.7417
+2022-10-10 08:03:31 [INFO ]  Epoch:   18	Test Accuracy: 83.00%	Test Loss: 0.6349
+2022-10-10 08:03:32 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.81%	Test Loss: 2.5421
+2022-10-10 08:03:35 [INFO ]  Epoch:   19	Test Accuracy: 83.09%	Test Loss: 0.6330
+2022-10-10 08:03:36 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.37%	Test Loss: 2.5914
+2022-10-10 08:03:39 [INFO ]  Epoch:   20	Test Accuracy: 83.64%	Test Loss: 0.6187
+2022-10-10 08:03:40 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.88%	Test Loss: 2.6046
+2022-10-10 08:03:43 [INFO ]  Epoch:   21	Test Accuracy: 83.65%	Test Loss: 0.6125
+2022-10-10 08:03:44 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.26%	Test Loss: 2.6473
+2022-10-10 08:03:47 [INFO ]  Epoch:   22	Test Accuracy: 83.43%	Test Loss: 0.6230
+2022-10-10 08:03:48 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.05%	Test Loss: 2.7567
+2022-10-10 08:03:51 [INFO ]  Epoch:   23	Test Accuracy: 83.97%	Test Loss: 0.6002
+2022-10-10 08:03:52 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.22%	Test Loss: 2.6345
+2022-10-10 08:03:55 [INFO ]  Epoch:   24	Test Accuracy: 83.97%	Test Loss: 0.6086
+2022-10-10 08:03:56 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.18%	Test Loss: 2.7828
+2022-10-10 08:03:59 [INFO ]  Epoch:   25	Test Accuracy: 83.64%	Test Loss: 0.6135
+2022-10-10 08:04:00 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.79%	Test Loss: 2.6675
+2022-10-10 08:04:03 [INFO ]  Epoch:   26	Test Accuracy: 84.30%	Test Loss: 0.5923
+2022-10-10 08:04:04 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.62%	Test Loss: 2.6886
+2022-10-10 08:04:07 [INFO ]  Epoch:   27	Test Accuracy: 84.27%	Test Loss: 0.5937
+2022-10-10 08:04:08 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.83%	Test Loss: 2.7944
+2022-10-10 08:04:11 [INFO ]  Epoch:   28	Test Accuracy: 84.61%	Test Loss: 0.5823
+2022-10-10 08:04:12 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.51%	Test Loss: 2.6410
+2022-10-10 08:04:15 [INFO ]  Epoch:   29	Test Accuracy: 84.48%	Test Loss: 0.5842
+2022-10-10 08:04:16 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.84%	Test Loss: 2.6415
+2022-10-10 08:04:19 [INFO ]  Epoch:   30	Test Accuracy: 84.83%	Test Loss: 0.5783
+2022-10-10 08:04:19 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.90%	Test Loss: 2.8334
+2022-10-10 08:04:23 [INFO ]  Epoch:   31	Test Accuracy: 84.62%	Test Loss: 0.5789
+2022-10-10 08:04:23 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.77%	Test Loss: 2.7951
+2022-10-10 08:04:26 [INFO ]  Epoch:   32	Test Accuracy: 84.50%	Test Loss: 0.5821
+2022-10-10 08:04:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.69%	Test Loss: 2.7284
+2022-10-10 08:04:30 [INFO ]  Epoch:   33	Test Accuracy: 85.13%	Test Loss: 0.5654
+2022-10-10 08:04:31 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.00%	Test Loss: 2.5844
+2022-10-10 08:04:34 [INFO ]  Epoch:   34	Test Accuracy: 85.23%	Test Loss: 0.5634
+2022-10-10 08:04:35 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.20%	Test Loss: 2.8002
+2022-10-10 08:04:38 [INFO ]  Epoch:   35	Test Accuracy: 85.02%	Test Loss: 0.5662
+2022-10-10 08:04:39 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.37%	Test Loss: 2.5879
+2022-10-10 08:04:42 [INFO ]  Epoch:   36	Test Accuracy: 85.51%	Test Loss: 0.5551
+2022-10-10 08:04:43 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.63%	Test Loss: 2.5038
+2022-10-10 08:04:46 [INFO ]  Epoch:   37	Test Accuracy: 85.60%	Test Loss: 0.5525
+2022-10-10 08:04:47 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.39%	Test Loss: 2.7309
+2022-10-10 08:04:50 [INFO ]  Epoch:   38	Test Accuracy: 85.23%	Test Loss: 0.5631
+2022-10-10 08:04:51 [INFO ]  Source: MNIST_RGB	Test Accuracy: 59.48%	Test Loss: 3.0297
+2022-10-10 08:04:54 [INFO ]  Epoch:   39	Test Accuracy: 85.02%	Test Loss: 0.5634
+2022-10-10 08:04:55 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.23%	Test Loss: 2.6345
+2022-10-10 08:04:58 [INFO ]  Epoch:   40	Test Accuracy: 85.21%	Test Loss: 0.5543
+2022-10-10 08:04:59 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.50%	Test Loss: 2.6242
+2022-10-10 08:05:02 [INFO ]  Epoch:   41	Test Accuracy: 85.77%	Test Loss: 0.5457
+2022-10-10 08:05:03 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.10%	Test Loss: 2.6449
+2022-10-10 08:05:06 [INFO ]  Epoch:   42	Test Accuracy: 85.45%	Test Loss: 0.5487
+2022-10-10 08:05:07 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.36%	Test Loss: 2.6158
+2022-10-10 08:05:10 [INFO ]  Epoch:   43	Test Accuracy: 85.44%	Test Loss: 0.5521
+2022-10-10 08:05:11 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.89%	Test Loss: 2.6898
+2022-10-10 08:05:14 [INFO ]  Epoch:   44	Test Accuracy: 85.76%	Test Loss: 0.5528
+2022-10-10 08:05:15 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.84%	Test Loss: 2.7107
+2022-10-10 08:05:18 [INFO ]  Epoch:   45	Test Accuracy: 85.93%	Test Loss: 0.5418
+2022-10-10 08:05:19 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.05%	Test Loss: 2.6694
+2022-10-10 08:05:22 [INFO ]  Epoch:   46	Test Accuracy: 85.78%	Test Loss: 0.5493
+2022-10-10 08:05:23 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.81%	Test Loss: 2.8273
+2022-10-10 08:05:26 [INFO ]  Epoch:   47	Test Accuracy: 86.00%	Test Loss: 0.5346
+2022-10-10 08:05:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.77%	Test Loss: 2.7011
+2022-10-10 08:05:30 [INFO ]  Epoch:   48	Test Accuracy: 86.22%	Test Loss: 0.5260
+2022-10-10 08:05:31 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.54%	Test Loss: 2.6016
+2022-10-10 08:05:34 [INFO ]  Epoch:   49	Test Accuracy: 86.16%	Test Loss: 0.5301
+2022-10-10 08:05:35 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.47%	Test Loss: 2.5474
+2022-10-10 08:05:35 [INFO ]  List of accuracies: [0.46596496619545175, 0.5785571604179471, 0.6403272894898586, 0.6815073755377996, 0.7213429625076828, 0.7473878303626306, 0.7680162876459742, 0.7767747387830363, 0.7933312845728334, 0.7991318377381684, 0.8017055931161647, 0.8091963736939152, 0.814459127228027, 0.8116933005531654, 0.817340196681008, 0.8182237246465888, 0.8203749231714813, 0.8289413030116779, 0.829978488014751, 0.8309388444990781, 0.8363936693300553, 0.8365089121081746, 0.834319299323909, 0.8396972956361402, 0.839658881376767, 0.8363936693300553, 0.843000921942225, 0.8427320221266134, 0.8460740626920713, 0.8447679778733866, 0.8482636754763369, 0.8461508912108174, 0.8450368776889982, 0.851259987707437, 0.8523355869698832, 0.8502228027043639, 0.8551014136447449, 0.8559849416103258, 0.8522587584511371, 0.8501843884449908, 0.8520666871542717, 0.8577135832821143, 0.8544867854947756, 0.8544099569760295, 0.857559926244622, 0.8592885679164106, 0.8577904118008605, 0.859980024585126, 0.8621696373693916, 0.8615550092194223]
+2022-10-10 08:05:35 [INFO ]  List of losses: [1.6342389623153115, 1.355722695827191, 1.1911278380597379, 1.0842764607659863, 0.9658119574454788, 0.8928988948510187, 0.8332263838680668, 0.8068443689891438, 0.7647087200331263, 0.7374379838546068, 0.7330464537186203, 0.7009580608665686, 0.6883223673721436, 0.6950514007362033, 0.6782768216687034, 0.6728275899295069, 0.6671826714889066, 0.6440171749956709, 0.6348772043088644, 0.6330004330419952, 0.6186643060028882, 0.6125137496741916, 0.6229501676178447, 0.6001696958817363, 0.6085868933923272, 0.6134526382286855, 0.5923191532446844, 0.5936755629939834, 0.5823395992248572, 0.5841902350089854, 0.5783354976679843, 0.5788844277980362, 0.5821296853673333, 0.5653971336191245, 0.563424562338165, 0.5662286209781696, 0.555142113674471, 0.5524782680190261, 0.5630890987515816, 0.5634289332966022, 0.5542923435523016, 0.5456864685827629, 0.54870024823527, 0.5521146402669671, 0.5527984183041245, 0.5418016378617243, 0.5493334809475027, 0.5345585763857419, 0.5260324630549735, 0.5301257762428289]
+2022-10-10 08:05:35 [INFO ]  List of source accuracies: [0.9063, 0.8272, 0.7777, 0.7257, 0.6859, 0.6832, 0.6613, 0.6538, 0.6753, 0.6607, 0.6328, 0.647, 0.6477, 0.6422, 0.6558, 0.6404, 0.6495, 0.6345, 0.6481, 0.6437, 0.6488, 0.6426, 0.6305, 0.6422, 0.6418, 0.6379, 0.6362, 0.6283, 0.6351, 0.6284, 0.619, 0.6177, 0.6269, 0.63, 0.622, 0.6337, 0.6363, 0.6239, 0.5948, 0.6323, 0.625, 0.631, 0.6236, 0.6289, 0.6284, 0.6305, 0.6181, 0.6177, 0.6254, 0.6347]
+2022-10-10 08:05:36 [INFO ]   
+2022-10-10 08:05:36 [INFO ]  SVHN: Evaluation AFTER forgetting:
+2022-10-10 08:05:36 [INFO ]  Test Accuracy: 86.16%	Test Loss: 0.5301
+2022-10-10 08:05:37 [INFO ]   
+2022-10-10 08:05:37 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 08:05:37 [INFO ]  Test Accuracy: 63.47%	Test Loss: 2.5474
+2022-10-10 08:05:37 [INFO ]  CPU Time: 1.68 minutes
+2022-10-10 08:06:17 [INFO ]  ======================================== 2022-10-10 08:06:17 ========================================
+2022-10-10 08:06:17 [INFO ]  Base directory is ./results/forgetting/MNIST_RGB/
+2022-10-10 08:06:17 [INFO ]  Options: 
+2022-10-10 08:06:17 [INFO ]  	base_dir: null
+2022-10-10 08:06:17 [INFO ]  	batch_size: 1024
+2022-10-10 08:06:17 [INFO ]  	checkpoint_interval: 300
+2022-10-10 08:06:17 [INFO ]  	dataset: MNIST_RGB
+2022-10-10 08:06:17 [INFO ]  	dataset_labels:
+2022-10-10 08:06:17 [INFO ]  	- 0
+2022-10-10 08:06:17 [INFO ]  	- 1
+2022-10-10 08:06:17 [INFO ]  	- 2
+2022-10-10 08:06:17 [INFO ]  	- 3
+2022-10-10 08:06:17 [INFO ]  	- 4
+2022-10-10 08:06:17 [INFO ]  	- 5
+2022-10-10 08:06:17 [INFO ]  	- 6
+2022-10-10 08:06:17 [INFO ]  	- 7
+2022-10-10 08:06:17 [INFO ]  	- 8
+2022-10-10 08:06:17 [INFO ]  	- 9
+2022-10-10 08:06:17 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 08:06:17 [INFO ]  	- !!python/tuple
+2022-10-10 08:06:17 [INFO ]  	    - 0.1307
+2022-10-10 08:06:17 [INFO ]  	    - 0.1307
+2022-10-10 08:06:17 [INFO ]  	    - 0.1307
+2022-10-10 08:06:17 [INFO ]  	- !!python/tuple
+2022-10-10 08:06:17 [INFO ]  	    - 0.3081
+2022-10-10 08:06:17 [INFO ]  	    - 0.3081
+2022-10-10 08:06:17 [INFO ]  	    - 0.3081
+2022-10-10 08:06:17 [INFO ]  	dataset_root: ./data/mnist
+2022-10-10 08:06:17 [INFO ]  	decay_epochs: 50
+2022-10-10 08:06:17 [INFO ]  	decay_factor: 0.1
+2022-10-10 08:06:17 [INFO ]  	device_id: 0
+2022-10-10 08:06:17 [INFO ]  	distill_epochs: 1
+2022-10-10 08:06:17 [INFO ]  	distill_lr: 0.02
+2022-10-10 08:06:17 [INFO ]  	distill_steps: 1
+2022-10-10 08:06:17 [INFO ]  	epochs: 50
+2022-10-10 08:06:17 [INFO ]  	expand_cls: false
+2022-10-10 08:06:17 [INFO ]  	forgetting_dataset: SVHN
+2022-10-10 08:06:17 [INFO ]  	init: xavier
+2022-10-10 08:06:17 [INFO ]  	init_param: 1.0
+2022-10-10 08:06:17 [INFO ]  	input_size: 32
+2022-10-10 08:06:17 [INFO ]  	ipc: 1
+2022-10-10 08:06:17 [INFO ]  	log_file: ./results/forgetting/MNIST_RGB/log.txt
+2022-10-10 08:06:17 [INFO ]  	log_interval: 100
+2022-10-10 08:06:17 [INFO ]  	log_level: INFO
+2022-10-10 08:06:17 [INFO ]  	lr: 0.0002
+2022-10-10 08:06:17 [INFO ]  	mode: forgetting
+2022-10-10 08:06:17 [INFO ]  	nc: 3
+2022-10-10 08:06:17 [INFO ]  	num_classes: 10
+2022-10-10 08:06:17 [INFO ]  	num_workers: 8
+2022-10-10 08:06:17 [INFO ]  	phase: train
+2022-10-10 08:06:17 [INFO ]  	source_dataset: null
+2022-10-10 08:06:17 [INFO ]  	start_time: '2022-10-10 08:06:17'
+2022-10-10 08:06:17 [INFO ]  	test_batch_size: 1024
+2022-10-10 08:06:17 [INFO ]  	
+2022-10-10 08:06:19 [INFO ]  train dataset size:	60000
+2022-10-10 08:06:19 [INFO ]  test dataset size: 	10000
+2022-10-10 08:06:19 [INFO ]  datasets built!
+2022-10-10 08:06:19 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 08:06:22 [INFO ]   
+2022-10-10 08:06:22 [INFO ]  SVHN: Evaluation BEFORE forgetting:
+2022-10-10 08:06:22 [INFO ]  Test Accuracy: 20.90%	Test Loss: 4.2789
+2022-10-10 08:06:23 [INFO ]   
+2022-10-10 08:06:23 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 08:06:23 [INFO ]  Test Accuracy: 98.58%	Test Loss: 0.0427
+2022-10-10 08:06:26 [INFO ]  Epoch:    0	Test Accuracy: 46.77%	Test Loss: 1.6303
+2022-10-10 08:06:27 [INFO ]  Source: MNIST_RGB	Test Accuracy: 89.17%	Test Loss: 0.3349
+2022-10-10 08:06:30 [INFO ]  Epoch:    1	Test Accuracy: 56.58%	Test Loss: 1.3619
+2022-10-10 08:06:31 [INFO ]  Source: MNIST_RGB	Test Accuracy: 82.34%	Test Loss: 0.6076
+2022-10-10 08:06:34 [INFO ]  Epoch:    2	Test Accuracy: 63.39%	Test Loss: 1.2013
+2022-10-10 08:06:35 [INFO ]  Source: MNIST_RGB	Test Accuracy: 78.52%	Test Loss: 0.8568
+2022-10-10 08:06:38 [INFO ]  Epoch:    3	Test Accuracy: 68.41%	Test Loss: 1.0674
+2022-10-10 08:06:39 [INFO ]  Source: MNIST_RGB	Test Accuracy: 73.80%	Test Loss: 1.1250
+2022-10-10 08:06:42 [INFO ]  Epoch:    4	Test Accuracy: 72.04%	Test Loss: 0.9714
+2022-10-10 08:06:43 [INFO ]  Source: MNIST_RGB	Test Accuracy: 69.07%	Test Loss: 1.5172
+2022-10-10 08:06:46 [INFO ]  Epoch:    5	Test Accuracy: 75.00%	Test Loss: 0.8885
+2022-10-10 08:06:47 [INFO ]  Source: MNIST_RGB	Test Accuracy: 68.68%	Test Loss: 1.6714
+2022-10-10 08:06:50 [INFO ]  Epoch:    6	Test Accuracy: 77.29%	Test Loss: 0.8208
+2022-10-10 08:06:51 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.33%	Test Loss: 1.9060
+2022-10-10 08:06:54 [INFO ]  Epoch:    7	Test Accuracy: 78.38%	Test Loss: 0.7879
+2022-10-10 08:06:55 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.90%	Test Loss: 2.0344
+2022-10-10 08:06:58 [INFO ]  Epoch:    8	Test Accuracy: 79.34%	Test Loss: 0.7605
+2022-10-10 08:06:59 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.44%	Test Loss: 2.1597
+2022-10-10 08:07:02 [INFO ]  Epoch:    9	Test Accuracy: 79.55%	Test Loss: 0.7499
+2022-10-10 08:07:02 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.42%	Test Loss: 2.3449
+2022-10-10 08:07:06 [INFO ]  Epoch:   10	Test Accuracy: 80.40%	Test Loss: 0.7220
+2022-10-10 08:07:07 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.41%	Test Loss: 2.4676
+2022-10-10 08:07:10 [INFO ]  Epoch:   11	Test Accuracy: 80.85%	Test Loss: 0.7056
+2022-10-10 08:07:11 [INFO ]  Source: MNIST_RGB	Test Accuracy: 66.15%	Test Loss: 2.3610
+2022-10-10 08:07:14 [INFO ]  Epoch:   12	Test Accuracy: 81.21%	Test Loss: 0.6940
+2022-10-10 08:07:15 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.49%	Test Loss: 2.5634
+2022-10-10 08:07:18 [INFO ]  Epoch:   13	Test Accuracy: 81.72%	Test Loss: 0.6816
+2022-10-10 08:07:18 [INFO ]  Source: MNIST_RGB	Test Accuracy: 65.11%	Test Loss: 2.4939
+2022-10-10 08:07:21 [INFO ]  Epoch:   14	Test Accuracy: 81.98%	Test Loss: 0.6719
+2022-10-10 08:07:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.46%	Test Loss: 2.7676
+2022-10-10 08:07:25 [INFO ]  Epoch:   15	Test Accuracy: 82.36%	Test Loss: 0.6604
+2022-10-10 08:07:26 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.92%	Test Loss: 2.5588
+2022-10-10 08:07:29 [INFO ]  Epoch:   16	Test Accuracy: 82.72%	Test Loss: 0.6508
+2022-10-10 08:07:30 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.87%	Test Loss: 2.5199
+2022-10-10 08:07:33 [INFO ]  Epoch:   17	Test Accuracy: 83.07%	Test Loss: 0.6361
+2022-10-10 08:07:34 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.01%	Test Loss: 2.6248
+2022-10-10 08:07:37 [INFO ]  Epoch:   18	Test Accuracy: 82.97%	Test Loss: 0.6391
+2022-10-10 08:07:38 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.25%	Test Loss: 2.6509
+2022-10-10 08:07:41 [INFO ]  Epoch:   19	Test Accuracy: 83.08%	Test Loss: 0.6329
+2022-10-10 08:07:42 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.96%	Test Loss: 2.7549
+2022-10-10 08:07:45 [INFO ]  Epoch:   20	Test Accuracy: 83.55%	Test Loss: 0.6169
+2022-10-10 08:07:46 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.34%	Test Loss: 2.5511
+2022-10-10 08:07:49 [INFO ]  Epoch:   21	Test Accuracy: 83.86%	Test Loss: 0.6123
+2022-10-10 08:07:50 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.97%	Test Loss: 2.6575
+2022-10-10 08:07:53 [INFO ]  Epoch:   22	Test Accuracy: 83.04%	Test Loss: 0.6340
+2022-10-10 08:07:54 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.36%	Test Loss: 2.9383
+2022-10-10 08:07:57 [INFO ]  Epoch:   23	Test Accuracy: 84.09%	Test Loss: 0.6015
+2022-10-10 08:07:58 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.48%	Test Loss: 2.5718
+2022-10-10 08:08:01 [INFO ]  Epoch:   24	Test Accuracy: 83.75%	Test Loss: 0.6128
+2022-10-10 08:08:02 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.60%	Test Loss: 2.7621
+2022-10-10 08:08:05 [INFO ]  Epoch:   25	Test Accuracy: 84.42%	Test Loss: 0.5926
+2022-10-10 08:08:06 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.17%	Test Loss: 2.6433
+2022-10-10 08:08:09 [INFO ]  Epoch:   26	Test Accuracy: 84.02%	Test Loss: 0.6003
+2022-10-10 08:08:10 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.21%	Test Loss: 2.8068
+2022-10-10 08:08:13 [INFO ]  Epoch:   27	Test Accuracy: 84.43%	Test Loss: 0.5859
+2022-10-10 08:08:14 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.87%	Test Loss: 2.7955
+2022-10-10 08:08:17 [INFO ]  Epoch:   28	Test Accuracy: 84.27%	Test Loss: 0.5908
+2022-10-10 08:08:18 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.98%	Test Loss: 2.6045
+2022-10-10 08:08:21 [INFO ]  Epoch:   29	Test Accuracy: 84.69%	Test Loss: 0.5813
+2022-10-10 08:08:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.41%	Test Loss: 2.7519
+2022-10-10 08:08:25 [INFO ]  Epoch:   30	Test Accuracy: 84.85%	Test Loss: 0.5728
+2022-10-10 08:08:26 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.93%	Test Loss: 2.6607
+2022-10-10 08:08:29 [INFO ]  Epoch:   31	Test Accuracy: 84.75%	Test Loss: 0.5776
+2022-10-10 08:08:30 [INFO ]  Source: MNIST_RGB	Test Accuracy: 64.43%	Test Loss: 2.5852
+2022-10-10 08:08:34 [INFO ]  Epoch:   32	Test Accuracy: 85.06%	Test Loss: 0.5685
+2022-10-10 08:08:35 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.20%	Test Loss: 2.6953
+2022-10-10 08:08:38 [INFO ]  Epoch:   33	Test Accuracy: 85.12%	Test Loss: 0.5649
+2022-10-10 08:08:39 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.75%	Test Loss: 2.6062
+2022-10-10 08:08:42 [INFO ]  Epoch:   34	Test Accuracy: 85.03%	Test Loss: 0.5649
+2022-10-10 08:08:43 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.20%	Test Loss: 2.6806
+2022-10-10 08:08:46 [INFO ]  Epoch:   35	Test Accuracy: 85.38%	Test Loss: 0.5553
+2022-10-10 08:08:47 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.38%	Test Loss: 2.6586
+2022-10-10 08:08:50 [INFO ]  Epoch:   36	Test Accuracy: 84.62%	Test Loss: 0.5793
+2022-10-10 08:08:51 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.37%	Test Loss: 2.7320
+2022-10-10 08:08:54 [INFO ]  Epoch:   37	Test Accuracy: 85.36%	Test Loss: 0.5561
+2022-10-10 08:08:55 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.42%	Test Loss: 2.7261
+2022-10-10 08:08:58 [INFO ]  Epoch:   38	Test Accuracy: 85.24%	Test Loss: 0.5553
+2022-10-10 08:08:58 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.25%	Test Loss: 2.6324
+2022-10-10 08:09:02 [INFO ]  Epoch:   39	Test Accuracy: 85.10%	Test Loss: 0.5652
+2022-10-10 08:09:02 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.61%	Test Loss: 2.5389
+2022-10-10 08:09:05 [INFO ]  Epoch:   40	Test Accuracy: 85.67%	Test Loss: 0.5444
+2022-10-10 08:09:06 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.11%	Test Loss: 2.6128
+2022-10-10 08:09:09 [INFO ]  Epoch:   41	Test Accuracy: 85.72%	Test Loss: 0.5424
+2022-10-10 08:09:10 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.75%	Test Loss: 2.6891
+2022-10-10 08:09:13 [INFO ]  Epoch:   42	Test Accuracy: 85.52%	Test Loss: 0.5506
+2022-10-10 08:09:14 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.20%	Test Loss: 2.7588
+2022-10-10 08:09:17 [INFO ]  Epoch:   43	Test Accuracy: 85.80%	Test Loss: 0.5399
+2022-10-10 08:09:18 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.83%	Test Loss: 2.6538
+2022-10-10 08:09:21 [INFO ]  Epoch:   44	Test Accuracy: 84.89%	Test Loss: 0.5630
+2022-10-10 08:09:22 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.30%	Test Loss: 2.5454
+2022-10-10 08:09:25 [INFO ]  Epoch:   45	Test Accuracy: 85.72%	Test Loss: 0.5430
+2022-10-10 08:09:26 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.29%	Test Loss: 2.6156
+2022-10-10 08:09:29 [INFO ]  Epoch:   46	Test Accuracy: 85.97%	Test Loss: 0.5356
+2022-10-10 08:09:30 [INFO ]  Source: MNIST_RGB	Test Accuracy: 61.53%	Test Loss: 2.8493
+2022-10-10 08:09:33 [INFO ]  Epoch:   47	Test Accuracy: 86.07%	Test Loss: 0.5300
+2022-10-10 08:09:34 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.96%	Test Loss: 2.6527
+2022-10-10 08:09:37 [INFO ]  Epoch:   48	Test Accuracy: 86.02%	Test Loss: 0.5330
+2022-10-10 08:09:38 [INFO ]  Source: MNIST_RGB	Test Accuracy: 63.04%	Test Loss: 2.5954
+2022-10-10 08:09:41 [INFO ]  Epoch:   49	Test Accuracy: 86.17%	Test Loss: 0.5286
+2022-10-10 08:09:42 [INFO ]  Source: MNIST_RGB	Test Accuracy: 62.21%	Test Loss: 2.7700
+2022-10-10 08:09:42 [INFO ]  List of accuracies: [0.4677320221266134, 0.565842040565458, 0.6339121081745543, 0.684119545175169, 0.7203826060233559, 0.7500384142593731, 0.7728564843269822, 0.7837661339889367, 0.7934465273509527, 0.795520897357099, 0.8039720344191764, 0.8084665027658267, 0.8120774431468961, 0.8172249539028887, 0.819798709280885, 0.8236017209588199, 0.8271742470805162, 0.8306699446834666, 0.8297095881991395, 0.8308236017209588, 0.8355101413644745, 0.8385832821143209, 0.8304010448678549, 0.8408881376767056, 0.8375076828518746, 0.8441533497234174, 0.840158266748617, 0.8443070067609096, 0.8427320221266134, 0.8469191763982791, 0.8485325752919484, 0.8474953902888752, 0.8505685310387215, 0.8512215734480639, 0.8503380454824832, 0.8538337430854334, 0.8461508912108174, 0.8536032575291949, 0.8524124154886293, 0.8509910878918254, 0.8566763982790412, 0.8571757836508912, 0.8551782421634911, 0.858020897357099, 0.8488783036263061, 0.8571757836508912, 0.8597495390288875, 0.8607098955132145, 0.8601720958819914, 0.8617086662569146]
+2022-10-10 08:09:42 [INFO ]  List of losses: [1.630288220800061, 1.3619218836844738, 1.201278712314261, 1.0674424514348475, 0.9714053200297951, 0.8885081489905303, 0.8207801134218522, 0.7878582666604593, 0.7605009964073665, 0.749866411740163, 0.7219667944647303, 0.7056481303359807, 0.6939784872363371, 0.6815729733251983, 0.6718519898961495, 0.6604429443115535, 0.6508491342611378, 0.6361427389190617, 0.6390589102690544, 0.6328536996683168, 0.6168565228444048, 0.6122816293314328, 0.6339884419784124, 0.6014616813261082, 0.6128057340353489, 0.5926281489985957, 0.6003256553363858, 0.5859264152212676, 0.5907986411743539, 0.5813195569132762, 0.5727690366710998, 0.577617392044677, 0.5685208255554461, 0.5649347158759082, 0.5649175784598118, 0.5553410318488348, 0.5793362003788306, 0.5560633185163333, 0.5552922233014145, 0.5652217196773442, 0.5443873871449832, 0.5424115281201757, 0.5506406466361563, 0.5398851874128177, 0.5629566447018258, 0.5429735635055233, 0.5355698814696891, 0.5300241234702572, 0.5329520771235282, 0.5286098713514331]
+2022-10-10 08:09:42 [INFO ]  List of source accuracies: [0.8917, 0.8234, 0.7852, 0.738, 0.6907, 0.6868, 0.6633, 0.669, 0.6644, 0.6542, 0.6541, 0.6615, 0.6449, 0.6511, 0.6246, 0.6492, 0.6487, 0.6401, 0.6425, 0.6296, 0.6434, 0.6397, 0.6136, 0.6448, 0.636, 0.6417, 0.6221, 0.6187, 0.6398, 0.6341, 0.6393, 0.6443, 0.632, 0.6375, 0.632, 0.6338, 0.6337, 0.6242, 0.6325, 0.6361, 0.6311, 0.6275, 0.622, 0.6283, 0.633, 0.6329, 0.6153, 0.6296, 0.6304, 0.6221]
+2022-10-10 08:09:43 [INFO ]   
+2022-10-10 08:09:43 [INFO ]  SVHN: Evaluation AFTER forgetting:
+2022-10-10 08:09:43 [INFO ]  Test Accuracy: 86.17%	Test Loss: 0.5286
+2022-10-10 08:09:44 [INFO ]   
+2022-10-10 08:09:44 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 08:09:44 [INFO ]  Test Accuracy: 62.21%	Test Loss: 2.7700
+2022-10-10 08:09:44 [INFO ]  CPU Time: 1.69 minutes

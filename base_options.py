@@ -83,22 +83,24 @@ class State(object):
                     vs.pop(k)
         return vs
 
-    def get_base_directory(self, mode=None, dataset=None):
+    def get_base_directory(self, dataset=None):
         vs = self.merge()
         opt = argparse.Namespace(**vs)
         name = ""
-        if opt.mode == "distill_adapt" and mode is None:
+        dir_dataset = opt.dataset
+        if opt.mode == "distill_adapt":
             name = f"Source_{opt.source_dataset}"
-        dirs = [opt.mode, opt.dataset, name]
-        if mode is not None and dataset is not None:
-            dirs = [mode, dataset, name]
+        if dataset is not None:
+            dir_dataset = dataset
+        dirs = [opt.mode, dir_dataset, name]
+        print(f"Loading from {os.path.join('./results/', *dirs)}")
         return os.path.join("./results/", *dirs)
 
-    def get_load_directory(self, mode=None, dataset=None):
-        return self.get_base_directory(mode, dataset)
+    def get_load_directory(self, dataset=None):
+        return self.get_base_directory(dataset)
 
-    def get_save_directory(self, mode=None, dataset=None):
-        base_dir = self.get_base_directory(mode, dataset)
+    def get_save_directory(self, dataset=None):
+        base_dir = self.get_base_directory(dataset)
         if self.phase == "test":
             base_dir = os.path.join(base_dir, "test")
         return base_dir
@@ -170,8 +172,8 @@ class BaseOptions(object):
                             help="input batch size for training (default: 1024)")
         parser.add_argument("--test_batch_size", type=pos_int, default=1024,
                             help="input batch size for testing (default: 1024)")
-        parser.add_argument("--epochs", type=pos_int, default=150, metavar="N",
-                            help="number of total epochs to train (default: 150)")
+        parser.add_argument("--epochs", type=pos_int, default=200, metavar="N",
+                            help="number of total epochs to train (default: 200)")
         parser.add_argument("--decay_epochs", type=pos_int, default=50, metavar="N",
                             help="period of weight decay (default: 50)")
         parser.add_argument("--decay_factor", type=pos_float, default=0.1, metavar="N",
@@ -182,18 +184,16 @@ class BaseOptions(object):
                             help="network initialization [normal|xavier|kaiming|orthogonal|zero|default]")
         parser.add_argument("--init_param", type=float, default=1.,
                             help="network initialization param: gain, std, etc.")
-        parser.add_argument("--base_seed", type=int, default=1, metavar="S",
-                            help="base random seed (default: 1)")
         parser.add_argument("--log_interval", type=int, default=100, metavar="N",
                             help="how many batches to wait before logging training status")
-        parser.add_argument("--checkpoint_interval", type=int, default=10, metavar="N",
+        parser.add_argument("--checkpoint_interval", type=int, default=300, metavar="N",
                             help="checkpoint interval (epoch)")
-        parser.add_argument("--dataset", type=str, default="MNIST",
-                            help="dataset: MNIST | MNIST_RGB | FASHION_MNIST | SVHN")
+        parser.add_argument("--dataset", type=str, default="MNIST_RGB",
+                            help="dataset: MNIST_RGB | FASHION_MNIST | SVHN")
         parser.add_argument("--source_dataset", type=str, default=None,
-                            help="dataset: MNIST | MNIST_RGB | FASHION_MNIST | SVHN")
+                            help="dataset: MNIST_RGB | FASHION_MNIST | SVHN")
         parser.add_argument("--forgetting_dataset", type=str, default=None,
-                            help="dataset: MNIST | MNIST_RGB | FASHION_MNIST | SVHN")
+                            help="dataset: MNIST_RGB | FASHION_MNIST | SVHN")
         parser.add_argument("--mode", type=str, default="distill_basic",
                             help="mode: train | distill_basic | distill_adapt | forgetting ")
         parser.add_argument("--distill_lr", type=float, default=0.02,
@@ -202,10 +202,10 @@ class BaseOptions(object):
                             help="base_dir of run")
         parser.add_argument("--ipc", type=pos_int, default=1,
                             help="use #batch_size distilled images for each class in each step")
-        parser.add_argument("--distill_steps", type=pos_int, default=10, help="Iterative distillation, use #num_steps * #batch_size * #classes distilled images."
+        parser.add_argument("--distill_steps", type=pos_int, default=1, help="Iterative distillation, use #num_steps * #batch_size * #classes distilled images."
                                  "See also --distill_epochs. The total number "
                                  "of steps is distill_steps * distill_epochs.")
-        parser.add_argument("--distill_epochs", type=pos_int, default=3,
+        parser.add_argument("--distill_epochs", type=pos_int, default=1,
                             help="how many times to repeat all steps 1, 2, 3, 1, 2, 3, ...")
         parser.add_argument("--device_id", type=comp(int, "ge", -1), default=0, help="device id, -1 is cpu")
         parser.add_argument("--phase", type=str, default="train",
@@ -288,8 +288,6 @@ class BaseOptions(object):
 
         if state.device.type == "cuda" and torch.backends.cudnn.enabled:
             torch.backends.cudnn.benchmark = True
-
-        state.opt.seed = state.base_seed
 
         opt_dict = vars(self.parser.parse_args())
         opt_dict.pop("device_id")  # don"t compare this
