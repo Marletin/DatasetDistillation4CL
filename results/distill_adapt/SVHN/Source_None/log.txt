@@ -1,0 +1,59 @@
+2022-07-27 14:15:06 [INFO ]  ======================================== 2022-07-27 14:15:06 ========================================
+2022-07-27 14:15:06 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_None
+2022-07-27 14:15:06 [INFO ]  Options: 
+2022-07-27 14:15:06 [INFO ]  	base_dir: null
+2022-07-27 14:15:06 [INFO ]  	base_seed: 1
+2022-07-27 14:15:06 [INFO ]  	batch_size: 1024
+2022-07-27 14:15:06 [INFO ]  	checkpoint_interval: 10
+2022-07-27 14:15:06 [INFO ]  	dataset: SVHN
+2022-07-27 14:15:06 [INFO ]  	dataset_labels:
+2022-07-27 14:15:06 [INFO ]  	- 0
+2022-07-27 14:15:06 [INFO ]  	- 1
+2022-07-27 14:15:06 [INFO ]  	- 2
+2022-07-27 14:15:06 [INFO ]  	- 3
+2022-07-27 14:15:06 [INFO ]  	- 4
+2022-07-27 14:15:06 [INFO ]  	- 5
+2022-07-27 14:15:06 [INFO ]  	- 6
+2022-07-27 14:15:06 [INFO ]  	- 7
+2022-07-27 14:15:06 [INFO ]  	- 8
+2022-07-27 14:15:06 [INFO ]  	- 9
+2022-07-27 14:15:06 [INFO ]  	dataset_normalization: !!python/tuple
+2022-07-27 14:15:06 [INFO ]  	- !!python/tuple
+2022-07-27 14:15:06 [INFO ]  	    - 0.4379104971885681
+2022-07-27 14:15:06 [INFO ]  	    - 0.44398033618927
+2022-07-27 14:15:06 [INFO ]  	    - 0.4729299545288086
+2022-07-27 14:15:06 [INFO ]  	- !!python/tuple
+2022-07-27 14:15:06 [INFO ]  	    - 0.19803012907505035
+2022-07-27 14:15:06 [INFO ]  	    - 0.2010156363248825
+2022-07-27 14:15:06 [INFO ]  	    - 0.19703614711761475
+2022-07-27 14:15:06 [INFO ]  	dataset_root: ./data/svhn
+2022-07-27 14:15:06 [INFO ]  	decay_epochs: 50
+2022-07-27 14:15:06 [INFO ]  	decay_factor: 0.1
+2022-07-27 14:15:06 [INFO ]  	device_id: 0
+2022-07-27 14:15:06 [INFO ]  	distill_epochs: 1
+2022-07-27 14:15:06 [INFO ]  	distill_lr: 0.02
+2022-07-27 14:15:06 [INFO ]  	distill_steps: 1
+2022-07-27 14:15:06 [INFO ]  	epochs: 150
+2022-07-27 14:15:06 [INFO ]  	expand_cls: false
+2022-07-27 14:15:06 [INFO ]  	forgetting_dataset: null
+2022-07-27 14:15:06 [INFO ]  	init: xavier
+2022-07-27 14:15:06 [INFO ]  	init_param: 1.0
+2022-07-27 14:15:06 [INFO ]  	input_size: 32
+2022-07-27 14:15:06 [INFO ]  	ipc: 1
+2022-07-27 14:15:06 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_None/log.txt
+2022-07-27 14:15:06 [INFO ]  	log_interval: 100
+2022-07-27 14:15:06 [INFO ]  	log_level: INFO
+2022-07-27 14:15:06 [INFO ]  	lr: 0.01
+2022-07-27 14:15:06 [INFO ]  	mode: distill_adapt
+2022-07-27 14:15:06 [INFO ]  	nc: 3
+2022-07-27 14:15:06 [INFO ]  	num_classes: 10
+2022-07-27 14:15:06 [INFO ]  	num_workers: 8
+2022-07-27 14:15:06 [INFO ]  	phase: train
+2022-07-27 14:15:06 [INFO ]  	source_dataset: null
+2022-07-27 14:15:06 [INFO ]  	start_time: '2022-07-27 14:15:06'
+2022-07-27 14:15:06 [INFO ]  	test_batch_size: 1024
+2022-07-27 14:15:06 [INFO ]  	
+2022-07-27 14:15:08 [INFO ]  train dataset size:	73257
+2022-07-27 14:15:08 [INFO ]  test dataset size: 	26032
+2022-07-27 14:15:08 [INFO ]  datasets built!
+2022-07-27 14:15:08 [INFO ]  Build one LeNet network with [xavier(1.0)] init

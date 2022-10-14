@@ -168,7 +168,7 @@ class Trainer(object):
         if len(bwd_out) > 0:
             torch.autograd.backward(bwd_out, bwd_grad)
 
-    def save_results(self, steps=None, visualize=True, subfolder=''):
+    def save_results(self, steps=None, visualize=False, subfolder=''):
         with torch.no_grad():
             steps = steps or self.get_steps()
             save_results(self.state, steps, visualize=visualize, subfolder=subfolder)

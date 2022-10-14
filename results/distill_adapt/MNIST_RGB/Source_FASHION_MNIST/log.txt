@@ -1,0 +1,2165 @@
+2022-09-11 11:19:26 [INFO ]  ======================================== 2022-09-11 11:19:26 ========================================
+2022-09-11 11:19:26 [INFO ]  Base directory is ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST
+2022-09-11 11:19:26 [INFO ]  Options: 
+2022-09-11 11:19:26 [INFO ]  	base_dir: null
+2022-09-11 11:19:26 [INFO ]  	batch_size: 1024
+2022-09-11 11:19:26 [INFO ]  	checkpoint_interval: 10
+2022-09-11 11:19:26 [INFO ]  	dataset: MNIST_RGB
+2022-09-11 11:19:26 [INFO ]  	dataset_labels:
+2022-09-11 11:19:26 [INFO ]  	- 0
+2022-09-11 11:19:26 [INFO ]  	- 1
+2022-09-11 11:19:26 [INFO ]  	- 2
+2022-09-11 11:19:26 [INFO ]  	- 3
+2022-09-11 11:19:26 [INFO ]  	- 4
+2022-09-11 11:19:26 [INFO ]  	- 5
+2022-09-11 11:19:26 [INFO ]  	- 6
+2022-09-11 11:19:26 [INFO ]  	- 7
+2022-09-11 11:19:26 [INFO ]  	- 8
+2022-09-11 11:19:26 [INFO ]  	- 9
+2022-09-11 11:19:26 [INFO ]  	dataset_normalization: !!python/tuple
+2022-09-11 11:19:26 [INFO ]  	- !!python/tuple
+2022-09-11 11:19:26 [INFO ]  	    - 0.1307
+2022-09-11 11:19:26 [INFO ]  	    - 0.1307
+2022-09-11 11:19:26 [INFO ]  	    - 0.1307
+2022-09-11 11:19:26 [INFO ]  	- !!python/tuple
+2022-09-11 11:19:26 [INFO ]  	    - 0.3081
+2022-09-11 11:19:26 [INFO ]  	    - 0.3081
+2022-09-11 11:19:26 [INFO ]  	    - 0.3081
+2022-09-11 11:19:26 [INFO ]  	dataset_root: ./data/mnist
+2022-09-11 11:19:26 [INFO ]  	decay_epochs: 50
+2022-09-11 11:19:26 [INFO ]  	decay_factor: 0.1
+2022-09-11 11:19:26 [INFO ]  	device_id: 0
+2022-09-11 11:19:26 [INFO ]  	distill_epochs: 1
+2022-09-11 11:19:26 [INFO ]  	distill_lr: 0.02
+2022-09-11 11:19:26 [INFO ]  	distill_steps: 1
+2022-09-11 11:19:26 [INFO ]  	epochs: 200
+2022-09-11 11:19:26 [INFO ]  	expand_cls: false
+2022-09-11 11:19:26 [INFO ]  	forgetting_dataset: null
+2022-09-11 11:19:26 [INFO ]  	init: xavier
+2022-09-11 11:19:26 [INFO ]  	init_param: 1.0
+2022-09-11 11:19:26 [INFO ]  	input_size: 32
+2022-09-11 11:19:26 [INFO ]  	ipc: 1
+2022-09-11 11:19:26 [INFO ]  	log_file: ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/log.txt
+2022-09-11 11:19:26 [INFO ]  	log_interval: 100
+2022-09-11 11:19:26 [INFO ]  	log_level: INFO
+2022-09-11 11:19:26 [INFO ]  	lr: 0.01
+2022-09-11 11:19:26 [INFO ]  	mode: distill_adapt
+2022-09-11 11:19:26 [INFO ]  	nc: 3
+2022-09-11 11:19:26 [INFO ]  	num_classes: 10
+2022-09-11 11:19:26 [INFO ]  	num_workers: 8
+2022-09-11 11:19:26 [INFO ]  	phase: train
+2022-09-11 11:19:26 [INFO ]  	source_dataset: FASHION_MNIST
+2022-09-11 11:19:26 [INFO ]  	start_time: '2022-09-11 11:19:26'
+2022-09-11 11:19:26 [INFO ]  	test_batch_size: 1024
+2022-09-11 11:19:26 [INFO ]  	
+2022-09-11 11:19:26 [INFO ]  train dataset size:	60000
+2022-09-11 11:19:26 [INFO ]  test dataset size: 	10000
+2022-09-11 11:19:26 [INFO ]  datasets built!
+2022-09-11 11:19:26 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-09-11 11:19:30 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0000/results.pth
+2022-09-11 11:19:30 [INFO ]  
+2022-09-11 11:19:30 [INFO ]  Begin of epoch 0 :
+2022-09-11 11:19:33 [INFO ]  Begin of epoch 0 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:19:33 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:19:33 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:19:33 [INFO ]  	   step  1 (lr=0.020000)                   10.42%                  23.9712
+2022-09-11 11:19:33 [INFO ]  
+2022-09-11 11:19:33 [INFO ]  Epoch:    0	Loss: 24.7116	Data Time: 0.62s	Train Time: 0.03s
+2022-09-11 11:19:35 [INFO ]  Epoch:    1	Loss: 6.5589	Data Time: 0.21s	Train Time: 0.01s
+2022-09-11 11:19:37 [INFO ]  Epoch:    2	Loss: 4.3861	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:19:39 [INFO ]  Epoch:    3	Loss: 2.8975	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:19:41 [INFO ]  Epoch:    4	Loss: 2.3813	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:19:43 [INFO ]  Epoch:    5	Loss: 2.2564	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:19:46 [INFO ]  Epoch:    6	Loss: 2.1277	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:19:48 [INFO ]  Epoch:    7	Loss: 2.1243	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:19:51 [INFO ]  Epoch:    8	Loss: 1.9656	Data Time: 0.23s	Train Time: 0.01s
+2022-09-11 11:19:53 [INFO ]  Epoch:    9	Loss: 1.9335	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:19:56 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0010/results.pth
+2022-09-11 11:19:56 [INFO ]  
+2022-09-11 11:19:56 [INFO ]  Begin of epoch 10 :
+2022-09-11 11:19:59 [INFO ]  Begin of epoch 10 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:19:59 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:19:59 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:19:59 [INFO ]  	   step  1 (lr=0.029550)                   35.05%                   1.8528
+2022-09-11 11:19:59 [INFO ]  
+2022-09-11 11:19:59 [INFO ]  Epoch:   10	Loss: 1.8202	Data Time: 0.36s	Train Time: 0.00s
+2022-09-11 11:20:01 [INFO ]  Epoch:   11	Loss: 1.8570	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:20:03 [INFO ]  Epoch:   12	Loss: 1.7976	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:20:06 [INFO ]  Epoch:   13	Loss: 1.7135	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:20:08 [INFO ]  Epoch:   14	Loss: 1.6847	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:20:10 [INFO ]  Epoch:   15	Loss: 1.5904	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:20:12 [INFO ]  Epoch:   16	Loss: 1.4831	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:20:15 [INFO ]  Epoch:   17	Loss: 1.3437	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:20:17 [INFO ]  Epoch:   18	Loss: 1.2913	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:20:19 [INFO ]  Epoch:   19	Loss: 1.1943	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:20:23 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0020/results.pth
+2022-09-11 11:20:23 [INFO ]  
+2022-09-11 11:20:23 [INFO ]  Begin of epoch 20 :
+2022-09-11 11:20:26 [INFO ]  Begin of epoch 20 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:20:26 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:20:26 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:20:26 [INFO ]  	   step  1 (lr=0.048391)                   60.76%                   1.2526
+2022-09-11 11:20:26 [INFO ]  
+2022-09-11 11:20:26 [INFO ]  Epoch:   20	Loss: 1.2719	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:20:28 [INFO ]  Epoch:   21	Loss: 1.1210	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:20:30 [INFO ]  Epoch:   22	Loss: 0.8971	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:20:32 [INFO ]  Epoch:   23	Loss: 0.9513	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:20:34 [INFO ]  Epoch:   24	Loss: 0.9682	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:20:37 [INFO ]  Epoch:   25	Loss: 1.3398	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:20:39 [INFO ]  Epoch:   26	Loss: 0.7793	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:20:41 [INFO ]  Epoch:   27	Loss: 0.8136	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:20:43 [INFO ]  Epoch:   28	Loss: 0.6169	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:20:45 [INFO ]  Epoch:   29	Loss: 0.8634	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:20:49 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0030/results.pth
+2022-09-11 11:20:49 [INFO ]  
+2022-09-11 11:20:49 [INFO ]  Begin of epoch 30 :
+2022-09-11 11:20:52 [INFO ]  Begin of epoch 30 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:20:52 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:20:52 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:20:52 [INFO ]  	   step  1 (lr=0.088077)                   85.96%                   0.4716
+2022-09-11 11:20:52 [INFO ]  
+2022-09-11 11:20:52 [INFO ]  Epoch:   30	Loss: 0.5090	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:20:53 [INFO ]  Epoch:   31	Loss: 0.5317	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:20:56 [INFO ]  Epoch:   32	Loss: 0.6776	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:20:58 [INFO ]  Epoch:   33	Loss: 0.5489	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:21:00 [INFO ]  Epoch:   34	Loss: 0.5983	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:21:02 [INFO ]  Epoch:   35	Loss: 0.6033	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:21:05 [INFO ]  Epoch:   36	Loss: 0.7510	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:21:07 [INFO ]  Epoch:   37	Loss: 2.2692	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:21:09 [INFO ]  Epoch:   38	Loss: 0.7243	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:21:11 [INFO ]  Epoch:   39	Loss: 0.7133	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:21:15 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0040/results.pth
+2022-09-11 11:21:15 [INFO ]  
+2022-09-11 11:21:15 [INFO ]  Begin of epoch 40 :
+2022-09-11 11:21:18 [INFO ]  Begin of epoch 40 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:21:18 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:21:18 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:21:18 [INFO ]  	   step  1 (lr=0.088631)                   82.64%                   0.6214
+2022-09-11 11:21:18 [INFO ]  
+2022-09-11 11:21:18 [INFO ]  Epoch:   40	Loss: 0.6443	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:21:20 [INFO ]  Epoch:   41	Loss: 0.5923	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:21:22 [INFO ]  Epoch:   42	Loss: 0.5828	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:21:25 [INFO ]  Epoch:   43	Loss: 0.7973	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:21:27 [INFO ]  Epoch:   44	Loss: 0.4578	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:21:29 [INFO ]  Epoch:   45	Loss: 0.4701	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:21:31 [INFO ]  Epoch:   46	Loss: 0.4114	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:21:34 [INFO ]  Epoch:   47	Loss: 0.4356	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 11:21:36 [INFO ]  Epoch:   48	Loss: 0.3469	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:21:39 [INFO ]  Epoch:   49	Loss: 0.4443	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:21:42 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0050/results.pth
+2022-09-11 11:21:42 [INFO ]  
+2022-09-11 11:21:42 [INFO ]  Begin of epoch 50 :
+2022-09-11 11:21:45 [INFO ]  Begin of epoch 50 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:21:45 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:21:45 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:21:45 [INFO ]  	   step  1 (lr=0.100735)                   89.04%                   0.3516
+2022-09-11 11:21:45 [INFO ]  
+2022-09-11 11:21:45 [INFO ]  Epoch:   50	Loss: 0.4236	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:21:47 [INFO ]  Epoch:   51	Loss: 0.3937	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:21:50 [INFO ]  Epoch:   52	Loss: 0.4170	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:21:52 [INFO ]  Epoch:   53	Loss: 0.3811	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:21:54 [INFO ]  Epoch:   54	Loss: 0.3665	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:21:56 [INFO ]  Epoch:   55	Loss: 0.3755	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:21:59 [INFO ]  Epoch:   56	Loss: 0.3366	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:22:01 [INFO ]  Epoch:   57	Loss: 0.3575	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:22:03 [INFO ]  Epoch:   58	Loss: 0.3444	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:22:06 [INFO ]  Epoch:   59	Loss: 0.3456	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:22:09 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0060/results.pth
+2022-09-11 11:22:09 [INFO ]  
+2022-09-11 11:22:09 [INFO ]  Begin of epoch 60 :
+2022-09-11 11:22:12 [INFO ]  Begin of epoch 60 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:22:12 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:22:12 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:22:12 [INFO ]  	   step  1 (lr=0.110071)                   90.48%                   0.3088
+2022-09-11 11:22:12 [INFO ]  
+2022-09-11 11:22:12 [INFO ]  Epoch:   60	Loss: 0.3237	Data Time: 0.25s	Train Time: 0.00s
+2022-09-11 11:22:14 [INFO ]  Epoch:   61	Loss: 0.3510	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:22:17 [INFO ]  Epoch:   62	Loss: 0.3565	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:22:19 [INFO ]  Epoch:   63	Loss: 0.3483	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:22:21 [INFO ]  Epoch:   64	Loss: 0.3130	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:22:23 [INFO ]  Epoch:   65	Loss: 0.3141	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:22:26 [INFO ]  Epoch:   66	Loss: 0.3059	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:22:28 [INFO ]  Epoch:   67	Loss: 0.3605	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:22:30 [INFO ]  Epoch:   68	Loss: 0.3536	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:22:32 [INFO ]  Epoch:   69	Loss: 0.3854	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:22:36 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0070/results.pth
+2022-09-11 11:22:36 [INFO ]  
+2022-09-11 11:22:36 [INFO ]  Begin of epoch 70 :
+2022-09-11 11:22:39 [INFO ]  Begin of epoch 70 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:22:39 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:22:39 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:22:39 [INFO ]  	   step  1 (lr=0.115999)                   90.26%                   0.3185
+2022-09-11 11:22:39 [INFO ]  
+2022-09-11 11:22:39 [INFO ]  Epoch:   70	Loss: 0.3315	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:22:41 [INFO ]  Epoch:   71	Loss: 0.3634	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:22:43 [INFO ]  Epoch:   72	Loss: 0.4290	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:22:45 [INFO ]  Epoch:   73	Loss: 0.3074	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:22:47 [INFO ]  Epoch:   74	Loss: 0.3488	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:22:50 [INFO ]  Epoch:   75	Loss: 0.2975	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:22:52 [INFO ]  Epoch:   76	Loss: 0.3734	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:22:54 [INFO ]  Epoch:   77	Loss: 0.3021	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:22:56 [INFO ]  Epoch:   78	Loss: 0.3038	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:22:59 [INFO ]  Epoch:   79	Loss: 0.2830	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:23:02 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0080/results.pth
+2022-09-11 11:23:02 [INFO ]  
+2022-09-11 11:23:02 [INFO ]  Begin of epoch 80 :
+2022-09-11 11:23:06 [INFO ]  Begin of epoch 80 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:23:06 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:23:06 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:23:06 [INFO ]  	   step  1 (lr=0.119319)                   91.35%                   0.2824
+2022-09-11 11:23:06 [INFO ]  
+2022-09-11 11:23:06 [INFO ]  Epoch:   80	Loss: 0.3542	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:23:07 [INFO ]  Epoch:   81	Loss: 0.2811	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:23:10 [INFO ]  Epoch:   82	Loss: 0.3100	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:23:12 [INFO ]  Epoch:   83	Loss: 0.2472	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:23:14 [INFO ]  Epoch:   84	Loss: 0.3306	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:23:17 [INFO ]  Epoch:   85	Loss: 0.3255	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:23:19 [INFO ]  Epoch:   86	Loss: 0.3382	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:23:22 [INFO ]  Epoch:   87	Loss: 0.3382	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:23:24 [INFO ]  Epoch:   88	Loss: 0.3113	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:23:26 [INFO ]  Epoch:   89	Loss: 0.3790	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:23:30 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0090/results.pth
+2022-09-11 11:23:30 [INFO ]  
+2022-09-11 11:23:30 [INFO ]  Begin of epoch 90 :
+2022-09-11 11:23:33 [INFO ]  Begin of epoch 90 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:23:33 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:23:33 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:23:33 [INFO ]  	   step  1 (lr=0.121100)                   91.54%                   0.2851
+2022-09-11 11:23:33 [INFO ]  
+2022-09-11 11:23:33 [INFO ]  Epoch:   90	Loss: 0.3374	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:23:35 [INFO ]  Epoch:   91	Loss: 0.3583	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:23:37 [INFO ]  Epoch:   92	Loss: 0.5279	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:23:40 [INFO ]  Epoch:   93	Loss: 0.3158	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:23:42 [INFO ]  Epoch:   94	Loss: 0.3669	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:23:44 [INFO ]  Epoch:   95	Loss: 0.3052	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:23:46 [INFO ]  Epoch:   96	Loss: 0.2709	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:23:49 [INFO ]  Epoch:   97	Loss: 0.2448	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:23:51 [INFO ]  Epoch:   98	Loss: 0.2950	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:23:53 [INFO ]  Epoch:   99	Loss: 0.2978	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:23:57 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0100/results.pth
+2022-09-11 11:23:57 [INFO ]  
+2022-09-11 11:23:57 [INFO ]  Begin of epoch 100 :
+2022-09-11 11:24:00 [INFO ]  Begin of epoch 100 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:24:00 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:24:00 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:24:00 [INFO ]  	   step  1 (lr=0.124958)                   89.79%                   0.3374
+2022-09-11 11:24:00 [INFO ]  
+2022-09-11 11:24:00 [INFO ]  Epoch:  100	Loss: 0.3982	Data Time: 0.26s	Train Time: 0.00s
+2022-09-11 11:24:02 [INFO ]  Epoch:  101	Loss: 0.2626	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:24:04 [INFO ]  Epoch:  102	Loss: 0.3436	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:24:06 [INFO ]  Epoch:  103	Loss: 0.3308	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:24:08 [INFO ]  Epoch:  104	Loss: 0.2638	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:24:11 [INFO ]  Epoch:  105	Loss: 0.3023	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:24:13 [INFO ]  Epoch:  106	Loss: 0.3523	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:24:15 [INFO ]  Epoch:  107	Loss: 0.3197	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:24:17 [INFO ]  Epoch:  108	Loss: 0.3251	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:24:20 [INFO ]  Epoch:  109	Loss: 0.3078	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:24:23 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0110/results.pth
+2022-09-11 11:24:23 [INFO ]  
+2022-09-11 11:24:23 [INFO ]  Begin of epoch 110 :
+2022-09-11 11:24:27 [INFO ]  Begin of epoch 110 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:24:27 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:24:27 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:24:27 [INFO ]  	   step  1 (lr=0.125935)                   92.45%                   0.2546
+2022-09-11 11:24:27 [INFO ]  
+2022-09-11 11:24:27 [INFO ]  Epoch:  110	Loss: 0.3374	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:24:29 [INFO ]  Epoch:  111	Loss: 0.2503	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:24:31 [INFO ]  Epoch:  112	Loss: 0.3030	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:24:33 [INFO ]  Epoch:  113	Loss: 0.2999	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:24:35 [INFO ]  Epoch:  114	Loss: 0.2483	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:24:38 [INFO ]  Epoch:  115	Loss: 0.3364	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:24:40 [INFO ]  Epoch:  116	Loss: 0.2880	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:24:42 [INFO ]  Epoch:  117	Loss: 0.2677	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:24:45 [INFO ]  Epoch:  118	Loss: 0.2831	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:24:47 [INFO ]  Epoch:  119	Loss: 0.2689	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:24:51 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0120/results.pth
+2022-09-11 11:24:51 [INFO ]  
+2022-09-11 11:24:51 [INFO ]  Begin of epoch 120 :
+2022-09-11 11:24:54 [INFO ]  Begin of epoch 120 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:24:54 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:24:54 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:24:54 [INFO ]  	   step  1 (lr=0.126470)                   92.39%                   0.2532
+2022-09-11 11:24:54 [INFO ]  
+2022-09-11 11:24:54 [INFO ]  Epoch:  120	Loss: 0.3189	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:24:56 [INFO ]  Epoch:  121	Loss: 0.3479	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:24:58 [INFO ]  Epoch:  122	Loss: 0.3053	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:25:00 [INFO ]  Epoch:  123	Loss: 0.2572	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:25:03 [INFO ]  Epoch:  124	Loss: 0.2498	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:25:05 [INFO ]  Epoch:  125	Loss: 0.3199	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:25:07 [INFO ]  Epoch:  126	Loss: 0.2647	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:25:10 [INFO ]  Epoch:  127	Loss: 0.2805	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 11:25:12 [INFO ]  Epoch:  128	Loss: 0.3272	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:25:15 [INFO ]  Epoch:  129	Loss: 0.2506	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:25:18 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0130/results.pth
+2022-09-11 11:25:18 [INFO ]  
+2022-09-11 11:25:18 [INFO ]  Begin of epoch 130 :
+2022-09-11 11:25:21 [INFO ]  Begin of epoch 130 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:25:21 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:25:21 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:25:21 [INFO ]  	   step  1 (lr=0.127109)                   90.47%                   0.3174
+2022-09-11 11:25:21 [INFO ]  
+2022-09-11 11:25:21 [INFO ]  Epoch:  130	Loss: 0.3522	Data Time: 0.28s	Train Time: 0.00s
+2022-09-11 11:25:23 [INFO ]  Epoch:  131	Loss: 0.2985	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:25:25 [INFO ]  Epoch:  132	Loss: 0.3428	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:25:28 [INFO ]  Epoch:  133	Loss: 0.2709	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:25:30 [INFO ]  Epoch:  134	Loss: 0.3066	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:25:32 [INFO ]  Epoch:  135	Loss: 0.2344	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:25:35 [INFO ]  Epoch:  136	Loss: 0.2630	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:25:37 [INFO ]  Epoch:  137	Loss: 0.2781	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:25:39 [INFO ]  Epoch:  138	Loss: 0.2663	Data Time: 0.26s	Train Time: 0.00s
+2022-09-11 11:25:41 [INFO ]  Epoch:  139	Loss: 0.3120	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:25:45 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0140/results.pth
+2022-09-11 11:25:45 [INFO ]  
+2022-09-11 11:25:45 [INFO ]  Begin of epoch 140 :
+2022-09-11 11:25:48 [INFO ]  Begin of epoch 140 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:25:48 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:25:48 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:25:48 [INFO ]  	   step  1 (lr=0.127456)                   92.65%                   0.2496
+2022-09-11 11:25:48 [INFO ]  
+2022-09-11 11:25:48 [INFO ]  Epoch:  140	Loss: 0.2561	Data Time: 0.37s	Train Time: 0.00s
+2022-09-11 11:25:50 [INFO ]  Epoch:  141	Loss: 0.2628	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:25:52 [INFO ]  Epoch:  142	Loss: 0.2603	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:25:55 [INFO ]  Epoch:  143	Loss: 0.2435	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:25:57 [INFO ]  Epoch:  144	Loss: 0.3111	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:25:59 [INFO ]  Epoch:  145	Loss: 0.2484	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:26:01 [INFO ]  Epoch:  146	Loss: 0.3285	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:26:04 [INFO ]  Epoch:  147	Loss: 0.2763	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:26:06 [INFO ]  Epoch:  148	Loss: 0.2548	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:26:08 [INFO ]  Epoch:  149	Loss: 0.2822	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 11:26:12 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0150/results.pth
+2022-09-11 11:26:12 [INFO ]  
+2022-09-11 11:26:12 [INFO ]  Begin of epoch 150 :
+2022-09-11 11:26:15 [INFO ]  Begin of epoch 150 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:26:15 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:26:15 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:26:15 [INFO ]  	   step  1 (lr=0.128007)                   92.66%                   0.2450
+2022-09-11 11:26:15 [INFO ]  
+2022-09-11 11:26:15 [INFO ]  Epoch:  150	Loss: 0.2838	Data Time: 0.28s	Train Time: 0.00s
+2022-09-11 11:26:17 [INFO ]  Epoch:  151	Loss: 0.2545	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:26:19 [INFO ]  Epoch:  152	Loss: 0.2923	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:26:21 [INFO ]  Epoch:  153	Loss: 0.2530	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:26:24 [INFO ]  Epoch:  154	Loss: 0.2969	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:26:26 [INFO ]  Epoch:  155	Loss: 0.2397	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:26:28 [INFO ]  Epoch:  156	Loss: 0.3164	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:26:31 [INFO ]  Epoch:  157	Loss: 0.2819	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:26:33 [INFO ]  Epoch:  158	Loss: 0.2876	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:26:35 [INFO ]  Epoch:  159	Loss: 0.2929	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:26:39 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0160/results.pth
+2022-09-11 11:26:39 [INFO ]  
+2022-09-11 11:26:39 [INFO ]  Begin of epoch 160 :
+2022-09-11 11:26:42 [INFO ]  Begin of epoch 160 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:26:42 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:26:42 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:26:42 [INFO ]  	   step  1 (lr=0.128127)                   92.60%                   0.2447
+2022-09-11 11:26:42 [INFO ]  
+2022-09-11 11:26:42 [INFO ]  Epoch:  160	Loss: 0.2782	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:26:44 [INFO ]  Epoch:  161	Loss: 0.3223	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:26:46 [INFO ]  Epoch:  162	Loss: 1.0798	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:26:48 [INFO ]  Epoch:  163	Loss: 0.2832	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:26:51 [INFO ]  Epoch:  164	Loss: 0.2539	Data Time: 0.25s	Train Time: 0.02s
+2022-09-11 11:26:53 [INFO ]  Epoch:  165	Loss: 0.2600	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:26:56 [INFO ]  Epoch:  166	Loss: 0.2591	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:26:58 [INFO ]  Epoch:  167	Loss: 0.2945	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:27:00 [INFO ]  Epoch:  168	Loss: 0.2632	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:27:02 [INFO ]  Epoch:  169	Loss: 0.2881	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:27:06 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0170/results.pth
+2022-09-11 11:27:06 [INFO ]  
+2022-09-11 11:27:06 [INFO ]  Begin of epoch 170 :
+2022-09-11 11:27:09 [INFO ]  Begin of epoch 170 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:27:09 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:27:09 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:27:09 [INFO ]  	   step  1 (lr=0.128242)                   92.65%                   0.2462
+2022-09-11 11:27:09 [INFO ]  
+2022-09-11 11:27:09 [INFO ]  Epoch:  170	Loss: 0.2954	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:27:11 [INFO ]  Epoch:  171	Loss: 0.2567	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:27:13 [INFO ]  Epoch:  172	Loss: 0.2848	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:27:16 [INFO ]  Epoch:  173	Loss: 0.2505	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:27:18 [INFO ]  Epoch:  174	Loss: 0.2368	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:27:20 [INFO ]  Epoch:  175	Loss: 0.3075	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:27:23 [INFO ]  Epoch:  176	Loss: 0.2609	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:27:25 [INFO ]  Epoch:  177	Loss: 0.2927	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 11:27:27 [INFO ]  Epoch:  178	Loss: 0.2583	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:27:30 [INFO ]  Epoch:  179	Loss: 0.2445	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:27:33 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0180/results.pth
+2022-09-11 11:27:33 [INFO ]  
+2022-09-11 11:27:33 [INFO ]  Begin of epoch 180 :
+2022-09-11 11:27:36 [INFO ]  Begin of epoch 180 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:27:36 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:27:36 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:27:36 [INFO ]  	   step  1 (lr=0.128294)                   92.71%                   0.2430
+2022-09-11 11:27:36 [INFO ]  
+2022-09-11 11:27:36 [INFO ]  Epoch:  180	Loss: 0.2784	Data Time: 0.24s	Train Time: 0.00s
+2022-09-11 11:27:38 [INFO ]  Epoch:  181	Loss: 0.2768	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:27:40 [INFO ]  Epoch:  182	Loss: 0.3111	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:27:43 [INFO ]  Epoch:  183	Loss: 0.2937	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:27:45 [INFO ]  Epoch:  184	Loss: 0.2416	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:27:47 [INFO ]  Epoch:  185	Loss: 0.2304	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:27:49 [INFO ]  Epoch:  186	Loss: 0.2676	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:27:52 [INFO ]  Epoch:  187	Loss: 0.2708	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:27:54 [INFO ]  Epoch:  188	Loss: 0.2717	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:27:56 [INFO ]  Epoch:  189	Loss: 0.3993	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:28:00 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0190/results.pth
+2022-09-11 11:28:00 [INFO ]  
+2022-09-11 11:28:00 [INFO ]  Begin of epoch 190 :
+2022-09-11 11:28:03 [INFO ]  Begin of epoch 190 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:28:03 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:28:03 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:28:03 [INFO ]  	   step  1 (lr=0.128265)                   92.69%                   0.2420
+2022-09-11 11:28:03 [INFO ]  
+2022-09-11 11:28:03 [INFO ]  Epoch:  190	Loss: 0.2919	Data Time: 0.26s	Train Time: 0.00s
+2022-09-11 11:28:05 [INFO ]  Epoch:  191	Loss: 0.2892	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:28:07 [INFO ]  Epoch:  192	Loss: 0.3081	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:28:10 [INFO ]  Epoch:  193	Loss: 0.2594	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:28:12 [INFO ]  Epoch:  194	Loss: 0.4050	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:28:15 [INFO ]  Epoch:  195	Loss: 0.2977	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:28:17 [INFO ]  Epoch:  196	Loss: 0.3034	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:28:20 [INFO ]  Epoch:  197	Loss: 0.2773	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:28:22 [INFO ]  Epoch:  198	Loss: 0.3066	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:28:24 [INFO ]  Epoch:  199	Loss: 0.2688	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:28:27 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/results.pth
+2022-09-11 11:28:27 [INFO ]  
+2022-09-11 11:28:27 [INFO ]  Final evaluation for MNIST_RGB :
+2022-09-11 11:28:30 [INFO ]  Final evaluation for MNIST_RGB evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:28:30 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:28:30 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:28:30 [INFO ]  	   step  1 (lr=0.128198)                   92.67%                   0.2445
+2022-09-11 11:28:30 [INFO ]  
+2022-09-11 11:28:30 [INFO ]  
+2022-09-11 11:28:30 [INFO ]  Final evaluation for FASHION_MNIST :
+2022-09-11 11:28:34 [INFO ]  Final evaluation for FASHION_MNIST evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:28:34 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:28:34 [INFO ]  	            before steps                   87.27%                   0.3620
+2022-09-11 11:28:34 [INFO ]  	   step  1 (lr=0.128198)                   10.59%                   5.8559
+2022-09-11 11:28:34 [INFO ]  
+2022-09-11 11:29:27 [INFO ]  ======================================== 2022-09-11 11:29:27 ========================================
+2022-09-11 11:29:27 [INFO ]  Base directory is ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST
+2022-09-11 11:29:27 [INFO ]  Options: 
+2022-09-11 11:29:27 [INFO ]  	base_dir: null
+2022-09-11 11:29:27 [INFO ]  	batch_size: 1024
+2022-09-11 11:29:27 [INFO ]  	checkpoint_interval: 10
+2022-09-11 11:29:27 [INFO ]  	dataset: MNIST_RGB
+2022-09-11 11:29:27 [INFO ]  	dataset_labels:
+2022-09-11 11:29:27 [INFO ]  	- 0
+2022-09-11 11:29:27 [INFO ]  	- 1
+2022-09-11 11:29:27 [INFO ]  	- 2
+2022-09-11 11:29:27 [INFO ]  	- 3
+2022-09-11 11:29:27 [INFO ]  	- 4
+2022-09-11 11:29:27 [INFO ]  	- 5
+2022-09-11 11:29:27 [INFO ]  	- 6
+2022-09-11 11:29:27 [INFO ]  	- 7
+2022-09-11 11:29:27 [INFO ]  	- 8
+2022-09-11 11:29:27 [INFO ]  	- 9
+2022-09-11 11:29:27 [INFO ]  	dataset_normalization: !!python/tuple
+2022-09-11 11:29:27 [INFO ]  	- !!python/tuple
+2022-09-11 11:29:27 [INFO ]  	    - 0.1307
+2022-09-11 11:29:27 [INFO ]  	    - 0.1307
+2022-09-11 11:29:27 [INFO ]  	    - 0.1307
+2022-09-11 11:29:27 [INFO ]  	- !!python/tuple
+2022-09-11 11:29:27 [INFO ]  	    - 0.3081
+2022-09-11 11:29:27 [INFO ]  	    - 0.3081
+2022-09-11 11:29:27 [INFO ]  	    - 0.3081
+2022-09-11 11:29:27 [INFO ]  	dataset_root: ./data/mnist
+2022-09-11 11:29:27 [INFO ]  	decay_epochs: 50
+2022-09-11 11:29:27 [INFO ]  	decay_factor: 0.1
+2022-09-11 11:29:27 [INFO ]  	device_id: 0
+2022-09-11 11:29:27 [INFO ]  	distill_epochs: 1
+2022-09-11 11:29:27 [INFO ]  	distill_lr: 0.02
+2022-09-11 11:29:27 [INFO ]  	distill_steps: 1
+2022-09-11 11:29:27 [INFO ]  	epochs: 200
+2022-09-11 11:29:27 [INFO ]  	expand_cls: false
+2022-09-11 11:29:27 [INFO ]  	forgetting_dataset: null
+2022-09-11 11:29:27 [INFO ]  	init: xavier
+2022-09-11 11:29:27 [INFO ]  	init_param: 1.0
+2022-09-11 11:29:27 [INFO ]  	input_size: 32
+2022-09-11 11:29:27 [INFO ]  	ipc: 1
+2022-09-11 11:29:27 [INFO ]  	log_file: ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/log.txt
+2022-09-11 11:29:27 [INFO ]  	log_interval: 100
+2022-09-11 11:29:27 [INFO ]  	log_level: INFO
+2022-09-11 11:29:27 [INFO ]  	lr: 0.01
+2022-09-11 11:29:27 [INFO ]  	mode: distill_adapt
+2022-09-11 11:29:27 [INFO ]  	nc: 3
+2022-09-11 11:29:27 [INFO ]  	num_classes: 10
+2022-09-11 11:29:27 [INFO ]  	num_workers: 8
+2022-09-11 11:29:27 [INFO ]  	phase: train
+2022-09-11 11:29:27 [INFO ]  	source_dataset: FASHION_MNIST
+2022-09-11 11:29:27 [INFO ]  	start_time: '2022-09-11 11:29:27'
+2022-09-11 11:29:27 [INFO ]  	test_batch_size: 1024
+2022-09-11 11:29:27 [INFO ]  	
+2022-09-11 11:29:27 [INFO ]  train dataset size:	60000
+2022-09-11 11:29:27 [INFO ]  test dataset size: 	10000
+2022-09-11 11:29:27 [INFO ]  datasets built!
+2022-09-11 11:29:27 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-09-11 11:29:30 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0000/results.pth
+2022-09-11 11:29:30 [INFO ]  
+2022-09-11 11:29:30 [INFO ]  Begin of epoch 0 :
+2022-09-11 11:29:33 [INFO ]  Begin of epoch 0 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:29:33 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:29:33 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:29:33 [INFO ]  	   step  1 (lr=0.020000)                   10.35%                  22.6237
+2022-09-11 11:29:33 [INFO ]  
+2022-09-11 11:29:33 [INFO ]  Epoch:    0	Loss: 23.3058	Data Time: 0.51s	Train Time: 0.03s
+2022-09-11 11:29:35 [INFO ]  Epoch:    1	Loss: 6.4924	Data Time: 0.22s	Train Time: 0.01s
+2022-09-11 11:29:37 [INFO ]  Epoch:    2	Loss: 3.1912	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:29:39 [INFO ]  Epoch:    3	Loss: 2.3598	Data Time: 0.26s	Train Time: 0.00s
+2022-09-11 11:29:42 [INFO ]  Epoch:    4	Loss: 2.2135	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:29:44 [INFO ]  Epoch:    5	Loss: 2.1680	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:29:46 [INFO ]  Epoch:    6	Loss: 2.0814	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:29:48 [INFO ]  Epoch:    7	Loss: 1.9972	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:29:51 [INFO ]  Epoch:    8	Loss: 1.9057	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:29:53 [INFO ]  Epoch:    9	Loss: 1.8094	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:29:57 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0010/results.pth
+2022-09-11 11:29:57 [INFO ]  
+2022-09-11 11:29:57 [INFO ]  Begin of epoch 10 :
+2022-09-11 11:30:00 [INFO ]  Begin of epoch 10 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:30:00 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:30:00 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:30:00 [INFO ]  	   step  1 (lr=0.037693)                   39.35%                   1.7025
+2022-09-11 11:30:00 [INFO ]  
+2022-09-11 11:30:00 [INFO ]  Epoch:   10	Loss: 1.7319	Data Time: 0.24s	Train Time: 0.00s
+2022-09-11 11:30:02 [INFO ]  Epoch:   11	Loss: 1.6781	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:30:04 [INFO ]  Epoch:   12	Loss: 1.4851	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:30:07 [INFO ]  Epoch:   13	Loss: 1.5715	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:30:09 [INFO ]  Epoch:   14	Loss: 1.8174	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:30:11 [INFO ]  Epoch:   15	Loss: 1.3299	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:30:13 [INFO ]  Epoch:   16	Loss: 1.3693	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:30:16 [INFO ]  Epoch:   17	Loss: 1.1632	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:30:18 [INFO ]  Epoch:   18	Loss: 1.0924	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:30:20 [INFO ]  Epoch:   19	Loss: 0.9816	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:30:24 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0020/results.pth
+2022-09-11 11:30:24 [INFO ]  
+2022-09-11 11:30:24 [INFO ]  Begin of epoch 20 :
+2022-09-11 11:30:27 [INFO ]  Begin of epoch 20 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:30:27 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:30:27 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:30:27 [INFO ]  	   step  1 (lr=0.065832)                   68.90%                   0.9355
+2022-09-11 11:30:27 [INFO ]  
+2022-09-11 11:30:27 [INFO ]  Epoch:   20	Loss: 0.9726	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:30:29 [INFO ]  Epoch:   21	Loss: 0.8647	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:30:31 [INFO ]  Epoch:   22	Loss: 0.8565	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:30:33 [INFO ]  Epoch:   23	Loss: 1.1695	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:30:35 [INFO ]  Epoch:   24	Loss: 0.8843	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:30:38 [INFO ]  Epoch:   25	Loss: 0.7473	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:30:40 [INFO ]  Epoch:   26	Loss: 0.6911	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:30:42 [INFO ]  Epoch:   27	Loss: 0.4950	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:30:45 [INFO ]  Epoch:   28	Loss: 0.4450	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:30:47 [INFO ]  Epoch:   29	Loss: 0.4408	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:30:51 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0030/results.pth
+2022-09-11 11:30:51 [INFO ]  
+2022-09-11 11:30:51 [INFO ]  Begin of epoch 30 :
+2022-09-11 11:30:54 [INFO ]  Begin of epoch 30 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:30:54 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:30:54 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:30:54 [INFO ]  	   step  1 (lr=0.116276)                   85.21%                   0.4688
+2022-09-11 11:30:54 [INFO ]  
+2022-09-11 11:30:54 [INFO ]  Epoch:   30	Loss: 0.5104	Data Time: 0.25s	Train Time: 0.00s
+2022-09-11 11:30:56 [INFO ]  Epoch:   31	Loss: 0.4378	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:30:58 [INFO ]  Epoch:   32	Loss: 0.6717	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:31:00 [INFO ]  Epoch:   33	Loss: 0.5763	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:31:03 [INFO ]  Epoch:   34	Loss: 0.4739	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:31:05 [INFO ]  Epoch:   35	Loss: 0.5981	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:31:07 [INFO ]  Epoch:   36	Loss: 0.5126	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:31:10 [INFO ]  Epoch:   37	Loss: 0.4921	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:31:12 [INFO ]  Epoch:   38	Loss: 0.4518	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:31:14 [INFO ]  Epoch:   39	Loss: 0.3816	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:31:18 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0040/results.pth
+2022-09-11 11:31:18 [INFO ]  
+2022-09-11 11:31:18 [INFO ]  Begin of epoch 40 :
+2022-09-11 11:31:21 [INFO ]  Begin of epoch 40 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:31:21 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:31:21 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:31:21 [INFO ]  	   step  1 (lr=0.128841)                   90.29%                   0.3137
+2022-09-11 11:31:21 [INFO ]  
+2022-09-11 11:31:21 [INFO ]  Epoch:   40	Loss: 0.3118	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:31:23 [INFO ]  Epoch:   41	Loss: 0.3599	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:31:25 [INFO ]  Epoch:   42	Loss: 0.2853	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:31:28 [INFO ]  Epoch:   43	Loss: 0.3678	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:31:30 [INFO ]  Epoch:   44	Loss: 0.3515	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:31:32 [INFO ]  Epoch:   45	Loss: 0.3009	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:31:35 [INFO ]  Epoch:   46	Loss: 0.3882	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:31:37 [INFO ]  Epoch:   47	Loss: 0.2879	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:31:39 [INFO ]  Epoch:   48	Loss: 0.3006	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:31:41 [INFO ]  Epoch:   49	Loss: 0.2827	Data Time: 0.27s	Train Time: 0.00s
+2022-09-11 11:31:45 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0050/results.pth
+2022-09-11 11:31:45 [INFO ]  
+2022-09-11 11:31:45 [INFO ]  Begin of epoch 50 :
+2022-09-11 11:31:48 [INFO ]  Begin of epoch 50 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:31:48 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:31:48 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:31:48 [INFO ]  	   step  1 (lr=0.151946)                   92.83%                   0.2294
+2022-09-11 11:31:48 [INFO ]  
+2022-09-11 11:31:48 [INFO ]  Epoch:   50	Loss: 0.2953	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:31:50 [INFO ]  Epoch:   51	Loss: 0.2676	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:31:53 [INFO ]  Epoch:   52	Loss: 0.2771	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:31:55 [INFO ]  Epoch:   53	Loss: 0.2776	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:31:57 [INFO ]  Epoch:   54	Loss: 0.2817	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:32:00 [INFO ]  Epoch:   55	Loss: 0.3006	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:32:02 [INFO ]  Epoch:   56	Loss: 0.2905	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:32:04 [INFO ]  Epoch:   57	Loss: 0.2323	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:32:07 [INFO ]  Epoch:   58	Loss: 0.2736	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:32:09 [INFO ]  Epoch:   59	Loss: 0.2879	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:32:12 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0060/results.pth
+2022-09-11 11:32:12 [INFO ]  
+2022-09-11 11:32:12 [INFO ]  Begin of epoch 60 :
+2022-09-11 11:32:15 [INFO ]  Begin of epoch 60 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:32:15 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:32:15 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:32:15 [INFO ]  	   step  1 (lr=0.155110)                   92.25%                   0.2547
+2022-09-11 11:32:15 [INFO ]  
+2022-09-11 11:32:15 [INFO ]  Epoch:   60	Loss: 0.3049	Data Time: 0.27s	Train Time: 0.00s
+2022-09-11 11:32:17 [INFO ]  Epoch:   61	Loss: 0.2693	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:32:19 [INFO ]  Epoch:   62	Loss: 0.3388	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:32:22 [INFO ]  Epoch:   63	Loss: 0.2991	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:32:24 [INFO ]  Epoch:   64	Loss: 0.2724	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:32:26 [INFO ]  Epoch:   65	Loss: 0.2298	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:32:29 [INFO ]  Epoch:   66	Loss: 0.2463	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 11:32:31 [INFO ]  Epoch:   67	Loss: 0.2248	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:32:33 [INFO ]  Epoch:   68	Loss: 0.2919	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:32:36 [INFO ]  Epoch:   69	Loss: 0.2384	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:32:39 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0070/results.pth
+2022-09-11 11:32:39 [INFO ]  
+2022-09-11 11:32:39 [INFO ]  Begin of epoch 70 :
+2022-09-11 11:32:42 [INFO ]  Begin of epoch 70 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:32:42 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:32:42 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:32:42 [INFO ]  	   step  1 (lr=0.160302)                   93.15%                   0.2212
+2022-09-11 11:32:42 [INFO ]  
+2022-09-11 11:32:42 [INFO ]  Epoch:   70	Loss: 0.2366	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:32:44 [INFO ]  Epoch:   71	Loss: 0.2983	Data Time: 0.23s	Train Time: 0.01s
+2022-09-11 11:32:46 [INFO ]  Epoch:   72	Loss: 0.2872	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:32:49 [INFO ]  Epoch:   73	Loss: 0.2224	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:32:51 [INFO ]  Epoch:   74	Loss: 0.2341	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:32:53 [INFO ]  Epoch:   75	Loss: 0.3144	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:32:55 [INFO ]  Epoch:   76	Loss: 0.2843	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:32:58 [INFO ]  Epoch:   77	Loss: 0.2423	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:33:00 [INFO ]  Epoch:   78	Loss: 0.2593	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:33:02 [INFO ]  Epoch:   79	Loss: 0.2539	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:33:06 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0080/results.pth
+2022-09-11 11:33:06 [INFO ]  
+2022-09-11 11:33:06 [INFO ]  Begin of epoch 80 :
+2022-09-11 11:33:09 [INFO ]  Begin of epoch 80 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:33:09 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:33:09 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:33:09 [INFO ]  	   step  1 (lr=0.163918)                   93.36%                   0.2170
+2022-09-11 11:33:09 [INFO ]  
+2022-09-11 11:33:09 [INFO ]  Epoch:   80	Loss: 0.2754	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:33:11 [INFO ]  Epoch:   81	Loss: 0.1985	Data Time: 0.23s	Train Time: 0.01s
+2022-09-11 11:33:13 [INFO ]  Epoch:   82	Loss: 0.4689	Data Time: 0.23s	Train Time: 0.01s
+2022-09-11 11:33:16 [INFO ]  Epoch:   83	Loss: 0.2837	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:33:18 [INFO ]  Epoch:   84	Loss: 0.2540	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:33:20 [INFO ]  Epoch:   85	Loss: 0.2512	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:33:23 [INFO ]  Epoch:   86	Loss: 0.2681	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:33:25 [INFO ]  Epoch:   87	Loss: 0.2544	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:33:28 [INFO ]  Epoch:   88	Loss: 0.2367	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:33:30 [INFO ]  Epoch:   89	Loss: 0.2277	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:33:34 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0090/results.pth
+2022-09-11 11:33:34 [INFO ]  
+2022-09-11 11:33:34 [INFO ]  Begin of epoch 90 :
+2022-09-11 11:33:37 [INFO ]  Begin of epoch 90 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:33:37 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:33:37 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:33:37 [INFO ]  	   step  1 (lr=0.163506)                   93.47%                   0.2001
+2022-09-11 11:33:37 [INFO ]  
+2022-09-11 11:33:37 [INFO ]  Epoch:   90	Loss: 0.2450	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:33:39 [INFO ]  Epoch:   91	Loss: 0.2269	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:33:41 [INFO ]  Epoch:   92	Loss: 0.2159	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:33:44 [INFO ]  Epoch:   93	Loss: 0.2327	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:33:46 [INFO ]  Epoch:   94	Loss: 0.2237	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:33:48 [INFO ]  Epoch:   95	Loss: 0.2461	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:33:50 [INFO ]  Epoch:   96	Loss: 0.2863	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:33:53 [INFO ]  Epoch:   97	Loss: 0.2056	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:33:55 [INFO ]  Epoch:   98	Loss: 0.3368	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:33:57 [INFO ]  Epoch:   99	Loss: 0.2564	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:34:01 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0100/results.pth
+2022-09-11 11:34:01 [INFO ]  
+2022-09-11 11:34:01 [INFO ]  Begin of epoch 100 :
+2022-09-11 11:34:04 [INFO ]  Begin of epoch 100 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:34:04 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:34:04 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:34:04 [INFO ]  	   step  1 (lr=0.164583)                   91.60%                   0.2616
+2022-09-11 11:34:04 [INFO ]  
+2022-09-11 11:34:04 [INFO ]  Epoch:  100	Loss: 0.3059	Data Time: 0.24s	Train Time: 0.00s
+2022-09-11 11:34:06 [INFO ]  Epoch:  101	Loss: 0.2862	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:34:08 [INFO ]  Epoch:  102	Loss: 0.2877	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:34:10 [INFO ]  Epoch:  103	Loss: 0.2834	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:34:12 [INFO ]  Epoch:  104	Loss: 0.3065	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:34:15 [INFO ]  Epoch:  105	Loss: 0.2914	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:34:17 [INFO ]  Epoch:  106	Loss: 0.2459	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:34:19 [INFO ]  Epoch:  107	Loss: 0.2681	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:34:21 [INFO ]  Epoch:  108	Loss: 0.2423	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:34:24 [INFO ]  Epoch:  109	Loss: 0.2671	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:34:27 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0110/results.pth
+2022-09-11 11:34:27 [INFO ]  
+2022-09-11 11:34:27 [INFO ]  Begin of epoch 110 :
+2022-09-11 11:34:30 [INFO ]  Begin of epoch 110 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:34:30 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:34:30 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:34:30 [INFO ]  	   step  1 (lr=0.166661)                   93.53%                   0.2085
+2022-09-11 11:34:30 [INFO ]  
+2022-09-11 11:34:30 [INFO ]  Epoch:  110	Loss: 0.2465	Data Time: 0.39s	Train Time: 0.00s
+2022-09-11 11:34:33 [INFO ]  Epoch:  111	Loss: 0.2442	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:34:35 [INFO ]  Epoch:  112	Loss: 0.2414	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:34:37 [INFO ]  Epoch:  113	Loss: 0.2813	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:34:39 [INFO ]  Epoch:  114	Loss: 0.2307	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:34:42 [INFO ]  Epoch:  115	Loss: 0.2591	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:34:44 [INFO ]  Epoch:  116	Loss: 0.2104	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:34:46 [INFO ]  Epoch:  117	Loss: 0.2394	Data Time: 0.23s	Train Time: 0.01s
+2022-09-11 11:34:49 [INFO ]  Epoch:  118	Loss: 0.2073	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:34:51 [INFO ]  Epoch:  119	Loss: 0.2052	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:34:54 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0120/results.pth
+2022-09-11 11:34:54 [INFO ]  
+2022-09-11 11:34:54 [INFO ]  Begin of epoch 120 :
+2022-09-11 11:34:58 [INFO ]  Begin of epoch 120 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:34:58 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:34:58 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:34:58 [INFO ]  	   step  1 (lr=0.166800)                   93.80%                   0.2001
+2022-09-11 11:34:58 [INFO ]  
+2022-09-11 11:34:58 [INFO ]  Epoch:  120	Loss: 0.2449	Data Time: 0.24s	Train Time: 0.00s
+2022-09-11 11:35:00 [INFO ]  Epoch:  121	Loss: 0.2336	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:35:02 [INFO ]  Epoch:  122	Loss: 0.2400	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:35:04 [INFO ]  Epoch:  123	Loss: 0.1934	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:35:06 [INFO ]  Epoch:  124	Loss: 0.2175	Data Time: 0.23s	Train Time: 0.01s
+2022-09-11 11:35:09 [INFO ]  Epoch:  125	Loss: 0.2652	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:35:11 [INFO ]  Epoch:  126	Loss: 0.2390	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 11:35:13 [INFO ]  Epoch:  127	Loss: 0.2356	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:35:16 [INFO ]  Epoch:  128	Loss: 0.3022	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:35:18 [INFO ]  Epoch:  129	Loss: 0.2967	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:35:21 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0130/results.pth
+2022-09-11 11:35:21 [INFO ]  
+2022-09-11 11:35:21 [INFO ]  Begin of epoch 130 :
+2022-09-11 11:35:24 [INFO ]  Begin of epoch 130 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:35:24 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:35:24 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:35:24 [INFO ]  	   step  1 (lr=0.167769)                   93.31%                   0.2108
+2022-09-11 11:35:24 [INFO ]  
+2022-09-11 11:35:24 [INFO ]  Epoch:  130	Loss: 0.2585	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:35:26 [INFO ]  Epoch:  131	Loss: 0.2688	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:35:29 [INFO ]  Epoch:  132	Loss: 0.2766	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:35:31 [INFO ]  Epoch:  133	Loss: 0.2286	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:35:33 [INFO ]  Epoch:  134	Loss: 0.2328	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:35:35 [INFO ]  Epoch:  135	Loss: 0.2181	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:35:38 [INFO ]  Epoch:  136	Loss: 0.2236	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:35:40 [INFO ]  Epoch:  137	Loss: 0.2338	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:35:42 [INFO ]  Epoch:  138	Loss: 0.2495	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:35:44 [INFO ]  Epoch:  139	Loss: 0.3141	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:35:48 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0140/results.pth
+2022-09-11 11:35:48 [INFO ]  
+2022-09-11 11:35:48 [INFO ]  Begin of epoch 140 :
+2022-09-11 11:35:51 [INFO ]  Begin of epoch 140 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:35:51 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:35:51 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:35:51 [INFO ]  	   step  1 (lr=0.168317)                   92.70%                   0.2391
+2022-09-11 11:35:51 [INFO ]  
+2022-09-11 11:35:51 [INFO ]  Epoch:  140	Loss: 0.2959	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:35:53 [INFO ]  Epoch:  141	Loss: 0.2064	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:35:55 [INFO ]  Epoch:  142	Loss: 0.2458	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:35:58 [INFO ]  Epoch:  143	Loss: 0.1965	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:36:00 [INFO ]  Epoch:  144	Loss: 0.2058	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:36:02 [INFO ]  Epoch:  145	Loss: 0.3203	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:36:05 [INFO ]  Epoch:  146	Loss: 0.2150	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:36:07 [INFO ]  Epoch:  147	Loss: 0.1880	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:36:09 [INFO ]  Epoch:  148	Loss: 0.2177	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:36:11 [INFO ]  Epoch:  149	Loss: 0.2139	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:36:15 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0150/results.pth
+2022-09-11 11:36:15 [INFO ]  
+2022-09-11 11:36:15 [INFO ]  Begin of epoch 150 :
+2022-09-11 11:36:18 [INFO ]  Begin of epoch 150 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:36:18 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:36:18 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:36:18 [INFO ]  	   step  1 (lr=0.169272)                   94.19%                   0.1890
+2022-09-11 11:36:18 [INFO ]  
+2022-09-11 11:36:18 [INFO ]  Epoch:  150	Loss: 0.2460	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:36:20 [INFO ]  Epoch:  151	Loss: 0.2142	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:36:22 [INFO ]  Epoch:  152	Loss: 0.1978	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:36:24 [INFO ]  Epoch:  153	Loss: 0.2168	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:36:27 [INFO ]  Epoch:  154	Loss: 0.2035	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:36:29 [INFO ]  Epoch:  155	Loss: 0.2043	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:36:31 [INFO ]  Epoch:  156	Loss: 0.1806	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:36:34 [INFO ]  Epoch:  157	Loss: 0.2035	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:36:36 [INFO ]  Epoch:  158	Loss: 0.2380	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:36:39 [INFO ]  Epoch:  159	Loss: 0.2099	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:36:42 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0160/results.pth
+2022-09-11 11:36:42 [INFO ]  
+2022-09-11 11:36:42 [INFO ]  Begin of epoch 160 :
+2022-09-11 11:36:45 [INFO ]  Begin of epoch 160 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:36:45 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:36:45 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:36:45 [INFO ]  	   step  1 (lr=0.169581)                   94.13%                   0.1889
+2022-09-11 11:36:45 [INFO ]  
+2022-09-11 11:36:45 [INFO ]  Epoch:  160	Loss: 0.2328	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:36:47 [INFO ]  Epoch:  161	Loss: 0.2262	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:36:50 [INFO ]  Epoch:  162	Loss: 0.1964	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:36:52 [INFO ]  Epoch:  163	Loss: 0.1882	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:36:54 [INFO ]  Epoch:  164	Loss: 0.2065	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:36:57 [INFO ]  Epoch:  165	Loss: 0.2154	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:36:59 [INFO ]  Epoch:  166	Loss: 0.2163	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:37:01 [INFO ]  Epoch:  167	Loss: 0.1802	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:37:03 [INFO ]  Epoch:  168	Loss: 0.2256	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:37:05 [INFO ]  Epoch:  169	Loss: 0.2354	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:37:09 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0170/results.pth
+2022-09-11 11:37:09 [INFO ]  
+2022-09-11 11:37:09 [INFO ]  Begin of epoch 170 :
+2022-09-11 11:37:12 [INFO ]  Begin of epoch 170 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:37:12 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:37:12 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:37:12 [INFO ]  	   step  1 (lr=0.169936)                   94.11%                   0.1889
+2022-09-11 11:37:12 [INFO ]  
+2022-09-11 11:37:12 [INFO ]  Epoch:  170	Loss: 0.2023	Data Time: 0.25s	Train Time: 0.00s
+2022-09-11 11:37:14 [INFO ]  Epoch:  171	Loss: 0.1909	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:37:16 [INFO ]  Epoch:  172	Loss: 0.2507	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:37:19 [INFO ]  Epoch:  173	Loss: 0.1894	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:37:21 [INFO ]  Epoch:  174	Loss: 0.1932	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:37:23 [INFO ]  Epoch:  175	Loss: 0.2229	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:37:26 [INFO ]  Epoch:  176	Loss: 0.2120	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:37:28 [INFO ]  Epoch:  177	Loss: 0.2196	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:37:30 [INFO ]  Epoch:  178	Loss: 0.2253	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:37:33 [INFO ]  Epoch:  179	Loss: 0.2188	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:37:36 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0180/results.pth
+2022-09-11 11:37:36 [INFO ]  
+2022-09-11 11:37:36 [INFO ]  Begin of epoch 180 :
+2022-09-11 11:37:39 [INFO ]  Begin of epoch 180 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:37:39 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:37:39 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:37:39 [INFO ]  	   step  1 (lr=0.170261)                   94.15%                   0.1881
+2022-09-11 11:37:39 [INFO ]  
+2022-09-11 11:37:39 [INFO ]  Epoch:  180	Loss: 0.2036	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:37:41 [INFO ]  Epoch:  181	Loss: 0.2204	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:37:44 [INFO ]  Epoch:  182	Loss: 0.2247	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:37:46 [INFO ]  Epoch:  183	Loss: 0.2173	Data Time: 0.39s	Train Time: 0.01s
+2022-09-11 11:37:49 [INFO ]  Epoch:  184	Loss: 0.2299	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:37:51 [INFO ]  Epoch:  185	Loss: 0.1906	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:37:53 [INFO ]  Epoch:  186	Loss: 0.1898	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:37:55 [INFO ]  Epoch:  187	Loss: 0.2459	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:37:58 [INFO ]  Epoch:  188	Loss: 0.2359	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:38:00 [INFO ]  Epoch:  189	Loss: 0.2536	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:38:04 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0190/results.pth
+2022-09-11 11:38:04 [INFO ]  
+2022-09-11 11:38:04 [INFO ]  Begin of epoch 190 :
+2022-09-11 11:38:07 [INFO ]  Begin of epoch 190 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:38:07 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:38:07 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:38:07 [INFO ]  	   step  1 (lr=0.170736)                   94.07%                   0.1892
+2022-09-11 11:38:07 [INFO ]  
+2022-09-11 11:38:07 [INFO ]  Epoch:  190	Loss: 0.2282	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:38:09 [INFO ]  Epoch:  191	Loss: 0.1949	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:38:11 [INFO ]  Epoch:  192	Loss: 0.2048	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:38:14 [INFO ]  Epoch:  193	Loss: 0.1942	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:38:16 [INFO ]  Epoch:  194	Loss: 0.2194	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:38:19 [INFO ]  Epoch:  195	Loss: 0.1782	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:38:21 [INFO ]  Epoch:  196	Loss: 0.2120	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:38:23 [INFO ]  Epoch:  197	Loss: 0.2263	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:38:26 [INFO ]  Epoch:  198	Loss: 0.1874	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:38:28 [INFO ]  Epoch:  199	Loss: 0.1885	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:38:31 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/results.pth
+2022-09-11 11:38:31 [INFO ]  
+2022-09-11 11:38:31 [INFO ]  Final evaluation for MNIST_RGB :
+2022-09-11 11:38:34 [INFO ]  Final evaluation for MNIST_RGB evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:38:34 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:38:34 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:38:34 [INFO ]  	   step  1 (lr=0.171117)                   94.18%                   0.1873
+2022-09-11 11:38:34 [INFO ]  
+2022-09-11 11:38:34 [INFO ]  
+2022-09-11 11:38:34 [INFO ]  Final evaluation for FASHION_MNIST :
+2022-09-11 11:38:37 [INFO ]  Final evaluation for FASHION_MNIST evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:38:37 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:38:37 [INFO ]  	            before steps                   87.27%                   0.3620
+2022-09-11 11:38:37 [INFO ]  	   step  1 (lr=0.171117)                    9.68%                   5.6167
+2022-09-11 11:38:37 [INFO ]  
+2022-09-11 11:39:14 [INFO ]  ======================================== 2022-09-11 11:39:14 ========================================
+2022-09-11 11:39:14 [INFO ]  Base directory is ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST
+2022-09-11 11:39:14 [INFO ]  Options: 
+2022-09-11 11:39:14 [INFO ]  	base_dir: null
+2022-09-11 11:39:14 [INFO ]  	batch_size: 1024
+2022-09-11 11:39:14 [INFO ]  	checkpoint_interval: 10
+2022-09-11 11:39:14 [INFO ]  	dataset: MNIST_RGB
+2022-09-11 11:39:14 [INFO ]  	dataset_labels:
+2022-09-11 11:39:14 [INFO ]  	- 0
+2022-09-11 11:39:14 [INFO ]  	- 1
+2022-09-11 11:39:14 [INFO ]  	- 2
+2022-09-11 11:39:14 [INFO ]  	- 3
+2022-09-11 11:39:14 [INFO ]  	- 4
+2022-09-11 11:39:14 [INFO ]  	- 5
+2022-09-11 11:39:14 [INFO ]  	- 6
+2022-09-11 11:39:14 [INFO ]  	- 7
+2022-09-11 11:39:14 [INFO ]  	- 8
+2022-09-11 11:39:14 [INFO ]  	- 9
+2022-09-11 11:39:14 [INFO ]  	dataset_normalization: !!python/tuple
+2022-09-11 11:39:14 [INFO ]  	- !!python/tuple
+2022-09-11 11:39:14 [INFO ]  	    - 0.1307
+2022-09-11 11:39:14 [INFO ]  	    - 0.1307
+2022-09-11 11:39:14 [INFO ]  	    - 0.1307
+2022-09-11 11:39:14 [INFO ]  	- !!python/tuple
+2022-09-11 11:39:14 [INFO ]  	    - 0.3081
+2022-09-11 11:39:14 [INFO ]  	    - 0.3081
+2022-09-11 11:39:14 [INFO ]  	    - 0.3081
+2022-09-11 11:39:14 [INFO ]  	dataset_root: ./data/mnist
+2022-09-11 11:39:14 [INFO ]  	decay_epochs: 50
+2022-09-11 11:39:14 [INFO ]  	decay_factor: 0.1
+2022-09-11 11:39:14 [INFO ]  	device_id: 0
+2022-09-11 11:39:14 [INFO ]  	distill_epochs: 1
+2022-09-11 11:39:14 [INFO ]  	distill_lr: 0.02
+2022-09-11 11:39:14 [INFO ]  	distill_steps: 1
+2022-09-11 11:39:14 [INFO ]  	epochs: 200
+2022-09-11 11:39:14 [INFO ]  	expand_cls: false
+2022-09-11 11:39:14 [INFO ]  	forgetting_dataset: null
+2022-09-11 11:39:14 [INFO ]  	init: xavier
+2022-09-11 11:39:14 [INFO ]  	init_param: 1.0
+2022-09-11 11:39:14 [INFO ]  	input_size: 32
+2022-09-11 11:39:14 [INFO ]  	ipc: 1
+2022-09-11 11:39:14 [INFO ]  	log_file: ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/log.txt
+2022-09-11 11:39:14 [INFO ]  	log_interval: 100
+2022-09-11 11:39:14 [INFO ]  	log_level: INFO
+2022-09-11 11:39:14 [INFO ]  	lr: 0.01
+2022-09-11 11:39:14 [INFO ]  	mode: distill_adapt
+2022-09-11 11:39:14 [INFO ]  	nc: 3
+2022-09-11 11:39:14 [INFO ]  	num_classes: 10
+2022-09-11 11:39:14 [INFO ]  	num_workers: 8
+2022-09-11 11:39:14 [INFO ]  	phase: train
+2022-09-11 11:39:14 [INFO ]  	source_dataset: FASHION_MNIST
+2022-09-11 11:39:14 [INFO ]  	start_time: '2022-09-11 11:39:14'
+2022-09-11 11:39:14 [INFO ]  	test_batch_size: 1024
+2022-09-11 11:39:14 [INFO ]  	
+2022-09-11 11:39:14 [INFO ]  train dataset size:	60000
+2022-09-11 11:39:14 [INFO ]  test dataset size: 	10000
+2022-09-11 11:39:14 [INFO ]  datasets built!
+2022-09-11 11:39:14 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-09-11 11:39:17 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0000/results.pth
+2022-09-11 11:39:17 [INFO ]  
+2022-09-11 11:39:17 [INFO ]  Begin of epoch 0 :
+2022-09-11 11:39:20 [INFO ]  Begin of epoch 0 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:39:20 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:39:20 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:39:20 [INFO ]  	   step  1 (lr=0.020000)                   16.46%                  20.6927
+2022-09-11 11:39:20 [INFO ]  
+2022-09-11 11:39:20 [INFO ]  Epoch:    0	Loss: 21.0611	Data Time: 0.50s	Train Time: 0.03s
+2022-09-11 11:39:23 [INFO ]  Epoch:    1	Loss: 7.0977	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:39:25 [INFO ]  Epoch:    2	Loss: 3.6292	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:39:27 [INFO ]  Epoch:    3	Loss: 2.4766	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:39:29 [INFO ]  Epoch:    4	Loss: 2.1605	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:39:32 [INFO ]  Epoch:    5	Loss: 2.0594	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:39:34 [INFO ]  Epoch:    6	Loss: 1.9215	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:39:36 [INFO ]  Epoch:    7	Loss: 1.8772	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:39:38 [INFO ]  Epoch:    8	Loss: 1.7049	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:39:41 [INFO ]  Epoch:    9	Loss: 1.6355	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:39:44 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0010/results.pth
+2022-09-11 11:39:44 [INFO ]  
+2022-09-11 11:39:44 [INFO ]  Begin of epoch 10 :
+2022-09-11 11:39:47 [INFO ]  Begin of epoch 10 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:39:47 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:39:47 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:39:47 [INFO ]  	   step  1 (lr=0.037349)                   43.92%                   1.6411
+2022-09-11 11:39:47 [INFO ]  
+2022-09-11 11:39:47 [INFO ]  Epoch:   10	Loss: 1.6456	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:39:49 [INFO ]  Epoch:   11	Loss: 1.4829	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:39:51 [INFO ]  Epoch:   12	Loss: 1.4433	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:39:54 [INFO ]  Epoch:   13	Loss: 1.5117	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:39:56 [INFO ]  Epoch:   14	Loss: 1.4128	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:39:58 [INFO ]  Epoch:   15	Loss: 1.2844	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:40:00 [INFO ]  Epoch:   16	Loss: 1.3923	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:40:02 [INFO ]  Epoch:   17	Loss: 1.3232	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:40:05 [INFO ]  Epoch:   18	Loss: 1.1689	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:40:07 [INFO ]  Epoch:   19	Loss: 1.1225	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:40:10 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0020/results.pth
+2022-09-11 11:40:10 [INFO ]  
+2022-09-11 11:40:10 [INFO ]  Begin of epoch 20 :
+2022-09-11 11:40:13 [INFO ]  Begin of epoch 20 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:40:13 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:40:13 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:40:13 [INFO ]  	   step  1 (lr=0.058650)                   59.22%                   1.0882
+2022-09-11 11:40:13 [INFO ]  
+2022-09-11 11:40:13 [INFO ]  Epoch:   20	Loss: 1.1344	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:40:15 [INFO ]  Epoch:   21	Loss: 0.9887	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:40:18 [INFO ]  Epoch:   22	Loss: 0.9547	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:40:20 [INFO ]  Epoch:   23	Loss: 1.2550	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:40:22 [INFO ]  Epoch:   24	Loss: 0.8651	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:40:24 [INFO ]  Epoch:   25	Loss: 0.8956	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:40:26 [INFO ]  Epoch:   26	Loss: 1.0695	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:40:29 [INFO ]  Epoch:   27	Loss: 0.9256	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:40:31 [INFO ]  Epoch:   28	Loss: 0.8795	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:40:33 [INFO ]  Epoch:   29	Loss: 1.1021	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:40:36 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0030/results.pth
+2022-09-11 11:40:36 [INFO ]  
+2022-09-11 11:40:36 [INFO ]  Begin of epoch 30 :
+2022-09-11 11:40:40 [INFO ]  Begin of epoch 30 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:40:40 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:40:40 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:40:40 [INFO ]  	   step  1 (lr=0.075364)                   75.41%                   0.7527
+2022-09-11 11:40:40 [INFO ]  
+2022-09-11 11:40:40 [INFO ]  Epoch:   30	Loss: 0.8313	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:40:42 [INFO ]  Epoch:   31	Loss: 0.8172	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:40:44 [INFO ]  Epoch:   32	Loss: 0.8856	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:40:46 [INFO ]  Epoch:   33	Loss: 0.7778	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:40:48 [INFO ]  Epoch:   34	Loss: 0.8068	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:40:51 [INFO ]  Epoch:   35	Loss: 0.8275	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:40:53 [INFO ]  Epoch:   36	Loss: 0.7078	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:40:55 [INFO ]  Epoch:   37	Loss: 0.6420	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:40:58 [INFO ]  Epoch:   38	Loss: 0.7443	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:41:00 [INFO ]  Epoch:   39	Loss: 0.6414	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:41:03 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0040/results.pth
+2022-09-11 11:41:03 [INFO ]  
+2022-09-11 11:41:03 [INFO ]  Begin of epoch 40 :
+2022-09-11 11:41:06 [INFO ]  Begin of epoch 40 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:41:06 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:41:06 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:41:06 [INFO ]  	   step  1 (lr=0.083534)                   78.89%                   0.6654
+2022-09-11 11:41:06 [INFO ]  
+2022-09-11 11:41:06 [INFO ]  Epoch:   40	Loss: 0.6917	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:41:08 [INFO ]  Epoch:   41	Loss: 0.5984	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:41:11 [INFO ]  Epoch:   42	Loss: 0.7587	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:41:13 [INFO ]  Epoch:   43	Loss: 0.4951	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:41:15 [INFO ]  Epoch:   44	Loss: 0.6581	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:41:18 [INFO ]  Epoch:   45	Loss: 0.5787	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:41:20 [INFO ]  Epoch:   46	Loss: 0.6779	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:41:23 [INFO ]  Epoch:   47	Loss: 0.5707	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:41:25 [INFO ]  Epoch:   48	Loss: 0.5517	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:41:27 [INFO ]  Epoch:   49	Loss: 0.5216	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:41:31 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0050/results.pth
+2022-09-11 11:41:31 [INFO ]  
+2022-09-11 11:41:31 [INFO ]  Begin of epoch 50 :
+2022-09-11 11:41:34 [INFO ]  Begin of epoch 50 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:41:34 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:41:34 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:41:34 [INFO ]  	   step  1 (lr=0.100409)                   87.33%                   0.4185
+2022-09-11 11:41:34 [INFO ]  
+2022-09-11 11:41:34 [INFO ]  Epoch:   50	Loss: 0.4515	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:41:36 [INFO ]  Epoch:   51	Loss: 0.4913	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:41:38 [INFO ]  Epoch:   52	Loss: 0.4698	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:41:41 [INFO ]  Epoch:   53	Loss: 0.4969	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:41:43 [INFO ]  Epoch:   54	Loss: 0.6101	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:41:46 [INFO ]  Epoch:   55	Loss: 0.4736	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:41:48 [INFO ]  Epoch:   56	Loss: 0.4111	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:41:50 [INFO ]  Epoch:   57	Loss: 0.4700	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:41:53 [INFO ]  Epoch:   58	Loss: 0.5366	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:41:55 [INFO ]  Epoch:   59	Loss: 0.4253	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:41:59 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0060/results.pth
+2022-09-11 11:41:59 [INFO ]  
+2022-09-11 11:41:59 [INFO ]  Begin of epoch 60 :
+2022-09-11 11:42:02 [INFO ]  Begin of epoch 60 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:42:02 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:42:02 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:42:02 [INFO ]  	   step  1 (lr=0.107316)                   87.83%                   0.3912
+2022-09-11 11:42:02 [INFO ]  
+2022-09-11 11:42:02 [INFO ]  Epoch:   60	Loss: 0.4541	Data Time: 0.24s	Train Time: 0.00s
+2022-09-11 11:42:04 [INFO ]  Epoch:   61	Loss: 0.5569	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:42:06 [INFO ]  Epoch:   62	Loss: 0.6268	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:42:08 [INFO ]  Epoch:   63	Loss: 0.7526	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:42:10 [INFO ]  Epoch:   64	Loss: 0.4694	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:42:12 [INFO ]  Epoch:   65	Loss: 0.3788	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:42:15 [INFO ]  Epoch:   66	Loss: 0.4289	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:42:17 [INFO ]  Epoch:   67	Loss: 0.4292	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:42:19 [INFO ]  Epoch:   68	Loss: 0.5642	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:42:21 [INFO ]  Epoch:   69	Loss: 0.4695	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:42:25 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0070/results.pth
+2022-09-11 11:42:25 [INFO ]  
+2022-09-11 11:42:25 [INFO ]  Begin of epoch 70 :
+2022-09-11 11:42:28 [INFO ]  Begin of epoch 70 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:42:28 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:42:28 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:42:28 [INFO ]  	   step  1 (lr=0.109801)                   87.94%                   0.3971
+2022-09-11 11:42:28 [INFO ]  
+2022-09-11 11:42:28 [INFO ]  Epoch:   70	Loss: 0.4859	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:42:30 [INFO ]  Epoch:   71	Loss: 0.4179	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:42:32 [INFO ]  Epoch:   72	Loss: 0.4289	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:42:35 [INFO ]  Epoch:   73	Loss: 0.4734	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:42:37 [INFO ]  Epoch:   74	Loss: 0.4477	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:42:39 [INFO ]  Epoch:   75	Loss: 0.4458	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:42:42 [INFO ]  Epoch:   76	Loss: 0.3762	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 11:42:44 [INFO ]  Epoch:   77	Loss: 0.4348	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:42:46 [INFO ]  Epoch:   78	Loss: 0.3961	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:42:48 [INFO ]  Epoch:   79	Loss: 0.4998	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:42:52 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0080/results.pth
+2022-09-11 11:42:52 [INFO ]  
+2022-09-11 11:42:52 [INFO ]  Begin of epoch 80 :
+2022-09-11 11:42:55 [INFO ]  Begin of epoch 80 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:42:55 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:42:55 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:42:55 [INFO ]  	   step  1 (lr=0.112603)                   88.49%                   0.3766
+2022-09-11 11:42:55 [INFO ]  
+2022-09-11 11:42:55 [INFO ]  Epoch:   80	Loss: 0.4181	Data Time: 0.28s	Train Time: 0.00s
+2022-09-11 11:42:57 [INFO ]  Epoch:   81	Loss: 0.3801	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:43:00 [INFO ]  Epoch:   82	Loss: 0.4601	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:43:02 [INFO ]  Epoch:   83	Loss: 0.3753	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:43:05 [INFO ]  Epoch:   84	Loss: 0.4369	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:43:07 [INFO ]  Epoch:   85	Loss: 0.3729	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:43:09 [INFO ]  Epoch:   86	Loss: 0.5873	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:43:12 [INFO ]  Epoch:   87	Loss: 0.4267	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:43:14 [INFO ]  Epoch:   88	Loss: 0.3637	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:43:16 [INFO ]  Epoch:   89	Loss: 0.3441	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:43:20 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0090/results.pth
+2022-09-11 11:43:20 [INFO ]  
+2022-09-11 11:43:20 [INFO ]  Begin of epoch 90 :
+2022-09-11 11:43:23 [INFO ]  Begin of epoch 90 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:43:23 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:43:23 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:43:23 [INFO ]  	   step  1 (lr=0.119257)                   87.70%                   0.3928
+2022-09-11 11:43:23 [INFO ]  
+2022-09-11 11:43:23 [INFO ]  Epoch:   90	Loss: 0.4205	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:43:26 [INFO ]  Epoch:   91	Loss: 0.3563	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:43:28 [INFO ]  Epoch:   92	Loss: 0.4333	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:43:30 [INFO ]  Epoch:   93	Loss: 0.4741	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:43:32 [INFO ]  Epoch:   94	Loss: 0.3564	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:43:34 [INFO ]  Epoch:   95	Loss: 0.3194	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:43:37 [INFO ]  Epoch:   96	Loss: 0.3636	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:43:39 [INFO ]  Epoch:   97	Loss: 0.4097	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:43:41 [INFO ]  Epoch:   98	Loss: 0.4635	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:43:43 [INFO ]  Epoch:   99	Loss: 0.3962	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:43:47 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0100/results.pth
+2022-09-11 11:43:47 [INFO ]  
+2022-09-11 11:43:47 [INFO ]  Begin of epoch 100 :
+2022-09-11 11:43:50 [INFO ]  Begin of epoch 100 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:43:50 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:43:50 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:43:50 [INFO ]  	   step  1 (lr=0.123369)                   90.41%                   0.3171
+2022-09-11 11:43:50 [INFO ]  
+2022-09-11 11:43:50 [INFO ]  Epoch:  100	Loss: 0.3546	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:43:52 [INFO ]  Epoch:  101	Loss: 0.3754	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:43:55 [INFO ]  Epoch:  102	Loss: 0.3474	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:43:57 [INFO ]  Epoch:  103	Loss: 0.3826	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:43:59 [INFO ]  Epoch:  104	Loss: 0.3226	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:44:01 [INFO ]  Epoch:  105	Loss: 0.3421	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:44:03 [INFO ]  Epoch:  106	Loss: 0.3574	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:44:06 [INFO ]  Epoch:  107	Loss: 0.3676	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:44:08 [INFO ]  Epoch:  108	Loss: 0.4129	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:44:10 [INFO ]  Epoch:  109	Loss: 0.3438	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:44:14 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0110/results.pth
+2022-09-11 11:44:14 [INFO ]  
+2022-09-11 11:44:14 [INFO ]  Begin of epoch 110 :
+2022-09-11 11:44:17 [INFO ]  Begin of epoch 110 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:44:17 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:44:17 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:44:17 [INFO ]  	   step  1 (lr=0.124801)                   90.31%                   0.3147
+2022-09-11 11:44:17 [INFO ]  
+2022-09-11 11:44:17 [INFO ]  Epoch:  110	Loss: 0.3492	Data Time: 0.37s	Train Time: 0.00s
+2022-09-11 11:44:19 [INFO ]  Epoch:  111	Loss: 0.3464	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:44:21 [INFO ]  Epoch:  112	Loss: 0.3923	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:44:23 [INFO ]  Epoch:  113	Loss: 0.3518	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:44:26 [INFO ]  Epoch:  114	Loss: 0.3650	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:44:28 [INFO ]  Epoch:  115	Loss: 0.3854	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:44:30 [INFO ]  Epoch:  116	Loss: 0.3666	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:44:33 [INFO ]  Epoch:  117	Loss: 0.3561	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:44:35 [INFO ]  Epoch:  118	Loss: 0.3577	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:44:37 [INFO ]  Epoch:  119	Loss: 0.3159	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:44:41 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0120/results.pth
+2022-09-11 11:44:41 [INFO ]  
+2022-09-11 11:44:41 [INFO ]  Begin of epoch 120 :
+2022-09-11 11:44:44 [INFO ]  Begin of epoch 120 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:44:44 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:44:44 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:44:44 [INFO ]  	   step  1 (lr=0.125921)                   90.59%                   0.3064
+2022-09-11 11:44:44 [INFO ]  
+2022-09-11 11:44:44 [INFO ]  Epoch:  120	Loss: 0.3111	Data Time: 0.25s	Train Time: 0.00s
+2022-09-11 11:44:46 [INFO ]  Epoch:  121	Loss: 0.3150	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:44:48 [INFO ]  Epoch:  122	Loss: 0.4108	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:44:50 [INFO ]  Epoch:  123	Loss: 0.3395	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:44:53 [INFO ]  Epoch:  124	Loss: 0.3818	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:44:55 [INFO ]  Epoch:  125	Loss: 0.3292	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:44:57 [INFO ]  Epoch:  126	Loss: 0.2946	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:44:59 [INFO ]  Epoch:  127	Loss: 0.4242	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:45:02 [INFO ]  Epoch:  128	Loss: 0.3191	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:45:04 [INFO ]  Epoch:  129	Loss: 0.3291	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:45:08 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0130/results.pth
+2022-09-11 11:45:08 [INFO ]  
+2022-09-11 11:45:08 [INFO ]  Begin of epoch 130 :
+2022-09-11 11:45:11 [INFO ]  Begin of epoch 130 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:45:11 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:45:11 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:45:11 [INFO ]  	   step  1 (lr=0.125417)                   90.97%                   0.3036
+2022-09-11 11:45:11 [INFO ]  
+2022-09-11 11:45:11 [INFO ]  Epoch:  130	Loss: 0.3191	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:45:13 [INFO ]  Epoch:  131	Loss: 0.2826	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:45:15 [INFO ]  Epoch:  132	Loss: 0.3017	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:45:18 [INFO ]  Epoch:  133	Loss: 0.3557	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:45:20 [INFO ]  Epoch:  134	Loss: 0.3193	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:45:22 [INFO ]  Epoch:  135	Loss: 0.3133	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:45:24 [INFO ]  Epoch:  136	Loss: 0.3601	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:45:27 [INFO ]  Epoch:  137	Loss: 0.3741	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:45:29 [INFO ]  Epoch:  138	Loss: 0.3257	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:45:32 [INFO ]  Epoch:  139	Loss: 0.2632	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:45:35 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0140/results.pth
+2022-09-11 11:45:35 [INFO ]  
+2022-09-11 11:45:35 [INFO ]  Begin of epoch 140 :
+2022-09-11 11:45:38 [INFO ]  Begin of epoch 140 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:45:38 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:45:38 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:45:38 [INFO ]  	   step  1 (lr=0.125834)                   91.31%                   0.2955
+2022-09-11 11:45:38 [INFO ]  
+2022-09-11 11:45:38 [INFO ]  Epoch:  140	Loss: 0.2861	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:45:40 [INFO ]  Epoch:  141	Loss: 0.3287	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:45:42 [INFO ]  Epoch:  142	Loss: 0.2991	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:45:45 [INFO ]  Epoch:  143	Loss: 0.7962	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:45:47 [INFO ]  Epoch:  144	Loss: 0.6408	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:45:49 [INFO ]  Epoch:  145	Loss: 0.3189	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:45:51 [INFO ]  Epoch:  146	Loss: 0.2543	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:45:53 [INFO ]  Epoch:  147	Loss: 0.2796	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:45:56 [INFO ]  Epoch:  148	Loss: 0.3391	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:45:58 [INFO ]  Epoch:  149	Loss: 0.3806	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:46:02 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0150/results.pth
+2022-09-11 11:46:02 [INFO ]  
+2022-09-11 11:46:02 [INFO ]  Begin of epoch 150 :
+2022-09-11 11:46:05 [INFO ]  Begin of epoch 150 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:46:05 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:46:05 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:46:05 [INFO ]  	   step  1 (lr=0.126928)                   91.35%                   0.2927
+2022-09-11 11:46:05 [INFO ]  
+2022-09-11 11:46:05 [INFO ]  Epoch:  150	Loss: 0.2907	Data Time: 0.24s	Train Time: 0.00s
+2022-09-11 11:46:07 [INFO ]  Epoch:  151	Loss: 0.3429	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:46:09 [INFO ]  Epoch:  152	Loss: 0.3261	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:46:11 [INFO ]  Epoch:  153	Loss: 0.3603	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:46:14 [INFO ]  Epoch:  154	Loss: 0.2953	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:46:16 [INFO ]  Epoch:  155	Loss: 0.3317	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:46:18 [INFO ]  Epoch:  156	Loss: 0.3281	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:46:21 [INFO ]  Epoch:  157	Loss: 0.2988	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:46:23 [INFO ]  Epoch:  158	Loss: 0.3509	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:46:26 [INFO ]  Epoch:  159	Loss: 0.3647	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:46:29 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0160/results.pth
+2022-09-11 11:46:29 [INFO ]  
+2022-09-11 11:46:29 [INFO ]  Begin of epoch 160 :
+2022-09-11 11:46:32 [INFO ]  Begin of epoch 160 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:46:32 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:46:32 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:46:32 [INFO ]  	   step  1 (lr=0.127137)                   91.57%                   0.2902
+2022-09-11 11:46:32 [INFO ]  
+2022-09-11 11:46:32 [INFO ]  Epoch:  160	Loss: 0.3024	Data Time: 0.32s	Train Time: 0.00s
+2022-09-11 11:46:34 [INFO ]  Epoch:  161	Loss: 0.3600	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:46:37 [INFO ]  Epoch:  162	Loss: 0.3274	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:46:39 [INFO ]  Epoch:  163	Loss: 0.3615	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:46:41 [INFO ]  Epoch:  164	Loss: 0.3118	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:46:44 [INFO ]  Epoch:  165	Loss: 0.3366	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:46:46 [INFO ]  Epoch:  166	Loss: 0.3548	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:46:48 [INFO ]  Epoch:  167	Loss: 0.3202	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:46:51 [INFO ]  Epoch:  168	Loss: 0.3095	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:46:53 [INFO ]  Epoch:  169	Loss: 0.3191	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:46:57 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0170/results.pth
+2022-09-11 11:46:57 [INFO ]  
+2022-09-11 11:46:57 [INFO ]  Begin of epoch 170 :
+2022-09-11 11:47:00 [INFO ]  Begin of epoch 170 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:47:00 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:47:00 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:47:00 [INFO ]  	   step  1 (lr=0.127330)                   91.50%                   0.2894
+2022-09-11 11:47:00 [INFO ]  
+2022-09-11 11:47:00 [INFO ]  Epoch:  170	Loss: 0.3500	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:47:02 [INFO ]  Epoch:  171	Loss: 0.3210	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:47:04 [INFO ]  Epoch:  172	Loss: 0.3578	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:47:06 [INFO ]  Epoch:  173	Loss: 0.3302	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:47:09 [INFO ]  Epoch:  174	Loss: 0.3045	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:47:11 [INFO ]  Epoch:  175	Loss: 0.3381	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:47:14 [INFO ]  Epoch:  176	Loss: 0.3272	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:47:16 [INFO ]  Epoch:  177	Loss: 0.2993	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:47:18 [INFO ]  Epoch:  178	Loss: 0.3146	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 11:47:21 [INFO ]  Epoch:  179	Loss: 0.3247	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:47:24 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0180/results.pth
+2022-09-11 11:47:24 [INFO ]  
+2022-09-11 11:47:24 [INFO ]  Begin of epoch 180 :
+2022-09-11 11:47:27 [INFO ]  Begin of epoch 180 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:47:27 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:47:27 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:47:27 [INFO ]  	   step  1 (lr=0.127524)                   91.08%                   0.3018
+2022-09-11 11:47:27 [INFO ]  
+2022-09-11 11:47:27 [INFO ]  Epoch:  180	Loss: 0.3461	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:47:29 [INFO ]  Epoch:  181	Loss: 0.3400	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:47:31 [INFO ]  Epoch:  182	Loss: 0.3539	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:47:34 [INFO ]  Epoch:  183	Loss: 0.3182	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:47:36 [INFO ]  Epoch:  184	Loss: 0.3263	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:47:38 [INFO ]  Epoch:  185	Loss: 0.3445	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:47:40 [INFO ]  Epoch:  186	Loss: 0.2884	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:47:42 [INFO ]  Epoch:  187	Loss: 0.2883	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:47:45 [INFO ]  Epoch:  188	Loss: 0.3136	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:47:47 [INFO ]  Epoch:  189	Loss: 0.3902	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:47:51 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0190/results.pth
+2022-09-11 11:47:51 [INFO ]  
+2022-09-11 11:47:51 [INFO ]  Begin of epoch 190 :
+2022-09-11 11:47:54 [INFO ]  Begin of epoch 190 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:47:54 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:47:54 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:47:54 [INFO ]  	   step  1 (lr=0.127738)                   91.10%                   0.2948
+2022-09-11 11:47:54 [INFO ]  
+2022-09-11 11:47:54 [INFO ]  Epoch:  190	Loss: 0.3062	Data Time: 0.31s	Train Time: 0.00s
+2022-09-11 11:47:56 [INFO ]  Epoch:  191	Loss: 0.3050	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:47:58 [INFO ]  Epoch:  192	Loss: 0.3047	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:48:01 [INFO ]  Epoch:  193	Loss: 0.3635	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:48:03 [INFO ]  Epoch:  194	Loss: 0.3186	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:48:05 [INFO ]  Epoch:  195	Loss: 0.3813	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:48:08 [INFO ]  Epoch:  196	Loss: 0.3670	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 11:48:10 [INFO ]  Epoch:  197	Loss: 0.3410	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:48:12 [INFO ]  Epoch:  198	Loss: 0.3866	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:48:15 [INFO ]  Epoch:  199	Loss: 0.3611	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:48:18 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/results.pth
+2022-09-11 11:48:18 [INFO ]  
+2022-09-11 11:48:18 [INFO ]  Final evaluation for MNIST_RGB :
+2022-09-11 11:48:21 [INFO ]  Final evaluation for MNIST_RGB evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:48:21 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:48:21 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:48:21 [INFO ]  	   step  1 (lr=0.127999)                   91.29%                   0.2920
+2022-09-11 11:48:21 [INFO ]  
+2022-09-11 11:48:21 [INFO ]  
+2022-09-11 11:48:21 [INFO ]  Final evaluation for FASHION_MNIST :
+2022-09-11 11:48:24 [INFO ]  Final evaluation for FASHION_MNIST evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:48:24 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:48:24 [INFO ]  	            before steps                   87.27%                   0.3620
+2022-09-11 11:48:24 [INFO ]  	   step  1 (lr=0.127999)                    8.49%                   5.6326
+2022-09-11 11:48:24 [INFO ]  
+2022-09-11 11:49:31 [INFO ]  ======================================== 2022-09-11 11:49:31 ========================================
+2022-09-11 11:49:31 [INFO ]  Base directory is ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST
+2022-09-11 11:49:31 [INFO ]  Options: 
+2022-09-11 11:49:31 [INFO ]  	base_dir: null
+2022-09-11 11:49:31 [INFO ]  	batch_size: 1024
+2022-09-11 11:49:31 [INFO ]  	checkpoint_interval: 10
+2022-09-11 11:49:31 [INFO ]  	dataset: MNIST_RGB
+2022-09-11 11:49:31 [INFO ]  	dataset_labels:
+2022-09-11 11:49:31 [INFO ]  	- 0
+2022-09-11 11:49:31 [INFO ]  	- 1
+2022-09-11 11:49:31 [INFO ]  	- 2
+2022-09-11 11:49:31 [INFO ]  	- 3
+2022-09-11 11:49:31 [INFO ]  	- 4
+2022-09-11 11:49:31 [INFO ]  	- 5
+2022-09-11 11:49:31 [INFO ]  	- 6
+2022-09-11 11:49:31 [INFO ]  	- 7
+2022-09-11 11:49:31 [INFO ]  	- 8
+2022-09-11 11:49:31 [INFO ]  	- 9
+2022-09-11 11:49:31 [INFO ]  	dataset_normalization: !!python/tuple
+2022-09-11 11:49:31 [INFO ]  	- !!python/tuple
+2022-09-11 11:49:31 [INFO ]  	    - 0.1307
+2022-09-11 11:49:31 [INFO ]  	    - 0.1307
+2022-09-11 11:49:31 [INFO ]  	    - 0.1307
+2022-09-11 11:49:31 [INFO ]  	- !!python/tuple
+2022-09-11 11:49:31 [INFO ]  	    - 0.3081
+2022-09-11 11:49:31 [INFO ]  	    - 0.3081
+2022-09-11 11:49:31 [INFO ]  	    - 0.3081
+2022-09-11 11:49:31 [INFO ]  	dataset_root: ./data/mnist
+2022-09-11 11:49:31 [INFO ]  	decay_epochs: 50
+2022-09-11 11:49:31 [INFO ]  	decay_factor: 0.1
+2022-09-11 11:49:31 [INFO ]  	device_id: 0
+2022-09-11 11:49:31 [INFO ]  	distill_epochs: 1
+2022-09-11 11:49:31 [INFO ]  	distill_lr: 0.02
+2022-09-11 11:49:31 [INFO ]  	distill_steps: 1
+2022-09-11 11:49:31 [INFO ]  	epochs: 200
+2022-09-11 11:49:31 [INFO ]  	expand_cls: false
+2022-09-11 11:49:31 [INFO ]  	forgetting_dataset: null
+2022-09-11 11:49:31 [INFO ]  	init: xavier
+2022-09-11 11:49:31 [INFO ]  	init_param: 1.0
+2022-09-11 11:49:31 [INFO ]  	input_size: 32
+2022-09-11 11:49:31 [INFO ]  	ipc: 1
+2022-09-11 11:49:31 [INFO ]  	log_file: ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/log.txt
+2022-09-11 11:49:31 [INFO ]  	log_interval: 100
+2022-09-11 11:49:31 [INFO ]  	log_level: INFO
+2022-09-11 11:49:31 [INFO ]  	lr: 0.01
+2022-09-11 11:49:31 [INFO ]  	mode: distill_adapt
+2022-09-11 11:49:31 [INFO ]  	nc: 3
+2022-09-11 11:49:31 [INFO ]  	num_classes: 10
+2022-09-11 11:49:31 [INFO ]  	num_workers: 8
+2022-09-11 11:49:31 [INFO ]  	phase: train
+2022-09-11 11:49:31 [INFO ]  	source_dataset: FASHION_MNIST
+2022-09-11 11:49:31 [INFO ]  	start_time: '2022-09-11 11:49:31'
+2022-09-11 11:49:31 [INFO ]  	test_batch_size: 1024
+2022-09-11 11:49:31 [INFO ]  	
+2022-09-11 11:49:31 [INFO ]  train dataset size:	60000
+2022-09-11 11:49:31 [INFO ]  test dataset size: 	10000
+2022-09-11 11:49:31 [INFO ]  datasets built!
+2022-09-11 11:49:31 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-09-11 11:49:34 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0000/results.pth
+2022-09-11 11:49:34 [INFO ]  
+2022-09-11 11:49:34 [INFO ]  Begin of epoch 0 :
+2022-09-11 11:49:37 [INFO ]  Begin of epoch 0 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:49:37 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:49:37 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:49:37 [INFO ]  	   step  1 (lr=0.020000)                    9.80%                  29.3863
+2022-09-11 11:49:37 [INFO ]  
+2022-09-11 11:49:38 [INFO ]  Epoch:    0	Loss: 28.1783	Data Time: 0.62s	Train Time: 0.03s
+2022-09-11 11:49:39 [INFO ]  Epoch:    1	Loss: 6.4424	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:49:42 [INFO ]  Epoch:    2	Loss: 4.3864	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:49:44 [INFO ]  Epoch:    3	Loss: 3.0034	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:49:46 [INFO ]  Epoch:    4	Loss: 2.6421	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:49:48 [INFO ]  Epoch:    5	Loss: 2.1889	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:49:51 [INFO ]  Epoch:    6	Loss: 2.0857	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:49:53 [INFO ]  Epoch:    7	Loss: 2.0092	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:49:55 [INFO ]  Epoch:    8	Loss: 1.9864	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:49:57 [INFO ]  Epoch:    9	Loss: 1.9165	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:50:01 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0010/results.pth
+2022-09-11 11:50:01 [INFO ]  
+2022-09-11 11:50:01 [INFO ]  Begin of epoch 10 :
+2022-09-11 11:50:04 [INFO ]  Begin of epoch 10 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:50:04 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:50:04 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:50:04 [INFO ]  	   step  1 (lr=0.039872)                   35.89%                   1.8399
+2022-09-11 11:50:04 [INFO ]  
+2022-09-11 11:50:04 [INFO ]  Epoch:   10	Loss: 1.8385	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:50:06 [INFO ]  Epoch:   11	Loss: 1.7549	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:50:08 [INFO ]  Epoch:   12	Loss: 1.7475	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:50:11 [INFO ]  Epoch:   13	Loss: 1.5672	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:50:13 [INFO ]  Epoch:   14	Loss: 1.7914	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:50:15 [INFO ]  Epoch:   15	Loss: 1.5006	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:50:17 [INFO ]  Epoch:   16	Loss: 1.3519	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:50:20 [INFO ]  Epoch:   17	Loss: 1.4462	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:50:22 [INFO ]  Epoch:   18	Loss: 1.5014	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:50:24 [INFO ]  Epoch:   19	Loss: 1.0641	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:50:27 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0020/results.pth
+2022-09-11 11:50:27 [INFO ]  
+2022-09-11 11:50:27 [INFO ]  Begin of epoch 20 :
+2022-09-11 11:50:31 [INFO ]  Begin of epoch 20 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:50:31 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:50:31 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:50:31 [INFO ]  	   step  1 (lr=0.066364)                   64.60%                   1.0753
+2022-09-11 11:50:31 [INFO ]  
+2022-09-11 11:50:31 [INFO ]  Epoch:   20	Loss: 1.0736	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:50:33 [INFO ]  Epoch:   21	Loss: 0.7696	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:50:35 [INFO ]  Epoch:   22	Loss: 0.9460	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:50:37 [INFO ]  Epoch:   23	Loss: 0.9346	Data Time: 0.39s	Train Time: 0.01s
+2022-09-11 11:50:39 [INFO ]  Epoch:   24	Loss: 0.6194	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:50:42 [INFO ]  Epoch:   25	Loss: 0.4962	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:50:44 [INFO ]  Epoch:   26	Loss: 0.6591	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:50:46 [INFO ]  Epoch:   27	Loss: 0.6528	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:50:49 [INFO ]  Epoch:   28	Loss: 0.4746	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:50:51 [INFO ]  Epoch:   29	Loss: 0.9056	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:50:54 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0030/results.pth
+2022-09-11 11:50:54 [INFO ]  
+2022-09-11 11:50:54 [INFO ]  Begin of epoch 30 :
+2022-09-11 11:50:58 [INFO ]  Begin of epoch 30 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:50:58 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:50:58 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:50:58 [INFO ]  	   step  1 (lr=0.119645)                   86.75%                   0.4273
+2022-09-11 11:50:58 [INFO ]  
+2022-09-11 11:50:58 [INFO ]  Epoch:   30	Loss: 0.4939	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:51:00 [INFO ]  Epoch:   31	Loss: 0.7268	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:51:02 [INFO ]  Epoch:   32	Loss: 0.4903	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:51:04 [INFO ]  Epoch:   33	Loss: 0.3890	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:51:06 [INFO ]  Epoch:   34	Loss: 0.3689	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:51:09 [INFO ]  Epoch:   35	Loss: 0.4341	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:51:11 [INFO ]  Epoch:   36	Loss: 0.3702	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:51:13 [INFO ]  Epoch:   37	Loss: 0.5445	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:51:15 [INFO ]  Epoch:   38	Loss: 0.5759	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:51:18 [INFO ]  Epoch:   39	Loss: 0.3345	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:51:21 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0040/results.pth
+2022-09-11 11:51:21 [INFO ]  
+2022-09-11 11:51:21 [INFO ]  Begin of epoch 40 :
+2022-09-11 11:51:24 [INFO ]  Begin of epoch 40 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:51:24 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:51:24 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:51:24 [INFO ]  	   step  1 (lr=0.147802)                   83.66%                   0.5111
+2022-09-11 11:51:24 [INFO ]  
+2022-09-11 11:51:24 [INFO ]  Epoch:   40	Loss: 0.5877	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:51:26 [INFO ]  Epoch:   41	Loss: 0.4385	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:51:29 [INFO ]  Epoch:   42	Loss: 0.6893	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:51:31 [INFO ]  Epoch:   43	Loss: 0.3964	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:51:33 [INFO ]  Epoch:   44	Loss: 0.3070	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:51:36 [INFO ]  Epoch:   45	Loss: 0.5774	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:51:38 [INFO ]  Epoch:   46	Loss: 0.7648	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:51:41 [INFO ]  Epoch:   47	Loss: 0.3461	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:51:43 [INFO ]  Epoch:   48	Loss: 0.4330	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:51:45 [INFO ]  Epoch:   49	Loss: 0.3791	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:51:49 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0050/results.pth
+2022-09-11 11:51:49 [INFO ]  
+2022-09-11 11:51:49 [INFO ]  Begin of epoch 50 :
+2022-09-11 11:51:52 [INFO ]  Begin of epoch 50 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:51:52 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:51:52 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:51:52 [INFO ]  	   step  1 (lr=0.134082)                   90.60%                   0.3322
+2022-09-11 11:51:52 [INFO ]  
+2022-09-11 11:51:52 [INFO ]  Epoch:   50	Loss: 0.3432	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:51:54 [INFO ]  Epoch:   51	Loss: 0.4041	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:51:56 [INFO ]  Epoch:   52	Loss: 0.3571	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:51:58 [INFO ]  Epoch:   53	Loss: 0.3711	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:52:01 [INFO ]  Epoch:   54	Loss: 0.4527	Data Time: 0.27s	Train Time: 0.00s
+2022-09-11 11:52:03 [INFO ]  Epoch:   55	Loss: 0.3164	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:52:05 [INFO ]  Epoch:   56	Loss: 0.3467	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:52:08 [INFO ]  Epoch:   57	Loss: 0.6073	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:52:10 [INFO ]  Epoch:   58	Loss: 0.3967	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:52:12 [INFO ]  Epoch:   59	Loss: 0.2994	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:52:15 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0060/results.pth
+2022-09-11 11:52:15 [INFO ]  
+2022-09-11 11:52:15 [INFO ]  Begin of epoch 60 :
+2022-09-11 11:52:19 [INFO ]  Begin of epoch 60 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:52:19 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:52:19 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:52:19 [INFO ]  	   step  1 (lr=0.139515)                   91.96%                   0.2642
+2022-09-11 11:52:19 [INFO ]  
+2022-09-11 11:52:19 [INFO ]  Epoch:   60	Loss: 0.2790	Data Time: 0.37s	Train Time: 0.00s
+2022-09-11 11:52:21 [INFO ]  Epoch:   61	Loss: 0.3008	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:52:23 [INFO ]  Epoch:   62	Loss: 0.2684	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:52:25 [INFO ]  Epoch:   63	Loss: 0.2686	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:52:28 [INFO ]  Epoch:   64	Loss: 0.2600	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:52:30 [INFO ]  Epoch:   65	Loss: 0.2373	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:52:32 [INFO ]  Epoch:   66	Loss: 0.3522	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:52:35 [INFO ]  Epoch:   67	Loss: 0.2886	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:52:37 [INFO ]  Epoch:   68	Loss: 0.3605	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:52:39 [INFO ]  Epoch:   69	Loss: 0.3636	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:52:43 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0070/results.pth
+2022-09-11 11:52:43 [INFO ]  
+2022-09-11 11:52:43 [INFO ]  Begin of epoch 70 :
+2022-09-11 11:52:46 [INFO ]  Begin of epoch 70 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:52:46 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:52:46 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:52:46 [INFO ]  	   step  1 (lr=0.147706)                   90.15%                   0.3143
+2022-09-11 11:52:46 [INFO ]  
+2022-09-11 11:52:46 [INFO ]  Epoch:   70	Loss: 0.3609	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:52:48 [INFO ]  Epoch:   71	Loss: 0.3562	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:52:50 [INFO ]  Epoch:   72	Loss: 0.3151	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:52:53 [INFO ]  Epoch:   73	Loss: 0.2966	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:52:55 [INFO ]  Epoch:   74	Loss: 0.2921	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:52:57 [INFO ]  Epoch:   75	Loss: 0.3008	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:53:00 [INFO ]  Epoch:   76	Loss: 0.2445	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:53:02 [INFO ]  Epoch:   77	Loss: 0.6900	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:53:04 [INFO ]  Epoch:   78	Loss: 0.2553	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:53:06 [INFO ]  Epoch:   79	Loss: 0.4543	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:53:10 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0080/results.pth
+2022-09-11 11:53:10 [INFO ]  
+2022-09-11 11:53:10 [INFO ]  Begin of epoch 80 :
+2022-09-11 11:53:13 [INFO ]  Begin of epoch 80 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:53:13 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:53:13 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:53:13 [INFO ]  	   step  1 (lr=0.151506)                   92.49%                   0.2501
+2022-09-11 11:53:13 [INFO ]  
+2022-09-11 11:53:13 [INFO ]  Epoch:   80	Loss: 0.2505	Data Time: 0.35s	Train Time: 0.00s
+2022-09-11 11:53:16 [INFO ]  Epoch:   81	Loss: 0.2418	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:53:18 [INFO ]  Epoch:   82	Loss: 0.2349	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:53:21 [INFO ]  Epoch:   83	Loss: 0.2571	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:53:23 [INFO ]  Epoch:   84	Loss: 0.3069	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 11:53:25 [INFO ]  Epoch:   85	Loss: 0.2606	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:53:28 [INFO ]  Epoch:   86	Loss: 0.4439	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:53:30 [INFO ]  Epoch:   87	Loss: 0.2815	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:53:32 [INFO ]  Epoch:   88	Loss: 0.3003	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:53:35 [INFO ]  Epoch:   89	Loss: 0.4672	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 11:53:38 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0090/results.pth
+2022-09-11 11:53:38 [INFO ]  
+2022-09-11 11:53:38 [INFO ]  Begin of epoch 90 :
+2022-09-11 11:53:41 [INFO ]  Begin of epoch 90 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:53:41 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:53:41 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:53:41 [INFO ]  	   step  1 (lr=0.150822)                   92.32%                   0.2558
+2022-09-11 11:53:41 [INFO ]  
+2022-09-11 11:53:41 [INFO ]  Epoch:   90	Loss: 0.2649	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:53:43 [INFO ]  Epoch:   91	Loss: 0.5476	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:53:46 [INFO ]  Epoch:   92	Loss: 0.5065	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:53:48 [INFO ]  Epoch:   93	Loss: 0.3103	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:53:50 [INFO ]  Epoch:   94	Loss: 0.2750	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:53:52 [INFO ]  Epoch:   95	Loss: 0.3679	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:53:55 [INFO ]  Epoch:   96	Loss: 0.2428	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:53:57 [INFO ]  Epoch:   97	Loss: 0.3096	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:53:59 [INFO ]  Epoch:   98	Loss: 0.3448	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:54:02 [INFO ]  Epoch:   99	Loss: 0.2803	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:54:05 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0100/results.pth
+2022-09-11 11:54:05 [INFO ]  
+2022-09-11 11:54:05 [INFO ]  Begin of epoch 100 :
+2022-09-11 11:54:08 [INFO ]  Begin of epoch 100 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:54:08 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:54:08 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:54:08 [INFO ]  	   step  1 (lr=0.153692)                   93.40%                   0.2248
+2022-09-11 11:54:08 [INFO ]  
+2022-09-11 11:54:08 [INFO ]  Epoch:  100	Loss: 0.2435	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:54:10 [INFO ]  Epoch:  101	Loss: 0.2596	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:54:12 [INFO ]  Epoch:  102	Loss: 0.2463	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:54:15 [INFO ]  Epoch:  103	Loss: 0.2361	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:54:17 [INFO ]  Epoch:  104	Loss: 0.3204	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:54:19 [INFO ]  Epoch:  105	Loss: 0.2153	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:54:21 [INFO ]  Epoch:  106	Loss: 0.3800	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:54:24 [INFO ]  Epoch:  107	Loss: 0.2458	Data Time: 0.23s	Train Time: 0.01s
+2022-09-11 11:54:26 [INFO ]  Epoch:  108	Loss: 0.2283	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:54:28 [INFO ]  Epoch:  109	Loss: 0.3903	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:54:32 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0110/results.pth
+2022-09-11 11:54:32 [INFO ]  
+2022-09-11 11:54:32 [INFO ]  Begin of epoch 110 :
+2022-09-11 11:54:35 [INFO ]  Begin of epoch 110 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:54:35 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:54:35 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:54:35 [INFO ]  	   step  1 (lr=0.154571)                   89.89%                   0.3269
+2022-09-11 11:54:35 [INFO ]  
+2022-09-11 11:54:35 [INFO ]  Epoch:  110	Loss: 0.3502	Data Time: 0.31s	Train Time: 0.00s
+2022-09-11 11:54:37 [INFO ]  Epoch:  111	Loss: 0.2451	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:54:39 [INFO ]  Epoch:  112	Loss: 0.2480	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:54:41 [INFO ]  Epoch:  113	Loss: 0.2238	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:54:44 [INFO ]  Epoch:  114	Loss: 0.2302	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:54:46 [INFO ]  Epoch:  115	Loss: 0.1840	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:54:48 [INFO ]  Epoch:  116	Loss: 0.2449	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:54:50 [INFO ]  Epoch:  117	Loss: 0.2865	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:54:53 [INFO ]  Epoch:  118	Loss: 0.4016	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:54:55 [INFO ]  Epoch:  119	Loss: 0.2521	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:54:58 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0120/results.pth
+2022-09-11 11:54:58 [INFO ]  
+2022-09-11 11:54:58 [INFO ]  Begin of epoch 120 :
+2022-09-11 11:55:02 [INFO ]  Begin of epoch 120 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:55:02 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:55:02 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:55:02 [INFO ]  	   step  1 (lr=0.155845)                   93.63%                   0.2158
+2022-09-11 11:55:02 [INFO ]  
+2022-09-11 11:55:02 [INFO ]  Epoch:  120	Loss: 0.2373	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:55:04 [INFO ]  Epoch:  121	Loss: 0.2491	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:55:06 [INFO ]  Epoch:  122	Loss: 0.2687	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:55:08 [INFO ]  Epoch:  123	Loss: 0.2652	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:55:10 [INFO ]  Epoch:  124	Loss: 0.2158	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:55:13 [INFO ]  Epoch:  125	Loss: 0.2908	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:55:15 [INFO ]  Epoch:  126	Loss: 0.2630	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:55:17 [INFO ]  Epoch:  127	Loss: 0.2490	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:55:19 [INFO ]  Epoch:  128	Loss: 0.2317	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:55:22 [INFO ]  Epoch:  129	Loss: 0.2318	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:55:25 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0130/results.pth
+2022-09-11 11:55:25 [INFO ]  
+2022-09-11 11:55:25 [INFO ]  Begin of epoch 130 :
+2022-09-11 11:55:28 [INFO ]  Begin of epoch 130 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:55:28 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:55:28 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:55:28 [INFO ]  	   step  1 (lr=0.157853)                   93.68%                   0.2119
+2022-09-11 11:55:28 [INFO ]  
+2022-09-11 11:55:28 [INFO ]  Epoch:  130	Loss: 0.2742	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:55:30 [INFO ]  Epoch:  131	Loss: 0.2536	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:55:32 [INFO ]  Epoch:  132	Loss: 0.1929	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:55:35 [INFO ]  Epoch:  133	Loss: 0.3105	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:55:37 [INFO ]  Epoch:  134	Loss: 0.2367	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:55:39 [INFO ]  Epoch:  135	Loss: 0.2268	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:55:41 [INFO ]  Epoch:  136	Loss: 0.2750	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:55:44 [INFO ]  Epoch:  137	Loss: 0.2404	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:55:46 [INFO ]  Epoch:  138	Loss: 0.3203	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:55:48 [INFO ]  Epoch:  139	Loss: 0.2733	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:55:51 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0140/results.pth
+2022-09-11 11:55:51 [INFO ]  
+2022-09-11 11:55:51 [INFO ]  Begin of epoch 140 :
+2022-09-11 11:55:55 [INFO ]  Begin of epoch 140 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:55:55 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:55:55 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:55:55 [INFO ]  	   step  1 (lr=0.159895)                   86.76%                   0.4782
+2022-09-11 11:55:55 [INFO ]  
+2022-09-11 11:55:55 [INFO ]  Epoch:  140	Loss: 0.4491	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:55:57 [INFO ]  Epoch:  141	Loss: 0.2377	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:55:59 [INFO ]  Epoch:  142	Loss: 0.3712	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:56:01 [INFO ]  Epoch:  143	Loss: 0.2475	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:56:04 [INFO ]  Epoch:  144	Loss: 0.2078	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:56:06 [INFO ]  Epoch:  145	Loss: 0.2808	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:56:08 [INFO ]  Epoch:  146	Loss: 0.2129	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:56:11 [INFO ]  Epoch:  147	Loss: 0.2326	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:56:13 [INFO ]  Epoch:  148	Loss: 0.2600	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:56:15 [INFO ]  Epoch:  149	Loss: 0.4676	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:56:18 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0150/results.pth
+2022-09-11 11:56:18 [INFO ]  
+2022-09-11 11:56:18 [INFO ]  Begin of epoch 150 :
+2022-09-11 11:56:22 [INFO ]  Begin of epoch 150 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:56:22 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:56:22 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:56:22 [INFO ]  	   step  1 (lr=0.159396)                   93.65%                   0.2179
+2022-09-11 11:56:22 [INFO ]  
+2022-09-11 11:56:22 [INFO ]  Epoch:  150	Loss: 0.2503	Data Time: 0.33s	Train Time: 0.00s
+2022-09-11 11:56:24 [INFO ]  Epoch:  151	Loss: 0.2576	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:56:26 [INFO ]  Epoch:  152	Loss: 0.4129	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:56:28 [INFO ]  Epoch:  153	Loss: 0.2072	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:56:31 [INFO ]  Epoch:  154	Loss: 0.2951	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:56:33 [INFO ]  Epoch:  155	Loss: 0.4306	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:56:35 [INFO ]  Epoch:  156	Loss: 0.2185	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:56:38 [INFO ]  Epoch:  157	Loss: 0.2296	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:56:40 [INFO ]  Epoch:  158	Loss: 0.2245	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:56:43 [INFO ]  Epoch:  159	Loss: 0.5664	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:56:46 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0160/results.pth
+2022-09-11 11:56:46 [INFO ]  
+2022-09-11 11:56:46 [INFO ]  Begin of epoch 160 :
+2022-09-11 11:56:49 [INFO ]  Begin of epoch 160 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:56:49 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:56:49 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:56:49 [INFO ]  	   step  1 (lr=0.159579)                   93.80%                   0.2152
+2022-09-11 11:56:49 [INFO ]  
+2022-09-11 11:56:49 [INFO ]  Epoch:  160	Loss: 0.2454	Data Time: 0.29s	Train Time: 0.00s
+2022-09-11 11:56:51 [INFO ]  Epoch:  161	Loss: 0.2562	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:56:54 [INFO ]  Epoch:  162	Loss: 0.2399	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:56:56 [INFO ]  Epoch:  163	Loss: 0.2167	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:56:58 [INFO ]  Epoch:  164	Loss: 0.3305	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:57:01 [INFO ]  Epoch:  165	Loss: 0.4627	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:57:03 [INFO ]  Epoch:  166	Loss: 0.4463	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:57:05 [INFO ]  Epoch:  167	Loss: 0.2459	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:57:07 [INFO ]  Epoch:  168	Loss: 0.2363	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:57:09 [INFO ]  Epoch:  169	Loss: 0.2646	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:57:13 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0170/results.pth
+2022-09-11 11:57:13 [INFO ]  
+2022-09-11 11:57:13 [INFO ]  Begin of epoch 170 :
+2022-09-11 11:57:16 [INFO ]  Begin of epoch 170 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:57:16 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:57:16 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:57:16 [INFO ]  	   step  1 (lr=0.159867)                   93.05%                   0.2336
+2022-09-11 11:57:16 [INFO ]  
+2022-09-11 11:57:16 [INFO ]  Epoch:  170	Loss: 0.2725	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:57:18 [INFO ]  Epoch:  171	Loss: 0.3194	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:57:21 [INFO ]  Epoch:  172	Loss: 0.2709	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:57:23 [INFO ]  Epoch:  173	Loss: 0.2330	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:57:25 [INFO ]  Epoch:  174	Loss: 0.2647	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:57:28 [INFO ]  Epoch:  175	Loss: 0.2468	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:57:30 [INFO ]  Epoch:  176	Loss: 0.2388	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 11:57:32 [INFO ]  Epoch:  177	Loss: 0.2922	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:57:34 [INFO ]  Epoch:  178	Loss: 0.4495	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:57:37 [INFO ]  Epoch:  179	Loss: 0.2256	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:57:40 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0180/results.pth
+2022-09-11 11:57:40 [INFO ]  
+2022-09-11 11:57:40 [INFO ]  Begin of epoch 180 :
+2022-09-11 11:57:43 [INFO ]  Begin of epoch 180 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:57:43 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:57:43 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:57:43 [INFO ]  	   step  1 (lr=0.160108)                   92.95%                   0.2334
+2022-09-11 11:57:43 [INFO ]  
+2022-09-11 11:57:43 [INFO ]  Epoch:  180	Loss: 0.2543	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:57:45 [INFO ]  Epoch:  181	Loss: 0.2473	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:57:47 [INFO ]  Epoch:  182	Loss: 0.2653	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:57:50 [INFO ]  Epoch:  183	Loss: 0.2619	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 11:57:52 [INFO ]  Epoch:  184	Loss: 0.2422	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:57:54 [INFO ]  Epoch:  185	Loss: 0.2823	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:57:56 [INFO ]  Epoch:  186	Loss: 0.2605	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:57:59 [INFO ]  Epoch:  187	Loss: 0.2505	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:58:01 [INFO ]  Epoch:  188	Loss: 0.2469	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:58:03 [INFO ]  Epoch:  189	Loss: 0.2521	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 11:58:07 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0190/results.pth
+2022-09-11 11:58:07 [INFO ]  
+2022-09-11 11:58:07 [INFO ]  Begin of epoch 190 :
+2022-09-11 11:58:10 [INFO ]  Begin of epoch 190 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:58:10 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:58:10 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:58:10 [INFO ]  	   step  1 (lr=0.160256)                   93.34%                   0.2242
+2022-09-11 11:58:10 [INFO ]  
+2022-09-11 11:58:10 [INFO ]  Epoch:  190	Loss: 0.2539	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:58:12 [INFO ]  Epoch:  191	Loss: 0.2722	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:58:14 [INFO ]  Epoch:  192	Loss: 0.2269	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:58:17 [INFO ]  Epoch:  193	Loss: 0.2327	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:58:19 [INFO ]  Epoch:  194	Loss: 0.2568	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 11:58:21 [INFO ]  Epoch:  195	Loss: 0.2840	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:58:24 [INFO ]  Epoch:  196	Loss: 0.2283	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:58:26 [INFO ]  Epoch:  197	Loss: 0.2675	Data Time: 0.39s	Train Time: 0.01s
+2022-09-11 11:58:28 [INFO ]  Epoch:  198	Loss: 0.2109	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:58:31 [INFO ]  Epoch:  199	Loss: 0.2554	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:58:34 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/results.pth
+2022-09-11 11:58:34 [INFO ]  
+2022-09-11 11:58:34 [INFO ]  Final evaluation for MNIST_RGB :
+2022-09-11 11:58:37 [INFO ]  Final evaluation for MNIST_RGB evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:58:37 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:58:37 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:58:37 [INFO ]  	   step  1 (lr=0.160358)                   88.10%                   0.3827
+2022-09-11 11:58:37 [INFO ]  
+2022-09-11 11:58:37 [INFO ]  
+2022-09-11 11:58:37 [INFO ]  Final evaluation for FASHION_MNIST :
+2022-09-11 11:58:40 [INFO ]  Final evaluation for FASHION_MNIST evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:58:40 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:58:40 [INFO ]  	            before steps                   87.27%                   0.3620
+2022-09-11 11:58:40 [INFO ]  	   step  1 (lr=0.160358)                   11.08%                   4.4421
+2022-09-11 11:58:40 [INFO ]  
+2022-09-11 11:59:14 [INFO ]  ======================================== 2022-09-11 11:59:14 ========================================
+2022-09-11 11:59:14 [INFO ]  Base directory is ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST
+2022-09-11 11:59:14 [INFO ]  Options: 
+2022-09-11 11:59:14 [INFO ]  	base_dir: null
+2022-09-11 11:59:14 [INFO ]  	batch_size: 1024
+2022-09-11 11:59:14 [INFO ]  	checkpoint_interval: 10
+2022-09-11 11:59:14 [INFO ]  	dataset: MNIST_RGB
+2022-09-11 11:59:14 [INFO ]  	dataset_labels:
+2022-09-11 11:59:14 [INFO ]  	- 0
+2022-09-11 11:59:14 [INFO ]  	- 1
+2022-09-11 11:59:14 [INFO ]  	- 2
+2022-09-11 11:59:14 [INFO ]  	- 3
+2022-09-11 11:59:14 [INFO ]  	- 4
+2022-09-11 11:59:14 [INFO ]  	- 5
+2022-09-11 11:59:14 [INFO ]  	- 6
+2022-09-11 11:59:14 [INFO ]  	- 7
+2022-09-11 11:59:14 [INFO ]  	- 8
+2022-09-11 11:59:14 [INFO ]  	- 9
+2022-09-11 11:59:14 [INFO ]  	dataset_normalization: !!python/tuple
+2022-09-11 11:59:14 [INFO ]  	- !!python/tuple
+2022-09-11 11:59:14 [INFO ]  	    - 0.1307
+2022-09-11 11:59:14 [INFO ]  	    - 0.1307
+2022-09-11 11:59:14 [INFO ]  	    - 0.1307
+2022-09-11 11:59:14 [INFO ]  	- !!python/tuple
+2022-09-11 11:59:14 [INFO ]  	    - 0.3081
+2022-09-11 11:59:14 [INFO ]  	    - 0.3081
+2022-09-11 11:59:14 [INFO ]  	    - 0.3081
+2022-09-11 11:59:14 [INFO ]  	dataset_root: ./data/mnist
+2022-09-11 11:59:14 [INFO ]  	decay_epochs: 50
+2022-09-11 11:59:14 [INFO ]  	decay_factor: 0.1
+2022-09-11 11:59:14 [INFO ]  	device_id: 0
+2022-09-11 11:59:14 [INFO ]  	distill_epochs: 1
+2022-09-11 11:59:14 [INFO ]  	distill_lr: 0.02
+2022-09-11 11:59:14 [INFO ]  	distill_steps: 1
+2022-09-11 11:59:14 [INFO ]  	epochs: 200
+2022-09-11 11:59:14 [INFO ]  	expand_cls: false
+2022-09-11 11:59:14 [INFO ]  	forgetting_dataset: null
+2022-09-11 11:59:14 [INFO ]  	init: xavier
+2022-09-11 11:59:14 [INFO ]  	init_param: 1.0
+2022-09-11 11:59:14 [INFO ]  	input_size: 32
+2022-09-11 11:59:14 [INFO ]  	ipc: 1
+2022-09-11 11:59:14 [INFO ]  	log_file: ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/log.txt
+2022-09-11 11:59:14 [INFO ]  	log_interval: 100
+2022-09-11 11:59:14 [INFO ]  	log_level: INFO
+2022-09-11 11:59:14 [INFO ]  	lr: 0.01
+2022-09-11 11:59:14 [INFO ]  	mode: distill_adapt
+2022-09-11 11:59:14 [INFO ]  	nc: 3
+2022-09-11 11:59:14 [INFO ]  	num_classes: 10
+2022-09-11 11:59:14 [INFO ]  	num_workers: 8
+2022-09-11 11:59:14 [INFO ]  	phase: train
+2022-09-11 11:59:14 [INFO ]  	source_dataset: FASHION_MNIST
+2022-09-11 11:59:14 [INFO ]  	start_time: '2022-09-11 11:59:14'
+2022-09-11 11:59:14 [INFO ]  	test_batch_size: 1024
+2022-09-11 11:59:14 [INFO ]  	
+2022-09-11 11:59:14 [INFO ]  train dataset size:	60000
+2022-09-11 11:59:14 [INFO ]  test dataset size: 	10000
+2022-09-11 11:59:14 [INFO ]  datasets built!
+2022-09-11 11:59:14 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-09-11 11:59:17 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0000/results.pth
+2022-09-11 11:59:17 [INFO ]  
+2022-09-11 11:59:17 [INFO ]  Begin of epoch 0 :
+2022-09-11 11:59:20 [INFO ]  Begin of epoch 0 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:59:20 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:59:20 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:59:20 [INFO ]  	   step  1 (lr=0.020000)                   11.06%                  20.3274
+2022-09-11 11:59:20 [INFO ]  
+2022-09-11 11:59:20 [INFO ]  Epoch:    0	Loss: 18.7383	Data Time: 0.65s	Train Time: 0.03s
+2022-09-11 11:59:22 [INFO ]  Epoch:    1	Loss: 6.7596	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:59:24 [INFO ]  Epoch:    2	Loss: 3.9417	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:59:26 [INFO ]  Epoch:    3	Loss: 2.4649	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 11:59:29 [INFO ]  Epoch:    4	Loss: 2.2015	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:59:31 [INFO ]  Epoch:    5	Loss: 2.0915	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 11:59:34 [INFO ]  Epoch:    6	Loss: 1.9840	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:59:36 [INFO ]  Epoch:    7	Loss: 2.0207	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:59:38 [INFO ]  Epoch:    8	Loss: 1.8484	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 11:59:41 [INFO ]  Epoch:    9	Loss: 1.7940	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 11:59:44 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0010/results.pth
+2022-09-11 11:59:44 [INFO ]  
+2022-09-11 11:59:44 [INFO ]  Begin of epoch 10 :
+2022-09-11 11:59:47 [INFO ]  Begin of epoch 10 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 11:59:47 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 11:59:47 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 11:59:47 [INFO ]  	   step  1 (lr=0.041280)                   41.85%                   1.6942
+2022-09-11 11:59:47 [INFO ]  
+2022-09-11 11:59:47 [INFO ]  Epoch:   10	Loss: 1.7852	Data Time: 0.25s	Train Time: 0.00s
+2022-09-11 11:59:49 [INFO ]  Epoch:   11	Loss: 1.6375	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 11:59:51 [INFO ]  Epoch:   12	Loss: 1.4891	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 11:59:54 [INFO ]  Epoch:   13	Loss: 1.5260	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 11:59:56 [INFO ]  Epoch:   14	Loss: 1.4132	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 11:59:58 [INFO ]  Epoch:   15	Loss: 1.6361	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:00:01 [INFO ]  Epoch:   16	Loss: 1.2406	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 12:00:03 [INFO ]  Epoch:   17	Loss: 1.0989	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:00:05 [INFO ]  Epoch:   18	Loss: 1.5542	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:00:07 [INFO ]  Epoch:   19	Loss: 0.9482	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 12:00:11 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0020/results.pth
+2022-09-11 12:00:11 [INFO ]  
+2022-09-11 12:00:11 [INFO ]  Begin of epoch 20 :
+2022-09-11 12:00:14 [INFO ]  Begin of epoch 20 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:00:14 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:00:14 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:00:14 [INFO ]  	   step  1 (lr=0.076587)                   67.67%                   1.0106
+2022-09-11 12:00:14 [INFO ]  
+2022-09-11 12:00:14 [INFO ]  Epoch:   20	Loss: 1.0056	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 12:00:16 [INFO ]  Epoch:   21	Loss: 1.8247	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 12:00:18 [INFO ]  Epoch:   22	Loss: 1.1759	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:00:21 [INFO ]  Epoch:   23	Loss: 1.1180	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 12:00:23 [INFO ]  Epoch:   24	Loss: 0.8719	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:00:25 [INFO ]  Epoch:   25	Loss: 0.8134	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:00:27 [INFO ]  Epoch:   26	Loss: 1.3566	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:00:30 [INFO ]  Epoch:   27	Loss: 0.7804	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:00:32 [INFO ]  Epoch:   28	Loss: 1.0038	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:00:34 [INFO ]  Epoch:   29	Loss: 0.7723	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 12:00:38 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0030/results.pth
+2022-09-11 12:00:38 [INFO ]  
+2022-09-11 12:00:38 [INFO ]  Begin of epoch 30 :
+2022-09-11 12:00:41 [INFO ]  Begin of epoch 30 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:00:41 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:00:41 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:00:41 [INFO ]  	   step  1 (lr=0.108174)                   83.73%                   0.5470
+2022-09-11 12:00:41 [INFO ]  
+2022-09-11 12:00:41 [INFO ]  Epoch:   30	Loss: 0.5764	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 12:00:43 [INFO ]  Epoch:   31	Loss: 0.6042	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 12:00:45 [INFO ]  Epoch:   32	Loss: 0.5060	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:00:47 [INFO ]  Epoch:   33	Loss: 0.4926	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:00:49 [INFO ]  Epoch:   34	Loss: 0.6655	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:00:52 [INFO ]  Epoch:   35	Loss: 0.5797	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 12:00:54 [INFO ]  Epoch:   36	Loss: 0.4684	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:00:56 [INFO ]  Epoch:   37	Loss: 0.5411	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:00:58 [INFO ]  Epoch:   38	Loss: 0.4550	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:01:01 [INFO ]  Epoch:   39	Loss: 0.3673	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 12:01:04 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0040/results.pth
+2022-09-11 12:01:04 [INFO ]  
+2022-09-11 12:01:04 [INFO ]  Begin of epoch 40 :
+2022-09-11 12:01:07 [INFO ]  Begin of epoch 40 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:01:07 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:01:07 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:01:07 [INFO ]  	   step  1 (lr=0.114542)                   90.15%                   0.3460
+2022-09-11 12:01:07 [INFO ]  
+2022-09-11 12:01:07 [INFO ]  Epoch:   40	Loss: 0.3731	Data Time: 0.36s	Train Time: 0.00s
+2022-09-11 12:01:09 [INFO ]  Epoch:   41	Loss: 0.3257	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:01:12 [INFO ]  Epoch:   42	Loss: 0.9086	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 12:01:14 [INFO ]  Epoch:   43	Loss: 0.5025	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:01:17 [INFO ]  Epoch:   44	Loss: 0.6843	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 12:01:19 [INFO ]  Epoch:   45	Loss: 0.4840	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:01:21 [INFO ]  Epoch:   46	Loss: 0.6832	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:01:24 [INFO ]  Epoch:   47	Loss: 0.4460	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:01:26 [INFO ]  Epoch:   48	Loss: 0.7280	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:01:29 [INFO ]  Epoch:   49	Loss: 0.5146	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:01:32 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0050/results.pth
+2022-09-11 12:01:32 [INFO ]  
+2022-09-11 12:01:32 [INFO ]  Begin of epoch 50 :
+2022-09-11 12:01:36 [INFO ]  Begin of epoch 50 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:01:36 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:01:36 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:01:36 [INFO ]  	   step  1 (lr=0.109923)                   87.54%                   0.4528
+2022-09-11 12:01:36 [INFO ]  
+2022-09-11 12:01:36 [INFO ]  Epoch:   50	Loss: 0.4888	Data Time: 0.38s	Train Time: 0.00s
+2022-09-11 12:01:38 [INFO ]  Epoch:   51	Loss: 0.4334	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 12:01:40 [INFO ]  Epoch:   52	Loss: 0.4762	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:01:42 [INFO ]  Epoch:   53	Loss: 0.5416	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:01:44 [INFO ]  Epoch:   54	Loss: 0.4242	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:01:47 [INFO ]  Epoch:   55	Loss: 0.4063	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:01:49 [INFO ]  Epoch:   56	Loss: 0.4088	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:01:51 [INFO ]  Epoch:   57	Loss: 0.5431	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 12:01:54 [INFO ]  Epoch:   58	Loss: 0.4113	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:01:56 [INFO ]  Epoch:   59	Loss: 0.4633	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:02:00 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0060/results.pth
+2022-09-11 12:02:00 [INFO ]  
+2022-09-11 12:02:00 [INFO ]  Begin of epoch 60 :
+2022-09-11 12:02:03 [INFO ]  Begin of epoch 60 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:02:03 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:02:03 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:02:03 [INFO ]  	   step  1 (lr=0.121016)                   89.81%                   0.3415
+2022-09-11 12:02:03 [INFO ]  
+2022-09-11 12:02:03 [INFO ]  Epoch:   60	Loss: 0.4115	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:02:05 [INFO ]  Epoch:   61	Loss: 0.3799	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:02:07 [INFO ]  Epoch:   62	Loss: 0.3646	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:02:10 [INFO ]  Epoch:   63	Loss: 0.3743	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:02:12 [INFO ]  Epoch:   64	Loss: 0.3336	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:02:14 [INFO ]  Epoch:   65	Loss: 0.3603	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:02:16 [INFO ]  Epoch:   66	Loss: 0.6467	Data Time: 0.39s	Train Time: 0.01s
+2022-09-11 12:02:19 [INFO ]  Epoch:   67	Loss: 0.5527	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:02:21 [INFO ]  Epoch:   68	Loss: 0.4476	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:02:23 [INFO ]  Epoch:   69	Loss: 0.3687	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 12:02:26 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0070/results.pth
+2022-09-11 12:02:26 [INFO ]  
+2022-09-11 12:02:26 [INFO ]  Begin of epoch 70 :
+2022-09-11 12:02:30 [INFO ]  Begin of epoch 70 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:02:30 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:02:30 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:02:30 [INFO ]  	   step  1 (lr=0.120606)                   84.90%                   0.4936
+2022-09-11 12:02:30 [INFO ]  
+2022-09-11 12:02:30 [INFO ]  Epoch:   70	Loss: 0.5403	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 12:02:32 [INFO ]  Epoch:   71	Loss: 0.4624	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:02:34 [INFO ]  Epoch:   72	Loss: 0.4137	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:02:36 [INFO ]  Epoch:   73	Loss: 0.3833	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 12:02:38 [INFO ]  Epoch:   74	Loss: 0.3704	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:02:41 [INFO ]  Epoch:   75	Loss: 0.3273	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:02:43 [INFO ]  Epoch:   76	Loss: 0.3539	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:02:45 [INFO ]  Epoch:   77	Loss: 0.3731	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 12:02:47 [INFO ]  Epoch:   78	Loss: 0.3087	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 12:02:50 [INFO ]  Epoch:   79	Loss: 0.3649	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:02:53 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0080/results.pth
+2022-09-11 12:02:53 [INFO ]  
+2022-09-11 12:02:53 [INFO ]  Begin of epoch 80 :
+2022-09-11 12:02:56 [INFO ]  Begin of epoch 80 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:02:56 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:02:56 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:02:56 [INFO ]  	   step  1 (lr=0.132333)                   90.41%                   0.3270
+2022-09-11 12:02:56 [INFO ]  
+2022-09-11 12:02:56 [INFO ]  Epoch:   80	Loss: 0.3821	Data Time: 0.27s	Train Time: 0.00s
+2022-09-11 12:02:59 [INFO ]  Epoch:   81	Loss: 0.3635	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 12:03:01 [INFO ]  Epoch:   82	Loss: 0.3387	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:03:03 [INFO ]  Epoch:   83	Loss: 0.4058	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:03:06 [INFO ]  Epoch:   84	Loss: 0.3386	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 12:03:08 [INFO ]  Epoch:   85	Loss: 0.3511	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 12:03:10 [INFO ]  Epoch:   86	Loss: 0.3346	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:03:13 [INFO ]  Epoch:   87	Loss: 0.3353	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:03:15 [INFO ]  Epoch:   88	Loss: 0.3427	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:03:17 [INFO ]  Epoch:   89	Loss: 0.3356	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 12:03:21 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0090/results.pth
+2022-09-11 12:03:21 [INFO ]  
+2022-09-11 12:03:21 [INFO ]  Begin of epoch 90 :
+2022-09-11 12:03:24 [INFO ]  Begin of epoch 90 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:03:24 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:03:24 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:03:24 [INFO ]  	   step  1 (lr=0.141088)                   91.45%                   0.2923
+2022-09-11 12:03:24 [INFO ]  
+2022-09-11 12:03:24 [INFO ]  Epoch:   90	Loss: 0.3009	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 12:03:26 [INFO ]  Epoch:   91	Loss: 0.3506	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 12:03:28 [INFO ]  Epoch:   92	Loss: 0.3330	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:03:31 [INFO ]  Epoch:   93	Loss: 0.3132	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 12:03:33 [INFO ]  Epoch:   94	Loss: 0.3502	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 12:03:35 [INFO ]  Epoch:   95	Loss: 0.2964	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:03:37 [INFO ]  Epoch:   96	Loss: 0.2980	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:03:40 [INFO ]  Epoch:   97	Loss: 0.3309	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:03:42 [INFO ]  Epoch:   98	Loss: 0.3158	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 12:03:44 [INFO ]  Epoch:   99	Loss: 0.4186	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 12:03:48 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0100/results.pth
+2022-09-11 12:03:48 [INFO ]  
+2022-09-11 12:03:48 [INFO ]  Begin of epoch 100 :
+2022-09-11 12:03:51 [INFO ]  Begin of epoch 100 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:03:51 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:03:51 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:03:51 [INFO ]  	   step  1 (lr=0.147685)                   90.44%                   0.3200
+2022-09-11 12:03:51 [INFO ]  
+2022-09-11 12:03:51 [INFO ]  Epoch:  100	Loss: 0.3727	Data Time: 0.25s	Train Time: 0.00s
+2022-09-11 12:03:53 [INFO ]  Epoch:  101	Loss: 0.3477	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 12:03:55 [INFO ]  Epoch:  102	Loss: 0.3596	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:03:57 [INFO ]  Epoch:  103	Loss: 0.3674	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 12:04:00 [INFO ]  Epoch:  104	Loss: 0.3474	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 12:04:02 [INFO ]  Epoch:  105	Loss: 0.3456	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:04:04 [INFO ]  Epoch:  106	Loss: 0.3798	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 12:04:07 [INFO ]  Epoch:  107	Loss: 0.3394	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 12:04:09 [INFO ]  Epoch:  108	Loss: 0.2693	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:04:12 [INFO ]  Epoch:  109	Loss: 0.3047	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 12:04:15 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0110/results.pth
+2022-09-11 12:04:15 [INFO ]  
+2022-09-11 12:04:15 [INFO ]  Begin of epoch 110 :
+2022-09-11 12:04:18 [INFO ]  Begin of epoch 110 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:04:18 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:04:18 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:04:18 [INFO ]  	   step  1 (lr=0.145474)                   91.90%                   0.2811
+2022-09-11 12:04:18 [INFO ]  
+2022-09-11 12:04:18 [INFO ]  Epoch:  110	Loss: 0.3152	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:04:20 [INFO ]  Epoch:  111	Loss: 0.2666	Data Time: 0.33s	Train Time: 0.01s
+2022-09-11 12:04:23 [INFO ]  Epoch:  112	Loss: 0.3040	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:04:25 [INFO ]  Epoch:  113	Loss: 0.3414	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 12:04:27 [INFO ]  Epoch:  114	Loss: 0.3223	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:04:30 [INFO ]  Epoch:  115	Loss: 0.3482	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:04:32 [INFO ]  Epoch:  116	Loss: 0.3451	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:04:34 [INFO ]  Epoch:  117	Loss: 0.3366	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 12:04:36 [INFO ]  Epoch:  118	Loss: 0.3280	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:04:39 [INFO ]  Epoch:  119	Loss: 0.3245	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 12:04:42 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0120/results.pth
+2022-09-11 12:04:42 [INFO ]  
+2022-09-11 12:04:42 [INFO ]  Begin of epoch 120 :
+2022-09-11 12:04:45 [INFO ]  Begin of epoch 120 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:04:45 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:04:45 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:04:45 [INFO ]  	   step  1 (lr=0.145010)                   91.24%                   0.2971
+2022-09-11 12:04:45 [INFO ]  
+2022-09-11 12:04:45 [INFO ]  Epoch:  120	Loss: 0.3233	Data Time: 0.25s	Train Time: 0.00s
+2022-09-11 12:04:47 [INFO ]  Epoch:  121	Loss: 0.3609	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:04:49 [INFO ]  Epoch:  122	Loss: 0.3738	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 12:04:52 [INFO ]  Epoch:  123	Loss: 0.4216	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:04:54 [INFO ]  Epoch:  124	Loss: 0.3729	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:04:56 [INFO ]  Epoch:  125	Loss: 0.3338	Data Time: 0.31s	Train Time: 0.01s
+2022-09-11 12:04:59 [INFO ]  Epoch:  126	Loss: 0.3331	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 12:05:01 [INFO ]  Epoch:  127	Loss: 0.3388	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 12:05:03 [INFO ]  Epoch:  128	Loss: 0.3129	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 12:05:06 [INFO ]  Epoch:  129	Loss: 0.3052	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:05:09 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0130/results.pth
+2022-09-11 12:05:09 [INFO ]  
+2022-09-11 12:05:09 [INFO ]  Begin of epoch 130 :
+2022-09-11 12:05:12 [INFO ]  Begin of epoch 130 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:05:12 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:05:12 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:05:12 [INFO ]  	   step  1 (lr=0.144096)                   91.38%                   0.2929
+2022-09-11 12:05:12 [INFO ]  
+2022-09-11 12:05:12 [INFO ]  Epoch:  130	Loss: 0.3434	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:05:14 [INFO ]  Epoch:  131	Loss: 0.3530	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 12:05:16 [INFO ]  Epoch:  132	Loss: 0.3153	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:05:19 [INFO ]  Epoch:  133	Loss: 0.4113	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 12:05:21 [INFO ]  Epoch:  134	Loss: 0.3389	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:05:24 [INFO ]  Epoch:  135	Loss: 0.3246	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:05:26 [INFO ]  Epoch:  136	Loss: 0.2802	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:05:28 [INFO ]  Epoch:  137	Loss: 0.3497	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:05:30 [INFO ]  Epoch:  138	Loss: 0.4160	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 12:05:33 [INFO ]  Epoch:  139	Loss: 0.3633	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:05:36 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0140/results.pth
+2022-09-11 12:05:36 [INFO ]  
+2022-09-11 12:05:36 [INFO ]  Begin of epoch 140 :
+2022-09-11 12:05:39 [INFO ]  Begin of epoch 140 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:05:39 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:05:39 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:05:39 [INFO ]  	   step  1 (lr=0.142926)                   90.96%                   0.2851
+2022-09-11 12:05:39 [INFO ]  
+2022-09-11 12:05:39 [INFO ]  Epoch:  140	Loss: 0.3612	Data Time: 0.25s	Train Time: 0.00s
+2022-09-11 12:05:41 [INFO ]  Epoch:  141	Loss: 0.2933	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:05:44 [INFO ]  Epoch:  142	Loss: 0.3363	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 12:05:46 [INFO ]  Epoch:  143	Loss: 0.3435	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:05:49 [INFO ]  Epoch:  144	Loss: 0.3316	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:05:51 [INFO ]  Epoch:  145	Loss: 0.3659	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:05:53 [INFO ]  Epoch:  146	Loss: 0.3098	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:05:56 [INFO ]  Epoch:  147	Loss: 0.2559	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:05:58 [INFO ]  Epoch:  148	Loss: 0.4465	Data Time: 0.34s	Train Time: 0.01s
+2022-09-11 12:06:00 [INFO ]  Epoch:  149	Loss: 0.2952	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 12:06:04 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0150/results.pth
+2022-09-11 12:06:04 [INFO ]  
+2022-09-11 12:06:04 [INFO ]  Begin of epoch 150 :
+2022-09-11 12:06:07 [INFO ]  Begin of epoch 150 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:06:07 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:06:07 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:06:07 [INFO ]  	   step  1 (lr=0.145405)                   92.01%                   0.2632
+2022-09-11 12:06:07 [INFO ]  
+2022-09-11 12:06:07 [INFO ]  Epoch:  150	Loss: 0.3228	Data Time: 0.26s	Train Time: 0.00s
+2022-09-11 12:06:09 [INFO ]  Epoch:  151	Loss: 0.2791	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 12:06:11 [INFO ]  Epoch:  152	Loss: 0.2923	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:06:14 [INFO ]  Epoch:  153	Loss: 0.3600	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:06:16 [INFO ]  Epoch:  154	Loss: 0.3037	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 12:06:18 [INFO ]  Epoch:  155	Loss: 0.2885	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:06:21 [INFO ]  Epoch:  156	Loss: 0.2944	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:06:23 [INFO ]  Epoch:  157	Loss: 0.3141	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:06:25 [INFO ]  Epoch:  158	Loss: 0.3179	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 12:06:28 [INFO ]  Epoch:  159	Loss: 0.3712	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:06:31 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0160/results.pth
+2022-09-11 12:06:31 [INFO ]  
+2022-09-11 12:06:31 [INFO ]  Begin of epoch 160 :
+2022-09-11 12:06:34 [INFO ]  Begin of epoch 160 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:06:34 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:06:34 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:06:34 [INFO ]  	   step  1 (lr=0.145754)                   92.04%                   0.2702
+2022-09-11 12:06:34 [INFO ]  
+2022-09-11 12:06:34 [INFO ]  Epoch:  160	Loss: 0.3015	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:06:36 [INFO ]  Epoch:  161	Loss: 0.3252	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 12:06:39 [INFO ]  Epoch:  162	Loss: 0.3687	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 12:06:41 [INFO ]  Epoch:  163	Loss: 0.2667	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:06:43 [INFO ]  Epoch:  164	Loss: 0.3251	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:06:46 [INFO ]  Epoch:  165	Loss: 0.3157	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 12:06:48 [INFO ]  Epoch:  166	Loss: 0.3614	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:06:50 [INFO ]  Epoch:  167	Loss: 0.2864	Data Time: 0.36s	Train Time: 0.01s
+2022-09-11 12:06:53 [INFO ]  Epoch:  168	Loss: 0.3780	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:06:55 [INFO ]  Epoch:  169	Loss: 0.3289	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:06:58 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0170/results.pth
+2022-09-11 12:06:58 [INFO ]  
+2022-09-11 12:06:58 [INFO ]  Begin of epoch 170 :
+2022-09-11 12:07:01 [INFO ]  Begin of epoch 170 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:07:01 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:07:01 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:07:01 [INFO ]  	   step  1 (lr=0.145986)                   91.64%                   0.2782
+2022-09-11 12:07:01 [INFO ]  
+2022-09-11 12:07:01 [INFO ]  Epoch:  170	Loss: 0.3262	Data Time: 0.24s	Train Time: 0.01s
+2022-09-11 12:07:03 [INFO ]  Epoch:  171	Loss: 0.3008	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:07:06 [INFO ]  Epoch:  172	Loss: 0.3649	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:07:08 [INFO ]  Epoch:  173	Loss: 0.3252	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:07:10 [INFO ]  Epoch:  174	Loss: 0.3249	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:07:12 [INFO ]  Epoch:  175	Loss: 0.3075	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:07:15 [INFO ]  Epoch:  176	Loss: 0.3314	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:07:17 [INFO ]  Epoch:  177	Loss: 0.2755	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:07:19 [INFO ]  Epoch:  178	Loss: 0.3507	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:07:22 [INFO ]  Epoch:  179	Loss: 0.2801	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:07:25 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0180/results.pth
+2022-09-11 12:07:25 [INFO ]  
+2022-09-11 12:07:25 [INFO ]  Begin of epoch 180 :
+2022-09-11 12:07:28 [INFO ]  Begin of epoch 180 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:07:28 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:07:28 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:07:28 [INFO ]  	   step  1 (lr=0.146093)                   90.00%                   0.3294
+2022-09-11 12:07:28 [INFO ]  
+2022-09-11 12:07:28 [INFO ]  Epoch:  180	Loss: 0.3647	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:07:30 [INFO ]  Epoch:  181	Loss: 0.2838	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 12:07:32 [INFO ]  Epoch:  182	Loss: 0.3422	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:07:35 [INFO ]  Epoch:  183	Loss: 0.4068	Data Time: 0.28s	Train Time: 0.01s
+2022-09-11 12:07:37 [INFO ]  Epoch:  184	Loss: 0.3133	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:07:39 [INFO ]  Epoch:  185	Loss: 0.3635	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:07:42 [INFO ]  Epoch:  186	Loss: 0.3339	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:07:44 [INFO ]  Epoch:  187	Loss: 0.3023	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:07:46 [INFO ]  Epoch:  188	Loss: 0.3412	Data Time: 0.26s	Train Time: 0.01s
+2022-09-11 12:07:48 [INFO ]  Epoch:  189	Loss: 0.3704	Data Time: 0.27s	Train Time: 0.01s
+2022-09-11 12:07:52 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/checkpoints/epoch0190/results.pth
+2022-09-11 12:07:52 [INFO ]  
+2022-09-11 12:07:52 [INFO ]  Begin of epoch 190 :
+2022-09-11 12:07:55 [INFO ]  Begin of epoch 190 evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:07:55 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:07:55 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:07:55 [INFO ]  	   step  1 (lr=0.146184)                   91.79%                   0.2718
+2022-09-11 12:07:55 [INFO ]  
+2022-09-11 12:07:55 [INFO ]  Epoch:  190	Loss: 0.3221	Data Time: 0.37s	Train Time: 0.01s
+2022-09-11 12:07:57 [INFO ]  Epoch:  191	Loss: 0.3123	Data Time: 0.32s	Train Time: 0.01s
+2022-09-11 12:08:00 [INFO ]  Epoch:  192	Loss: 0.2842	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:08:02 [INFO ]  Epoch:  193	Loss: 0.3235	Data Time: 0.25s	Train Time: 0.01s
+2022-09-11 12:08:04 [INFO ]  Epoch:  194	Loss: 0.3472	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 12:08:07 [INFO ]  Epoch:  195	Loss: 0.3205	Data Time: 0.35s	Train Time: 0.01s
+2022-09-11 12:08:09 [INFO ]  Epoch:  196	Loss: 0.2880	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 12:08:12 [INFO ]  Epoch:  197	Loss: 0.3698	Data Time: 0.38s	Train Time: 0.01s
+2022-09-11 12:08:14 [INFO ]  Epoch:  198	Loss: 0.2922	Data Time: 0.29s	Train Time: 0.01s
+2022-09-11 12:08:16 [INFO ]  Epoch:  199	Loss: 0.3026	Data Time: 0.30s	Train Time: 0.01s
+2022-09-11 12:08:19 [INFO ]  Results saved to ./results/distill_adapt/MNIST_RGB/Source_FASHION_MNIST/results.pth
+2022-09-11 12:08:19 [INFO ]  
+2022-09-11 12:08:19 [INFO ]  Final evaluation for MNIST_RGB :
+2022-09-11 12:08:22 [INFO ]  Final evaluation for MNIST_RGB evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:08:22 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:08:22 [INFO ]  	            before steps                    9.51%                   8.5646
+2022-09-11 12:08:22 [INFO ]  	   step  1 (lr=0.146327)                   89.74%                   0.3341
+2022-09-11 12:08:22 [INFO ]  
+2022-09-11 12:08:22 [INFO ]  
+2022-09-11 12:08:22 [INFO ]  Final evaluation for FASHION_MNIST :
+2022-09-11 12:08:26 [INFO ]  Final evaluation for FASHION_MNIST evaluation for MNIST_RGB (evaluate 3 steps: [0, 0, 1]) test results: 
+2022-09-11 12:08:26 [INFO ]  	          STEP                   ACCURACY                   LOSS          
+2022-09-11 12:08:26 [INFO ]  	            before steps                   87.27%                   0.3620
+2022-09-11 12:08:26 [INFO ]  	   step  1 (lr=0.146327)                    7.66%                   4.3007
+2022-09-11 12:08:26 [INFO ]  

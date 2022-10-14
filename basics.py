@@ -44,13 +44,12 @@ def train_steps_inplace(model, steps, callback):
 def evaluate_model(state, model, params=None, test_loader_iter=None):
     device = state.device
     corrects = losses = total = 0
-
-    if test_loader_iter is None:
-        test_loader_iter = iter(state.test_loader)
+    test_loader_iter = test_loader_iter or iter(state.test_loader)
 
     model.eval()
 
     with torch.no_grad():
+        
         for i, (data, target) in enumerate(test_loader_iter):
             data, target = data.to(device, non_blocking=True), target.to(device, non_blocking=True)
 

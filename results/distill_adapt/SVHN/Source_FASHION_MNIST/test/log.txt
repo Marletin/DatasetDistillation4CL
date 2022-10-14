@@ -1,0 +1,1796 @@
+2022-10-11 08:40:00 [INFO ]  ======================================== 2022-10-11 08:40:00 ========================================
+2022-10-11 08:40:00 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:40:00 [INFO ]  Options: 
+2022-10-11 08:40:00 [INFO ]  	base_dir: null
+2022-10-11 08:40:00 [INFO ]  	batch_size: 1024
+2022-10-11 08:40:00 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:40:00 [INFO ]  	dataset: SVHN
+2022-10-11 08:40:00 [INFO ]  	dataset_labels:
+2022-10-11 08:40:00 [INFO ]  	- 0
+2022-10-11 08:40:00 [INFO ]  	- 1
+2022-10-11 08:40:00 [INFO ]  	- 2
+2022-10-11 08:40:00 [INFO ]  	- 3
+2022-10-11 08:40:00 [INFO ]  	- 4
+2022-10-11 08:40:00 [INFO ]  	- 5
+2022-10-11 08:40:00 [INFO ]  	- 6
+2022-10-11 08:40:00 [INFO ]  	- 7
+2022-10-11 08:40:00 [INFO ]  	- 8
+2022-10-11 08:40:00 [INFO ]  	- 9
+2022-10-11 08:40:00 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:40:00 [INFO ]  	- !!python/tuple
+2022-10-11 08:40:00 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:40:00 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:40:00 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:40:00 [INFO ]  	- !!python/tuple
+2022-10-11 08:40:00 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:40:00 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:40:00 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:40:00 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:40:00 [INFO ]  	decay_epochs: 50
+2022-10-11 08:40:00 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:40:00 [INFO ]  	device_id: 0
+2022-10-11 08:40:00 [INFO ]  	distill_epochs: 1
+2022-10-11 08:40:00 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:40:00 [INFO ]  	distill_steps: 1
+2022-10-11 08:40:00 [INFO ]  	epochs: 200
+2022-10-11 08:40:00 [INFO ]  	expand_cls: false
+2022-10-11 08:40:00 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:40:00 [INFO ]  	init: xavier
+2022-10-11 08:40:00 [INFO ]  	init_param: 1.0
+2022-10-11 08:40:00 [INFO ]  	input_size: 32
+2022-10-11 08:40:00 [INFO ]  	ipc: 1
+2022-10-11 08:40:00 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:40:00 [INFO ]  	log_interval: 100
+2022-10-11 08:40:00 [INFO ]  	log_level: INFO
+2022-10-11 08:40:00 [INFO ]  	lr: 0.01
+2022-10-11 08:40:00 [INFO ]  	mode: distill_adapt
+2022-10-11 08:40:00 [INFO ]  	nc: 3
+2022-10-11 08:40:00 [INFO ]  	num_classes: 10
+2022-10-11 08:40:00 [INFO ]  	num_workers: 8
+2022-10-11 08:40:00 [INFO ]  	phase: test
+2022-10-11 08:40:00 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:40:00 [INFO ]  	start_time: '2022-10-11 08:40:00'
+2022-10-11 08:40:00 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:40:00 [INFO ]  	
+2022-10-11 08:40:02 [INFO ]  train dataset size:	73257
+2022-10-11 08:40:02 [INFO ]  test dataset size: 	26032
+2022-10-11 08:40:02 [INFO ]  datasets built!
+2022-10-11 08:40:02 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:40:03 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:40:03 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:40:03 [INFO ]  Custom dataset length: 20
+2022-10-11 08:40:05 [INFO ]   
+2022-10-11 08:40:05 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:40:05 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:40:05 [INFO ]   
+2022-10-11 08:40:05 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:40:05 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:40:05 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:40:05 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:42:36 [INFO ]  ======================================== 2022-10-11 08:42:36 ========================================
+2022-10-11 08:42:36 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:42:36 [INFO ]  Options: 
+2022-10-11 08:42:36 [INFO ]  	base_dir: null
+2022-10-11 08:42:36 [INFO ]  	batch_size: 1024
+2022-10-11 08:42:36 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:42:36 [INFO ]  	dataset: SVHN
+2022-10-11 08:42:36 [INFO ]  	dataset_labels:
+2022-10-11 08:42:36 [INFO ]  	- 0
+2022-10-11 08:42:36 [INFO ]  	- 1
+2022-10-11 08:42:36 [INFO ]  	- 2
+2022-10-11 08:42:36 [INFO ]  	- 3
+2022-10-11 08:42:36 [INFO ]  	- 4
+2022-10-11 08:42:36 [INFO ]  	- 5
+2022-10-11 08:42:36 [INFO ]  	- 6
+2022-10-11 08:42:36 [INFO ]  	- 7
+2022-10-11 08:42:36 [INFO ]  	- 8
+2022-10-11 08:42:36 [INFO ]  	- 9
+2022-10-11 08:42:36 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:42:36 [INFO ]  	- !!python/tuple
+2022-10-11 08:42:36 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:42:36 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:42:36 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:42:36 [INFO ]  	- !!python/tuple
+2022-10-11 08:42:36 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:42:36 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:42:36 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:42:36 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:42:36 [INFO ]  	decay_epochs: 50
+2022-10-11 08:42:36 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:42:36 [INFO ]  	device_id: 0
+2022-10-11 08:42:36 [INFO ]  	distill_epochs: 1
+2022-10-11 08:42:36 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:42:36 [INFO ]  	distill_steps: 1
+2022-10-11 08:42:36 [INFO ]  	epochs: 200
+2022-10-11 08:42:36 [INFO ]  	expand_cls: false
+2022-10-11 08:42:36 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:42:36 [INFO ]  	init: xavier
+2022-10-11 08:42:36 [INFO ]  	init_param: 1.0
+2022-10-11 08:42:36 [INFO ]  	input_size: 32
+2022-10-11 08:42:36 [INFO ]  	ipc: 1
+2022-10-11 08:42:36 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:42:36 [INFO ]  	log_interval: 100
+2022-10-11 08:42:36 [INFO ]  	log_level: INFO
+2022-10-11 08:42:36 [INFO ]  	lr: 0.01
+2022-10-11 08:42:36 [INFO ]  	mode: distill_adapt
+2022-10-11 08:42:36 [INFO ]  	nc: 3
+2022-10-11 08:42:36 [INFO ]  	num_classes: 10
+2022-10-11 08:42:36 [INFO ]  	num_workers: 8
+2022-10-11 08:42:36 [INFO ]  	phase: test
+2022-10-11 08:42:36 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:42:36 [INFO ]  	start_time: '2022-10-11 08:42:36'
+2022-10-11 08:42:36 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:42:36 [INFO ]  	
+2022-10-11 08:42:38 [INFO ]  train dataset size:	73257
+2022-10-11 08:42:38 [INFO ]  test dataset size: 	26032
+2022-10-11 08:42:38 [INFO ]  datasets built!
+2022-10-11 08:42:38 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:42:39 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:42:39 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:42:39 [INFO ]  Custom dataset length: 20
+2022-10-11 08:42:40 [INFO ]   
+2022-10-11 08:42:40 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:42:40 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:42:41 [INFO ]   
+2022-10-11 08:42:41 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:42:41 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:42:41 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:42:41 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:43:42 [INFO ]  ======================================== 2022-10-11 08:43:42 ========================================
+2022-10-11 08:43:42 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:43:42 [INFO ]  Options: 
+2022-10-11 08:43:42 [INFO ]  	base_dir: null
+2022-10-11 08:43:42 [INFO ]  	batch_size: 1024
+2022-10-11 08:43:42 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:43:42 [INFO ]  	dataset: SVHN
+2022-10-11 08:43:42 [INFO ]  	dataset_labels:
+2022-10-11 08:43:42 [INFO ]  	- 0
+2022-10-11 08:43:42 [INFO ]  	- 1
+2022-10-11 08:43:42 [INFO ]  	- 2
+2022-10-11 08:43:42 [INFO ]  	- 3
+2022-10-11 08:43:42 [INFO ]  	- 4
+2022-10-11 08:43:42 [INFO ]  	- 5
+2022-10-11 08:43:42 [INFO ]  	- 6
+2022-10-11 08:43:42 [INFO ]  	- 7
+2022-10-11 08:43:42 [INFO ]  	- 8
+2022-10-11 08:43:42 [INFO ]  	- 9
+2022-10-11 08:43:42 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:43:42 [INFO ]  	- !!python/tuple
+2022-10-11 08:43:42 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:43:42 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:43:42 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:43:42 [INFO ]  	- !!python/tuple
+2022-10-11 08:43:42 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:43:42 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:43:42 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:43:42 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:43:42 [INFO ]  	decay_epochs: 50
+2022-10-11 08:43:42 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:43:42 [INFO ]  	device_id: 0
+2022-10-11 08:43:42 [INFO ]  	distill_epochs: 1
+2022-10-11 08:43:42 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:43:42 [INFO ]  	distill_steps: 1
+2022-10-11 08:43:42 [INFO ]  	epochs: 200
+2022-10-11 08:43:42 [INFO ]  	expand_cls: false
+2022-10-11 08:43:42 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:43:42 [INFO ]  	init: xavier
+2022-10-11 08:43:42 [INFO ]  	init_param: 1.0
+2022-10-11 08:43:42 [INFO ]  	input_size: 32
+2022-10-11 08:43:42 [INFO ]  	ipc: 1
+2022-10-11 08:43:42 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:43:42 [INFO ]  	log_interval: 100
+2022-10-11 08:43:42 [INFO ]  	log_level: INFO
+2022-10-11 08:43:42 [INFO ]  	lr: 0.01
+2022-10-11 08:43:42 [INFO ]  	mode: distill_adapt
+2022-10-11 08:43:42 [INFO ]  	nc: 3
+2022-10-11 08:43:42 [INFO ]  	num_classes: 10
+2022-10-11 08:43:42 [INFO ]  	num_workers: 8
+2022-10-11 08:43:42 [INFO ]  	phase: test
+2022-10-11 08:43:42 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:43:42 [INFO ]  	start_time: '2022-10-11 08:43:42'
+2022-10-11 08:43:42 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:43:42 [INFO ]  	
+2022-10-11 08:43:44 [INFO ]  train dataset size:	73257
+2022-10-11 08:43:44 [INFO ]  test dataset size: 	26032
+2022-10-11 08:43:44 [INFO ]  datasets built!
+2022-10-11 08:43:44 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:43:46 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:43:46 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:43:46 [INFO ]  Custom dataset length: 20
+2022-10-11 08:43:47 [INFO ]   
+2022-10-11 08:43:47 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:43:47 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:43:48 [INFO ]   
+2022-10-11 08:43:48 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:43:48 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:43:48 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:43:48 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:44:26 [INFO ]  ======================================== 2022-10-11 08:44:26 ========================================
+2022-10-11 08:44:26 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:44:26 [INFO ]  Options: 
+2022-10-11 08:44:26 [INFO ]  	base_dir: null
+2022-10-11 08:44:26 [INFO ]  	batch_size: 1024
+2022-10-11 08:44:26 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:44:26 [INFO ]  	dataset: SVHN
+2022-10-11 08:44:26 [INFO ]  	dataset_labels:
+2022-10-11 08:44:26 [INFO ]  	- 0
+2022-10-11 08:44:26 [INFO ]  	- 1
+2022-10-11 08:44:26 [INFO ]  	- 2
+2022-10-11 08:44:26 [INFO ]  	- 3
+2022-10-11 08:44:26 [INFO ]  	- 4
+2022-10-11 08:44:26 [INFO ]  	- 5
+2022-10-11 08:44:26 [INFO ]  	- 6
+2022-10-11 08:44:26 [INFO ]  	- 7
+2022-10-11 08:44:26 [INFO ]  	- 8
+2022-10-11 08:44:26 [INFO ]  	- 9
+2022-10-11 08:44:26 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:44:26 [INFO ]  	- !!python/tuple
+2022-10-11 08:44:26 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:44:26 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:44:26 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:44:26 [INFO ]  	- !!python/tuple
+2022-10-11 08:44:26 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:44:26 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:44:26 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:44:26 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:44:26 [INFO ]  	decay_epochs: 50
+2022-10-11 08:44:26 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:44:26 [INFO ]  	device_id: 0
+2022-10-11 08:44:26 [INFO ]  	distill_epochs: 1
+2022-10-11 08:44:26 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:44:26 [INFO ]  	distill_steps: 1
+2022-10-11 08:44:26 [INFO ]  	epochs: 200
+2022-10-11 08:44:26 [INFO ]  	expand_cls: false
+2022-10-11 08:44:26 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:44:26 [INFO ]  	init: xavier
+2022-10-11 08:44:26 [INFO ]  	init_param: 1.0
+2022-10-11 08:44:26 [INFO ]  	input_size: 32
+2022-10-11 08:44:26 [INFO ]  	ipc: 1
+2022-10-11 08:44:26 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:44:26 [INFO ]  	log_interval: 100
+2022-10-11 08:44:26 [INFO ]  	log_level: INFO
+2022-10-11 08:44:26 [INFO ]  	lr: 0.01
+2022-10-11 08:44:26 [INFO ]  	mode: distill_adapt
+2022-10-11 08:44:26 [INFO ]  	nc: 3
+2022-10-11 08:44:26 [INFO ]  	num_classes: 10
+2022-10-11 08:44:26 [INFO ]  	num_workers: 8
+2022-10-11 08:44:26 [INFO ]  	phase: test
+2022-10-11 08:44:26 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:44:26 [INFO ]  	start_time: '2022-10-11 08:44:26'
+2022-10-11 08:44:26 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:44:26 [INFO ]  	
+2022-10-11 08:44:28 [INFO ]  train dataset size:	73257
+2022-10-11 08:44:28 [INFO ]  test dataset size: 	26032
+2022-10-11 08:44:28 [INFO ]  datasets built!
+2022-10-11 08:44:28 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:44:30 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:44:30 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:44:30 [INFO ]  Custom dataset length: 20
+2022-10-11 08:44:31 [INFO ]   
+2022-10-11 08:44:31 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:44:31 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:44:32 [INFO ]   
+2022-10-11 08:44:32 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:44:32 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:44:32 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:44:32 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:44:54 [INFO ]  ======================================== 2022-10-11 08:44:54 ========================================
+2022-10-11 08:44:54 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:44:54 [INFO ]  Options: 
+2022-10-11 08:44:54 [INFO ]  	base_dir: null
+2022-10-11 08:44:54 [INFO ]  	batch_size: 1024
+2022-10-11 08:44:54 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:44:54 [INFO ]  	dataset: SVHN
+2022-10-11 08:44:54 [INFO ]  	dataset_labels:
+2022-10-11 08:44:54 [INFO ]  	- 0
+2022-10-11 08:44:54 [INFO ]  	- 1
+2022-10-11 08:44:54 [INFO ]  	- 2
+2022-10-11 08:44:54 [INFO ]  	- 3
+2022-10-11 08:44:54 [INFO ]  	- 4
+2022-10-11 08:44:54 [INFO ]  	- 5
+2022-10-11 08:44:54 [INFO ]  	- 6
+2022-10-11 08:44:54 [INFO ]  	- 7
+2022-10-11 08:44:54 [INFO ]  	- 8
+2022-10-11 08:44:54 [INFO ]  	- 9
+2022-10-11 08:44:54 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:44:54 [INFO ]  	- !!python/tuple
+2022-10-11 08:44:54 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:44:54 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:44:54 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:44:54 [INFO ]  	- !!python/tuple
+2022-10-11 08:44:54 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:44:54 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:44:54 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:44:54 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:44:54 [INFO ]  	decay_epochs: 50
+2022-10-11 08:44:54 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:44:54 [INFO ]  	device_id: 0
+2022-10-11 08:44:54 [INFO ]  	distill_epochs: 1
+2022-10-11 08:44:54 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:44:54 [INFO ]  	distill_steps: 1
+2022-10-11 08:44:54 [INFO ]  	epochs: 200
+2022-10-11 08:44:54 [INFO ]  	expand_cls: false
+2022-10-11 08:44:54 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:44:54 [INFO ]  	init: xavier
+2022-10-11 08:44:54 [INFO ]  	init_param: 1.0
+2022-10-11 08:44:54 [INFO ]  	input_size: 32
+2022-10-11 08:44:54 [INFO ]  	ipc: 1
+2022-10-11 08:44:54 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:44:54 [INFO ]  	log_interval: 100
+2022-10-11 08:44:54 [INFO ]  	log_level: INFO
+2022-10-11 08:44:54 [INFO ]  	lr: 0.01
+2022-10-11 08:44:54 [INFO ]  	mode: distill_adapt
+2022-10-11 08:44:54 [INFO ]  	nc: 3
+2022-10-11 08:44:54 [INFO ]  	num_classes: 10
+2022-10-11 08:44:54 [INFO ]  	num_workers: 8
+2022-10-11 08:44:54 [INFO ]  	phase: test
+2022-10-11 08:44:54 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:44:54 [INFO ]  	start_time: '2022-10-11 08:44:54'
+2022-10-11 08:44:54 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:44:54 [INFO ]  	
+2022-10-11 08:44:56 [INFO ]  train dataset size:	73257
+2022-10-11 08:44:56 [INFO ]  test dataset size: 	26032
+2022-10-11 08:44:56 [INFO ]  datasets built!
+2022-10-11 08:44:56 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:44:58 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:44:58 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:44:58 [INFO ]  Custom dataset length: 20
+2022-10-11 08:44:59 [INFO ]   
+2022-10-11 08:44:59 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:44:59 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:45:00 [INFO ]   
+2022-10-11 08:45:00 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:45:00 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:45:00 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:45:00 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:45:16 [INFO ]  ======================================== 2022-10-11 08:45:16 ========================================
+2022-10-11 08:45:16 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:45:16 [INFO ]  Options: 
+2022-10-11 08:45:16 [INFO ]  	base_dir: null
+2022-10-11 08:45:16 [INFO ]  	batch_size: 1024
+2022-10-11 08:45:16 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:45:16 [INFO ]  	dataset: SVHN
+2022-10-11 08:45:16 [INFO ]  	dataset_labels:
+2022-10-11 08:45:16 [INFO ]  	- 0
+2022-10-11 08:45:16 [INFO ]  	- 1
+2022-10-11 08:45:16 [INFO ]  	- 2
+2022-10-11 08:45:16 [INFO ]  	- 3
+2022-10-11 08:45:16 [INFO ]  	- 4
+2022-10-11 08:45:16 [INFO ]  	- 5
+2022-10-11 08:45:16 [INFO ]  	- 6
+2022-10-11 08:45:16 [INFO ]  	- 7
+2022-10-11 08:45:16 [INFO ]  	- 8
+2022-10-11 08:45:16 [INFO ]  	- 9
+2022-10-11 08:45:16 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:45:16 [INFO ]  	- !!python/tuple
+2022-10-11 08:45:16 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:45:16 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:45:16 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:45:16 [INFO ]  	- !!python/tuple
+2022-10-11 08:45:16 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:45:16 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:45:16 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:45:16 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:45:16 [INFO ]  	decay_epochs: 50
+2022-10-11 08:45:16 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:45:16 [INFO ]  	device_id: 0
+2022-10-11 08:45:16 [INFO ]  	distill_epochs: 1
+2022-10-11 08:45:16 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:45:16 [INFO ]  	distill_steps: 1
+2022-10-11 08:45:16 [INFO ]  	epochs: 200
+2022-10-11 08:45:16 [INFO ]  	expand_cls: false
+2022-10-11 08:45:16 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:45:16 [INFO ]  	init: xavier
+2022-10-11 08:45:16 [INFO ]  	init_param: 1.0
+2022-10-11 08:45:16 [INFO ]  	input_size: 32
+2022-10-11 08:45:16 [INFO ]  	ipc: 1
+2022-10-11 08:45:16 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:45:16 [INFO ]  	log_interval: 100
+2022-10-11 08:45:16 [INFO ]  	log_level: INFO
+2022-10-11 08:45:16 [INFO ]  	lr: 0.01
+2022-10-11 08:45:16 [INFO ]  	mode: distill_adapt
+2022-10-11 08:45:16 [INFO ]  	nc: 3
+2022-10-11 08:45:16 [INFO ]  	num_classes: 10
+2022-10-11 08:45:16 [INFO ]  	num_workers: 8
+2022-10-11 08:45:16 [INFO ]  	phase: test
+2022-10-11 08:45:16 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:45:16 [INFO ]  	start_time: '2022-10-11 08:45:16'
+2022-10-11 08:45:16 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:45:16 [INFO ]  	
+2022-10-11 08:45:18 [INFO ]  train dataset size:	73257
+2022-10-11 08:45:18 [INFO ]  test dataset size: 	26032
+2022-10-11 08:45:18 [INFO ]  datasets built!
+2022-10-11 08:45:18 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:45:20 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:45:20 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:45:20 [INFO ]  Custom dataset length: 20
+2022-10-11 08:45:21 [INFO ]   
+2022-10-11 08:45:21 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:45:21 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:45:21 [INFO ]   
+2022-10-11 08:45:21 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:45:21 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:45:21 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:45:21 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:46:39 [INFO ]  ======================================== 2022-10-11 08:46:39 ========================================
+2022-10-11 08:46:39 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:46:39 [INFO ]  Options: 
+2022-10-11 08:46:39 [INFO ]  	base_dir: null
+2022-10-11 08:46:39 [INFO ]  	batch_size: 1024
+2022-10-11 08:46:39 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:46:39 [INFO ]  	dataset: SVHN
+2022-10-11 08:46:39 [INFO ]  	dataset_labels:
+2022-10-11 08:46:39 [INFO ]  	- 0
+2022-10-11 08:46:39 [INFO ]  	- 1
+2022-10-11 08:46:39 [INFO ]  	- 2
+2022-10-11 08:46:39 [INFO ]  	- 3
+2022-10-11 08:46:39 [INFO ]  	- 4
+2022-10-11 08:46:39 [INFO ]  	- 5
+2022-10-11 08:46:39 [INFO ]  	- 6
+2022-10-11 08:46:39 [INFO ]  	- 7
+2022-10-11 08:46:39 [INFO ]  	- 8
+2022-10-11 08:46:39 [INFO ]  	- 9
+2022-10-11 08:46:39 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:46:39 [INFO ]  	- !!python/tuple
+2022-10-11 08:46:39 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:46:39 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:46:39 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:46:39 [INFO ]  	- !!python/tuple
+2022-10-11 08:46:39 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:46:39 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:46:39 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:46:39 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:46:39 [INFO ]  	decay_epochs: 50
+2022-10-11 08:46:39 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:46:39 [INFO ]  	device_id: 0
+2022-10-11 08:46:39 [INFO ]  	distill_epochs: 1
+2022-10-11 08:46:39 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:46:39 [INFO ]  	distill_steps: 1
+2022-10-11 08:46:39 [INFO ]  	epochs: 200
+2022-10-11 08:46:39 [INFO ]  	expand_cls: false
+2022-10-11 08:46:39 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:46:39 [INFO ]  	init: xavier
+2022-10-11 08:46:39 [INFO ]  	init_param: 1.0
+2022-10-11 08:46:39 [INFO ]  	input_size: 32
+2022-10-11 08:46:39 [INFO ]  	ipc: 1
+2022-10-11 08:46:39 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:46:39 [INFO ]  	log_interval: 100
+2022-10-11 08:46:39 [INFO ]  	log_level: INFO
+2022-10-11 08:46:39 [INFO ]  	lr: 0.01
+2022-10-11 08:46:39 [INFO ]  	mode: distill_adapt
+2022-10-11 08:46:39 [INFO ]  	nc: 3
+2022-10-11 08:46:39 [INFO ]  	num_classes: 10
+2022-10-11 08:46:39 [INFO ]  	num_workers: 8
+2022-10-11 08:46:39 [INFO ]  	phase: test
+2022-10-11 08:46:39 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:46:39 [INFO ]  	start_time: '2022-10-11 08:46:39'
+2022-10-11 08:46:39 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:46:39 [INFO ]  	
+2022-10-11 08:46:41 [INFO ]  train dataset size:	73257
+2022-10-11 08:46:41 [INFO ]  test dataset size: 	26032
+2022-10-11 08:46:41 [INFO ]  datasets built!
+2022-10-11 08:46:41 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:46:42 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:46:42 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:46:42 [INFO ]  Custom dataset length: 20
+2022-10-11 08:46:43 [INFO ]   
+2022-10-11 08:46:43 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:46:43 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:46:44 [INFO ]   
+2022-10-11 08:46:44 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:46:44 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:46:44 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:46:44 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:49:08 [INFO ]  ======================================== 2022-10-11 08:49:08 ========================================
+2022-10-11 08:49:08 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:49:08 [INFO ]  Options: 
+2022-10-11 08:49:08 [INFO ]  	base_dir: null
+2022-10-11 08:49:08 [INFO ]  	batch_size: 1024
+2022-10-11 08:49:08 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:49:08 [INFO ]  	dataset: SVHN
+2022-10-11 08:49:08 [INFO ]  	dataset_labels:
+2022-10-11 08:49:08 [INFO ]  	- 0
+2022-10-11 08:49:08 [INFO ]  	- 1
+2022-10-11 08:49:08 [INFO ]  	- 2
+2022-10-11 08:49:08 [INFO ]  	- 3
+2022-10-11 08:49:08 [INFO ]  	- 4
+2022-10-11 08:49:08 [INFO ]  	- 5
+2022-10-11 08:49:08 [INFO ]  	- 6
+2022-10-11 08:49:08 [INFO ]  	- 7
+2022-10-11 08:49:08 [INFO ]  	- 8
+2022-10-11 08:49:08 [INFO ]  	- 9
+2022-10-11 08:49:08 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:49:08 [INFO ]  	- !!python/tuple
+2022-10-11 08:49:08 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:49:08 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:49:08 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:49:08 [INFO ]  	- !!python/tuple
+2022-10-11 08:49:08 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:49:08 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:49:08 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:49:08 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:49:08 [INFO ]  	decay_epochs: 50
+2022-10-11 08:49:08 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:49:08 [INFO ]  	device_id: 0
+2022-10-11 08:49:08 [INFO ]  	distill_epochs: 1
+2022-10-11 08:49:08 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:49:08 [INFO ]  	distill_steps: 1
+2022-10-11 08:49:08 [INFO ]  	epochs: 200
+2022-10-11 08:49:08 [INFO ]  	expand_cls: false
+2022-10-11 08:49:08 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:49:08 [INFO ]  	init: xavier
+2022-10-11 08:49:08 [INFO ]  	init_param: 1.0
+2022-10-11 08:49:08 [INFO ]  	input_size: 32
+2022-10-11 08:49:08 [INFO ]  	ipc: 1
+2022-10-11 08:49:08 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:49:08 [INFO ]  	log_interval: 100
+2022-10-11 08:49:08 [INFO ]  	log_level: INFO
+2022-10-11 08:49:08 [INFO ]  	lr: 0.01
+2022-10-11 08:49:08 [INFO ]  	mode: distill_adapt
+2022-10-11 08:49:08 [INFO ]  	nc: 3
+2022-10-11 08:49:08 [INFO ]  	num_classes: 10
+2022-10-11 08:49:08 [INFO ]  	num_workers: 8
+2022-10-11 08:49:08 [INFO ]  	phase: test
+2022-10-11 08:49:08 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:49:08 [INFO ]  	start_time: '2022-10-11 08:49:08'
+2022-10-11 08:49:08 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:49:08 [INFO ]  	
+2022-10-11 08:49:10 [INFO ]  train dataset size:	73257
+2022-10-11 08:49:10 [INFO ]  test dataset size: 	26032
+2022-10-11 08:49:10 [INFO ]  datasets built!
+2022-10-11 08:49:10 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:49:11 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:49:11 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:49:11 [INFO ]  Custom dataset length: 20
+2022-10-11 08:49:13 [INFO ]   
+2022-10-11 08:49:13 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:49:13 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:49:13 [INFO ]   
+2022-10-11 08:49:13 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:49:13 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:49:13 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:49:13 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:49:40 [INFO ]  ======================================== 2022-10-11 08:49:40 ========================================
+2022-10-11 08:49:40 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:49:40 [INFO ]  Options: 
+2022-10-11 08:49:40 [INFO ]  	base_dir: null
+2022-10-11 08:49:40 [INFO ]  	batch_size: 1024
+2022-10-11 08:49:40 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:49:40 [INFO ]  	dataset: SVHN
+2022-10-11 08:49:40 [INFO ]  	dataset_labels:
+2022-10-11 08:49:40 [INFO ]  	- 0
+2022-10-11 08:49:40 [INFO ]  	- 1
+2022-10-11 08:49:40 [INFO ]  	- 2
+2022-10-11 08:49:40 [INFO ]  	- 3
+2022-10-11 08:49:40 [INFO ]  	- 4
+2022-10-11 08:49:40 [INFO ]  	- 5
+2022-10-11 08:49:40 [INFO ]  	- 6
+2022-10-11 08:49:40 [INFO ]  	- 7
+2022-10-11 08:49:40 [INFO ]  	- 8
+2022-10-11 08:49:40 [INFO ]  	- 9
+2022-10-11 08:49:40 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:49:40 [INFO ]  	- !!python/tuple
+2022-10-11 08:49:40 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:49:40 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:49:40 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:49:40 [INFO ]  	- !!python/tuple
+2022-10-11 08:49:40 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:49:40 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:49:40 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:49:40 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:49:40 [INFO ]  	decay_epochs: 50
+2022-10-11 08:49:40 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:49:40 [INFO ]  	device_id: 0
+2022-10-11 08:49:40 [INFO ]  	distill_epochs: 1
+2022-10-11 08:49:40 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:49:40 [INFO ]  	distill_steps: 1
+2022-10-11 08:49:40 [INFO ]  	epochs: 200
+2022-10-11 08:49:40 [INFO ]  	expand_cls: false
+2022-10-11 08:49:40 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:49:40 [INFO ]  	init: xavier
+2022-10-11 08:49:40 [INFO ]  	init_param: 1.0
+2022-10-11 08:49:40 [INFO ]  	input_size: 32
+2022-10-11 08:49:40 [INFO ]  	ipc: 1
+2022-10-11 08:49:40 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:49:40 [INFO ]  	log_interval: 100
+2022-10-11 08:49:40 [INFO ]  	log_level: INFO
+2022-10-11 08:49:40 [INFO ]  	lr: 0.01
+2022-10-11 08:49:40 [INFO ]  	mode: distill_adapt
+2022-10-11 08:49:40 [INFO ]  	nc: 3
+2022-10-11 08:49:40 [INFO ]  	num_classes: 10
+2022-10-11 08:49:40 [INFO ]  	num_workers: 8
+2022-10-11 08:49:40 [INFO ]  	phase: test
+2022-10-11 08:49:40 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:49:40 [INFO ]  	start_time: '2022-10-11 08:49:40'
+2022-10-11 08:49:40 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:49:40 [INFO ]  	
+2022-10-11 08:49:42 [INFO ]  train dataset size:	73257
+2022-10-11 08:49:42 [INFO ]  test dataset size: 	26032
+2022-10-11 08:49:42 [INFO ]  datasets built!
+2022-10-11 08:49:42 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:49:44 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:49:44 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:49:44 [INFO ]  Custom dataset length: 20
+2022-10-11 08:49:45 [INFO ]   
+2022-10-11 08:49:45 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:49:45 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:49:46 [INFO ]   
+2022-10-11 08:49:46 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:49:46 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:49:46 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:49:46 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:50:51 [INFO ]  ======================================== 2022-10-11 08:50:51 ========================================
+2022-10-11 08:50:51 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:50:51 [INFO ]  Options: 
+2022-10-11 08:50:51 [INFO ]  	base_dir: null
+2022-10-11 08:50:51 [INFO ]  	batch_size: 1024
+2022-10-11 08:50:51 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:50:51 [INFO ]  	dataset: SVHN
+2022-10-11 08:50:51 [INFO ]  	dataset_labels:
+2022-10-11 08:50:51 [INFO ]  	- 0
+2022-10-11 08:50:51 [INFO ]  	- 1
+2022-10-11 08:50:51 [INFO ]  	- 2
+2022-10-11 08:50:51 [INFO ]  	- 3
+2022-10-11 08:50:51 [INFO ]  	- 4
+2022-10-11 08:50:51 [INFO ]  	- 5
+2022-10-11 08:50:51 [INFO ]  	- 6
+2022-10-11 08:50:51 [INFO ]  	- 7
+2022-10-11 08:50:51 [INFO ]  	- 8
+2022-10-11 08:50:51 [INFO ]  	- 9
+2022-10-11 08:50:51 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:50:51 [INFO ]  	- !!python/tuple
+2022-10-11 08:50:51 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:50:51 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:50:51 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:50:51 [INFO ]  	- !!python/tuple
+2022-10-11 08:50:51 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:50:51 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:50:51 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:50:51 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:50:51 [INFO ]  	decay_epochs: 50
+2022-10-11 08:50:51 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:50:51 [INFO ]  	device_id: 0
+2022-10-11 08:50:51 [INFO ]  	distill_epochs: 1
+2022-10-11 08:50:51 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:50:51 [INFO ]  	distill_steps: 1
+2022-10-11 08:50:51 [INFO ]  	epochs: 200
+2022-10-11 08:50:51 [INFO ]  	expand_cls: false
+2022-10-11 08:50:51 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:50:51 [INFO ]  	init: xavier
+2022-10-11 08:50:51 [INFO ]  	init_param: 1.0
+2022-10-11 08:50:51 [INFO ]  	input_size: 32
+2022-10-11 08:50:51 [INFO ]  	ipc: 1
+2022-10-11 08:50:51 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:50:51 [INFO ]  	log_interval: 100
+2022-10-11 08:50:51 [INFO ]  	log_level: INFO
+2022-10-11 08:50:51 [INFO ]  	lr: 0.01
+2022-10-11 08:50:51 [INFO ]  	mode: distill_adapt
+2022-10-11 08:50:51 [INFO ]  	nc: 3
+2022-10-11 08:50:51 [INFO ]  	num_classes: 10
+2022-10-11 08:50:51 [INFO ]  	num_workers: 8
+2022-10-11 08:50:51 [INFO ]  	phase: test
+2022-10-11 08:50:51 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:50:51 [INFO ]  	start_time: '2022-10-11 08:50:51'
+2022-10-11 08:50:51 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:50:51 [INFO ]  	
+2022-10-11 08:50:53 [INFO ]  train dataset size:	73257
+2022-10-11 08:50:53 [INFO ]  test dataset size: 	26032
+2022-10-11 08:50:53 [INFO ]  datasets built!
+2022-10-11 08:50:53 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:50:54 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:50:54 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:50:54 [INFO ]  Custom dataset length: 20
+2022-10-11 08:50:55 [INFO ]   
+2022-10-11 08:50:55 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:50:55 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:50:56 [INFO ]   
+2022-10-11 08:50:56 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:50:56 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:50:56 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:50:56 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:52:08 [INFO ]  ======================================== 2022-10-11 08:52:08 ========================================
+2022-10-11 08:52:08 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:52:08 [INFO ]  Options: 
+2022-10-11 08:52:08 [INFO ]  	base_dir: null
+2022-10-11 08:52:08 [INFO ]  	batch_size: 1024
+2022-10-11 08:52:08 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:52:08 [INFO ]  	dataset: SVHN
+2022-10-11 08:52:08 [INFO ]  	dataset_labels:
+2022-10-11 08:52:08 [INFO ]  	- 0
+2022-10-11 08:52:08 [INFO ]  	- 1
+2022-10-11 08:52:08 [INFO ]  	- 2
+2022-10-11 08:52:08 [INFO ]  	- 3
+2022-10-11 08:52:08 [INFO ]  	- 4
+2022-10-11 08:52:08 [INFO ]  	- 5
+2022-10-11 08:52:08 [INFO ]  	- 6
+2022-10-11 08:52:08 [INFO ]  	- 7
+2022-10-11 08:52:08 [INFO ]  	- 8
+2022-10-11 08:52:08 [INFO ]  	- 9
+2022-10-11 08:52:08 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:52:08 [INFO ]  	- !!python/tuple
+2022-10-11 08:52:08 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:52:08 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:52:08 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:52:08 [INFO ]  	- !!python/tuple
+2022-10-11 08:52:08 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:52:08 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:52:08 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:52:08 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:52:08 [INFO ]  	decay_epochs: 50
+2022-10-11 08:52:08 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:52:08 [INFO ]  	device_id: 0
+2022-10-11 08:52:08 [INFO ]  	distill_epochs: 1
+2022-10-11 08:52:08 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:52:08 [INFO ]  	distill_steps: 1
+2022-10-11 08:52:08 [INFO ]  	epochs: 200
+2022-10-11 08:52:08 [INFO ]  	expand_cls: false
+2022-10-11 08:52:08 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:52:08 [INFO ]  	init: xavier
+2022-10-11 08:52:08 [INFO ]  	init_param: 1.0
+2022-10-11 08:52:08 [INFO ]  	input_size: 32
+2022-10-11 08:52:08 [INFO ]  	ipc: 1
+2022-10-11 08:52:08 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:52:08 [INFO ]  	log_interval: 100
+2022-10-11 08:52:08 [INFO ]  	log_level: INFO
+2022-10-11 08:52:08 [INFO ]  	lr: 0.01
+2022-10-11 08:52:08 [INFO ]  	mode: distill_adapt
+2022-10-11 08:52:08 [INFO ]  	nc: 3
+2022-10-11 08:52:08 [INFO ]  	num_classes: 10
+2022-10-11 08:52:08 [INFO ]  	num_workers: 8
+2022-10-11 08:52:08 [INFO ]  	phase: test
+2022-10-11 08:52:08 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:52:08 [INFO ]  	start_time: '2022-10-11 08:52:08'
+2022-10-11 08:52:08 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:52:08 [INFO ]  	
+2022-10-11 08:52:11 [INFO ]  train dataset size:	73257
+2022-10-11 08:52:11 [INFO ]  test dataset size: 	26032
+2022-10-11 08:52:11 [INFO ]  datasets built!
+2022-10-11 08:52:11 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:52:12 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:52:12 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:52:12 [INFO ]  Custom dataset length: 20
+2022-10-11 08:52:13 [INFO ]   
+2022-10-11 08:52:13 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:52:13 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:52:14 [INFO ]   
+2022-10-11 08:52:14 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:52:14 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:52:14 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:52:14 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:53:17 [INFO ]  ======================================== 2022-10-11 08:53:17 ========================================
+2022-10-11 08:53:17 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:53:17 [INFO ]  Options: 
+2022-10-11 08:53:17 [INFO ]  	base_dir: null
+2022-10-11 08:53:17 [INFO ]  	batch_size: 1024
+2022-10-11 08:53:17 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:53:17 [INFO ]  	dataset: SVHN
+2022-10-11 08:53:17 [INFO ]  	dataset_labels:
+2022-10-11 08:53:17 [INFO ]  	- 0
+2022-10-11 08:53:17 [INFO ]  	- 1
+2022-10-11 08:53:17 [INFO ]  	- 2
+2022-10-11 08:53:17 [INFO ]  	- 3
+2022-10-11 08:53:17 [INFO ]  	- 4
+2022-10-11 08:53:17 [INFO ]  	- 5
+2022-10-11 08:53:17 [INFO ]  	- 6
+2022-10-11 08:53:17 [INFO ]  	- 7
+2022-10-11 08:53:17 [INFO ]  	- 8
+2022-10-11 08:53:17 [INFO ]  	- 9
+2022-10-11 08:53:17 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:53:17 [INFO ]  	- !!python/tuple
+2022-10-11 08:53:17 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:53:17 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:53:17 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:53:17 [INFO ]  	- !!python/tuple
+2022-10-11 08:53:17 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:53:17 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:53:17 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:53:17 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:53:17 [INFO ]  	decay_epochs: 50
+2022-10-11 08:53:17 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:53:17 [INFO ]  	device_id: 0
+2022-10-11 08:53:17 [INFO ]  	distill_epochs: 1
+2022-10-11 08:53:17 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:53:17 [INFO ]  	distill_steps: 1
+2022-10-11 08:53:17 [INFO ]  	epochs: 200
+2022-10-11 08:53:17 [INFO ]  	expand_cls: false
+2022-10-11 08:53:17 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:53:17 [INFO ]  	init: xavier
+2022-10-11 08:53:17 [INFO ]  	init_param: 1.0
+2022-10-11 08:53:17 [INFO ]  	input_size: 32
+2022-10-11 08:53:17 [INFO ]  	ipc: 1
+2022-10-11 08:53:17 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:53:17 [INFO ]  	log_interval: 100
+2022-10-11 08:53:17 [INFO ]  	log_level: INFO
+2022-10-11 08:53:17 [INFO ]  	lr: 0.01
+2022-10-11 08:53:17 [INFO ]  	mode: distill_adapt
+2022-10-11 08:53:17 [INFO ]  	nc: 3
+2022-10-11 08:53:17 [INFO ]  	num_classes: 10
+2022-10-11 08:53:17 [INFO ]  	num_workers: 8
+2022-10-11 08:53:17 [INFO ]  	phase: test
+2022-10-11 08:53:17 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:53:17 [INFO ]  	start_time: '2022-10-11 08:53:17'
+2022-10-11 08:53:17 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:53:17 [INFO ]  	
+2022-10-11 08:53:19 [INFO ]  train dataset size:	73257
+2022-10-11 08:53:19 [INFO ]  test dataset size: 	26032
+2022-10-11 08:53:19 [INFO ]  datasets built!
+2022-10-11 08:53:19 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:53:21 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:53:21 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:53:21 [INFO ]  Custom dataset length: 20
+2022-10-11 08:53:22 [INFO ]   
+2022-10-11 08:53:22 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:53:22 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:53:23 [INFO ]   
+2022-10-11 08:53:23 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:53:23 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:53:23 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:53:23 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:58:01 [INFO ]  ======================================== 2022-10-11 08:58:01 ========================================
+2022-10-11 08:58:01 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:58:01 [INFO ]  Options: 
+2022-10-11 08:58:01 [INFO ]  	base_dir: null
+2022-10-11 08:58:01 [INFO ]  	batch_size: 1024
+2022-10-11 08:58:01 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:58:01 [INFO ]  	dataset: SVHN
+2022-10-11 08:58:01 [INFO ]  	dataset_labels:
+2022-10-11 08:58:01 [INFO ]  	- 0
+2022-10-11 08:58:01 [INFO ]  	- 1
+2022-10-11 08:58:01 [INFO ]  	- 2
+2022-10-11 08:58:01 [INFO ]  	- 3
+2022-10-11 08:58:01 [INFO ]  	- 4
+2022-10-11 08:58:01 [INFO ]  	- 5
+2022-10-11 08:58:01 [INFO ]  	- 6
+2022-10-11 08:58:01 [INFO ]  	- 7
+2022-10-11 08:58:01 [INFO ]  	- 8
+2022-10-11 08:58:01 [INFO ]  	- 9
+2022-10-11 08:58:01 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:58:01 [INFO ]  	- !!python/tuple
+2022-10-11 08:58:01 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:58:01 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:58:01 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:58:01 [INFO ]  	- !!python/tuple
+2022-10-11 08:58:01 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:58:01 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:58:01 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:58:01 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:58:01 [INFO ]  	decay_epochs: 50
+2022-10-11 08:58:01 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:58:01 [INFO ]  	device_id: 0
+2022-10-11 08:58:01 [INFO ]  	distill_epochs: 1
+2022-10-11 08:58:01 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:58:01 [INFO ]  	distill_steps: 1
+2022-10-11 08:58:01 [INFO ]  	epochs: 200
+2022-10-11 08:58:01 [INFO ]  	expand_cls: false
+2022-10-11 08:58:01 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:58:01 [INFO ]  	init: xavier
+2022-10-11 08:58:01 [INFO ]  	init_param: 1.0
+2022-10-11 08:58:01 [INFO ]  	input_size: 32
+2022-10-11 08:58:01 [INFO ]  	ipc: 1
+2022-10-11 08:58:01 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:58:01 [INFO ]  	log_interval: 100
+2022-10-11 08:58:01 [INFO ]  	log_level: INFO
+2022-10-11 08:58:01 [INFO ]  	lr: 0.01
+2022-10-11 08:58:01 [INFO ]  	mode: distill_adapt
+2022-10-11 08:58:01 [INFO ]  	nc: 3
+2022-10-11 08:58:01 [INFO ]  	num_classes: 10
+2022-10-11 08:58:01 [INFO ]  	num_workers: 8
+2022-10-11 08:58:01 [INFO ]  	phase: test
+2022-10-11 08:58:01 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:58:01 [INFO ]  	start_time: '2022-10-11 08:58:01'
+2022-10-11 08:58:01 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:58:01 [INFO ]  	
+2022-10-11 08:58:03 [INFO ]  train dataset size:	73257
+2022-10-11 08:58:03 [INFO ]  test dataset size: 	26032
+2022-10-11 08:58:03 [INFO ]  datasets built!
+2022-10-11 08:58:03 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:58:04 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:58:04 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:58:04 [INFO ]  Custom dataset length: 20
+2022-10-11 08:58:05 [INFO ]   
+2022-10-11 08:58:05 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:58:05 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:58:06 [INFO ]   
+2022-10-11 08:58:06 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:58:06 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:58:06 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:58:06 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:58:45 [INFO ]  ======================================== 2022-10-11 08:58:45 ========================================
+2022-10-11 08:58:45 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:58:45 [INFO ]  Options: 
+2022-10-11 08:58:45 [INFO ]  	base_dir: null
+2022-10-11 08:58:45 [INFO ]  	batch_size: 1024
+2022-10-11 08:58:45 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:58:45 [INFO ]  	dataset: SVHN
+2022-10-11 08:58:45 [INFO ]  	dataset_labels:
+2022-10-11 08:58:45 [INFO ]  	- 0
+2022-10-11 08:58:45 [INFO ]  	- 1
+2022-10-11 08:58:45 [INFO ]  	- 2
+2022-10-11 08:58:45 [INFO ]  	- 3
+2022-10-11 08:58:45 [INFO ]  	- 4
+2022-10-11 08:58:45 [INFO ]  	- 5
+2022-10-11 08:58:45 [INFO ]  	- 6
+2022-10-11 08:58:45 [INFO ]  	- 7
+2022-10-11 08:58:45 [INFO ]  	- 8
+2022-10-11 08:58:45 [INFO ]  	- 9
+2022-10-11 08:58:45 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:58:45 [INFO ]  	- !!python/tuple
+2022-10-11 08:58:45 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:58:45 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:58:45 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:58:45 [INFO ]  	- !!python/tuple
+2022-10-11 08:58:45 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:58:45 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:58:45 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:58:45 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:58:45 [INFO ]  	decay_epochs: 50
+2022-10-11 08:58:45 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:58:45 [INFO ]  	device_id: 0
+2022-10-11 08:58:45 [INFO ]  	distill_epochs: 1
+2022-10-11 08:58:45 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:58:45 [INFO ]  	distill_steps: 1
+2022-10-11 08:58:45 [INFO ]  	epochs: 200
+2022-10-11 08:58:45 [INFO ]  	expand_cls: false
+2022-10-11 08:58:45 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:58:45 [INFO ]  	init: xavier
+2022-10-11 08:58:45 [INFO ]  	init_param: 1.0
+2022-10-11 08:58:45 [INFO ]  	input_size: 32
+2022-10-11 08:58:45 [INFO ]  	ipc: 1
+2022-10-11 08:58:45 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:58:45 [INFO ]  	log_interval: 100
+2022-10-11 08:58:45 [INFO ]  	log_level: INFO
+2022-10-11 08:58:45 [INFO ]  	lr: 0.01
+2022-10-11 08:58:45 [INFO ]  	mode: distill_adapt
+2022-10-11 08:58:45 [INFO ]  	nc: 3
+2022-10-11 08:58:45 [INFO ]  	num_classes: 10
+2022-10-11 08:58:45 [INFO ]  	num_workers: 8
+2022-10-11 08:58:45 [INFO ]  	phase: test
+2022-10-11 08:58:45 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:58:45 [INFO ]  	start_time: '2022-10-11 08:58:45'
+2022-10-11 08:58:45 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:58:45 [INFO ]  	
+2022-10-11 08:58:47 [INFO ]  train dataset size:	73257
+2022-10-11 08:58:47 [INFO ]  test dataset size: 	26032
+2022-10-11 08:58:47 [INFO ]  datasets built!
+2022-10-11 08:58:47 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:58:48 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:58:48 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:58:48 [INFO ]  Custom dataset length: 20
+2022-10-11 08:58:49 [INFO ]   
+2022-10-11 08:58:49 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:58:49 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:58:50 [INFO ]   
+2022-10-11 08:58:50 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:58:50 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:58:50 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:58:50 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:59:31 [INFO ]  ======================================== 2022-10-11 08:59:31 ========================================
+2022-10-11 08:59:31 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 08:59:31 [INFO ]  Options: 
+2022-10-11 08:59:31 [INFO ]  	base_dir: null
+2022-10-11 08:59:31 [INFO ]  	batch_size: 1024
+2022-10-11 08:59:31 [INFO ]  	checkpoint_interval: 300
+2022-10-11 08:59:31 [INFO ]  	dataset: SVHN
+2022-10-11 08:59:31 [INFO ]  	dataset_labels:
+2022-10-11 08:59:31 [INFO ]  	- 0
+2022-10-11 08:59:31 [INFO ]  	- 1
+2022-10-11 08:59:31 [INFO ]  	- 2
+2022-10-11 08:59:31 [INFO ]  	- 3
+2022-10-11 08:59:31 [INFO ]  	- 4
+2022-10-11 08:59:31 [INFO ]  	- 5
+2022-10-11 08:59:31 [INFO ]  	- 6
+2022-10-11 08:59:31 [INFO ]  	- 7
+2022-10-11 08:59:31 [INFO ]  	- 8
+2022-10-11 08:59:31 [INFO ]  	- 9
+2022-10-11 08:59:31 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 08:59:31 [INFO ]  	- !!python/tuple
+2022-10-11 08:59:31 [INFO ]  	    - 0.4379104971885681
+2022-10-11 08:59:31 [INFO ]  	    - 0.44398033618927
+2022-10-11 08:59:31 [INFO ]  	    - 0.4729299545288086
+2022-10-11 08:59:31 [INFO ]  	- !!python/tuple
+2022-10-11 08:59:31 [INFO ]  	    - 0.19803012907505035
+2022-10-11 08:59:31 [INFO ]  	    - 0.2010156363248825
+2022-10-11 08:59:31 [INFO ]  	    - 0.19703614711761475
+2022-10-11 08:59:31 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 08:59:31 [INFO ]  	decay_epochs: 50
+2022-10-11 08:59:31 [INFO ]  	decay_factor: 0.1
+2022-10-11 08:59:31 [INFO ]  	device_id: 0
+2022-10-11 08:59:31 [INFO ]  	distill_epochs: 1
+2022-10-11 08:59:31 [INFO ]  	distill_lr: 0.02
+2022-10-11 08:59:31 [INFO ]  	distill_steps: 1
+2022-10-11 08:59:31 [INFO ]  	epochs: 200
+2022-10-11 08:59:31 [INFO ]  	expand_cls: false
+2022-10-11 08:59:31 [INFO ]  	forgetting_dataset: null
+2022-10-11 08:59:31 [INFO ]  	init: xavier
+2022-10-11 08:59:31 [INFO ]  	init_param: 1.0
+2022-10-11 08:59:31 [INFO ]  	input_size: 32
+2022-10-11 08:59:31 [INFO ]  	ipc: 1
+2022-10-11 08:59:31 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 08:59:31 [INFO ]  	log_interval: 100
+2022-10-11 08:59:31 [INFO ]  	log_level: INFO
+2022-10-11 08:59:31 [INFO ]  	lr: 0.01
+2022-10-11 08:59:31 [INFO ]  	mode: distill_adapt
+2022-10-11 08:59:31 [INFO ]  	nc: 3
+2022-10-11 08:59:31 [INFO ]  	num_classes: 10
+2022-10-11 08:59:31 [INFO ]  	num_workers: 8
+2022-10-11 08:59:31 [INFO ]  	phase: test
+2022-10-11 08:59:31 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 08:59:31 [INFO ]  	start_time: '2022-10-11 08:59:31'
+2022-10-11 08:59:31 [INFO ]  	test_batch_size: 1024
+2022-10-11 08:59:31 [INFO ]  	
+2022-10-11 08:59:33 [INFO ]  train dataset size:	73257
+2022-10-11 08:59:33 [INFO ]  test dataset size: 	26032
+2022-10-11 08:59:33 [INFO ]  datasets built!
+2022-10-11 08:59:33 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 08:59:34 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 08:59:34 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 08:59:34 [INFO ]  Custom dataset length: 20
+2022-10-11 08:59:35 [INFO ]   
+2022-10-11 08:59:35 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 08:59:35 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 08:59:36 [INFO ]   
+2022-10-11 08:59:36 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 08:59:36 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 08:59:36 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 08:59:36 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 09:00:13 [INFO ]  ======================================== 2022-10-11 09:00:13 ========================================
+2022-10-11 09:00:13 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 09:00:13 [INFO ]  Options: 
+2022-10-11 09:00:13 [INFO ]  	base_dir: null
+2022-10-11 09:00:13 [INFO ]  	batch_size: 1024
+2022-10-11 09:00:13 [INFO ]  	checkpoint_interval: 300
+2022-10-11 09:00:13 [INFO ]  	dataset: SVHN
+2022-10-11 09:00:13 [INFO ]  	dataset_labels:
+2022-10-11 09:00:13 [INFO ]  	- 0
+2022-10-11 09:00:13 [INFO ]  	- 1
+2022-10-11 09:00:13 [INFO ]  	- 2
+2022-10-11 09:00:13 [INFO ]  	- 3
+2022-10-11 09:00:13 [INFO ]  	- 4
+2022-10-11 09:00:13 [INFO ]  	- 5
+2022-10-11 09:00:13 [INFO ]  	- 6
+2022-10-11 09:00:13 [INFO ]  	- 7
+2022-10-11 09:00:13 [INFO ]  	- 8
+2022-10-11 09:00:13 [INFO ]  	- 9
+2022-10-11 09:00:13 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 09:00:13 [INFO ]  	- !!python/tuple
+2022-10-11 09:00:13 [INFO ]  	    - 0.4379104971885681
+2022-10-11 09:00:13 [INFO ]  	    - 0.44398033618927
+2022-10-11 09:00:13 [INFO ]  	    - 0.4729299545288086
+2022-10-11 09:00:13 [INFO ]  	- !!python/tuple
+2022-10-11 09:00:13 [INFO ]  	    - 0.19803012907505035
+2022-10-11 09:00:13 [INFO ]  	    - 0.2010156363248825
+2022-10-11 09:00:13 [INFO ]  	    - 0.19703614711761475
+2022-10-11 09:00:13 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 09:00:13 [INFO ]  	decay_epochs: 50
+2022-10-11 09:00:13 [INFO ]  	decay_factor: 0.1
+2022-10-11 09:00:13 [INFO ]  	device_id: 0
+2022-10-11 09:00:13 [INFO ]  	distill_epochs: 1
+2022-10-11 09:00:13 [INFO ]  	distill_lr: 0.02
+2022-10-11 09:00:13 [INFO ]  	distill_steps: 1
+2022-10-11 09:00:13 [INFO ]  	epochs: 200
+2022-10-11 09:00:13 [INFO ]  	expand_cls: false
+2022-10-11 09:00:13 [INFO ]  	forgetting_dataset: null
+2022-10-11 09:00:13 [INFO ]  	init: xavier
+2022-10-11 09:00:13 [INFO ]  	init_param: 1.0
+2022-10-11 09:00:13 [INFO ]  	input_size: 32
+2022-10-11 09:00:13 [INFO ]  	ipc: 1
+2022-10-11 09:00:13 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 09:00:13 [INFO ]  	log_interval: 100
+2022-10-11 09:00:13 [INFO ]  	log_level: INFO
+2022-10-11 09:00:13 [INFO ]  	lr: 0.01
+2022-10-11 09:00:13 [INFO ]  	mode: distill_adapt
+2022-10-11 09:00:13 [INFO ]  	nc: 3
+2022-10-11 09:00:13 [INFO ]  	num_classes: 10
+2022-10-11 09:00:13 [INFO ]  	num_workers: 8
+2022-10-11 09:00:13 [INFO ]  	phase: test
+2022-10-11 09:00:13 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 09:00:13 [INFO ]  	start_time: '2022-10-11 09:00:13'
+2022-10-11 09:00:13 [INFO ]  	test_batch_size: 1024
+2022-10-11 09:00:13 [INFO ]  	
+2022-10-11 09:00:15 [INFO ]  train dataset size:	73257
+2022-10-11 09:00:15 [INFO ]  test dataset size: 	26032
+2022-10-11 09:00:15 [INFO ]  datasets built!
+2022-10-11 09:00:15 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 09:00:17 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 09:00:17 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 09:00:17 [INFO ]  Custom dataset length: 20
+2022-10-11 09:00:18 [INFO ]   
+2022-10-11 09:00:18 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 09:00:18 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 09:00:19 [INFO ]   
+2022-10-11 09:00:19 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 09:00:19 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 09:00:19 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 09:00:19 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 09:00:21 [INFO ]  Epoch:    0	Test Accuracy SVHN: 9.09%	Test Loss SVHN: 470.4518 
+2022-10-11 09:00:21 [INFO ]             	Test Accuracy FASHION_MNIST: 10.07%	Test Loss FASHION_MNIST: 798.8984
+2022-10-11 09:00:23 [INFO ]  Epoch:    1	Test Accuracy SVHN: 6.13%	Test Loss SVHN: 1303669293.6300 
+2022-10-11 09:00:23 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: 1488711837.2864
+2022-10-11 09:00:24 [INFO ]  Epoch:    2	Test Accuracy SVHN: 6.38%	Test Loss SVHN: 1995415148984638976.0000 
+2022-10-11 09:00:24 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: 8496387192730771456.0000
+2022-10-11 09:00:26 [INFO ]  Epoch:    3	Test Accuracy SVHN: 15.94%	Test Loss SVHN: 68620982542739543547095023616.0000 
+2022-10-11 09:00:26 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: 3905197925915988100311416832.0000
+2022-10-11 09:00:28 [INFO ]  Epoch:    4	Test Accuracy SVHN: 9.76%	Test Loss SVHN: 2423026177382236772695539712.0000 
+2022-10-11 09:00:28 [INFO ]             	Test Accuracy FASHION_MNIST: 9.91%	Test Loss FASHION_MNIST: 1520278446044192355947380736.0000
+2022-10-11 09:00:30 [INFO ]  Epoch:    5	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:00:30 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:00:32 [INFO ]  Epoch:    6	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:00:32 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:00:34 [INFO ]  Epoch:    7	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:00:34 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:00:36 [INFO ]  Epoch:    8	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:00:36 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:00:38 [INFO ]  Epoch:    9	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:00:38 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:06 [INFO ]  ======================================== 2022-10-11 09:01:06 ========================================
+2022-10-11 09:01:06 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 09:01:06 [INFO ]  Options: 
+2022-10-11 09:01:06 [INFO ]  	base_dir: null
+2022-10-11 09:01:06 [INFO ]  	batch_size: 1024
+2022-10-11 09:01:06 [INFO ]  	checkpoint_interval: 300
+2022-10-11 09:01:06 [INFO ]  	dataset: SVHN
+2022-10-11 09:01:06 [INFO ]  	dataset_labels:
+2022-10-11 09:01:06 [INFO ]  	- 0
+2022-10-11 09:01:06 [INFO ]  	- 1
+2022-10-11 09:01:06 [INFO ]  	- 2
+2022-10-11 09:01:06 [INFO ]  	- 3
+2022-10-11 09:01:06 [INFO ]  	- 4
+2022-10-11 09:01:06 [INFO ]  	- 5
+2022-10-11 09:01:06 [INFO ]  	- 6
+2022-10-11 09:01:06 [INFO ]  	- 7
+2022-10-11 09:01:06 [INFO ]  	- 8
+2022-10-11 09:01:06 [INFO ]  	- 9
+2022-10-11 09:01:06 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 09:01:06 [INFO ]  	- !!python/tuple
+2022-10-11 09:01:06 [INFO ]  	    - 0.4379104971885681
+2022-10-11 09:01:06 [INFO ]  	    - 0.44398033618927
+2022-10-11 09:01:06 [INFO ]  	    - 0.4729299545288086
+2022-10-11 09:01:06 [INFO ]  	- !!python/tuple
+2022-10-11 09:01:06 [INFO ]  	    - 0.19803012907505035
+2022-10-11 09:01:06 [INFO ]  	    - 0.2010156363248825
+2022-10-11 09:01:06 [INFO ]  	    - 0.19703614711761475
+2022-10-11 09:01:06 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 09:01:06 [INFO ]  	decay_epochs: 50
+2022-10-11 09:01:06 [INFO ]  	decay_factor: 0.1
+2022-10-11 09:01:06 [INFO ]  	device_id: 0
+2022-10-11 09:01:06 [INFO ]  	distill_epochs: 1
+2022-10-11 09:01:06 [INFO ]  	distill_lr: 0.02
+2022-10-11 09:01:06 [INFO ]  	distill_steps: 1
+2022-10-11 09:01:06 [INFO ]  	epochs: 200
+2022-10-11 09:01:06 [INFO ]  	expand_cls: false
+2022-10-11 09:01:06 [INFO ]  	forgetting_dataset: null
+2022-10-11 09:01:06 [INFO ]  	init: xavier
+2022-10-11 09:01:06 [INFO ]  	init_param: 1.0
+2022-10-11 09:01:06 [INFO ]  	input_size: 32
+2022-10-11 09:01:06 [INFO ]  	ipc: 1
+2022-10-11 09:01:06 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 09:01:06 [INFO ]  	log_interval: 100
+2022-10-11 09:01:06 [INFO ]  	log_level: INFO
+2022-10-11 09:01:06 [INFO ]  	lr: 0.01
+2022-10-11 09:01:06 [INFO ]  	mode: distill_adapt
+2022-10-11 09:01:06 [INFO ]  	nc: 3
+2022-10-11 09:01:06 [INFO ]  	num_classes: 10
+2022-10-11 09:01:06 [INFO ]  	num_workers: 8
+2022-10-11 09:01:06 [INFO ]  	phase: test
+2022-10-11 09:01:06 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 09:01:06 [INFO ]  	start_time: '2022-10-11 09:01:06'
+2022-10-11 09:01:06 [INFO ]  	test_batch_size: 1024
+2022-10-11 09:01:06 [INFO ]  	
+2022-10-11 09:01:08 [INFO ]  train dataset size:	73257
+2022-10-11 09:01:08 [INFO ]  test dataset size: 	26032
+2022-10-11 09:01:08 [INFO ]  datasets built!
+2022-10-11 09:01:08 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 09:01:10 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 09:01:10 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 09:01:10 [INFO ]  Custom dataset length: 20
+2022-10-11 09:01:11 [INFO ]   
+2022-10-11 09:01:11 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 09:01:11 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 09:01:12 [INFO ]   
+2022-10-11 09:01:12 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 09:01:12 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 09:01:12 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 09:01:12 [INFO ]  Using synthetic lrs: tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 09:01:14 [INFO ]  Epoch:    0	Test Accuracy SVHN: 9.09%	Test Loss SVHN: 470.4518 
+2022-10-11 09:01:14 [INFO ]             	Test Accuracy FASHION_MNIST: 10.07%	Test Loss FASHION_MNIST: 798.8984
+2022-10-11 09:01:16 [INFO ]  Epoch:    1	Test Accuracy SVHN: 6.13%	Test Loss SVHN: 1303667783.1199 
+2022-10-11 09:01:16 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: 1488710087.4752
+2022-10-11 09:01:18 [INFO ]  Epoch:    2	Test Accuracy SVHN: 6.38%	Test Loss SVHN: 1995409234463577856.0000 
+2022-10-11 09:01:18 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: 8496357131203258368.0000
+2022-10-11 09:01:20 [INFO ]  Epoch:    3	Test Accuracy SVHN: 15.94%	Test Loss SVHN: 68620666936567518077451763712.0000 
+2022-10-11 09:01:20 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: 3905202111821638324210106368.0000
+2022-10-11 09:01:21 [INFO ]  Epoch:    4	Test Accuracy SVHN: 8.79%	Test Loss SVHN: 2423048509212426830172127232.0000 
+2022-10-11 09:01:21 [INFO ]             	Test Accuracy FASHION_MNIST: 9.08%	Test Loss FASHION_MNIST: 1520292613143640964883021824.0000
+2022-10-11 09:01:23 [INFO ]  Epoch:    5	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:23 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:25 [INFO ]  Epoch:    6	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:25 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:27 [INFO ]  Epoch:    7	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:27 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:29 [INFO ]  Epoch:    8	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:29 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:31 [INFO ]  Epoch:    9	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:31 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:33 [INFO ]  Epoch:   10	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:33 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:35 [INFO ]  Epoch:   11	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:35 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:37 [INFO ]  Epoch:   12	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:37 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:38 [INFO ]  Epoch:   13	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:38 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:40 [INFO ]  Epoch:   14	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:40 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:42 [INFO ]  Epoch:   15	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:42 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:44 [INFO ]  Epoch:   16	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:44 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:46 [INFO ]  Epoch:   17	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:46 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:48 [INFO ]  Epoch:   18	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:48 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:50 [INFO ]  Epoch:   19	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:50 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:52 [INFO ]  Epoch:   20	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:52 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:01:54 [INFO ]  Epoch:   21	Test Accuracy SVHN: 6.70%	Test Loss SVHN: nan 
+2022-10-11 09:01:54 [INFO ]             	Test Accuracy FASHION_MNIST: 10.00%	Test Loss FASHION_MNIST: nan
+2022-10-11 09:16:47 [INFO ]  ======================================== 2022-10-11 09:16:47 ========================================
+2022-10-11 09:16:47 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 09:16:47 [INFO ]  Options: 
+2022-10-11 09:16:47 [INFO ]  	base_dir: null
+2022-10-11 09:16:47 [INFO ]  	batch_size: 1024
+2022-10-11 09:16:47 [INFO ]  	checkpoint_interval: 300
+2022-10-11 09:16:47 [INFO ]  	dataset: SVHN
+2022-10-11 09:16:47 [INFO ]  	dataset_labels:
+2022-10-11 09:16:47 [INFO ]  	- 0
+2022-10-11 09:16:47 [INFO ]  	- 1
+2022-10-11 09:16:47 [INFO ]  	- 2
+2022-10-11 09:16:47 [INFO ]  	- 3
+2022-10-11 09:16:47 [INFO ]  	- 4
+2022-10-11 09:16:47 [INFO ]  	- 5
+2022-10-11 09:16:47 [INFO ]  	- 6
+2022-10-11 09:16:47 [INFO ]  	- 7
+2022-10-11 09:16:47 [INFO ]  	- 8
+2022-10-11 09:16:47 [INFO ]  	- 9
+2022-10-11 09:16:47 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 09:16:47 [INFO ]  	- !!python/tuple
+2022-10-11 09:16:47 [INFO ]  	    - 0.4379104971885681
+2022-10-11 09:16:47 [INFO ]  	    - 0.44398033618927
+2022-10-11 09:16:47 [INFO ]  	    - 0.4729299545288086
+2022-10-11 09:16:47 [INFO ]  	- !!python/tuple
+2022-10-11 09:16:47 [INFO ]  	    - 0.19803012907505035
+2022-10-11 09:16:47 [INFO ]  	    - 0.2010156363248825
+2022-10-11 09:16:47 [INFO ]  	    - 0.19703614711761475
+2022-10-11 09:16:47 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 09:16:47 [INFO ]  	decay_epochs: 50
+2022-10-11 09:16:47 [INFO ]  	decay_factor: 0.1
+2022-10-11 09:16:47 [INFO ]  	device_id: 0
+2022-10-11 09:16:47 [INFO ]  	distill_epochs: 1
+2022-10-11 09:16:47 [INFO ]  	distill_lr: 0.02
+2022-10-11 09:16:47 [INFO ]  	distill_steps: 1
+2022-10-11 09:16:47 [INFO ]  	epochs: 1
+2022-10-11 09:16:47 [INFO ]  	expand_cls: false
+2022-10-11 09:16:47 [INFO ]  	forgetting_dataset: null
+2022-10-11 09:16:47 [INFO ]  	init: xavier
+2022-10-11 09:16:47 [INFO ]  	init_param: 1.0
+2022-10-11 09:16:47 [INFO ]  	input_size: 32
+2022-10-11 09:16:47 [INFO ]  	ipc: 1
+2022-10-11 09:16:47 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 09:16:47 [INFO ]  	log_interval: 100
+2022-10-11 09:16:47 [INFO ]  	log_level: INFO
+2022-10-11 09:16:47 [INFO ]  	lr: 0.01
+2022-10-11 09:16:47 [INFO ]  	mode: distill_adapt
+2022-10-11 09:16:47 [INFO ]  	nc: 3
+2022-10-11 09:16:47 [INFO ]  	num_classes: 10
+2022-10-11 09:16:47 [INFO ]  	num_workers: 8
+2022-10-11 09:16:47 [INFO ]  	phase: test
+2022-10-11 09:16:47 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 09:16:47 [INFO ]  	start_time: '2022-10-11 09:16:47'
+2022-10-11 09:16:47 [INFO ]  	test_batch_size: 1024
+2022-10-11 09:16:47 [INFO ]  	
+2022-10-11 09:16:49 [INFO ]  train dataset size:	73257
+2022-10-11 09:16:49 [INFO ]  test dataset size: 	26032
+2022-10-11 09:16:49 [INFO ]  datasets built!
+2022-10-11 09:16:49 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 09:17:11 [INFO ]  ======================================== 2022-10-11 09:17:11 ========================================
+2022-10-11 09:17:11 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 09:17:11 [INFO ]  Options: 
+2022-10-11 09:17:11 [INFO ]  	base_dir: null
+2022-10-11 09:17:11 [INFO ]  	batch_size: 1024
+2022-10-11 09:17:11 [INFO ]  	checkpoint_interval: 300
+2022-10-11 09:17:11 [INFO ]  	dataset: SVHN
+2022-10-11 09:17:11 [INFO ]  	dataset_labels:
+2022-10-11 09:17:11 [INFO ]  	- 0
+2022-10-11 09:17:11 [INFO ]  	- 1
+2022-10-11 09:17:11 [INFO ]  	- 2
+2022-10-11 09:17:11 [INFO ]  	- 3
+2022-10-11 09:17:11 [INFO ]  	- 4
+2022-10-11 09:17:11 [INFO ]  	- 5
+2022-10-11 09:17:11 [INFO ]  	- 6
+2022-10-11 09:17:11 [INFO ]  	- 7
+2022-10-11 09:17:11 [INFO ]  	- 8
+2022-10-11 09:17:11 [INFO ]  	- 9
+2022-10-11 09:17:11 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 09:17:11 [INFO ]  	- !!python/tuple
+2022-10-11 09:17:11 [INFO ]  	    - 0.4379104971885681
+2022-10-11 09:17:11 [INFO ]  	    - 0.44398033618927
+2022-10-11 09:17:11 [INFO ]  	    - 0.4729299545288086
+2022-10-11 09:17:11 [INFO ]  	- !!python/tuple
+2022-10-11 09:17:11 [INFO ]  	    - 0.19803012907505035
+2022-10-11 09:17:11 [INFO ]  	    - 0.2010156363248825
+2022-10-11 09:17:11 [INFO ]  	    - 0.19703614711761475
+2022-10-11 09:17:11 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 09:17:11 [INFO ]  	decay_epochs: 50
+2022-10-11 09:17:11 [INFO ]  	decay_factor: 0.1
+2022-10-11 09:17:11 [INFO ]  	device_id: 0
+2022-10-11 09:17:11 [INFO ]  	distill_epochs: 1
+2022-10-11 09:17:11 [INFO ]  	distill_lr: 0.02
+2022-10-11 09:17:11 [INFO ]  	distill_steps: 1
+2022-10-11 09:17:11 [INFO ]  	epochs: 1
+2022-10-11 09:17:11 [INFO ]  	expand_cls: false
+2022-10-11 09:17:11 [INFO ]  	forgetting_dataset: null
+2022-10-11 09:17:11 [INFO ]  	init: xavier
+2022-10-11 09:17:11 [INFO ]  	init_param: 1.0
+2022-10-11 09:17:11 [INFO ]  	input_size: 32
+2022-10-11 09:17:11 [INFO ]  	ipc: 1
+2022-10-11 09:17:11 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 09:17:11 [INFO ]  	log_interval: 100
+2022-10-11 09:17:11 [INFO ]  	log_level: INFO
+2022-10-11 09:17:11 [INFO ]  	lr: 0.01
+2022-10-11 09:17:11 [INFO ]  	mode: distill_adapt
+2022-10-11 09:17:11 [INFO ]  	nc: 3
+2022-10-11 09:17:11 [INFO ]  	num_classes: 10
+2022-10-11 09:17:11 [INFO ]  	num_workers: 8
+2022-10-11 09:17:11 [INFO ]  	phase: test
+2022-10-11 09:17:11 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 09:17:11 [INFO ]  	start_time: '2022-10-11 09:17:11'
+2022-10-11 09:17:11 [INFO ]  	test_batch_size: 1024
+2022-10-11 09:17:11 [INFO ]  	
+2022-10-11 09:17:13 [INFO ]  train dataset size:	73257
+2022-10-11 09:17:13 [INFO ]  test dataset size: 	26032
+2022-10-11 09:17:13 [INFO ]  datasets built!
+2022-10-11 09:17:13 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 09:17:14 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 09:17:14 [INFO ]  Custom dataset length: 10
+2022-10-11 09:17:16 [INFO ]   
+2022-10-11 09:17:16 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 09:17:16 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 09:17:16 [INFO ]   
+2022-10-11 09:17:16 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 09:17:16 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 09:17:16 [INFO ]  tensor([0.2048], device='cuda:0')
+2022-10-11 09:17:16 [INFO ]  Using synthetic lrs: tensor([0.2048], device='cuda:0')
+2022-10-11 09:17:18 [INFO ]  Epoch:    0	Test Accuracy SVHN: 9.11%	Test Loss SVHN: 536.5033 
+2022-10-11 09:17:18 [INFO ]             	Test Accuracy FASHION_MNIST: 10.08%	Test Loss FASHION_MNIST: 901.3207
+2022-10-11 09:17:18 [INFO ]  Accuracies for SVHN 
+2022-10-11 09:17:18 [INFO ]  [0.0911]
+2022-10-11 09:17:18 [INFO ]  Accuracies for FASHION_MNIST 
+2022-10-11 09:17:18 [INFO ]  [0.1008]
+2022-10-11 09:17:18 [INFO ]  Zipped Accuracies: [(0.0911, 0.1008)]
+2022-10-11 09:17:19 [INFO ]   
+2022-10-11 09:17:19 [INFO ]  SVHN: Evaluation AFTER adapting:
+2022-10-11 09:17:19 [INFO ]  Test Accuracy: 9.11%	Test Loss: 536.5033
+2022-10-11 09:17:20 [INFO ]   
+2022-10-11 09:17:20 [INFO ]  FASHION_MNIST: Evaluation AFTER adapting:
+2022-10-11 09:17:20 [INFO ]  Test Accuracy: 10.08%	Test Loss: 901.3207
+2022-10-11 09:17:20 [INFO ]  CPU Time: 0.08 minutes
+2022-10-11 09:19:19 [INFO ]  ======================================== 2022-10-11 09:19:19 ========================================
+2022-10-11 09:19:19 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 09:19:19 [INFO ]  Options: 
+2022-10-11 09:19:19 [INFO ]  	base_dir: null
+2022-10-11 09:19:19 [INFO ]  	batch_size: 1024
+2022-10-11 09:19:19 [INFO ]  	checkpoint_interval: 300
+2022-10-11 09:19:19 [INFO ]  	dataset: SVHN
+2022-10-11 09:19:19 [INFO ]  	dataset_labels:
+2022-10-11 09:19:19 [INFO ]  	- 0
+2022-10-11 09:19:19 [INFO ]  	- 1
+2022-10-11 09:19:19 [INFO ]  	- 2
+2022-10-11 09:19:19 [INFO ]  	- 3
+2022-10-11 09:19:19 [INFO ]  	- 4
+2022-10-11 09:19:19 [INFO ]  	- 5
+2022-10-11 09:19:19 [INFO ]  	- 6
+2022-10-11 09:19:19 [INFO ]  	- 7
+2022-10-11 09:19:19 [INFO ]  	- 8
+2022-10-11 09:19:19 [INFO ]  	- 9
+2022-10-11 09:19:19 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 09:19:19 [INFO ]  	- !!python/tuple
+2022-10-11 09:19:19 [INFO ]  	    - 0.4379104971885681
+2022-10-11 09:19:19 [INFO ]  	    - 0.44398033618927
+2022-10-11 09:19:19 [INFO ]  	    - 0.4729299545288086
+2022-10-11 09:19:19 [INFO ]  	- !!python/tuple
+2022-10-11 09:19:19 [INFO ]  	    - 0.19803012907505035
+2022-10-11 09:19:19 [INFO ]  	    - 0.2010156363248825
+2022-10-11 09:19:19 [INFO ]  	    - 0.19703614711761475
+2022-10-11 09:19:19 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 09:19:19 [INFO ]  	decay_epochs: 50
+2022-10-11 09:19:19 [INFO ]  	decay_factor: 0.1
+2022-10-11 09:19:19 [INFO ]  	device_id: 0
+2022-10-11 09:19:19 [INFO ]  	distill_epochs: 1
+2022-10-11 09:19:19 [INFO ]  	distill_lr: 0.02
+2022-10-11 09:19:19 [INFO ]  	distill_steps: 1
+2022-10-11 09:19:19 [INFO ]  	epochs: 1
+2022-10-11 09:19:19 [INFO ]  	expand_cls: false
+2022-10-11 09:19:19 [INFO ]  	forgetting_dataset: null
+2022-10-11 09:19:19 [INFO ]  	init: xavier
+2022-10-11 09:19:19 [INFO ]  	init_param: 1.0
+2022-10-11 09:19:19 [INFO ]  	input_size: 32
+2022-10-11 09:19:19 [INFO ]  	ipc: 1
+2022-10-11 09:19:19 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 09:19:19 [INFO ]  	log_interval: 100
+2022-10-11 09:19:19 [INFO ]  	log_level: INFO
+2022-10-11 09:19:19 [INFO ]  	lr: 0.01
+2022-10-11 09:19:19 [INFO ]  	mode: distill_adapt
+2022-10-11 09:19:19 [INFO ]  	nc: 3
+2022-10-11 09:19:19 [INFO ]  	num_classes: 10
+2022-10-11 09:19:19 [INFO ]  	num_workers: 8
+2022-10-11 09:19:19 [INFO ]  	phase: test
+2022-10-11 09:19:19 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 09:19:19 [INFO ]  	start_time: '2022-10-11 09:19:19'
+2022-10-11 09:19:19 [INFO ]  	test_batch_size: 1024
+2022-10-11 09:19:19 [INFO ]  	
+2022-10-11 09:19:21 [INFO ]  train dataset size:	73257
+2022-10-11 09:19:21 [INFO ]  test dataset size: 	26032
+2022-10-11 09:19:21 [INFO ]  datasets built!
+2022-10-11 09:19:21 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 09:19:23 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 09:19:23 [INFO ]  Custom dataset length: 10
+2022-10-11 09:19:24 [INFO ]   
+2022-10-11 09:19:24 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 09:19:24 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 09:19:24 [INFO ]   
+2022-10-11 09:19:24 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 09:19:24 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 09:19:24 [INFO ]  tensor([0.2048], device='cuda:0')
+2022-10-11 09:19:24 [INFO ]  Leraning Rate is not synthetic: 0.2047996073961258
+2022-10-11 09:19:26 [INFO ]  Epoch:    0	Test Accuracy SVHN: 51.04%	Test Loss SVHN: 1.5995 
+2022-10-11 09:19:26 [INFO ]             	Test Accuracy FASHION_MNIST: 22.22%	Test Loss FASHION_MNIST: 4.3217
+2022-10-11 09:19:26 [INFO ]  Accuracies for SVHN 
+2022-10-11 09:19:26 [INFO ]  [0.5104]
+2022-10-11 09:19:26 [INFO ]  Accuracies for FASHION_MNIST 
+2022-10-11 09:19:26 [INFO ]  [0.2222]
+2022-10-11 09:19:26 [INFO ]  Zipped Accuracies: [(0.5104, 0.2222)]
+2022-10-11 09:19:27 [INFO ]   
+2022-10-11 09:19:27 [INFO ]  SVHN: Evaluation AFTER adapting:
+2022-10-11 09:19:27 [INFO ]  Test Accuracy: 51.04%	Test Loss: 1.5995
+2022-10-11 09:19:28 [INFO ]   
+2022-10-11 09:19:28 [INFO ]  FASHION_MNIST: Evaluation AFTER adapting:
+2022-10-11 09:19:28 [INFO ]  Test Accuracy: 22.22%	Test Loss: 4.3217
+2022-10-11 09:19:28 [INFO ]  CPU Time: 0.08 minutes
+2022-10-11 09:20:41 [INFO ]  ======================================== 2022-10-11 09:20:41 ========================================
+2022-10-11 09:20:41 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 09:20:41 [INFO ]  Options: 
+2022-10-11 09:20:41 [INFO ]  	base_dir: null
+2022-10-11 09:20:41 [INFO ]  	batch_size: 1024
+2022-10-11 09:20:41 [INFO ]  	checkpoint_interval: 300
+2022-10-11 09:20:41 [INFO ]  	dataset: SVHN
+2022-10-11 09:20:41 [INFO ]  	dataset_labels:
+2022-10-11 09:20:41 [INFO ]  	- 0
+2022-10-11 09:20:41 [INFO ]  	- 1
+2022-10-11 09:20:41 [INFO ]  	- 2
+2022-10-11 09:20:41 [INFO ]  	- 3
+2022-10-11 09:20:41 [INFO ]  	- 4
+2022-10-11 09:20:41 [INFO ]  	- 5
+2022-10-11 09:20:41 [INFO ]  	- 6
+2022-10-11 09:20:41 [INFO ]  	- 7
+2022-10-11 09:20:41 [INFO ]  	- 8
+2022-10-11 09:20:41 [INFO ]  	- 9
+2022-10-11 09:20:41 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 09:20:41 [INFO ]  	- !!python/tuple
+2022-10-11 09:20:41 [INFO ]  	    - 0.4379104971885681
+2022-10-11 09:20:41 [INFO ]  	    - 0.44398033618927
+2022-10-11 09:20:41 [INFO ]  	    - 0.4729299545288086
+2022-10-11 09:20:41 [INFO ]  	- !!python/tuple
+2022-10-11 09:20:41 [INFO ]  	    - 0.19803012907505035
+2022-10-11 09:20:41 [INFO ]  	    - 0.2010156363248825
+2022-10-11 09:20:41 [INFO ]  	    - 0.19703614711761475
+2022-10-11 09:20:41 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 09:20:41 [INFO ]  	decay_epochs: 50
+2022-10-11 09:20:41 [INFO ]  	decay_factor: 0.1
+2022-10-11 09:20:41 [INFO ]  	device_id: 0
+2022-10-11 09:20:41 [INFO ]  	distill_epochs: 1
+2022-10-11 09:20:41 [INFO ]  	distill_lr: 0.02
+2022-10-11 09:20:41 [INFO ]  	distill_steps: 1
+2022-10-11 09:20:41 [INFO ]  	epochs: 1
+2022-10-11 09:20:41 [INFO ]  	expand_cls: false
+2022-10-11 09:20:41 [INFO ]  	forgetting_dataset: null
+2022-10-11 09:20:41 [INFO ]  	init: xavier
+2022-10-11 09:20:41 [INFO ]  	init_param: 1.0
+2022-10-11 09:20:41 [INFO ]  	input_size: 32
+2022-10-11 09:20:41 [INFO ]  	ipc: 1
+2022-10-11 09:20:41 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 09:20:41 [INFO ]  	log_interval: 100
+2022-10-11 09:20:41 [INFO ]  	log_level: INFO
+2022-10-11 09:20:41 [INFO ]  	lr: 0.01
+2022-10-11 09:20:41 [INFO ]  	mode: distill_adapt
+2022-10-11 09:20:41 [INFO ]  	nc: 3
+2022-10-11 09:20:41 [INFO ]  	num_classes: 10
+2022-10-11 09:20:41 [INFO ]  	num_workers: 8
+2022-10-11 09:20:41 [INFO ]  	phase: test
+2022-10-11 09:20:41 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 09:20:41 [INFO ]  	start_time: '2022-10-11 09:20:41'
+2022-10-11 09:20:41 [INFO ]  	test_batch_size: 1024
+2022-10-11 09:20:41 [INFO ]  	
+2022-10-11 09:20:43 [INFO ]  train dataset size:	73257
+2022-10-11 09:20:43 [INFO ]  test dataset size: 	26032
+2022-10-11 09:20:43 [INFO ]  datasets built!
+2022-10-11 09:20:43 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 09:20:44 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 09:20:44 [INFO ]  Custom dataset length: 10
+2022-10-11 09:20:45 [INFO ]   
+2022-10-11 09:20:45 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 09:20:45 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 09:20:46 [INFO ]   
+2022-10-11 09:20:46 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 09:20:46 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 09:20:46 [INFO ]  tensor([0.2048], device='cuda:0')
+2022-10-11 09:20:46 [INFO ]  Leraning Rate is not synthetic: 0.2047996073961258
+2022-10-11 09:20:48 [INFO ]  Epoch:    0	Test Accuracy SVHN: 51.04%	Test Loss SVHN: 1.5996 
+2022-10-11 09:20:48 [INFO ]             	Test Accuracy FASHION_MNIST: 22.22%	Test Loss FASHION_MNIST: 4.3216
+2022-10-11 09:20:48 [INFO ]  Accuracies for SVHN 
+2022-10-11 09:20:48 [INFO ]  [0.5104]
+2022-10-11 09:20:48 [INFO ]  Accuracies for FASHION_MNIST 
+2022-10-11 09:20:48 [INFO ]  [0.2222]
+2022-10-11 09:20:48 [INFO ]  Zipped Accuracies: [(0.5104, 0.2222)]
+2022-10-11 09:20:49 [INFO ]   
+2022-10-11 09:20:49 [INFO ]  SVHN: Evaluation AFTER adapting:
+2022-10-11 09:20:49 [INFO ]  Test Accuracy: 51.04%	Test Loss: 1.5996
+2022-10-11 09:20:50 [INFO ]   
+2022-10-11 09:20:50 [INFO ]  FASHION_MNIST: Evaluation AFTER adapting:
+2022-10-11 09:20:50 [INFO ]  Test Accuracy: 22.22%	Test Loss: 4.3216
+2022-10-11 09:20:50 [INFO ]  CPU Time: 0.08 minutes
+2022-10-11 10:14:51 [INFO ]  ======================================== 2022-10-11 10:14:51 ========================================
+2022-10-11 10:14:51 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 10:14:51 [INFO ]  Options: 
+2022-10-11 10:14:51 [INFO ]  	base_dir: null
+2022-10-11 10:14:51 [INFO ]  	batch_size: 1024
+2022-10-11 10:14:51 [INFO ]  	checkpoint_interval: 300
+2022-10-11 10:14:51 [INFO ]  	dataset: SVHN
+2022-10-11 10:14:51 [INFO ]  	dataset_labels:
+2022-10-11 10:14:51 [INFO ]  	- 0
+2022-10-11 10:14:51 [INFO ]  	- 1
+2022-10-11 10:14:51 [INFO ]  	- 2
+2022-10-11 10:14:51 [INFO ]  	- 3
+2022-10-11 10:14:51 [INFO ]  	- 4
+2022-10-11 10:14:51 [INFO ]  	- 5
+2022-10-11 10:14:51 [INFO ]  	- 6
+2022-10-11 10:14:51 [INFO ]  	- 7
+2022-10-11 10:14:51 [INFO ]  	- 8
+2022-10-11 10:14:51 [INFO ]  	- 9
+2022-10-11 10:14:51 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 10:14:51 [INFO ]  	- !!python/tuple
+2022-10-11 10:14:51 [INFO ]  	    - 0.4379104971885681
+2022-10-11 10:14:51 [INFO ]  	    - 0.44398033618927
+2022-10-11 10:14:51 [INFO ]  	    - 0.4729299545288086
+2022-10-11 10:14:51 [INFO ]  	- !!python/tuple
+2022-10-11 10:14:51 [INFO ]  	    - 0.19803012907505035
+2022-10-11 10:14:51 [INFO ]  	    - 0.2010156363248825
+2022-10-11 10:14:51 [INFO ]  	    - 0.19703614711761475
+2022-10-11 10:14:51 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 10:14:51 [INFO ]  	decay_epochs: 50
+2022-10-11 10:14:51 [INFO ]  	decay_factor: 0.1
+2022-10-11 10:14:51 [INFO ]  	device_id: 0
+2022-10-11 10:14:51 [INFO ]  	distill_epochs: 1
+2022-10-11 10:14:51 [INFO ]  	distill_lr: 0.02
+2022-10-11 10:14:51 [INFO ]  	distill_steps: 1
+2022-10-11 10:14:51 [INFO ]  	epochs: 50
+2022-10-11 10:14:51 [INFO ]  	expand_cls: false
+2022-10-11 10:14:51 [INFO ]  	forgetting_dataset: null
+2022-10-11 10:14:51 [INFO ]  	init: xavier
+2022-10-11 10:14:51 [INFO ]  	init_param: 1.0
+2022-10-11 10:14:51 [INFO ]  	input_size: 32
+2022-10-11 10:14:51 [INFO ]  	ipc: 1
+2022-10-11 10:14:51 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 10:14:51 [INFO ]  	log_interval: 100
+2022-10-11 10:14:51 [INFO ]  	log_level: INFO
+2022-10-11 10:14:51 [INFO ]  	lr: 0.05
+2022-10-11 10:14:51 [INFO ]  	mode: distill_adapt
+2022-10-11 10:14:51 [INFO ]  	nc: 3
+2022-10-11 10:14:51 [INFO ]  	num_classes: 10
+2022-10-11 10:14:51 [INFO ]  	num_workers: 8
+2022-10-11 10:14:51 [INFO ]  	phase: test
+2022-10-11 10:14:51 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 10:14:51 [INFO ]  	start_time: '2022-10-11 10:14:51'
+2022-10-11 10:14:51 [INFO ]  	test_batch_size: 1024
+2022-10-11 10:14:51 [INFO ]  	
+2022-10-11 10:14:54 [INFO ]  train dataset size:	73257
+2022-10-11 10:14:54 [INFO ]  test dataset size: 	26032
+2022-10-11 10:14:54 [INFO ]  datasets built!
+2022-10-11 10:14:54 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 10:14:55 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 10:14:55 [INFO ]  Custom dataset length: 10
+2022-10-11 10:14:56 [INFO ]   
+2022-10-11 10:14:56 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 10:14:56 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 10:14:57 [INFO ]   
+2022-10-11 10:14:57 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 10:14:57 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 10:14:57 [INFO ]  tensor([0.2048], device='cuda:0')
+2022-10-11 10:14:57 [INFO ]  Leraning Rate is not synthetic: 0.2047996073961258
+2022-10-11 10:14:59 [INFO ]  Epoch:    0	Test Accuracy SVHN: 51.04%	Test Loss SVHN: 1.5996 
+2022-10-11 10:14:59 [INFO ]             	Test Accuracy FASHION_MNIST: 22.22%	Test Loss FASHION_MNIST: 4.3216
+2022-10-11 10:15:01 [INFO ]  Epoch:    1	Test Accuracy SVHN: 9.14%	Test Loss SVHN: 23.8090 
+2022-10-11 10:15:01 [INFO ]             	Test Accuracy FASHION_MNIST: 16.29%	Test Loss FASHION_MNIST: 25.7664
+2022-10-11 10:15:03 [INFO ]  Epoch:    2	Test Accuracy SVHN: 16.11%	Test Loss SVHN: 5.8350 
+2022-10-11 10:15:03 [INFO ]             	Test Accuracy FASHION_MNIST: 8.18%	Test Loss FASHION_MNIST: 9.2048
+2022-10-11 10:16:20 [INFO ]  ======================================== 2022-10-11 10:16:20 ========================================
+2022-10-11 10:16:20 [INFO ]  Base directory is ./results/distill_adapt/SVHN/Source_FASHION_MNIST
+2022-10-11 10:16:20 [INFO ]  Options: 
+2022-10-11 10:16:20 [INFO ]  	base_dir: null
+2022-10-11 10:16:20 [INFO ]  	batch_size: 1024
+2022-10-11 10:16:20 [INFO ]  	checkpoint_interval: 300
+2022-10-11 10:16:20 [INFO ]  	dataset: SVHN
+2022-10-11 10:16:20 [INFO ]  	dataset_labels:
+2022-10-11 10:16:20 [INFO ]  	- 0
+2022-10-11 10:16:20 [INFO ]  	- 1
+2022-10-11 10:16:20 [INFO ]  	- 2
+2022-10-11 10:16:20 [INFO ]  	- 3
+2022-10-11 10:16:20 [INFO ]  	- 4
+2022-10-11 10:16:20 [INFO ]  	- 5
+2022-10-11 10:16:20 [INFO ]  	- 6
+2022-10-11 10:16:20 [INFO ]  	- 7
+2022-10-11 10:16:20 [INFO ]  	- 8
+2022-10-11 10:16:20 [INFO ]  	- 9
+2022-10-11 10:16:20 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-11 10:16:20 [INFO ]  	- !!python/tuple
+2022-10-11 10:16:20 [INFO ]  	    - 0.4379104971885681
+2022-10-11 10:16:20 [INFO ]  	    - 0.44398033618927
+2022-10-11 10:16:20 [INFO ]  	    - 0.4729299545288086
+2022-10-11 10:16:20 [INFO ]  	- !!python/tuple
+2022-10-11 10:16:20 [INFO ]  	    - 0.19803012907505035
+2022-10-11 10:16:20 [INFO ]  	    - 0.2010156363248825
+2022-10-11 10:16:20 [INFO ]  	    - 0.19703614711761475
+2022-10-11 10:16:20 [INFO ]  	dataset_root: ./data/svhn
+2022-10-11 10:16:20 [INFO ]  	decay_epochs: 50
+2022-10-11 10:16:20 [INFO ]  	decay_factor: 0.1
+2022-10-11 10:16:20 [INFO ]  	device_id: 0
+2022-10-11 10:16:20 [INFO ]  	distill_epochs: 1
+2022-10-11 10:16:20 [INFO ]  	distill_lr: 0.02
+2022-10-11 10:16:20 [INFO ]  	distill_steps: 1
+2022-10-11 10:16:20 [INFO ]  	epochs: 50
+2022-10-11 10:16:20 [INFO ]  	expand_cls: false
+2022-10-11 10:16:20 [INFO ]  	forgetting_dataset: null
+2022-10-11 10:16:20 [INFO ]  	init: xavier
+2022-10-11 10:16:20 [INFO ]  	init_param: 1.0
+2022-10-11 10:16:20 [INFO ]  	input_size: 32
+2022-10-11 10:16:20 [INFO ]  	ipc: 1
+2022-10-11 10:16:20 [INFO ]  	log_file: ./results/distill_adapt/SVHN/Source_FASHION_MNIST/test/log.txt
+2022-10-11 10:16:20 [INFO ]  	log_interval: 100
+2022-10-11 10:16:20 [INFO ]  	log_level: INFO
+2022-10-11 10:16:20 [INFO ]  	lr: 0.05
+2022-10-11 10:16:20 [INFO ]  	mode: distill_adapt
+2022-10-11 10:16:20 [INFO ]  	nc: 3
+2022-10-11 10:16:20 [INFO ]  	num_classes: 10
+2022-10-11 10:16:20 [INFO ]  	num_workers: 8
+2022-10-11 10:16:20 [INFO ]  	phase: test
+2022-10-11 10:16:20 [INFO ]  	source_dataset: FASHION_MNIST
+2022-10-11 10:16:20 [INFO ]  	start_time: '2022-10-11 10:16:20'
+2022-10-11 10:16:20 [INFO ]  	test_batch_size: 1024
+2022-10-11 10:16:20 [INFO ]  	
+2022-10-11 10:16:22 [INFO ]  train dataset size:	73257
+2022-10-11 10:16:22 [INFO ]  test dataset size: 	26032
+2022-10-11 10:16:22 [INFO ]  datasets built!
+2022-10-11 10:16:22 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-11 10:16:23 [INFO ]  Loaded results from ./results/distill_adapt/SVHN/Source_FASHION_MNIST/results.pth
+2022-10-11 10:16:23 [INFO ]  Loaded results from ./results/distill_adapt/FASHION_MNIST/Source_FASHION_MNIST/results.pth
+2022-10-11 10:16:23 [INFO ]  Custom dataset length: 20
+2022-10-11 10:16:24 [INFO ]   
+2022-10-11 10:16:24 [INFO ]  SVHN: Evaluation BEFORE adapting:
+2022-10-11 10:16:24 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-11 10:16:25 [INFO ]   
+2022-10-11 10:16:25 [INFO ]  FASHION_MNIST: Evaluation BEFORE adapting:
+2022-10-11 10:16:25 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-11 10:16:25 [INFO ]  tensor([0.2048, 0.0066], device='cuda:0')
+2022-10-11 10:16:25 [INFO ]  Leraning Rate is not synthetic: 0.05
+2022-10-11 10:16:27 [INFO ]  Epoch:    0	Test Accuracy SVHN: 17.31%	Test Loss SVHN: 2.8557 
+2022-10-11 10:16:27 [INFO ]             	Test Accuracy FASHION_MNIST: 61.57%	Test Loss FASHION_MNIST: 1.3018
+2022-10-11 10:16:29 [INFO ]  Epoch:    1	Test Accuracy SVHN: 7.16%	Test Loss SVHN: 8.5484 
+2022-10-11 10:16:29 [INFO ]             	Test Accuracy FASHION_MNIST: 21.18%	Test Loss FASHION_MNIST: 5.9780
+2022-10-11 10:16:31 [INFO ]  Epoch:    2	Test Accuracy SVHN: 16.53%	Test Loss SVHN: 4.0653 
+2022-10-11 10:16:31 [INFO ]             	Test Accuracy FASHION_MNIST: 13.93%	Test Loss FASHION_MNIST: 4.5128
+2022-10-11 10:16:33 [INFO ]  Epoch:    3	Test Accuracy SVHN: 12.48%	Test Loss SVHN: 2.4412 
+2022-10-11 10:16:33 [INFO ]             	Test Accuracy FASHION_MNIST: 28.85%	Test Loss FASHION_MNIST: 2.0972
+2022-10-11 10:16:35 [INFO ]  Epoch:    4	Test Accuracy SVHN: 13.19%	Test Loss SVHN: 2.4474 
+2022-10-11 10:16:35 [INFO ]             	Test Accuracy FASHION_MNIST: 29.88%	Test Loss FASHION_MNIST: 2.0747
+2022-10-11 10:16:37 [INFO ]  Epoch:    5	Test Accuracy SVHN: 13.06%	Test Loss SVHN: 2.4740 
+2022-10-11 10:16:37 [INFO ]             	Test Accuracy FASHION_MNIST: 30.09%	Test Loss FASHION_MNIST: 2.0864
+2022-10-11 10:16:38 [INFO ]  Epoch:    6	Test Accuracy SVHN: 12.74%	Test Loss SVHN: 2.5063 
+2022-10-11 10:16:38 [INFO ]             	Test Accuracy FASHION_MNIST: 30.44%	Test Loss FASHION_MNIST: 2.1020
+2022-10-11 10:16:40 [INFO ]  Epoch:    7	Test Accuracy SVHN: 13.31%	Test Loss SVHN: 2.5272 
+2022-10-11 10:16:40 [INFO ]             	Test Accuracy FASHION_MNIST: 30.87%	Test Loss FASHION_MNIST: 2.0955
+2022-10-11 10:16:42 [INFO ]  Epoch:    8	Test Accuracy SVHN: 13.02%	Test Loss SVHN: 2.5344 
+2022-10-11 10:16:42 [INFO ]             	Test Accuracy FASHION_MNIST: 31.73%	Test Loss FASHION_MNIST: 2.0661
+2022-10-11 10:16:44 [INFO ]  Epoch:    9	Test Accuracy SVHN: 13.48%	Test Loss SVHN: 2.5647 
+2022-10-11 10:16:44 [INFO ]             	Test Accuracy FASHION_MNIST: 32.13%	Test Loss FASHION_MNIST: 2.0822
+2022-10-11 10:16:46 [INFO ]  Epoch:   10	Test Accuracy SVHN: 12.73%	Test Loss SVHN: 2.5863 
+2022-10-11 10:16:46 [INFO ]             	Test Accuracy FASHION_MNIST: 33.85%	Test Loss FASHION_MNIST: 2.0640
+2022-10-11 10:16:48 [INFO ]  Epoch:   11	Test Accuracy SVHN: 13.98%	Test Loss SVHN: 2.5852 
+2022-10-11 10:16:48 [INFO ]             	Test Accuracy FASHION_MNIST: 32.92%	Test Loss FASHION_MNIST: 2.1034
+2022-10-11 10:16:49 [INFO ]  Epoch:   12	Test Accuracy SVHN: 12.33%	Test Loss SVHN: 2.6486 
+2022-10-11 10:16:49 [INFO ]             	Test Accuracy FASHION_MNIST: 36.75%	Test Loss FASHION_MNIST: 2.0860
+2022-10-11 10:16:51 [INFO ]  Epoch:   13	Test Accuracy SVHN: 15.57%	Test Loss SVHN: 2.5778 
+2022-10-11 10:16:51 [INFO ]             	Test Accuracy FASHION_MNIST: 32.63%	Test Loss FASHION_MNIST: 2.1673
+2022-10-11 10:16:53 [INFO ]  Epoch:   14	Test Accuracy SVHN: 12.20%	Test Loss SVHN: 2.7264 
+2022-10-11 10:16:53 [INFO ]             	Test Accuracy FASHION_MNIST: 37.55%	Test Loss FASHION_MNIST: 2.1506
+2022-10-11 10:16:55 [INFO ]  Epoch:   15	Test Accuracy SVHN: 15.42%	Test Loss SVHN: 2.6418 
+2022-10-11 10:16:55 [INFO ]             	Test Accuracy FASHION_MNIST: 32.03%	Test Loss FASHION_MNIST: 2.2591
+2022-10-11 10:16:57 [INFO ]  Epoch:   16	Test Accuracy SVHN: 12.72%	Test Loss SVHN: 2.7678 
+2022-10-11 10:16:57 [INFO ]             	Test Accuracy FASHION_MNIST: 37.29%	Test Loss FASHION_MNIST: 2.2147
+2022-10-11 10:16:59 [INFO ]  Epoch:   17	Test Accuracy SVHN: 14.26%	Test Loss SVHN: 2.7445 
+2022-10-11 10:16:59 [INFO ]             	Test Accuracy FASHION_MNIST: 32.88%	Test Loss FASHION_MNIST: 2.3072
+2022-10-11 10:17:01 [INFO ]  Epoch:   18	Test Accuracy SVHN: 13.05%	Test Loss SVHN: 2.8117 
+2022-10-11 10:17:01 [INFO ]             	Test Accuracy FASHION_MNIST: 36.17%	Test Loss FASHION_MNIST: 2.2772
+2022-10-11 10:17:03 [INFO ]  Epoch:   19	Test Accuracy SVHN: 13.65%	Test Loss SVHN: 2.8167 
+2022-10-11 10:17:03 [INFO ]             	Test Accuracy FASHION_MNIST: 34.42%	Test Loss FASHION_MNIST: 2.3427
+2022-10-11 10:17:04 [INFO ]  Epoch:   20	Test Accuracy SVHN: 13.21%	Test Loss SVHN: 2.8708 
+2022-10-11 10:17:04 [INFO ]             	Test Accuracy FASHION_MNIST: 35.55%	Test Loss FASHION_MNIST: 2.3438
+2022-10-11 10:17:06 [INFO ]  Epoch:   21	Test Accuracy SVHN: 13.24%	Test Loss SVHN: 2.9022 
+2022-10-11 10:17:06 [INFO ]             	Test Accuracy FASHION_MNIST: 35.21%	Test Loss FASHION_MNIST: 2.3826
+2022-10-11 10:17:08 [INFO ]  Epoch:   22	Test Accuracy SVHN: 13.06%	Test Loss SVHN: 2.9365 
+2022-10-11 10:17:08 [INFO ]             	Test Accuracy FASHION_MNIST: 35.38%	Test Loss FASHION_MNIST: 2.4003
+2022-10-11 10:17:10 [INFO ]  Epoch:   23	Test Accuracy SVHN: 13.08%	Test Loss SVHN: 2.9677 
+2022-10-11 10:17:10 [INFO ]             	Test Accuracy FASHION_MNIST: 35.49%	Test Loss FASHION_MNIST: 2.4175
+2022-10-11 10:17:12 [INFO ]  Epoch:   24	Test Accuracy SVHN: 13.06%	Test Loss SVHN: 2.9979 
+2022-10-11 10:17:12 [INFO ]             	Test Accuracy FASHION_MNIST: 35.35%	Test Loss FASHION_MNIST: 2.4389
+2022-10-11 10:17:14 [INFO ]  Epoch:   25	Test Accuracy SVHN: 12.92%	Test Loss SVHN: 3.0325 
+2022-10-11 10:17:14 [INFO ]             	Test Accuracy FASHION_MNIST: 35.66%	Test Loss FASHION_MNIST: 2.4429
+2022-10-11 10:17:16 [INFO ]  Epoch:   26	Test Accuracy SVHN: 12.98%	Test Loss SVHN: 3.0462 
+2022-10-11 10:17:16 [INFO ]             	Test Accuracy FASHION_MNIST: 35.61%	Test Loss FASHION_MNIST: 2.4647
+2022-10-11 10:17:17 [INFO ]  Epoch:   27	Test Accuracy SVHN: 12.91%	Test Loss SVHN: 3.0729 
+2022-10-11 10:17:17 [INFO ]             	Test Accuracy FASHION_MNIST: 35.68%	Test Loss FASHION_MNIST: 2.4734
+2022-10-11 10:17:19 [INFO ]  Epoch:   28	Test Accuracy SVHN: 12.90%	Test Loss SVHN: 3.0932 
+2022-10-11 10:17:19 [INFO ]             	Test Accuracy FASHION_MNIST: 35.87%	Test Loss FASHION_MNIST: 2.4859
+2022-10-11 10:17:21 [INFO ]  Epoch:   29	Test Accuracy SVHN: 12.81%	Test Loss SVHN: 3.1140 
+2022-10-11 10:17:21 [INFO ]             	Test Accuracy FASHION_MNIST: 35.85%	Test Loss FASHION_MNIST: 2.5000
+2022-10-11 10:17:23 [INFO ]  Epoch:   30	Test Accuracy SVHN: 12.83%	Test Loss SVHN: 3.1352 
+2022-10-11 10:17:23 [INFO ]             	Test Accuracy FASHION_MNIST: 35.90%	Test Loss FASHION_MNIST: 2.5064
+2022-10-11 10:17:25 [INFO ]  Epoch:   31	Test Accuracy SVHN: 12.86%	Test Loss SVHN: 3.1514 
+2022-10-11 10:17:25 [INFO ]             	Test Accuracy FASHION_MNIST: 35.97%	Test Loss FASHION_MNIST: 2.5200
+2022-10-11 10:17:27 [INFO ]  Epoch:   32	Test Accuracy SVHN: 12.81%	Test Loss SVHN: 3.1714 
+2022-10-11 10:17:27 [INFO ]             	Test Accuracy FASHION_MNIST: 36.03%	Test Loss FASHION_MNIST: 2.5269
+2022-10-11 10:17:29 [INFO ]  Epoch:   33	Test Accuracy SVHN: 12.80%	Test Loss SVHN: 3.1867 
+2022-10-11 10:17:29 [INFO ]             	Test Accuracy FASHION_MNIST: 35.97%	Test Loss FASHION_MNIST: 2.5419
+2022-10-11 10:17:31 [INFO ]  Epoch:   34	Test Accuracy SVHN: 12.71%	Test Loss SVHN: 3.2084 
+2022-10-11 10:17:31 [INFO ]             	Test Accuracy FASHION_MNIST: 36.02%	Test Loss FASHION_MNIST: 2.5482
+2022-10-11 10:17:33 [INFO ]  Epoch:   35	Test Accuracy SVHN: 12.75%	Test Loss SVHN: 3.2203 
+2022-10-11 10:17:33 [INFO ]             	Test Accuracy FASHION_MNIST: 36.12%	Test Loss FASHION_MNIST: 2.5604
+2022-10-11 10:17:34 [INFO ]  Epoch:   36	Test Accuracy SVHN: 12.73%	Test Loss SVHN: 3.2372 
+2022-10-11 10:17:34 [INFO ]             	Test Accuracy FASHION_MNIST: 36.10%	Test Loss FASHION_MNIST: 2.5707
+2022-10-11 10:17:36 [INFO ]  Epoch:   37	Test Accuracy SVHN: 12.65%	Test Loss SVHN: 3.2549 
+2022-10-11 10:17:36 [INFO ]             	Test Accuracy FASHION_MNIST: 36.15%	Test Loss FASHION_MNIST: 2.5758
+2022-10-11 10:17:38 [INFO ]  Epoch:   38	Test Accuracy SVHN: 12.72%	Test Loss SVHN: 3.2660 
+2022-10-11 10:17:38 [INFO ]             	Test Accuracy FASHION_MNIST: 36.06%	Test Loss FASHION_MNIST: 2.5900
+2022-10-11 10:17:40 [INFO ]  Epoch:   39	Test Accuracy SVHN: 12.68%	Test Loss SVHN: 3.2801 
+2022-10-11 10:17:40 [INFO ]             	Test Accuracy FASHION_MNIST: 36.05%	Test Loss FASHION_MNIST: 2.5955
+2022-10-11 10:17:42 [INFO ]  Epoch:   40	Test Accuracy SVHN: 12.71%	Test Loss SVHN: 3.2945 
+2022-10-11 10:17:42 [INFO ]             	Test Accuracy FASHION_MNIST: 35.99%	Test Loss FASHION_MNIST: 2.6052
+2022-10-11 10:17:44 [INFO ]  Epoch:   41	Test Accuracy SVHN: 12.69%	Test Loss SVHN: 3.3071 
+2022-10-11 10:17:44 [INFO ]             	Test Accuracy FASHION_MNIST: 36.03%	Test Loss FASHION_MNIST: 2.6114
+2022-10-11 10:17:46 [INFO ]  Epoch:   42	Test Accuracy SVHN: 12.67%	Test Loss SVHN: 3.3232 
+2022-10-11 10:17:46 [INFO ]             	Test Accuracy FASHION_MNIST: 36.04%	Test Loss FASHION_MNIST: 2.6185
+2022-10-11 10:17:48 [INFO ]  Epoch:   43	Test Accuracy SVHN: 12.69%	Test Loss SVHN: 3.3330 
+2022-10-11 10:17:48 [INFO ]             	Test Accuracy FASHION_MNIST: 36.00%	Test Loss FASHION_MNIST: 2.6290
+2022-10-11 10:17:50 [INFO ]  Epoch:   44	Test Accuracy SVHN: 12.69%	Test Loss SVHN: 3.3470 
+2022-10-11 10:17:50 [INFO ]             	Test Accuracy FASHION_MNIST: 36.06%	Test Loss FASHION_MNIST: 2.6342
+2022-10-11 10:17:52 [INFO ]  Epoch:   45	Test Accuracy SVHN: 12.71%	Test Loss SVHN: 3.3591 
+2022-10-11 10:17:52 [INFO ]             	Test Accuracy FASHION_MNIST: 36.05%	Test Loss FASHION_MNIST: 2.6414
+2022-10-11 10:17:53 [INFO ]  Epoch:   46	Test Accuracy SVHN: 12.72%	Test Loss SVHN: 3.3714 
+2022-10-11 10:17:53 [INFO ]             	Test Accuracy FASHION_MNIST: 36.09%	Test Loss FASHION_MNIST: 2.6481
+2022-10-11 10:17:55 [INFO ]  Epoch:   47	Test Accuracy SVHN: 12.69%	Test Loss SVHN: 3.3839 
+2022-10-11 10:17:55 [INFO ]             	Test Accuracy FASHION_MNIST: 36.05%	Test Loss FASHION_MNIST: 2.6562
+2022-10-11 10:17:57 [INFO ]  Epoch:   48	Test Accuracy SVHN: 12.67%	Test Loss SVHN: 3.3982 
+2022-10-11 10:17:57 [INFO ]             	Test Accuracy FASHION_MNIST: 36.10%	Test Loss FASHION_MNIST: 2.6595
+2022-10-11 10:17:59 [INFO ]  Epoch:   49	Test Accuracy SVHN: 12.71%	Test Loss SVHN: 3.4069 
+2022-10-11 10:17:59 [INFO ]             	Test Accuracy FASHION_MNIST: 36.11%	Test Loss FASHION_MNIST: 2.6672
+2022-10-11 10:17:59 [INFO ]  Accuracies for SVHN 
+2022-10-11 10:17:59 [INFO ]  [0.1731, 0.0716, 0.1653, 0.1248, 0.1319, 0.1306, 0.1274, 0.1331, 0.1302, 0.1348, 0.1273, 0.1398, 0.1233, 0.1557, 0.122, 0.1542, 0.1272, 0.1426, 0.1305, 0.1365, 0.1321, 0.1324, 0.1306, 0.1308, 0.1306, 0.1292, 0.1298, 0.1291, 0.129, 0.1281, 0.1283, 0.1286, 0.1281, 0.128, 0.1271, 0.1275, 0.1273, 0.1265, 0.1272, 0.1268, 0.1271, 0.1269, 0.1267, 0.1269, 0.1269, 0.1271, 0.1272, 0.1269, 0.1267, 0.1271]
+2022-10-11 10:17:59 [INFO ]  Accuracies for FASHION_MNIST 
+2022-10-11 10:17:59 [INFO ]  [0.6157, 0.2118, 0.1393, 0.2885, 0.2988, 0.3009, 0.3044, 0.3087, 0.3173, 0.3213, 0.3385, 0.3292, 0.3675, 0.3263, 0.3755, 0.3203, 0.3729, 0.3288, 0.3617, 0.3442, 0.3555, 0.3521, 0.3538, 0.3549, 0.3535, 0.3566, 0.3561, 0.3568, 0.3587, 0.3585, 0.359, 0.3597, 0.3603, 0.3597, 0.3602, 0.3612, 0.361, 0.3615, 0.3606, 0.3605, 0.3599, 0.3603, 0.3604, 0.36, 0.3606, 0.3605, 0.3609, 0.3605, 0.361, 0.3611]
+2022-10-11 10:17:59 [INFO ]  Zipped Accuracies: [(0.1731, 0.6157), (0.0716, 0.2118), (0.1653, 0.1393), (0.1248, 0.2885), (0.1319, 0.2988), (0.1306, 0.3009), (0.1274, 0.3044), (0.1331, 0.3087), (0.1302, 0.3173), (0.1348, 0.3213), (0.1273, 0.3385), (0.1398, 0.3292), (0.1233, 0.3675), (0.1557, 0.3263), (0.122, 0.3755), (0.1542, 0.3203), (0.1272, 0.3729), (0.1426, 0.3288), (0.1305, 0.3617), (0.1365, 0.3442), (0.1321, 0.3555), (0.1324, 0.3521), (0.1306, 0.3538), (0.1308, 0.3549), (0.1306, 0.3535), (0.1292, 0.3566), (0.1298, 0.3561), (0.1291, 0.3568), (0.129, 0.3587), (0.1281, 0.3585), (0.1283, 0.359), (0.1286, 0.3597), (0.1281, 0.3603), (0.128, 0.3597), (0.1271, 0.3602), (0.1275, 0.3612), (0.1273, 0.361), (0.1265, 0.3615), (0.1272, 0.3606), (0.1268, 0.3605), (0.1271, 0.3599), (0.1269, 0.3603), (0.1267, 0.3604), (0.1269, 0.36), (0.1269, 0.3606), (0.1271, 0.3605), (0.1272, 0.3609), (0.1269, 0.3605), (0.1267, 0.361), (0.1271, 0.3611)]
+2022-10-11 10:18:00 [INFO ]   
+2022-10-11 10:18:00 [INFO ]  SVHN: Evaluation AFTER adapting:
+2022-10-11 10:18:00 [INFO ]  Test Accuracy: 12.71%	Test Loss: 3.4069
+2022-10-11 10:18:01 [INFO ]   
+2022-10-11 10:18:01 [INFO ]  FASHION_MNIST: Evaluation AFTER adapting:
+2022-10-11 10:18:01 [INFO ]  Test Accuracy: 36.11%	Test Loss: 2.6672
+2022-10-11 10:18:01 [INFO ]  CPU Time: 0.82 minutes

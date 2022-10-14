@@ -1,0 +1,175 @@
+2022-09-06 06:48:22 [INFO ]  ======================================== 2022-09-06 06:48:22 ========================================
+2022-09-06 06:48:22 [INFO ]  Base directory is ./results/train/SVHN/
+2022-09-06 06:48:22 [INFO ]  Options: 
+2022-09-06 06:48:22 [INFO ]  	base_dir: null
+2022-09-06 06:48:22 [INFO ]  	batch_size: 1024
+2022-09-06 06:48:22 [INFO ]  	checkpoint_interval: 10
+2022-09-06 06:48:22 [INFO ]  	dataset: SVHN
+2022-09-06 06:48:22 [INFO ]  	dataset_labels:
+2022-09-06 06:48:22 [INFO ]  	- 0
+2022-09-06 06:48:22 [INFO ]  	- 1
+2022-09-06 06:48:22 [INFO ]  	- 2
+2022-09-06 06:48:22 [INFO ]  	- 3
+2022-09-06 06:48:22 [INFO ]  	- 4
+2022-09-06 06:48:22 [INFO ]  	- 5
+2022-09-06 06:48:22 [INFO ]  	- 6
+2022-09-06 06:48:22 [INFO ]  	- 7
+2022-09-06 06:48:22 [INFO ]  	- 8
+2022-09-06 06:48:22 [INFO ]  	- 9
+2022-09-06 06:48:22 [INFO ]  	dataset_normalization: !!python/tuple
+2022-09-06 06:48:22 [INFO ]  	- !!python/tuple
+2022-09-06 06:48:22 [INFO ]  	    - 0.4379104971885681
+2022-09-06 06:48:22 [INFO ]  	    - 0.44398033618927
+2022-09-06 06:48:22 [INFO ]  	    - 0.4729299545288086
+2022-09-06 06:48:22 [INFO ]  	- !!python/tuple
+2022-09-06 06:48:22 [INFO ]  	    - 0.19803012907505035
+2022-09-06 06:48:22 [INFO ]  	    - 0.2010156363248825
+2022-09-06 06:48:22 [INFO ]  	    - 0.19703614711761475
+2022-09-06 06:48:22 [INFO ]  	dataset_root: ./data/svhn
+2022-09-06 06:48:22 [INFO ]  	decay_epochs: 50
+2022-09-06 06:48:22 [INFO ]  	decay_factor: 0.1
+2022-09-06 06:48:22 [INFO ]  	device_id: 0
+2022-09-06 06:48:22 [INFO ]  	distill_epochs: 1
+2022-09-06 06:48:22 [INFO ]  	distill_lr: 0.02
+2022-09-06 06:48:22 [INFO ]  	distill_steps: 1
+2022-09-06 06:48:22 [INFO ]  	epochs: 200
+2022-09-06 06:48:22 [INFO ]  	expand_cls: false
+2022-09-06 06:48:22 [INFO ]  	forgetting_dataset: null
+2022-09-06 06:48:22 [INFO ]  	init: xavier
+2022-09-06 06:48:22 [INFO ]  	init_param: 1.0
+2022-09-06 06:48:22 [INFO ]  	input_size: 32
+2022-09-06 06:48:22 [INFO ]  	ipc: 1
+2022-09-06 06:48:22 [INFO ]  	log_file: ./results/train/SVHN/test/log.txt
+2022-09-06 06:48:22 [INFO ]  	log_interval: 100
+2022-09-06 06:48:22 [INFO ]  	log_level: INFO
+2022-09-06 06:48:22 [INFO ]  	lr: 0.01
+2022-09-06 06:48:22 [INFO ]  	mode: train
+2022-09-06 06:48:22 [INFO ]  	nc: 3
+2022-09-06 06:48:22 [INFO ]  	num_classes: 10
+2022-09-06 06:48:22 [INFO ]  	num_workers: 8
+2022-09-06 06:48:22 [INFO ]  	phase: test
+2022-09-06 06:48:22 [INFO ]  	source_dataset: null
+2022-09-06 06:48:22 [INFO ]  	start_time: '2022-09-06 06:48:22'
+2022-09-06 06:48:22 [INFO ]  	test_batch_size: 1024
+2022-09-06 06:48:22 [INFO ]  	
+2022-09-06 06:48:24 [INFO ]  train dataset size:	73257
+2022-09-06 06:48:24 [INFO ]  test dataset size: 	26032
+2022-09-06 06:48:24 [INFO ]  datasets built!
+2022-09-06 06:48:24 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-09-06 06:48:27 [INFO ]  Final Test Accuracy: 8.02%	Final Test Loss: 2.3333
+2022-09-06 09:53:47 [INFO ]  ======================================== 2022-09-06 09:53:47 ========================================
+2022-09-06 09:53:47 [INFO ]  Base directory is ./results/train/SVHN/
+2022-09-06 09:53:47 [INFO ]  Options: 
+2022-09-06 09:53:47 [INFO ]  	base_dir: null
+2022-09-06 09:53:47 [INFO ]  	batch_size: 1024
+2022-09-06 09:53:47 [INFO ]  	checkpoint_interval: 10
+2022-09-06 09:53:47 [INFO ]  	dataset: SVHN
+2022-09-06 09:53:47 [INFO ]  	dataset_labels:
+2022-09-06 09:53:47 [INFO ]  	- 0
+2022-09-06 09:53:47 [INFO ]  	- 1
+2022-09-06 09:53:47 [INFO ]  	- 2
+2022-09-06 09:53:47 [INFO ]  	- 3
+2022-09-06 09:53:47 [INFO ]  	- 4
+2022-09-06 09:53:47 [INFO ]  	- 5
+2022-09-06 09:53:47 [INFO ]  	- 6
+2022-09-06 09:53:47 [INFO ]  	- 7
+2022-09-06 09:53:47 [INFO ]  	- 8
+2022-09-06 09:53:47 [INFO ]  	- 9
+2022-09-06 09:53:47 [INFO ]  	dataset_normalization: !!python/tuple
+2022-09-06 09:53:47 [INFO ]  	- !!python/tuple
+2022-09-06 09:53:47 [INFO ]  	    - 0.4379104971885681
+2022-09-06 09:53:47 [INFO ]  	    - 0.44398033618927
+2022-09-06 09:53:47 [INFO ]  	    - 0.4729299545288086
+2022-09-06 09:53:47 [INFO ]  	- !!python/tuple
+2022-09-06 09:53:47 [INFO ]  	    - 0.19803012907505035
+2022-09-06 09:53:47 [INFO ]  	    - 0.2010156363248825
+2022-09-06 09:53:47 [INFO ]  	    - 0.19703614711761475
+2022-09-06 09:53:47 [INFO ]  	dataset_root: ./data/svhn
+2022-09-06 09:53:47 [INFO ]  	decay_epochs: 50
+2022-09-06 09:53:47 [INFO ]  	decay_factor: 0.1
+2022-09-06 09:53:47 [INFO ]  	device_id: 0
+2022-09-06 09:53:47 [INFO ]  	distill_epochs: 1
+2022-09-06 09:53:47 [INFO ]  	distill_lr: 0.02
+2022-09-06 09:53:47 [INFO ]  	distill_steps: 1
+2022-09-06 09:53:47 [INFO ]  	epochs: 200
+2022-09-06 09:53:47 [INFO ]  	expand_cls: false
+2022-09-06 09:53:47 [INFO ]  	forgetting_dataset: null
+2022-09-06 09:53:47 [INFO ]  	init: normal
+2022-09-06 09:53:47 [INFO ]  	init_param: 1.0
+2022-09-06 09:53:47 [INFO ]  	input_size: 32
+2022-09-06 09:53:47 [INFO ]  	ipc: 1
+2022-09-06 09:53:47 [INFO ]  	log_file: ./results/train/SVHN/test/log.txt
+2022-09-06 09:53:47 [INFO ]  	log_interval: 100
+2022-09-06 09:53:47 [INFO ]  	log_level: INFO
+2022-09-06 09:53:47 [INFO ]  	lr: 0.01
+2022-09-06 09:53:47 [INFO ]  	mode: train
+2022-09-06 09:53:47 [INFO ]  	nc: 3
+2022-09-06 09:53:47 [INFO ]  	num_classes: 10
+2022-09-06 09:53:47 [INFO ]  	num_workers: 8
+2022-09-06 09:53:47 [INFO ]  	phase: test
+2022-09-06 09:53:47 [INFO ]  	source_dataset: null
+2022-09-06 09:53:47 [INFO ]  	start_time: '2022-09-06 09:53:47'
+2022-09-06 09:53:47 [INFO ]  	test_batch_size: 1024
+2022-09-06 09:53:47 [INFO ]  	
+2022-09-06 09:53:49 [INFO ]  train dataset size:	73257
+2022-09-06 09:53:49 [INFO ]  test dataset size: 	26032
+2022-09-06 09:53:49 [INFO ]  datasets built!
+2022-09-06 09:53:49 [INFO ]  Build one LeNet network with [normal(1.0)] init
+2022-09-06 09:56:04 [INFO ]  ======================================== 2022-09-06 09:56:04 ========================================
+2022-09-06 09:56:04 [INFO ]  Base directory is ./results/train/SVHN/
+2022-09-06 09:56:04 [INFO ]  Options: 
+2022-09-06 09:56:04 [INFO ]  	base_dir: null
+2022-09-06 09:56:04 [INFO ]  	batch_size: 1024
+2022-09-06 09:56:04 [INFO ]  	checkpoint_interval: 10
+2022-09-06 09:56:04 [INFO ]  	dataset: SVHN
+2022-09-06 09:56:04 [INFO ]  	dataset_labels:
+2022-09-06 09:56:04 [INFO ]  	- 0
+2022-09-06 09:56:04 [INFO ]  	- 1
+2022-09-06 09:56:04 [INFO ]  	- 2
+2022-09-06 09:56:04 [INFO ]  	- 3
+2022-09-06 09:56:04 [INFO ]  	- 4
+2022-09-06 09:56:04 [INFO ]  	- 5
+2022-09-06 09:56:04 [INFO ]  	- 6
+2022-09-06 09:56:04 [INFO ]  	- 7
+2022-09-06 09:56:04 [INFO ]  	- 8
+2022-09-06 09:56:04 [INFO ]  	- 9
+2022-09-06 09:56:04 [INFO ]  	dataset_normalization: !!python/tuple
+2022-09-06 09:56:04 [INFO ]  	- !!python/tuple
+2022-09-06 09:56:04 [INFO ]  	    - 0.4379104971885681
+2022-09-06 09:56:04 [INFO ]  	    - 0.44398033618927
+2022-09-06 09:56:04 [INFO ]  	    - 0.4729299545288086
+2022-09-06 09:56:04 [INFO ]  	- !!python/tuple
+2022-09-06 09:56:04 [INFO ]  	    - 0.19803012907505035
+2022-09-06 09:56:04 [INFO ]  	    - 0.2010156363248825
+2022-09-06 09:56:04 [INFO ]  	    - 0.19703614711761475
+2022-09-06 09:56:04 [INFO ]  	dataset_root: ./data/svhn
+2022-09-06 09:56:04 [INFO ]  	decay_epochs: 50
+2022-09-06 09:56:04 [INFO ]  	decay_factor: 0.1
+2022-09-06 09:56:04 [INFO ]  	device_id: 0
+2022-09-06 09:56:04 [INFO ]  	distill_epochs: 1
+2022-09-06 09:56:04 [INFO ]  	distill_lr: 0.02
+2022-09-06 09:56:04 [INFO ]  	distill_steps: 1
+2022-09-06 09:56:04 [INFO ]  	epochs: 200
+2022-09-06 09:56:04 [INFO ]  	expand_cls: false
+2022-09-06 09:56:04 [INFO ]  	forgetting_dataset: null
+2022-09-06 09:56:04 [INFO ]  	init: normal
+2022-09-06 09:56:04 [INFO ]  	init_param: 1.0
+2022-09-06 09:56:04 [INFO ]  	input_size: 32
+2022-09-06 09:56:04 [INFO ]  	ipc: 1
+2022-09-06 09:56:04 [INFO ]  	log_file: ./results/train/SVHN/test/log.txt
+2022-09-06 09:56:04 [INFO ]  	log_interval: 100
+2022-09-06 09:56:04 [INFO ]  	log_level: INFO
+2022-09-06 09:56:04 [INFO ]  	lr: 0.01
+2022-09-06 09:56:04 [INFO ]  	mode: train
+2022-09-06 09:56:04 [INFO ]  	nc: 3
+2022-09-06 09:56:04 [INFO ]  	num_classes: 10
+2022-09-06 09:56:04 [INFO ]  	num_workers: 8
+2022-09-06 09:56:04 [INFO ]  	phase: test
+2022-09-06 09:56:04 [INFO ]  	source_dataset: null
+2022-09-06 09:56:04 [INFO ]  	start_time: '2022-09-06 09:56:04'
+2022-09-06 09:56:04 [INFO ]  	test_batch_size: 1024
+2022-09-06 09:56:04 [INFO ]  	
+2022-09-06 09:56:06 [INFO ]  train dataset size:	73257
+2022-09-06 09:56:06 [INFO ]  test dataset size: 	26032
+2022-09-06 09:56:06 [INFO ]  datasets built!
+2022-09-06 09:56:06 [INFO ]  Build one LeNet network with [normal(1.0)] init

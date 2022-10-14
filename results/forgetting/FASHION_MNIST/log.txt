@@ -1,0 +1,1740 @@
+2022-10-10 08:12:01 [INFO ]  ======================================== 2022-10-10 08:12:01 ========================================
+2022-10-10 08:12:01 [INFO ]  Base directory is ./results/forgetting/FASHION_MNIST/
+2022-10-10 08:12:01 [INFO ]  Options: 
+2022-10-10 08:12:01 [INFO ]  	base_dir: null
+2022-10-10 08:12:01 [INFO ]  	batch_size: 1024
+2022-10-10 08:12:01 [INFO ]  	checkpoint_interval: 300
+2022-10-10 08:12:01 [INFO ]  	dataset: FASHION_MNIST
+2022-10-10 08:12:01 [INFO ]  	dataset_labels:
+2022-10-10 08:12:01 [INFO ]  	- 0
+2022-10-10 08:12:01 [INFO ]  	- 1
+2022-10-10 08:12:01 [INFO ]  	- 2
+2022-10-10 08:12:01 [INFO ]  	- 3
+2022-10-10 08:12:01 [INFO ]  	- 4
+2022-10-10 08:12:01 [INFO ]  	- 5
+2022-10-10 08:12:01 [INFO ]  	- 6
+2022-10-10 08:12:01 [INFO ]  	- 7
+2022-10-10 08:12:01 [INFO ]  	- 8
+2022-10-10 08:12:01 [INFO ]  	- 9
+2022-10-10 08:12:01 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 08:12:01 [INFO ]  	- !!python/tuple
+2022-10-10 08:12:01 [INFO ]  	    - 0.2859
+2022-10-10 08:12:01 [INFO ]  	    - 0.2859
+2022-10-10 08:12:01 [INFO ]  	    - 0.2859
+2022-10-10 08:12:01 [INFO ]  	- !!python/tuple
+2022-10-10 08:12:01 [INFO ]  	    - 0.353
+2022-10-10 08:12:01 [INFO ]  	    - 0.353
+2022-10-10 08:12:01 [INFO ]  	    - 0.353
+2022-10-10 08:12:01 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-10-10 08:12:01 [INFO ]  	decay_epochs: 50
+2022-10-10 08:12:01 [INFO ]  	decay_factor: 0.1
+2022-10-10 08:12:01 [INFO ]  	device_id: 0
+2022-10-10 08:12:01 [INFO ]  	distill_epochs: 1
+2022-10-10 08:12:01 [INFO ]  	distill_lr: 0.02
+2022-10-10 08:12:01 [INFO ]  	distill_steps: 1
+2022-10-10 08:12:01 [INFO ]  	epochs: 50
+2022-10-10 08:12:01 [INFO ]  	expand_cls: false
+2022-10-10 08:12:01 [INFO ]  	forgetting_dataset: MNIST_RGB
+2022-10-10 08:12:01 [INFO ]  	init: xavier
+2022-10-10 08:12:01 [INFO ]  	init_param: 1.0
+2022-10-10 08:12:01 [INFO ]  	input_size: 32
+2022-10-10 08:12:01 [INFO ]  	ipc: 1
+2022-10-10 08:12:01 [INFO ]  	log_file: ./results/forgetting/FASHION_MNIST/log.txt
+2022-10-10 08:12:01 [INFO ]  	log_interval: 100
+2022-10-10 08:12:01 [INFO ]  	log_level: INFO
+2022-10-10 08:12:01 [INFO ]  	lr: 0.0002
+2022-10-10 08:12:01 [INFO ]  	mode: forgetting
+2022-10-10 08:12:01 [INFO ]  	nc: 3
+2022-10-10 08:12:01 [INFO ]  	num_classes: 10
+2022-10-10 08:12:01 [INFO ]  	num_workers: 8
+2022-10-10 08:12:01 [INFO ]  	phase: train
+2022-10-10 08:12:01 [INFO ]  	source_dataset: null
+2022-10-10 08:12:01 [INFO ]  	start_time: '2022-10-10 08:12:01'
+2022-10-10 08:12:01 [INFO ]  	test_batch_size: 1024
+2022-10-10 08:12:01 [INFO ]  	
+2022-10-10 08:12:01 [INFO ]  train dataset size:	60000
+2022-10-10 08:12:01 [INFO ]  test dataset size: 	10000
+2022-10-10 08:12:01 [INFO ]  datasets built!
+2022-10-10 08:12:01 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 08:12:04 [INFO ]   
+2022-10-10 08:12:04 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 08:12:04 [INFO ]  Test Accuracy: 9.51%	Test Loss: 8.5646
+2022-10-10 08:12:05 [INFO ]   
+2022-10-10 08:12:05 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 08:12:05 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-10 08:12:08 [INFO ]  Epoch:    0	Test Accuracy: 78.94%	Test Loss: 0.6494
+2022-10-10 08:12:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 64.16%	Test Loss: 0.9879
+2022-10-10 08:12:12 [INFO ]  Epoch:    1	Test Accuracy: 88.88%	Test Loss: 0.3696
+2022-10-10 08:12:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 60.04%	Test Loss: 1.2109
+2022-10-10 08:12:16 [INFO ]  Epoch:    2	Test Accuracy: 91.62%	Test Loss: 0.2740
+2022-10-10 08:12:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 56.61%	Test Loss: 1.3453
+2022-10-10 08:12:20 [INFO ]  Epoch:    3	Test Accuracy: 93.08%	Test Loss: 0.2285
+2022-10-10 08:12:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 52.06%	Test Loss: 1.5021
+2022-10-10 08:12:24 [INFO ]  Epoch:    4	Test Accuracy: 93.87%	Test Loss: 0.1972
+2022-10-10 08:12:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 47.85%	Test Loss: 1.6494
+2022-10-10 08:12:28 [INFO ]  Epoch:    5	Test Accuracy: 94.70%	Test Loss: 0.1718
+2022-10-10 08:12:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 45.54%	Test Loss: 1.7170
+2022-10-10 08:12:32 [INFO ]  Epoch:    6	Test Accuracy: 95.23%	Test Loss: 0.1540
+2022-10-10 08:12:32 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 44.76%	Test Loss: 1.7585
+2022-10-10 08:12:36 [INFO ]  Epoch:    7	Test Accuracy: 95.66%	Test Loss: 0.1428
+2022-10-10 08:12:36 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 40.75%	Test Loss: 1.9529
+2022-10-10 08:12:40 [INFO ]  Epoch:    8	Test Accuracy: 95.96%	Test Loss: 0.1322
+2022-10-10 08:12:40 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 39.14%	Test Loss: 2.0114
+2022-10-10 08:12:44 [INFO ]  Epoch:    9	Test Accuracy: 96.05%	Test Loss: 0.1264
+2022-10-10 08:12:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 38.61%	Test Loss: 2.0290
+2022-10-10 08:12:48 [INFO ]  Epoch:   10	Test Accuracy: 96.69%	Test Loss: 0.1108
+2022-10-10 08:12:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 35.93%	Test Loss: 2.2200
+2022-10-10 08:12:52 [INFO ]  Epoch:   11	Test Accuracy: 96.35%	Test Loss: 0.1180
+2022-10-10 08:12:52 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 37.00%	Test Loss: 2.2870
+2022-10-10 08:12:56 [INFO ]  Epoch:   12	Test Accuracy: 96.90%	Test Loss: 0.1000
+2022-10-10 08:12:56 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 35.45%	Test Loss: 2.3155
+2022-10-10 08:13:00 [INFO ]  Epoch:   13	Test Accuracy: 96.96%	Test Loss: 0.0955
+2022-10-10 08:13:00 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 34.87%	Test Loss: 2.3665
+2022-10-10 08:13:04 [INFO ]  Epoch:   14	Test Accuracy: 97.32%	Test Loss: 0.0894
+2022-10-10 08:13:04 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 33.27%	Test Loss: 2.5215
+2022-10-10 08:13:08 [INFO ]  Epoch:   15	Test Accuracy: 97.49%	Test Loss: 0.0833
+2022-10-10 08:13:08 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.11%	Test Loss: 2.5857
+2022-10-10 08:13:12 [INFO ]  Epoch:   16	Test Accuracy: 97.07%	Test Loss: 0.0929
+2022-10-10 08:13:12 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 32.55%	Test Loss: 2.4779
+2022-10-10 08:13:16 [INFO ]  Epoch:   17	Test Accuracy: 97.66%	Test Loss: 0.0765
+2022-10-10 08:13:16 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.79%	Test Loss: 2.7426
+2022-10-10 08:13:19 [INFO ]  Epoch:   18	Test Accuracy: 97.52%	Test Loss: 0.0810
+2022-10-10 08:13:20 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.72%	Test Loss: 2.6470
+2022-10-10 08:13:23 [INFO ]  Epoch:   19	Test Accuracy: 97.39%	Test Loss: 0.0789
+2022-10-10 08:13:24 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.04%	Test Loss: 2.6026
+2022-10-10 08:13:27 [INFO ]  Epoch:   20	Test Accuracy: 97.68%	Test Loss: 0.0728
+2022-10-10 08:13:28 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 32.06%	Test Loss: 2.7815
+2022-10-10 08:13:31 [INFO ]  Epoch:   21	Test Accuracy: 97.86%	Test Loss: 0.0675
+2022-10-10 08:13:32 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.24%	Test Loss: 2.8122
+2022-10-10 08:13:35 [INFO ]  Epoch:   22	Test Accuracy: 98.02%	Test Loss: 0.0646
+2022-10-10 08:13:36 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.58%	Test Loss: 2.8144
+2022-10-10 08:13:40 [INFO ]  Epoch:   23	Test Accuracy: 97.94%	Test Loss: 0.0662
+2022-10-10 08:13:40 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.58%	Test Loss: 2.9836
+2022-10-10 08:13:44 [INFO ]  Epoch:   24	Test Accuracy: 98.10%	Test Loss: 0.0653
+2022-10-10 08:13:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.61%	Test Loss: 3.1108
+2022-10-10 08:13:48 [INFO ]  Epoch:   25	Test Accuracy: 98.05%	Test Loss: 0.0665
+2022-10-10 08:13:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.75%	Test Loss: 3.1610
+2022-10-10 08:13:52 [INFO ]  Epoch:   26	Test Accuracy: 97.97%	Test Loss: 0.0640
+2022-10-10 08:13:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.26%	Test Loss: 2.8452
+2022-10-10 08:13:56 [INFO ]  Epoch:   27	Test Accuracy: 98.06%	Test Loss: 0.0648
+2022-10-10 08:13:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.01%	Test Loss: 3.1998
+2022-10-10 08:14:00 [INFO ]  Epoch:   28	Test Accuracy: 98.19%	Test Loss: 0.0592
+2022-10-10 08:14:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.64%	Test Loss: 3.1441
+2022-10-10 08:14:04 [INFO ]  Epoch:   29	Test Accuracy: 98.36%	Test Loss: 0.0536
+2022-10-10 08:14:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.87%	Test Loss: 3.1646
+2022-10-10 08:14:08 [INFO ]  Epoch:   30	Test Accuracy: 98.33%	Test Loss: 0.0542
+2022-10-10 08:14:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.81%	Test Loss: 3.1909
+2022-10-10 08:14:12 [INFO ]  Epoch:   31	Test Accuracy: 98.31%	Test Loss: 0.0556
+2022-10-10 08:14:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.24%	Test Loss: 3.2722
+2022-10-10 08:14:16 [INFO ]  Epoch:   32	Test Accuracy: 98.07%	Test Loss: 0.0594
+2022-10-10 08:14:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.42%	Test Loss: 3.0873
+2022-10-10 08:14:20 [INFO ]  Epoch:   33	Test Accuracy: 98.51%	Test Loss: 0.0513
+2022-10-10 08:14:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.69%	Test Loss: 3.2573
+2022-10-10 08:14:24 [INFO ]  Epoch:   34	Test Accuracy: 98.43%	Test Loss: 0.0510
+2022-10-10 08:14:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.39%	Test Loss: 3.3347
+2022-10-10 08:14:28 [INFO ]  Epoch:   35	Test Accuracy: 98.53%	Test Loss: 0.0507
+2022-10-10 08:14:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.78%	Test Loss: 3.4355
+2022-10-10 08:14:32 [INFO ]  Epoch:   36	Test Accuracy: 98.49%	Test Loss: 0.0515
+2022-10-10 08:14:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.78%	Test Loss: 3.4511
+2022-10-10 08:14:36 [INFO ]  Epoch:   37	Test Accuracy: 98.40%	Test Loss: 0.0509
+2022-10-10 08:14:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.86%	Test Loss: 3.3024
+2022-10-10 08:14:40 [INFO ]  Epoch:   38	Test Accuracy: 98.60%	Test Loss: 0.0456
+2022-10-10 08:14:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.89%	Test Loss: 3.4292
+2022-10-10 08:14:44 [INFO ]  Epoch:   39	Test Accuracy: 98.49%	Test Loss: 0.0497
+2022-10-10 08:14:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.78%	Test Loss: 3.2529
+2022-10-10 08:14:48 [INFO ]  Epoch:   40	Test Accuracy: 98.70%	Test Loss: 0.0439
+2022-10-10 08:14:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.25%	Test Loss: 3.3361
+2022-10-10 08:14:52 [INFO ]  Epoch:   41	Test Accuracy: 98.48%	Test Loss: 0.0499
+2022-10-10 08:14:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 24.98%	Test Loss: 3.6311
+2022-10-10 08:14:56 [INFO ]  Epoch:   42	Test Accuracy: 98.59%	Test Loss: 0.0444
+2022-10-10 08:14:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.97%	Test Loss: 3.5875
+2022-10-10 08:15:00 [INFO ]  Epoch:   43	Test Accuracy: 98.62%	Test Loss: 0.0434
+2022-10-10 08:15:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.10%	Test Loss: 3.4563
+2022-10-10 08:15:04 [INFO ]  Epoch:   44	Test Accuracy: 98.36%	Test Loss: 0.0512
+2022-10-10 08:15:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.57%	Test Loss: 3.4619
+2022-10-10 08:15:08 [INFO ]  Epoch:   45	Test Accuracy: 98.72%	Test Loss: 0.0434
+2022-10-10 08:15:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.88%	Test Loss: 3.5725
+2022-10-10 08:15:12 [INFO ]  Epoch:   46	Test Accuracy: 98.69%	Test Loss: 0.0416
+2022-10-10 08:15:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.41%	Test Loss: 3.4909
+2022-10-10 08:15:16 [INFO ]  Epoch:   47	Test Accuracy: 98.65%	Test Loss: 0.0439
+2022-10-10 08:15:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.04%	Test Loss: 3.6655
+2022-10-10 08:15:20 [INFO ]  Epoch:   48	Test Accuracy: 98.76%	Test Loss: 0.0419
+2022-10-10 08:15:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 25.87%	Test Loss: 3.7029
+2022-10-10 08:15:24 [INFO ]  Epoch:   49	Test Accuracy: 98.69%	Test Loss: 0.0401
+2022-10-10 08:15:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.11%	Test Loss: 3.5990
+2022-10-10 08:15:25 [INFO ]  List of accuracies: [0.7894, 0.8888, 0.9162, 0.9308, 0.9387, 0.947, 0.9523, 0.9566, 0.9596, 0.9605, 0.9669, 0.9635, 0.969, 0.9696, 0.9732, 0.9749, 0.9707, 0.9766, 0.9752, 0.9739, 0.9768, 0.9786, 0.9802, 0.9794, 0.981, 0.9805, 0.9797, 0.9806, 0.9819, 0.9836, 0.9833, 0.9831, 0.9807, 0.9851, 0.9843, 0.9853, 0.9849, 0.984, 0.986, 0.9849, 0.987, 0.9848, 0.9859, 0.9862, 0.9836, 0.9872, 0.9869, 0.9865, 0.9876, 0.9869]
+2022-10-10 08:15:25 [INFO ]  List of losses: [0.6493666870117187, 0.3695575622558594, 0.27396796875, 0.22847694396972656, 0.19716509246826172, 0.1718286575317383, 0.15397896804809572, 0.14283451919555665, 0.13215391540527344, 0.12642643661499023, 0.11079988327026367, 0.11801262359619141, 0.10000437927246093, 0.09549288215637207, 0.08935506896972656, 0.0832776309967041, 0.09285765075683594, 0.07653562355041504, 0.08103451538085937, 0.0789418716430664, 0.07279408531188965, 0.06753367347717285, 0.06457676048278808, 0.06621781959533692, 0.06534675827026368, 0.06654829444885253, 0.06402584190368653, 0.06482416458129883, 0.059209725189208987, 0.05355857162475586, 0.054233911514282224, 0.05564200210571289, 0.059358113479614255, 0.0513100513458252, 0.051027570152282715, 0.05074266147613525, 0.051501326370239256, 0.050861722564697266, 0.045574828720092775, 0.0496838436126709, 0.04385770530700683, 0.04988313732147217, 0.04443470573425293, 0.043350131034851073, 0.05119798355102539, 0.043438037109375, 0.041629920959472655, 0.04390966148376465, 0.04187909107208252, 0.04009850845336914]
+2022-10-10 08:15:25 [INFO ]  List of source accuracies: [0.6416, 0.6004, 0.5661, 0.5206, 0.4785, 0.4554, 0.4476, 0.4075, 0.3914, 0.3861, 0.3593, 0.37, 0.3545, 0.3487, 0.3327, 0.3111, 0.3255, 0.2979, 0.3072, 0.3004, 0.3206, 0.2924, 0.2958, 0.2658, 0.2861, 0.2975, 0.3126, 0.2801, 0.2964, 0.2887, 0.2881, 0.2924, 0.3042, 0.2769, 0.2939, 0.2878, 0.2878, 0.2886, 0.2989, 0.2878, 0.2725, 0.2498, 0.2897, 0.291, 0.2657, 0.2688, 0.2841, 0.2804, 0.2587, 0.2911]
+2022-10-10 08:15:26 [INFO ]   
+2022-10-10 08:15:26 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 08:15:26 [INFO ]  Test Accuracy: 98.69%	Test Loss: 0.0401
+2022-10-10 08:15:27 [INFO ]   
+2022-10-10 08:15:27 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 08:15:27 [INFO ]  Test Accuracy: 29.11%	Test Loss: 3.5990
+2022-10-10 08:15:27 [INFO ]  CPU Time: 1.44 minutes
+2022-10-10 08:18:02 [INFO ]  ======================================== 2022-10-10 08:18:02 ========================================
+2022-10-10 08:18:02 [INFO ]  Base directory is ./results/forgetting/FASHION_MNIST/
+2022-10-10 08:18:02 [INFO ]  Options: 
+2022-10-10 08:18:02 [INFO ]  	base_dir: null
+2022-10-10 08:18:02 [INFO ]  	batch_size: 1024
+2022-10-10 08:18:02 [INFO ]  	checkpoint_interval: 300
+2022-10-10 08:18:02 [INFO ]  	dataset: FASHION_MNIST
+2022-10-10 08:18:02 [INFO ]  	dataset_labels:
+2022-10-10 08:18:02 [INFO ]  	- 0
+2022-10-10 08:18:02 [INFO ]  	- 1
+2022-10-10 08:18:02 [INFO ]  	- 2
+2022-10-10 08:18:02 [INFO ]  	- 3
+2022-10-10 08:18:02 [INFO ]  	- 4
+2022-10-10 08:18:02 [INFO ]  	- 5
+2022-10-10 08:18:02 [INFO ]  	- 6
+2022-10-10 08:18:02 [INFO ]  	- 7
+2022-10-10 08:18:02 [INFO ]  	- 8
+2022-10-10 08:18:02 [INFO ]  	- 9
+2022-10-10 08:18:02 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 08:18:02 [INFO ]  	- !!python/tuple
+2022-10-10 08:18:02 [INFO ]  	    - 0.2859
+2022-10-10 08:18:02 [INFO ]  	    - 0.2859
+2022-10-10 08:18:02 [INFO ]  	    - 0.2859
+2022-10-10 08:18:02 [INFO ]  	- !!python/tuple
+2022-10-10 08:18:02 [INFO ]  	    - 0.353
+2022-10-10 08:18:02 [INFO ]  	    - 0.353
+2022-10-10 08:18:02 [INFO ]  	    - 0.353
+2022-10-10 08:18:02 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-10-10 08:18:02 [INFO ]  	decay_epochs: 50
+2022-10-10 08:18:02 [INFO ]  	decay_factor: 0.1
+2022-10-10 08:18:02 [INFO ]  	device_id: 0
+2022-10-10 08:18:02 [INFO ]  	distill_epochs: 1
+2022-10-10 08:18:02 [INFO ]  	distill_lr: 0.02
+2022-10-10 08:18:02 [INFO ]  	distill_steps: 1
+2022-10-10 08:18:02 [INFO ]  	epochs: 50
+2022-10-10 08:18:02 [INFO ]  	expand_cls: false
+2022-10-10 08:18:02 [INFO ]  	forgetting_dataset: MNIST_RGB
+2022-10-10 08:18:02 [INFO ]  	init: xavier
+2022-10-10 08:18:02 [INFO ]  	init_param: 1.0
+2022-10-10 08:18:02 [INFO ]  	input_size: 32
+2022-10-10 08:18:02 [INFO ]  	ipc: 1
+2022-10-10 08:18:02 [INFO ]  	log_file: ./results/forgetting/FASHION_MNIST/log.txt
+2022-10-10 08:18:02 [INFO ]  	log_interval: 100
+2022-10-10 08:18:02 [INFO ]  	log_level: INFO
+2022-10-10 08:18:02 [INFO ]  	lr: 0.0002
+2022-10-10 08:18:02 [INFO ]  	mode: forgetting
+2022-10-10 08:18:02 [INFO ]  	nc: 3
+2022-10-10 08:18:02 [INFO ]  	num_classes: 10
+2022-10-10 08:18:02 [INFO ]  	num_workers: 8
+2022-10-10 08:18:02 [INFO ]  	phase: train
+2022-10-10 08:18:02 [INFO ]  	source_dataset: null
+2022-10-10 08:18:02 [INFO ]  	start_time: '2022-10-10 08:18:02'
+2022-10-10 08:18:02 [INFO ]  	test_batch_size: 1024
+2022-10-10 08:18:02 [INFO ]  	
+2022-10-10 08:18:02 [INFO ]  train dataset size:	60000
+2022-10-10 08:18:02 [INFO ]  test dataset size: 	10000
+2022-10-10 08:18:02 [INFO ]  datasets built!
+2022-10-10 08:18:02 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 08:18:04 [INFO ]   
+2022-10-10 08:18:04 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 08:18:04 [INFO ]  Test Accuracy: 9.51%	Test Loss: 8.5646
+2022-10-10 08:18:05 [INFO ]   
+2022-10-10 08:18:05 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 08:18:05 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-10 08:18:08 [INFO ]  Epoch:    0	Test Accuracy: 78.45%	Test Loss: 0.6532
+2022-10-10 08:18:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 67.85%	Test Loss: 0.8988
+2022-10-10 08:18:12 [INFO ]  Epoch:    1	Test Accuracy: 88.57%	Test Loss: 0.3766
+2022-10-10 08:18:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 61.68%	Test Loss: 1.1357
+2022-10-10 08:18:16 [INFO ]  Epoch:    2	Test Accuracy: 91.00%	Test Loss: 0.2902
+2022-10-10 08:18:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 58.61%	Test Loss: 1.2576
+2022-10-10 08:18:20 [INFO ]  Epoch:    3	Test Accuracy: 92.86%	Test Loss: 0.2293
+2022-10-10 08:18:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 54.89%	Test Loss: 1.4111
+2022-10-10 08:18:24 [INFO ]  Epoch:    4	Test Accuracy: 93.52%	Test Loss: 0.2004
+2022-10-10 08:18:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 50.04%	Test Loss: 1.5484
+2022-10-10 08:18:28 [INFO ]  Epoch:    5	Test Accuracy: 94.28%	Test Loss: 0.1818
+2022-10-10 08:18:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 44.86%	Test Loss: 1.7581
+2022-10-10 08:18:32 [INFO ]  Epoch:    6	Test Accuracy: 95.26%	Test Loss: 0.1541
+2022-10-10 08:18:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 43.40%	Test Loss: 1.7856
+2022-10-10 08:18:36 [INFO ]  Epoch:    7	Test Accuracy: 95.52%	Test Loss: 0.1412
+2022-10-10 08:18:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 41.16%	Test Loss: 1.9101
+2022-10-10 08:18:40 [INFO ]  Epoch:    8	Test Accuracy: 95.64%	Test Loss: 0.1357
+2022-10-10 08:18:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 41.00%	Test Loss: 1.9103
+2022-10-10 08:18:44 [INFO ]  Epoch:    9	Test Accuracy: 96.07%	Test Loss: 0.1295
+2022-10-10 08:18:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 38.99%	Test Loss: 2.0018
+2022-10-10 08:18:48 [INFO ]  Epoch:   10	Test Accuracy: 96.45%	Test Loss: 0.1134
+2022-10-10 08:18:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 35.38%	Test Loss: 2.1847
+2022-10-10 08:18:52 [INFO ]  Epoch:   11	Test Accuracy: 96.95%	Test Loss: 0.1029
+2022-10-10 08:18:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 35.94%	Test Loss: 2.2329
+2022-10-10 08:18:56 [INFO ]  Epoch:   12	Test Accuracy: 97.02%	Test Loss: 0.0987
+2022-10-10 08:18:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 35.13%	Test Loss: 2.2976
+2022-10-10 08:19:00 [INFO ]  Epoch:   13	Test Accuracy: 97.28%	Test Loss: 0.0918
+2022-10-10 08:19:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 34.68%	Test Loss: 2.3874
+2022-10-10 08:19:04 [INFO ]  Epoch:   14	Test Accuracy: 97.05%	Test Loss: 0.0928
+2022-10-10 08:19:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 33.31%	Test Loss: 2.3750
+2022-10-10 08:19:08 [INFO ]  Epoch:   15	Test Accuracy: 97.44%	Test Loss: 0.0841
+2022-10-10 08:19:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 33.31%	Test Loss: 2.3891
+2022-10-10 08:19:12 [INFO ]  Epoch:   16	Test Accuracy: 97.53%	Test Loss: 0.0818
+2022-10-10 08:19:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 32.27%	Test Loss: 2.4637
+2022-10-10 08:19:16 [INFO ]  Epoch:   17	Test Accuracy: 97.59%	Test Loss: 0.0787
+2022-10-10 08:19:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.70%	Test Loss: 2.4700
+2022-10-10 08:19:20 [INFO ]  Epoch:   18	Test Accuracy: 97.25%	Test Loss: 0.0873
+2022-10-10 08:19:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.58%	Test Loss: 2.7130
+2022-10-10 08:19:24 [INFO ]  Epoch:   19	Test Accuracy: 97.71%	Test Loss: 0.0739
+2022-10-10 08:19:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.65%	Test Loss: 2.6765
+2022-10-10 08:19:28 [INFO ]  Epoch:   20	Test Accuracy: 97.98%	Test Loss: 0.0718
+2022-10-10 08:19:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.14%	Test Loss: 2.8670
+2022-10-10 08:19:32 [INFO ]  Epoch:   21	Test Accuracy: 97.89%	Test Loss: 0.0679
+2022-10-10 08:19:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.33%	Test Loss: 2.6531
+2022-10-10 08:19:36 [INFO ]  Epoch:   22	Test Accuracy: 97.89%	Test Loss: 0.0680
+2022-10-10 08:19:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.10%	Test Loss: 2.6412
+2022-10-10 08:19:40 [INFO ]  Epoch:   23	Test Accuracy: 98.14%	Test Loss: 0.0616
+2022-10-10 08:19:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.22%	Test Loss: 2.6727
+2022-10-10 08:19:44 [INFO ]  Epoch:   24	Test Accuracy: 97.31%	Test Loss: 0.0818
+2022-10-10 08:19:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.38%	Test Loss: 2.7826
+2022-10-10 08:19:48 [INFO ]  Epoch:   25	Test Accuracy: 98.32%	Test Loss: 0.0566
+2022-10-10 08:19:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.75%	Test Loss: 2.8891
+2022-10-10 08:19:52 [INFO ]  Epoch:   26	Test Accuracy: 98.13%	Test Loss: 0.0605
+2022-10-10 08:19:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.16%	Test Loss: 2.6716
+2022-10-10 08:19:56 [INFO ]  Epoch:   27	Test Accuracy: 98.35%	Test Loss: 0.0551
+2022-10-10 08:19:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.52%	Test Loss: 2.9739
+2022-10-10 08:20:00 [INFO ]  Epoch:   28	Test Accuracy: 98.36%	Test Loss: 0.0541
+2022-10-10 08:20:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.06%	Test Loss: 2.9975
+2022-10-10 08:20:04 [INFO ]  Epoch:   29	Test Accuracy: 98.33%	Test Loss: 0.0546
+2022-10-10 08:20:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.30%	Test Loss: 2.9786
+2022-10-10 08:20:08 [INFO ]  Epoch:   30	Test Accuracy: 98.24%	Test Loss: 0.0584
+2022-10-10 08:20:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.87%	Test Loss: 3.1133
+2022-10-10 08:20:12 [INFO ]  Epoch:   31	Test Accuracy: 98.35%	Test Loss: 0.0524
+2022-10-10 08:20:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.01%	Test Loss: 3.0553
+2022-10-10 08:20:16 [INFO ]  Epoch:   32	Test Accuracy: 98.42%	Test Loss: 0.0526
+2022-10-10 08:20:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.88%	Test Loss: 2.9022
+2022-10-10 08:20:20 [INFO ]  Epoch:   33	Test Accuracy: 98.60%	Test Loss: 0.0475
+2022-10-10 08:20:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.71%	Test Loss: 3.0183
+2022-10-10 08:20:24 [INFO ]  Epoch:   34	Test Accuracy: 98.40%	Test Loss: 0.0514
+2022-10-10 08:20:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.34%	Test Loss: 2.9663
+2022-10-10 08:20:28 [INFO ]  Epoch:   35	Test Accuracy: 98.47%	Test Loss: 0.0503
+2022-10-10 08:20:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.45%	Test Loss: 3.0331
+2022-10-10 08:20:32 [INFO ]  Epoch:   36	Test Accuracy: 98.42%	Test Loss: 0.0501
+2022-10-10 08:20:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.53%	Test Loss: 3.1123
+2022-10-10 08:20:37 [INFO ]  Epoch:   37	Test Accuracy: 98.39%	Test Loss: 0.0494
+2022-10-10 08:20:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.83%	Test Loss: 3.0256
+2022-10-10 08:20:41 [INFO ]  Epoch:   38	Test Accuracy: 98.55%	Test Loss: 0.0479
+2022-10-10 08:20:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.19%	Test Loss: 3.3624
+2022-10-10 08:20:45 [INFO ]  Epoch:   39	Test Accuracy: 98.09%	Test Loss: 0.0579
+2022-10-10 08:20:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 25.58%	Test Loss: 3.5192
+2022-10-10 08:20:48 [INFO ]  Epoch:   40	Test Accuracy: 98.61%	Test Loss: 0.0436
+2022-10-10 08:20:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.97%	Test Loss: 3.1237
+2022-10-10 08:20:52 [INFO ]  Epoch:   41	Test Accuracy: 98.61%	Test Loss: 0.0435
+2022-10-10 08:20:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.01%	Test Loss: 3.1039
+2022-10-10 08:20:57 [INFO ]  Epoch:   42	Test Accuracy: 98.58%	Test Loss: 0.0450
+2022-10-10 08:20:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.59%	Test Loss: 3.3874
+2022-10-10 08:21:00 [INFO ]  Epoch:   43	Test Accuracy: 98.55%	Test Loss: 0.0458
+2022-10-10 08:21:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.69%	Test Loss: 3.1851
+2022-10-10 08:21:04 [INFO ]  Epoch:   44	Test Accuracy: 98.58%	Test Loss: 0.0434
+2022-10-10 08:21:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.39%	Test Loss: 3.3136
+2022-10-10 08:21:08 [INFO ]  Epoch:   45	Test Accuracy: 98.58%	Test Loss: 0.0460
+2022-10-10 08:21:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 25.37%	Test Loss: 3.5932
+2022-10-10 08:21:13 [INFO ]  Epoch:   46	Test Accuracy: 98.57%	Test Loss: 0.0447
+2022-10-10 08:21:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.68%	Test Loss: 3.1959
+2022-10-10 08:21:16 [INFO ]  Epoch:   47	Test Accuracy: 98.70%	Test Loss: 0.0405
+2022-10-10 08:21:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.53%	Test Loss: 3.3569
+2022-10-10 08:21:20 [INFO ]  Epoch:   48	Test Accuracy: 98.64%	Test Loss: 0.0446
+2022-10-10 08:21:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 25.15%	Test Loss: 3.6644
+2022-10-10 08:21:24 [INFO ]  Epoch:   49	Test Accuracy: 98.77%	Test Loss: 0.0404
+2022-10-10 08:21:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.20%	Test Loss: 3.6234
+2022-10-10 08:21:25 [INFO ]  List of accuracies: [0.7845, 0.8857, 0.91, 0.9286, 0.9352, 0.9428, 0.9526, 0.9552, 0.9564, 0.9607, 0.9645, 0.9695, 0.9702, 0.9728, 0.9705, 0.9744, 0.9753, 0.9759, 0.9725, 0.9771, 0.9798, 0.9789, 0.9789, 0.9814, 0.9731, 0.9832, 0.9813, 0.9835, 0.9836, 0.9833, 0.9824, 0.9835, 0.9842, 0.986, 0.984, 0.9847, 0.9842, 0.9839, 0.9855, 0.9809, 0.9861, 0.9861, 0.9858, 0.9855, 0.9858, 0.9858, 0.9857, 0.987, 0.9864, 0.9877]
+2022-10-10 08:21:25 [INFO ]  List of losses: [0.6531564514160156, 0.37655618591308593, 0.29016133728027343, 0.22928069763183595, 0.2003594696044922, 0.18176751861572266, 0.15411706466674804, 0.14124151077270508, 0.13568131408691406, 0.12948355636596678, 0.11336858673095702, 0.10289768600463867, 0.09874562301635742, 0.09177934112548829, 0.09279750747680664, 0.08414101867675781, 0.08179685974121094, 0.078704638671875, 0.08732764587402343, 0.07386993637084961, 0.07184598197937012, 0.06791495018005371, 0.06804558868408203, 0.06159345588684082, 0.08181591567993164, 0.05664823875427246, 0.06052576293945312, 0.055105208969116214, 0.054096826934814456, 0.05461104965209961, 0.05842558479309082, 0.05241663475036621, 0.05264741401672363, 0.04747155132293701, 0.051449810409545896, 0.05025987415313721, 0.050061644363403324, 0.049437370300292965, 0.0479187084197998, 0.05792330894470215, 0.04359600715637207, 0.0434742130279541, 0.04503757877349854, 0.045846866607666015, 0.04340445079803467, 0.04603551979064941, 0.04467400550842285, 0.04048932819366455, 0.04459594402313232, 0.04040303001403808]
+2022-10-10 08:21:25 [INFO ]  List of source accuracies: [0.6785, 0.6168, 0.5861, 0.5489, 0.5004, 0.4486, 0.434, 0.4116, 0.41, 0.3899, 0.3538, 0.3594, 0.3513, 0.3468, 0.3331, 0.3331, 0.3227, 0.317, 0.3058, 0.2865, 0.2814, 0.2933, 0.301, 0.3022, 0.2738, 0.2775, 0.2916, 0.2652, 0.2806, 0.273, 0.2687, 0.2901, 0.2888, 0.2871, 0.2934, 0.2645, 0.2853, 0.2883, 0.2719, 0.2558, 0.2897, 0.2801, 0.2659, 0.2669, 0.2939, 0.2537, 0.2768, 0.2653, 0.2515, 0.262]
+2022-10-10 08:21:26 [INFO ]   
+2022-10-10 08:21:26 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 08:21:26 [INFO ]  Test Accuracy: 98.77%	Test Loss: 0.0404
+2022-10-10 08:21:27 [INFO ]   
+2022-10-10 08:21:27 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 08:21:27 [INFO ]  Test Accuracy: 26.20%	Test Loss: 3.6234
+2022-10-10 08:21:27 [INFO ]  CPU Time: 1.44 minutes
+2022-10-10 08:26:10 [INFO ]  ======================================== 2022-10-10 08:26:10 ========================================
+2022-10-10 08:26:10 [INFO ]  Base directory is ./results/forgetting/FASHION_MNIST/
+2022-10-10 08:26:10 [INFO ]  Options: 
+2022-10-10 08:26:10 [INFO ]  	base_dir: null
+2022-10-10 08:26:10 [INFO ]  	batch_size: 1024
+2022-10-10 08:26:10 [INFO ]  	checkpoint_interval: 300
+2022-10-10 08:26:10 [INFO ]  	dataset: FASHION_MNIST
+2022-10-10 08:26:10 [INFO ]  	dataset_labels:
+2022-10-10 08:26:10 [INFO ]  	- 0
+2022-10-10 08:26:10 [INFO ]  	- 1
+2022-10-10 08:26:10 [INFO ]  	- 2
+2022-10-10 08:26:10 [INFO ]  	- 3
+2022-10-10 08:26:10 [INFO ]  	- 4
+2022-10-10 08:26:10 [INFO ]  	- 5
+2022-10-10 08:26:10 [INFO ]  	- 6
+2022-10-10 08:26:10 [INFO ]  	- 7
+2022-10-10 08:26:10 [INFO ]  	- 8
+2022-10-10 08:26:10 [INFO ]  	- 9
+2022-10-10 08:26:10 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 08:26:10 [INFO ]  	- !!python/tuple
+2022-10-10 08:26:10 [INFO ]  	    - 0.2859
+2022-10-10 08:26:10 [INFO ]  	    - 0.2859
+2022-10-10 08:26:10 [INFO ]  	    - 0.2859
+2022-10-10 08:26:10 [INFO ]  	- !!python/tuple
+2022-10-10 08:26:10 [INFO ]  	    - 0.353
+2022-10-10 08:26:10 [INFO ]  	    - 0.353
+2022-10-10 08:26:10 [INFO ]  	    - 0.353
+2022-10-10 08:26:10 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-10-10 08:26:10 [INFO ]  	decay_epochs: 50
+2022-10-10 08:26:10 [INFO ]  	decay_factor: 0.1
+2022-10-10 08:26:10 [INFO ]  	device_id: 0
+2022-10-10 08:26:10 [INFO ]  	distill_epochs: 1
+2022-10-10 08:26:10 [INFO ]  	distill_lr: 0.02
+2022-10-10 08:26:10 [INFO ]  	distill_steps: 1
+2022-10-10 08:26:10 [INFO ]  	epochs: 50
+2022-10-10 08:26:10 [INFO ]  	expand_cls: false
+2022-10-10 08:26:10 [INFO ]  	forgetting_dataset: MNIST_RGB
+2022-10-10 08:26:10 [INFO ]  	init: xavier
+2022-10-10 08:26:10 [INFO ]  	init_param: 1.0
+2022-10-10 08:26:10 [INFO ]  	input_size: 32
+2022-10-10 08:26:10 [INFO ]  	ipc: 1
+2022-10-10 08:26:10 [INFO ]  	log_file: ./results/forgetting/FASHION_MNIST/log.txt
+2022-10-10 08:26:10 [INFO ]  	log_interval: 100
+2022-10-10 08:26:10 [INFO ]  	log_level: INFO
+2022-10-10 08:26:10 [INFO ]  	lr: 0.0002
+2022-10-10 08:26:10 [INFO ]  	mode: forgetting
+2022-10-10 08:26:10 [INFO ]  	nc: 3
+2022-10-10 08:26:10 [INFO ]  	num_classes: 10
+2022-10-10 08:26:10 [INFO ]  	num_workers: 8
+2022-10-10 08:26:10 [INFO ]  	phase: train
+2022-10-10 08:26:10 [INFO ]  	source_dataset: null
+2022-10-10 08:26:10 [INFO ]  	start_time: '2022-10-10 08:26:10'
+2022-10-10 08:26:10 [INFO ]  	test_batch_size: 1024
+2022-10-10 08:26:10 [INFO ]  	
+2022-10-10 08:26:10 [INFO ]  train dataset size:	60000
+2022-10-10 08:26:10 [INFO ]  test dataset size: 	10000
+2022-10-10 08:26:10 [INFO ]  datasets built!
+2022-10-10 08:26:10 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 08:26:12 [INFO ]   
+2022-10-10 08:26:12 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 08:26:12 [INFO ]  Test Accuracy: 9.51%	Test Loss: 8.5646
+2022-10-10 08:26:13 [INFO ]   
+2022-10-10 08:26:13 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 08:26:13 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-10 08:26:16 [INFO ]  Epoch:    0	Test Accuracy: 79.37%	Test Loss: 0.6363
+2022-10-10 08:26:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 65.51%	Test Loss: 0.9697
+2022-10-10 08:26:20 [INFO ]  Epoch:    1	Test Accuracy: 88.77%	Test Loss: 0.3685
+2022-10-10 08:26:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 61.01%	Test Loss: 1.1632
+2022-10-10 08:26:24 [INFO ]  Epoch:    2	Test Accuracy: 91.62%	Test Loss: 0.2791
+2022-10-10 08:26:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 55.71%	Test Loss: 1.3602
+2022-10-10 08:26:28 [INFO ]  Epoch:    3	Test Accuracy: 93.09%	Test Loss: 0.2283
+2022-10-10 08:26:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 50.73%	Test Loss: 1.5425
+2022-10-10 08:26:32 [INFO ]  Epoch:    4	Test Accuracy: 93.92%	Test Loss: 0.1954
+2022-10-10 08:26:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 48.37%	Test Loss: 1.6020
+2022-10-10 08:26:36 [INFO ]  Epoch:    5	Test Accuracy: 94.76%	Test Loss: 0.1726
+2022-10-10 08:26:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 45.56%	Test Loss: 1.6997
+2022-10-10 08:26:40 [INFO ]  Epoch:    6	Test Accuracy: 95.25%	Test Loss: 0.1566
+2022-10-10 08:26:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 41.44%	Test Loss: 1.8471
+2022-10-10 08:26:44 [INFO ]  Epoch:    7	Test Accuracy: 95.74%	Test Loss: 0.1390
+2022-10-10 08:26:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 39.53%	Test Loss: 2.0039
+2022-10-10 08:26:48 [INFO ]  Epoch:    8	Test Accuracy: 96.18%	Test Loss: 0.1267
+2022-10-10 08:26:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 38.46%	Test Loss: 2.0428
+2022-10-10 08:26:52 [INFO ]  Epoch:    9	Test Accuracy: 96.34%	Test Loss: 0.1192
+2022-10-10 08:26:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 36.93%	Test Loss: 2.1036
+2022-10-10 08:26:56 [INFO ]  Epoch:   10	Test Accuracy: 96.68%	Test Loss: 0.1090
+2022-10-10 08:26:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 34.98%	Test Loss: 2.1910
+2022-10-10 08:27:00 [INFO ]  Epoch:   11	Test Accuracy: 96.80%	Test Loss: 0.1067
+2022-10-10 08:27:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 34.57%	Test Loss: 2.3824
+2022-10-10 08:27:04 [INFO ]  Epoch:   12	Test Accuracy: 96.89%	Test Loss: 0.0969
+2022-10-10 08:27:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 34.41%	Test Loss: 2.2885
+2022-10-10 08:27:08 [INFO ]  Epoch:   13	Test Accuracy: 97.16%	Test Loss: 0.0926
+2022-10-10 08:27:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 33.71%	Test Loss: 2.3554
+2022-10-10 08:27:12 [INFO ]  Epoch:   14	Test Accuracy: 97.24%	Test Loss: 0.0920
+2022-10-10 08:27:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.30%	Test Loss: 2.5562
+2022-10-10 08:27:16 [INFO ]  Epoch:   15	Test Accuracy: 97.47%	Test Loss: 0.0843
+2022-10-10 08:27:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.62%	Test Loss: 2.5589
+2022-10-10 08:27:20 [INFO ]  Epoch:   16	Test Accuracy: 97.11%	Test Loss: 0.0911
+2022-10-10 08:27:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 32.96%	Test Loss: 2.3613
+2022-10-10 08:27:24 [INFO ]  Epoch:   17	Test Accuracy: 97.67%	Test Loss: 0.0768
+2022-10-10 08:27:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.91%	Test Loss: 2.6915
+2022-10-10 08:27:28 [INFO ]  Epoch:   18	Test Accuracy: 97.77%	Test Loss: 0.0765
+2022-10-10 08:27:28 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.66%	Test Loss: 2.7515
+2022-10-10 08:27:32 [INFO ]  Epoch:   19	Test Accuracy: 97.66%	Test Loss: 0.0773
+2022-10-10 08:27:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.49%	Test Loss: 2.9312
+2022-10-10 08:27:36 [INFO ]  Epoch:   20	Test Accuracy: 97.73%	Test Loss: 0.0723
+2022-10-10 08:27:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.72%	Test Loss: 2.6707
+2022-10-10 08:27:40 [INFO ]  Epoch:   21	Test Accuracy: 97.81%	Test Loss: 0.0714
+2022-10-10 08:27:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.00%	Test Loss: 2.8174
+2022-10-10 08:27:44 [INFO ]  Epoch:   22	Test Accuracy: 97.61%	Test Loss: 0.0738
+2022-10-10 08:27:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.09%	Test Loss: 2.6288
+2022-10-10 08:27:48 [INFO ]  Epoch:   23	Test Accuracy: 98.18%	Test Loss: 0.0610
+2022-10-10 08:27:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.43%	Test Loss: 2.9316
+2022-10-10 08:27:52 [INFO ]  Epoch:   24	Test Accuracy: 98.21%	Test Loss: 0.0597
+2022-10-10 08:27:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.62%	Test Loss: 2.9581
+2022-10-10 08:27:56 [INFO ]  Epoch:   25	Test Accuracy: 98.14%	Test Loss: 0.0625
+2022-10-10 08:27:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.03%	Test Loss: 2.9332
+2022-10-10 08:28:00 [INFO ]  Epoch:   26	Test Accuracy: 98.26%	Test Loss: 0.0578
+2022-10-10 08:28:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.20%	Test Loss: 2.9433
+2022-10-10 08:28:04 [INFO ]  Epoch:   27	Test Accuracy: 98.23%	Test Loss: 0.0583
+2022-10-10 08:28:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.69%	Test Loss: 2.9504
+2022-10-10 08:28:08 [INFO ]  Epoch:   28	Test Accuracy: 97.93%	Test Loss: 0.0653
+2022-10-10 08:28:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.80%	Test Loss: 3.1117
+2022-10-10 08:28:12 [INFO ]  Epoch:   29	Test Accuracy: 98.36%	Test Loss: 0.0553
+2022-10-10 08:28:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.77%	Test Loss: 3.2144
+2022-10-10 08:28:16 [INFO ]  Epoch:   30	Test Accuracy: 98.29%	Test Loss: 0.0545
+2022-10-10 08:28:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.46%	Test Loss: 3.0760
+2022-10-10 08:28:20 [INFO ]  Epoch:   31	Test Accuracy: 98.39%	Test Loss: 0.0525
+2022-10-10 08:28:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.60%	Test Loss: 3.1657
+2022-10-10 08:28:24 [INFO ]  Epoch:   32	Test Accuracy: 98.05%	Test Loss: 0.0640
+2022-10-10 08:28:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.54%	Test Loss: 3.3738
+2022-10-10 08:28:28 [INFO ]  Epoch:   33	Test Accuracy: 98.22%	Test Loss: 0.0552
+2022-10-10 08:28:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.81%	Test Loss: 2.9718
+2022-10-10 08:28:32 [INFO ]  Epoch:   34	Test Accuracy: 98.18%	Test Loss: 0.0562
+2022-10-10 08:28:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.05%	Test Loss: 3.2405
+2022-10-10 08:28:36 [INFO ]  Epoch:   35	Test Accuracy: 97.54%	Test Loss: 0.0764
+2022-10-10 08:28:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.17%	Test Loss: 3.1338
+2022-10-10 08:28:40 [INFO ]  Epoch:   36	Test Accuracy: 98.56%	Test Loss: 0.0469
+2022-10-10 08:28:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.75%	Test Loss: 3.2472
+2022-10-10 08:28:44 [INFO ]  Epoch:   37	Test Accuracy: 98.49%	Test Loss: 0.0479
+2022-10-10 08:28:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.74%	Test Loss: 3.3860
+2022-10-10 08:28:48 [INFO ]  Epoch:   38	Test Accuracy: 98.31%	Test Loss: 0.0530
+2022-10-10 08:28:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.65%	Test Loss: 3.6842
+2022-10-10 08:28:52 [INFO ]  Epoch:   39	Test Accuracy: 98.42%	Test Loss: 0.0502
+2022-10-10 08:28:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.87%	Test Loss: 3.2153
+2022-10-10 08:28:56 [INFO ]  Epoch:   40	Test Accuracy: 98.71%	Test Loss: 0.0446
+2022-10-10 08:28:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.81%	Test Loss: 3.4934
+2022-10-10 08:29:00 [INFO ]  Epoch:   41	Test Accuracy: 98.65%	Test Loss: 0.0428
+2022-10-10 08:29:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.79%	Test Loss: 3.2356
+2022-10-10 08:29:04 [INFO ]  Epoch:   42	Test Accuracy: 98.49%	Test Loss: 0.0475
+2022-10-10 08:29:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.95%	Test Loss: 3.4060
+2022-10-10 08:29:08 [INFO ]  Epoch:   43	Test Accuracy: 98.58%	Test Loss: 0.0436
+2022-10-10 08:29:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.70%	Test Loss: 3.4511
+2022-10-10 08:29:12 [INFO ]  Epoch:   44	Test Accuracy: 98.40%	Test Loss: 0.0477
+2022-10-10 08:29:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.80%	Test Loss: 3.1605
+2022-10-10 08:29:16 [INFO ]  Epoch:   45	Test Accuracy: 98.50%	Test Loss: 0.0461
+2022-10-10 08:29:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.81%	Test Loss: 3.4427
+2022-10-10 08:29:20 [INFO ]  Epoch:   46	Test Accuracy: 98.62%	Test Loss: 0.0424
+2022-10-10 08:29:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.59%	Test Loss: 3.4166
+2022-10-10 08:29:25 [INFO ]  Epoch:   47	Test Accuracy: 98.62%	Test Loss: 0.0450
+2022-10-10 08:29:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.21%	Test Loss: 3.7586
+2022-10-10 08:29:29 [INFO ]  Epoch:   48	Test Accuracy: 98.42%	Test Loss: 0.0478
+2022-10-10 08:29:30 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.40%	Test Loss: 3.3311
+2022-10-10 08:29:33 [INFO ]  Epoch:   49	Test Accuracy: 98.66%	Test Loss: 0.0422
+2022-10-10 08:29:34 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.18%	Test Loss: 3.3601
+2022-10-10 08:29:34 [INFO ]  List of accuracies: [0.7937, 0.8877, 0.9162, 0.9309, 0.9392, 0.9476, 0.9525, 0.9574, 0.9618, 0.9634, 0.9668, 0.968, 0.9689, 0.9716, 0.9724, 0.9747, 0.9711, 0.9767, 0.9777, 0.9766, 0.9773, 0.9781, 0.9761, 0.9818, 0.9821, 0.9814, 0.9826, 0.9823, 0.9793, 0.9836, 0.9829, 0.9839, 0.9805, 0.9822, 0.9818, 0.9754, 0.9856, 0.9849, 0.9831, 0.9842, 0.9871, 0.9865, 0.9849, 0.9858, 0.984, 0.985, 0.9862, 0.9862, 0.9842, 0.9866]
+2022-10-10 08:29:34 [INFO ]  List of losses: [0.6363190032958984, 0.36851885986328126, 0.2791181106567383, 0.2282654525756836, 0.19544358520507812, 0.17260214614868163, 0.15657988357543945, 0.13904790573120118, 0.1266891555786133, 0.11919072189331055, 0.1090423927307129, 0.10669294357299805, 0.09688379516601563, 0.09260322570800782, 0.09202969970703125, 0.08426777267456055, 0.09114871673583984, 0.07680319023132325, 0.07654275894165039, 0.07730652465820312, 0.07232074089050293, 0.07138246994018554, 0.0737653896331787, 0.060965278625488284, 0.059686217880249026, 0.06252466163635254, 0.05775321922302246, 0.058341819381713865, 0.06525651054382324, 0.05526849174499512, 0.05452347526550293, 0.05245357570648193, 0.06398398456573487, 0.05520820693969727, 0.056181312942504884, 0.07638731269836425, 0.04686648826599121, 0.04790456123352051, 0.05300902442932129, 0.05021970100402832, 0.04464750900268555, 0.042759121322631835, 0.0474809965133667, 0.04364966697692871, 0.04772042922973633, 0.04614666595458984, 0.042387165069580075, 0.04501882743835449, 0.04778920459747314, 0.04221676292419434]
+2022-10-10 08:29:34 [INFO ]  List of source accuracies: [0.6551, 0.6101, 0.5571, 0.5073, 0.4837, 0.4556, 0.4144, 0.3953, 0.3846, 0.3693, 0.3498, 0.3457, 0.3441, 0.3371, 0.313, 0.3062, 0.3296, 0.2991, 0.2866, 0.2749, 0.3172, 0.28, 0.3109, 0.2943, 0.2862, 0.2803, 0.292, 0.2969, 0.298, 0.2877, 0.2946, 0.296, 0.2654, 0.3181, 0.3005, 0.3017, 0.2975, 0.2874, 0.2765, 0.2787, 0.2881, 0.2979, 0.2995, 0.287, 0.308, 0.2881, 0.2959, 0.2721, 0.304, 0.2918]
+2022-10-10 08:29:34 [INFO ]   
+2022-10-10 08:29:34 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 08:29:34 [INFO ]  Test Accuracy: 98.66%	Test Loss: 0.0422
+2022-10-10 08:29:35 [INFO ]   
+2022-10-10 08:29:35 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 08:29:35 [INFO ]  Test Accuracy: 29.18%	Test Loss: 3.3601
+2022-10-10 08:29:35 [INFO ]  CPU Time: 1.44 minutes
+2022-10-10 08:57:00 [INFO ]  ======================================== 2022-10-10 08:57:00 ========================================
+2022-10-10 08:57:00 [INFO ]  Base directory is ./results/forgetting/FASHION_MNIST/
+2022-10-10 08:57:00 [INFO ]  Options: 
+2022-10-10 08:57:00 [INFO ]  	base_dir: null
+2022-10-10 08:57:00 [INFO ]  	batch_size: 1024
+2022-10-10 08:57:00 [INFO ]  	checkpoint_interval: 300
+2022-10-10 08:57:00 [INFO ]  	dataset: FASHION_MNIST
+2022-10-10 08:57:00 [INFO ]  	dataset_labels:
+2022-10-10 08:57:00 [INFO ]  	- 0
+2022-10-10 08:57:00 [INFO ]  	- 1
+2022-10-10 08:57:00 [INFO ]  	- 2
+2022-10-10 08:57:00 [INFO ]  	- 3
+2022-10-10 08:57:00 [INFO ]  	- 4
+2022-10-10 08:57:00 [INFO ]  	- 5
+2022-10-10 08:57:00 [INFO ]  	- 6
+2022-10-10 08:57:00 [INFO ]  	- 7
+2022-10-10 08:57:00 [INFO ]  	- 8
+2022-10-10 08:57:00 [INFO ]  	- 9
+2022-10-10 08:57:00 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 08:57:00 [INFO ]  	- !!python/tuple
+2022-10-10 08:57:00 [INFO ]  	    - 0.2859
+2022-10-10 08:57:00 [INFO ]  	    - 0.2859
+2022-10-10 08:57:00 [INFO ]  	    - 0.2859
+2022-10-10 08:57:00 [INFO ]  	- !!python/tuple
+2022-10-10 08:57:00 [INFO ]  	    - 0.353
+2022-10-10 08:57:00 [INFO ]  	    - 0.353
+2022-10-10 08:57:00 [INFO ]  	    - 0.353
+2022-10-10 08:57:00 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-10-10 08:57:00 [INFO ]  	decay_epochs: 50
+2022-10-10 08:57:00 [INFO ]  	decay_factor: 0.1
+2022-10-10 08:57:00 [INFO ]  	device_id: 0
+2022-10-10 08:57:00 [INFO ]  	distill_epochs: 1
+2022-10-10 08:57:00 [INFO ]  	distill_lr: 0.02
+2022-10-10 08:57:00 [INFO ]  	distill_steps: 1
+2022-10-10 08:57:00 [INFO ]  	epochs: 50
+2022-10-10 08:57:00 [INFO ]  	expand_cls: false
+2022-10-10 08:57:00 [INFO ]  	forgetting_dataset: MNIST_RGB
+2022-10-10 08:57:00 [INFO ]  	init: xavier
+2022-10-10 08:57:00 [INFO ]  	init_param: 1.0
+2022-10-10 08:57:00 [INFO ]  	input_size: 32
+2022-10-10 08:57:00 [INFO ]  	ipc: 1
+2022-10-10 08:57:00 [INFO ]  	log_file: ./results/forgetting/FASHION_MNIST/log.txt
+2022-10-10 08:57:00 [INFO ]  	log_interval: 100
+2022-10-10 08:57:00 [INFO ]  	log_level: INFO
+2022-10-10 08:57:00 [INFO ]  	lr: 0.0002
+2022-10-10 08:57:00 [INFO ]  	mode: forgetting
+2022-10-10 08:57:00 [INFO ]  	nc: 3
+2022-10-10 08:57:00 [INFO ]  	num_classes: 10
+2022-10-10 08:57:00 [INFO ]  	num_workers: 8
+2022-10-10 08:57:00 [INFO ]  	phase: train
+2022-10-10 08:57:00 [INFO ]  	source_dataset: null
+2022-10-10 08:57:00 [INFO ]  	start_time: '2022-10-10 08:57:00'
+2022-10-10 08:57:00 [INFO ]  	test_batch_size: 1024
+2022-10-10 08:57:00 [INFO ]  	
+2022-10-10 08:57:00 [INFO ]  train dataset size:	60000
+2022-10-10 08:57:00 [INFO ]  test dataset size: 	10000
+2022-10-10 08:57:00 [INFO ]  datasets built!
+2022-10-10 08:57:00 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 08:57:03 [INFO ]   
+2022-10-10 08:57:03 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 08:57:03 [INFO ]  Test Accuracy: 9.51%	Test Loss: 8.5646
+2022-10-10 08:57:03 [INFO ]   
+2022-10-10 08:57:03 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 08:57:03 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-10 08:57:06 [INFO ]  Epoch:    0	Test Accuracy: 79.48%	Test Loss: 0.6360
+2022-10-10 08:57:07 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 66.48%	Test Loss: 0.9177
+2022-10-10 08:57:10 [INFO ]  Epoch:    1	Test Accuracy: 88.56%	Test Loss: 0.3718
+2022-10-10 08:57:11 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 61.17%	Test Loss: 1.1694
+2022-10-10 08:57:14 [INFO ]  Epoch:    2	Test Accuracy: 91.44%	Test Loss: 0.2827
+2022-10-10 08:57:15 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 55.92%	Test Loss: 1.3698
+2022-10-10 08:57:18 [INFO ]  Epoch:    3	Test Accuracy: 92.38%	Test Loss: 0.2445
+2022-10-10 08:57:19 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 52.44%	Test Loss: 1.5050
+2022-10-10 08:57:22 [INFO ]  Epoch:    4	Test Accuracy: 93.68%	Test Loss: 0.2017
+2022-10-10 08:57:23 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 48.76%	Test Loss: 1.5706
+2022-10-10 08:57:26 [INFO ]  Epoch:    5	Test Accuracy: 94.42%	Test Loss: 0.1773
+2022-10-10 08:57:27 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 44.46%	Test Loss: 1.7683
+2022-10-10 08:57:30 [INFO ]  Epoch:    6	Test Accuracy: 95.21%	Test Loss: 0.1570
+2022-10-10 08:57:31 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 42.61%	Test Loss: 1.8560
+2022-10-10 08:57:34 [INFO ]  Epoch:    7	Test Accuracy: 95.63%	Test Loss: 0.1415
+2022-10-10 08:57:35 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 39.57%	Test Loss: 1.9723
+2022-10-10 08:57:38 [INFO ]  Epoch:    8	Test Accuracy: 96.11%	Test Loss: 0.1276
+2022-10-10 08:57:39 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 39.16%	Test Loss: 1.9932
+2022-10-10 08:57:42 [INFO ]  Epoch:    9	Test Accuracy: 96.16%	Test Loss: 0.1218
+2022-10-10 08:57:43 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 37.37%	Test Loss: 2.1515
+2022-10-10 08:57:46 [INFO ]  Epoch:   10	Test Accuracy: 96.31%	Test Loss: 0.1251
+2022-10-10 08:57:46 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 36.81%	Test Loss: 2.1119
+2022-10-10 08:57:50 [INFO ]  Epoch:   11	Test Accuracy: 96.65%	Test Loss: 0.1100
+2022-10-10 08:57:50 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 36.53%	Test Loss: 2.2732
+2022-10-10 08:57:53 [INFO ]  Epoch:   12	Test Accuracy: 96.75%	Test Loss: 0.1039
+2022-10-10 08:57:54 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 34.34%	Test Loss: 2.3266
+2022-10-10 08:57:57 [INFO ]  Epoch:   13	Test Accuracy: 96.93%	Test Loss: 0.0958
+2022-10-10 08:57:58 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 32.43%	Test Loss: 2.4540
+2022-10-10 08:58:01 [INFO ]  Epoch:   14	Test Accuracy: 97.17%	Test Loss: 0.0912
+2022-10-10 08:58:02 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 34.14%	Test Loss: 2.3748
+2022-10-10 08:58:05 [INFO ]  Epoch:   15	Test Accuracy: 97.36%	Test Loss: 0.0839
+2022-10-10 08:58:06 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 32.73%	Test Loss: 2.4276
+2022-10-10 08:58:09 [INFO ]  Epoch:   16	Test Accuracy: 97.46%	Test Loss: 0.0814
+2022-10-10 08:58:10 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 32.61%	Test Loss: 2.4613
+2022-10-10 08:58:13 [INFO ]  Epoch:   17	Test Accuracy: 97.51%	Test Loss: 0.0780
+2022-10-10 08:58:14 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.51%	Test Loss: 2.6337
+2022-10-10 08:58:17 [INFO ]  Epoch:   18	Test Accuracy: 97.77%	Test Loss: 0.0769
+2022-10-10 08:58:18 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.57%	Test Loss: 2.7477
+2022-10-10 08:58:21 [INFO ]  Epoch:   19	Test Accuracy: 97.47%	Test Loss: 0.0777
+2022-10-10 08:58:22 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.85%	Test Loss: 2.8177
+2022-10-10 08:58:25 [INFO ]  Epoch:   20	Test Accuracy: 97.81%	Test Loss: 0.0699
+2022-10-10 08:58:26 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.76%	Test Loss: 2.7177
+2022-10-10 08:58:29 [INFO ]  Epoch:   21	Test Accuracy: 97.87%	Test Loss: 0.0709
+2022-10-10 08:58:30 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.44%	Test Loss: 2.9651
+2022-10-10 08:58:33 [INFO ]  Epoch:   22	Test Accuracy: 97.95%	Test Loss: 0.0655
+2022-10-10 08:58:34 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.49%	Test Loss: 2.6806
+2022-10-10 08:58:37 [INFO ]  Epoch:   23	Test Accuracy: 98.19%	Test Loss: 0.0621
+2022-10-10 08:58:38 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.81%	Test Loss: 2.9191
+2022-10-10 08:58:41 [INFO ]  Epoch:   24	Test Accuracy: 97.56%	Test Loss: 0.0777
+2022-10-10 08:58:42 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.11%	Test Loss: 2.8200
+2022-10-10 08:58:45 [INFO ]  Epoch:   25	Test Accuracy: 98.14%	Test Loss: 0.0615
+2022-10-10 08:58:46 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.40%	Test Loss: 3.0036
+2022-10-10 08:58:49 [INFO ]  Epoch:   26	Test Accuracy: 98.04%	Test Loss: 0.0648
+2022-10-10 08:58:50 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.60%	Test Loss: 2.9753
+2022-10-10 08:58:53 [INFO ]  Epoch:   27	Test Accuracy: 98.26%	Test Loss: 0.0580
+2022-10-10 08:58:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.73%	Test Loss: 2.8177
+2022-10-10 08:58:57 [INFO ]  Epoch:   28	Test Accuracy: 98.16%	Test Loss: 0.0593
+2022-10-10 08:58:58 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.92%	Test Loss: 3.0841
+2022-10-10 08:59:01 [INFO ]  Epoch:   29	Test Accuracy: 97.94%	Test Loss: 0.0652
+2022-10-10 08:59:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 25.96%	Test Loss: 3.1417
+2022-10-10 08:59:04 [INFO ]  Epoch:   30	Test Accuracy: 98.46%	Test Loss: 0.0534
+2022-10-10 08:59:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.22%	Test Loss: 2.9755
+2022-10-10 08:59:08 [INFO ]  Epoch:   31	Test Accuracy: 98.53%	Test Loss: 0.0498
+2022-10-10 08:59:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.16%	Test Loss: 3.0011
+2022-10-10 08:59:12 [INFO ]  Epoch:   32	Test Accuracy: 98.56%	Test Loss: 0.0489
+2022-10-10 08:59:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.98%	Test Loss: 3.2089
+2022-10-10 08:59:16 [INFO ]  Epoch:   33	Test Accuracy: 98.50%	Test Loss: 0.0497
+2022-10-10 08:59:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.32%	Test Loss: 3.2661
+2022-10-10 08:59:20 [INFO ]  Epoch:   34	Test Accuracy: 98.39%	Test Loss: 0.0531
+2022-10-10 08:59:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.69%	Test Loss: 3.1051
+2022-10-10 08:59:24 [INFO ]  Epoch:   35	Test Accuracy: 98.68%	Test Loss: 0.0467
+2022-10-10 08:59:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.18%	Test Loss: 3.1819
+2022-10-10 08:59:28 [INFO ]  Epoch:   36	Test Accuracy: 98.43%	Test Loss: 0.0487
+2022-10-10 08:59:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.00%	Test Loss: 3.0167
+2022-10-10 08:59:32 [INFO ]  Epoch:   37	Test Accuracy: 98.39%	Test Loss: 0.0514
+2022-10-10 08:59:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.29%	Test Loss: 3.3341
+2022-10-10 08:59:36 [INFO ]  Epoch:   38	Test Accuracy: 98.51%	Test Loss: 0.0480
+2022-10-10 08:59:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.60%	Test Loss: 3.2294
+2022-10-10 08:59:40 [INFO ]  Epoch:   39	Test Accuracy: 98.69%	Test Loss: 0.0434
+2022-10-10 08:59:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.91%	Test Loss: 3.3184
+2022-10-10 08:59:44 [INFO ]  Epoch:   40	Test Accuracy: 98.65%	Test Loss: 0.0435
+2022-10-10 08:59:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.69%	Test Loss: 3.3108
+2022-10-10 08:59:48 [INFO ]  Epoch:   41	Test Accuracy: 98.52%	Test Loss: 0.0462
+2022-10-10 08:59:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.72%	Test Loss: 3.1835
+2022-10-10 08:59:52 [INFO ]  Epoch:   42	Test Accuracy: 98.32%	Test Loss: 0.0498
+2022-10-10 08:59:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.98%	Test Loss: 3.1017
+2022-10-10 08:59:56 [INFO ]  Epoch:   43	Test Accuracy: 98.69%	Test Loss: 0.0424
+2022-10-10 08:59:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.77%	Test Loss: 3.4644
+2022-10-10 09:00:00 [INFO ]  Epoch:   44	Test Accuracy: 98.68%	Test Loss: 0.0430
+2022-10-10 09:00:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.79%	Test Loss: 3.3070
+2022-10-10 09:00:04 [INFO ]  Epoch:   45	Test Accuracy: 98.60%	Test Loss: 0.0453
+2022-10-10 09:00:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.99%	Test Loss: 3.7057
+2022-10-10 09:00:08 [INFO ]  Epoch:   46	Test Accuracy: 98.58%	Test Loss: 0.0468
+2022-10-10 09:00:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.94%	Test Loss: 3.2403
+2022-10-10 09:00:12 [INFO ]  Epoch:   47	Test Accuracy: 98.83%	Test Loss: 0.0395
+2022-10-10 09:00:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.71%	Test Loss: 3.5434
+2022-10-10 09:00:16 [INFO ]  Epoch:   48	Test Accuracy: 98.49%	Test Loss: 0.0465
+2022-10-10 09:00:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.50%	Test Loss: 3.8785
+2022-10-10 09:00:20 [INFO ]  Epoch:   49	Test Accuracy: 98.72%	Test Loss: 0.0425
+2022-10-10 09:00:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.04%	Test Loss: 3.5790
+2022-10-10 09:00:21 [INFO ]  List of accuracies: [0.7948, 0.8856, 0.9144, 0.9238, 0.9368, 0.9442, 0.9521, 0.9563, 0.9611, 0.9616, 0.9631, 0.9665, 0.9675, 0.9693, 0.9717, 0.9736, 0.9746, 0.9751, 0.9777, 0.9747, 0.9781, 0.9787, 0.9795, 0.9819, 0.9756, 0.9814, 0.9804, 0.9826, 0.9816, 0.9794, 0.9846, 0.9853, 0.9856, 0.985, 0.9839, 0.9868, 0.9843, 0.9839, 0.9851, 0.9869, 0.9865, 0.9852, 0.9832, 0.9869, 0.9868, 0.986, 0.9858, 0.9883, 0.9849, 0.9872]
+2022-10-10 09:00:21 [INFO ]  List of losses: [0.6359737731933593, 0.37179996032714846, 0.2827092224121094, 0.24453846893310546, 0.20168522796630858, 0.1773191375732422, 0.15697313690185546, 0.14147131729125978, 0.12759929122924804, 0.12177673416137695, 0.12510057067871094, 0.10997828674316407, 0.10392532958984375, 0.09575555953979492, 0.09116619415283203, 0.08387231254577637, 0.0813958969116211, 0.07801143379211425, 0.07689804840087891, 0.0777050048828125, 0.06993805274963379, 0.0709040184020996, 0.06550361404418946, 0.062077337646484376, 0.07767393798828125, 0.06148565902709961, 0.06484966049194336, 0.05804965591430664, 0.05934119262695312, 0.06516829795837402, 0.05343999633789062, 0.04983248252868652, 0.048856238555908205, 0.049668223571777345, 0.053086105918884276, 0.046716372871398924, 0.0486594482421875, 0.05142160301208496, 0.04801070251464844, 0.043420324325561525, 0.04352811279296875, 0.04621013069152832, 0.04975415382385254, 0.04244915084838867, 0.04295540237426758, 0.04525934066772461, 0.04680436859130859, 0.039523793411254886, 0.046461166381835936, 0.04246042137145996]
+2022-10-10 09:00:21 [INFO ]  List of source accuracies: [0.6648, 0.6117, 0.5592, 0.5244, 0.4876, 0.4446, 0.4261, 0.3957, 0.3916, 0.3737, 0.3681, 0.3653, 0.3434, 0.3243, 0.3414, 0.3273, 0.3261, 0.3051, 0.2957, 0.2885, 0.2976, 0.2844, 0.3049, 0.2881, 0.2911, 0.304, 0.316, 0.2973, 0.2892, 0.2596, 0.3022, 0.3016, 0.2898, 0.3032, 0.2969, 0.2918, 0.3, 0.3029, 0.316, 0.2991, 0.2869, 0.2872, 0.2898, 0.2877, 0.2879, 0.2799, 0.2894, 0.2871, 0.275, 0.2904]
+2022-10-10 09:00:22 [INFO ]   
+2022-10-10 09:00:22 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 09:00:22 [INFO ]  Test Accuracy: 98.72%	Test Loss: 0.0425
+2022-10-10 09:00:23 [INFO ]   
+2022-10-10 09:00:23 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 09:00:23 [INFO ]  Test Accuracy: 29.04%	Test Loss: 3.5790
+2022-10-10 09:00:23 [INFO ]  CPU Time: 1.43 minutes
+2022-10-10 09:29:36 [INFO ]  ======================================== 2022-10-10 09:29:36 ========================================
+2022-10-10 09:29:36 [INFO ]  Base directory is ./results/forgetting/FASHION_MNIST/
+2022-10-10 09:29:36 [INFO ]  Options: 
+2022-10-10 09:29:36 [INFO ]  	base_dir: null
+2022-10-10 09:29:36 [INFO ]  	batch_size: 1024
+2022-10-10 09:29:36 [INFO ]  	checkpoint_interval: 300
+2022-10-10 09:29:36 [INFO ]  	dataset: FASHION_MNIST
+2022-10-10 09:29:36 [INFO ]  	dataset_labels:
+2022-10-10 09:29:36 [INFO ]  	- 0
+2022-10-10 09:29:36 [INFO ]  	- 1
+2022-10-10 09:29:36 [INFO ]  	- 2
+2022-10-10 09:29:36 [INFO ]  	- 3
+2022-10-10 09:29:36 [INFO ]  	- 4
+2022-10-10 09:29:36 [INFO ]  	- 5
+2022-10-10 09:29:36 [INFO ]  	- 6
+2022-10-10 09:29:36 [INFO ]  	- 7
+2022-10-10 09:29:36 [INFO ]  	- 8
+2022-10-10 09:29:36 [INFO ]  	- 9
+2022-10-10 09:29:36 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 09:29:36 [INFO ]  	- !!python/tuple
+2022-10-10 09:29:36 [INFO ]  	    - 0.2859
+2022-10-10 09:29:36 [INFO ]  	    - 0.2859
+2022-10-10 09:29:36 [INFO ]  	    - 0.2859
+2022-10-10 09:29:36 [INFO ]  	- !!python/tuple
+2022-10-10 09:29:36 [INFO ]  	    - 0.353
+2022-10-10 09:29:36 [INFO ]  	    - 0.353
+2022-10-10 09:29:36 [INFO ]  	    - 0.353
+2022-10-10 09:29:36 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-10-10 09:29:36 [INFO ]  	decay_epochs: 50
+2022-10-10 09:29:36 [INFO ]  	decay_factor: 0.1
+2022-10-10 09:29:36 [INFO ]  	device_id: 0
+2022-10-10 09:29:36 [INFO ]  	distill_epochs: 1
+2022-10-10 09:29:36 [INFO ]  	distill_lr: 0.02
+2022-10-10 09:29:36 [INFO ]  	distill_steps: 1
+2022-10-10 09:29:36 [INFO ]  	epochs: 50
+2022-10-10 09:29:36 [INFO ]  	expand_cls: false
+2022-10-10 09:29:36 [INFO ]  	forgetting_dataset: MNIST_RGB
+2022-10-10 09:29:36 [INFO ]  	init: xavier
+2022-10-10 09:29:36 [INFO ]  	init_param: 1.0
+2022-10-10 09:29:36 [INFO ]  	input_size: 32
+2022-10-10 09:29:36 [INFO ]  	ipc: 1
+2022-10-10 09:29:36 [INFO ]  	log_file: ./results/forgetting/FASHION_MNIST/log.txt
+2022-10-10 09:29:36 [INFO ]  	log_interval: 100
+2022-10-10 09:29:36 [INFO ]  	log_level: INFO
+2022-10-10 09:29:36 [INFO ]  	lr: 0.0002
+2022-10-10 09:29:36 [INFO ]  	mode: forgetting
+2022-10-10 09:29:36 [INFO ]  	nc: 3
+2022-10-10 09:29:36 [INFO ]  	num_classes: 10
+2022-10-10 09:29:36 [INFO ]  	num_workers: 8
+2022-10-10 09:29:36 [INFO ]  	phase: train
+2022-10-10 09:29:36 [INFO ]  	source_dataset: null
+2022-10-10 09:29:36 [INFO ]  	start_time: '2022-10-10 09:29:36'
+2022-10-10 09:29:36 [INFO ]  	test_batch_size: 1024
+2022-10-10 09:29:36 [INFO ]  	
+2022-10-10 09:29:36 [INFO ]  train dataset size:	60000
+2022-10-10 09:29:36 [INFO ]  test dataset size: 	10000
+2022-10-10 09:29:36 [INFO ]  datasets built!
+2022-10-10 09:29:36 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 09:29:38 [INFO ]   
+2022-10-10 09:29:38 [INFO ]  MNIST_RGB: Evaluation BEFORE forgetting:
+2022-10-10 09:29:38 [INFO ]  Test Accuracy: 9.51%	Test Loss: 8.5646
+2022-10-10 09:29:39 [INFO ]   
+2022-10-10 09:29:39 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 09:29:39 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-10 09:29:42 [INFO ]  Epoch:    0	Test Accuracy: 78.43%	Test Loss: 0.6623
+2022-10-10 09:29:43 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 66.17%	Test Loss: 0.9357
+2022-10-10 09:29:46 [INFO ]  Epoch:    1	Test Accuracy: 88.61%	Test Loss: 0.3771
+2022-10-10 09:29:47 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 60.08%	Test Loss: 1.2054
+2022-10-10 09:29:50 [INFO ]  Epoch:    2	Test Accuracy: 91.37%	Test Loss: 0.2823
+2022-10-10 09:29:51 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 56.52%	Test Loss: 1.3374
+2022-10-10 09:29:54 [INFO ]  Epoch:    3	Test Accuracy: 92.42%	Test Loss: 0.2459
+2022-10-10 09:29:55 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 48.87%	Test Loss: 1.5655
+2022-10-10 09:29:58 [INFO ]  Epoch:    4	Test Accuracy: 93.93%	Test Loss: 0.1988
+2022-10-10 09:29:58 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 47.26%	Test Loss: 1.6001
+2022-10-10 09:30:01 [INFO ]  Epoch:    5	Test Accuracy: 94.40%	Test Loss: 0.1794
+2022-10-10 09:30:02 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 43.38%	Test Loss: 1.7838
+2022-10-10 09:30:05 [INFO ]  Epoch:    6	Test Accuracy: 94.96%	Test Loss: 0.1624
+2022-10-10 09:30:06 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 40.02%	Test Loss: 1.9278
+2022-10-10 09:30:09 [INFO ]  Epoch:    7	Test Accuracy: 95.67%	Test Loss: 0.1417
+2022-10-10 09:30:10 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 37.38%	Test Loss: 2.1035
+2022-10-10 09:30:14 [INFO ]  Epoch:    8	Test Accuracy: 95.99%	Test Loss: 0.1328
+2022-10-10 09:30:14 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 37.15%	Test Loss: 2.0746
+2022-10-10 09:30:18 [INFO ]  Epoch:    9	Test Accuracy: 96.08%	Test Loss: 0.1244
+2022-10-10 09:30:18 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 35.91%	Test Loss: 2.1523
+2022-10-10 09:30:22 [INFO ]  Epoch:   10	Test Accuracy: 95.96%	Test Loss: 0.1279
+2022-10-10 09:30:22 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 34.18%	Test Loss: 2.3018
+2022-10-10 09:30:25 [INFO ]  Epoch:   11	Test Accuracy: 96.43%	Test Loss: 0.1148
+2022-10-10 09:30:26 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 33.45%	Test Loss: 2.4697
+2022-10-10 09:30:30 [INFO ]  Epoch:   12	Test Accuracy: 96.90%	Test Loss: 0.0984
+2022-10-10 09:30:30 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 33.70%	Test Loss: 2.3728
+2022-10-10 09:30:34 [INFO ]  Epoch:   13	Test Accuracy: 96.96%	Test Loss: 0.0969
+2022-10-10 09:30:34 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 34.30%	Test Loss: 2.4036
+2022-10-10 09:30:38 [INFO ]  Epoch:   14	Test Accuracy: 97.28%	Test Loss: 0.0905
+2022-10-10 09:30:38 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.07%	Test Loss: 2.6381
+2022-10-10 09:30:42 [INFO ]  Epoch:   15	Test Accuracy: 97.40%	Test Loss: 0.0874
+2022-10-10 09:30:42 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.39%	Test Loss: 2.7415
+2022-10-10 09:30:45 [INFO ]  Epoch:   16	Test Accuracy: 97.54%	Test Loss: 0.0802
+2022-10-10 09:30:46 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.84%	Test Loss: 2.7711
+2022-10-10 09:30:49 [INFO ]  Epoch:   17	Test Accuracy: 97.60%	Test Loss: 0.0771
+2022-10-10 09:30:50 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.95%	Test Loss: 2.6959
+2022-10-10 09:30:53 [INFO ]  Epoch:   18	Test Accuracy: 97.55%	Test Loss: 0.0782
+2022-10-10 09:30:54 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.96%	Test Loss: 2.7644
+2022-10-10 09:30:57 [INFO ]  Epoch:   19	Test Accuracy: 97.64%	Test Loss: 0.0773
+2022-10-10 09:30:58 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.55%	Test Loss: 2.8941
+2022-10-10 09:31:01 [INFO ]  Epoch:   20	Test Accuracy: 97.73%	Test Loss: 0.0744
+2022-10-10 09:31:02 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.69%	Test Loss: 2.9579
+2022-10-10 09:31:05 [INFO ]  Epoch:   21	Test Accuracy: 97.72%	Test Loss: 0.0738
+2022-10-10 09:31:06 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.40%	Test Loss: 2.9909
+2022-10-10 09:31:09 [INFO ]  Epoch:   22	Test Accuracy: 98.08%	Test Loss: 0.0651
+2022-10-10 09:31:10 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.93%	Test Loss: 2.9869
+2022-10-10 09:31:13 [INFO ]  Epoch:   23	Test Accuracy: 97.87%	Test Loss: 0.0672
+2022-10-10 09:31:14 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.72%	Test Loss: 2.9139
+2022-10-10 09:31:17 [INFO ]  Epoch:   24	Test Accuracy: 98.15%	Test Loss: 0.0604
+2022-10-10 09:31:18 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.71%	Test Loss: 2.9771
+2022-10-10 09:31:21 [INFO ]  Epoch:   25	Test Accuracy: 98.13%	Test Loss: 0.0622
+2022-10-10 09:31:22 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.80%	Test Loss: 3.0349
+2022-10-10 09:31:25 [INFO ]  Epoch:   26	Test Accuracy: 97.82%	Test Loss: 0.0687
+2022-10-10 09:31:26 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.64%	Test Loss: 3.1634
+2022-10-10 09:31:29 [INFO ]  Epoch:   27	Test Accuracy: 98.15%	Test Loss: 0.0590
+2022-10-10 09:31:30 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.52%	Test Loss: 3.0722
+2022-10-10 09:31:33 [INFO ]  Epoch:   28	Test Accuracy: 98.28%	Test Loss: 0.0583
+2022-10-10 09:31:34 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.79%	Test Loss: 3.2101
+2022-10-10 09:31:37 [INFO ]  Epoch:   29	Test Accuracy: 98.28%	Test Loss: 0.0549
+2022-10-10 09:31:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.84%	Test Loss: 3.0078
+2022-10-10 09:31:41 [INFO ]  Epoch:   30	Test Accuracy: 98.46%	Test Loss: 0.0537
+2022-10-10 09:31:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.41%	Test Loss: 3.1608
+2022-10-10 09:31:44 [INFO ]  Epoch:   31	Test Accuracy: 98.30%	Test Loss: 0.0556
+2022-10-10 09:31:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.59%	Test Loss: 3.1707
+2022-10-10 09:31:48 [INFO ]  Epoch:   32	Test Accuracy: 98.23%	Test Loss: 0.0557
+2022-10-10 09:31:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.89%	Test Loss: 3.1023
+2022-10-10 09:31:52 [INFO ]  Epoch:   33	Test Accuracy: 98.30%	Test Loss: 0.0523
+2022-10-10 09:31:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.63%	Test Loss: 3.1815
+2022-10-10 09:31:56 [INFO ]  Epoch:   34	Test Accuracy: 98.45%	Test Loss: 0.0494
+2022-10-10 09:31:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.46%	Test Loss: 3.2617
+2022-10-10 09:32:00 [INFO ]  Epoch:   35	Test Accuracy: 98.64%	Test Loss: 0.0468
+2022-10-10 09:32:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.40%	Test Loss: 3.2909
+2022-10-10 09:32:04 [INFO ]  Epoch:   36	Test Accuracy: 98.15%	Test Loss: 0.0561
+2022-10-10 09:32:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.24%	Test Loss: 3.1334
+2022-10-10 09:32:08 [INFO ]  Epoch:   37	Test Accuracy: 98.47%	Test Loss: 0.0486
+2022-10-10 09:32:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.84%	Test Loss: 3.2534
+2022-10-10 09:32:12 [INFO ]  Epoch:   38	Test Accuracy: 98.46%	Test Loss: 0.0485
+2022-10-10 09:32:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.09%	Test Loss: 3.3368
+2022-10-10 09:32:16 [INFO ]  Epoch:   39	Test Accuracy: 98.30%	Test Loss: 0.0546
+2022-10-10 09:32:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.03%	Test Loss: 3.4822
+2022-10-10 09:32:20 [INFO ]  Epoch:   40	Test Accuracy: 98.42%	Test Loss: 0.0496
+2022-10-10 09:32:20 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.47%	Test Loss: 3.4075
+2022-10-10 09:32:24 [INFO ]  Epoch:   41	Test Accuracy: 98.39%	Test Loss: 0.0507
+2022-10-10 09:32:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.91%	Test Loss: 3.5306
+2022-10-10 09:32:28 [INFO ]  Epoch:   42	Test Accuracy: 98.30%	Test Loss: 0.0502
+2022-10-10 09:32:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.93%	Test Loss: 3.2403
+2022-10-10 09:32:32 [INFO ]  Epoch:   43	Test Accuracy: 98.58%	Test Loss: 0.0443
+2022-10-10 09:32:32 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.53%	Test Loss: 3.4577
+2022-10-10 09:32:35 [INFO ]  Epoch:   44	Test Accuracy: 98.67%	Test Loss: 0.0423
+2022-10-10 09:32:36 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.79%	Test Loss: 3.5490
+2022-10-10 09:32:39 [INFO ]  Epoch:   45	Test Accuracy: 98.45%	Test Loss: 0.0488
+2022-10-10 09:32:40 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 25.92%	Test Loss: 3.3947
+2022-10-10 09:32:43 [INFO ]  Epoch:   46	Test Accuracy: 98.38%	Test Loss: 0.0522
+2022-10-10 09:32:44 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.06%	Test Loss: 3.6934
+2022-10-10 09:32:47 [INFO ]  Epoch:   47	Test Accuracy: 98.61%	Test Loss: 0.0432
+2022-10-10 09:32:48 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.39%	Test Loss: 3.3571
+2022-10-10 09:32:51 [INFO ]  Epoch:   48	Test Accuracy: 98.65%	Test Loss: 0.0433
+2022-10-10 09:32:52 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 29.01%	Test Loss: 3.6421
+2022-10-10 09:32:55 [INFO ]  Epoch:   49	Test Accuracy: 98.66%	Test Loss: 0.0417
+2022-10-10 09:32:56 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.26%	Test Loss: 3.5145
+2022-10-10 09:32:56 [INFO ]  List of accuracies: [0.7843, 0.8861, 0.9137, 0.9242, 0.9393, 0.944, 0.9496, 0.9567, 0.9599, 0.9608, 0.9596, 0.9643, 0.969, 0.9696, 0.9728, 0.974, 0.9754, 0.976, 0.9755, 0.9764, 0.9773, 0.9772, 0.9808, 0.9787, 0.9815, 0.9813, 0.9782, 0.9815, 0.9828, 0.9828, 0.9846, 0.983, 0.9823, 0.983, 0.9845, 0.9864, 0.9815, 0.9847, 0.9846, 0.983, 0.9842, 0.9839, 0.983, 0.9858, 0.9867, 0.9845, 0.9838, 0.9861, 0.9865, 0.9866]
+2022-10-10 09:32:56 [INFO ]  List of losses: [0.6622943756103515, 0.37714263305664064, 0.28232160339355467, 0.2458654006958008, 0.19879488372802734, 0.17944447174072264, 0.1623564666748047, 0.14165577926635742, 0.13279212036132812, 0.12438571395874023, 0.12789348754882812, 0.11478130187988281, 0.09840418090820313, 0.0968662239074707, 0.09049705429077148, 0.0873516284942627, 0.08016272430419921, 0.0770649917602539, 0.07821287612915039, 0.07729744911193848, 0.07443084678649903, 0.07380727500915528, 0.065127783203125, 0.06715156593322753, 0.0603999942779541, 0.06224242286682129, 0.06871249122619628, 0.058987520980834963, 0.0583260684967041, 0.05490271453857422, 0.05368513469696045, 0.05563820457458496, 0.05568736686706543, 0.052268076705932615, 0.04944479064941406, 0.046838522911071774, 0.05613845100402832, 0.048597632217407226, 0.04847930068969727, 0.05462414436340332, 0.049621434402465824, 0.05074483337402344, 0.05015543251037598, 0.04429657726287842, 0.04232987804412842, 0.04878549671173096, 0.05217569313049317, 0.04322173595428467, 0.043332233047485354, 0.04171232433319092]
+2022-10-10 09:32:56 [INFO ]  List of source accuracies: [0.6617, 0.6008, 0.5652, 0.4887, 0.4726, 0.4338, 0.4002, 0.3738, 0.3715, 0.3591, 0.3418, 0.3345, 0.337, 0.343, 0.3107, 0.2939, 0.2884, 0.2995, 0.2896, 0.2855, 0.2869, 0.284, 0.2893, 0.2972, 0.2871, 0.298, 0.2764, 0.2752, 0.2779, 0.2984, 0.2841, 0.2659, 0.2689, 0.2963, 0.2946, 0.274, 0.2924, 0.2784, 0.2809, 0.2803, 0.2747, 0.2691, 0.2893, 0.2853, 0.2779, 0.2592, 0.2606, 0.2739, 0.2901, 0.2726]
+2022-10-10 09:32:57 [INFO ]   
+2022-10-10 09:32:57 [INFO ]  MNIST_RGB: Evaluation AFTER forgetting:
+2022-10-10 09:32:57 [INFO ]  Test Accuracy: 98.66%	Test Loss: 0.0417
+2022-10-10 09:32:57 [INFO ]   
+2022-10-10 09:32:57 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 09:32:57 [INFO ]  Test Accuracy: 27.26%	Test Loss: 3.5145
+2022-10-10 09:32:57 [INFO ]  CPU Time: 1.43 minutes
+2022-10-10 09:35:42 [INFO ]  ======================================== 2022-10-10 09:35:42 ========================================
+2022-10-10 09:35:42 [INFO ]  Base directory is ./results/forgetting/FASHION_MNIST/
+2022-10-10 09:35:42 [INFO ]  Options: 
+2022-10-10 09:35:42 [INFO ]  	base_dir: null
+2022-10-10 09:35:42 [INFO ]  	batch_size: 1024
+2022-10-10 09:35:42 [INFO ]  	checkpoint_interval: 300
+2022-10-10 09:35:42 [INFO ]  	dataset: FASHION_MNIST
+2022-10-10 09:35:42 [INFO ]  	dataset_labels:
+2022-10-10 09:35:42 [INFO ]  	- 0
+2022-10-10 09:35:42 [INFO ]  	- 1
+2022-10-10 09:35:42 [INFO ]  	- 2
+2022-10-10 09:35:42 [INFO ]  	- 3
+2022-10-10 09:35:42 [INFO ]  	- 4
+2022-10-10 09:35:42 [INFO ]  	- 5
+2022-10-10 09:35:42 [INFO ]  	- 6
+2022-10-10 09:35:42 [INFO ]  	- 7
+2022-10-10 09:35:42 [INFO ]  	- 8
+2022-10-10 09:35:42 [INFO ]  	- 9
+2022-10-10 09:35:42 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 09:35:42 [INFO ]  	- !!python/tuple
+2022-10-10 09:35:42 [INFO ]  	    - 0.2859
+2022-10-10 09:35:42 [INFO ]  	    - 0.2859
+2022-10-10 09:35:42 [INFO ]  	    - 0.2859
+2022-10-10 09:35:42 [INFO ]  	- !!python/tuple
+2022-10-10 09:35:42 [INFO ]  	    - 0.353
+2022-10-10 09:35:42 [INFO ]  	    - 0.353
+2022-10-10 09:35:42 [INFO ]  	    - 0.353
+2022-10-10 09:35:42 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-10-10 09:35:42 [INFO ]  	decay_epochs: 50
+2022-10-10 09:35:42 [INFO ]  	decay_factor: 0.1
+2022-10-10 09:35:42 [INFO ]  	device_id: 0
+2022-10-10 09:35:42 [INFO ]  	distill_epochs: 1
+2022-10-10 09:35:42 [INFO ]  	distill_lr: 0.02
+2022-10-10 09:35:42 [INFO ]  	distill_steps: 1
+2022-10-10 09:35:42 [INFO ]  	epochs: 50
+2022-10-10 09:35:42 [INFO ]  	expand_cls: false
+2022-10-10 09:35:42 [INFO ]  	forgetting_dataset: SVHN
+2022-10-10 09:35:42 [INFO ]  	init: xavier
+2022-10-10 09:35:42 [INFO ]  	init_param: 1.0
+2022-10-10 09:35:42 [INFO ]  	input_size: 32
+2022-10-10 09:35:42 [INFO ]  	ipc: 1
+2022-10-10 09:35:42 [INFO ]  	log_file: ./results/forgetting/FASHION_MNIST/log.txt
+2022-10-10 09:35:42 [INFO ]  	log_interval: 100
+2022-10-10 09:35:42 [INFO ]  	log_level: INFO
+2022-10-10 09:35:42 [INFO ]  	lr: 0.0002
+2022-10-10 09:35:42 [INFO ]  	mode: forgetting
+2022-10-10 09:35:42 [INFO ]  	nc: 3
+2022-10-10 09:35:42 [INFO ]  	num_classes: 10
+2022-10-10 09:35:42 [INFO ]  	num_workers: 8
+2022-10-10 09:35:42 [INFO ]  	phase: train
+2022-10-10 09:35:42 [INFO ]  	source_dataset: null
+2022-10-10 09:35:42 [INFO ]  	start_time: '2022-10-10 09:35:42'
+2022-10-10 09:35:42 [INFO ]  	test_batch_size: 1024
+2022-10-10 09:35:42 [INFO ]  	
+2022-10-10 09:35:44 [INFO ]  train dataset size:	60000
+2022-10-10 09:35:44 [INFO ]  test dataset size: 	10000
+2022-10-10 09:35:44 [INFO ]  datasets built!
+2022-10-10 09:35:44 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 09:35:46 [INFO ]   
+2022-10-10 09:35:46 [INFO ]  SVHN: Evaluation BEFORE forgetting:
+2022-10-10 09:35:46 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-10 09:35:47 [INFO ]   
+2022-10-10 09:35:47 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 09:35:47 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-10 09:35:50 [INFO ]  Epoch:    0	Test Accuracy: 33.92%	Test Loss: 1.9894
+2022-10-10 09:35:51 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 65.29%	Test Loss: 0.9729
+2022-10-10 09:35:54 [INFO ]  Epoch:    1	Test Accuracy: 50.93%	Test Loss: 1.5799
+2022-10-10 09:35:55 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 49.21%	Test Loss: 1.6545
+2022-10-10 09:35:58 [INFO ]  Epoch:    2	Test Accuracy: 60.94%	Test Loss: 1.3049
+2022-10-10 09:35:59 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 37.35%	Test Loss: 2.3219
+2022-10-10 09:36:02 [INFO ]  Epoch:    3	Test Accuracy: 65.69%	Test Loss: 1.1698
+2022-10-10 09:36:03 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.56%	Test Loss: 2.7981
+2022-10-10 09:36:06 [INFO ]  Epoch:    4	Test Accuracy: 69.53%	Test Loss: 1.0431
+2022-10-10 09:36:07 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.90%	Test Loss: 3.1562
+2022-10-10 09:36:10 [INFO ]  Epoch:    5	Test Accuracy: 72.49%	Test Loss: 0.9614
+2022-10-10 09:36:11 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.19%	Test Loss: 3.3976
+2022-10-10 09:36:13 [INFO ]  Epoch:    6	Test Accuracy: 74.36%	Test Loss: 0.9021
+2022-10-10 09:36:14 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.02%	Test Loss: 3.6609
+2022-10-10 09:36:17 [INFO ]  Epoch:    7	Test Accuracy: 76.38%	Test Loss: 0.8459
+2022-10-10 09:36:18 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 23.48%	Test Loss: 3.8707
+2022-10-10 09:36:21 [INFO ]  Epoch:    8	Test Accuracy: 77.04%	Test Loss: 0.8375
+2022-10-10 09:36:22 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.05%	Test Loss: 3.8046
+2022-10-10 09:36:25 [INFO ]  Epoch:    9	Test Accuracy: 78.13%	Test Loss: 0.7866
+2022-10-10 09:36:26 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.70%	Test Loss: 4.0664
+2022-10-10 09:36:29 [INFO ]  Epoch:   10	Test Accuracy: 79.38%	Test Loss: 0.7621
+2022-10-10 09:36:30 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.61%	Test Loss: 3.9854
+2022-10-10 09:36:33 [INFO ]  Epoch:   11	Test Accuracy: 79.68%	Test Loss: 0.7503
+2022-10-10 09:36:34 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.01%	Test Loss: 3.9829
+2022-10-10 09:36:36 [INFO ]  Epoch:   12	Test Accuracy: 80.18%	Test Loss: 0.7329
+2022-10-10 09:36:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 23.13%	Test Loss: 4.0587
+2022-10-10 09:36:40 [INFO ]  Epoch:   13	Test Accuracy: 80.87%	Test Loss: 0.7123
+2022-10-10 09:36:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.27%	Test Loss: 3.9843
+2022-10-10 09:36:44 [INFO ]  Epoch:   14	Test Accuracy: 81.08%	Test Loss: 0.7062
+2022-10-10 09:36:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.10%	Test Loss: 4.1103
+2022-10-10 09:36:48 [INFO ]  Epoch:   15	Test Accuracy: 81.73%	Test Loss: 0.6853
+2022-10-10 09:36:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.75%	Test Loss: 4.2002
+2022-10-10 09:36:52 [INFO ]  Epoch:   16	Test Accuracy: 81.96%	Test Loss: 0.6792
+2022-10-10 09:36:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.86%	Test Loss: 4.1607
+2022-10-10 09:36:56 [INFO ]  Epoch:   17	Test Accuracy: 82.50%	Test Loss: 0.6603
+2022-10-10 09:36:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.98%	Test Loss: 4.0709
+2022-10-10 09:37:00 [INFO ]  Epoch:   18	Test Accuracy: 82.87%	Test Loss: 0.6523
+2022-10-10 09:37:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.86%	Test Loss: 4.0776
+2022-10-10 09:37:04 [INFO ]  Epoch:   19	Test Accuracy: 83.06%	Test Loss: 0.6415
+2022-10-10 09:37:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.50%	Test Loss: 4.0310
+2022-10-10 09:37:08 [INFO ]  Epoch:   20	Test Accuracy: 82.99%	Test Loss: 0.6384
+2022-10-10 09:37:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.59%	Test Loss: 4.2025
+2022-10-10 09:37:12 [INFO ]  Epoch:   21	Test Accuracy: 83.65%	Test Loss: 0.6193
+2022-10-10 09:37:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.94%	Test Loss: 4.1633
+2022-10-10 09:37:16 [INFO ]  Epoch:   22	Test Accuracy: 84.07%	Test Loss: 0.6133
+2022-10-10 09:37:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.19%	Test Loss: 4.1092
+2022-10-10 09:37:20 [INFO ]  Epoch:   23	Test Accuracy: 84.12%	Test Loss: 0.6083
+2022-10-10 09:37:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.04%	Test Loss: 4.2409
+2022-10-10 09:37:24 [INFO ]  Epoch:   24	Test Accuracy: 83.79%	Test Loss: 0.6193
+2022-10-10 09:37:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.82%	Test Loss: 4.2266
+2022-10-10 09:37:28 [INFO ]  Epoch:   25	Test Accuracy: 84.62%	Test Loss: 0.5917
+2022-10-10 09:37:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.29%	Test Loss: 4.3160
+2022-10-10 09:37:32 [INFO ]  Epoch:   26	Test Accuracy: 84.58%	Test Loss: 0.5878
+2022-10-10 09:37:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.01%	Test Loss: 4.3331
+2022-10-10 09:37:35 [INFO ]  Epoch:   27	Test Accuracy: 84.81%	Test Loss: 0.5835
+2022-10-10 09:37:36 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.25%	Test Loss: 4.3858
+2022-10-10 09:37:39 [INFO ]  Epoch:   28	Test Accuracy: 84.30%	Test Loss: 0.5930
+2022-10-10 09:37:40 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.37%	Test Loss: 4.3276
+2022-10-10 09:37:43 [INFO ]  Epoch:   29	Test Accuracy: 85.10%	Test Loss: 0.5707
+2022-10-10 09:37:44 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.78%	Test Loss: 4.4671
+2022-10-10 09:37:47 [INFO ]  Epoch:   30	Test Accuracy: 84.88%	Test Loss: 0.5821
+2022-10-10 09:37:48 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.61%	Test Loss: 4.3596
+2022-10-10 09:37:51 [INFO ]  Epoch:   31	Test Accuracy: 85.38%	Test Loss: 0.5686
+2022-10-10 09:37:52 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.23%	Test Loss: 4.3496
+2022-10-10 09:37:55 [INFO ]  Epoch:   32	Test Accuracy: 85.52%	Test Loss: 0.5617
+2022-10-10 09:37:56 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.31%	Test Loss: 4.4144
+2022-10-10 09:37:59 [INFO ]  Epoch:   33	Test Accuracy: 85.11%	Test Loss: 0.5661
+2022-10-10 09:38:00 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.29%	Test Loss: 4.5533
+2022-10-10 09:38:03 [INFO ]  Epoch:   34	Test Accuracy: 85.60%	Test Loss: 0.5601
+2022-10-10 09:38:04 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.86%	Test Loss: 4.4620
+2022-10-10 09:38:07 [INFO ]  Epoch:   35	Test Accuracy: 85.28%	Test Loss: 0.5649
+2022-10-10 09:38:08 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.56%	Test Loss: 4.3920
+2022-10-10 09:38:11 [INFO ]  Epoch:   36	Test Accuracy: 85.63%	Test Loss: 0.5546
+2022-10-10 09:38:12 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.70%	Test Loss: 4.6402
+2022-10-10 09:38:15 [INFO ]  Epoch:   37	Test Accuracy: 85.95%	Test Loss: 0.5419
+2022-10-10 09:38:16 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.78%	Test Loss: 4.5309
+2022-10-10 09:38:19 [INFO ]  Epoch:   38	Test Accuracy: 85.32%	Test Loss: 0.5663
+2022-10-10 09:38:20 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.99%	Test Loss: 4.5087
+2022-10-10 09:38:23 [INFO ]  Epoch:   39	Test Accuracy: 85.67%	Test Loss: 0.5467
+2022-10-10 09:38:24 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.58%	Test Loss: 4.7980
+2022-10-10 09:38:26 [INFO ]  Epoch:   40	Test Accuracy: 85.82%	Test Loss: 0.5425
+2022-10-10 09:38:27 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.66%	Test Loss: 4.4904
+2022-10-10 09:38:30 [INFO ]  Epoch:   41	Test Accuracy: 85.68%	Test Loss: 0.5536
+2022-10-10 09:38:31 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.03%	Test Loss: 4.4961
+2022-10-10 09:38:35 [INFO ]  Epoch:   42	Test Accuracy: 85.31%	Test Loss: 0.5543
+2022-10-10 09:38:35 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.23%	Test Loss: 4.7538
+2022-10-10 09:38:38 [INFO ]  Epoch:   43	Test Accuracy: 86.33%	Test Loss: 0.5258
+2022-10-10 09:38:39 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.66%	Test Loss: 4.6493
+2022-10-10 09:38:42 [INFO ]  Epoch:   44	Test Accuracy: 86.41%	Test Loss: 0.5230
+2022-10-10 09:38:43 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.88%	Test Loss: 4.6801
+2022-10-10 09:38:46 [INFO ]  Epoch:   45	Test Accuracy: 86.29%	Test Loss: 0.5224
+2022-10-10 09:38:47 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.47%	Test Loss: 4.8114
+2022-10-10 09:38:50 [INFO ]  Epoch:   46	Test Accuracy: 86.41%	Test Loss: 0.5249
+2022-10-10 09:38:51 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.42%	Test Loss: 4.8346
+2022-10-10 09:38:54 [INFO ]  Epoch:   47	Test Accuracy: 86.70%	Test Loss: 0.5170
+2022-10-10 09:38:55 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.52%	Test Loss: 4.8073
+2022-10-10 09:38:58 [INFO ]  Epoch:   48	Test Accuracy: 86.40%	Test Loss: 0.5237
+2022-10-10 09:38:59 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.93%	Test Loss: 4.8903
+2022-10-10 09:39:02 [INFO ]  Epoch:   49	Test Accuracy: 86.66%	Test Loss: 0.5180
+2022-10-10 09:39:03 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.11%	Test Loss: 4.6874
+2022-10-10 09:39:03 [INFO ]  List of accuracies: [0.339159496004917, 0.5092962507682852, 0.6093653964351567, 0.6569222495390289, 0.6952980946527351, 0.7249154886293793, 0.7435848186846957, 0.7638291333743086, 0.7704363859864782, 0.7813460356484327, 0.7938306699446834, 0.7968269821757836, 0.801820835894284, 0.808658574062692, 0.8108097725875845, 0.8172633681622619, 0.8196450522433928, 0.8249846342962508, 0.8286724031960664, 0.8305547019053473, 0.829940073755378, 0.8365473263675476, 0.8406960663798402, 0.8412338660110633, 0.8378918254456054, 0.8462277197295636, 0.8458435771358328, 0.8481484326982176, 0.843000921942225, 0.8509910878918254, 0.8487630608481869, 0.8537569145666871, 0.8552166564228642, 0.8511063306699447, 0.8559849416103258, 0.8528349723417332, 0.8562538414259373, 0.859519053472649, 0.8532191149354641, 0.8566763982790412, 0.8581745543945912, 0.8567532267977873, 0.8530654578979717, 0.8633220651505839, 0.8640519360786724, 0.862861094038107, 0.8640519360786724, 0.8670482483097726, 0.8640135218192994, 0.8665872771972957]
+2022-10-10 09:39:03 [INFO ]  List of losses: [1.9894445357179085, 1.5798800069273213, 1.304898154757546, 1.1697683422273848, 1.0430824465010162, 0.9614058074294678, 0.9021396332162248, 0.8459419538876581, 0.8374916456488649, 0.7865762950894872, 0.7621250492557837, 0.7503113245480473, 0.7328788086762806, 0.7122992472774644, 0.7061991723827885, 0.6853450887688259, 0.6791654368742303, 0.6603187063975647, 0.6522519616312825, 0.6415411721143388, 0.6383753309384693, 0.6193239344507181, 0.6132604754916275, 0.6082873511475585, 0.6192997731382889, 0.5917117336298984, 0.5877694315755009, 0.5835376075974402, 0.5929675204811026, 0.5706636912997105, 0.5820963513140452, 0.5685590018358565, 0.5616826536322783, 0.5660993462335719, 0.5600568985895065, 0.5649152514241411, 0.554644347262954, 0.5418862176952585, 0.5663392196495839, 0.5467281353275836, 0.5425396141422696, 0.5535959022207794, 0.5542567299419044, 0.5257961294294943, 0.5230132139894079, 0.5223825427748781, 0.5249157526336276, 0.517008052256185, 0.5236782473732374, 0.5179519876059243]
+2022-10-10 09:39:03 [INFO ]  List of source accuracies: [0.6529, 0.4921, 0.3735, 0.3156, 0.279, 0.2619, 0.2202, 0.2348, 0.2205, 0.217, 0.2261, 0.2101, 0.2313, 0.2127, 0.201, 0.2075, 0.2086, 0.2198, 0.2186, 0.215, 0.1959, 0.2094, 0.2119, 0.2104, 0.1982, 0.1929, 0.2001, 0.2025, 0.1937, 0.1878, 0.1861, 0.1923, 0.1831, 0.1729, 0.1686, 0.1756, 0.177, 0.1778, 0.1899, 0.1558, 0.1866, 0.1803, 0.1623, 0.1666, 0.1688, 0.1647, 0.1542, 0.1552, 0.1593, 0.1611]
+2022-10-10 09:39:04 [INFO ]   
+2022-10-10 09:39:04 [INFO ]  SVHN: Evaluation AFTER forgetting:
+2022-10-10 09:39:04 [INFO ]  Test Accuracy: 86.66%	Test Loss: 0.5180
+2022-10-10 09:39:05 [INFO ]   
+2022-10-10 09:39:05 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 09:39:05 [INFO ]  Test Accuracy: 16.11%	Test Loss: 4.6874
+2022-10-10 09:39:05 [INFO ]  CPU Time: 1.68 minutes
+2022-10-10 09:40:25 [INFO ]  ======================================== 2022-10-10 09:40:25 ========================================
+2022-10-10 09:40:25 [INFO ]  Base directory is ./results/forgetting/FASHION_MNIST/
+2022-10-10 09:40:25 [INFO ]  Options: 
+2022-10-10 09:40:25 [INFO ]  	base_dir: null
+2022-10-10 09:40:25 [INFO ]  	batch_size: 1024
+2022-10-10 09:40:25 [INFO ]  	checkpoint_interval: 300
+2022-10-10 09:40:25 [INFO ]  	dataset: FASHION_MNIST
+2022-10-10 09:40:25 [INFO ]  	dataset_labels:
+2022-10-10 09:40:25 [INFO ]  	- 0
+2022-10-10 09:40:25 [INFO ]  	- 1
+2022-10-10 09:40:25 [INFO ]  	- 2
+2022-10-10 09:40:25 [INFO ]  	- 3
+2022-10-10 09:40:25 [INFO ]  	- 4
+2022-10-10 09:40:25 [INFO ]  	- 5
+2022-10-10 09:40:25 [INFO ]  	- 6
+2022-10-10 09:40:25 [INFO ]  	- 7
+2022-10-10 09:40:25 [INFO ]  	- 8
+2022-10-10 09:40:25 [INFO ]  	- 9
+2022-10-10 09:40:25 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 09:40:25 [INFO ]  	- !!python/tuple
+2022-10-10 09:40:25 [INFO ]  	    - 0.2859
+2022-10-10 09:40:25 [INFO ]  	    - 0.2859
+2022-10-10 09:40:25 [INFO ]  	    - 0.2859
+2022-10-10 09:40:25 [INFO ]  	- !!python/tuple
+2022-10-10 09:40:25 [INFO ]  	    - 0.353
+2022-10-10 09:40:25 [INFO ]  	    - 0.353
+2022-10-10 09:40:25 [INFO ]  	    - 0.353
+2022-10-10 09:40:25 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-10-10 09:40:25 [INFO ]  	decay_epochs: 50
+2022-10-10 09:40:25 [INFO ]  	decay_factor: 0.1
+2022-10-10 09:40:25 [INFO ]  	device_id: 0
+2022-10-10 09:40:25 [INFO ]  	distill_epochs: 1
+2022-10-10 09:40:25 [INFO ]  	distill_lr: 0.02
+2022-10-10 09:40:25 [INFO ]  	distill_steps: 1
+2022-10-10 09:40:25 [INFO ]  	epochs: 50
+2022-10-10 09:40:25 [INFO ]  	expand_cls: false
+2022-10-10 09:40:25 [INFO ]  	forgetting_dataset: SVHN
+2022-10-10 09:40:25 [INFO ]  	init: xavier
+2022-10-10 09:40:25 [INFO ]  	init_param: 1.0
+2022-10-10 09:40:25 [INFO ]  	input_size: 32
+2022-10-10 09:40:25 [INFO ]  	ipc: 1
+2022-10-10 09:40:25 [INFO ]  	log_file: ./results/forgetting/FASHION_MNIST/log.txt
+2022-10-10 09:40:25 [INFO ]  	log_interval: 100
+2022-10-10 09:40:25 [INFO ]  	log_level: INFO
+2022-10-10 09:40:25 [INFO ]  	lr: 0.0002
+2022-10-10 09:40:25 [INFO ]  	mode: forgetting
+2022-10-10 09:40:25 [INFO ]  	nc: 3
+2022-10-10 09:40:25 [INFO ]  	num_classes: 10
+2022-10-10 09:40:25 [INFO ]  	num_workers: 8
+2022-10-10 09:40:25 [INFO ]  	phase: train
+2022-10-10 09:40:25 [INFO ]  	source_dataset: null
+2022-10-10 09:40:25 [INFO ]  	start_time: '2022-10-10 09:40:25'
+2022-10-10 09:40:25 [INFO ]  	test_batch_size: 1024
+2022-10-10 09:40:25 [INFO ]  	
+2022-10-10 09:40:28 [INFO ]  train dataset size:	60000
+2022-10-10 09:40:28 [INFO ]  test dataset size: 	10000
+2022-10-10 09:40:28 [INFO ]  datasets built!
+2022-10-10 09:40:28 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 09:40:30 [INFO ]   
+2022-10-10 09:40:30 [INFO ]  SVHN: Evaluation BEFORE forgetting:
+2022-10-10 09:40:30 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-10 09:40:31 [INFO ]   
+2022-10-10 09:40:31 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 09:40:31 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-10 09:40:34 [INFO ]  Epoch:    0	Test Accuracy: 34.67%	Test Loss: 1.9837
+2022-10-10 09:40:35 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 65.39%	Test Loss: 0.9734
+2022-10-10 09:40:38 [INFO ]  Epoch:    1	Test Accuracy: 51.21%	Test Loss: 1.5819
+2022-10-10 09:40:39 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 49.14%	Test Loss: 1.6700
+2022-10-10 09:40:42 [INFO ]  Epoch:    2	Test Accuracy: 61.04%	Test Loss: 1.3170
+2022-10-10 09:40:43 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 36.05%	Test Loss: 2.3864
+2022-10-10 09:40:46 [INFO ]  Epoch:    3	Test Accuracy: 66.00%	Test Loss: 1.1565
+2022-10-10 09:40:47 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.50%	Test Loss: 2.8824
+2022-10-10 09:40:50 [INFO ]  Epoch:    4	Test Accuracy: 69.41%	Test Loss: 1.0535
+2022-10-10 09:40:51 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.45%	Test Loss: 3.1589
+2022-10-10 09:40:54 [INFO ]  Epoch:    5	Test Accuracy: 72.66%	Test Loss: 0.9651
+2022-10-10 09:40:55 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.15%	Test Loss: 3.4190
+2022-10-10 09:40:58 [INFO ]  Epoch:    6	Test Accuracy: 75.23%	Test Loss: 0.8904
+2022-10-10 09:40:59 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 24.24%	Test Loss: 3.6371
+2022-10-10 09:41:02 [INFO ]  Epoch:    7	Test Accuracy: 76.23%	Test Loss: 0.8603
+2022-10-10 09:41:03 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 23.35%	Test Loss: 3.7792
+2022-10-10 09:41:06 [INFO ]  Epoch:    8	Test Accuracy: 76.82%	Test Loss: 0.8317
+2022-10-10 09:41:07 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.71%	Test Loss: 3.9007
+2022-10-10 09:41:10 [INFO ]  Epoch:    9	Test Accuracy: 77.94%	Test Loss: 0.7988
+2022-10-10 09:41:10 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.30%	Test Loss: 4.0994
+2022-10-10 09:41:13 [INFO ]  Epoch:   10	Test Accuracy: 79.14%	Test Loss: 0.7610
+2022-10-10 09:41:14 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.62%	Test Loss: 4.0676
+2022-10-10 09:41:17 [INFO ]  Epoch:   11	Test Accuracy: 78.83%	Test Loss: 0.7807
+2022-10-10 09:41:18 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.77%	Test Loss: 4.0362
+2022-10-10 09:41:21 [INFO ]  Epoch:   12	Test Accuracy: 80.10%	Test Loss: 0.7417
+2022-10-10 09:41:22 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.74%	Test Loss: 4.1094
+2022-10-10 09:41:25 [INFO ]  Epoch:   13	Test Accuracy: 80.37%	Test Loss: 0.7325
+2022-10-10 09:41:26 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.15%	Test Loss: 3.9118
+2022-10-10 09:41:29 [INFO ]  Epoch:   14	Test Accuracy: 81.14%	Test Loss: 0.7029
+2022-10-10 09:41:30 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.31%	Test Loss: 4.1529
+2022-10-10 09:41:33 [INFO ]  Epoch:   15	Test Accuracy: 81.76%	Test Loss: 0.6826
+2022-10-10 09:41:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.34%	Test Loss: 4.1437
+2022-10-10 09:41:37 [INFO ]  Epoch:   16	Test Accuracy: 82.14%	Test Loss: 0.6775
+2022-10-10 09:41:38 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 23.24%	Test Loss: 4.1348
+2022-10-10 09:41:41 [INFO ]  Epoch:   17	Test Accuracy: 82.44%	Test Loss: 0.6663
+2022-10-10 09:41:42 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.08%	Test Loss: 4.0227
+2022-10-10 09:41:45 [INFO ]  Epoch:   18	Test Accuracy: 82.73%	Test Loss: 0.6541
+2022-10-10 09:41:46 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.47%	Test Loss: 4.0085
+2022-10-10 09:41:49 [INFO ]  Epoch:   19	Test Accuracy: 83.31%	Test Loss: 0.6322
+2022-10-10 09:41:50 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.86%	Test Loss: 4.0151
+2022-10-10 09:41:53 [INFO ]  Epoch:   20	Test Accuracy: 83.37%	Test Loss: 0.6237
+2022-10-10 09:41:54 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.40%	Test Loss: 4.1696
+2022-10-10 09:41:57 [INFO ]  Epoch:   21	Test Accuracy: 83.61%	Test Loss: 0.6270
+2022-10-10 09:41:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.92%	Test Loss: 3.9825
+2022-10-10 09:42:01 [INFO ]  Epoch:   22	Test Accuracy: 84.08%	Test Loss: 0.6088
+2022-10-10 09:42:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.18%	Test Loss: 4.1577
+2022-10-10 09:42:05 [INFO ]  Epoch:   23	Test Accuracy: 84.08%	Test Loss: 0.6066
+2022-10-10 09:42:06 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.28%	Test Loss: 4.0975
+2022-10-10 09:42:09 [INFO ]  Epoch:   24	Test Accuracy: 83.86%	Test Loss: 0.6072
+2022-10-10 09:42:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.64%	Test Loss: 4.1304
+2022-10-10 09:42:12 [INFO ]  Epoch:   25	Test Accuracy: 84.61%	Test Loss: 0.5907
+2022-10-10 09:42:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.35%	Test Loss: 4.2899
+2022-10-10 09:42:16 [INFO ]  Epoch:   26	Test Accuracy: 84.53%	Test Loss: 0.5867
+2022-10-10 09:42:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.25%	Test Loss: 4.1987
+2022-10-10 09:42:20 [INFO ]  Epoch:   27	Test Accuracy: 84.49%	Test Loss: 0.5874
+2022-10-10 09:42:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.41%	Test Loss: 4.2321
+2022-10-10 09:42:24 [INFO ]  Epoch:   28	Test Accuracy: 84.56%	Test Loss: 0.5915
+2022-10-10 09:42:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.29%	Test Loss: 4.0933
+2022-10-10 09:42:28 [INFO ]  Epoch:   29	Test Accuracy: 84.62%	Test Loss: 0.5860
+2022-10-10 09:42:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.20%	Test Loss: 4.1344
+2022-10-10 09:42:32 [INFO ]  Epoch:   30	Test Accuracy: 84.91%	Test Loss: 0.5734
+2022-10-10 09:42:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.65%	Test Loss: 4.2456
+2022-10-10 09:42:36 [INFO ]  Epoch:   31	Test Accuracy: 85.03%	Test Loss: 0.5770
+2022-10-10 09:42:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.98%	Test Loss: 4.1859
+2022-10-10 09:42:40 [INFO ]  Epoch:   32	Test Accuracy: 85.30%	Test Loss: 0.5656
+2022-10-10 09:42:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.71%	Test Loss: 4.3732
+2022-10-10 09:42:44 [INFO ]  Epoch:   33	Test Accuracy: 85.22%	Test Loss: 0.5638
+2022-10-10 09:42:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.24%	Test Loss: 4.4193
+2022-10-10 09:42:48 [INFO ]  Epoch:   34	Test Accuracy: 85.29%	Test Loss: 0.5659
+2022-10-10 09:42:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.61%	Test Loss: 4.2406
+2022-10-10 09:42:52 [INFO ]  Epoch:   35	Test Accuracy: 85.57%	Test Loss: 0.5505
+2022-10-10 09:42:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.34%	Test Loss: 4.4206
+2022-10-10 09:42:55 [INFO ]  Epoch:   36	Test Accuracy: 85.70%	Test Loss: 0.5452
+2022-10-10 09:42:56 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.50%	Test Loss: 4.3645
+2022-10-10 09:43:00 [INFO ]  Epoch:   37	Test Accuracy: 85.86%	Test Loss: 0.5429
+2022-10-10 09:43:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.85%	Test Loss: 4.3196
+2022-10-10 09:43:03 [INFO ]  Epoch:   38	Test Accuracy: 85.89%	Test Loss: 0.5410
+2022-10-10 09:43:04 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.84%	Test Loss: 4.3435
+2022-10-10 09:43:08 [INFO ]  Epoch:   39	Test Accuracy: 85.66%	Test Loss: 0.5558
+2022-10-10 09:43:08 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.64%	Test Loss: 4.4302
+2022-10-10 09:43:12 [INFO ]  Epoch:   40	Test Accuracy: 85.88%	Test Loss: 0.5388
+2022-10-10 09:43:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.75%	Test Loss: 4.5117
+2022-10-10 09:43:16 [INFO ]  Epoch:   41	Test Accuracy: 85.81%	Test Loss: 0.5396
+2022-10-10 09:43:16 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.99%	Test Loss: 4.5773
+2022-10-10 09:43:20 [INFO ]  Epoch:   42	Test Accuracy: 86.10%	Test Loss: 0.5406
+2022-10-10 09:43:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.75%	Test Loss: 4.3912
+2022-10-10 09:43:24 [INFO ]  Epoch:   43	Test Accuracy: 86.19%	Test Loss: 0.5326
+2022-10-10 09:43:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.18%	Test Loss: 4.4911
+2022-10-10 09:43:28 [INFO ]  Epoch:   44	Test Accuracy: 86.07%	Test Loss: 0.5408
+2022-10-10 09:43:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.92%	Test Loss: 4.5714
+2022-10-10 09:43:32 [INFO ]  Epoch:   45	Test Accuracy: 86.50%	Test Loss: 0.5177
+2022-10-10 09:43:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.78%	Test Loss: 4.3243
+2022-10-10 09:43:36 [INFO ]  Epoch:   46	Test Accuracy: 86.58%	Test Loss: 0.5182
+2022-10-10 09:43:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.48%	Test Loss: 4.7375
+2022-10-10 09:43:40 [INFO ]  Epoch:   47	Test Accuracy: 86.45%	Test Loss: 0.5232
+2022-10-10 09:43:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.49%	Test Loss: 4.6543
+2022-10-10 09:43:44 [INFO ]  Epoch:   48	Test Accuracy: 86.51%	Test Loss: 0.5150
+2022-10-10 09:43:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.85%	Test Loss: 4.8199
+2022-10-10 09:43:48 [INFO ]  Epoch:   49	Test Accuracy: 86.67%	Test Loss: 0.5130
+2022-10-10 09:43:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.92%	Test Loss: 4.7863
+2022-10-10 09:43:49 [INFO ]  List of accuracies: [0.34668869084204057, 0.5120620774431469, 0.6103641671788568, 0.6599953902888752, 0.6940688383527965, 0.7266441303011678, 0.7522664413030117, 0.7622541487400123, 0.7681699446834666, 0.7793869084204057, 0.7914489858635525, 0.7882606023355869, 0.8009757221880762, 0.8037415488629379, 0.8114244007375537, 0.8176090964966195, 0.8213736939151813, 0.8244084204056545, 0.8272894898586355, 0.8330900430239705, 0.8337046711739398, 0.8361247695144438, 0.8407728948985863, 0.8408497234173326, 0.8386216963736939, 0.8460740626920713, 0.8452673632452367, 0.8448832206515058, 0.8456130915795943, 0.8462277197295636, 0.8491087891825445, 0.8503380454824832, 0.8529886293792256, 0.852181929932391, 0.8529118008604795, 0.8556776275353412, 0.8569837123540258, 0.8585971112476951, 0.8589044253226797, 0.8566379840196681, 0.8587891825445605, 0.8580977258758451, 0.860978795328826, 0.8619007375537799, 0.8607098955132145, 0.8649738783036263, 0.865818992009834, 0.8645129071911494, 0.8650891210817455, 0.8667409342347879]
+2022-10-10 09:43:49 [INFO ]  List of losses: [1.9836981245250738, 1.581888467311566, 1.317042626848086, 1.1564516103846498, 1.0535482278834403, 0.9650658980863697, 0.8903531787874659, 0.8602892999350109, 0.8317075212381336, 0.798777859857204, 0.761013572613154, 0.7807282715687813, 0.7416666730752955, 0.7324551697808976, 0.7028776167650932, 0.6826069239245358, 0.6775025494932468, 0.6662536954029836, 0.6541255629714751, 0.6322131974607724, 0.6236649544310848, 0.6269934823634659, 0.6087519347337982, 0.606609643421513, 0.6072275434891432, 0.5906519042837451, 0.5867068385081418, 0.587447063865732, 0.5915488680960873, 0.5859690175586928, 0.5733923827055853, 0.5770325540543775, 0.5655971057003235, 0.5638067647585784, 0.5658931140161103, 0.5505295942807095, 0.545240789084033, 0.5428777183574918, 0.5410045326012516, 0.5557742965829541, 0.5387669060958553, 0.5395994684633186, 0.5406293347340533, 0.5325914592778089, 0.5407889131101715, 0.5177362332991756, 0.51824225394654, 0.5231791703189599, 0.5149736316495683, 0.5130367642468885]
+2022-10-10 09:43:49 [INFO ]  List of source accuracies: [0.6539, 0.4914, 0.3605, 0.315, 0.2845, 0.2715, 0.2424, 0.2335, 0.2171, 0.213, 0.2162, 0.2177, 0.2274, 0.2215, 0.2231, 0.2034, 0.2324, 0.2208, 0.2247, 0.2186, 0.214, 0.2192, 0.2018, 0.2028, 0.2064, 0.1835, 0.1925, 0.1841, 0.1929, 0.192, 0.1865, 0.1898, 0.1771, 0.1724, 0.1861, 0.1734, 0.175, 0.1785, 0.1784, 0.1964, 0.1775, 0.1699, 0.1875, 0.1618, 0.1592, 0.1778, 0.1648, 0.1649, 0.1685, 0.1592]
+2022-10-10 09:43:50 [INFO ]   
+2022-10-10 09:43:50 [INFO ]  SVHN: Evaluation AFTER forgetting:
+2022-10-10 09:43:50 [INFO ]  Test Accuracy: 86.67%	Test Loss: 0.5130
+2022-10-10 09:43:51 [INFO ]   
+2022-10-10 09:43:51 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 09:43:51 [INFO ]  Test Accuracy: 15.92%	Test Loss: 4.7863
+2022-10-10 09:43:51 [INFO ]  CPU Time: 1.68 minutes
+2022-10-10 09:44:23 [INFO ]  ======================================== 2022-10-10 09:44:23 ========================================
+2022-10-10 09:44:23 [INFO ]  Base directory is ./results/forgetting/FASHION_MNIST/
+2022-10-10 09:44:23 [INFO ]  Options: 
+2022-10-10 09:44:23 [INFO ]  	base_dir: null
+2022-10-10 09:44:23 [INFO ]  	batch_size: 1024
+2022-10-10 09:44:23 [INFO ]  	checkpoint_interval: 300
+2022-10-10 09:44:23 [INFO ]  	dataset: FASHION_MNIST
+2022-10-10 09:44:23 [INFO ]  	dataset_labels:
+2022-10-10 09:44:23 [INFO ]  	- 0
+2022-10-10 09:44:23 [INFO ]  	- 1
+2022-10-10 09:44:23 [INFO ]  	- 2
+2022-10-10 09:44:23 [INFO ]  	- 3
+2022-10-10 09:44:23 [INFO ]  	- 4
+2022-10-10 09:44:23 [INFO ]  	- 5
+2022-10-10 09:44:23 [INFO ]  	- 6
+2022-10-10 09:44:23 [INFO ]  	- 7
+2022-10-10 09:44:23 [INFO ]  	- 8
+2022-10-10 09:44:23 [INFO ]  	- 9
+2022-10-10 09:44:23 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 09:44:23 [INFO ]  	- !!python/tuple
+2022-10-10 09:44:23 [INFO ]  	    - 0.2859
+2022-10-10 09:44:23 [INFO ]  	    - 0.2859
+2022-10-10 09:44:23 [INFO ]  	    - 0.2859
+2022-10-10 09:44:23 [INFO ]  	- !!python/tuple
+2022-10-10 09:44:23 [INFO ]  	    - 0.353
+2022-10-10 09:44:23 [INFO ]  	    - 0.353
+2022-10-10 09:44:23 [INFO ]  	    - 0.353
+2022-10-10 09:44:23 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-10-10 09:44:23 [INFO ]  	decay_epochs: 50
+2022-10-10 09:44:23 [INFO ]  	decay_factor: 0.1
+2022-10-10 09:44:23 [INFO ]  	device_id: 0
+2022-10-10 09:44:23 [INFO ]  	distill_epochs: 1
+2022-10-10 09:44:23 [INFO ]  	distill_lr: 0.02
+2022-10-10 09:44:23 [INFO ]  	distill_steps: 1
+2022-10-10 09:44:23 [INFO ]  	epochs: 50
+2022-10-10 09:44:23 [INFO ]  	expand_cls: false
+2022-10-10 09:44:23 [INFO ]  	forgetting_dataset: SVHN
+2022-10-10 09:44:23 [INFO ]  	init: xavier
+2022-10-10 09:44:23 [INFO ]  	init_param: 1.0
+2022-10-10 09:44:23 [INFO ]  	input_size: 32
+2022-10-10 09:44:23 [INFO ]  	ipc: 1
+2022-10-10 09:44:23 [INFO ]  	log_file: ./results/forgetting/FASHION_MNIST/log.txt
+2022-10-10 09:44:23 [INFO ]  	log_interval: 100
+2022-10-10 09:44:23 [INFO ]  	log_level: INFO
+2022-10-10 09:44:23 [INFO ]  	lr: 0.0002
+2022-10-10 09:44:23 [INFO ]  	mode: forgetting
+2022-10-10 09:44:23 [INFO ]  	nc: 3
+2022-10-10 09:44:23 [INFO ]  	num_classes: 10
+2022-10-10 09:44:23 [INFO ]  	num_workers: 8
+2022-10-10 09:44:23 [INFO ]  	phase: train
+2022-10-10 09:44:23 [INFO ]  	source_dataset: null
+2022-10-10 09:44:23 [INFO ]  	start_time: '2022-10-10 09:44:23'
+2022-10-10 09:44:23 [INFO ]  	test_batch_size: 1024
+2022-10-10 09:44:23 [INFO ]  	
+2022-10-10 09:44:25 [INFO ]  train dataset size:	60000
+2022-10-10 09:44:25 [INFO ]  test dataset size: 	10000
+2022-10-10 09:44:25 [INFO ]  datasets built!
+2022-10-10 09:44:25 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 09:44:28 [INFO ]   
+2022-10-10 09:44:28 [INFO ]  SVHN: Evaluation BEFORE forgetting:
+2022-10-10 09:44:28 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-10 09:44:29 [INFO ]   
+2022-10-10 09:44:29 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 09:44:29 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-10 09:44:32 [INFO ]  Epoch:    0	Test Accuracy: 35.10%	Test Loss: 1.9681
+2022-10-10 09:44:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 65.37%	Test Loss: 0.9885
+2022-10-10 09:44:36 [INFO ]  Epoch:    1	Test Accuracy: 50.60%	Test Loss: 1.5809
+2022-10-10 09:44:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 51.65%	Test Loss: 1.5834
+2022-10-10 09:44:40 [INFO ]  Epoch:    2	Test Accuracy: 60.64%	Test Loss: 1.3142
+2022-10-10 09:44:40 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 38.59%	Test Loss: 2.2915
+2022-10-10 09:44:44 [INFO ]  Epoch:    3	Test Accuracy: 65.50%	Test Loss: 1.1760
+2022-10-10 09:44:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 32.09%	Test Loss: 2.7916
+2022-10-10 09:44:47 [INFO ]  Epoch:    4	Test Accuracy: 70.35%	Test Loss: 1.0257
+2022-10-10 09:44:48 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.19%	Test Loss: 3.1098
+2022-10-10 09:44:52 [INFO ]  Epoch:    5	Test Accuracy: 73.21%	Test Loss: 0.9465
+2022-10-10 09:44:52 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.19%	Test Loss: 3.4093
+2022-10-10 09:44:56 [INFO ]  Epoch:    6	Test Accuracy: 74.00%	Test Loss: 0.9216
+2022-10-10 09:44:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.94%	Test Loss: 3.5204
+2022-10-10 09:45:00 [INFO ]  Epoch:    7	Test Accuracy: 76.14%	Test Loss: 0.8615
+2022-10-10 09:45:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 23.94%	Test Loss: 3.6815
+2022-10-10 09:45:04 [INFO ]  Epoch:    8	Test Accuracy: 77.56%	Test Loss: 0.8158
+2022-10-10 09:45:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 23.95%	Test Loss: 3.7445
+2022-10-10 09:45:08 [INFO ]  Epoch:    9	Test Accuracy: 78.73%	Test Loss: 0.7814
+2022-10-10 09:45:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 23.13%	Test Loss: 3.7795
+2022-10-10 09:45:12 [INFO ]  Epoch:   10	Test Accuracy: 79.08%	Test Loss: 0.7703
+2022-10-10 09:45:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.31%	Test Loss: 4.0049
+2022-10-10 09:45:16 [INFO ]  Epoch:   11	Test Accuracy: 79.91%	Test Loss: 0.7438
+2022-10-10 09:45:16 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.72%	Test Loss: 3.9981
+2022-10-10 09:45:19 [INFO ]  Epoch:   12	Test Accuracy: 80.72%	Test Loss: 0.7207
+2022-10-10 09:45:20 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.72%	Test Loss: 3.8714
+2022-10-10 09:45:24 [INFO ]  Epoch:   13	Test Accuracy: 80.89%	Test Loss: 0.7104
+2022-10-10 09:45:24 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.63%	Test Loss: 3.9240
+2022-10-10 09:45:28 [INFO ]  Epoch:   14	Test Accuracy: 81.38%	Test Loss: 0.6933
+2022-10-10 09:45:29 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.99%	Test Loss: 4.0431
+2022-10-10 09:45:32 [INFO ]  Epoch:   15	Test Accuracy: 81.76%	Test Loss: 0.6812
+2022-10-10 09:45:33 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.13%	Test Loss: 3.9023
+2022-10-10 09:45:36 [INFO ]  Epoch:   16	Test Accuracy: 82.08%	Test Loss: 0.6790
+2022-10-10 09:45:37 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.14%	Test Loss: 4.1048
+2022-10-10 09:45:40 [INFO ]  Epoch:   17	Test Accuracy: 82.13%	Test Loss: 0.6750
+2022-10-10 09:45:41 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.71%	Test Loss: 3.8864
+2022-10-10 09:45:44 [INFO ]  Epoch:   18	Test Accuracy: 82.59%	Test Loss: 0.6574
+2022-10-10 09:45:45 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.76%	Test Loss: 4.0058
+2022-10-10 09:45:48 [INFO ]  Epoch:   19	Test Accuracy: 83.32%	Test Loss: 0.6319
+2022-10-10 09:45:49 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.71%	Test Loss: 4.1279
+2022-10-10 09:45:52 [INFO ]  Epoch:   20	Test Accuracy: 83.26%	Test Loss: 0.6310
+2022-10-10 09:45:53 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.68%	Test Loss: 4.0097
+2022-10-10 09:45:56 [INFO ]  Epoch:   21	Test Accuracy: 83.57%	Test Loss: 0.6229
+2022-10-10 09:45:57 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.00%	Test Loss: 4.0688
+2022-10-10 09:46:00 [INFO ]  Epoch:   22	Test Accuracy: 83.85%	Test Loss: 0.6176
+2022-10-10 09:46:01 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.92%	Test Loss: 4.0658
+2022-10-10 09:46:04 [INFO ]  Epoch:   23	Test Accuracy: 84.12%	Test Loss: 0.6034
+2022-10-10 09:46:05 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.27%	Test Loss: 3.8426
+2022-10-10 09:46:08 [INFO ]  Epoch:   24	Test Accuracy: 84.11%	Test Loss: 0.6140
+2022-10-10 09:46:08 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.95%	Test Loss: 3.8426
+2022-10-10 09:46:12 [INFO ]  Epoch:   25	Test Accuracy: 84.08%	Test Loss: 0.6015
+2022-10-10 09:46:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.13%	Test Loss: 4.1910
+2022-10-10 09:46:16 [INFO ]  Epoch:   26	Test Accuracy: 84.68%	Test Loss: 0.5888
+2022-10-10 09:46:17 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.69%	Test Loss: 3.9907
+2022-10-10 09:46:20 [INFO ]  Epoch:   27	Test Accuracy: 84.52%	Test Loss: 0.5953
+2022-10-10 09:46:21 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.50%	Test Loss: 3.9338
+2022-10-10 09:46:24 [INFO ]  Epoch:   28	Test Accuracy: 84.59%	Test Loss: 0.5847
+2022-10-10 09:46:24 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.78%	Test Loss: 4.0728
+2022-10-10 09:46:27 [INFO ]  Epoch:   29	Test Accuracy: 84.79%	Test Loss: 0.5834
+2022-10-10 09:46:28 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.01%	Test Loss: 4.0343
+2022-10-10 09:46:31 [INFO ]  Epoch:   30	Test Accuracy: 84.81%	Test Loss: 0.5862
+2022-10-10 09:46:32 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.95%	Test Loss: 4.0719
+2022-10-10 09:46:35 [INFO ]  Epoch:   31	Test Accuracy: 85.16%	Test Loss: 0.5665
+2022-10-10 09:46:36 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.72%	Test Loss: 4.1673
+2022-10-10 09:46:39 [INFO ]  Epoch:   32	Test Accuracy: 85.25%	Test Loss: 0.5702
+2022-10-10 09:46:40 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.10%	Test Loss: 4.0576
+2022-10-10 09:46:43 [INFO ]  Epoch:   33	Test Accuracy: 85.44%	Test Loss: 0.5666
+2022-10-10 09:46:44 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.17%	Test Loss: 4.2059
+2022-10-10 09:46:47 [INFO ]  Epoch:   34	Test Accuracy: 84.97%	Test Loss: 0.5703
+2022-10-10 09:46:48 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.06%	Test Loss: 4.2726
+2022-10-10 09:46:51 [INFO ]  Epoch:   35	Test Accuracy: 85.16%	Test Loss: 0.5616
+2022-10-10 09:46:52 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.70%	Test Loss: 4.3784
+2022-10-10 09:46:55 [INFO ]  Epoch:   36	Test Accuracy: 85.53%	Test Loss: 0.5567
+2022-10-10 09:46:56 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.78%	Test Loss: 4.4828
+2022-10-10 09:46:59 [INFO ]  Epoch:   37	Test Accuracy: 85.43%	Test Loss: 0.5568
+2022-10-10 09:47:00 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.72%	Test Loss: 4.2955
+2022-10-10 09:47:03 [INFO ]  Epoch:   38	Test Accuracy: 85.27%	Test Loss: 0.5592
+2022-10-10 09:47:04 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.54%	Test Loss: 4.3676
+2022-10-10 09:47:07 [INFO ]  Epoch:   39	Test Accuracy: 85.49%	Test Loss: 0.5575
+2022-10-10 09:47:08 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.80%	Test Loss: 4.5455
+2022-10-10 09:47:11 [INFO ]  Epoch:   40	Test Accuracy: 85.93%	Test Loss: 0.5450
+2022-10-10 09:47:12 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.61%	Test Loss: 4.3756
+2022-10-10 09:47:15 [INFO ]  Epoch:   41	Test Accuracy: 85.69%	Test Loss: 0.5482
+2022-10-10 09:47:16 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.34%	Test Loss: 4.6493
+2022-10-10 09:47:19 [INFO ]  Epoch:   42	Test Accuracy: 86.16%	Test Loss: 0.5338
+2022-10-10 09:47:20 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.31%	Test Loss: 4.6286
+2022-10-10 09:47:23 [INFO ]  Epoch:   43	Test Accuracy: 85.95%	Test Loss: 0.5376
+2022-10-10 09:47:24 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.56%	Test Loss: 4.4612
+2022-10-10 09:47:26 [INFO ]  Epoch:   44	Test Accuracy: 86.09%	Test Loss: 0.5353
+2022-10-10 09:47:27 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.04%	Test Loss: 4.5107
+2022-10-10 09:47:30 [INFO ]  Epoch:   45	Test Accuracy: 86.22%	Test Loss: 0.5284
+2022-10-10 09:47:31 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.85%	Test Loss: 4.7118
+2022-10-10 09:47:35 [INFO ]  Epoch:   46	Test Accuracy: 85.86%	Test Loss: 0.5409
+2022-10-10 09:47:35 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.64%	Test Loss: 4.7624
+2022-10-10 09:47:39 [INFO ]  Epoch:   47	Test Accuracy: 86.01%	Test Loss: 0.5358
+2022-10-10 09:47:39 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.82%	Test Loss: 4.7795
+2022-10-10 09:47:42 [INFO ]  Epoch:   48	Test Accuracy: 86.19%	Test Loss: 0.5318
+2022-10-10 09:47:43 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.16%	Test Loss: 4.8333
+2022-10-10 09:47:47 [INFO ]  Epoch:   49	Test Accuracy: 86.65%	Test Loss: 0.5159
+2022-10-10 09:47:48 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.01%	Test Loss: 4.6823
+2022-10-10 09:47:48 [INFO ]  List of accuracies: [0.35102950215119855, 0.5059926244622004, 0.6063690842040566, 0.655039950829748, 0.703518746158574, 0.7320989551321451, 0.7399738783036263, 0.7613706207744315, 0.7756223110018439, 0.7872618315918869, 0.7907959434542102, 0.7991318377381684, 0.807198832206515, 0.8088890596189305, 0.8138060848186847, 0.8176475107559926, 0.8208358942839582, 0.8212968653964352, 0.8259065765212047, 0.8332437000614629, 0.8326290719114936, 0.8357406269207129, 0.8385448678549478, 0.8412338660110633, 0.8410802089735709, 0.8408497234173326, 0.8468423478795328, 0.8451521204671174, 0.8459204056545789, 0.847879532882606, 0.8481100184388445, 0.8516057160417947, 0.8524892440073756, 0.8543715427166564, 0.8497234173325138, 0.8515673017824217, 0.8552550706822373, 0.8542947141979103, 0.852719729563614, 0.8549477566072526, 0.8593269821757836, 0.8569068838352797, 0.8615934234787953, 0.859519053472649, 0.860940381069453, 0.8621696373693916, 0.8585586969883221, 0.8600952673632453, 0.8619391518131531, 0.8665488629379225]
+2022-10-10 09:47:48 [INFO ]  List of losses: [1.9681117286986929, 1.5809289994383415, 1.3141617871678968, 1.176038570908146, 1.025675719108183, 0.9465017992803929, 0.9215707866853926, 0.8614962260709925, 0.8158296844163554, 0.7813563308762713, 0.7702529757170862, 0.7437894559741827, 0.7207491534138722, 0.7104105477547016, 0.6932844139713411, 0.6811783450032277, 0.6789691774993127, 0.6750105135119907, 0.6573827423489599, 0.6319011613204571, 0.6310324314260454, 0.6228782827310497, 0.6176252200988882, 0.6034376628573277, 0.6140484261820488, 0.6014984801420787, 0.5887803533140251, 0.5952508196042371, 0.5847238084620762, 0.5834108111165239, 0.5862157865030749, 0.5665168082267138, 0.570177460420183, 0.5666182347434242, 0.5702795404998086, 0.5615831584965589, 0.5567480396770156, 0.5568007690157711, 0.5591718794454001, 0.5574627368085283, 0.5449968348563486, 0.5481616045407305, 0.5337759280541812, 0.5375574970069514, 0.5353039288418235, 0.5284347006640114, 0.5409069612265073, 0.5358204991083315, 0.5317799932178575, 0.5159079839498922]
+2022-10-10 09:47:48 [INFO ]  List of source accuracies: [0.6537, 0.5165, 0.3859, 0.3209, 0.2819, 0.2819, 0.2694, 0.2394, 0.2395, 0.2313, 0.2231, 0.2172, 0.2272, 0.2163, 0.1999, 0.2213, 0.2114, 0.2271, 0.2176, 0.2071, 0.1968, 0.2, 0.2092, 0.2127, 0.2095, 0.1913, 0.1969, 0.205, 0.1978, 0.1801, 0.1995, 0.1772, 0.181, 0.1817, 0.1706, 0.187, 0.1878, 0.1672, 0.1854, 0.168, 0.1661, 0.1634, 0.1631, 0.1756, 0.1604, 0.1585, 0.1564, 0.1582, 0.1616, 0.1601]
+2022-10-10 09:47:49 [INFO ]   
+2022-10-10 09:47:49 [INFO ]  SVHN: Evaluation AFTER forgetting:
+2022-10-10 09:47:49 [INFO ]  Test Accuracy: 86.65%	Test Loss: 0.5159
+2022-10-10 09:47:50 [INFO ]   
+2022-10-10 09:47:50 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 09:47:50 [INFO ]  Test Accuracy: 16.01%	Test Loss: 4.6823
+2022-10-10 09:47:50 [INFO ]  CPU Time: 1.69 minutes
+2022-10-10 09:48:17 [INFO ]  ======================================== 2022-10-10 09:48:17 ========================================
+2022-10-10 09:48:17 [INFO ]  Base directory is ./results/forgetting/FASHION_MNIST/
+2022-10-10 09:48:17 [INFO ]  Options: 
+2022-10-10 09:48:17 [INFO ]  	base_dir: null
+2022-10-10 09:48:17 [INFO ]  	batch_size: 1024
+2022-10-10 09:48:17 [INFO ]  	checkpoint_interval: 300
+2022-10-10 09:48:17 [INFO ]  	dataset: FASHION_MNIST
+2022-10-10 09:48:17 [INFO ]  	dataset_labels:
+2022-10-10 09:48:17 [INFO ]  	- 0
+2022-10-10 09:48:17 [INFO ]  	- 1
+2022-10-10 09:48:17 [INFO ]  	- 2
+2022-10-10 09:48:17 [INFO ]  	- 3
+2022-10-10 09:48:17 [INFO ]  	- 4
+2022-10-10 09:48:17 [INFO ]  	- 5
+2022-10-10 09:48:17 [INFO ]  	- 6
+2022-10-10 09:48:17 [INFO ]  	- 7
+2022-10-10 09:48:17 [INFO ]  	- 8
+2022-10-10 09:48:17 [INFO ]  	- 9
+2022-10-10 09:48:17 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 09:48:17 [INFO ]  	- !!python/tuple
+2022-10-10 09:48:17 [INFO ]  	    - 0.2859
+2022-10-10 09:48:17 [INFO ]  	    - 0.2859
+2022-10-10 09:48:17 [INFO ]  	    - 0.2859
+2022-10-10 09:48:17 [INFO ]  	- !!python/tuple
+2022-10-10 09:48:17 [INFO ]  	    - 0.353
+2022-10-10 09:48:17 [INFO ]  	    - 0.353
+2022-10-10 09:48:17 [INFO ]  	    - 0.353
+2022-10-10 09:48:17 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-10-10 09:48:17 [INFO ]  	decay_epochs: 50
+2022-10-10 09:48:17 [INFO ]  	decay_factor: 0.1
+2022-10-10 09:48:17 [INFO ]  	device_id: 0
+2022-10-10 09:48:17 [INFO ]  	distill_epochs: 1
+2022-10-10 09:48:17 [INFO ]  	distill_lr: 0.02
+2022-10-10 09:48:17 [INFO ]  	distill_steps: 1
+2022-10-10 09:48:17 [INFO ]  	epochs: 50
+2022-10-10 09:48:17 [INFO ]  	expand_cls: false
+2022-10-10 09:48:17 [INFO ]  	forgetting_dataset: SVHN
+2022-10-10 09:48:17 [INFO ]  	init: xavier
+2022-10-10 09:48:17 [INFO ]  	init_param: 1.0
+2022-10-10 09:48:17 [INFO ]  	input_size: 32
+2022-10-10 09:48:17 [INFO ]  	ipc: 1
+2022-10-10 09:48:17 [INFO ]  	log_file: ./results/forgetting/FASHION_MNIST/log.txt
+2022-10-10 09:48:17 [INFO ]  	log_interval: 100
+2022-10-10 09:48:17 [INFO ]  	log_level: INFO
+2022-10-10 09:48:17 [INFO ]  	lr: 0.0002
+2022-10-10 09:48:17 [INFO ]  	mode: forgetting
+2022-10-10 09:48:17 [INFO ]  	nc: 3
+2022-10-10 09:48:17 [INFO ]  	num_classes: 10
+2022-10-10 09:48:17 [INFO ]  	num_workers: 8
+2022-10-10 09:48:17 [INFO ]  	phase: train
+2022-10-10 09:48:17 [INFO ]  	source_dataset: null
+2022-10-10 09:48:17 [INFO ]  	start_time: '2022-10-10 09:48:17'
+2022-10-10 09:48:17 [INFO ]  	test_batch_size: 1024
+2022-10-10 09:48:17 [INFO ]  	
+2022-10-10 09:48:19 [INFO ]  train dataset size:	60000
+2022-10-10 09:48:19 [INFO ]  test dataset size: 	10000
+2022-10-10 09:48:19 [INFO ]  datasets built!
+2022-10-10 09:48:19 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 09:48:22 [INFO ]   
+2022-10-10 09:48:22 [INFO ]  SVHN: Evaluation BEFORE forgetting:
+2022-10-10 09:48:22 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-10 09:48:23 [INFO ]   
+2022-10-10 09:48:23 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 09:48:23 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-10 09:48:26 [INFO ]  Epoch:    0	Test Accuracy: 35.01%	Test Loss: 1.9949
+2022-10-10 09:48:26 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 66.41%	Test Loss: 0.9527
+2022-10-10 09:48:29 [INFO ]  Epoch:    1	Test Accuracy: 50.30%	Test Loss: 1.5917
+2022-10-10 09:48:30 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 48.58%	Test Loss: 1.6211
+2022-10-10 09:48:33 [INFO ]  Epoch:    2	Test Accuracy: 61.01%	Test Loss: 1.3173
+2022-10-10 09:48:34 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 37.36%	Test Loss: 2.3570
+2022-10-10 09:48:37 [INFO ]  Epoch:    3	Test Accuracy: 66.88%	Test Loss: 1.1391
+2022-10-10 09:48:38 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 31.96%	Test Loss: 2.8842
+2022-10-10 09:48:41 [INFO ]  Epoch:    4	Test Accuracy: 71.05%	Test Loss: 1.0143
+2022-10-10 09:48:42 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 28.49%	Test Loss: 3.1573
+2022-10-10 09:48:46 [INFO ]  Epoch:    5	Test Accuracy: 72.63%	Test Loss: 0.9569
+2022-10-10 09:48:47 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 26.92%	Test Loss: 3.4933
+2022-10-10 09:48:50 [INFO ]  Epoch:    6	Test Accuracy: 75.05%	Test Loss: 0.8927
+2022-10-10 09:48:51 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 24.49%	Test Loss: 3.5970
+2022-10-10 09:48:54 [INFO ]  Epoch:    7	Test Accuracy: 76.13%	Test Loss: 0.8555
+2022-10-10 09:48:55 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.94%	Test Loss: 3.6838
+2022-10-10 09:48:58 [INFO ]  Epoch:    8	Test Accuracy: 77.59%	Test Loss: 0.8067
+2022-10-10 09:48:59 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.72%	Test Loss: 3.9675
+2022-10-10 09:49:02 [INFO ]  Epoch:    9	Test Accuracy: 78.10%	Test Loss: 0.7946
+2022-10-10 09:49:03 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.27%	Test Loss: 4.1875
+2022-10-10 09:49:06 [INFO ]  Epoch:   10	Test Accuracy: 79.03%	Test Loss: 0.7672
+2022-10-10 09:49:07 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.08%	Test Loss: 4.0385
+2022-10-10 09:49:10 [INFO ]  Epoch:   11	Test Accuracy: 79.60%	Test Loss: 0.7538
+2022-10-10 09:49:11 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.50%	Test Loss: 4.0277
+2022-10-10 09:49:14 [INFO ]  Epoch:   12	Test Accuracy: 80.15%	Test Loss: 0.7317
+2022-10-10 09:49:14 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.48%	Test Loss: 4.2737
+2022-10-10 09:49:17 [INFO ]  Epoch:   13	Test Accuracy: 81.34%	Test Loss: 0.7012
+2022-10-10 09:49:18 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.38%	Test Loss: 4.0729
+2022-10-10 09:49:21 [INFO ]  Epoch:   14	Test Accuracy: 81.85%	Test Loss: 0.6878
+2022-10-10 09:49:22 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.85%	Test Loss: 4.0573
+2022-10-10 09:49:25 [INFO ]  Epoch:   15	Test Accuracy: 81.58%	Test Loss: 0.6883
+2022-10-10 09:49:26 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.41%	Test Loss: 4.1907
+2022-10-10 09:49:29 [INFO ]  Epoch:   16	Test Accuracy: 82.16%	Test Loss: 0.6756
+2022-10-10 09:49:30 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.22%	Test Loss: 4.2785
+2022-10-10 09:49:33 [INFO ]  Epoch:   17	Test Accuracy: 82.56%	Test Loss: 0.6602
+2022-10-10 09:49:34 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.10%	Test Loss: 4.1548
+2022-10-10 09:49:38 [INFO ]  Epoch:   18	Test Accuracy: 82.96%	Test Loss: 0.6491
+2022-10-10 09:49:38 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.00%	Test Loss: 4.3190
+2022-10-10 09:49:41 [INFO ]  Epoch:   19	Test Accuracy: 83.12%	Test Loss: 0.6395
+2022-10-10 09:49:42 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.99%	Test Loss: 4.2071
+2022-10-10 09:49:45 [INFO ]  Epoch:   20	Test Accuracy: 83.46%	Test Loss: 0.6314
+2022-10-10 09:49:46 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.15%	Test Loss: 4.1350
+2022-10-10 09:49:49 [INFO ]  Epoch:   21	Test Accuracy: 83.01%	Test Loss: 0.6356
+2022-10-10 09:49:50 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.13%	Test Loss: 4.3158
+2022-10-10 09:49:54 [INFO ]  Epoch:   22	Test Accuracy: 84.08%	Test Loss: 0.6162
+2022-10-10 09:49:54 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.23%	Test Loss: 4.2269
+2022-10-10 09:49:58 [INFO ]  Epoch:   23	Test Accuracy: 84.09%	Test Loss: 0.6126
+2022-10-10 09:49:59 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.84%	Test Loss: 4.4239
+2022-10-10 09:50:02 [INFO ]  Epoch:   24	Test Accuracy: 83.85%	Test Loss: 0.6203
+2022-10-10 09:50:02 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.16%	Test Loss: 4.2463
+2022-10-10 09:50:06 [INFO ]  Epoch:   25	Test Accuracy: 83.97%	Test Loss: 0.6079
+2022-10-10 09:50:07 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.12%	Test Loss: 4.2709
+2022-10-10 09:50:10 [INFO ]  Epoch:   26	Test Accuracy: 84.77%	Test Loss: 0.5902
+2022-10-10 09:50:11 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.47%	Test Loss: 4.3592
+2022-10-10 09:50:14 [INFO ]  Epoch:   27	Test Accuracy: 84.43%	Test Loss: 0.5942
+2022-10-10 09:50:15 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.59%	Test Loss: 4.2519
+2022-10-10 09:50:18 [INFO ]  Epoch:   28	Test Accuracy: 84.39%	Test Loss: 0.5950
+2022-10-10 09:50:19 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.23%	Test Loss: 4.1954
+2022-10-10 09:50:22 [INFO ]  Epoch:   29	Test Accuracy: 84.43%	Test Loss: 0.5920
+2022-10-10 09:50:23 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.92%	Test Loss: 4.2745
+2022-10-10 09:50:26 [INFO ]  Epoch:   30	Test Accuracy: 84.83%	Test Loss: 0.5789
+2022-10-10 09:50:27 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.84%	Test Loss: 4.3539
+2022-10-10 09:50:30 [INFO ]  Epoch:   31	Test Accuracy: 85.30%	Test Loss: 0.5695
+2022-10-10 09:50:31 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.70%	Test Loss: 4.3763
+2022-10-10 09:50:34 [INFO ]  Epoch:   32	Test Accuracy: 84.96%	Test Loss: 0.5758
+2022-10-10 09:50:35 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.62%	Test Loss: 4.2020
+2022-10-10 09:50:38 [INFO ]  Epoch:   33	Test Accuracy: 85.06%	Test Loss: 0.5681
+2022-10-10 09:50:39 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.74%	Test Loss: 4.3600
+2022-10-10 09:50:42 [INFO ]  Epoch:   34	Test Accuracy: 85.14%	Test Loss: 0.5629
+2022-10-10 09:50:43 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.64%	Test Loss: 4.4501
+2022-10-10 09:50:46 [INFO ]  Epoch:   35	Test Accuracy: 85.50%	Test Loss: 0.5581
+2022-10-10 09:50:47 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.31%	Test Loss: 4.6292
+2022-10-10 09:50:50 [INFO ]  Epoch:   36	Test Accuracy: 85.63%	Test Loss: 0.5518
+2022-10-10 09:50:51 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.60%	Test Loss: 4.6463
+2022-10-10 09:50:54 [INFO ]  Epoch:   37	Test Accuracy: 85.54%	Test Loss: 0.5547
+2022-10-10 09:50:55 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.61%	Test Loss: 4.6664
+2022-10-10 09:50:58 [INFO ]  Epoch:   38	Test Accuracy: 85.98%	Test Loss: 0.5393
+2022-10-10 09:50:59 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.81%	Test Loss: 4.5434
+2022-10-10 09:51:02 [INFO ]  Epoch:   39	Test Accuracy: 85.31%	Test Loss: 0.5520
+2022-10-10 09:51:03 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.80%	Test Loss: 4.5863
+2022-10-10 09:51:06 [INFO ]  Epoch:   40	Test Accuracy: 85.94%	Test Loss: 0.5396
+2022-10-10 09:51:06 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.70%	Test Loss: 4.6378
+2022-10-10 09:51:10 [INFO ]  Epoch:   41	Test Accuracy: 86.09%	Test Loss: 0.5339
+2022-10-10 09:51:11 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.41%	Test Loss: 4.7169
+2022-10-10 09:51:14 [INFO ]  Epoch:   42	Test Accuracy: 85.85%	Test Loss: 0.5492
+2022-10-10 09:51:15 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.06%	Test Loss: 4.5242
+2022-10-10 09:51:18 [INFO ]  Epoch:   43	Test Accuracy: 86.25%	Test Loss: 0.5300
+2022-10-10 09:51:19 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.76%	Test Loss: 4.8612
+2022-10-10 09:51:22 [INFO ]  Epoch:   44	Test Accuracy: 86.19%	Test Loss: 0.5324
+2022-10-10 09:51:22 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.37%	Test Loss: 4.5491
+2022-10-10 09:51:25 [INFO ]  Epoch:   45	Test Accuracy: 86.26%	Test Loss: 0.5350
+2022-10-10 09:51:26 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.78%	Test Loss: 4.6883
+2022-10-10 09:51:29 [INFO ]  Epoch:   46	Test Accuracy: 86.53%	Test Loss: 0.5216
+2022-10-10 09:51:30 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.47%	Test Loss: 4.6446
+2022-10-10 09:51:33 [INFO ]  Epoch:   47	Test Accuracy: 86.46%	Test Loss: 0.5206
+2022-10-10 09:51:34 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.97%	Test Loss: 4.7824
+2022-10-10 09:51:37 [INFO ]  Epoch:   48	Test Accuracy: 86.64%	Test Loss: 0.5189
+2022-10-10 09:51:38 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.20%	Test Loss: 4.7699
+2022-10-10 09:51:41 [INFO ]  Epoch:   49	Test Accuracy: 86.47%	Test Loss: 0.5222
+2022-10-10 09:51:42 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.94%	Test Loss: 4.8600
+2022-10-10 09:51:42 [INFO ]  List of accuracies: [0.35010755992624465, 0.5030347264904733, 0.6101336816226183, 0.6687922556853104, 0.7104717271051014, 0.7263368162261832, 0.7505377996312231, 0.7612937922556853, 0.7758527965580824, 0.7809618930547019, 0.7903349723417332, 0.7959818684695759, 0.8014751075599262, 0.8133835279655808, 0.8185310387215734, 0.8158036263060848, 0.8216425937307928, 0.8255992624462201, 0.8295559311616472, 0.8312077443146896, 0.8345881991395205, 0.8300937307928703, 0.8408497234173326, 0.8408881376767056, 0.8385064535955746, 0.8396972956361402, 0.8477258758451137, 0.8443454210202828, 0.8439228641671789, 0.8443070067609096, 0.8483020897357099, 0.8529502151198525, 0.8495697602950215, 0.8506069452980947, 0.8514136447449293, 0.8549861708666256, 0.8562538414259373, 0.8554471419791027, 0.8597879532882606, 0.8530654578979717, 0.8593653964351567, 0.860940381069453, 0.8584818684695759, 0.8625153657037492, 0.8618623232944069, 0.8625537799631223, 0.865319606637984, 0.8645513214505224, 0.8663952059004303, 0.8646665642286416]
+2022-10-10 09:51:42 [INFO ]  List of losses: [1.9948545970576779, 1.5917092260584629, 1.317310098789921, 1.1391069052332226, 1.0142724319111005, 0.9568661371476092, 0.892705776681179, 0.8554889336640511, 0.8067330206253811, 0.794648029207817, 0.7671503630897789, 0.7537561931270137, 0.7316641183300991, 0.7011817235776671, 0.6878309630878732, 0.6883345816717166, 0.6756091689360091, 0.6602231549132288, 0.6491184252203793, 0.6394713014345925, 0.6313810670896036, 0.6355872432659503, 0.6161880727626095, 0.6126383996552021, 0.6202547915082954, 0.6078890013269801, 0.5902434796296385, 0.5941548455911835, 0.5949712963139417, 0.5919909884611668, 0.5788911785461013, 0.5694839211424656, 0.5757991307779697, 0.5681374795464702, 0.5628863570876259, 0.5580945803332197, 0.5518165399636971, 0.5547138717032387, 0.5393438356818051, 0.5520363393266581, 0.5395619006118821, 0.5338774530449453, 0.5492132552650418, 0.5300385030266985, 0.5324160394744779, 0.5350218217799322, 0.5216482979575768, 0.5206200729210683, 0.5189445263488057, 0.5221577892291743]
+2022-10-10 09:51:42 [INFO ]  List of source accuracies: [0.6641, 0.4858, 0.3736, 0.3196, 0.2849, 0.2692, 0.2449, 0.2294, 0.2272, 0.2127, 0.2108, 0.225, 0.2148, 0.2138, 0.2185, 0.1941, 0.2122, 0.221, 0.2, 0.2099, 0.2115, 0.2013, 0.2023, 0.1884, 0.1816, 0.2012, 0.1847, 0.1859, 0.1923, 0.1892, 0.1884, 0.177, 0.1862, 0.1774, 0.1764, 0.1631, 0.166, 0.1761, 0.1681, 0.178, 0.167, 0.1641, 0.1806, 0.1676, 0.1637, 0.1578, 0.1647, 0.1597, 0.162, 0.1594]
+2022-10-10 09:51:43 [INFO ]   
+2022-10-10 09:51:43 [INFO ]  SVHN: Evaluation AFTER forgetting:
+2022-10-10 09:51:43 [INFO ]  Test Accuracy: 86.47%	Test Loss: 0.5222
+2022-10-10 09:51:44 [INFO ]   
+2022-10-10 09:51:44 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 09:51:44 [INFO ]  Test Accuracy: 15.94%	Test Loss: 4.8600
+2022-10-10 09:51:44 [INFO ]  CPU Time: 1.69 minutes
+2022-10-10 09:51:59 [INFO ]  ======================================== 2022-10-10 09:51:59 ========================================
+2022-10-10 09:51:59 [INFO ]  Base directory is ./results/forgetting/FASHION_MNIST/
+2022-10-10 09:51:59 [INFO ]  Options: 
+2022-10-10 09:51:59 [INFO ]  	base_dir: null
+2022-10-10 09:51:59 [INFO ]  	batch_size: 1024
+2022-10-10 09:51:59 [INFO ]  	checkpoint_interval: 300
+2022-10-10 09:51:59 [INFO ]  	dataset: FASHION_MNIST
+2022-10-10 09:51:59 [INFO ]  	dataset_labels:
+2022-10-10 09:51:59 [INFO ]  	- 0
+2022-10-10 09:51:59 [INFO ]  	- 1
+2022-10-10 09:51:59 [INFO ]  	- 2
+2022-10-10 09:51:59 [INFO ]  	- 3
+2022-10-10 09:51:59 [INFO ]  	- 4
+2022-10-10 09:51:59 [INFO ]  	- 5
+2022-10-10 09:51:59 [INFO ]  	- 6
+2022-10-10 09:51:59 [INFO ]  	- 7
+2022-10-10 09:51:59 [INFO ]  	- 8
+2022-10-10 09:51:59 [INFO ]  	- 9
+2022-10-10 09:51:59 [INFO ]  	dataset_normalization: !!python/tuple
+2022-10-10 09:51:59 [INFO ]  	- !!python/tuple
+2022-10-10 09:51:59 [INFO ]  	    - 0.2859
+2022-10-10 09:51:59 [INFO ]  	    - 0.2859
+2022-10-10 09:51:59 [INFO ]  	    - 0.2859
+2022-10-10 09:51:59 [INFO ]  	- !!python/tuple
+2022-10-10 09:51:59 [INFO ]  	    - 0.353
+2022-10-10 09:51:59 [INFO ]  	    - 0.353
+2022-10-10 09:51:59 [INFO ]  	    - 0.353
+2022-10-10 09:51:59 [INFO ]  	dataset_root: ./data/fashion_mnist
+2022-10-10 09:51:59 [INFO ]  	decay_epochs: 50
+2022-10-10 09:51:59 [INFO ]  	decay_factor: 0.1
+2022-10-10 09:51:59 [INFO ]  	device_id: 0
+2022-10-10 09:51:59 [INFO ]  	distill_epochs: 1
+2022-10-10 09:51:59 [INFO ]  	distill_lr: 0.02
+2022-10-10 09:51:59 [INFO ]  	distill_steps: 1
+2022-10-10 09:51:59 [INFO ]  	epochs: 50
+2022-10-10 09:51:59 [INFO ]  	expand_cls: false
+2022-10-10 09:51:59 [INFO ]  	forgetting_dataset: SVHN
+2022-10-10 09:51:59 [INFO ]  	init: xavier
+2022-10-10 09:51:59 [INFO ]  	init_param: 1.0
+2022-10-10 09:51:59 [INFO ]  	input_size: 32
+2022-10-10 09:51:59 [INFO ]  	ipc: 1
+2022-10-10 09:51:59 [INFO ]  	log_file: ./results/forgetting/FASHION_MNIST/log.txt
+2022-10-10 09:51:59 [INFO ]  	log_interval: 100
+2022-10-10 09:51:59 [INFO ]  	log_level: INFO
+2022-10-10 09:51:59 [INFO ]  	lr: 0.0002
+2022-10-10 09:51:59 [INFO ]  	mode: forgetting
+2022-10-10 09:51:59 [INFO ]  	nc: 3
+2022-10-10 09:51:59 [INFO ]  	num_classes: 10
+2022-10-10 09:51:59 [INFO ]  	num_workers: 8
+2022-10-10 09:51:59 [INFO ]  	phase: train
+2022-10-10 09:51:59 [INFO ]  	source_dataset: null
+2022-10-10 09:51:59 [INFO ]  	start_time: '2022-10-10 09:51:59'
+2022-10-10 09:51:59 [INFO ]  	test_batch_size: 1024
+2022-10-10 09:51:59 [INFO ]  	
+2022-10-10 09:52:01 [INFO ]  train dataset size:	60000
+2022-10-10 09:52:01 [INFO ]  test dataset size: 	10000
+2022-10-10 09:52:01 [INFO ]  datasets built!
+2022-10-10 09:52:01 [INFO ]  Build one LeNet network with [xavier(1.0)] init
+2022-10-10 09:52:04 [INFO ]   
+2022-10-10 09:52:04 [INFO ]  SVHN: Evaluation BEFORE forgetting:
+2022-10-10 09:52:04 [INFO ]  Test Accuracy: 10.20%	Test Loss: 4.3045
+2022-10-10 09:52:04 [INFO ]   
+2022-10-10 09:52:04 [INFO ]  FASHION_MNIST: Evaluation BEFORE forgetting:
+2022-10-10 09:52:04 [INFO ]  Test Accuracy: 87.27%	Test Loss: 0.3620
+2022-10-10 09:52:08 [INFO ]  Epoch:    0	Test Accuracy: 35.54%	Test Loss: 1.9674
+2022-10-10 09:52:09 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 65.95%	Test Loss: 0.9850
+2022-10-10 09:52:12 [INFO ]  Epoch:    1	Test Accuracy: 51.44%	Test Loss: 1.5619
+2022-10-10 09:52:13 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 49.02%	Test Loss: 1.6798
+2022-10-10 09:52:16 [INFO ]  Epoch:    2	Test Accuracy: 60.86%	Test Loss: 1.3167
+2022-10-10 09:52:16 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 36.76%	Test Loss: 2.4015
+2022-10-10 09:52:19 [INFO ]  Epoch:    3	Test Accuracy: 67.57%	Test Loss: 1.1196
+2022-10-10 09:52:20 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 30.41%	Test Loss: 2.8954
+2022-10-10 09:52:24 [INFO ]  Epoch:    4	Test Accuracy: 70.17%	Test Loss: 1.0179
+2022-10-10 09:52:25 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 27.76%	Test Loss: 3.3595
+2022-10-10 09:52:28 [INFO ]  Epoch:    5	Test Accuracy: 72.97%	Test Loss: 0.9451
+2022-10-10 09:52:28 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 24.85%	Test Loss: 3.4826
+2022-10-10 09:52:31 [INFO ]  Epoch:    6	Test Accuracy: 74.26%	Test Loss: 0.9019
+2022-10-10 09:52:32 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.79%	Test Loss: 3.6299
+2022-10-10 09:52:35 [INFO ]  Epoch:    7	Test Accuracy: 75.72%	Test Loss: 0.8780
+2022-10-10 09:52:36 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.60%	Test Loss: 3.7768
+2022-10-10 09:52:39 [INFO ]  Epoch:    8	Test Accuracy: 76.88%	Test Loss: 0.8404
+2022-10-10 09:52:40 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 24.13%	Test Loss: 3.8719
+2022-10-10 09:52:43 [INFO ]  Epoch:    9	Test Accuracy: 78.78%	Test Loss: 0.7823
+2022-10-10 09:52:44 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.36%	Test Loss: 4.0124
+2022-10-10 09:52:47 [INFO ]  Epoch:   10	Test Accuracy: 78.95%	Test Loss: 0.7740
+2022-10-10 09:52:48 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.22%	Test Loss: 4.0316
+2022-10-10 09:52:51 [INFO ]  Epoch:   11	Test Accuracy: 80.09%	Test Loss: 0.7476
+2022-10-10 09:52:52 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 22.60%	Test Loss: 4.1885
+2022-10-10 09:52:55 [INFO ]  Epoch:   12	Test Accuracy: 80.16%	Test Loss: 0.7393
+2022-10-10 09:52:56 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.22%	Test Loss: 4.0283
+2022-10-10 09:52:59 [INFO ]  Epoch:   13	Test Accuracy: 81.38%	Test Loss: 0.7087
+2022-10-10 09:53:00 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.79%	Test Loss: 4.0632
+2022-10-10 09:53:03 [INFO ]  Epoch:   14	Test Accuracy: 81.46%	Test Loss: 0.6936
+2022-10-10 09:53:04 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.56%	Test Loss: 4.3052
+2022-10-10 09:53:07 [INFO ]  Epoch:   15	Test Accuracy: 81.48%	Test Loss: 0.6903
+2022-10-10 09:53:08 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.70%	Test Loss: 4.2777
+2022-10-10 09:53:11 [INFO ]  Epoch:   16	Test Accuracy: 82.00%	Test Loss: 0.6784
+2022-10-10 09:53:12 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.98%	Test Loss: 4.1549
+2022-10-10 09:53:15 [INFO ]  Epoch:   17	Test Accuracy: 82.43%	Test Loss: 0.6581
+2022-10-10 09:53:16 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.59%	Test Loss: 4.3244
+2022-10-10 09:53:19 [INFO ]  Epoch:   18	Test Accuracy: 83.16%	Test Loss: 0.6495
+2022-10-10 09:53:20 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.14%	Test Loss: 4.2613
+2022-10-10 09:53:23 [INFO ]  Epoch:   19	Test Accuracy: 82.61%	Test Loss: 0.6651
+2022-10-10 09:53:24 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.48%	Test Loss: 4.0398
+2022-10-10 09:53:27 [INFO ]  Epoch:   20	Test Accuracy: 83.46%	Test Loss: 0.6304
+2022-10-10 09:53:28 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.86%	Test Loss: 4.2870
+2022-10-10 09:53:31 [INFO ]  Epoch:   21	Test Accuracy: 83.10%	Test Loss: 0.6403
+2022-10-10 09:53:32 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.28%	Test Loss: 4.2921
+2022-10-10 09:53:35 [INFO ]  Epoch:   22	Test Accuracy: 83.73%	Test Loss: 0.6237
+2022-10-10 09:53:36 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 21.43%	Test Loss: 4.1087
+2022-10-10 09:53:39 [INFO ]  Epoch:   23	Test Accuracy: 84.05%	Test Loss: 0.6172
+2022-10-10 09:53:40 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.30%	Test Loss: 4.3588
+2022-10-10 09:53:43 [INFO ]  Epoch:   24	Test Accuracy: 83.94%	Test Loss: 0.6057
+2022-10-10 09:53:44 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.69%	Test Loss: 4.3361
+2022-10-10 09:53:47 [INFO ]  Epoch:   25	Test Accuracy: 84.02%	Test Loss: 0.6055
+2022-10-10 09:53:48 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 20.05%	Test Loss: 4.2362
+2022-10-10 09:53:51 [INFO ]  Epoch:   26	Test Accuracy: 84.62%	Test Loss: 0.5903
+2022-10-10 09:53:52 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.56%	Test Loss: 4.4251
+2022-10-10 09:53:55 [INFO ]  Epoch:   27	Test Accuracy: 84.37%	Test Loss: 0.6014
+2022-10-10 09:53:56 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.92%	Test Loss: 4.4770
+2022-10-10 09:53:59 [INFO ]  Epoch:   28	Test Accuracy: 84.70%	Test Loss: 0.5834
+2022-10-10 09:54:00 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.95%	Test Loss: 4.4714
+2022-10-10 09:54:03 [INFO ]  Epoch:   29	Test Accuracy: 84.94%	Test Loss: 0.5774
+2022-10-10 09:54:04 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 19.13%	Test Loss: 4.2989
+2022-10-10 09:54:07 [INFO ]  Epoch:   30	Test Accuracy: 85.13%	Test Loss: 0.5719
+2022-10-10 09:54:07 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.04%	Test Loss: 4.4603
+2022-10-10 09:54:11 [INFO ]  Epoch:   31	Test Accuracy: 85.25%	Test Loss: 0.5723
+2022-10-10 09:54:12 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.64%	Test Loss: 4.3655
+2022-10-10 09:54:15 [INFO ]  Epoch:   32	Test Accuracy: 85.40%	Test Loss: 0.5653
+2022-10-10 09:54:16 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.32%	Test Loss: 4.5099
+2022-10-10 09:54:19 [INFO ]  Epoch:   33	Test Accuracy: 85.02%	Test Loss: 0.5727
+2022-10-10 09:54:19 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.57%	Test Loss: 4.6416
+2022-10-10 09:54:23 [INFO ]  Epoch:   34	Test Accuracy: 85.58%	Test Loss: 0.5552
+2022-10-10 09:54:23 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 18.08%	Test Loss: 4.4112
+2022-10-10 09:54:27 [INFO ]  Epoch:   35	Test Accuracy: 85.78%	Test Loss: 0.5511
+2022-10-10 09:54:27 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.84%	Test Loss: 4.5338
+2022-10-10 09:54:30 [INFO ]  Epoch:   36	Test Accuracy: 85.83%	Test Loss: 0.5479
+2022-10-10 09:54:31 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.77%	Test Loss: 4.8574
+2022-10-10 09:54:34 [INFO ]  Epoch:   37	Test Accuracy: 85.54%	Test Loss: 0.5514
+2022-10-10 09:54:35 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.65%	Test Loss: 4.5822
+2022-10-10 09:54:38 [INFO ]  Epoch:   38	Test Accuracy: 85.53%	Test Loss: 0.5522
+2022-10-10 09:54:39 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.78%	Test Loss: 4.7141
+2022-10-10 09:54:43 [INFO ]  Epoch:   39	Test Accuracy: 85.69%	Test Loss: 0.5544
+2022-10-10 09:54:44 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.49%	Test Loss: 4.7281
+2022-10-10 09:54:47 [INFO ]  Epoch:   40	Test Accuracy: 85.91%	Test Loss: 0.5449
+2022-10-10 09:54:48 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.30%	Test Loss: 4.7528
+2022-10-10 09:54:51 [INFO ]  Epoch:   41	Test Accuracy: 86.08%	Test Loss: 0.5368
+2022-10-10 09:54:52 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.31%	Test Loss: 4.7454
+2022-10-10 09:54:55 [INFO ]  Epoch:   42	Test Accuracy: 86.15%	Test Loss: 0.5336
+2022-10-10 09:54:56 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 17.39%	Test Loss: 4.7355
+2022-10-10 09:54:59 [INFO ]  Epoch:   43	Test Accuracy: 86.12%	Test Loss: 0.5397
+2022-10-10 09:54:59 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.20%	Test Loss: 4.9827
+2022-10-10 09:55:03 [INFO ]  Epoch:   44	Test Accuracy: 85.93%	Test Loss: 0.5433
+2022-10-10 09:55:04 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.96%	Test Loss: 4.7256
+2022-10-10 09:55:07 [INFO ]  Epoch:   45	Test Accuracy: 86.28%	Test Loss: 0.5267
+2022-10-10 09:55:08 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.75%	Test Loss: 5.1100
+2022-10-10 09:55:11 [INFO ]  Epoch:   46	Test Accuracy: 86.31%	Test Loss: 0.5292
+2022-10-10 09:55:11 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.48%	Test Loss: 5.0114
+2022-10-10 09:55:15 [INFO ]  Epoch:   47	Test Accuracy: 86.17%	Test Loss: 0.5343
+2022-10-10 09:55:15 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 15.90%	Test Loss: 5.0736
+2022-10-10 09:55:18 [INFO ]  Epoch:   48	Test Accuracy: 86.43%	Test Loss: 0.5231
+2022-10-10 09:55:19 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.78%	Test Loss: 4.9244
+2022-10-10 09:55:23 [INFO ]  Epoch:   49	Test Accuracy: 86.72%	Test Loss: 0.5232
+2022-10-10 09:55:23 [INFO ]  Source: FASHION_MNIST	Test Accuracy: 16.30%	Test Loss: 5.0904
+2022-10-10 09:55:23 [INFO ]  List of accuracies: [0.35544714197910265, 0.5144053472649047, 0.6085971112476951, 0.6756684081130916, 0.7017132759680393, 0.7297172710510141, 0.7426244622003688, 0.7572218807621389, 0.7687845728334358, 0.78779963122311, 0.7895282728948986, 0.8009373079287031, 0.8016287645974186, 0.8138444990780578, 0.8146127842655193, 0.8148432698217578, 0.8199907805777504, 0.8242547633681623, 0.8315534726490473, 0.8260986478180701, 0.8346266133988937, 0.8309772587584512, 0.8372771972956361, 0.8404655808236017, 0.8393515673017824, 0.8401966810079902, 0.8462277197295636, 0.8436539643515673, 0.8469575906576521, 0.8494161032575291, 0.8513368162261832, 0.8524892440073756, 0.8540258143822987, 0.8501843884449908, 0.8557928703134604, 0.8578288260602336, 0.8583282114320836, 0.8554087277197295, 0.8552550706822373, 0.8569068838352797, 0.8591349108789182, 0.8607867240319607, 0.8615165949600492, 0.8612476951444377, 0.8592885679164106, 0.8627842655193608, 0.8630915795943455, 0.8616702519975414, 0.8642824216349109, 0.8672403196066379]
+2022-10-10 09:55:23 [INFO ]  List of losses: [1.9674401919242424, 1.5619247520929769, 1.3166785471704596, 1.119597475442259, 1.0178536706419172, 0.9451391540133448, 0.9019400005188176, 0.8780108817017876, 0.840392042979479, 0.782324574663365, 0.7740467284893653, 0.7475954675938208, 0.7392504621152872, 0.7087268278359927, 0.6935870071533053, 0.690346655115879, 0.6783667718550876, 0.6581459209533579, 0.6495081779043881, 0.6650610034569833, 0.6304143895088857, 0.6402657080370734, 0.6236954051875306, 0.6172181758399968, 0.605731774783237, 0.605492169240097, 0.5902921603952512, 0.6013903990067363, 0.5833615858128413, 0.5774147617501867, 0.5719048488924089, 0.5723481028814146, 0.565296629124356, 0.5726553536516505, 0.5552309999893835, 0.5510609620322313, 0.5479031165978187, 0.5513824657494112, 0.5521852772295951, 0.5544206394179144, 0.5449366402464845, 0.5368338504596656, 0.53358189137933, 0.5396608277633282, 0.5432982406663104, 0.5266802482393964, 0.5292217732941218, 0.534285726471041, 0.5231348399963567, 0.5232272168647752]
+2022-10-10 09:55:23 [INFO ]  List of source accuracies: [0.6595, 0.4902, 0.3676, 0.3041, 0.2776, 0.2485, 0.2279, 0.226, 0.2413, 0.2136, 0.2222, 0.226, 0.2122, 0.2179, 0.2056, 0.197, 0.2198, 0.2059, 0.2114, 0.2148, 0.2086, 0.2028, 0.2143, 0.193, 0.1969, 0.2005, 0.1856, 0.1792, 0.1895, 0.1913, 0.1804, 0.1864, 0.1832, 0.1657, 0.1808, 0.1784, 0.1677, 0.1765, 0.1578, 0.1649, 0.173, 0.1731, 0.1739, 0.162, 0.1696, 0.1575, 0.1648, 0.159, 0.1678, 0.163]
+2022-10-10 09:55:25 [INFO ]   
+2022-10-10 09:55:25 [INFO ]  SVHN: Evaluation AFTER forgetting:
+2022-10-10 09:55:25 [INFO ]  Test Accuracy: 86.72%	Test Loss: 0.5232
+2022-10-10 09:55:26 [INFO ]   
+2022-10-10 09:55:26 [INFO ]  FASHION_MNIST: Evaluation AFTER forgetting:
+2022-10-10 09:55:26 [INFO ]  Test Accuracy: 16.30%	Test Loss: 5.0904
+2022-10-10 09:55:26 [INFO ]  CPU Time: 1.70 minutes
